@@ -12,5 +12,15 @@ namespace Frontend.Core.Helpers
         {
             return Path.GetDirectoryName(currentConverter.AbsoluteConverter.SelectedValue);
         }
+
+        public string[] GetDirectories(string path)
+        {
+            return Directory.GetDirectories(path);
+        }
+
+        public string[] GetDirectories(string path, string searchPattern)
+        {
+            return Directory.GetDirectories(path, searchPattern);
+        }
     }
 }

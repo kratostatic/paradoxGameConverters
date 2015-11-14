@@ -32,8 +32,6 @@ namespace Frontend.Core.ViewModels
 
         private void AddPreferenceSteps(IList<IStep> newSteps)
         {
-            var oldCount = Steps.Count;
-
             foreach (var step in newSteps)
             {
                 Steps.Add(step);
@@ -42,7 +40,6 @@ namespace Frontend.Core.ViewModels
 
         private void RemoveConverterSpecificSteps()
         {
-            var oldCount = Steps.Count;
             var removedCount = 0;
 
             // Assumption: The first two steps are:

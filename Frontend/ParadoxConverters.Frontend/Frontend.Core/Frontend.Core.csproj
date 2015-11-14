@@ -70,6 +70,13 @@
     <Compile Include="Common\Proxies\ZipFileProxy.cs" />
     <Compile Include="Conductors\Interfaces\IStepConductorBase.cs" />
     <Compile Include="Conductors\StepConductorBase.cs" />
+    <Compile Include="Configuration\Configuration.cs" />
+    <Compile Include="Configuration\ConfigurationDiscoverer.cs" />
+    <Compile Include="Configuration\ConfigurationFactory.cs" />
+    <Compile Include="Configuration\ConfigurationFile.cs" />
+    <Compile Include="Configuration\ConverterConfiguration.cs" />
+    <Compile Include="Configuration\IConfiguration.cs" />
+    <Compile Include="Configuration\IConfigurationDiscoverer.cs" />
     <Compile Include="Converting\AsyncCommandBase.cs" />
     <Compile Include="Converting\CancelConvertingCommand.cs" />
     <Compile Include="Converting\Operations\AggregateOperationsResult.cs" />
@@ -233,9 +240,6 @@
     <EmbeddedResource Include="Configuration\Ck2ToEu3DefaultConfiguration.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Configuration\ConfigurationExplanation.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Configuration\Eu3ToVic2DefaultConfiguration.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

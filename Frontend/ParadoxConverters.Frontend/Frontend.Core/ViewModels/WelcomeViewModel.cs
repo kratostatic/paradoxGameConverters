@@ -4,6 +4,7 @@ using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using Caliburn.Micro;
+using Frontend.Core.Configuration;
 using Frontend.Core.Converting.Operations;
 using Frontend.Core.Events.EventArgs;
 using Frontend.Core.Factories;
@@ -16,33 +17,33 @@ namespace Frontend.Core.ViewModels
 {
     public class WelcomeViewModel : StepViewModelBase, IWelcomeViewModel
     {
-        private ConverterSettingsFactory settingsFactory;
-        private ObservableCollection<ConverterSettings> supportedConverters;
+        private readonly IConfigurationFactory _configurationFactory;
+        private ConverterSettingsFactory _settingsFactory;
+        private ObservableCollection<ConverterSettings> _supportedConverters;
 
-        public WelcomeViewModel(IEventAggregator eventAggregator, IConverterOptions options)
+        public WelcomeViewModel(IEventAggregator eventAggregator, IConverterOptions options, IConfigurationFactory configurationFactory)
             : base(eventAggregator, options)
         {
+            _configurationFactory = configurationFactory;
         }
 
         protected ConverterSettingsFactory SettingsFactory
         {
-            get { return settingsFactory ?? (settingsFactory = new ConverterSettingsFactory(EventAggregator)); }
+            get { return _settingsFactory ?? (_settingsFactory = new ConverterSettingsFactory(EventAggregator)); }
         }
 
         public ObservableCollection<ConverterSettings> SupportedConverters
         {
             get
             {
-                if (supportedConverters == null)
+                if (_supportedConverters == null)
                 {
-                    supportedConverters =
-                        SettingsFactory.BuildModels<ConverterSettings>(Path.Combine(Environment.CurrentDirectory,
-                            "Configuration/SupportedConvertersDefault.xml"));
+                    _supportedConverters = new ObservableCollection<ConverterSettings>((this._configurationFactory.BuildSettings()));
 
-                    supportedConverters.First().IsSelected = true;
+                    _supportedConverters.First().IsSelected = true;
                 }
 
-                return supportedConverters;
+                return _supportedConverters;
             }
         }
 

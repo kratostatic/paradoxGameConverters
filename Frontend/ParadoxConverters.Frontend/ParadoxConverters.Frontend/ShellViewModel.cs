@@ -1,20 +1,24 @@
 using System;
 using Caliburn.Micro;
-using Frontend.Core.Model;
 using Frontend.Core.Navigation;
 using Frontend.Core.ViewModels;
+using Frontend.Core.ViewModels.Interfaces;
 
 namespace Frontend.Client
 {
     public class ShellViewModel : IShell, IDisposable
     {
         private readonly IEventAggregator eventAggregator;
+        private readonly IWelcomeViewModel _welcomeViewModel;
+        private readonly IPathPickerViewModel _pathPickerViewModel;
         private FrameViewModel frameViewModel;
         private bool isDisposed;
 
-        public ShellViewModel(IEventAggregator eventAggregator)
+        public ShellViewModel(IEventAggregator eventAggregator, IWelcomeViewModel welcomeViewModel, IPathPickerViewModel pathPickerViewModel)
         {
             this.eventAggregator = eventAggregator;
+            _welcomeViewModel = welcomeViewModel;
+            _pathPickerViewModel = pathPickerViewModel;
         }
 
         public FrameViewModel FrameViewModel
@@ -23,13 +27,10 @@ namespace Frontend.Client
             {
                 if (frameViewModel == null)
                 {
-                    var options = new ConverterOptions();
                     frameViewModel = new FrameViewModel(eventAggregator);
-                    var welcomeViewModel = new WelcomeViewModel(eventAggregator, options);
-                    var pathPickerViewModel = new PathPickerViewModel(eventAggregator, options);
 
-                    frameViewModel.Steps.Add(welcomeViewModel);
-                    frameViewModel.Steps.Add(pathPickerViewModel);
+                    frameViewModel.Steps.Add(_welcomeViewModel);
+                    frameViewModel.Steps.Add(_pathPickerViewModel);
 
                     FrameViewModel.Move(Direction.Forward);
                 }

@@ -5,40 +5,61 @@ using System.Reflection;
 using System.Windows;
 using System.Windows.Threading;
 using Caliburn.Micro;
+using Frontend.Core.Common.Proxies;
+using Frontend.Core.Configuration;
+using Frontend.Core.Factories;
+using Frontend.Core.Helpers;
 using Frontend.Core.Logging;
+using Frontend.Core.Model;
+using Frontend.Core.Model.Interfaces;
 using Frontend.Core.ViewModels;
 using Frontend.Core.ViewModels.Interfaces;
 
 namespace Frontend.Client
 {
-    public class AppBootstrapper : BootstrapperBase
+    /// <summary>
+    /// The AppBootStrapper is responsible for configuring and setting everything up, before displaying the first view.
+    /// </summary>
+    public sealed class AppBootstrapper : BootstrapperBase
     {
-        private SimpleContainer container;
-        private IEventAggregator eventAggregator;
+        private SimpleContainer _container;
 
         public AppBootstrapper()
         {
             StartRuntime();
         }
-
-        protected IEventAggregator EventAggregator
-        {
-            get { return eventAggregator ?? (eventAggregator = container.GetInstance<IEventAggregator>()); }
-        }
-
+        
         protected override void Configure()
         {
-            container = new SimpleContainer();
-            container.Singleton<IWindowManager, WindowManager>();
-            container.Singleton<IEventAggregator, EventAggregator>();
-            container.PerRequest<IShell, ShellViewModel>();
-            container.PerRequest<IFrameViewModel, FrameViewModel>();
-            container.PerRequest<IWelcomeViewModel, WelcomeViewModel>();
+            _container = new SimpleContainer();
+
+            // Helpers
+            _container.Singleton<IEnvironmentProxy, EnvironmentProxy>();
+            _container.Singleton<IDirectoryHelper, DirectoryHelper>();
+            _container.Singleton<IDirectoryCopyHelper, DirectoryCopyHelper>();
+            _container.Singleton<IFileProxy, FileProxy>();
+            _container.Singleton<IFolderProxy, FolderProxy>();
+            
+            // Infrastructure
+            _container.Singleton<IWindowManager, WindowManager>();
+            _container.Singleton<IEventAggregator, EventAggregator>();
+
+            // Configuration
+            _container.Singleton<IConfigurationDiscoverer, ConfigurationDiscoverer>();
+            _container.Singleton<IConfiguration, Configuration>();
+            _container.Singleton<IConfigurationFactory, ConfigurationFactory>();
+            _container.Singleton<IConverterSettingsFactory, ConverterSettingsFactory>();
+
+            // View models
+            _container.PerRequest<IShell, ShellViewModel>();
+            _container.PerRequest<IFrameViewModel, FrameViewModel>();
+            _container.PerRequest<IWelcomeViewModel, WelcomeViewModel>();
+            _container.PerRequest<IPathPickerViewModel, PathPickerViewModel>();
         }
 
         protected override object GetInstance(Type service, string key)
         {
-            var instance = container.GetInstance(service, key);
+            var instance = _container.GetInstance(service, key);
             if (instance != null)
             {
                 return instance;
@@ -59,27 +80,23 @@ namespace Frontend.Client
 
         protected override IEnumerable<object> GetAllInstances(Type service)
         {
-            return container.GetAllInstances(service);
+            return _container.GetAllInstances(service);
         }
 
         protected override void BuildUp(object instance)
         {
-            container.BuildUp(instance);
+            _container.BuildUp(instance);
         }
 
         protected override void OnStartup(object sender, StartupEventArgs e)
         {
             DisplayRootViewFor<IShell>();
-
-            var logEntry = new LogEntry("Startup complete: Application was started from", LogEntrySeverity.Info,
-                LogEntrySource.UI, Environment.CurrentDirectory);
-
-            EventAggregator.PublishOnUIThread(logEntry);
         }
 
         protected override void OnUnhandledException(object sender, DispatcherUnhandledExceptionEventArgs e)
         {
-            EventAggregator.PublishOnUIThread(new LogEntry("Error occured: " + e.Exception.Message,
+            var eventAggregator = this._container.GetInstance<IEventAggregator>();
+            eventAggregator.PublishOnUIThread(new LogEntry("Error occured: " + e.Exception.Message,
                 LogEntrySeverity.Error, LogEntrySource.UI));
         }
     }

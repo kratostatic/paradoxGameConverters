@@ -8,10 +8,40 @@ using Frontend.Core.Logging;
 
 namespace Frontend.Core.Factories
 {
+    public interface IFactoryBase
+    {
+        /// <summary>
+        ///     Build model objects from the specified configuration file
+        /// </summary>
+        /// <typeparam name="T">The type of the model object</typeparam>
+        /// <param name="configurationFilePath">The path to the configuratio file</param>
+        /// <returns>
+        ///     Null if the configuration file doesn't exist, the model object of type T if the model object was created
+        ///     successfully
+        /// </returns>
+        ObservableCollection<T> BuildModels<T>(string configurationFilePath) where T : class;
+
+        /// <summary>
+        ///     Essentially a filter method, this method excludes any disabled element in the xml configuration file
+        /// </summary>
+        /// <remarks>
+        ///     For now, this only looks for the isEnabled=false tag. With time, a proper filter may be implemented.
+        ///     Todo:
+        ///     Simplify
+        ///     Rename to something descriptive?
+        /// </remarks>
+        /// <typeparam name="T">The type of element</typeparam>
+        /// <param name="config">The configuration file</param>
+        /// <returns>The model objects</returns>
+        ObservableCollection<T> BuildConfiguration<T>(XDocument config) where T : class;
+
+        ObservableCollection<T> BuildConfiguration<T>(XElement rootElement) where T : class;
+    }
+
     /// <summary>
     ///     Base class for all factories
     /// </summary>
-    public abstract class FactoryBase
+    public abstract class FactoryBase : IFactoryBase
     {
         // The event aggregator
 

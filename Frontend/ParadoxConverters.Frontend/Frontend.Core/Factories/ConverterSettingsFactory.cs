@@ -12,10 +12,38 @@ using Frontend.Core.Model.Paths.Interfaces;
 
 namespace Frontend.Core.Factories
 {
-    public class ConverterSettingsFactory : FactoryBase
+    public interface IConverterSettingsFactory : IFactoryBase
     {
-        private XDocument config;
+        /// <summary>
+        ///     Build model objects from the specified configuration file
+        /// </summary>
+        /// <typeparam name="T">The type of the model object</typeparam>
+        /// <param name="configurationFilePath">The path to the configuratio file</param>
+        /// <returns>
+        ///     Null if the configuration file doesn't exist, the model object of type T if the model object was created
+        ///     successfully
+        /// </returns>
+        ObservableCollection<T> BuildModels<T>(string configurationFilePath) where T : class;
 
+        /// <summary>
+        ///     Essentially a filter method, this method excludes any disabled element in the xml configuration file
+        /// </summary>
+        /// <remarks>
+        ///     For now, this only looks for the isEnabled=false tag. With time, a proper filter may be implemented.
+        ///     Todo:
+        ///     Simplify
+        ///     Rename to something descriptive?
+        /// </remarks>
+        /// <typeparam name="T">The type of element</typeparam>
+        /// <param name="config">The configuration file</param>
+        /// <returns>The model objects</returns>
+        ObservableCollection<T> BuildConfiguration<T>(XDocument config) where T : class;
+
+        ObservableCollection<T> BuildConfiguration<T>(XElement rootElement) where T : class;
+    }
+
+    public class ConverterSettingsFactory : FactoryBase, IConverterSettingsFactory
+    {
         /// <summary>
         ///     The Game configuration factory
         /// </summary>
@@ -144,8 +172,7 @@ namespace Frontend.Core.Factories
         /// <param name="config"></param>
         protected override void OnConfigLoaded(XDocument config)
         {
-            this.config = config;
-            relativeGameConfigurationPath = XElementHelper.ReadStringValue(config.Descendants("configuration").First(),
+            relativeGameConfigurationPath = XElementHelper.ReadStringValue(config.Descendants("converterconfiguration").First(),
                 "gameConfigurationFile");
         }
 
