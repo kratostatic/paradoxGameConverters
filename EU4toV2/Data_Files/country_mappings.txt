@@ -19,7 +19,6 @@
 # THE SOFTWARE.
 
 
-
 #Direct Mappings
 #This is essentially one-to-one country mappings to ensure that countries are available in BOTH EU4 and Vic2 get the correct tag.
 #For example, if Spain is in EU4 it will become Spain in Vic2 after conversion.
@@ -127,8 +126,8 @@ link = { EU4 = LEI Vic2 = LEI } # Leinster
 link = { EU4 = c_leinster Vic2 = LEI } # Leinster
 link = { EU4 = IRE Vic2 = IRE } # Ireland
 link = { EU4 = k_ireland Vic2 = IRE } # Ireland
-link = { EU4 = MNS Vic2 = MNS } # Munster (Ireland)
-link = { EU4 = d_munster Vic2 = MUN } # Munster (Ireland)
+link = { EU4 = MNS Vic2 = MNS } # Thomond/Munster (Ireland)
+#link = { EU4 = d_munster Vic2 = MUN } # Munster (Ireland)
 link = { EU4 = SCO Vic2 = SCO } # Scotland
 link = { EU4 = k_scotland Vic2 = SCO } # Scotland
 link = { EU4 = TYR Vic2 = TYR } # Tyrone
@@ -291,8 +290,8 @@ link = { EU4 = MEI Vic2 = MEI } # Meissen
 link = { EU4 = d_meissen Vic2 = MEI } # Meissen
 link = { EU4 = MKL Vic2 = MEC } # Mecklenburg
 link = { EU4 = d_mecklenburg Vic2 = MEC } # Mecklenburg
-link = { EU4 = MUN Vic2 = MUN } # Munster (Germany)
-link = { EU4 = c_munster Vic2 = MUN } # Munster (Germany)
+link = { EU4 = MUN Vic2 = MUN } # Münster (Germany)
+link = { EU4 = c_munster Vic2 = MUN } # Münster (Germany)
 link = { EU4 = MVA Vic2 = MRV } # Moravia
 link = { EU4 = k_moravia Vic2 = MRV } # Moravia
 link = { EU4 = OLD Vic2 = OLD } # Oldenburg
@@ -352,7 +351,8 @@ link = { EU4 = e_spain Vic2 = SPA } # Spain
 link = { EU4 = GAL Vic2 = GAL } # Galicia
 link = { EU4 = k_spanish_galicia Vic2 = GAL } # Galicia
 #link = { EU4 = LON Vic2 = XXX } # Leon => k_leon
-#link = { EU4 = ADU Vic2 = XXX } # Andalusia => k_andalusia
+link = { EU4 = ADU Vic2 = ADU } # Andalusia
+link = { EU4 = k_andalusia Vic2 = ADU } # Andalusia
 
 #Italy
 link = { EU4 = AQU Vic2 = AQU } # Aquileia
@@ -756,6 +756,7 @@ link = { EU4 = YMN Vic2 = YMN } # Yamana
 link = { EU4 = RFR Vic2 = RFR } # Nanbu
 link = { EU4 = ASK Vic2 = ASK } # Ashikaga
 link = { EU4 = KTB Vic2 = KTB } # Kitabatake
+
 link = { EU4 = ANU Vic2 = ANU } # Ainu
 
 #New Daimyos 1.20
@@ -1161,6 +1162,8 @@ link = { EU4 = ZOM Vic2 = ZOM } #Zombies
 
 ##Macedonian culture added (just in case)
 link = { EU4 = MKD Vic2 = MKD } #Macedonia
+##Alaska
+link = { EU4 = LSK Vic2 = LSK } #Alaska
 
 ##M&T basic mappings (only those whose tags already exist)
 link = { EU4 = AAA Vic2 = AAA } #Dummy
