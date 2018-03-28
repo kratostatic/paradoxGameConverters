@@ -351,6 +351,103 @@ political_decisions = {
 				civilized = no
 				capital = 2468
 			}
+			any_country = { #Yugra
+				limit = {
+					tag = UGR
+					NOT = { exists = UGR }
+				}
+				primary_culture = ugrian
+				religion = orthodox
+				civilized = yes
+				capital = 1063
+			}
+			any_country = { #Assyria
+				limit = {
+					tag = ASY
+					NOT = { exists = ASY }
+				}
+				primary_culture = syriac
+				religion = orthodox
+				civilized = yes
+				capital = 927
+			}
+			any_country = { #Syria
+				limit = {
+					tag = SYR
+					NOT = { exists = SYR }
+				}
+				primary_culture = mashriqi
+				religion = sunni
+				civilized = yes
+				capital = 902
+			}
+			any_country = { #Carthage
+				limit = {
+					tag = KRT
+					NOT = { exists = KRT }
+				}
+				primary_culture = maghreb_arabic
+				religion = orthodox
+				civilized = yes
+				capital = 1725
+			}
+			any_country = { #Sakha
+				limit = {
+					tag = SKH
+					NOT = { exists = SKH }
+				}
+				primary_culture = yakut
+				religion = orthodox
+				civilized = yes
+				capital = 2648
+			}
+			any_country = { #Siberia
+				limit = {
+					tag = SBR
+					NOT = { exists = SBR }
+				}
+				primary_culture = siberian
+				religion = orthodox
+				civilized = yes
+				capital = 1075
+			}
+			any_country = { #Indochina
+				limit = {
+					tag = IDC
+					NOT = { exists = IDC }
+				}
+				primary_culture = thai
+				add_accepted_culture = vietnamese
+				add_accepted_culture = khmer
+				add_accepted_culture = lao
+				add_accepted_culture = shan
+				add_accepted_culture = burmese
+				add_accepted_culture = kachin
+				add_accepted_culture = karen
+				religion = mahayana
+				civilized = yes
+				capital = 1346
+			}
+			any_country = { #Anglo-Saxony
+				limit = {
+					tag = AES
+					NOT = { exists = AES }
+				}
+				primary_culture = anglo_saxon
+				religion = norse_pagan_reformed
+				civilized = yes
+				capital = 300
+			}
+			any_country = { #Frankia
+				limit = {
+					tag = FRK
+					NOT = { exists = FRK }
+				}
+				primary_culture = frankish
+				religion = catholic
+				civilized = yes
+				capital = 425
+			}
 			set_global_flag = taiping_and_csa
 		}
 		ai_will_do = {
@@ -2026,4 +2123,188 @@ political_decisions = {
 			factor = 1
 		}
 	}
+	#form_siberia = {
+	#	potential = {
+	#		primary_culture = siberian
+	#		NOT = {
+	#			exists = SBR
+	#			tag = RUS
+	#		}
+	#	}	
+	#	allow = {
+	#		war = no
+	#		prestige = 5
+	#		SBR = {
+	#			all_core = {
+	#				OR = {
+	#					owned_by = THIS
+	#					owner = {
+	#						in_sphere = THIS
+	#					}
+	#					owner = RUS
+	#				}
+	#			}
+	#		}
+	#	}
+	#	
+	#	effect = {
+	#		prestige = 10
+	#		any_country = {
+	#			limit = {
+	#				in_sphere = THIS
+	#				NOT = {
+	#					tag = THIS
+	#				}
+	#				capital_scope = { continent = asia }
+	#				primary_culture = siberian
+	#			}
+	#			annex_to = THIS
+	#		}
+	#		any_owned = {
+	#			add_core = SBR
+	#			remove_core = RUS
+	#		}			
+	#		
+	#		change_tag = SBR
+	#	}
+	#	ai_will_do = {
+	#		factor = 1
+	#	}
+	#}
+	#form_indochina = {
+	#	potential = {
+	#		capital_scope = { is_core = IDC }
+	#		NOT = { exists = IDC }
+	#	}
+	#	allow = {
+	#		war = no
+	#		prestige = 5
+	#		IDC = {
+	#			all_core = {
+	#				owned_by = THIS
+	#			}
+	#		}
+	#	}
+	#	
+	#	effect = {
+	#		prestige = 10
+	#		any_country = {
+	#			limit = {
+	#				in_sphere = THIS
+	#				NOT = {
+	#					tag = THIS
+	#				}
+	#				capital_scope = { continent = asia }
+	#				capital_scope = { is_core = IDC }
+	#			}
+	#			annex_to = THIS
+	#		}
+	#		any_owned = {
+	#			add_core = IDC
+	#		}			
+	#		
+	#		change_tag = IDC
+	#	}
+	#	ai_will_do = {
+	#		factor = 1
+	#	}
+	#}
+	#form_anglo_saxony = {
+	#	potential = {
+	#		primary_culture = anglo_saxon
+	#		NOT = {
+	#			exists = AES
+	#			tag = ENG
+	#			tag = ENL
+	#		}
+	#	}	
+	#	allow = {
+	#		war = no
+	#		prestige = 5
+	#		AES = {
+	#			all_core = {
+	#				OR = {
+	#					owned_by = THIS
+	#					owner = {
+	#						in_sphere = THIS
+	#					}
+	#					owner = ENG
+	#					owner = ENL
+	#				}
+	#			}
+	#		}
+	#	}
+	#	
+	#	effect = {
+	#		prestige = 10
+	#		any_country = {
+	#			limit = {
+	#				in_sphere = THIS
+	#				NOT = {
+	#					tag = THIS
+	#				}
+	#				capital_scope = { continent = europe }
+	#				primary_culture = anglo_saxon
+	#			}
+	#			annex_to = THIS
+	#		}
+	#		any_owned = {
+	#			add_core = AES
+	#			remove_core = ENG
+	#			remove_core = ENL
+	#		}			
+	#		
+	#		change_tag = AES
+	#	}
+	#	ai_will_do = {
+	#		factor = 1
+	#	}
+	#}
+	#form_frankia = {
+	#	potential = {
+	#		primary_culture = frankish
+	#		NOT = {
+	#			exists = FRK
+	#			tag = FRA
+	#		}
+	#	}	
+	#	allow = {
+	#		war = no
+	#		prestige = 5
+	#		FRK = {
+	#			all_core = {
+	#				OR = {
+	#					owned_by = THIS
+	#					owner = {
+	#						in_sphere = THIS
+	#					}
+	#				}
+	#			}
+	#		}
+	#	}
+	#	
+	#	effect = {
+	#		prestige = 10
+	#		any_country = {
+	#			limit = {
+	#				in_sphere = THIS
+	#				NOT = {
+	#					tag = THIS
+	#				}
+	#				capital_scope = { continent = europe }
+	#				primary_culture = frankish
+	#			}
+	#			annex_to = THIS
+	#		}
+	#		any_owned = {
+	#			add_core = FRK
+	#			remove_core = FRA
+	#		}			
+	#		
+	#		change_tag = FRK
+	#	}
+	#	ai_will_do = {
+	#		factor = 1
+	#	}
+	#}
 }
