@@ -1,5 +1,5 @@
-color = { 146  108  146 }
-graphical_culture = AustriaHungaryGC
+color = { 234 193 2 }
+graphical_culture = SpanishGC
 
 party = {
 	name = "BARB_liberal"
