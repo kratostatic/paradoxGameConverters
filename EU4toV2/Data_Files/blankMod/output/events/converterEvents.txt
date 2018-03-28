@@ -265,3 +265,127 @@ country_event = {
 		}
     }
 }
+country_event = {
+	id = 350005
+	title = EVTNAME350004
+	desc = EVTDESC350004
+	picture = "Riot"
+	
+	trigger = {
+		ai = no
+	}
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = EVTOPTA350004
+		EGY_897 = { # Aleppo
+			limit = {
+				is_core = IRQ
+				NOT = { owned_by = IRQ }
+			}
+			remove_core = IRQ
+			add_core = SYR
+		}
+		EGY_903 = { # Damascus
+			limit = {
+				is_core = IRQ
+				NOT = { owned_by = IRQ }
+			}
+			remove_core = IRQ
+			add_core = SYR
+		}
+		EGY_910 = { # Transjordan
+			limit = {
+				is_core = IRQ
+				NOT = { owned_by = IRQ }
+			}
+			remove_core = IRQ
+			add_core = SYR
+		}
+		EGY_915 = { # Lebanon
+			limit = {
+				is_core = IRQ
+				NOT = { owned_by = IRQ }
+			}
+			remove_core = IRQ
+			add_core = SYR
+		}
+		EGY_921 = { # Palestine
+			limit = {
+				is_core = IRQ
+				NOT = { owned_by = IRQ }
+			}
+			remove_core = IRQ
+			add_core = SYR
+		}
+	}
+}
+country_event = {
+	id = 350006
+	title = EVTNAME350005
+	desc = EVTDESC350005
+	picture = "Riot"
+	
+	trigger = {
+		ai = no
+	}
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 1
+		tag = TUR
+	}
+
+	option = {
+		name = EVTOPTA350005
+		any_owned = {
+			limit = {
+				continent = africa
+			}
+			secede_province = EGY
+			remove_core = TUR
+		}
+		EGY_897 = { # Aleppo
+			limit = {
+				owned_by = TUR
+			}
+			secede_province = EGY
+			remove_core = TUR
+		}
+		EGY_903 = { # Damascus
+			limit = {
+				owned_by = TUR
+			}
+			secede_province = EGY
+			remove_core = TUR
+		}
+		EGY_910 = { # Transjordan
+			limit = {
+				owned_by = TUR
+			}
+			secede_province = EGY
+			remove_core = TUR
+		}
+		EGY_915 = { # Lebanon
+			limit = {
+				owned_by = TUR
+			}
+			secede_province = EGY
+			remove_core = TUR
+		}
+		EGY_921 = { # Palestine
+			limit = {
+				owned_by = TUR
+			}
+			secede_province = EGY
+			remove_core = TUR
+		}
+		create_vassal = EGY
+	}
+}
