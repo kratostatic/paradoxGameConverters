@@ -206,6 +206,7 @@ SXI		="countries/Shanxi.txt"
 YNN		="countries/Yunnan.txt"
 XBI		="countries/Xibei San Ma.txt"
 XIN		="countries/Xinjiang.txt"
+YUA		="countries/Yuan.txt"
 
 # North America
 CAL		="countries/Californian Republic.txt"
@@ -253,6 +254,7 @@ NZL		="countries/New Zealand.txt"
 #new for 1.2
 ISR		="countries/Israel.txt"
 BYZ		="countries/Byzantium.txt"
+LTN		="countries/LatinEmpire.txt"
 ICL		="countries/Iceland.txt"
 BAB		="countries/Babylonia.txt"
 
@@ -272,6 +274,11 @@ TRL 	= "countries/Trapalandia.txt"
 
 
 ## Converter Mod Countries
+
+#Easter eggs
+ALI		="countries/Alien Invaders.txt"
+MIA		="countries/Khawitmau.txt"
+UND		="countries/Undead Horde.txt"
 
 # Germany (HRE)
 AAC 		="countries/Aachen.txt"##
@@ -298,6 +305,7 @@ TER		="countries/Trier.txt"##
 ULM 		="countries/Ulm.txt"##
 WBG		="countries/Wurzburg.txt"##
 WES		="countries/Westfalia.txt"##
+CAR		="countries/Carinthia.txt"
 
 # Italy
 AQU		="countries/Aquileia.txt"##
@@ -314,6 +322,7 @@ SNA		="countries/Siena.txt"##
 URB		="countries/Urbino.txt"##
 MFA 	="countries/Montferrat.txt"
 LGB		="countries/Longobardia.txt"
+MLT		="countries/Malta.txt"
 
 # Eastern Europe
 LIV		="countries/Livonian Order.txt"##
@@ -399,6 +408,21 @@ SYO 		="countries/Soyo.txt"
 TBK 		="countries/Tumbuka.txt"
 UBH 		="countries/Buha.txt"
 YAK 		="countries/Yaka.txt"
+ANG     =   "countries/Angola.txt"
+CMR     =   "countries/Cameroon.txt"
+EQA     =   "countries/Equatorial Africa.txt"
+GAB     =   "countries/Gabon.txt"
+GHN     =   "countries/Ghana.txt"
+GUI     =   "countries/Guinea.txt"
+IVC     =   "countries/Ivory Coast.txt"
+MOZ     =   "countries/Mozambique.txt"
+NAM     =   "countries/Namibia.txt"
+NGR     =   "countries/Nigeria.txt"
+SLE     =   "countries/Sierra Leone.txt"
+SOM     =   "countries/Somalia.txt"
+SUD     =   "countries/Sudan.txt"
+TNZ     =   "countries/Tanzania.txt"
+TSW     =   "countries/Botswana.txt"
 
 # France
 ALE		="countries/Alencon.txt"##
@@ -422,6 +446,7 @@ PRO		="countries/Provence.txt"##
 RFR		="countries/RevolutionaryFrance.txt"##
 TOU		="countries/Toulouse.txt"##
 BRY		="countries/Berry.txt"	##
+OCC     =   "countries/Occitania.txt"
 
 # Iberian Peninsula
 ARO		="countries/Aragon.txt"##
@@ -429,6 +454,7 @@ CAS		="countries/Castille.txt"##
 GRA		="countries/Granada.txt"##
 NAV		="countries/Navarra.txt"##
 GAL		="countries/Galicia.txt"	##
+ADU		="countries/Andalucia.txt"
 
 # The Low Countries
 BRB		="countries/Brabant.txt"##
@@ -518,6 +544,7 @@ SUL		="countries/Sulu.txt"
 TOK		="countries/Tonkin.txt"
 WUU		="countries/Wu.txt"
 XIA		="countries/Xia.txt"
+ANU     =   "countries/Ainu.txt"
 
 # Americas
 LOU		="countries/Louisiana.txt"##
@@ -554,15 +581,26 @@ JAL		="countries/Jalayirid.txt"
 QAR		="countries/QaraKoyunlu.txt"
 TIM		="countries/Timurid.txt"
 KZH		="countries/Kazakh.txt"
+BHT		="countries/Kurdistan.txt"
+ALN     =   "countries/Alania.txt"
+DKU     =   "countries/Don-Kuban Union.txt"
+TKS     =   "countries/Turkestan.txt"
 
 # Japan
 TAC		="countries/Tachibana.txt"
 FUJ 		="countries/Fujiwara.txt"
 TAI 		="countries/Taira.txt"
 
+#Others
+ABO     =   "countries/Aborigines.txt"
+AOT     =   "countries/Aotearoa.txt"
+OGO     =   "countries/Ostrogothia.txt"
+SUE     =   "countries/The Suebi.txt"
+VGO     =   "countries/Visigothia.txt"
+
 
 ##HoD Dominions
-dynamic_tags  = yes # any tags after this are considered dynamic dominions
+dynamic_tags  = yes # any tags after this is considered dynamic dominions
 D01		= "countries/D01.txt"
 D02		= "countries/D02.txt"
 D03		= "countries/D03.txt"
