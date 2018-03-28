@@ -1007,38 +1007,38 @@
 	link = { eu4 = 370 eu4 = 371 v2 = 252 v2 = 3246 }	# MANY-TO-MANY: 0 "Reykjavik, 0 "Akureyri -> Iceland, Jan Mayen
 	# British Isles
 	link = { eu4 = 1979 v2 = 253 }	# 0 "Färöarna -> Faroe Islands
-	link = { eu4 = 1978 eu4 = 369 eu4 = 253 eu4 = 252 eu4 = 4110 v2 = 267 v2 = 270 }	# MANY-TO-MANY: 0 "Shetland, 0 "Orkney, 0 "Western Isles, 0 "Inverness, 0 "Sutherland -> Inverness, Stirling
-	link = { eu4 = 251 v2 = 266 }	# 0 "Aberdeenshire -> Aberdeen
-	link = { eu4 = 250 v2 = 268 }	# 0 "Fife -> Dundee
+	link = { eu4 = 1978 eu4 = 369 eu4 = 253 eu4 = 252 eu4 = 4110 eu4 = 4364 eu4 = 4363 v2 = 267 v2 = 270 }	# MANY-TO-MANY: 0 "Shetland, 0 "Orkney, 1 "Outer Hebrides, 0 "Inverness, 0 "Sutherland, 0 "Inner Hebrides, 0 "Argyll -> Inverness, Stirling
+	link = { eu4 = 251 v2 = 266 }	# 1 "Aberdeen -> Aberdeen
+	link = { eu4 = 250 v2 = 268 }	# 1 "Perth -> Dundee
 	link = { eu4 = 249 v2 = 271 }	# 0 "Ayrshire -> Glasgow
-	link = { eu4 = 248 v2 = 269 v2 = 272 }	# 0 "Lothian -> Edinburgh, Dumfries
-	link = { eu4 = 247 v2 = 279 v2 = 304 }	# 0 "Cumbria -> Carlisle, Isle of Man
+	link = { eu4 = 248 eu4 = 4361 eu4 = 4362 v2 = 269 v2 = 272 }	# MANY-TO-MANY: 0 "Lothian, 0 "East March, 0 "West March -> Edinburgh, Dumfries
+	link = { eu4 = 247 eu4 = 4365 v2 = 279 v2 = 304 }	# MANY-TO-MANY: 0 "Cumbria, 0 "Mann -> Carlisle, Isle of Man
 	link = { eu4 = 246 v2 = 280 }	# 0 "Northumberland -> Newcastle-upon-Tyne
-	link = { eu4 = 245 v2 = 283 v2 = 282 v2 = 281 }	# 0 "Yorkshire -> Sheffield, Leeds, Hull
+	link = { eu4 = 245 eu4 = 4368 eu4 = 4367 v2 = 283 v2 = 282 v2 = 281 }	# MANY-TO-MANY: 1 "York, 0 "Scarborough, 0 "Hull -> Sheffield, Leeds, Hull
 	link = { eu4 = 244 v2 = 278 v2 = 277 v2 = 285 }	# 0 "Lancashire -> Manchester, Liverpool, Chester
-	link = { eu4 = 242 v2 = 276 v2 = 275 }	# 0 "Gwynedd -> Holyhead, Llandrindod
-	link = { eu4 = 241 v2 = 273 v2 = 274 }	# 0 "Glamorganshire -> Cardiff, Cardigan
-	link = { eu4 = 240 v2 = 284 v2 = 287 v2 = 286 }	# 0 "Marches -> Birmingham, Coventry, Shrewsbury
-	link = { eu4 = 239 v2 = 296 }	# 0 "Gloucestershire -> Bristol
+	link = { eu4 = 4366 eu4 = 242 eu4 = 4369 v2 = 275 v2 = 276 v2 = 274 }	# MANY-TO-MANY: 0 "Montgomery, 0 "Gwynedd, 0 "Carmarthen -> Llandrindod, Holyhead, Cardigan
+	link = { eu4 = 241 v2 = 273 }	# 1 "Glamorgan -> Cardiff
+	link = { eu4 = 240 eu4 = 4372 eu4 = 4375 v2 = 284 v2 = 287 v2 = 286 }	# MANY-TO-MANY: 1 "Shrewsbury, 0 "Coventry, 0 "Chester -> Birmingham, Coventry, Shrewsbury
+	link = { eu4 = 239 v2 = 296 }	# 1 "Gloucester -> Bristol
 	link = { eu4 = 233 v2 = 299 }	# 0 "Cornwall -> Plymouth
-	link = { eu4 = 4130 v2 = 297 v2 = 298 }	# 0 "Somerset -> Salisbury, Bath
+	link = { eu4 = 4130 eu4 = 4374 eu4 = 4373 v2 = 297 v2 = 298 }	# MANY-TO-MANY: 0 "Somerset, 0 "Dorset, 0 "Devon -> Salisbury, Bath
 	link = { eu4 = 234 v2 = 303 }	# 0 "Hampshire -> Southampton
-	link = { eu4 = 235 v2 = 301 v2 = 302 }	# 0 "Kent -> Canterbury, Brighton
+	link = { eu4 = 235 eu4 = 4371 v2 = 301 v2 = 302 }	# MANY-TO-MANY: 0 "Kent, 0 "Sussex -> Canterbury, Brighton
 	link = { eu4 = 236 v2 = 300 }	# 0 "London -> London
 	link = { eu4 = 238 v2 = 293 }	# 0 "Essex -> Chelmsford
-	link = { eu4 = 1860 v2 = 291 v2 = 292 }	# 0 "Norfolk -> Cambridge, Ipswich
+	link = { eu4 = 1860 eu4 = 4370 v2 = 291 v2 = 292 }	# MANY-TO-MANY: 0 "Norfolk, 0 "Cambridge -> Cambridge, Ipswich
 	link = { eu4 = 243 v2 = 290 }	# 0 "Lincolnshire -> Lincoln
-	link = { eu4 = 1861 v2 = 288 v2 = 289 }	# 0 "Derbyshire -> Nottingham, Leicester
-	link = { eu4 = 237 v2 = 294 v2 = 295 }	# 0 "Oxfordshire -> Oxford, St Albans
+	link = { eu4 = 1861 eu4 = 4376 v2 = 288 v2 = 289 }	# MANY-TO-MANY: 1 "Derby, 0 "Leicester -> Nottingham, Leicester
+	link = { eu4 = 237 v2 = 294 v2 = 295 }	# 1 "Oxford -> Oxford, St Albans
 	link = { eu4 = 4121 v2 = 254 v2 = 256 }	# 0 "Ulster -> Belfast, Armagh
-	link = { eu4 = 372 v2 = 257 v2 = 255 }	# 0 "Tyrone -> Donegal, Londonderry
+	link = { eu4 = 372 v2 = 255 }	# 0 "Tyrone -> Londonderry
 	link = { eu4 = 373 v2 = 263 }	# 0 "Pale -> Dublin
-	link = { eu4 = 374 v2 = 265 }	# 0 "Leinster -> Wexford
-	link = { eu4 = 4120 v2 = 264 }	# 0 "Kildare -> Kildare
-	link = { eu4 = 4119 v2 = 259 }	# 0 "Sligo -> Sligo
+	link = { eu4 = 374 eu4 = 4377 v2 = 265 }	# 0 "Leinster, 0 "Ormond -> Wexford
+	link = { eu4 = 4120 eu4 = 4379 v2 = 264 }	# 0 "Kildare, 0 "Midlands -> Kildare
+	link = { eu4 = 4119 eu4 = 4380 v2 = 259 v2 = 257 }	# MANY-TO-MANY: 0 "Sligo, 0 "Donegal -> Sligo, Donegal
 	link = { eu4 = 376 v2 = 258 }	# 0 "Connaught -> Galway
-	link = { eu4 = 375 v2 = 261 }	# 0 "Limerick -> Limerick
-	link = { eu4 = 4118 v2 = 260 v2 = 262 }	# 0 "Cork -> Cork, Waterford
+	link = { eu4 = 375 eu4 = 4378 v2 = 261 v2 = 260 }	# MANY-TO-MANY: 0 "Limerick, 0 "Desmond -> Limerick, Cork
+	link = { eu4 = 4118 v2 = 262 }	# 0 "Cork -> Waterford
 	# Hispania
 	link = { eu4 = 206 v2 = 474 v2 = 476 }	# 0 "Galicia -> La Coruña, Vigo
 	link = { eu4 = 207 v2 = 475 }	# 0 "Asturias -> Oviedo
@@ -1089,47 +1089,47 @@
 	link = { eu4 = 196 v2 = 455 }	# 0 "Toulouse -> Toulouse
 	link = { eu4 = 176 v2 = 457 }	# 0 "Béarn -> Foix
 	link = { eu4 = 173 v2 = 460 }	# 0 "Labourd -> Pau
-	link = { eu4 = 174 v2 = 458 }	# 1 "Bordeaux -> Bordeaux
+	link = { eu4 = 174 v2 = 458 }	# 2 "Aquitaine -> Bordeaux
 	link = { eu4 = 175 v2 = 459 }	# 0 "Armagnac -> Mont de Marsan
-	link = { eu4 = 4112 v2 = 450 v2 = 456 }	# 0 "Cahors -> Cahors, Montauban
-	link = { eu4 = 198 v2 = 462 }	# 0 "Rouergue -> Rodez
+	link = { eu4 = 4112 v2 = 450 v2 = 456 }	# 1 "Quercy -> Cahors, Montauban
+	link = { eu4 = 198 eu4 = 4391 v2 = 462 }	# 0 "Rouergue, 0 "Vivarais -> Rodez
 	link = { eu4 = 199 v2 = 448 v2 = 449 }	# 0 "Auvergne -> Clermont-Ferrand, Aurillac
 	link = { eu4 = 195 v2 = 445 v2 = 447 }	# 0 "Limousin -> Limoges, Tulle
-	link = { eu4 = 194 v2 = 444 }	# 0 "Bergerac -> Angoulême
-	link = { eu4 = 4111 v2 = 442 v2 = 437 }	# 0 "Saintonge -> La Rochelle, La Roche
-	link = { eu4 = 180 v2 = 443 }	# 0 "Poitou -> Poitiers
+	link = { eu4 = 4387 eu4 = 194 v2 = 444 }	# 0 "Angoumois, 1 "Périgord -> Angoulême
+	link = { eu4 = 4111 eu4 = 4386 v2 = 442 v2 = 437 }	# MANY-TO-MANY: 0 "Saintonge, 0 "Bas-Poitou -> La Rochelle, La Roche
+	link = { eu4 = 180 v2 = 443 }	# 1 "Haut-Poitou -> Poitiers
 	link = { eu4 = 179 v2 = 439 v2 = 446 }	# 0 "Berry -> Bourges, Châteauroux
-	link = { eu4 = 190 eu4 = 191 v2 = 430 }	# 0 "Bourbon, 0 "Nevers -> Moulins
-	link = { eu4 = 200 v2 = 461 }	# 0 "Languedoc -> Montpellier
+	link = { eu4 = 190 eu4 = 191 v2 = 430 }	# 1 "Bourbonnais, 1 "Nivernais -> Moulins
+	link = { eu4 = 200 v2 = 461 }	# 1 "Montpellier -> Montpellier
 	link = { eu4 = 201 v2 = 470 v2 = 467 }	# 0 "Provence -> Toulon, Marseilles
 	link = { eu4 = 202 v2 = 468 }	# 0 "Avignon -> Avignon
-	link = { eu4 = 2991 v2 = 471 v2 = 469 }	# 0 "Draguignan -> Frejus, Digne
+	link = { eu4 = 2991 v2 = 471 v2 = 469 }	# 1 "Forcalquier -> Frejus, Digne
 	link = { eu4 = 204 v2 = 454 }	# 0 "Dauphiné -> Grenoble
 	link = { eu4 = 203 v2 = 451 v2 = 452 v2 = 453 }	# 0 "Lyonnais -> Lyon, St Étienne, Valence
 	link = { eu4 = 205 v2 = 465 v2 = 466 }	# 0 "Savoie -> Annecy, Chambéry
 	link = { eu4 = 193 v2 = 432 v2 = 433 }	# 0 "Franche-Comté -> Besançon, Lons
 	link = { eu4 = 1877 v2 = 431 }	# 0 "Charolais -> Macon
-	link = { eu4 = 192 v2 = 428 v2 = 429 v2 = 407 }	# 0 "Bourgogne -> Dijon, Auxerre, Chaumont
+	link = { eu4 = 4392 eu4 = 192 v2 = 428 v2 = 429 v2 = 407 }	# MANY-TO-MANY: 0 "Auxerrois, 1 "Dijonnais -> Dijon, Auxerre, Chaumont
 	link = { eu4 = 189 v2 = 411 v2 = 414 }	# 0 "Lothringen -> Nancy, Épinal
 	link = { eu4 = 187 v2 = 413 }	# 0 "Barrois -> Verdun
 	link = { eu4 = 188 v2 = 412 }	# 0 "Metz -> Metz
 	link = { eu4 = 75 v2 = 409 }	# 0 "Elsass -> Strasbourg
 	link = { eu4 = 1880 v2 = 410 }	# 0 "Sundgau -> Colmar
-	link = { eu4 = 185 v2 = 406 v2 = 427 }	# 0 "Nemours -> Troyes, Melun
-	link = { eu4 = 186 v2 = 408 v2 = 403 }	# 0 "Champagne -> Chalons, Laon
+	link = { eu4 = 185 eu4 = 4390 v2 = 406 v2 = 427 }	# MANY-TO-MANY: 0 "Nemours, 0 "Troyes -> Troyes, Melun
+	link = { eu4 = 186 v2 = 408 v2 = 403 }	# 1 "Reims -> Chalons, Laon
 	link = { eu4 = 181 v2 = 405 }	# 0 "Rethel -> Charleville
 	link = { eu4 = 184 v2 = 438 v2 = 440 v2 = 441 }	# 0 "Orleanais -> Orléans, Blois, Tours
 	link = { eu4 = 178 v2 = 434 }	# 0 "Anjou -> Angers
-	link = { eu4 = 172 v2 = 423 }	# 0 "Nantes -> Nantes
-	link = { eu4 = 171 v2 = 422 }	# 0 "Morbihan -> Vannes
+	link = { eu4 = 172 v2 = 423 }	# 1 "Nantais -> Nantes
+	link = { eu4 = 171 v2 = 422 }	# 1 "Vannetais -> Vannes
 	link = { eu4 = 170 v2 = 420 }	# 0 "Finistère -> Brest
-	link = { eu4 = 169 v2 = 424 v2 = 421 }	# 0 "Armor -> Rennes, St Brieuc
-	link = { eu4 = 177 v2 = 435 v2 = 436 }	# 0 "Maine -> Laval, Le Mans
-	link = { eu4 = 1879 v2 = 417 }	# 0 "Alencon -> Alençon
-	link = { eu4 = 168 v2 = 418 v2 = 419 }	# 0 "Normandie -> Caen, Channel Islands
-	link = { eu4 = 183 v2 = 425 v2 = 426 }	# 0 "Paris -> Paris, Chartres
+	link = { eu4 = 169 eu4 = 4384 v2 = 424 v2 = 421 }	# MANY-TO-MANY: 0 "Armor, 0 "Rennais -> Rennes, St Brieuc
+	link = { eu4 = 177 eu4 = 4389 v2 = 435 v2 = 436 }	# MANY-TO-MANY: 0 "Maine, 0 "Touraine -> Laval, Le Mans
+	link = { eu4 = 1879 v2 = 417 }	# 1 "Alençon -> Alençon
+	link = { eu4 = 168 eu4 = 4385 v2 = 418 v2 = 419 }	# MANY-TO-MANY: 1 "Caen, 0 "Cotentin -> Caen, Channel Islands
+	link = { eu4 = 183 eu4 = 4388 v2 = 425 v2 = 426 }	# MANY-TO-MANY: 0 "Paris, 0 "Chartres -> Paris, Chartres
 	link = { eu4 = 167 v2 = 415 v2 = 416 }	# 0 "Caux -> Rouen, Évreux
-	link = { eu4 = 182 v2 = 2570 }	# 0 "Vermandois -> Beauvais
+	link = { eu4 = 182 v2 = 2570 }	# 1 "Valois -> Beauvais
 	link = { eu4 = 89 v2 = 402 }	# 0 "Picardie -> Amiens
 	link = { eu4 = 88 v2 = 399 v2 = 401 }	# 0 "Artois -> Lille, Arras
 	link = { eu4 = 87 v2 = 400 }	# 0 "Calais -> Dunkirk
@@ -1194,16 +1194,16 @@
 	link = { eu4 = 91 v2 = 394 v2 = 393 }	# 0 "Hainaut -> Charleroi, Tournai
 	link = { eu4 = 90 v2 = 388 }	# 0 "Vlaanderen -> Bruges
 	link = { eu4 = 1865 v2 = 389 }	# 0 "Ghent -> Ghent
-	link = { eu4 = 92 v2 = 387 }	# 0 "Brabant -> Brussels
+	link = { eu4 = 92 v2 = 387 }	# 1 "Brussels -> Brussels
 	link = { eu4 = 2974 v2 = 391 }	# 0 "Loon -> Hasselt
-	link = { eu4 = 1742 v2 = 381 }	# 0 "Limburg -> Maastricht
+	link = { eu4 = 1742 v2 = 381 }	# 1 "Upper Guelders -> Maastricht
 	link = { eu4 = 95 v2 = 380 v2 = 379 }	# 0 "Breda -> Breda, Eindhoven
 	link = { eu4 = 1744 v2 = 390 }	# 0 "Antwerpen -> Antwerp
 	link = { eu4 = 96 v2 = 378 }	# 0 "Zeeland -> Middelburg
-	link = { eu4 = 97 v2 = 375 v2 = 376 }	# 0 "Holland -> Amsterdam, Rotterdam
+	link = { eu4 = 97 eu4 = 4383 v2 = 375 v2 = 376 }	# MANY-TO-MANY: 1 "Amsterdam, 0 "Den Haag -> Amsterdam, Rotterdam
 	link = { eu4 = 98 v2 = 377 }	# 0 "Utrecht -> Utrecht
-	link = { eu4 = 99 v2 = 384 v2 = 382 }	# 0 "Gelre -> Zwolle, Arnhem
-	link = { eu4 = 100 v2 = 383 v2 = 386 v2 = 385 }	# 0 "Friesland -> Groningen, Assen, Leeuwarden
+	link = { eu4 = 99 eu4 = 4381 v2 = 384 v2 = 382 }	# MANY-TO-MANY: 0 "Gelre, 0 "Oversticht -> Zwolle, Arnhem
+	link = { eu4 = 100 eu4 = 4382 v2 = 383 v2 = 386 v2 = 385 }	# MANY-TO-MANY: 0 "Friesland, 0 "Groningen -> Groningen, Assen, Leeuwarden
 	link = { eu4 = 1931 v2 = 543 }	# 0 "East Frisia -> Emden
 	# Austria proper
 	link = { eu4 = 73 v2 = 612 v2 = 614 }	# 0 "Tirol -> Innsbruck, Bregenz
@@ -1749,9 +1749,9 @@
 	link = { eu4 = 363 eu4 = 362 v2 = 1746 }	# 0 "Damietta, 0 "Rosetta -> Dumyat
 	link = { eu4 = 358 v2 = 1751 }	# 0 "Alexandria -> Alexandria
 	link = { eu4 = 2325 v2 = 1752 v2 = 1754 v2 = 1753 }	# 0 "Tarrana -> Matruh, Siwa, Sidi Barrani
-	link = { eu4 = 2318 eu4 = 4323 v2 = 1759 }	# 0 "Bahiriya, 0 "Farafreh -> Bawiti
+	link = { eu4 = 2318 eu4 = 4323 v2 = 1759 }	# 1 "Bahiriya, 0 "Farafreh -> Bawiti
 	link = { eu4 = 1233 v2 = 1760 }	# 0 "Kharga -> Mut
-	link = { eu4 = 4317 v2 = 1747 v2 = 1750 }	# 0 "Buhaira -> Tanta, Giza
+	link = { eu4 = 4317 v2 = 1747 v2 = 1750 }	# 1 "Buhaira -> Tanta, Giza
 	link = { eu4 = 2316 v2 = 1748 }	# 0 "Al Gharbia -> Mansura
 	link = { eu4 = 361 v2 = 1745 v2 = 1749 }	# 0 "Cairo -> Cairo, Ziqaziq
 	link = { eu4 = 359 v2 = 1765 }	# 0 "Fayyum -> Fayyum
@@ -2081,8 +2081,8 @@
 	link = { eu4 = 2210 v2 = 1117 }	# 0 "Kirmanshah -> Kermanshah
 	link = { eu4 = 2211 v2 = 1118 }	# 0 "Ardalan -> Sanandaj
 	# Pakistan
-	link = { eu4 = 4328 v2 = 1220 }	# 0 "Chagai -> Dalbandin
-	link = { eu4 = 2232 eu4 = 576 eu4 = 2068 v2 = 1221 }	# 0 "Kharan, 0 "Kalat, 0 "Siwi -> Kalat
+	link = { eu4 = 4328 }	# 0 "Chagai -> DROPPED
+	link = { eu4 = 2232 eu4 = 576 eu4 = 2068 v2 = 1221 v2 = 1220 }	# MANY-TO-MANY: 0 "Kharan, 0 "Kalat, 0 "Siwi -> Kalat, Dalbandin
 	link = { eu4 = 575 eu4 = 2231 v2 = 1222 }	# 0 "Gwadar, 0 "Bela -> Bela
 	link = { eu4 = 504 v2 = 1288 }	# 0 "Thatta -> Karachi
 	link = { eu4 = 2088 v2 = 1290 }	# 0 "Umarkot -> Umarkot
@@ -2225,7 +2225,7 @@
 	link = { eu4 = 2404 v2 = 1344 }	# 0 "Mergui -> Mergui
 	# Thailand
 	link = { eu4 = 589 v2 = 1355 }	# 0 "Chiang Mai -> Chiang Mai
-	link = { eu4 = 602 eu4 = 1817 v2 = 1360 v2 = 2572 }	# MANY-TO-MANY: 0 "Chiang Rai, 0 "Nan -> Xiangabouli, Nan
+	link = { eu4 = 602 eu4 = 1817 v2 = 2572 }	# 0 "Chiang Rai, 0 "Nan -> Nan
 	link = { eu4 = 2384 eu4 = 2386 eu4 = 2385 v2 = 1358 }	# 0 "Nong Khai, 0 "Chaiyaphum, 0 "Nongbua Lamphu -> Udon Thani
 	link = { eu4 = 2383 v2 = 1359 }	# 0 "Khukhanor Surin -> Sisaket
 	link = { eu4 = 612 v2 = 1350 }	# 0 "Khorat -> Nakhon Ratchasima
@@ -2238,7 +2238,7 @@
 	link = { eu4 = 2391 v2 = 1352 }	# 0 "Thalang -> Phuket
 	link = { eu4 = 594 v2 = 1392 }	# 0 "Pattani -> Pattani
 	# Laos
-	link = { eu4 = 1844 eu4 = 615 eu4 = 2381 v2 = 1356 }	# 0 "Xiankhouang, 0 "Luang Prabang, 0 "Luang Namtha -> Luang Prabang
+	link = { eu4 = 1844 eu4 = 615 eu4 = 2381 v2 = 1356 v2 = 1360 }	# MANY-TO-MANY: 0 "Xiankhouang, 0 "Luang Prabang, 0 "Luang Namtha -> Luang Prabang, Xiangabouli
 	link = { eu4 = 611 eu4 = 614 v2 = 1357 }	# 0 "Sikhottabong, 0 "Vientiane -> Vientiane
 	link = { eu4 = 2382 v2 = 1361 }	# 0 "Savanh Nakhone -> Savannakhet
 	link = { eu4 = 608 v2 = 1362 v2 = 1363 }	# 0 "Champasak -> Salavan, Pakche
@@ -3659,19 +3659,19 @@
 	link = { eu4 = 370 eu4 = 371 v2 = 252 v2 = 3246 }	# MANY-TO-MANY: 0 "Reykjavik, 0 "Akureyri -> Iceland, Jan Mayen
 	# British Isles
 	link = { eu4 = 1979 v2 = 253 }	# 0 "Färöarna -> Faroe Islands
-	link = { eu4 = 1978 eu4 = 369 eu4 = 253 eu4 = 252 eu4 = 4110 v2 = 267 v2 = 270 }	# MANY-TO-MANY: 0 "Shetland, 0 "Orkney, 0 "Western Isles, 0 "Inverness, 0 "Sutherland -> Inverness, Stirling
-	link = { eu4 = 251 v2 = 266 }	# 0 "Aberdeenshire -> Aberdeen
-	link = { eu4 = 250 v2 = 268 }	# 0 "Fife -> Dundee
+	link = { eu4 = 1978 eu4 = 369 eu4 = 253 eu4 = 252 eu4 = 4110 v2 = 267 v2 = 270 }	# MANY-TO-MANY: 0 "Shetland, 0 "Orkney, 1 "Outer Hebrides, 0 "Inverness, 0 "Sutherland -> Inverness, Stirling
+	link = { eu4 = 251 v2 = 266 }	# 1 "Aberdeen -> Aberdeen
+	link = { eu4 = 250 v2 = 268 }	# 1 "Perth -> Dundee
 	link = { eu4 = 249 v2 = 271 }	# 0 "Ayrshire -> Glasgow
 	link = { eu4 = 248 v2 = 269 v2 = 272 }	# 0 "Lothian -> Edinburgh, Dumfries
 	link = { eu4 = 247 v2 = 279 v2 = 304 }	# 0 "Cumbria -> Carlisle, Isle of Man
 	link = { eu4 = 246 v2 = 280 }	# 0 "Northumberland -> Newcastle-upon-Tyne
-	link = { eu4 = 245 v2 = 283 v2 = 282 v2 = 281 }	# 0 "Yorkshire -> Sheffield, Leeds, Hull
+	link = { eu4 = 245 v2 = 283 v2 = 282 v2 = 281 }	# 1 "York -> Sheffield, Leeds, Hull
 	link = { eu4 = 244 v2 = 278 v2 = 277 v2 = 285 }	# 0 "Lancashire -> Manchester, Liverpool, Chester
 	link = { eu4 = 242 v2 = 276 v2 = 275 }	# 0 "Gwynedd -> Holyhead, Llandrindod
-	link = { eu4 = 241 v2 = 273 v2 = 274 }	# 0 "Glamorganshire -> Cardiff, Cardigan
-	link = { eu4 = 240 v2 = 284 v2 = 287 v2 = 286 }	# 0 "Marches -> Birmingham, Coventry, Shrewsbury
-	link = { eu4 = 239 v2 = 296 }	# 0 "Gloucestershire -> Bristol
+	link = { eu4 = 241 v2 = 273 v2 = 274 }	# 1 "Glamorgan -> Cardiff, Cardigan
+	link = { eu4 = 240 v2 = 284 v2 = 287 v2 = 286 }	# 1 "Shrewsbury -> Birmingham, Coventry, Shrewsbury
+	link = { eu4 = 239 v2 = 296 }	# 1 "Gloucester -> Bristol
 	link = { eu4 = 233 v2 = 299 }	# 0 "Cornwall -> Plymouth
 	link = { eu4 = 4130 v2 = 297 v2 = 298 }	# 0 "Somerset -> Salisbury, Bath
 	link = { eu4 = 234 v2 = 303 }	# 0 "Hampshire -> Southampton
@@ -3680,8 +3680,8 @@
 	link = { eu4 = 238 v2 = 293 }	# 0 "Essex -> Chelmsford
 	link = { eu4 = 1860 v2 = 291 v2 = 292 }	# 0 "Norfolk -> Cambridge, Ipswich
 	link = { eu4 = 243 v2 = 290 }	# 0 "Lincolnshire -> Lincoln
-	link = { eu4 = 1861 v2 = 288 v2 = 289 }	# 0 "Derbyshire -> Nottingham, Leicester
-	link = { eu4 = 237 v2 = 294 v2 = 295 }	# 0 "Oxfordshire -> Oxford, St Albans
+	link = { eu4 = 1861 v2 = 288 v2 = 289 }	# 1 "Derby -> Nottingham, Leicester
+	link = { eu4 = 237 v2 = 294 v2 = 295 }	# 1 "Oxford -> Oxford, St Albans
 	link = { eu4 = 4121 v2 = 254 v2 = 256 }	# 0 "Ulster -> Belfast, Armagh
 	link = { eu4 = 372 v2 = 257 v2 = 255 }	# 0 "Tyrone -> Donegal, Londonderry
 	link = { eu4 = 373 v2 = 263 }	# 0 "Pale -> Dublin
@@ -3741,47 +3741,47 @@
 	link = { eu4 = 196 v2 = 455 }	# 0 "Toulouse -> Toulouse
 	link = { eu4 = 176 v2 = 457 }	# 0 "Béarn -> Foix
 	link = { eu4 = 173 v2 = 460 }	# 0 "Labourd -> Pau
-	link = { eu4 = 174 v2 = 458 }	# 1 "Bordeaux -> Bordeaux
+	link = { eu4 = 174 v2 = 458 }	# 2 "Aquitaine -> Bordeaux
 	link = { eu4 = 175 v2 = 459 }	# 0 "Armagnac -> Mont de Marsan
-	link = { eu4 = 4112 v2 = 450 v2 = 456 }	# 0 "Cahors -> Cahors, Montauban
+	link = { eu4 = 4112 v2 = 450 v2 = 456 }	# 1 "Quercy -> Cahors, Montauban
 	link = { eu4 = 198 v2 = 462 }	# 0 "Rouergue -> Rodez
 	link = { eu4 = 199 v2 = 448 v2 = 449 }	# 0 "Auvergne -> Clermont-Ferrand, Aurillac
 	link = { eu4 = 195 v2 = 445 v2 = 447 }	# 0 "Limousin -> Limoges, Tulle
-	link = { eu4 = 194 v2 = 444 }	# 0 "Bergerac -> Angoulême
+	link = { eu4 = 194 v2 = 444 }	# 1 "Périgord -> Angoulême
 	link = { eu4 = 4111 v2 = 442 v2 = 437 }	# 0 "Saintonge -> La Rochelle, La Roche
-	link = { eu4 = 180 v2 = 443 }	# 0 "Poitou -> Poitiers
+	link = { eu4 = 180 v2 = 443 }	# 1 "Haut-Poitou -> Poitiers
 	link = { eu4 = 179 v2 = 439 v2 = 446 }	# 0 "Berry -> Bourges, Châteauroux
-	link = { eu4 = 190 eu4 = 191 v2 = 430 }	# 0 "Bourbon, 0 "Nevers -> Moulins
-	link = { eu4 = 200 v2 = 461 }	# 0 "Languedoc -> Montpellier
+	link = { eu4 = 190 eu4 = 191 v2 = 430 }	# 1 "Bourbonnais, 1 "Nivernais -> Moulins
+	link = { eu4 = 200 v2 = 461 }	# 1 "Montpellier -> Montpellier
 	link = { eu4 = 201 v2 = 470 v2 = 467 }	# 0 "Provence -> Toulon, Marseilles
 	link = { eu4 = 202 v2 = 468 }	# 0 "Avignon -> Avignon
-	link = { eu4 = 2991 v2 = 471 v2 = 469 }	# 0 "Draguignan -> Frejus, Digne
+	link = { eu4 = 2991 v2 = 471 v2 = 469 }	# 1 "Forcalquier -> Frejus, Digne
 	link = { eu4 = 204 v2 = 454 }	# 0 "Dauphiné -> Grenoble
 	link = { eu4 = 203 v2 = 451 v2 = 452 v2 = 453 }	# 0 "Lyonnais -> Lyon, St Étienne, Valence
 	link = { eu4 = 205 v2 = 465 v2 = 466 }	# 0 "Savoie -> Annecy, Chambéry
 	link = { eu4 = 193 v2 = 432 v2 = 433 }	# 0 "Franche-Comté -> Besançon, Lons
 	link = { eu4 = 1877 v2 = 431 }	# 0 "Charolais -> Macon
-	link = { eu4 = 192 v2 = 428 v2 = 429 v2 = 407 }	# 0 "Bourgogne -> Dijon, Auxerre, Chaumont
+	link = { eu4 = 192 v2 = 428 v2 = 429 v2 = 407 }	# 1 "Dijonnais -> Dijon, Auxerre, Chaumont
 	link = { eu4 = 189 v2 = 411 v2 = 414 }	# 0 "Lothringen -> Nancy, Épinal
 	link = { eu4 = 187 v2 = 413 }	# 0 "Barrois -> Verdun
 	link = { eu4 = 188 v2 = 412 }	# 0 "Metz -> Metz
 	link = { eu4 = 75 v2 = 409 }	# 0 "Elsass -> Strasbourg
 	link = { eu4 = 1880 v2 = 410 }	# 0 "Sundgau -> Colmar
 	link = { eu4 = 185 v2 = 406 v2 = 427 }	# 0 "Nemours -> Troyes, Melun
-	link = { eu4 = 186 v2 = 408 v2 = 403 }	# 0 "Champagne -> Chalons, Laon
+	link = { eu4 = 186 v2 = 408 v2 = 403 }	# 1 "Reims -> Chalons, Laon
 	link = { eu4 = 181 v2 = 405 }	# 0 "Rethel -> Charleville
 	link = { eu4 = 184 v2 = 438 v2 = 440 v2 = 441 }	# 0 "Orleanais -> Orléans, Blois, Tours
 	link = { eu4 = 178 v2 = 434 }	# 0 "Anjou -> Angers
-	link = { eu4 = 172 v2 = 423 }	# 0 "Nantes -> Nantes
-	link = { eu4 = 171 v2 = 422 }	# 0 "Morbihan -> Vannes
+	link = { eu4 = 172 v2 = 423 }	# 1 "Nantais -> Nantes
+	link = { eu4 = 171 v2 = 422 }	# 1 "Vannetais -> Vannes
 	link = { eu4 = 170 v2 = 420 }	# 0 "Finistère -> Brest
 	link = { eu4 = 169 v2 = 424 v2 = 421 }	# 0 "Armor -> Rennes, St Brieuc
 	link = { eu4 = 177 v2 = 435 v2 = 436 }	# 0 "Maine -> Laval, Le Mans
-	link = { eu4 = 1879 v2 = 417 }	# 0 "Alencon -> Alençon
-	link = { eu4 = 168 v2 = 418 v2 = 419 }	# 0 "Normandie -> Caen, Channel Islands
+	link = { eu4 = 1879 v2 = 417 }	# 1 "Alençon -> Alençon
+	link = { eu4 = 168 v2 = 418 v2 = 419 }	# 1 "Caen -> Caen, Channel Islands
 	link = { eu4 = 183 v2 = 425 v2 = 426 }	# 0 "Paris -> Paris, Chartres
 	link = { eu4 = 167 v2 = 415 v2 = 416 }	# 0 "Caux -> Rouen, Évreux
-	link = { eu4 = 182 v2 = 2570 }	# 0 "Vermandois -> Beauvais
+	link = { eu4 = 182 v2 = 2570 }	# 1 "Valois -> Beauvais
 	link = { eu4 = 89 v2 = 402 }	# 0 "Picardie -> Amiens
 	link = { eu4 = 88 v2 = 399 v2 = 401 }	# 0 "Artois -> Lille, Arras
 	link = { eu4 = 87 v2 = 400 }	# 0 "Calais -> Dunkirk
@@ -3846,13 +3846,13 @@
 	link = { eu4 = 91 v2 = 394 v2 = 393 }	# 0 "Hainaut -> Charleroi, Tournai
 	link = { eu4 = 90 v2 = 388 }	# 0 "Vlaanderen -> Bruges
 	link = { eu4 = 1865 v2 = 389 }	# 0 "Ghent -> Ghent
-	link = { eu4 = 92 v2 = 387 }	# 0 "Brabant -> Brussels
+	link = { eu4 = 92 v2 = 387 }	# 1 "Brussels -> Brussels
 	link = { eu4 = 2974 v2 = 391 }	# 0 "Loon -> Hasselt
-	link = { eu4 = 1742 v2 = 381 }	# 0 "Limburg -> Maastricht
+	link = { eu4 = 1742 v2 = 381 }	# 1 "Upper Guelders -> Maastricht
 	link = { eu4 = 95 v2 = 380 v2 = 379 }	# 0 "Breda -> Breda, Eindhoven
 	link = { eu4 = 1744 v2 = 390 }	# 0 "Antwerpen -> Antwerp
 	link = { eu4 = 96 v2 = 378 }	# 0 "Zeeland -> Middelburg
-	link = { eu4 = 97 v2 = 375 v2 = 376 }	# 0 "Holland -> Amsterdam, Rotterdam
+	link = { eu4 = 97 v2 = 375 v2 = 376 }	# 1 "Amsterdam -> Amsterdam, Rotterdam
 	link = { eu4 = 98 v2 = 377 }	# 0 "Utrecht -> Utrecht
 	link = { eu4 = 99 v2 = 384 v2 = 382 }	# 0 "Gelre -> Zwolle, Arnhem
 	link = { eu4 = 100 v2 = 383 v2 = 386 v2 = 385 }	# 0 "Friesland -> Groningen, Assen, Leeuwarden
@@ -4401,9 +4401,9 @@
 	link = { eu4 = 363 eu4 = 362 v2 = 1746 }	# 0 "Damietta, 0 "Rosetta -> Dumyat
 	link = { eu4 = 358 v2 = 1751 }	# 0 "Alexandria -> Alexandria
 	link = { eu4 = 2325 v2 = 1752 v2 = 1754 v2 = 1753 }	# 0 "Tarrana -> Matruh, Siwa, Sidi Barrani
-	link = { eu4 = 2318 eu4 = 4323 v2 = 1759 }	# 0 "Bahiriya, 0 "Farafreh -> Bawiti
+	link = { eu4 = 2318 eu4 = 4323 v2 = 1759 }	# 1 "Bahiriya, 0 "Farafreh -> Bawiti
 	link = { eu4 = 1233 v2 = 1760 }	# 0 "Kharga -> Mut
-	link = { eu4 = 4317 v2 = 1747 v2 = 1750 }	# 0 "Buhaira -> Tanta, Giza
+	link = { eu4 = 4317 v2 = 1747 v2 = 1750 }	# 1 "Buhaira -> Tanta, Giza
 	link = { eu4 = 2316 v2 = 1748 }	# 0 "Al Gharbia -> Mansura
 	link = { eu4 = 361 v2 = 1745 v2 = 1749 }	# 0 "Cairo -> Cairo, Ziqaziq
 	link = { eu4 = 359 v2 = 1765 }	# 0 "Fayyum -> Fayyum
@@ -6310,19 +6310,19 @@
 	link = { eu4 = 370 eu4 = 371 v2 = 252 v2 = 3246 }	# MANY-TO-MANY: 0 "Reykjavik, 0 "Akureyri -> Iceland, Jan Mayen
 	# British Isles
 	link = { eu4 = 1979 v2 = 253 }	# 0 "Färöarna -> Faroe Islands
-	link = { eu4 = 1978 eu4 = 369 eu4 = 253 eu4 = 252 eu4 = 4110 v2 = 267 v2 = 270 }	# MANY-TO-MANY: 0 "Shetland, 0 "Orkney, 0 "Western Isles, 0 "Inverness, 0 "Sutherland -> Inverness, Stirling
-	link = { eu4 = 251 v2 = 266 }	# 0 "Aberdeenshire -> Aberdeen
-	link = { eu4 = 250 v2 = 268 }	# 0 "Fife -> Dundee
+	link = { eu4 = 1978 eu4 = 369 eu4 = 253 eu4 = 252 eu4 = 4110 v2 = 267 v2 = 270 }	# MANY-TO-MANY: 0 "Shetland, 0 "Orkney, 1 "Outer Hebrides, 0 "Inverness, 0 "Sutherland -> Inverness, Stirling
+	link = { eu4 = 251 v2 = 266 }	# 1 "Aberdeen -> Aberdeen
+	link = { eu4 = 250 v2 = 268 }	# 1 "Perth -> Dundee
 	link = { eu4 = 249 v2 = 271 }	# 0 "Ayrshire -> Glasgow
 	link = { eu4 = 248 v2 = 269 v2 = 272 }	# 0 "Lothian -> Edinburgh, Dumfries
 	link = { eu4 = 247 v2 = 279 v2 = 304 }	# 0 "Cumbria -> Carlisle, Isle of Man
 	link = { eu4 = 246 v2 = 280 }	# 0 "Northumberland -> Newcastle-upon-Tyne
-	link = { eu4 = 245 v2 = 283 v2 = 282 v2 = 281 }	# 0 "Yorkshire -> Sheffield, Leeds, Hull
+	link = { eu4 = 245 v2 = 283 v2 = 282 v2 = 281 }	# 1 "York -> Sheffield, Leeds, Hull
 	link = { eu4 = 244 v2 = 278 v2 = 277 v2 = 285 }	# 0 "Lancashire -> Manchester, Liverpool, Chester
 	link = { eu4 = 242 v2 = 276 v2 = 275 }	# 0 "Gwynedd -> Holyhead, Llandrindod
-	link = { eu4 = 241 v2 = 273 v2 = 274 }	# 0 "Glamorganshire -> Cardiff, Cardigan
-	link = { eu4 = 240 v2 = 284 v2 = 287 v2 = 286 }	# 0 "Marches -> Birmingham, Coventry, Shrewsbury
-	link = { eu4 = 239 v2 = 296 }	# 0 "Gloucestershire -> Bristol
+	link = { eu4 = 241 v2 = 273 v2 = 274 }	# 1 "Glamorgan -> Cardiff, Cardigan
+	link = { eu4 = 240 v2 = 284 v2 = 287 v2 = 286 }	# 1 "Shrewsbury -> Birmingham, Coventry, Shrewsbury
+	link = { eu4 = 239 v2 = 296 }	# 1 "Gloucester -> Bristol
 	link = { eu4 = 233 v2 = 299 }	# 0 "Cornwall -> Plymouth
 	link = { eu4 = 4130 v2 = 297 v2 = 298 }	# 0 "Somerset -> Salisbury, Bath
 	link = { eu4 = 234 v2 = 303 }	# 0 "Hampshire -> Southampton
@@ -6331,8 +6331,8 @@
 	link = { eu4 = 238 v2 = 293 }	# 0 "Essex -> Chelmsford
 	link = { eu4 = 1860 v2 = 291 v2 = 292 }	# 0 "Norfolk -> Cambridge, Ipswich
 	link = { eu4 = 243 v2 = 290 }	# 0 "Lincolnshire -> Lincoln
-	link = { eu4 = 1861 v2 = 288 v2 = 289 }	# 0 "Derbyshire -> Nottingham, Leicester
-	link = { eu4 = 237 v2 = 294 v2 = 295 }	# 0 "Oxfordshire -> Oxford, St Albans
+	link = { eu4 = 1861 v2 = 288 v2 = 289 }	# 1 "Derby -> Nottingham, Leicester
+	link = { eu4 = 237 v2 = 294 v2 = 295 }	# 1 "Oxford -> Oxford, St Albans
 	link = { eu4 = 4121 v2 = 254 v2 = 256 }	# 0 "Ulster -> Belfast, Armagh
 	link = { eu4 = 372 v2 = 257 v2 = 255 }	# 0 "Tyrone -> Donegal, Londonderry
 	link = { eu4 = 373 v2 = 263 }	# 0 "Pale -> Dublin
@@ -6392,47 +6392,47 @@
 	link = { eu4 = 196 v2 = 455 }	# 0 "Toulouse -> Toulouse
 	link = { eu4 = 176 v2 = 457 }	# 0 "Béarn -> Foix
 	link = { eu4 = 173 v2 = 460 }	# 0 "Labourd -> Pau
-	link = { eu4 = 174 v2 = 458 }	# 1 "Bordeaux -> Bordeaux
+	link = { eu4 = 174 v2 = 458 }	# 2 "Aquitaine -> Bordeaux
 	link = { eu4 = 175 v2 = 459 }	# 0 "Armagnac -> Mont de Marsan
-	link = { eu4 = 4112 v2 = 450 v2 = 456 }	# 0 "Cahors -> Cahors, Montauban
+	link = { eu4 = 4112 v2 = 450 v2 = 456 }	# 1 "Quercy -> Cahors, Montauban
 	link = { eu4 = 198 v2 = 462 }	# 0 "Rouergue -> Rodez
 	link = { eu4 = 199 v2 = 448 v2 = 449 }	# 0 "Auvergne -> Clermont-Ferrand, Aurillac
 	link = { eu4 = 195 v2 = 445 v2 = 447 }	# 0 "Limousin -> Limoges, Tulle
-	link = { eu4 = 194 v2 = 444 }	# 0 "Bergerac -> Angoulême
+	link = { eu4 = 194 v2 = 444 }	# 1 "Périgord -> Angoulême
 	link = { eu4 = 4111 v2 = 442 v2 = 437 }	# 0 "Saintonge -> La Rochelle, La Roche
-	link = { eu4 = 180 v2 = 443 }	# 0 "Poitou -> Poitiers
+	link = { eu4 = 180 v2 = 443 }	# 1 "Haut-Poitou -> Poitiers
 	link = { eu4 = 179 v2 = 439 v2 = 446 }	# 0 "Berry -> Bourges, Châteauroux
-	link = { eu4 = 190 eu4 = 191 v2 = 430 }	# 0 "Bourbon, 0 "Nevers -> Moulins
-	link = { eu4 = 200 v2 = 461 }	# 0 "Languedoc -> Montpellier
+	link = { eu4 = 190 eu4 = 191 v2 = 430 }	# 1 "Bourbonnais, 1 "Nivernais -> Moulins
+	link = { eu4 = 200 v2 = 461 }	# 1 "Montpellier -> Montpellier
 	link = { eu4 = 201 v2 = 470 v2 = 467 }	# 0 "Provence -> Toulon, Marseilles
 	link = { eu4 = 202 v2 = 468 }	# 0 "Avignon -> Avignon
-	link = { eu4 = 2991 v2 = 471 v2 = 469 }	# 0 "Draguignan -> Frejus, Digne
+	link = { eu4 = 2991 v2 = 471 v2 = 469 }	# 1 "Forcalquier -> Frejus, Digne
 	link = { eu4 = 204 v2 = 454 }	# 0 "Dauphiné -> Grenoble
 	link = { eu4 = 203 v2 = 451 v2 = 452 v2 = 453 }	# 0 "Lyonnais -> Lyon, St Étienne, Valence
 	link = { eu4 = 205 v2 = 465 v2 = 466 }	# 0 "Savoie -> Annecy, Chambéry
 	link = { eu4 = 193 v2 = 432 v2 = 433 }	# 0 "Franche-Comté -> Besançon, Lons
 	link = { eu4 = 1877 v2 = 431 }	# 0 "Charolais -> Macon
-	link = { eu4 = 192 v2 = 428 v2 = 429 v2 = 407 }	# 0 "Bourgogne -> Dijon, Auxerre, Chaumont
+	link = { eu4 = 192 v2 = 428 v2 = 429 v2 = 407 }	# 1 "Dijonnais -> Dijon, Auxerre, Chaumont
 	link = { eu4 = 189 v2 = 411 v2 = 414 }	# 0 "Lothringen -> Nancy, Épinal
 	link = { eu4 = 187 v2 = 413 }	# 0 "Barrois -> Verdun
 	link = { eu4 = 188 v2 = 412 }	# 0 "Metz -> Metz
 	link = { eu4 = 75 v2 = 409 }	# 0 "Elsass -> Strasbourg
 	link = { eu4 = 1880 v2 = 410 }	# 0 "Sundgau -> Colmar
 	link = { eu4 = 185 v2 = 406 v2 = 427 }	# 0 "Nemours -> Troyes, Melun
-	link = { eu4 = 186 v2 = 408 v2 = 403 }	# 0 "Champagne -> Chalons, Laon
+	link = { eu4 = 186 v2 = 408 v2 = 403 }	# 1 "Reims -> Chalons, Laon
 	link = { eu4 = 181 v2 = 405 }	# 0 "Rethel -> Charleville
 	link = { eu4 = 184 v2 = 438 v2 = 440 v2 = 441 }	# 0 "Orleanais -> Orléans, Blois, Tours
 	link = { eu4 = 178 v2 = 434 }	# 0 "Anjou -> Angers
-	link = { eu4 = 172 v2 = 423 }	# 0 "Nantes -> Nantes
-	link = { eu4 = 171 v2 = 422 }	# 0 "Morbihan -> Vannes
+	link = { eu4 = 172 v2 = 423 }	# 1 "Nantais -> Nantes
+	link = { eu4 = 171 v2 = 422 }	# 1 "Vannetais -> Vannes
 	link = { eu4 = 170 v2 = 420 }	# 0 "Finistère -> Brest
 	link = { eu4 = 169 v2 = 424 v2 = 421 }	# 0 "Armor -> Rennes, St Brieuc
 	link = { eu4 = 177 v2 = 435 v2 = 436 }	# 0 "Maine -> Laval, Le Mans
-	link = { eu4 = 1879 v2 = 417 }	# 0 "Alencon -> Alençon
-	link = { eu4 = 168 v2 = 418 v2 = 419 }	# 0 "Normandie -> Caen, Channel Islands
+	link = { eu4 = 1879 v2 = 417 }	# 1 "Alençon -> Alençon
+	link = { eu4 = 168 v2 = 418 v2 = 419 }	# 1 "Caen -> Caen, Channel Islands
 	link = { eu4 = 183 v2 = 425 v2 = 426 }	# 0 "Paris -> Paris, Chartres
 	link = { eu4 = 167 v2 = 415 v2 = 416 }	# 0 "Caux -> Rouen, Évreux
-	link = { eu4 = 182 v2 = 2570 }	# 0 "Vermandois -> Beauvais
+	link = { eu4 = 182 v2 = 2570 }	# 1 "Valois -> Beauvais
 	link = { eu4 = 89 v2 = 402 }	# 0 "Picardie -> Amiens
 	link = { eu4 = 88 v2 = 399 v2 = 401 }	# 0 "Artois -> Lille, Arras
 	link = { eu4 = 87 v2 = 400 }	# 0 "Calais -> Dunkirk
@@ -6497,13 +6497,13 @@
 	link = { eu4 = 91 v2 = 394 v2 = 393 }	# 0 "Hainaut -> Charleroi, Tournai
 	link = { eu4 = 90 v2 = 388 }	# 0 "Vlaanderen -> Bruges
 	link = { eu4 = 1865 v2 = 389 }	# 0 "Ghent -> Ghent
-	link = { eu4 = 92 v2 = 387 }	# 0 "Brabant -> Brussels
+	link = { eu4 = 92 v2 = 387 }	# 1 "Brussels -> Brussels
 	link = { eu4 = 2974 v2 = 391 }	# 0 "Loon -> Hasselt
-	link = { eu4 = 1742 v2 = 381 }	# 0 "Limburg -> Maastricht
+	link = { eu4 = 1742 v2 = 381 }	# 1 "Upper Guelders -> Maastricht
 	link = { eu4 = 95 v2 = 380 v2 = 379 }	# 0 "Breda -> Breda, Eindhoven
 	link = { eu4 = 1744 v2 = 390 }	# 0 "Antwerpen -> Antwerp
 	link = { eu4 = 96 v2 = 378 }	# 0 "Zeeland -> Middelburg
-	link = { eu4 = 97 v2 = 375 v2 = 376 }	# 0 "Holland -> Amsterdam, Rotterdam
+	link = { eu4 = 97 v2 = 375 v2 = 376 }	# 1 "Amsterdam -> Amsterdam, Rotterdam
 	link = { eu4 = 98 v2 = 377 }	# 0 "Utrecht -> Utrecht
 	link = { eu4 = 99 v2 = 384 v2 = 382 }	# 0 "Gelre -> Zwolle, Arnhem
 	link = { eu4 = 100 v2 = 383 v2 = 386 v2 = 385 }	# 0 "Friesland -> Groningen, Assen, Leeuwarden
@@ -7034,7 +7034,7 @@
 	link = { eu4 = 363 eu4 = 362 v2 = 1746 }	# 0 "Damietta, 0 "Rosetta -> Dumyat
 	link = { eu4 = 358 v2 = 1751 }	# 0 "Alexandria -> Alexandria
 	link = { eu4 = 2325 v2 = 1752 v2 = 1754 v2 = 1753 }	# 0 "Tarrana -> Matruh, Siwa, Sidi Barrani
-	link = { eu4 = 2318 v2 = 1759 }	# 0 "Bahiriya -> Bawiti
+	link = { eu4 = 2318 v2 = 1759 }	# 1 "Bahiriya -> Bawiti
 	link = { eu4 = 1233 v2 = 1760 }	# 0 "Kharga -> Mut
 	link = { eu4 = 2316 v2 = 1750 v2 = 1747 v2 = 1748 }	# 0 "Al Gharbia -> Giza, Tanta, Mansura
 	link = { eu4 = 361 v2 = 1745 v2 = 1749 }	# 0 "Cairo -> Cairo, Ziqaziq
@@ -8930,19 +8930,19 @@
 	link = { eu4 = 370 eu4 = 371 v2 = 252 v2 = 3246 }	# MANY-TO-MANY: 0 "Reykjavik, 0 "Akureyri -> Iceland, Jan Mayen
 	# British Isles
 	link = { eu4 = 1979 v2 = 253 }	# 0 "Färöarna -> Faroe Islands
-	link = { eu4 = 1978 eu4 = 369 eu4 = 253 eu4 = 252 eu4 = 4110 v2 = 267 v2 = 270 }	# MANY-TO-MANY: 0 "Shetland, 0 "Orkney, 0 "Western Isles, 0 "Inverness, 0 "Sutherland -> Inverness, Stirling
-	link = { eu4 = 251 v2 = 266 }	# 0 "Aberdeenshire -> Aberdeen
-	link = { eu4 = 250 v2 = 268 }	# 0 "Fife -> Dundee
+	link = { eu4 = 1978 eu4 = 369 eu4 = 253 eu4 = 252 eu4 = 4110 v2 = 267 v2 = 270 }	# MANY-TO-MANY: 0 "Shetland, 0 "Orkney, 1 "Outer Hebrides, 0 "Inverness, 0 "Sutherland -> Inverness, Stirling
+	link = { eu4 = 251 v2 = 266 }	# 1 "Aberdeen -> Aberdeen
+	link = { eu4 = 250 v2 = 268 }	# 1 "Perth -> Dundee
 	link = { eu4 = 249 v2 = 271 }	# 0 "Ayrshire -> Glasgow
 	link = { eu4 = 248 v2 = 269 v2 = 272 }	# 0 "Lothian -> Edinburgh, Dumfries
 	link = { eu4 = 247 v2 = 279 v2 = 304 }	# 0 "Cumbria -> Carlisle, Isle of Man
 	link = { eu4 = 246 v2 = 280 }	# 0 "Northumberland -> Newcastle-upon-Tyne
-	link = { eu4 = 245 v2 = 283 v2 = 282 v2 = 281 }	# 0 "Yorkshire -> Sheffield, Leeds, Hull
+	link = { eu4 = 245 v2 = 283 v2 = 282 v2 = 281 }	# 1 "York -> Sheffield, Leeds, Hull
 	link = { eu4 = 244 v2 = 278 v2 = 277 v2 = 285 }	# 0 "Lancashire -> Manchester, Liverpool, Chester
 	link = { eu4 = 242 v2 = 276 v2 = 275 }	# 0 "Gwynedd -> Holyhead, Llandrindod
-	link = { eu4 = 241 v2 = 273 v2 = 274 }	# 0 "Glamorganshire -> Cardiff, Cardigan
-	link = { eu4 = 240 v2 = 284 v2 = 287 v2 = 286 }	# 0 "Marches -> Birmingham, Coventry, Shrewsbury
-	link = { eu4 = 239 v2 = 296 }	# 0 "Gloucestershire -> Bristol
+	link = { eu4 = 241 v2 = 273 v2 = 274 }	# 1 "Glamorgan -> Cardiff, Cardigan
+	link = { eu4 = 240 v2 = 284 v2 = 287 v2 = 286 }	# 1 "Shrewsbury -> Birmingham, Coventry, Shrewsbury
+	link = { eu4 = 239 v2 = 296 }	# 1 "Gloucester -> Bristol
 	link = { eu4 = 233 v2 = 299 }	# 0 "Cornwall -> Plymouth
 	link = { eu4 = 4130 v2 = 297 v2 = 298 }	# 0 "Somerset -> Salisbury, Bath
 	link = { eu4 = 234 v2 = 303 }	# 0 "Hampshire -> Southampton
@@ -8951,8 +8951,8 @@
 	link = { eu4 = 238 v2 = 293 }	# 0 "Essex -> Chelmsford
 	link = { eu4 = 1860 v2 = 291 v2 = 292 }	# 0 "Norfolk -> Cambridge, Ipswich
 	link = { eu4 = 243 v2 = 290 }	# 0 "Lincolnshire -> Lincoln
-	link = { eu4 = 1861 v2 = 288 v2 = 289 }	# 0 "Derbyshire -> Nottingham, Leicester
-	link = { eu4 = 237 v2 = 294 v2 = 295 }	# 0 "Oxfordshire -> Oxford, St Albans
+	link = { eu4 = 1861 v2 = 288 v2 = 289 }	# 1 "Derby -> Nottingham, Leicester
+	link = { eu4 = 237 v2 = 294 v2 = 295 }	# 1 "Oxford -> Oxford, St Albans
 	link = { eu4 = 4121 v2 = 254 v2 = 256 }	# 0 "Ulster -> Belfast, Armagh
 	link = { eu4 = 372 v2 = 257 v2 = 255 }	# 0 "Tyrone -> Donegal, Londonderry
 	link = { eu4 = 373 v2 = 263 }	# 0 "Pale -> Dublin
@@ -9012,47 +9012,47 @@
 	link = { eu4 = 196 v2 = 455 }	# 0 "Toulouse -> Toulouse
 	link = { eu4 = 176 v2 = 457 }	# 0 "Béarn -> Foix
 	link = { eu4 = 173 v2 = 460 }	# 0 "Labourd -> Pau
-	link = { eu4 = 174 v2 = 458 }	# 1 "Bordeaux -> Bordeaux
+	link = { eu4 = 174 v2 = 458 }	# 2 "Aquitaine -> Bordeaux
 	link = { eu4 = 175 v2 = 459 }	# 0 "Armagnac -> Mont de Marsan
-	link = { eu4 = 4112 v2 = 450 v2 = 456 }	# 0 "Cahors -> Cahors, Montauban
+	link = { eu4 = 4112 v2 = 450 v2 = 456 }	# 1 "Quercy -> Cahors, Montauban
 	link = { eu4 = 198 v2 = 462 }	# 0 "Rouergue -> Rodez
 	link = { eu4 = 199 v2 = 448 v2 = 449 }	# 0 "Auvergne -> Clermont-Ferrand, Aurillac
 	link = { eu4 = 195 v2 = 445 v2 = 447 }	# 0 "Limousin -> Limoges, Tulle
-	link = { eu4 = 194 v2 = 444 }	# 0 "Bergerac -> Angoulême
+	link = { eu4 = 194 v2 = 444 }	# 1 "Périgord -> Angoulême
 	link = { eu4 = 4111 v2 = 442 v2 = 437 }	# 0 "Saintonge -> La Rochelle, La Roche
-	link = { eu4 = 180 v2 = 443 }	# 0 "Poitou -> Poitiers
+	link = { eu4 = 180 v2 = 443 }	# 1 "Haut-Poitou -> Poitiers
 	link = { eu4 = 179 v2 = 439 v2 = 446 }	# 0 "Berry -> Bourges, Châteauroux
-	link = { eu4 = 190 eu4 = 191 v2 = 430 }	# 0 "Bourbon, 0 "Nevers -> Moulins
-	link = { eu4 = 200 v2 = 461 }	# 0 "Languedoc -> Montpellier
+	link = { eu4 = 190 eu4 = 191 v2 = 430 }	# 1 "Bourbonnais, 1 "Nivernais -> Moulins
+	link = { eu4 = 200 v2 = 461 }	# 1 "Montpellier -> Montpellier
 	link = { eu4 = 201 v2 = 470 v2 = 467 }	# 0 "Provence -> Toulon, Marseilles
 	link = { eu4 = 202 v2 = 468 }	# 0 "Avignon -> Avignon
-	link = { eu4 = 2991 v2 = 471 v2 = 469 }	# 0 "Draguignan -> Frejus, Digne
+	link = { eu4 = 2991 v2 = 471 v2 = 469 }	# 1 "Forcalquier -> Frejus, Digne
 	link = { eu4 = 204 v2 = 454 }	# 0 "Dauphiné -> Grenoble
 	link = { eu4 = 203 v2 = 451 v2 = 452 v2 = 453 }	# 0 "Lyonnais -> Lyon, St Étienne, Valence
 	link = { eu4 = 205 v2 = 465 v2 = 466 }	# 0 "Savoie -> Annecy, Chambéry
 	link = { eu4 = 193 v2 = 432 v2 = 433 }	# 0 "Franche-Comté -> Besançon, Lons
 	link = { eu4 = 1877 v2 = 431 }	# 0 "Charolais -> Macon
-	link = { eu4 = 192 v2 = 428 v2 = 429 v2 = 407 }	# 0 "Bourgogne -> Dijon, Auxerre, Chaumont
+	link = { eu4 = 192 v2 = 428 v2 = 429 v2 = 407 }	# 1 "Dijonnais -> Dijon, Auxerre, Chaumont
 	link = { eu4 = 189 v2 = 411 v2 = 414 }	# 0 "Lothringen -> Nancy, Épinal
 	link = { eu4 = 187 v2 = 413 }	# 0 "Barrois -> Verdun
 	link = { eu4 = 188 v2 = 412 }	# 0 "Metz -> Metz
 	link = { eu4 = 75 v2 = 409 }	# 0 "Elsass -> Strasbourg
 	link = { eu4 = 1880 v2 = 410 }	# 0 "Sundgau -> Colmar
 	link = { eu4 = 185 v2 = 406 v2 = 427 }	# 0 "Nemours -> Troyes, Melun
-	link = { eu4 = 186 v2 = 408 v2 = 403 }	# 0 "Champagne -> Chalons, Laon
+	link = { eu4 = 186 v2 = 408 v2 = 403 }	# 1 "Reims -> Chalons, Laon
 	link = { eu4 = 181 v2 = 405 }	# 0 "Rethel -> Charleville
 	link = { eu4 = 184 v2 = 438 v2 = 440 v2 = 441 }	# 0 "Orleanais -> Orléans, Blois, Tours
 	link = { eu4 = 178 v2 = 434 }	# 0 "Anjou -> Angers
-	link = { eu4 = 172 v2 = 423 }	# 0 "Nantes -> Nantes
-	link = { eu4 = 171 v2 = 422 }	# 0 "Morbihan -> Vannes
+	link = { eu4 = 172 v2 = 423 }	# 1 "Nantais -> Nantes
+	link = { eu4 = 171 v2 = 422 }	# 1 "Vannetais -> Vannes
 	link = { eu4 = 170 v2 = 420 }	# 0 "Finistère -> Brest
 	link = { eu4 = 169 v2 = 424 v2 = 421 }	# 0 "Armor -> Rennes, St Brieuc
 	link = { eu4 = 177 v2 = 435 v2 = 436 }	# 0 "Maine -> Laval, Le Mans
-	link = { eu4 = 1879 v2 = 417 }	# 0 "Alencon -> Alençon
-	link = { eu4 = 168 v2 = 418 v2 = 419 }	# 0 "Normandie -> Caen, Channel Islands
+	link = { eu4 = 1879 v2 = 417 }	# 1 "Alençon -> Alençon
+	link = { eu4 = 168 v2 = 418 v2 = 419 }	# 1 "Caen -> Caen, Channel Islands
 	link = { eu4 = 183 v2 = 425 v2 = 426 }	# 0 "Paris -> Paris, Chartres
 	link = { eu4 = 167 v2 = 415 v2 = 416 }	# 0 "Caux -> Rouen, Évreux
-	link = { eu4 = 182 v2 = 2570 }	# 0 "Vermandois -> Beauvais
+	link = { eu4 = 182 v2 = 2570 }	# 1 "Valois -> Beauvais
 	link = { eu4 = 89 v2 = 402 }	# 0 "Picardie -> Amiens
 	link = { eu4 = 88 v2 = 399 v2 = 401 }	# 0 "Artois -> Lille, Arras
 	link = { eu4 = 87 v2 = 400 }	# 0 "Calais -> Dunkirk
@@ -9117,13 +9117,13 @@
 	link = { eu4 = 91 v2 = 394 v2 = 393 }	# 0 "Hainaut -> Charleroi, Tournai
 	link = { eu4 = 90 v2 = 388 }	# 0 "Vlaanderen -> Bruges
 	link = { eu4 = 1865 v2 = 389 }	# 0 "Ghent -> Ghent
-	link = { eu4 = 92 v2 = 387 }	# 0 "Brabant -> Brussels
+	link = { eu4 = 92 v2 = 387 }	# 1 "Brussels -> Brussels
 	link = { eu4 = 2974 v2 = 391 }	# 0 "Loon -> Hasselt
-	link = { eu4 = 1742 v2 = 381 }	# 0 "Limburg -> Maastricht
+	link = { eu4 = 1742 v2 = 381 }	# 1 "Upper Guelders -> Maastricht
 	link = { eu4 = 95 v2 = 380 v2 = 379 }	# 0 "Breda -> Breda, Eindhoven
 	link = { eu4 = 1744 v2 = 390 }	# 0 "Antwerpen -> Antwerp
 	link = { eu4 = 96 v2 = 378 }	# 0 "Zeeland -> Middelburg
-	link = { eu4 = 97 v2 = 375 v2 = 376 }	# 0 "Holland -> Amsterdam, Rotterdam
+	link = { eu4 = 97 v2 = 375 v2 = 376 }	# 1 "Amsterdam -> Amsterdam, Rotterdam
 	link = { eu4 = 98 v2 = 377 }	# 0 "Utrecht -> Utrecht
 	link = { eu4 = 99 v2 = 384 v2 = 382 }	# 0 "Gelre -> Zwolle, Arnhem
 	link = { eu4 = 100 v2 = 383 v2 = 386 v2 = 385 }	# 0 "Friesland -> Groningen, Assen, Leeuwarden
@@ -9651,7 +9651,7 @@
 	link = { eu4 = 363 eu4 = 362 v2 = 1746 }	# 0 "Damietta, 0 "Rosetta -> Dumyat
 	link = { eu4 = 358 v2 = 1751 }	# 0 "Alexandria -> Alexandria
 	link = { eu4 = 2325 v2 = 1752 v2 = 1754 v2 = 1753 }	# 0 "Tarrana -> Matruh, Siwa, Sidi Barrani
-	link = { eu4 = 2318 v2 = 1759 }	# 0 "Bahiriya -> Bawiti
+	link = { eu4 = 2318 v2 = 1759 }	# 1 "Bahiriya -> Bawiti
 	link = { eu4 = 1233 v2 = 1760 }	# 0 "Kharga -> Mut
 	link = { eu4 = 2316 v2 = 1750 v2 = 1747 v2 = 1748 }	# 0 "Al Gharbia -> Giza, Tanta, Mansura
 	link = { eu4 = 361 v2 = 1745 v2 = 1749 }	# 0 "Cairo -> Cairo, Ziqaziq
@@ -11505,19 +11505,19 @@
 	link = { eu4 = 370 eu4 = 371 v2 = 252 v2 = 3246 }	# MANY-TO-MANY: 0 "Reykjavik, 0 "Akureyri -> Iceland, Jan Mayen
 	# British Isles
 	link = { eu4 = 1979 v2 = 253 }	# 0 "Färöarna -> Faroe Islands
-	link = { eu4 = 1978 eu4 = 369 eu4 = 253 eu4 = 252 eu4 = 4110 v2 = 267 v2 = 270 }	# MANY-TO-MANY: 0 "Shetland, 0 "Orkney, 0 "Western Isles, 0 "Inverness, 0 "Sutherland -> Inverness, Stirling
-	link = { eu4 = 251 v2 = 266 }	# 0 "Aberdeenshire -> Aberdeen
-	link = { eu4 = 250 v2 = 268 }	# 0 "Fife -> Dundee
+	link = { eu4 = 1978 eu4 = 369 eu4 = 253 eu4 = 252 eu4 = 4110 v2 = 267 v2 = 270 }	# MANY-TO-MANY: 0 "Shetland, 0 "Orkney, 1 "Outer Hebrides, 0 "Inverness, 0 "Sutherland -> Inverness, Stirling
+	link = { eu4 = 251 v2 = 266 }	# 1 "Aberdeen -> Aberdeen
+	link = { eu4 = 250 v2 = 268 }	# 1 "Perth -> Dundee
 	link = { eu4 = 249 v2 = 271 }	# 0 "Ayrshire -> Glasgow
 	link = { eu4 = 248 v2 = 269 v2 = 272 }	# 0 "Lothian -> Edinburgh, Dumfries
 	link = { eu4 = 247 v2 = 279 v2 = 304 }	# 0 "Cumbria -> Carlisle, Isle of Man
 	link = { eu4 = 246 v2 = 280 }	# 0 "Northumberland -> Newcastle-upon-Tyne
-	link = { eu4 = 245 v2 = 283 v2 = 282 v2 = 281 }	# 0 "Yorkshire -> Sheffield, Leeds, Hull
+	link = { eu4 = 245 v2 = 283 v2 = 282 v2 = 281 }	# 1 "York -> Sheffield, Leeds, Hull
 	link = { eu4 = 244 v2 = 278 v2 = 277 v2 = 285 }	# 0 "Lancashire -> Manchester, Liverpool, Chester
 	link = { eu4 = 242 v2 = 276 v2 = 275 }	# 0 "Gwynedd -> Holyhead, Llandrindod
-	link = { eu4 = 241 v2 = 273 v2 = 274 }	# 0 "Glamorganshire -> Cardiff, Cardigan
-	link = { eu4 = 240 v2 = 284 v2 = 287 v2 = 286 }	# 0 "Marches -> Birmingham, Coventry, Shrewsbury
-	link = { eu4 = 239 v2 = 296 }	# 0 "Gloucestershire -> Bristol
+	link = { eu4 = 241 v2 = 273 v2 = 274 }	# 1 "Glamorgan -> Cardiff, Cardigan
+	link = { eu4 = 240 v2 = 284 v2 = 287 v2 = 286 }	# 1 "Shrewsbury -> Birmingham, Coventry, Shrewsbury
+	link = { eu4 = 239 v2 = 296 }	# 1 "Gloucester -> Bristol
 	link = { eu4 = 233 v2 = 299 }	# 0 "Cornwall -> Plymouth
 	link = { eu4 = 4130 v2 = 297 v2 = 298 }	# 0 "Somerset -> Salisbury, Bath
 	link = { eu4 = 234 v2 = 303 }	# 0 "Hampshire -> Southampton
@@ -11526,8 +11526,8 @@
 	link = { eu4 = 238 v2 = 293 }	# 0 "Essex -> Chelmsford
 	link = { eu4 = 1860 v2 = 291 v2 = 292 }	# 0 "Norfolk -> Cambridge, Ipswich
 	link = { eu4 = 243 v2 = 290 }	# 0 "Lincolnshire -> Lincoln
-	link = { eu4 = 1861 v2 = 288 v2 = 289 }	# 0 "Derbyshire -> Nottingham, Leicester
-	link = { eu4 = 237 v2 = 294 v2 = 295 }	# 0 "Oxfordshire -> Oxford, St Albans
+	link = { eu4 = 1861 v2 = 288 v2 = 289 }	# 1 "Derby -> Nottingham, Leicester
+	link = { eu4 = 237 v2 = 294 v2 = 295 }	# 1 "Oxford -> Oxford, St Albans
 	link = { eu4 = 4121 v2 = 254 v2 = 256 }	# 0 "Ulster -> Belfast, Armagh
 	link = { eu4 = 372 v2 = 257 v2 = 255 }	# 0 "Tyrone -> Donegal, Londonderry
 	link = { eu4 = 373 v2 = 263 }	# 0 "Pale -> Dublin
@@ -11587,47 +11587,47 @@
 	link = { eu4 = 196 v2 = 455 }	# 0 "Toulouse -> Toulouse
 	link = { eu4 = 176 v2 = 457 }	# 0 "Béarn -> Foix
 	link = { eu4 = 173 v2 = 460 }	# 0 "Labourd -> Pau
-	link = { eu4 = 174 v2 = 458 }	# 1 "Bordeaux -> Bordeaux
+	link = { eu4 = 174 v2 = 458 }	# 2 "Aquitaine -> Bordeaux
 	link = { eu4 = 175 v2 = 459 }	# 0 "Armagnac -> Mont de Marsan
-	link = { eu4 = 4112 v2 = 450 v2 = 456 }	# 0 "Cahors -> Cahors, Montauban
+	link = { eu4 = 4112 v2 = 450 v2 = 456 }	# 1 "Quercy -> Cahors, Montauban
 	link = { eu4 = 198 v2 = 462 }	# 0 "Rouergue -> Rodez
 	link = { eu4 = 199 v2 = 448 v2 = 449 }	# 0 "Auvergne -> Clermont-Ferrand, Aurillac
 	link = { eu4 = 195 v2 = 445 v2 = 447 }	# 0 "Limousin -> Limoges, Tulle
-	link = { eu4 = 194 v2 = 444 }	# 0 "Bergerac -> Angoulême
+	link = { eu4 = 194 v2 = 444 }	# 1 "Périgord -> Angoulême
 	link = { eu4 = 4111 v2 = 442 v2 = 437 }	# 0 "Saintonge -> La Rochelle, La Roche
-	link = { eu4 = 180 v2 = 443 }	# 0 "Poitou -> Poitiers
+	link = { eu4 = 180 v2 = 443 }	# 1 "Haut-Poitou -> Poitiers
 	link = { eu4 = 179 v2 = 439 v2 = 446 }	# 0 "Berry -> Bourges, Châteauroux
-	link = { eu4 = 190 eu4 = 191 v2 = 430 }	# 0 "Bourbon, 0 "Nevers -> Moulins
-	link = { eu4 = 200 v2 = 461 }	# 0 "Languedoc -> Montpellier
+	link = { eu4 = 190 eu4 = 191 v2 = 430 }	# 1 "Bourbonnais, 1 "Nivernais -> Moulins
+	link = { eu4 = 200 v2 = 461 }	# 1 "Montpellier -> Montpellier
 	link = { eu4 = 201 v2 = 470 v2 = 467 }	# 0 "Provence -> Toulon, Marseilles
 	link = { eu4 = 202 v2 = 468 }	# 0 "Avignon -> Avignon
-	link = { eu4 = 2991 v2 = 471 v2 = 469 }	# 0 "Draguignan -> Frejus, Digne
+	link = { eu4 = 2991 v2 = 471 v2 = 469 }	# 1 "Forcalquier -> Frejus, Digne
 	link = { eu4 = 204 v2 = 454 }	# 0 "Dauphiné -> Grenoble
 	link = { eu4 = 203 v2 = 451 v2 = 452 v2 = 453 }	# 0 "Lyonnais -> Lyon, St Étienne, Valence
 	link = { eu4 = 205 v2 = 465 v2 = 466 }	# 0 "Savoie -> Annecy, Chambéry
 	link = { eu4 = 193 v2 = 432 v2 = 433 }	# 0 "Franche-Comté -> Besançon, Lons
 	link = { eu4 = 1877 v2 = 431 }	# 0 "Charolais -> Macon
-	link = { eu4 = 192 v2 = 428 v2 = 429 v2 = 407 }	# 0 "Bourgogne -> Dijon, Auxerre, Chaumont
+	link = { eu4 = 192 v2 = 428 v2 = 429 v2 = 407 }	# 1 "Dijonnais -> Dijon, Auxerre, Chaumont
 	link = { eu4 = 189 v2 = 411 v2 = 414 }	# 0 "Lothringen -> Nancy, Épinal
 	link = { eu4 = 187 v2 = 413 }	# 0 "Barrois -> Verdun
 	link = { eu4 = 188 v2 = 412 }	# 0 "Metz -> Metz
 	link = { eu4 = 75 v2 = 409 }	# 0 "Elsass -> Strasbourg
 	link = { eu4 = 1880 v2 = 410 }	# 0 "Sundgau -> Colmar
 	link = { eu4 = 185 v2 = 406 v2 = 427 }	# 0 "Nemours -> Troyes, Melun
-	link = { eu4 = 186 v2 = 408 v2 = 403 }	# 0 "Champagne -> Chalons, Laon
+	link = { eu4 = 186 v2 = 408 v2 = 403 }	# 1 "Reims -> Chalons, Laon
 	link = { eu4 = 181 v2 = 405 }	# 0 "Rethel -> Charleville
 	link = { eu4 = 184 v2 = 438 v2 = 440 v2 = 441 }	# 0 "Orleanais -> Orléans, Blois, Tours
 	link = { eu4 = 178 v2 = 434 }	# 0 "Anjou -> Angers
-	link = { eu4 = 172 v2 = 423 }	# 0 "Nantes -> Nantes
-	link = { eu4 = 171 v2 = 422 }	# 0 "Morbihan -> Vannes
+	link = { eu4 = 172 v2 = 423 }	# 1 "Nantais -> Nantes
+	link = { eu4 = 171 v2 = 422 }	# 1 "Vannetais -> Vannes
 	link = { eu4 = 170 v2 = 420 }	# 0 "Finistère -> Brest
 	link = { eu4 = 169 v2 = 424 v2 = 421 }	# 0 "Armor -> Rennes, St Brieuc
 	link = { eu4 = 177 v2 = 435 v2 = 436 }	# 0 "Maine -> Laval, Le Mans
-	link = { eu4 = 1879 v2 = 417 }	# 0 "Alencon -> Alençon
-	link = { eu4 = 168 v2 = 418 v2 = 419 }	# 0 "Normandie -> Caen, Channel Islands
+	link = { eu4 = 1879 v2 = 417 }	# 1 "Alençon -> Alençon
+	link = { eu4 = 168 v2 = 418 v2 = 419 }	# 1 "Caen -> Caen, Channel Islands
 	link = { eu4 = 183 v2 = 425 v2 = 426 }	# 0 "Paris -> Paris, Chartres
 	link = { eu4 = 167 v2 = 415 v2 = 416 }	# 0 "Caux -> Rouen, Évreux
-	link = { eu4 = 182 v2 = 2570 }	# 0 "Vermandois -> Beauvais
+	link = { eu4 = 182 v2 = 2570 }	# 1 "Valois -> Beauvais
 	link = { eu4 = 89 v2 = 402 }	# 0 "Picardie -> Amiens
 	link = { eu4 = 88 v2 = 399 v2 = 401 }	# 0 "Artois -> Lille, Arras
 	link = { eu4 = 87 v2 = 400 }	# 0 "Calais -> Dunkirk
@@ -11692,13 +11692,13 @@
 	link = { eu4 = 91 v2 = 394 v2 = 393 }	# 0 "Hainaut -> Charleroi, Tournai
 	link = { eu4 = 90 v2 = 388 }	# 0 "Vlaanderen -> Bruges
 	link = { eu4 = 1865 v2 = 389 }	# 0 "Ghent -> Ghent
-	link = { eu4 = 92 v2 = 387 }	# 0 "Brabant -> Brussels
+	link = { eu4 = 92 v2 = 387 }	# 1 "Brussels -> Brussels
 	link = { eu4 = 2974 v2 = 391 }	# 0 "Loon -> Hasselt
-	link = { eu4 = 1742 v2 = 381 }	# 0 "Limburg -> Maastricht
+	link = { eu4 = 1742 v2 = 381 }	# 1 "Upper Guelders -> Maastricht
 	link = { eu4 = 95 v2 = 380 v2 = 379 }	# 0 "Breda -> Breda, Eindhoven
 	link = { eu4 = 1744 v2 = 390 }	# 0 "Antwerpen -> Antwerp
 	link = { eu4 = 96 v2 = 378 }	# 0 "Zeeland -> Middelburg
-	link = { eu4 = 97 v2 = 375 v2 = 376 }	# 0 "Holland -> Amsterdam, Rotterdam
+	link = { eu4 = 97 v2 = 375 v2 = 376 }	# 1 "Amsterdam -> Amsterdam, Rotterdam
 	link = { eu4 = 98 v2 = 377 }	# 0 "Utrecht -> Utrecht
 	link = { eu4 = 99 v2 = 384 v2 = 382 }	# 0 "Gelre -> Zwolle, Arnhem
 	link = { eu4 = 100 v2 = 383 v2 = 386 v2 = 385 }	# 0 "Friesland -> Groningen, Assen, Leeuwarden
@@ -12225,7 +12225,7 @@
 	link = { eu4 = 363 eu4 = 362 v2 = 1746 }	# 0 "Damietta, 0 "Rosetta -> Dumyat
 	link = { eu4 = 358 v2 = 1751 }	# 0 "Alexandria -> Alexandria
 	link = { eu4 = 2325 v2 = 1752 v2 = 1754 v2 = 1753 }	# 0 "Tarrana -> Matruh, Siwa, Sidi Barrani
-	link = { eu4 = 2318 v2 = 1759 }	# 0 "Bahiriya -> Bawiti
+	link = { eu4 = 2318 v2 = 1759 }	# 1 "Bahiriya -> Bawiti
 	link = { eu4 = 1233 v2 = 1760 }	# 0 "Kharga -> Mut
 	link = { eu4 = 2316 v2 = 1750 v2 = 1747 v2 = 1748 }	# 0 "Al Gharbia -> Giza, Tanta, Mansura
 	link = { eu4 = 361 v2 = 1745 v2 = 1749 }	# 0 "Cairo -> Cairo, Ziqaziq
@@ -13820,7 +13820,7 @@
 	link = { eu4 = 2316 v2 = 1748 v2 = 1747 }	# 0 "Al Gharbia -> Mansura, Tanta
 	link = { eu4 = 359 v2 = 1765 }	# 0 "Fayyum -> Fayyum
 	link = { eu4 = 2317 v2 = 1764 v2 = 1763 }	# 0 "Minya -> Minya, Bani Suwayf
-	link = { eu4 = 2318 v2 = 1759 }	# 0 "Bahiriya -> Bawiti
+	link = { eu4 = 2318 v2 = 1759 }	# 1 "Bahiriya -> Bawiti
 	link = { eu4 = 2320 v2 = 1772 }	# 0 "Ras Gharib -> Ras Gharib
 	link = { eu4 = 1233 v2 = 1760 }	# 0 "Kharga -> Mut
 	link = { eu4 = 2319 v2 = 1762 v2 = 2559 }	# 0 "Manfalut -> Asyut, Suhaj
@@ -14715,25 +14715,25 @@
 	# British Isles
 	link = { eu4 = 233 eu4 = 4130 v2 = 299 v2 = 298 }	# MANY-TO-MANY: 0 "Cornwall, 0 "Somerset -> Plymouth, Bath
 	link = { eu4 = 234 v2 = 297 v2 = 303 v2 = 419 }	# 0 "Hampshire -> Salisbury, Southampton, Channel Islands
-	link = { eu4 = 239 v2 = 296 }	# 0 "Gloucestershire -> Bristol
+	link = { eu4 = 239 v2 = 296 }	# 1 "Gloucester -> Bristol
 	link = { eu4 = 235 v2 = 302 v2 = 301 }	# 0 "Kent -> Brighton, Canterbury
 	link = { eu4 = 236 v2 = 300 }	# 0 "London -> London
 	link = { eu4 = 238 v2 = 293 }	# 0 "Essex -> Chelmsford
 	link = { eu4 = 1860 v2 = 291 v2 = 292 }	# 0 "Norfolk -> Cambridge, Ipswich
-	link = { eu4 = 237 v2 = 295 v2 = 294 }	# 0 "Oxfordshire -> St Albans, Oxford
+	link = { eu4 = 237 v2 = 295 v2 = 294 }	# 1 "Oxford -> St Albans, Oxford
 	link = { eu4 = 243 v2 = 290 }	# 0 "Lincolnshire -> Lincoln
-	link = { eu4 = 1861 v2 = 289 v2 = 288 }	# 0 "Derbyshire -> Leicester, Nottingham
-	link = { eu4 = 240 v2 = 286 v2 = 287 v2 = 284 }	# 0 "Marches -> Shrewsbury, Coventry, Birmingham
-	link = { eu4 = 241 v2 = 273 v2 = 274 }	# 0 "Glamorganshire -> Cardiff, Cardigan
+	link = { eu4 = 1861 v2 = 289 v2 = 288 }	# 1 "Derby -> Leicester, Nottingham
+	link = { eu4 = 240 v2 = 286 v2 = 287 v2 = 284 }	# 1 "Shrewsbury -> Shrewsbury, Coventry, Birmingham
+	link = { eu4 = 241 v2 = 273 v2 = 274 }	# 1 "Glamorgan -> Cardiff, Cardigan
 	link = { eu4 = 242 v2 = 275 v2 = 276 }	# 0 "Gwynedd -> Llandrindod, Holyhead
 	link = { eu4 = 244 v2 = 285 v2 = 278 v2 = 277 }	# 0 "Lancashire -> Chester, Manchester, Liverpool
-	link = { eu4 = 245 v2 = 282 v2 = 283 v2 = 281 }	# 0 "Yorkshire -> Leeds, Sheffield, Hull
+	link = { eu4 = 245 v2 = 282 v2 = 283 v2 = 281 }	# 1 "York -> Leeds, Sheffield, Hull
 	link = { eu4 = 246 v2 = 280 }	# 0 "Northumberland -> Newcastle-upon-Tyne
 	link = { eu4 = 247 v2 = 279 v2 = 304 }	# 0 "Cumbria -> Carlisle, Isle of Man
 	link = { eu4 = 1979 v2 = 253 }	# 0 "Färöarna -> Faroe Islands
-	link = { eu4 = 1978 eu4 = 369 eu4 = 253 eu4 = 252 eu4 = 4110 v2 = 267 v2 = 270 }	# MANY-TO-MANY: 0 "Shetland, 0 "Orkney, 0 "Western Isles, 0 "Inverness, 0 "Sutherland -> Inverness, Stirling
-	link = { eu4 = 251 v2 = 266 }	# 0 "Aberdeenshire -> Aberdeen
-	link = { eu4 = 250 v2 = 268 }	# 0 "Fife -> Dundee
+	link = { eu4 = 1978 eu4 = 369 eu4 = 253 eu4 = 252 eu4 = 4110 v2 = 267 v2 = 270 }	# MANY-TO-MANY: 0 "Shetland, 0 "Orkney, 1 "Outer Hebrides, 0 "Inverness, 0 "Sutherland -> Inverness, Stirling
+	link = { eu4 = 251 v2 = 266 }	# 1 "Aberdeen -> Aberdeen
+	link = { eu4 = 250 v2 = 268 }	# 1 "Perth -> Dundee
 	link = { eu4 = 249 eu4 = 248 v2 = 271 v2 = 272 v2 = 269 }	# MANY-TO-MANY: 0 "Ayrshire, 0 "Lothian -> Glasgow, Dumfries, Edinburgh
 	# Ireland
 	link = { eu4 = 4121 v2 = 254 }	# 0 "Ulster -> Belfast
@@ -14760,49 +14760,49 @@
 	link = { eu4 = 203 v2 = 451 }	# 0 "Lyonnais -> Lyon
 	link = { eu4 = 204 v2 = 454 }	# 0 "Dauphiné -> Grenoble
 	link = { eu4 = 201 v2 = 470 v2 = 467 }	# 0 "Provence -> Toulon, Marseilles
-	link = { eu4 = 2991 v2 = 471 v2 = 469 }	# 0 "Draguignan -> Frejus, Digne
+	link = { eu4 = 2991 v2 = 471 v2 = 469 }	# 1 "Forcalquier -> Frejus, Digne
 	link = { eu4 = 102 v2 = 472 }	# 0 "Nice -> Nice
-	link = { eu4 = 202 eu4 = 200 v2 = 453 v2 = 468 v2 = 461 }	# MANY-TO-MANY: 0 "Avignon, 0 "Languedoc -> Valence, Avignon, Montpellier
+	link = { eu4 = 202 eu4 = 200 v2 = 453 v2 = 468 v2 = 461 }	# MANY-TO-MANY: 0 "Avignon, 1 "Montpellier -> Valence, Avignon, Montpellier
 	link = { eu4 = 2753 v2 = 463 }	# 0 "Narbonne -> Carcassonne
 	link = { eu4 = 197 v2 = 464 }	# 0 "Roussillon -> Perpignan
 	link = { eu4 = 196 v2 = 455 v2 = 457 v2 = 456 }	# 0 "Toulouse -> Toulouse, Foix, Montauban
-	link = { eu4 = 174 eu4 = 175 v2 = 459 v2 = 458 }	# MANY-TO-MANY: 1 "Bordeaux, 0 "Armagnac -> Mont de Marsan, Bordeaux
+	link = { eu4 = 174 eu4 = 175 v2 = 459 v2 = 458 }	# MANY-TO-MANY: 2 "Aquitaine, 0 "Armagnac -> Mont de Marsan, Bordeaux
 	link = { eu4 = 176 eu4 = 173 v2 = 460 }	# 0 "Béarn, 0 "Labourd -> Pau
-	link = { eu4 = 180 v2 = 444 v2 = 443 }	# 0 "Poitou -> Angoulême, Poitiers
+	link = { eu4 = 180 v2 = 444 v2 = 443 }	# 1 "Haut-Poitou -> Angoulême, Poitiers
 	link = { eu4 = 4111 v2 = 442 v2 = 437 }	# 0 "Saintonge -> La Rochelle, La Roche
 	link = { eu4 = 170 v2 = 420 }	# 0 "Finistère -> Brest
-	link = { eu4 = 171 v2 = 422 }	# 0 "Morbihan -> Vannes
-	link = { eu4 = 172 v2 = 423 }	# 0 "Nantes -> Nantes
+	link = { eu4 = 171 v2 = 422 }	# 1 "Vannetais -> Vannes
+	link = { eu4 = 172 v2 = 423 }	# 1 "Nantais -> Nantes
 	link = { eu4 = 169 v2 = 424 v2 = 421 }	# 0 "Armor -> Rennes, St Brieuc
-	link = { eu4 = 168 v2 = 418 v2 = 417 }	# 0 "Normandie -> Caen, Alençon
+	link = { eu4 = 168 v2 = 418 v2 = 417 }	# 1 "Caen -> Caen, Alençon
 	link = { eu4 = 167 v2 = 415 v2 = 416 }	# 0 "Caux -> Rouen, Évreux
 	link = { eu4 = 183 v2 = 425 v2 = 2570 v2 = 427 v2 = 426 }	# 0 "Paris -> Paris, Beauvais, Melun, Chartres
-	link = { eu4 = 182 v2 = 403 }	# 0 "Vermandois -> Laon
-	link = { eu4 = 1879 eu4 = 177 v2 = 436 v2 = 435 }	# MANY-TO-MANY: 0 "Alencon, 0 "Maine -> Le Mans, Laval
+	link = { eu4 = 182 v2 = 403 }	# 1 "Valois -> Laon
+	link = { eu4 = 1879 eu4 = 177 v2 = 436 v2 = 435 }	# MANY-TO-MANY: 1 "Alençon, 0 "Maine -> Le Mans, Laval
 	link = { eu4 = 178 v2 = 441 v2 = 434 }	# 0 "Anjou -> Tours, Angers
 	link = { eu4 = 184 v2 = 440 v2 = 438 }	# 0 "Orleanais -> Blois, Orléans
-	link = { eu4 = 186 v2 = 408 v2 = 406 }	# 0 "Champagne -> Chalons, Troyes
-	link = { eu4 = 192 v2 = 428 }	# 0 "Bourgogne -> Dijon
+	link = { eu4 = 186 v2 = 408 v2 = 406 }	# 1 "Reims -> Chalons, Troyes
+	link = { eu4 = 192 v2 = 428 }	# 1 "Dijonnais -> Dijon
 	link = { eu4 = 185 v2 = 429 v2 = 407 }	# 0 "Nemours -> Auxerre, Chaumont
 	link = { eu4 = 1877 v2 = 431 }	# 0 "Charolais -> Macon
 	link = { eu4 = 198 v2 = 462 v2 = 449 }	# 0 "Rouergue -> Rodez, Aurillac
-	link = { eu4 = 194 eu4 = 4112 v2 = 450 v2 = 447 }	# MANY-TO-MANY: 0 "Bergerac, 0 "Cahors -> Cahors, Tulle
+	link = { eu4 = 194 eu4 = 4112 v2 = 450 v2 = 447 }	# MANY-TO-MANY: 1 "Périgord, 1 "Quercy -> Cahors, Tulle
 	link = { eu4 = 179 eu4 = 195 v2 = 439 v2 = 446 v2 = 445 }	# MANY-TO-MANY: 0 "Berry, 0 "Limousin -> Bourges, Châteauroux, Limoges
-	link = { eu4 = 191 eu4 = 190 v2 = 430 }	# 0 "Nevers, 0 "Bourbon -> Moulins
+	link = { eu4 = 191 eu4 = 190 v2 = 430 }	# 1 "Nivernais, 1 "Bourbonnais -> Moulins
 	link = { eu4 = 199 v2 = 452 v2 = 448 }	# 0 "Auvergne -> St Étienne, Clermont-Ferrand
 	# Benelux
 	link = { eu4 = 94 v2 = 397 }	# 0 "Luxemburg -> Luxembourg
-	link = { eu4 = 1742 v2 = 396 v2 = 381 }	# 0 "Limburg -> Spa, Maastricht
+	link = { eu4 = 1742 v2 = 396 v2 = 381 }	# 1 "Upper Guelders -> Spa, Maastricht
 	link = { eu4 = 93 v2 = 398 v2 = 395 }	# 0 "Liège -> Arlon, Liège
 	link = { eu4 = 2974 v2 = 391 }	# 0 "Loon -> Hasselt
 	link = { eu4 = 90 v2 = 388 }	# 0 "Vlaanderen -> Bruges
-	link = { eu4 = 92 v2 = 387 }	# 0 "Brabant -> Brussels
+	link = { eu4 = 92 v2 = 387 }	# 1 "Brussels -> Brussels
 	link = { eu4 = 1744 v2 = 390 }	# 0 "Antwerpen -> Antwerp
 	link = { eu4 = 1865 v2 = 389 }	# 0 "Ghent -> Ghent
 	link = { eu4 = 91 v2 = 394 v2 = 393 }	# 0 "Hainaut -> Charleroi, Tournai
 	link = { eu4 = 1866 v2 = 392 }	# 0 "Namur -> Namur
 	link = { eu4 = 96 v2 = 378 }	# 0 "Zeeland -> Middelburg
-	link = { eu4 = 97 v2 = 375 v2 = 376 }	# 0 "Holland -> Amsterdam, Rotterdam
+	link = { eu4 = 97 v2 = 375 v2 = 376 }	# 1 "Amsterdam -> Amsterdam, Rotterdam
 	link = { eu4 = 100 v2 = 385 v2 = 383 v2 = 386 }	# 0 "Friesland -> Leeuwarden, Groningen, Assen
 	link = { eu4 = 99 v2 = 384 v2 = 382 }	# 0 "Gelre -> Zwolle, Arnhem
 	link = { eu4 = 98 v2 = 377 }	# 0 "Utrecht -> Utrecht
@@ -16378,7 +16378,7 @@
 	link = { eu4 = 2316 v2 = 1748 v2 = 1747 }	# 0 "Al Gharbia -> Mansura, Tanta
 	link = { eu4 = 359 v2 = 1765 }	# 0 "Fayyum -> Fayyum
 	link = { eu4 = 2317 v2 = 1764 v2 = 1763 }	# 0 "Minya -> Minya, Bani Suwayf
-	link = { eu4 = 2318 v2 = 1759 }	# 0 "Bahiriya -> Bawiti
+	link = { eu4 = 2318 v2 = 1759 }	# 1 "Bahiriya -> Bawiti
 	link = { eu4 = 2320 v2 = 1772 }	# 0 "Ras Gharib -> Ras Gharib
 	link = { eu4 = 1233 v2 = 1760 }	# 0 "Kharga -> Mut
 	link = { eu4 = 2319 v2 = 1762 v2 = 2559 }	# 0 "Manfalut -> Asyut, Suhaj
@@ -17271,25 +17271,25 @@
 	# British Isles
 	link = { eu4 = 233 eu4 = 4130 v2 = 299 v2 = 298 }	# MANY-TO-MANY: 0 "Cornwall, 0 "Somerset -> Plymouth, Bath
 	link = { eu4 = 234 v2 = 297 v2 = 303 v2 = 419 }	# 0 "Hampshire -> Salisbury, Southampton, Channel Islands
-	link = { eu4 = 239 v2 = 296 }	# 0 "Gloucestershire -> Bristol
+	link = { eu4 = 239 v2 = 296 }	# 1 "Gloucester -> Bristol
 	link = { eu4 = 235 v2 = 302 v2 = 301 }	# 0 "Kent -> Brighton, Canterbury
 	link = { eu4 = 236 v2 = 300 }	# 0 "London -> London
 	link = { eu4 = 238 v2 = 293 }	# 0 "Essex -> Chelmsford
 	link = { eu4 = 1860 v2 = 291 v2 = 292 }	# 0 "Norfolk -> Cambridge, Ipswich
-	link = { eu4 = 237 v2 = 295 v2 = 294 }	# 0 "Oxfordshire -> St Albans, Oxford
+	link = { eu4 = 237 v2 = 295 v2 = 294 }	# 1 "Oxford -> St Albans, Oxford
 	link = { eu4 = 243 v2 = 290 }	# 0 "Lincolnshire -> Lincoln
-	link = { eu4 = 1861 v2 = 289 v2 = 288 }	# 0 "Derbyshire -> Leicester, Nottingham
-	link = { eu4 = 240 v2 = 286 v2 = 287 v2 = 284 }	# 0 "Marches -> Shrewsbury, Coventry, Birmingham
-	link = { eu4 = 241 v2 = 273 v2 = 274 }	# 0 "Glamorganshire -> Cardiff, Cardigan
+	link = { eu4 = 1861 v2 = 289 v2 = 288 }	# 1 "Derby -> Leicester, Nottingham
+	link = { eu4 = 240 v2 = 286 v2 = 287 v2 = 284 }	# 1 "Shrewsbury -> Shrewsbury, Coventry, Birmingham
+	link = { eu4 = 241 v2 = 273 v2 = 274 }	# 1 "Glamorgan -> Cardiff, Cardigan
 	link = { eu4 = 242 v2 = 275 v2 = 276 }	# 0 "Gwynedd -> Llandrindod, Holyhead
 	link = { eu4 = 244 v2 = 285 v2 = 278 v2 = 277 }	# 0 "Lancashire -> Chester, Manchester, Liverpool
-	link = { eu4 = 245 v2 = 282 v2 = 283 v2 = 281 }	# 0 "Yorkshire -> Leeds, Sheffield, Hull
+	link = { eu4 = 245 v2 = 282 v2 = 283 v2 = 281 }	# 1 "York -> Leeds, Sheffield, Hull
 	link = { eu4 = 246 v2 = 280 }	# 0 "Northumberland -> Newcastle-upon-Tyne
 	link = { eu4 = 247 v2 = 279 v2 = 304 }	# 0 "Cumbria -> Carlisle, Isle of Man
 	link = { eu4 = 1979 v2 = 253 }	# 0 "Färöarna -> Faroe Islands
-	link = { eu4 = 1978 eu4 = 369 eu4 = 253 eu4 = 252 eu4 = 4110 v2 = 267 v2 = 270 }	# MANY-TO-MANY: 0 "Shetland, 0 "Orkney, 0 "Western Isles, 0 "Inverness, 0 "Sutherland -> Inverness, Stirling
-	link = { eu4 = 251 v2 = 266 }	# 0 "Aberdeenshire -> Aberdeen
-	link = { eu4 = 250 v2 = 268 }	# 0 "Fife -> Dundee
+	link = { eu4 = 1978 eu4 = 369 eu4 = 253 eu4 = 252 eu4 = 4110 v2 = 267 v2 = 270 }	# MANY-TO-MANY: 0 "Shetland, 0 "Orkney, 1 "Outer Hebrides, 0 "Inverness, 0 "Sutherland -> Inverness, Stirling
+	link = { eu4 = 251 v2 = 266 }	# 1 "Aberdeen -> Aberdeen
+	link = { eu4 = 250 v2 = 268 }	# 1 "Perth -> Dundee
 	link = { eu4 = 249 eu4 = 248 v2 = 271 v2 = 272 v2 = 269 }	# MANY-TO-MANY: 0 "Ayrshire, 0 "Lothian -> Glasgow, Dumfries, Edinburgh
 	# Ireland
 	link = { eu4 = 4121 v2 = 254 }	# 0 "Ulster -> Belfast
@@ -17316,49 +17316,49 @@
 	link = { eu4 = 203 v2 = 451 }	# 0 "Lyonnais -> Lyon
 	link = { eu4 = 204 v2 = 454 }	# 0 "Dauphiné -> Grenoble
 	link = { eu4 = 201 v2 = 470 v2 = 467 }	# 0 "Provence -> Toulon, Marseilles
-	link = { eu4 = 2991 v2 = 471 v2 = 469 }	# 0 "Draguignan -> Frejus, Digne
+	link = { eu4 = 2991 v2 = 471 v2 = 469 }	# 1 "Forcalquier -> Frejus, Digne
 	link = { eu4 = 102 v2 = 472 }	# 0 "Nice -> Nice
-	link = { eu4 = 202 eu4 = 200 v2 = 453 v2 = 468 v2 = 461 }	# MANY-TO-MANY: 0 "Avignon, 0 "Languedoc -> Valence, Avignon, Montpellier
+	link = { eu4 = 202 eu4 = 200 v2 = 453 v2 = 468 v2 = 461 }	# MANY-TO-MANY: 0 "Avignon, 1 "Montpellier -> Valence, Avignon, Montpellier
 	link = { eu4 = 2753 v2 = 463 }	# 0 "Narbonne -> Carcassonne
 	link = { eu4 = 197 v2 = 464 }	# 0 "Roussillon -> Perpignan
 	link = { eu4 = 196 v2 = 455 v2 = 457 v2 = 456 }	# 0 "Toulouse -> Toulouse, Foix, Montauban
-	link = { eu4 = 174 eu4 = 175 v2 = 459 v2 = 458 }	# MANY-TO-MANY: 1 "Bordeaux, 0 "Armagnac -> Mont de Marsan, Bordeaux
+	link = { eu4 = 174 eu4 = 175 v2 = 459 v2 = 458 }	# MANY-TO-MANY: 2 "Aquitaine, 0 "Armagnac -> Mont de Marsan, Bordeaux
 	link = { eu4 = 176 eu4 = 173 v2 = 460 }	# 0 "Béarn, 0 "Labourd -> Pau
-	link = { eu4 = 180 v2 = 444 v2 = 443 }	# 0 "Poitou -> Angoulême, Poitiers
+	link = { eu4 = 180 v2 = 444 v2 = 443 }	# 1 "Haut-Poitou -> Angoulême, Poitiers
 	link = { eu4 = 4111 v2 = 442 v2 = 437 }	# 0 "Saintonge -> La Rochelle, La Roche
 	link = { eu4 = 170 v2 = 420 }	# 0 "Finistère -> Brest
-	link = { eu4 = 171 v2 = 422 }	# 0 "Morbihan -> Vannes
-	link = { eu4 = 172 v2 = 423 }	# 0 "Nantes -> Nantes
+	link = { eu4 = 171 v2 = 422 }	# 1 "Vannetais -> Vannes
+	link = { eu4 = 172 v2 = 423 }	# 1 "Nantais -> Nantes
 	link = { eu4 = 169 v2 = 424 v2 = 421 }	# 0 "Armor -> Rennes, St Brieuc
-	link = { eu4 = 168 v2 = 418 v2 = 417 }	# 0 "Normandie -> Caen, Alençon
+	link = { eu4 = 168 v2 = 418 v2 = 417 }	# 1 "Caen -> Caen, Alençon
 	link = { eu4 = 167 v2 = 415 v2 = 416 }	# 0 "Caux -> Rouen, Évreux
 	link = { eu4 = 183 v2 = 425 v2 = 2570 v2 = 427 v2 = 426 }	# 0 "Paris -> Paris, Beauvais, Melun, Chartres
-	link = { eu4 = 182 v2 = 403 }	# 0 "Vermandois -> Laon
-	link = { eu4 = 1879 eu4 = 177 v2 = 436 v2 = 435 }	# MANY-TO-MANY: 0 "Alencon, 0 "Maine -> Le Mans, Laval
+	link = { eu4 = 182 v2 = 403 }	# 1 "Valois -> Laon
+	link = { eu4 = 1879 eu4 = 177 v2 = 436 v2 = 435 }	# MANY-TO-MANY: 1 "Alençon, 0 "Maine -> Le Mans, Laval
 	link = { eu4 = 178 v2 = 441 v2 = 434 }	# 0 "Anjou -> Tours, Angers
 	link = { eu4 = 184 v2 = 440 v2 = 438 }	# 0 "Orleanais -> Blois, Orléans
-	link = { eu4 = 186 v2 = 408 v2 = 406 }	# 0 "Champagne -> Chalons, Troyes
-	link = { eu4 = 192 v2 = 428 }	# 0 "Bourgogne -> Dijon
+	link = { eu4 = 186 v2 = 408 v2 = 406 }	# 1 "Reims -> Chalons, Troyes
+	link = { eu4 = 192 v2 = 428 }	# 1 "Dijonnais -> Dijon
 	link = { eu4 = 185 v2 = 429 v2 = 407 }	# 0 "Nemours -> Auxerre, Chaumont
 	link = { eu4 = 1877 v2 = 431 }	# 0 "Charolais -> Macon
 	link = { eu4 = 198 v2 = 462 v2 = 449 }	# 0 "Rouergue -> Rodez, Aurillac
-	link = { eu4 = 194 eu4 = 4112 v2 = 450 v2 = 447 }	# MANY-TO-MANY: 0 "Bergerac, 0 "Cahors -> Cahors, Tulle
+	link = { eu4 = 194 eu4 = 4112 v2 = 450 v2 = 447 }	# MANY-TO-MANY: 1 "Périgord, 1 "Quercy -> Cahors, Tulle
 	link = { eu4 = 179 eu4 = 195 v2 = 439 v2 = 446 v2 = 445 }	# MANY-TO-MANY: 0 "Berry, 0 "Limousin -> Bourges, Châteauroux, Limoges
-	link = { eu4 = 191 eu4 = 190 v2 = 430 }	# 0 "Nevers, 0 "Bourbon -> Moulins
+	link = { eu4 = 191 eu4 = 190 v2 = 430 }	# 1 "Nivernais, 1 "Bourbonnais -> Moulins
 	link = { eu4 = 199 v2 = 452 v2 = 448 }	# 0 "Auvergne -> St Étienne, Clermont-Ferrand
 	# Benelux
 	link = { eu4 = 94 v2 = 397 }	# 0 "Luxemburg -> Luxembourg
-	link = { eu4 = 1742 v2 = 396 v2 = 381 }	# 0 "Limburg -> Spa, Maastricht
+	link = { eu4 = 1742 v2 = 396 v2 = 381 }	# 1 "Upper Guelders -> Spa, Maastricht
 	link = { eu4 = 93 v2 = 398 v2 = 395 }	# 0 "Liège -> Arlon, Liège
 	link = { eu4 = 2974 v2 = 391 }	# 0 "Loon -> Hasselt
 	link = { eu4 = 90 v2 = 388 }	# 0 "Vlaanderen -> Bruges
-	link = { eu4 = 92 v2 = 387 }	# 0 "Brabant -> Brussels
+	link = { eu4 = 92 v2 = 387 }	# 1 "Brussels -> Brussels
 	link = { eu4 = 1744 v2 = 390 }	# 0 "Antwerpen -> Antwerp
 	link = { eu4 = 1865 v2 = 389 }	# 0 "Ghent -> Ghent
 	link = { eu4 = 91 v2 = 394 v2 = 393 }	# 0 "Hainaut -> Charleroi, Tournai
 	link = { eu4 = 1866 v2 = 392 }	# 0 "Namur -> Namur
 	link = { eu4 = 96 v2 = 378 }	# 0 "Zeeland -> Middelburg
-	link = { eu4 = 97 v2 = 375 v2 = 376 }	# 0 "Holland -> Amsterdam, Rotterdam
+	link = { eu4 = 97 v2 = 375 v2 = 376 }	# 1 "Amsterdam -> Amsterdam, Rotterdam
 	link = { eu4 = 100 v2 = 385 v2 = 383 v2 = 386 }	# 0 "Friesland -> Leeuwarden, Groningen, Assen
 	link = { eu4 = 99 v2 = 384 v2 = 382 }	# 0 "Gelre -> Zwolle, Arnhem
 	link = { eu4 = 98 v2 = 377 }	# 0 "Utrecht -> Utrecht
@@ -18923,7 +18923,7 @@
 	link = { eu4 = 2316 v2 = 1748 v2 = 1747 }	# 0 "Al Gharbia -> Mansura, Tanta
 	link = { eu4 = 359 v2 = 1765 }	# 0 "Fayyum -> Fayyum
 	link = { eu4 = 2317 v2 = 1764 v2 = 1763 }	# 0 "Minya -> Minya, Bani Suwayf
-	link = { eu4 = 2318 v2 = 1759 }	# 0 "Bahiriya -> Bawiti
+	link = { eu4 = 2318 v2 = 1759 }	# 1 "Bahiriya -> Bawiti
 	link = { eu4 = 2320 v2 = 1772 }	# 0 "Ras Gharib -> Ras Gharib
 	link = { eu4 = 1233 v2 = 1760 }	# 0 "Kharga -> Mut
 	link = { eu4 = 2319 v2 = 1762 v2 = 2559 }	# 0 "Manfalut -> Asyut, Suhaj
@@ -19816,25 +19816,25 @@
 	# British Isles
 	link = { eu4 = 233 v2 = 299 v2 = 298 }	# 0 "Cornwall -> Plymouth, Bath
 	link = { eu4 = 234 v2 = 297 v2 = 303 v2 = 419 }	# 0 "Hampshire -> Salisbury, Southampton, Channel Islands
-	link = { eu4 = 239 v2 = 296 }	# 0 "Gloucestershire -> Bristol
+	link = { eu4 = 239 v2 = 296 }	# 1 "Gloucester -> Bristol
 	link = { eu4 = 235 v2 = 302 v2 = 301 }	# 0 "Kent -> Brighton, Canterbury
 	link = { eu4 = 236 v2 = 300 }	# 0 "London -> London
 	link = { eu4 = 238 v2 = 293 }	# 0 "Essex -> Chelmsford
 	link = { eu4 = 1860 v2 = 291 v2 = 292 }	# 0 "Norfolk -> Cambridge, Ipswich
-	link = { eu4 = 237 v2 = 295 v2 = 294 }	# 0 "Oxfordshire -> St Albans, Oxford
+	link = { eu4 = 237 v2 = 295 v2 = 294 }	# 1 "Oxford -> St Albans, Oxford
 	link = { eu4 = 243 v2 = 290 }	# 0 "Lincolnshire -> Lincoln
-	link = { eu4 = 1861 v2 = 289 v2 = 288 }	# 0 "Derbyshire -> Leicester, Nottingham
-	link = { eu4 = 240 v2 = 286 v2 = 287 v2 = 284 }	# 0 "Marches -> Shrewsbury, Coventry, Birmingham
-	link = { eu4 = 241 v2 = 273 v2 = 274 }	# 0 "Glamorganshire -> Cardiff, Cardigan
+	link = { eu4 = 1861 v2 = 289 v2 = 288 }	# 1 "Derby -> Leicester, Nottingham
+	link = { eu4 = 240 v2 = 286 v2 = 287 v2 = 284 }	# 1 "Shrewsbury -> Shrewsbury, Coventry, Birmingham
+	link = { eu4 = 241 v2 = 273 v2 = 274 }	# 1 "Glamorgan -> Cardiff, Cardigan
 	link = { eu4 = 242 v2 = 275 v2 = 276 }	# 0 "Gwynedd -> Llandrindod, Holyhead
 	link = { eu4 = 244 v2 = 285 v2 = 278 v2 = 277 }	# 0 "Lancashire -> Chester, Manchester, Liverpool
-	link = { eu4 = 245 v2 = 282 v2 = 283 v2 = 281 }	# 0 "Yorkshire -> Leeds, Sheffield, Hull
+	link = { eu4 = 245 v2 = 282 v2 = 283 v2 = 281 }	# 1 "York -> Leeds, Sheffield, Hull
 	link = { eu4 = 246 v2 = 280 }	# 0 "Northumberland -> Newcastle-upon-Tyne
 	link = { eu4 = 247 v2 = 279 v2 = 304 }	# 0 "Cumbria -> Carlisle, Isle of Man
 	link = { eu4 = 1979 v2 = 253 }	# 0 "Färöarna -> Faroe Islands
-	link = { eu4 = 1978 eu4 = 369 eu4 = 253 eu4 = 252 v2 = 267 v2 = 270 }	# MANY-TO-MANY: 0 "Shetland, 0 "Orkney, 0 "Western Isles, 0 "Inverness -> Inverness, Stirling
-	link = { eu4 = 251 v2 = 266 }	# 0 "Aberdeenshire -> Aberdeen
-	link = { eu4 = 250 v2 = 268 }	# 0 "Fife -> Dundee
+	link = { eu4 = 1978 eu4 = 369 eu4 = 253 eu4 = 252 v2 = 267 v2 = 270 }	# MANY-TO-MANY: 0 "Shetland, 0 "Orkney, 1 "Outer Hebrides, 0 "Inverness -> Inverness, Stirling
+	link = { eu4 = 251 v2 = 266 }	# 1 "Aberdeen -> Aberdeen
+	link = { eu4 = 250 v2 = 268 }	# 1 "Perth -> Dundee
 	link = { eu4 = 249 eu4 = 248 v2 = 271 v2 = 272 v2 = 269 }	# MANY-TO-MANY: 0 "Ayrshire, 0 "Lothian -> Glasgow, Dumfries, Edinburgh
 	link = { eu4 = 372 v2 = 254 v2 = 257 v2 = 255 v2 = 256 }	# 0 "Tyrone -> Belfast, Donegal, Londonderry, Armagh
 	link = { eu4 = 376 v2 = 259 v2 = 258 }	# 0 "Connaught -> Sligo, Galway
@@ -19856,48 +19856,48 @@
 	link = { eu4 = 203 v2 = 451 }	# 0 "Lyonnais -> Lyon
 	link = { eu4 = 204 v2 = 454 }	# 0 "Dauphiné -> Grenoble
 	link = { eu4 = 201 v2 = 470 v2 = 467 }	# 0 "Provence -> Toulon, Marseilles
-	link = { eu4 = 2991 v2 = 471 v2 = 469 }	# 0 "Draguignan -> Frejus, Digne
+	link = { eu4 = 2991 v2 = 471 v2 = 469 }	# 1 "Forcalquier -> Frejus, Digne
 	link = { eu4 = 102 v2 = 472 }	# 0 "Nice -> Nice
-	link = { eu4 = 202 eu4 = 200 v2 = 453 v2 = 468 v2 = 461 }	# MANY-TO-MANY: 0 "Avignon, 0 "Languedoc -> Valence, Avignon, Montpellier
+	link = { eu4 = 202 eu4 = 200 v2 = 453 v2 = 468 v2 = 461 }	# MANY-TO-MANY: 0 "Avignon, 1 "Montpellier -> Valence, Avignon, Montpellier
 	link = { eu4 = 2753 v2 = 463 }	# 0 "Narbonne -> Carcassonne
 	link = { eu4 = 197 v2 = 464 }	# 0 "Roussillon -> Perpignan
 	link = { eu4 = 196 v2 = 455 v2 = 457 v2 = 456 }	# 0 "Toulouse -> Toulouse, Foix, Montauban
-	link = { eu4 = 174 eu4 = 175 eu4 = 173 v2 = 459 v2 = 458 }	# MANY-TO-MANY: 1 "Bordeaux, 0 "Armagnac, 0 "Labourd -> Mont de Marsan, Bordeaux
+	link = { eu4 = 174 eu4 = 175 eu4 = 173 v2 = 459 v2 = 458 }	# MANY-TO-MANY: 2 "Aquitaine, 0 "Armagnac, 0 "Labourd -> Mont de Marsan, Bordeaux
 	link = { eu4 = 176 v2 = 460 }	# 0 "Béarn -> Pau
-	link = { eu4 = 180 v2 = 444 v2 = 442 v2 = 437 v2 = 443 }	# 0 "Poitou -> Angoulême, La Rochelle, La Roche, Poitiers
+	link = { eu4 = 180 v2 = 444 v2 = 442 v2 = 437 v2 = 443 }	# 1 "Haut-Poitou -> Angoulême, La Rochelle, La Roche, Poitiers
 	link = { eu4 = 170 v2 = 420 }	# 0 "Finistère -> Brest
-	link = { eu4 = 171 v2 = 422 }	# 0 "Morbihan -> Vannes
-	link = { eu4 = 172 v2 = 423 }	# 0 "Nantes -> Nantes
+	link = { eu4 = 171 v2 = 422 }	# 1 "Vannetais -> Vannes
+	link = { eu4 = 172 v2 = 423 }	# 1 "Nantais -> Nantes
 	link = { eu4 = 169 v2 = 424 v2 = 421 }	# 0 "Armor -> Rennes, St Brieuc
-	link = { eu4 = 168 v2 = 418 v2 = 417 }	# 0 "Normandie -> Caen, Alençon
+	link = { eu4 = 168 v2 = 418 v2 = 417 }	# 1 "Caen -> Caen, Alençon
 	link = { eu4 = 167 v2 = 415 v2 = 416 v2 = 402 }	# 0 "Caux -> Rouen, Évreux, Amiens
 	link = { eu4 = 183 v2 = 425 v2 = 2570 v2 = 427 v2 = 426 }	# 0 "Paris -> Paris, Beauvais, Melun, Chartres
-	link = { eu4 = 182 v2 = 403 }	# 0 "Vermandois -> Laon
-	link = { eu4 = 1879 eu4 = 177 v2 = 436 v2 = 435 }	# MANY-TO-MANY: 0 "Alencon, 0 "Maine -> Le Mans, Laval
+	link = { eu4 = 182 v2 = 403 }	# 1 "Valois -> Laon
+	link = { eu4 = 1879 eu4 = 177 v2 = 436 v2 = 435 }	# MANY-TO-MANY: 1 "Alençon, 0 "Maine -> Le Mans, Laval
 	link = { eu4 = 178 v2 = 441 v2 = 434 }	# 0 "Anjou -> Tours, Angers
 	link = { eu4 = 184 v2 = 440 v2 = 438 }	# 0 "Orleanais -> Blois, Orléans
-	link = { eu4 = 186 v2 = 408 v2 = 406 v2 = 407 }	# 0 "Champagne -> Chalons, Troyes, Chaumont
-	link = { eu4 = 192 v2 = 428 }	# 0 "Bourgogne -> Dijon
+	link = { eu4 = 186 v2 = 408 v2 = 406 v2 = 407 }	# 1 "Reims -> Chalons, Troyes, Chaumont
+	link = { eu4 = 192 v2 = 428 }	# 1 "Dijonnais -> Dijon
 	link = { eu4 = 185 v2 = 429 }	# 0 "Nemours -> Auxerre
 	link = { eu4 = 1877 v2 = 431 }	# 0 "Charolais -> Macon
 	link = { eu4 = 198 v2 = 462 v2 = 449 }	# 0 "Rouergue -> Rodez, Aurillac
-	link = { eu4 = 194 v2 = 450 v2 = 447 }	# 0 "Bergerac -> Cahors, Tulle
+	link = { eu4 = 194 v2 = 450 v2 = 447 }	# 1 "Périgord -> Cahors, Tulle
 	link = { eu4 = 179 eu4 = 195 v2 = 439 v2 = 446 v2 = 445 }	# MANY-TO-MANY: 0 "Berry, 0 "Limousin -> Bourges, Châteauroux, Limoges
-	link = { eu4 = 191 eu4 = 190 v2 = 430 }	# 0 "Nevers, 0 "Bourbon -> Moulins
+	link = { eu4 = 191 eu4 = 190 v2 = 430 }	# 1 "Nivernais, 1 "Bourbonnais -> Moulins
 	link = { eu4 = 199 v2 = 452 v2 = 448 }	# 0 "Auvergne -> St Étienne, Clermont-Ferrand
 	# Benelux
 	link = { eu4 = 94 v2 = 397 }	# 0 "Luxemburg -> Luxembourg
-	link = { eu4 = 1742 v2 = 396 v2 = 381 }	# 0 "Limburg -> Spa, Maastricht
+	link = { eu4 = 1742 v2 = 396 v2 = 381 }	# 1 "Upper Guelders -> Spa, Maastricht
 	link = { eu4 = 93 v2 = 398 v2 = 395 }	# 0 "Liège -> Arlon, Liège
 	link = { eu4 = 2974 v2 = 391 }	# 0 "Loon -> Hasselt
 	link = { eu4 = 90 v2 = 388 }	# 0 "Vlaanderen -> Bruges
-	link = { eu4 = 92 v2 = 387 }	# 0 "Brabant -> Brussels
+	link = { eu4 = 92 v2 = 387 }	# 1 "Brussels -> Brussels
 	link = { eu4 = 1744 v2 = 390 }	# 0 "Antwerpen -> Antwerp
 	link = { eu4 = 1865 v2 = 389 }	# 0 "Ghent -> Ghent
 	link = { eu4 = 91 v2 = 394 v2 = 393 }	# 0 "Hainaut -> Charleroi, Tournai
 	link = { eu4 = 1866 v2 = 392 }	# 0 "Namur -> Namur
 	link = { eu4 = 96 v2 = 378 }	# 0 "Zeeland -> Middelburg
-	link = { eu4 = 97 v2 = 375 v2 = 376 }	# 0 "Holland -> Amsterdam, Rotterdam
+	link = { eu4 = 97 v2 = 375 v2 = 376 }	# 1 "Amsterdam -> Amsterdam, Rotterdam
 	link = { eu4 = 100 v2 = 385 v2 = 383 v2 = 386 }	# 0 "Friesland -> Leeuwarden, Groningen, Assen
 	link = { eu4 = 99 v2 = 384 v2 = 382 }	# 0 "Gelre -> Zwolle, Arnhem
 	link = { eu4 = 98 v2 = 377 }	# 0 "Utrecht -> Utrecht
@@ -21316,7 +21316,7 @@
 	link = { eu4 = 2326 v2 = 1737 }	# 0 "Bardiyah -> Tobruk
 	link = { eu4 = 2325 v2 = 1752 v2 = 1753 v2 = 1754 }	# 0 "Tarrana -> Matruh, Sidi Barrani, Siwa
 	link = { eu4 = 358 v2 = 1751 }	# 0 "Alexandria -> Alexandria
-	link = { eu4 = 2318 v2 = 1759 }	# 0 "Bahiriya -> Bawiti
+	link = { eu4 = 2318 v2 = 1759 }	# 1 "Bahiriya -> Bawiti
 	link = { eu4 = 362 v2 = 1746 }	# 0 "Rosetta -> Dumyat
 	link = { eu4 = 361 v2 = 1745 v2 = 1763 }	# 0 "Cairo -> Cairo, Bani Suwayf
 	link = { eu4 = 2316 v2 = 1748 v2 = 1747 v2 = 1750 }	# 0 "Al Gharbia -> Mansura, Tanta, Giza
@@ -22166,25 +22166,25 @@
 	# British Isles
 	link = { eu4 = 233 v2 = 299 v2 = 298 }	# 0 "Cornwall -> Plymouth, Bath
 	link = { eu4 = 234 v2 = 297 v2 = 303 v2 = 419 }	# 0 "Hampshire -> Salisbury, Southampton, Channel Islands
-	link = { eu4 = 239 v2 = 296 }	# 0 "Gloucestershire -> Bristol
+	link = { eu4 = 239 v2 = 296 }	# 1 "Gloucester -> Bristol
 	link = { eu4 = 235 v2 = 302 v2 = 301 }	# 0 "Kent -> Brighton, Canterbury
 	link = { eu4 = 236 v2 = 300 }	# 0 "London -> London
 	link = { eu4 = 238 v2 = 293 }	# 0 "Essex -> Chelmsford
 	link = { eu4 = 1860 v2 = 291 v2 = 292 }	# 0 "Norfolk -> Cambridge, Ipswich
-	link = { eu4 = 237 v2 = 295 v2 = 294 }	# 0 "Oxfordshire -> St Albans, Oxford
+	link = { eu4 = 237 v2 = 295 v2 = 294 }	# 1 "Oxford -> St Albans, Oxford
 	link = { eu4 = 243 v2 = 290 }	# 0 "Lincolnshire -> Lincoln
-	link = { eu4 = 1861 v2 = 289 v2 = 288 }	# 0 "Derbyshire -> Leicester, Nottingham
-	link = { eu4 = 240 v2 = 286 v2 = 287 v2 = 284 }	# 0 "Marches -> Shrewsbury, Coventry, Birmingham
-	link = { eu4 = 241 v2 = 273 v2 = 274 }	# 0 "Glamorganshire -> Cardiff, Cardigan
+	link = { eu4 = 1861 v2 = 289 v2 = 288 }	# 1 "Derby -> Leicester, Nottingham
+	link = { eu4 = 240 v2 = 286 v2 = 287 v2 = 284 }	# 1 "Shrewsbury -> Shrewsbury, Coventry, Birmingham
+	link = { eu4 = 241 v2 = 273 v2 = 274 }	# 1 "Glamorgan -> Cardiff, Cardigan
 	link = { eu4 = 242 v2 = 275 v2 = 276 }	# 0 "Gwynedd -> Llandrindod, Holyhead
 	link = { eu4 = 244 v2 = 285 v2 = 278 v2 = 277 }	# 0 "Lancashire -> Chester, Manchester, Liverpool
-	link = { eu4 = 245 v2 = 282 v2 = 283 v2 = 281 }	# 0 "Yorkshire -> Leeds, Sheffield, Hull
+	link = { eu4 = 245 v2 = 282 v2 = 283 v2 = 281 }	# 1 "York -> Leeds, Sheffield, Hull
 	link = { eu4 = 246 v2 = 280 }	# 0 "Northumberland -> Newcastle-upon-Tyne
 	link = { eu4 = 247 v2 = 279 v2 = 304 }	# 0 "Cumbria -> Carlisle, Isle of Man
 	link = { eu4 = 1979 v2 = 253 }	# 0 "Färöarna -> Faroe Islands
-	link = { eu4 = 1978 eu4 = 369 eu4 = 252 eu4 = 253 v2 = 267 v2 = 270 }	# MANY-TO-MANY: 0 "Shetland, 0 "Orkney, 0 "Inverness, 0 "Western Isles -> Inverness, Stirling
-	link = { eu4 = 251 v2 = 266 }	# 0 "Aberdeenshire -> Aberdeen
-	link = { eu4 = 250 v2 = 268 }	# 0 "Fife -> Dundee
+	link = { eu4 = 1978 eu4 = 369 eu4 = 252 eu4 = 253 v2 = 267 v2 = 270 }	# MANY-TO-MANY: 0 "Shetland, 0 "Orkney, 0 "Inverness, 1 "Outer Hebrides -> Inverness, Stirling
+	link = { eu4 = 251 v2 = 266 }	# 1 "Aberdeen -> Aberdeen
+	link = { eu4 = 250 v2 = 268 }	# 1 "Perth -> Dundee
 	link = { eu4 = 249 eu4 = 248 v2 = 269 v2 = 271 v2 = 272 }	# MANY-TO-MANY: 0 "Ayrshire, 0 "Lothian -> Edinburgh, Glasgow, Dumfries
 	link = { eu4 = 372 v2 = 254 v2 = 257 v2 = 255 v2 = 256 }	# 0 "Tyrone -> Belfast, Donegal, Londonderry, Armagh
 	link = { eu4 = 376 v2 = 259 v2 = 258 v2 = 264 }	# 0 "Connaught -> Sligo, Galway, Kildare
@@ -22206,48 +22206,48 @@
 	link = { eu4 = 203 v2 = 451 }	# 0 "Lyonnais -> Lyon
 	link = { eu4 = 204 v2 = 454 }	# 0 "Dauphiné -> Grenoble
 	link = { eu4 = 201 v2 = 470 v2 = 467 }	# 0 "Provence -> Toulon, Marseilles
-	link = { eu4 = 2991 v2 = 471 v2 = 469 }	# 0 "Draguignan -> Frejus, Digne
+	link = { eu4 = 2991 v2 = 471 v2 = 469 }	# 1 "Forcalquier -> Frejus, Digne
 	link = { eu4 = 102 v2 = 472 }	# 0 "Nice -> Nice
-	link = { eu4 = 202 eu4 = 200 v2 = 453 v2 = 468 v2 = 461 }	# MANY-TO-MANY: 0 "Avignon, 0 "Languedoc -> Valence, Avignon, Montpellier
+	link = { eu4 = 202 eu4 = 200 v2 = 453 v2 = 468 v2 = 461 }	# MANY-TO-MANY: 0 "Avignon, 1 "Montpellier -> Valence, Avignon, Montpellier
 	link = { eu4 = 2753 v2 = 463 }	# 0 "Narbonne -> Carcassonne
 	link = { eu4 = 197 v2 = 464 }	# 0 "Roussillon -> Perpignan
 	link = { eu4 = 196 v2 = 455 v2 = 457 v2 = 456 }	# 0 "Toulouse -> Toulouse, Foix, Montauban
-	link = { eu4 = 174 eu4 = 175 eu4 = 173 v2 = 459 v2 = 458 }	# MANY-TO-MANY: 1 "Bordeaux, 0 "Armagnac, 0 "Labourd -> Mont de Marsan, Bordeaux
+	link = { eu4 = 174 eu4 = 175 eu4 = 173 v2 = 459 v2 = 458 }	# MANY-TO-MANY: 2 "Aquitaine, 0 "Armagnac, 0 "Labourd -> Mont de Marsan, Bordeaux
 	link = { eu4 = 176 v2 = 460 }	# 0 "Béarn -> Pau
-	link = { eu4 = 180 v2 = 444 v2 = 442 v2 = 437 v2 = 443 }	# 0 "Poitou -> Angoulême, La Rochelle, La Roche, Poitiers
+	link = { eu4 = 180 v2 = 444 v2 = 442 v2 = 437 v2 = 443 }	# 1 "Haut-Poitou -> Angoulême, La Rochelle, La Roche, Poitiers
 	link = { eu4 = 170 v2 = 420 }	# 0 "Finistère -> Brest
-	link = { eu4 = 171 v2 = 422 }	# 0 "Morbihan -> Vannes
-	link = { eu4 = 172 v2 = 423 }	# 0 "Nantes -> Nantes
+	link = { eu4 = 171 v2 = 422 }	# 1 "Vannetais -> Vannes
+	link = { eu4 = 172 v2 = 423 }	# 1 "Nantais -> Nantes
 	link = { eu4 = 169 v2 = 424 v2 = 421 }	# 0 "Armor -> Rennes, St Brieuc
-	link = { eu4 = 168 v2 = 418 v2 = 417 }	# 0 "Normandie -> Caen, Alençon
+	link = { eu4 = 168 v2 = 418 v2 = 417 }	# 1 "Caen -> Caen, Alençon
 	link = { eu4 = 167 v2 = 415 v2 = 416 v2 = 402 }	# 0 "Caux -> Rouen, Évreux, Amiens
 	link = { eu4 = 183 v2 = 425 v2 = 2570 v2 = 427 v2 = 426 }	# 0 "Paris -> Paris, Beauvais, Melun, Chartres
-	link = { eu4 = 182 v2 = 403 }	# 0 "Vermandois -> Laon
-	link = { eu4 = 1879 eu4 = 177 v2 = 436 v2 = 435 }	# MANY-TO-MANY: 0 "Alencon, 0 "Maine -> Le Mans, Laval
+	link = { eu4 = 182 v2 = 403 }	# 1 "Valois -> Laon
+	link = { eu4 = 1879 eu4 = 177 v2 = 436 v2 = 435 }	# MANY-TO-MANY: 1 "Alençon, 0 "Maine -> Le Mans, Laval
 	link = { eu4 = 178 v2 = 441 v2 = 434 }	# 0 "Anjou -> Tours, Angers
 	link = { eu4 = 184 v2 = 440 v2 = 438 }	# 0 "Orleanais -> Blois, Orléans
-	link = { eu4 = 186 v2 = 408 v2 = 406 v2 = 407 }	# 0 "Champagne -> Chalons, Troyes, Chaumont
-	link = { eu4 = 192 v2 = 428 }	# 0 "Bourgogne -> Dijon
+	link = { eu4 = 186 v2 = 408 v2 = 406 v2 = 407 }	# 1 "Reims -> Chalons, Troyes, Chaumont
+	link = { eu4 = 192 v2 = 428 }	# 1 "Dijonnais -> Dijon
 	link = { eu4 = 185 v2 = 429 }	# 0 "Nemours -> Auxerre
 	link = { eu4 = 1877 v2 = 431 }	# 0 "Charolais -> Macon
 	link = { eu4 = 198 v2 = 462 v2 = 449 }	# 0 "Rouergue -> Rodez, Aurillac
-	link = { eu4 = 194 v2 = 450 v2 = 447 }	# 0 "Bergerac -> Cahors, Tulle
+	link = { eu4 = 194 v2 = 450 v2 = 447 }	# 1 "Périgord -> Cahors, Tulle
 	link = { eu4 = 179 eu4 = 195 v2 = 439 v2 = 446 v2 = 445 }	# MANY-TO-MANY: 0 "Berry, 0 "Limousin -> Bourges, Châteauroux, Limoges
-	link = { eu4 = 191 eu4 = 190 v2 = 430 }	# 0 "Nevers, 0 "Bourbon -> Moulins
+	link = { eu4 = 191 eu4 = 190 v2 = 430 }	# 1 "Nivernais, 1 "Bourbonnais -> Moulins
 	link = { eu4 = 199 v2 = 452 v2 = 448 }	# 0 "Auvergne -> St Étienne, Clermont-Ferrand
 	# Benelux
 	link = { eu4 = 94 v2 = 397 }	# 0 "Luxemburg -> Luxembourg
-	link = { eu4 = 1742 v2 = 396 v2 = 381 }	# 0 "Limburg -> Spa, Maastricht
+	link = { eu4 = 1742 v2 = 396 v2 = 381 }	# 1 "Upper Guelders -> Spa, Maastricht
 	link = { eu4 = 93 v2 = 398 v2 = 395 }	# 0 "Liège -> Arlon, Liège
 	link = { eu4 = 2974 v2 = 391 }	# 0 "Loon -> Hasselt
 	link = { eu4 = 90 v2 = 388 }	# 0 "Vlaanderen -> Bruges
-	link = { eu4 = 92 v2 = 387 }	# 0 "Brabant -> Brussels
+	link = { eu4 = 92 v2 = 387 }	# 1 "Brussels -> Brussels
 	link = { eu4 = 1744 v2 = 390 }	# 0 "Antwerpen -> Antwerp
 	link = { eu4 = 1865 v2 = 389 }	# 0 "Ghent -> Ghent
 	link = { eu4 = 91 v2 = 394 v2 = 393 }	# 0 "Hainaut -> Charleroi, Tournai
 	link = { eu4 = 1866 v2 = 392 }	# 0 "Namur -> Namur
 	link = { eu4 = 96 v2 = 378 }	# 0 "Zeeland -> Middelburg
-	link = { eu4 = 97 v2 = 375 v2 = 376 }	# 0 "Holland -> Amsterdam, Rotterdam
+	link = { eu4 = 97 v2 = 375 v2 = 376 }	# 1 "Amsterdam -> Amsterdam, Rotterdam
 	link = { eu4 = 100 v2 = 385 v2 = 383 v2 = 386 }	# 0 "Friesland -> Leeuwarden, Groningen, Assen
 	link = { eu4 = 99 v2 = 384 v2 = 382 }	# 0 "Gelre -> Zwolle, Arnhem
 	link = { eu4 = 98 v2 = 377 }	# 0 "Utrecht -> Utrecht
@@ -23642,7 +23642,7 @@
 	link = { eu4 = 2326 v2 = 1737 }	# 0 "Bardiyah -> Tobruk
 	link = { eu4 = 2325 v2 = 1752 v2 = 1753 v2 = 1754 }	# 0 "Tarrana -> Matruh, Sidi Barrani, Siwa
 	link = { eu4 = 358 v2 = 1751 }	# 0 "Alexandria -> Alexandria
-	link = { eu4 = 2318 v2 = 1759 }	# 0 "Bahiriya -> Bawiti
+	link = { eu4 = 2318 v2 = 1759 }	# 1 "Bahiriya -> Bawiti
 	link = { eu4 = 362 v2 = 1746 }	# 0 "Rosetta -> Dumyat
 	link = { eu4 = 361 v2 = 1745 v2 = 1763 }	# 0 "Cairo -> Cairo, Bani Suwayf
 	link = { eu4 = 2316 v2 = 1748 v2 = 1747 v2 = 1750 }	# 0 "Al Gharbia -> Mansura, Tanta, Giza
@@ -24473,25 +24473,25 @@
 	# British Isles
 	link = { eu4 = 233 v2 = 299 v2 = 298 }	# 0 "Cornwall -> Plymouth, Bath
 	link = { eu4 = 234 v2 = 297 v2 = 303 v2 = 419 }	# 0 "Hampshire -> Salisbury, Southampton, Channel Islands
-	link = { eu4 = 239 v2 = 296 }	# 0 "Gloucestershire -> Bristol
+	link = { eu4 = 239 v2 = 296 }	# 1 "Gloucester -> Bristol
 	link = { eu4 = 235 v2 = 302 v2 = 301 }	# 0 "Kent -> Brighton, Canterbury
 	link = { eu4 = 236 v2 = 300 }	# 0 "London -> London
 	link = { eu4 = 238 v2 = 293 }	# 0 "Essex -> Chelmsford
 	link = { eu4 = 1860 v2 = 291 v2 = 292 }	# 0 "Norfolk -> Cambridge, Ipswich
-	link = { eu4 = 237 v2 = 295 v2 = 294 }	# 0 "Oxfordshire -> St Albans, Oxford
+	link = { eu4 = 237 v2 = 295 v2 = 294 }	# 1 "Oxford -> St Albans, Oxford
 	link = { eu4 = 243 v2 = 290 }	# 0 "Lincolnshire -> Lincoln
-	link = { eu4 = 1861 v2 = 289 v2 = 288 }	# 0 "Derbyshire -> Leicester, Nottingham
-	link = { eu4 = 240 v2 = 286 v2 = 287 v2 = 284 }	# 0 "Marches -> Shrewsbury, Coventry, Birmingham
-	link = { eu4 = 241 v2 = 273 v2 = 274 }	# 0 "Glamorganshire -> Cardiff, Cardigan
+	link = { eu4 = 1861 v2 = 289 v2 = 288 }	# 1 "Derby -> Leicester, Nottingham
+	link = { eu4 = 240 v2 = 286 v2 = 287 v2 = 284 }	# 1 "Shrewsbury -> Shrewsbury, Coventry, Birmingham
+	link = { eu4 = 241 v2 = 273 v2 = 274 }	# 1 "Glamorgan -> Cardiff, Cardigan
 	link = { eu4 = 242 v2 = 275 v2 = 276 }	# 0 "Gwynedd -> Llandrindod, Holyhead
 	link = { eu4 = 244 v2 = 285 v2 = 278 v2 = 277 }	# 0 "Lancashire -> Chester, Manchester, Liverpool
-	link = { eu4 = 245 v2 = 282 v2 = 283 v2 = 281 }	# 0 "Yorkshire -> Leeds, Sheffield, Hull
+	link = { eu4 = 245 v2 = 282 v2 = 283 v2 = 281 }	# 1 "York -> Leeds, Sheffield, Hull
 	link = { eu4 = 246 v2 = 280 }	# 0 "Northumberland -> Newcastle-upon-Tyne
 	link = { eu4 = 247 v2 = 279 v2 = 304 }	# 0 "Cumbria -> Carlisle, Isle of Man
 	link = { eu4 = 1979 v2 = 253 }	# 0 "Färöarna -> Faroe Islands
-	link = { eu4 = 1978 eu4 = 369 eu4 = 252 eu4 = 253 v2 = 267 v2 = 270 }	# MANY-TO-MANY: 0 "Shetland, 0 "Orkney, 0 "Inverness, 0 "Western Isles -> Inverness, Stirling
-	link = { eu4 = 251 v2 = 266 }	# 0 "Aberdeenshire -> Aberdeen
-	link = { eu4 = 250 v2 = 268 }	# 0 "Fife -> Dundee
+	link = { eu4 = 1978 eu4 = 369 eu4 = 252 eu4 = 253 v2 = 267 v2 = 270 }	# MANY-TO-MANY: 0 "Shetland, 0 "Orkney, 0 "Inverness, 1 "Outer Hebrides -> Inverness, Stirling
+	link = { eu4 = 251 v2 = 266 }	# 1 "Aberdeen -> Aberdeen
+	link = { eu4 = 250 v2 = 268 }	# 1 "Perth -> Dundee
 	link = { eu4 = 249 eu4 = 248 v2 = 269 v2 = 271 v2 = 272 }	# MANY-TO-MANY: 0 "Ayrshire, 0 "Lothian -> Edinburgh, Glasgow, Dumfries
 	link = { eu4 = 372 v2 = 254 v2 = 257 v2 = 255 v2 = 256 }	# 0 "Tyrone -> Belfast, Donegal, Londonderry, Armagh
 	link = { eu4 = 376 v2 = 259 v2 = 258 v2 = 264 }	# 0 "Connaught -> Sligo, Galway, Kildare
@@ -24514,45 +24514,45 @@
 	link = { eu4 = 204 v2 = 454 }	# 0 "Dauphiné -> Grenoble
 	link = { eu4 = 201 v2 = 471 v2 = 469 v2 = 470 v2 = 467 }	# 0 "Provence -> Frejus, Digne, Toulon, Marseilles
 	link = { eu4 = 102 v2 = 472 }	# 0 "Nice -> Nice
-	link = { eu4 = 202 eu4 = 200 v2 = 453 v2 = 468 v2 = 461 }	# MANY-TO-MANY: 0 "Avignon, 0 "Languedoc -> Valence, Avignon, Montpellier
+	link = { eu4 = 202 eu4 = 200 v2 = 453 v2 = 468 v2 = 461 }	# MANY-TO-MANY: 0 "Avignon, 1 "Montpellier -> Valence, Avignon, Montpellier
 	link = { eu4 = 2753 v2 = 463 }	# 0 "Narbonne -> Carcassonne
 	link = { eu4 = 197 v2 = 464 }	# 0 "Roussillon -> Perpignan
 	link = { eu4 = 196 v2 = 455 v2 = 457 v2 = 456 }	# 0 "Toulouse -> Toulouse, Foix, Montauban
-	link = { eu4 = 174 eu4 = 175 eu4 = 173 v2 = 459 v2 = 458 }	# MANY-TO-MANY: 1 "Bordeaux, 0 "Armagnac, 0 "Labourd -> Mont de Marsan, Bordeaux
+	link = { eu4 = 174 eu4 = 175 eu4 = 173 v2 = 459 v2 = 458 }	# MANY-TO-MANY: 2 "Aquitaine, 0 "Armagnac, 0 "Labourd -> Mont de Marsan, Bordeaux
 	link = { eu4 = 176 v2 = 460 }	# 0 "Béarn -> Pau
-	link = { eu4 = 180 v2 = 444 v2 = 442 v2 = 437 v2 = 443 }	# 0 "Poitou -> Angoulême, La Rochelle, La Roche, Poitiers
+	link = { eu4 = 180 v2 = 444 v2 = 442 v2 = 437 v2 = 443 }	# 1 "Haut-Poitou -> Angoulême, La Rochelle, La Roche, Poitiers
 	link = { eu4 = 170 v2 = 420 }	# 0 "Finistère -> Brest
-	link = { eu4 = 171 v2 = 422 }	# 0 "Morbihan -> Vannes
-	link = { eu4 = 172 v2 = 423 }	# 0 "Nantes -> Nantes
+	link = { eu4 = 171 v2 = 422 }	# 1 "Vannetais -> Vannes
+	link = { eu4 = 172 v2 = 423 }	# 1 "Nantais -> Nantes
 	link = { eu4 = 169 v2 = 424 v2 = 421 }	# 0 "Armor -> Rennes, St Brieuc
-	link = { eu4 = 168 v2 = 418 v2 = 417 }	# 0 "Normandie -> Caen, Alençon
+	link = { eu4 = 168 v2 = 418 v2 = 417 }	# 1 "Caen -> Caen, Alençon
 	link = { eu4 = 167 v2 = 415 v2 = 416 v2 = 402 }	# 0 "Caux -> Rouen, Évreux, Amiens
 	link = { eu4 = 183 v2 = 425 v2 = 2570 v2 = 427 v2 = 426 }	# 0 "Paris -> Paris, Beauvais, Melun, Chartres
-	link = { eu4 = 182 v2 = 403 }	# 0 "Vermandois -> Laon
-	link = { eu4 = 1879 eu4 = 177 v2 = 436 v2 = 435 }	# MANY-TO-MANY: 0 "Alencon, 0 "Maine -> Le Mans, Laval
+	link = { eu4 = 182 v2 = 403 }	# 1 "Valois -> Laon
+	link = { eu4 = 1879 eu4 = 177 v2 = 436 v2 = 435 }	# MANY-TO-MANY: 1 "Alençon, 0 "Maine -> Le Mans, Laval
 	link = { eu4 = 178 v2 = 441 v2 = 434 }	# 0 "Anjou -> Tours, Angers
 	link = { eu4 = 184 v2 = 440 v2 = 438 }	# 0 "Orleanais -> Blois, Orléans
-	link = { eu4 = 186 v2 = 408 v2 = 406 v2 = 407 }	# 0 "Champagne -> Chalons, Troyes, Chaumont
-	link = { eu4 = 192 v2 = 428 }	# 0 "Bourgogne -> Dijon
+	link = { eu4 = 186 v2 = 408 v2 = 406 v2 = 407 }	# 1 "Reims -> Chalons, Troyes, Chaumont
+	link = { eu4 = 192 v2 = 428 }	# 1 "Dijonnais -> Dijon
 	link = { eu4 = 185 v2 = 429 }	# 0 "Nemours -> Auxerre
 	link = { eu4 = 1877 v2 = 431 }	# 0 "Charolais -> Macon
 	link = { eu4 = 198 v2 = 462 v2 = 449 }	# 0 "Rouergue -> Rodez, Aurillac
-	link = { eu4 = 194 v2 = 450 v2 = 447 }	# 0 "Bergerac -> Cahors, Tulle
+	link = { eu4 = 194 v2 = 450 v2 = 447 }	# 1 "Périgord -> Cahors, Tulle
 	link = { eu4 = 179 eu4 = 195 v2 = 439 v2 = 446 v2 = 445 }	# MANY-TO-MANY: 0 "Berry, 0 "Limousin -> Bourges, Châteauroux, Limoges
-	link = { eu4 = 191 eu4 = 190 v2 = 430 }	# 0 "Nevers, 0 "Bourbon -> Moulins
+	link = { eu4 = 191 eu4 = 190 v2 = 430 }	# 1 "Nivernais, 1 "Bourbonnais -> Moulins
 	link = { eu4 = 199 v2 = 452 v2 = 448 }	# 0 "Auvergne -> St Étienne, Clermont-Ferrand
 	# Benelux
 	link = { eu4 = 94 v2 = 397 }	# 0 "Luxemburg -> Luxembourg
-	link = { eu4 = 1742 v2 = 396 v2 = 381 }	# 0 "Limburg -> Spa, Maastricht
+	link = { eu4 = 1742 v2 = 396 v2 = 381 }	# 1 "Upper Guelders -> Spa, Maastricht
 	link = { eu4 = 93 v2 = 398 v2 = 395 v2 = 391 }	# 0 "Liège -> Arlon, Liège, Hasselt
 	link = { eu4 = 90 v2 = 388 }	# 0 "Vlaanderen -> Bruges
-	link = { eu4 = 92 v2 = 387 }	# 0 "Brabant -> Brussels
+	link = { eu4 = 92 v2 = 387 }	# 1 "Brussels -> Brussels
 	link = { eu4 = 1744 v2 = 390 }	# 0 "Antwerpen -> Antwerp
 	link = { eu4 = 1865 v2 = 389 }	# 0 "Ghent -> Ghent
 	link = { eu4 = 91 v2 = 394 v2 = 393 }	# 0 "Hainaut -> Charleroi, Tournai
 	link = { eu4 = 1866 v2 = 392 }	# 0 "Namur -> Namur
 	link = { eu4 = 96 v2 = 378 }	# 0 "Zeeland -> Middelburg
-	link = { eu4 = 97 v2 = 375 v2 = 376 }	# 0 "Holland -> Amsterdam, Rotterdam
+	link = { eu4 = 97 v2 = 375 v2 = 376 }	# 1 "Amsterdam -> Amsterdam, Rotterdam
 	link = { eu4 = 100 v2 = 385 v2 = 383 v2 = 386 }	# 0 "Friesland -> Leeuwarden, Groningen, Assen
 	link = { eu4 = 99 v2 = 384 v2 = 382 }	# 0 "Gelre -> Zwolle, Arnhem
 	link = { eu4 = 98 v2 = 377 }	# 0 "Utrecht -> Utrecht
@@ -25337,25 +25337,25 @@
 	link = { eu4 = 373 v2 = 263 v2 = 264 }	# 0 "Pale -> Dublin, Kildare
 	link = { eu4 = 374 v2 = 265 v2 = 262 }	# 0 "Leinster -> Wexford, Waterford
 	# England & Scotland
-	link = { eu4 = 252 eu4 = 253 eu4 = 369 eu4 = 1978 v2 = 267 v2 = 270 }	# MANY-TO-MANY: 0 "Inverness, 0 "Western Isles, 0 "Orkney, 0 "Shetland -> Inverness, Stirling
+	link = { eu4 = 252 eu4 = 253 eu4 = 369 eu4 = 1978 v2 = 267 v2 = 270 }	# MANY-TO-MANY: 0 "Inverness, 1 "Outer Hebrides, 0 "Orkney, 0 "Shetland -> Inverness, Stirling
 	link = { eu4 = 1979 v2 = 253 }	# 0 "Färöarna -> Faroe Islands
 	link = { eu4 = 233 v2 = 299 v2 = 298 }	# 0 "Cornwall -> Plymouth, Bath
-	link = { eu4 = 251 v2 = 266 }	# 0 "Aberdeenshire -> Aberdeen
-	link = { eu4 = 250 v2 = 268 }	# 0 "Fife -> Dundee
+	link = { eu4 = 251 v2 = 266 }	# 1 "Aberdeen -> Aberdeen
+	link = { eu4 = 250 v2 = 268 }	# 1 "Perth -> Dundee
 	link = { eu4 = 249 v2 = 271 v2 = 272 }	# 0 "Ayrshire -> Glasgow, Dumfries
 	link = { eu4 = 248 v2 = 269 }	# 0 "Lothian -> Edinburgh
 	link = { eu4 = 247 v2 = 304 v2 = 279 }	# 0 "Cumbria -> Isle of Man, Carlisle
 	link = { eu4 = 246 v2 = 280 }	# 0 "Northumberland -> Newcastle-upon-Tyne
 	link = { eu4 = 242 v2 = 276 v2 = 275 }	# 0 "Gwynedd -> Holyhead, Llandrindod
 	link = { eu4 = 244 v2 = 278 v2 = 285 v2 = 277 }	# 0 "Lancashire -> Manchester, Chester, Liverpool
-	link = { eu4 = 241 v2 = 274 v2 = 273 }	# 0 "Glamorganshire -> Cardigan, Cardiff
-	link = { eu4 = 245 v2 = 282 v2 = 281 v2 = 283 }	# 0 "Yorkshire -> Leeds, Hull, Sheffield
+	link = { eu4 = 241 v2 = 274 v2 = 273 }	# 1 "Glamorgan -> Cardigan, Cardiff
+	link = { eu4 = 245 v2 = 282 v2 = 281 v2 = 283 }	# 1 "York -> Leeds, Hull, Sheffield
 	link = { eu4 = 243 v2 = 290 }	# 0 "Lincolnshire -> Lincoln
-	link = { eu4 = 1861 v2 = 288 v2 = 289 }	# 0 "Derbyshire -> Nottingham, Leicester
-	link = { eu4 = 240 v2 = 286 v2 = 284 v2 = 287 }	# 0 "Marches -> Shrewsbury, Birmingham, Coventry
-	link = { eu4 = 239 v2 = 296 }	# 0 "Gloucestershire -> Bristol
+	link = { eu4 = 1861 v2 = 288 v2 = 289 }	# 1 "Derby -> Nottingham, Leicester
+	link = { eu4 = 240 v2 = 286 v2 = 284 v2 = 287 }	# 1 "Shrewsbury -> Shrewsbury, Birmingham, Coventry
+	link = { eu4 = 239 v2 = 296 }	# 1 "Gloucester -> Bristol
 	link = { eu4 = 234 v2 = 297 v2 = 303 }	# 0 "Hampshire -> Salisbury, Southampton
-	link = { eu4 = 237 v2 = 294 v2 = 295 }	# 0 "Oxfordshire -> Oxford, St Albans
+	link = { eu4 = 237 v2 = 294 v2 = 295 }	# 1 "Oxford -> Oxford, St Albans
 	link = { eu4 = 1860 v2 = 291 v2 = 292 }	# 0 "Norfolk -> Cambridge, Ipswich
 	link = { eu4 = 238 v2 = 293 }	# 0 "Essex -> Chelmsford
 	link = { eu4 = 236 v2 = 300 }	# 0 "London -> London
@@ -25771,19 +25771,19 @@
 	link = { eu4 = 333 v2 = 502 }	# 0 "The Baleares -> Balearic Islands
 	# France
 	link = { eu4 = 173 v2 = 460 }	# 0 "Labourd -> Pau
-	link = { eu4 = 174 v2 = 458 }	# 1 "Bordeaux -> Bordeaux
-	link = { eu4 = 180 v2 = 442 v2 = 437 v2 = 443 }	# 0 "Poitou -> La Rochelle, La Roche, Poitiers
-	link = { eu4 = 172 v2 = 423 }	# 0 "Nantes -> Nantes
-	link = { eu4 = 171 v2 = 422 }	# 0 "Morbihan -> Vannes
+	link = { eu4 = 174 v2 = 458 }	# 2 "Aquitaine -> Bordeaux
+	link = { eu4 = 180 v2 = 442 v2 = 437 v2 = 443 }	# 1 "Haut-Poitou -> La Rochelle, La Roche, Poitiers
+	link = { eu4 = 172 v2 = 423 }	# 1 "Nantais -> Nantes
+	link = { eu4 = 171 v2 = 422 }	# 1 "Vannetais -> Vannes
 	link = { eu4 = 170 v2 = 420 }	# 0 "Finistère -> Brest
 	link = { eu4 = 169 v2 = 421 v2 = 424 }	# 0 "Armor -> St Brieuc, Rennes
-	link = { eu4 = 168 v2 = 418 v2 = 419 v2 = 417 }	# 0 "Normandie -> Caen, Channel Islands, Alençon
-	link = { eu4 = 1879 v2 = 426 }	# 0 "Alencon -> Chartres
+	link = { eu4 = 168 v2 = 418 v2 = 419 v2 = 417 }	# 1 "Caen -> Caen, Channel Islands, Alençon
+	link = { eu4 = 1879 v2 = 426 }	# 1 "Alençon -> Chartres
 	link = { eu4 = 176 v2 = 457 }	# 0 "Béarn -> Foix
 	link = { eu4 = 197 v2 = 464 }	# 0 "Roussillon -> Perpignan
 	link = { eu4 = 196 v2 = 455 v2 = 456 }	# 0 "Toulouse -> Toulouse, Montauban
 	link = { eu4 = 175 v2 = 459 }	# 0 "Armagnac -> Mont de Marsan
-	link = { eu4 = 200 v2 = 463 v2 = 461 }	# 0 "Languedoc -> Carcassonne, Montpellier
+	link = { eu4 = 200 v2 = 463 v2 = 461 }	# 1 "Montpellier -> Carcassonne, Montpellier
 	link = { eu4 = 201 v2 = 471 v2 = 469 v2 = 470 v2 = 467 }	# 0 "Provence -> Frejus, Digne, Toulon, Marseilles
 	link = { eu4 = 202 v2 = 468 }	# 0 "Avignon -> Avignon
 	link = { eu4 = 204 v2 = 454 v2 = 453 }	# 0 "Dauphiné -> Grenoble, Valence
@@ -25801,18 +25801,18 @@
 	link = { eu4 = 188 v2 = 412 }	# 0 "Metz -> Metz
 	link = { eu4 = 189 v2 = 414 }	# 0 "Lothringen -> Épinal
 	link = { eu4 = 183 v2 = 2570 v2 = 425 v2 = 427 }	# 0 "Paris -> Beauvais, Paris, Melun
-	link = { eu4 = 182 v2 = 403 }	# 0 "Vermandois -> Laon
+	link = { eu4 = 182 v2 = 403 }	# 1 "Valois -> Laon
 	link = { eu4 = 184 v2 = 438 v2 = 440 }	# 0 "Orleanais -> Orléans, Blois
 	link = { eu4 = 177 v2 = 435 v2 = 436 }	# 0 "Maine -> Laval, Le Mans
 	link = { eu4 = 178 v2 = 434 v2 = 441 }	# 0 "Anjou -> Angers, Tours
 	link = { eu4 = 199 v2 = 452 v2 = 449 v2 = 448 }	# 0 "Auvergne -> St Étienne, Aurillac, Clermont-Ferrand
 	link = { eu4 = 198 v2 = 462 v2 = 450 }	# 0 "Rouergue -> Rodez, Cahors
-	link = { eu4 = 194 v2 = 447 v2 = 444 }	# 0 "Bergerac -> Tulle, Angoulême
+	link = { eu4 = 194 v2 = 447 v2 = 444 }	# 1 "Périgord -> Tulle, Angoulême
 	link = { eu4 = 195 v2 = 445 }	# 0 "Limousin -> Limoges
 	link = { eu4 = 1877 v2 = 431 }	# 0 "Charolais -> Macon
-	link = { eu4 = 186 v2 = 408 v2 = 406 }	# 0 "Champagne -> Chalons, Troyes
-	link = { eu4 = 192 v2 = 428 }	# 0 "Bourgogne -> Dijon
-	link = { eu4 = 191 eu4 = 190 v2 = 430 }	# 0 "Nevers, 0 "Bourbon -> Moulins
+	link = { eu4 = 186 v2 = 408 v2 = 406 }	# 1 "Reims -> Chalons, Troyes
+	link = { eu4 = 192 v2 = 428 }	# 1 "Dijonnais -> Dijon
+	link = { eu4 = 191 eu4 = 190 v2 = 430 }	# 1 "Nivernais, 1 "Bourbonnais -> Moulins
 	link = { eu4 = 179 v2 = 446 v2 = 439 }	# 0 "Berry -> Châteauroux, Bourges
 	link = { eu4 = 185 v2 = 429 }	# 0 "Nemours -> Auxerre
 	link = { eu4 = 75 v2 = 409 v2 = 410 }	# 0 "Elsass -> Strasbourg, Colmar
@@ -25820,7 +25820,7 @@
 	# Luxemburg
 	link = { eu4 = 94 v2 = 397 }	# 0 "Luxemburg -> Luxembourg
 	# Netherlands & Belgium
-	link = { eu4 = 97 v2 = 375 v2 = 376 }	# 0 "Holland -> Amsterdam, Rotterdam
+	link = { eu4 = 97 v2 = 375 v2 = 376 }	# 1 "Amsterdam -> Amsterdam, Rotterdam
 	link = { eu4 = 96 v2 = 378 }	# 0 "Zeeland -> Middelburg
 	link = { eu4 = 1744 v2 = 390 }	# 0 "Antwerpen -> Antwerp
 	link = { eu4 = 100 v2 = 385 v2 = 383 v2 = 386 }	# 0 "Friesland -> Leeuwarden, Groningen, Assen
@@ -25830,7 +25830,7 @@
 	link = { eu4 = 90 v2 = 388 }	# 0 "Vlaanderen -> Bruges
 	link = { eu4 = 1865 v2 = 389 }	# 0 "Ghent -> Ghent
 	link = { eu4 = 91 v2 = 394 v2 = 393 }	# 0 "Hainaut -> Charleroi, Tournai
-	link = { eu4 = 92 v2 = 387 v2 = 391 }	# 0 "Brabant -> Brussels, Hasselt
+	link = { eu4 = 92 v2 = 387 v2 = 391 }	# 1 "Brussels -> Brussels, Hasselt
 	link = { eu4 = 1866 v2 = 392 }	# 0 "Namur -> Namur
 	link = { eu4 = 93 v2 = 395 v2 = 398 }	# 0 "Liège -> Liège, Arlon
 	# Switzerland
@@ -26359,7 +26359,7 @@
 	link = { eu4 = 1758 v2 = 535 v2 = 534 }	# 0 "Hanover -> Nienburg, Hanover
 	link = { eu4 = 53 v2 = 532 }	# 0 "Lüneburg -> Lüneburg
 	link = { eu4 = 86 v2 = 581 v2 = 580 }	# 0 "Münster -> Münster, Dortmund
-	link = { eu4 = 1742 v2 = 381 v2 = 396 }	# 0 "Limburg -> Maastricht, Spa
+	link = { eu4 = 1742 v2 = 381 v2 = 396 }	# 1 "Upper Guelders -> Maastricht, Spa
 	link = { eu4 = 85 v2 = 575 }	# 0 "Köln -> Cologne
 	link = { eu4 = 84 v2 = 577 v2 = 578 v2 = 2561 }	# 0 "Berg -> Cleves, Düsseldorf, Siegburg
 	link = { eu4 = 1878 v2 = 576 }	# 0 "Aachen -> Aachen
@@ -27407,25 +27407,25 @@
 	link = { eu4 = 373 v2 = 263 v2 = 264 }	# 0 "Pale -> Dublin, Kildare
 	link = { eu4 = 374 v2 = 265 v2 = 262 }	# 0 "Leinster -> Wexford, Waterford
 	# England & Scotland
-	link = { eu4 = 252 eu4 = 253 eu4 = 369 eu4 = 1978 v2 = 267 v2 = 270 }	# MANY-TO-MANY: 0 "Inverness, 0 "Western Isles, 0 "Orkney, 0 "Shetland -> Inverness, Stirling
+	link = { eu4 = 252 eu4 = 253 eu4 = 369 eu4 = 1978 v2 = 267 v2 = 270 }	# MANY-TO-MANY: 0 "Inverness, 1 "Outer Hebrides, 0 "Orkney, 0 "Shetland -> Inverness, Stirling
 	link = { eu4 = 1979 v2 = 253 }	# 0 "Färöarna -> Faroe Islands
 	link = { eu4 = 233 v2 = 299 v2 = 298 }	# 0 "Cornwall -> Plymouth, Bath
-	link = { eu4 = 251 v2 = 266 }	# 0 "Aberdeenshire -> Aberdeen
-	link = { eu4 = 250 v2 = 268 }	# 0 "Fife -> Dundee
+	link = { eu4 = 251 v2 = 266 }	# 1 "Aberdeen -> Aberdeen
+	link = { eu4 = 250 v2 = 268 }	# 1 "Perth -> Dundee
 	link = { eu4 = 249 v2 = 271 v2 = 272 }	# 0 "Ayrshire -> Glasgow, Dumfries
 	link = { eu4 = 248 v2 = 269 }	# 0 "Lothian -> Edinburgh
 	link = { eu4 = 247 v2 = 304 v2 = 279 }	# 0 "Cumbria -> Isle of Man, Carlisle
 	link = { eu4 = 246 v2 = 280 }	# 0 "Northumberland -> Newcastle-upon-Tyne
 	link = { eu4 = 242 v2 = 276 v2 = 275 }	# 0 "Gwynedd -> Holyhead, Llandrindod
 	link = { eu4 = 244 v2 = 278 v2 = 285 v2 = 277 }	# 0 "Lancashire -> Manchester, Chester, Liverpool
-	link = { eu4 = 241 v2 = 274 v2 = 273 }	# 0 "Glamorganshire -> Cardigan, Cardiff
-	link = { eu4 = 245 v2 = 282 v2 = 281 v2 = 283 }	# 0 "Yorkshire -> Leeds, Hull, Sheffield
+	link = { eu4 = 241 v2 = 274 v2 = 273 }	# 1 "Glamorgan -> Cardigan, Cardiff
+	link = { eu4 = 245 v2 = 282 v2 = 281 v2 = 283 }	# 1 "York -> Leeds, Hull, Sheffield
 	link = { eu4 = 243 v2 = 290 }	# 0 "Lincolnshire -> Lincoln
-	link = { eu4 = 1861 v2 = 288 v2 = 289 }	# 0 "Derbyshire -> Nottingham, Leicester
-	link = { eu4 = 240 v2 = 286 v2 = 284 v2 = 287 }	# 0 "Marches -> Shrewsbury, Birmingham, Coventry
-	link = { eu4 = 239 v2 = 296 }	# 0 "Gloucestershire -> Bristol
+	link = { eu4 = 1861 v2 = 288 v2 = 289 }	# 1 "Derby -> Nottingham, Leicester
+	link = { eu4 = 240 v2 = 286 v2 = 284 v2 = 287 }	# 1 "Shrewsbury -> Shrewsbury, Birmingham, Coventry
+	link = { eu4 = 239 v2 = 296 }	# 1 "Gloucester -> Bristol
 	link = { eu4 = 234 v2 = 297 v2 = 303 }	# 0 "Hampshire -> Salisbury, Southampton
-	link = { eu4 = 237 v2 = 294 v2 = 295 }	# 0 "Oxfordshire -> Oxford, St Albans
+	link = { eu4 = 237 v2 = 294 v2 = 295 }	# 1 "Oxford -> Oxford, St Albans
 	link = { eu4 = 1860 v2 = 291 v2 = 292 }	# 0 "Norfolk -> Cambridge, Ipswich
 	link = { eu4 = 238 v2 = 293 }	# 0 "Essex -> Chelmsford
 	link = { eu4 = 236 v2 = 300 }	# 0 "London -> London
@@ -27841,19 +27841,19 @@
 	link = { eu4 = 333 v2 = 502 }	# 0 "The Baleares -> Balearic Islands
 	# France
 	link = { eu4 = 173 v2 = 460 }	# 0 "Labourd -> Pau
-	link = { eu4 = 174 v2 = 458 }	# 1 "Bordeaux -> Bordeaux
-	link = { eu4 = 180 v2 = 442 v2 = 437 v2 = 443 }	# 0 "Poitou -> La Rochelle, La Roche, Poitiers
-	link = { eu4 = 172 v2 = 423 }	# 0 "Nantes -> Nantes
-	link = { eu4 = 171 v2 = 422 }	# 0 "Morbihan -> Vannes
+	link = { eu4 = 174 v2 = 458 }	# 2 "Aquitaine -> Bordeaux
+	link = { eu4 = 180 v2 = 442 v2 = 437 v2 = 443 }	# 1 "Haut-Poitou -> La Rochelle, La Roche, Poitiers
+	link = { eu4 = 172 v2 = 423 }	# 1 "Nantais -> Nantes
+	link = { eu4 = 171 v2 = 422 }	# 1 "Vannetais -> Vannes
 	link = { eu4 = 170 v2 = 420 }	# 0 "Finistère -> Brest
 	link = { eu4 = 169 v2 = 421 v2 = 424 }	# 0 "Armor -> St Brieuc, Rennes
-	link = { eu4 = 168 v2 = 418 v2 = 419 v2 = 417 }	# 0 "Normandie -> Caen, Channel Islands, Alençon
-	link = { eu4 = 1879 v2 = 426 }	# 0 "Alencon -> Chartres
+	link = { eu4 = 168 v2 = 418 v2 = 419 v2 = 417 }	# 1 "Caen -> Caen, Channel Islands, Alençon
+	link = { eu4 = 1879 v2 = 426 }	# 1 "Alençon -> Chartres
 	link = { eu4 = 176 v2 = 457 }	# 0 "Béarn -> Foix
 	link = { eu4 = 197 v2 = 464 }	# 0 "Roussillon -> Perpignan
 	link = { eu4 = 196 v2 = 455 v2 = 456 }	# 0 "Toulouse -> Toulouse, Montauban
 	link = { eu4 = 175 v2 = 459 }	# 0 "Armagnac -> Mont de Marsan
-	link = { eu4 = 200 v2 = 463 v2 = 461 }	# 0 "Languedoc -> Carcassonne, Montpellier
+	link = { eu4 = 200 v2 = 463 v2 = 461 }	# 1 "Montpellier -> Carcassonne, Montpellier
 	link = { eu4 = 201 v2 = 471 v2 = 469 v2 = 470 v2 = 467 }	# 0 "Provence -> Frejus, Digne, Toulon, Marseilles
 	link = { eu4 = 202 v2 = 468 }	# 0 "Avignon -> Avignon
 	link = { eu4 = 204 v2 = 454 v2 = 453 }	# 0 "Dauphiné -> Grenoble, Valence
@@ -27871,18 +27871,18 @@
 	link = { eu4 = 188 v2 = 412 }	# 0 "Metz -> Metz
 	link = { eu4 = 189 v2 = 414 }	# 0 "Lothringen -> Épinal
 	link = { eu4 = 183 v2 = 2570 v2 = 425 v2 = 427 }	# 0 "Paris -> Beauvais, Paris, Melun
-	link = { eu4 = 182 v2 = 403 }	# 0 "Vermandois -> Laon
+	link = { eu4 = 182 v2 = 403 }	# 1 "Valois -> Laon
 	link = { eu4 = 184 v2 = 438 v2 = 440 }	# 0 "Orleanais -> Orléans, Blois
 	link = { eu4 = 177 v2 = 435 v2 = 436 }	# 0 "Maine -> Laval, Le Mans
 	link = { eu4 = 178 v2 = 434 v2 = 441 }	# 0 "Anjou -> Angers, Tours
 	link = { eu4 = 199 v2 = 452 v2 = 449 v2 = 448 }	# 0 "Auvergne -> St Étienne, Aurillac, Clermont-Ferrand
 	link = { eu4 = 198 v2 = 462 v2 = 450 }	# 0 "Rouergue -> Rodez, Cahors
-	link = { eu4 = 194 v2 = 447 v2 = 444 }	# 0 "Bergerac -> Tulle, Angoulême
+	link = { eu4 = 194 v2 = 447 v2 = 444 }	# 1 "Périgord -> Tulle, Angoulême
 	link = { eu4 = 195 v2 = 445 }	# 0 "Limousin -> Limoges
 	link = { eu4 = 1877 v2 = 431 }	# 0 "Charolais -> Macon
-	link = { eu4 = 186 v2 = 408 v2 = 406 }	# 0 "Champagne -> Chalons, Troyes
-	link = { eu4 = 192 v2 = 428 }	# 0 "Bourgogne -> Dijon
-	link = { eu4 = 191 eu4 = 190 v2 = 430 }	# 0 "Nevers, 0 "Bourbon -> Moulins
+	link = { eu4 = 186 v2 = 408 v2 = 406 }	# 1 "Reims -> Chalons, Troyes
+	link = { eu4 = 192 v2 = 428 }	# 1 "Dijonnais -> Dijon
+	link = { eu4 = 191 eu4 = 190 v2 = 430 }	# 1 "Nivernais, 1 "Bourbonnais -> Moulins
 	link = { eu4 = 179 v2 = 446 v2 = 439 }	# 0 "Berry -> Châteauroux, Bourges
 	link = { eu4 = 185 v2 = 429 }	# 0 "Nemours -> Auxerre
 	link = { eu4 = 75 v2 = 409 v2 = 410 }	# 0 "Elsass -> Strasbourg, Colmar
@@ -27890,7 +27890,7 @@
 	# Luxemburg
 	link = { eu4 = 94 v2 = 397 }	# 0 "Luxemburg -> Luxembourg
 	# Netherlands & Belgium
-	link = { eu4 = 97 v2 = 375 v2 = 376 }	# 0 "Holland -> Amsterdam, Rotterdam
+	link = { eu4 = 97 v2 = 375 v2 = 376 }	# 1 "Amsterdam -> Amsterdam, Rotterdam
 	link = { eu4 = 96 v2 = 378 }	# 0 "Zeeland -> Middelburg
 	link = { eu4 = 1744 v2 = 390 }	# 0 "Antwerpen -> Antwerp
 	link = { eu4 = 100 v2 = 385 v2 = 383 v2 = 386 }	# 0 "Friesland -> Leeuwarden, Groningen, Assen
@@ -27900,7 +27900,7 @@
 	link = { eu4 = 90 v2 = 388 }	# 0 "Vlaanderen -> Bruges
 	link = { eu4 = 1865 v2 = 389 }	# 0 "Ghent -> Ghent
 	link = { eu4 = 91 v2 = 394 v2 = 393 }	# 0 "Hainaut -> Charleroi, Tournai
-	link = { eu4 = 92 v2 = 387 v2 = 391 }	# 0 "Brabant -> Brussels, Hasselt
+	link = { eu4 = 92 v2 = 387 v2 = 391 }	# 1 "Brussels -> Brussels, Hasselt
 	link = { eu4 = 1866 v2 = 392 }	# 0 "Namur -> Namur
 	link = { eu4 = 93 v2 = 395 v2 = 398 }	# 0 "Liège -> Liège, Arlon
 	# Switzerland
@@ -28406,7 +28406,7 @@
 	link = { eu4 = 1758 v2 = 535 v2 = 534 }	# 0 "Hanover -> Nienburg, Hanover
 	link = { eu4 = 53 v2 = 532 }	# 0 "Lüneburg -> Lüneburg
 	link = { eu4 = 86 v2 = 581 v2 = 580 }	# 0 "Münster -> Münster, Dortmund
-	link = { eu4 = 1742 v2 = 381 v2 = 396 }	# 0 "Limburg -> Maastricht, Spa
+	link = { eu4 = 1742 v2 = 381 v2 = 396 }	# 1 "Upper Guelders -> Maastricht, Spa
 	link = { eu4 = 85 v2 = 575 }	# 0 "Köln -> Cologne
 	link = { eu4 = 84 v2 = 577 v2 = 578 v2 = 2561 }	# 0 "Berg -> Cleves, Düsseldorf, Siegburg
 	link = { eu4 = 1878 v2 = 576 }	# 0 "Aachen -> Aachen
