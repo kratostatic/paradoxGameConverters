@@ -150,6 +150,7 @@ NEJ		="countries/Nejd.txt"
 OMA		="countries/Oman.txt"
 PER		="countries/Persia.txt"
 YEM		="countries/Yemen.txt"
+SYR		="countries/Syria.txt"
 
 # India
 HND	 	="countries/India.txt"
@@ -597,6 +598,14 @@ AOT     =   "countries/Aotearoa.txt"
 OGO     =   "countries/Ostrogothia.txt"
 SUE     =   "countries/The Suebi.txt"
 VGO     =   "countries/Visigothia.txt"
+UGR     =   "countries/Yugra.txt"
+ASY     =   "countries/Assyria.txt"
+KRT     =   "countries/Carthage.txt"
+SKH     =   "countries/Sakha.txt"
+SBR     =   "countries/Siberia.txt"
+IDC     =   "countries/Indochina.txt"
+AES     =   "countries/Anglo-Saxony.txt"
+FRK     =   "countries/Frankia.txt"
 
 
 ##HoD Dominions
