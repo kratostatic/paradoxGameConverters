@@ -1,0 +1,2117 @@
+country_event = {
+	id = 251001
+	title = "EVTNAME251001"
+	desc = "EVTDESC251001"
+	major = yes
+	picture = "Riot"
+	
+	trigger = {
+		is_independant = yes
+		capital_scope = {
+			OR = {
+				continent = europe
+				continent = asia
+			}
+		}
+		NOT = { has_global_flag = CAN_independence }
+		has_global_flag = der_postcolonialism
+		is_possible_vassal = CAN
+		NOT = { exists = CAN }
+	}
+	
+	immediate = { set_global_flag = CAN_independence }
+	
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 0.75
+			year = 1845
+		}
+		modifier = {
+			factor = 0.75
+			year = 1855
+		}
+		modifier = {
+			factor = 0.75
+			year = 1860
+		}
+		modifier = {
+			factor = 0.5
+			year = 1865
+		}
+	}
+
+	option = {
+		name = "EVTOPTA251001"
+		any_owned = {
+			limit = {
+				is_core = CAN
+			}
+			secede_province = CAN
+		}
+		CAN = {
+			leadership = 80
+			primary_culture = FROM
+			add_accepted_culture = anglo_canadian
+			add_accepted_culture = french_canadian
+			years_of_research = 5
+		}
+		create_vassal = CAN
+		set_global_flag = CAN_independence
+		ai_chance = { factor = 25 }
+	}
+	
+	option = {
+		name = "EVTOPTB251001"
+		any_owned = {
+			limit = {
+				is_core = CAN
+			}
+			secede_province = CAN
+		}
+		CAN = {
+			leadership = 80
+			primary_culture = FROM
+			add_accepted_culture = anglo_canadian
+			add_accepted_culture = french_canadian
+			years_of_research = 5
+		}
+		war = {
+			target = CAN
+			attacker_goal = {
+				casus_belli = make_puppet
+			}
+			
+			defender_goal = {
+				casus_belli = become_independent
+			}
+		}
+		set_global_flag = CAN_independence
+		ai_chance = { factor = 75 }
+	}
+}
+country_event = {
+	id = 251002
+	title = "EVTNAME251002"
+	desc = "EVTDESC251001"
+	major = yes
+	picture = "Riot"
+	
+	trigger = {
+		is_independant = yes
+		capital_scope = {
+			OR = {
+				continent = europe
+				continent = asia
+			}
+		}
+		NOT = { has_global_flag = LSK_independence }
+		has_global_flag = der_postcolonialism
+		is_possible_vassal = LSK
+		NOT = { exists = LSK }
+	}
+	
+	immediate = { set_global_flag = LSK_independence }
+	
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 0.75
+			year = 1845
+		}
+		modifier = {
+			factor = 0.75
+			year = 1855
+		}
+		modifier = {
+			factor = 0.75
+			year = 1860
+		}
+		modifier = {
+			factor = 0.5
+			year = 1865
+		}
+	}
+
+	option = {
+		name = "EVTOPTA251001"
+		any_owned = {
+			limit = {
+				is_core = LSK
+			}
+			secede_province = LSK
+		}
+		LSK = {
+			leadership = 80
+			primary_culture = FROM
+			add_accepted_culture = anglo_canadian
+			years_of_research = 5
+		}
+		create_vassal = LSK
+		set_global_flag = LSK_independence
+		ai_chance = { factor = 25 }
+	}
+	
+	option = {
+		name = "EVTOPTB251001"
+		any_owned = {
+			limit = {
+				is_core = LSK
+			}
+			secede_province = LSK
+		}
+		LSK = {
+			leadership = 80
+			primary_culture = FROM
+			add_accepted_culture = anglo_canadian
+			years_of_research = 5
+		}
+		war = {
+			target = LSK
+			attacker_goal = {
+				casus_belli = make_puppet
+			}
+			
+			defender_goal = {
+				casus_belli = become_independent
+			}
+		}
+		set_global_flag = LSK_independence
+		ai_chance = { factor = 75 }
+	}
+}
+country_event = {
+	id = 251003
+	title = "EVTNAME251003"
+	desc = "EVTDESC251001"
+	major = yes
+	picture = "Riot"
+	
+	trigger = {
+		is_independant = yes
+		capital_scope = {
+			OR = {
+				continent = europe
+				continent = asia
+			}
+		}
+		NOT = { has_global_flag = USA_independence }
+		has_global_flag = der_postcolonialism
+		is_possible_vassal = USA
+		NOT = { exists = USA }
+	}
+	
+	immediate = { set_global_flag = USA_independence }
+	
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 0.75
+			year = 1845
+		}
+		modifier = {
+			factor = 0.75
+			year = 1855
+		}
+		modifier = {
+			factor = 0.75
+			year = 1860
+		}
+		modifier = {
+			factor = 0.5
+			year = 1865
+		}
+	}
+
+	option = {
+		name = "EVTOPTA251001"
+		any_owned = {
+			limit = {
+				is_core = USA
+			}
+			secede_province = USA
+		}
+		USA = {
+			leadership = 80
+			primary_culture = FROM
+			add_accepted_culture = yankee
+			add_accepted_culture = dixie
+			years_of_research = 5
+		}
+		create_vassal = USA
+		set_global_flag = USA_independence
+		ai_chance = { factor = 25 }
+	}
+	
+	option = {
+		name = "EVTOPTB251001"
+		any_owned = {
+			limit = {
+				is_core = USA
+			}
+			secede_province = USA
+		}
+		USA = {
+			leadership = 80
+			primary_culture = FROM
+			add_accepted_culture = yankee
+			add_accepted_culture = dixie
+			years_of_research = 5
+		}
+		war = {
+			target = USA
+			attacker_goal = {
+				casus_belli = make_puppet
+			}
+			
+			defender_goal = {
+				casus_belli = become_independent
+			}
+		}
+		set_global_flag = USA_independence
+		ai_chance = { factor = 75 }
+	}
+}
+country_event = {
+	id = 251004
+	title = "EVTNAME251004"
+	desc = "EVTDESC251001"
+	major = yes
+	picture = "Riot"
+	
+	trigger = {
+		is_independant = yes
+		capital_scope = {
+			OR = {
+				continent = europe
+				continent = asia
+			}
+		}
+		NOT = { has_global_flag = UCA_independence }
+		has_global_flag = der_postcolonialism
+		is_possible_vassal = UCA
+		NOT = { exists = UCA }
+	}
+	
+	immediate = { set_global_flag = UCA_independence }
+	
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 0.75
+			year = 1845
+		}
+		modifier = {
+			factor = 0.75
+			year = 1855
+		}
+		modifier = {
+			factor = 0.75
+			year = 1860
+		}
+		modifier = {
+			factor = 0.5
+			year = 1865
+		}
+	}
+
+	option = {
+		name = "EVTOPTA251001"
+		any_owned = {
+			limit = {
+				is_core = UCA
+			}
+			secede_province = UCA
+		}
+		UCA = {
+			leadership = 80
+			primary_culture = FROM
+			add_accepted_culture = central_american
+			years_of_research = 5
+		}
+		create_vassal = UCA
+		set_global_flag = UCA_independence
+		ai_chance = { factor = 25 }
+	}
+	
+	option = {
+		name = "EVTOPTB251001"
+		any_owned = {
+			limit = {
+				is_core = UCA
+			}
+			secede_province = UCA
+		}
+		UCA = {
+			leadership = 80
+			primary_culture = FROM
+			add_accepted_culture = central_american
+			years_of_research = 5
+		}
+		war = {
+			target = UCA
+			attacker_goal = {
+				casus_belli = make_puppet
+			}
+			
+			defender_goal = {
+				casus_belli = become_independent
+			}
+		}
+		set_global_flag = UCA_independence
+		ai_chance = { factor = 75 }
+	}
+}
+country_event = {
+	id = 251005
+	title = "EVTNAME251005"
+	desc = "EVTDESC251001"
+	major = yes
+	picture = "Riot"
+	
+	trigger = {
+		is_independant = yes
+		capital_scope = {
+			OR = {
+				continent = europe
+				continent = asia
+			}
+		}
+		NOT = { has_global_flag = MEX_independence }
+		has_global_flag = der_postcolonialism
+		is_possible_vassal = MEX
+		NOT = { exists = MEX }
+	}
+	
+	immediate = { set_global_flag = MEX_independence }
+	
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 0.75
+			year = 1845
+		}
+		modifier = {
+			factor = 0.75
+			year = 1855
+		}
+		modifier = {
+			factor = 0.75
+			year = 1860
+		}
+		modifier = {
+			factor = 0.5
+			year = 1865
+		}
+	}
+
+	option = {
+		name = "EVTOPTA251001"
+		any_owned = {
+			limit = {
+				is_core = MEX
+			}
+			secede_province = MEX
+		}
+		MEX = {
+			leadership = 80
+			primary_culture = FROM
+			add_accepted_culture = mexican
+			years_of_research = 5
+		}
+		create_vassal = MEX
+		set_global_flag = MEX_independence
+		ai_chance = { factor = 25 }
+	}
+	
+	option = {
+		name = "EVTOPTB251001"
+		any_owned = {
+			limit = {
+				is_core = MEX
+			}
+			secede_province = MEX
+		}
+		MEX = {
+			leadership = 80
+			primary_culture = FROM
+			add_accepted_culture = mexican
+			years_of_research = 5
+		}
+		war = {
+			target = MEX
+			attacker_goal = {
+				casus_belli = make_puppet
+			}
+			
+			defender_goal = {
+				casus_belli = become_independent
+			}
+		}
+		set_global_flag = MEX_independence
+		ai_chance = { factor = 75 }
+	}
+}
+country_event = {
+	id = 251006
+	title = "EVTNAME251006"
+	desc = "EVTDESC251001"
+	major = yes
+	picture = "Riot"
+	
+	trigger = {
+		is_independant = yes
+		capital_scope = {
+			OR = {
+				continent = europe
+				continent = asia
+			}
+		}
+		NOT = { has_global_flag = BRZ_independence }
+		has_global_flag = der_postcolonialism
+		is_possible_vassal = BRZ
+		NOT = { exists = BRZ }
+	}
+	
+	immediate = { set_global_flag = BRZ_independence }
+	
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 0.75
+			year = 1845
+		}
+		modifier = {
+			factor = 0.75
+			year = 1855
+		}
+		modifier = {
+			factor = 0.75
+			year = 1860
+		}
+		modifier = {
+			factor = 0.5
+			year = 1865
+		}
+	}
+
+	option = {
+		name = "EVTOPTA251001"
+		any_owned = {
+			limit = {
+				is_core = BRZ
+			}
+			secede_province = BRZ
+		}
+		BRZ = {
+			leadership = 80
+			primary_culture = FROM
+			add_accepted_culture = brazilian
+			years_of_research = 5
+		}
+		create_vassal = BRZ
+		set_global_flag = BRZ_independence
+		ai_chance = { factor = 25 }
+	}
+	
+	option = {
+		name = "EVTOPTB251001"
+		any_owned = {
+			limit = {
+				is_core = BRZ
+			}
+			secede_province = BRZ
+		}
+		BRZ = {
+			leadership = 80
+			primary_culture = FROM
+			add_accepted_culture = brazilian
+			years_of_research = 5
+		}
+		war = {
+			target = BRZ
+			attacker_goal = {
+				casus_belli = make_puppet
+			}
+			
+			defender_goal = {
+				casus_belli = become_independent
+			}
+		}
+		set_global_flag = BRZ_independence
+		ai_chance = { factor = 75 }
+	}
+}
+country_event = {
+	id = 251007
+	title = "EVTNAME251007"
+	desc = "EVTDESC251001"
+	major = yes
+	picture = "Riot"
+	
+	trigger = {
+		is_independant = yes
+		capital_scope = {
+			OR = {
+				continent = europe
+				continent = asia
+			}
+		}
+		NOT = { has_global_flag = PEU_independence }
+		has_global_flag = der_postcolonialism
+		is_possible_vassal = PEU
+		NOT = { exists = PEU }
+	}
+	
+	immediate = { set_global_flag = PEU_independence }
+	
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 0.75
+			year = 1845
+		}
+		modifier = {
+			factor = 0.75
+			year = 1855
+		}
+		modifier = {
+			factor = 0.75
+			year = 1860
+		}
+		modifier = {
+			factor = 0.5
+			year = 1865
+		}
+	}
+
+	option = {
+		name = "EVTOPTA251001"
+		any_owned = {
+			limit = {
+				is_core = PEU
+			}
+			secede_province = PEU
+		}
+		PEU = {
+			leadership = 80
+			primary_culture = FROM
+			add_accepted_culture = south_andean
+			years_of_research = 5
+		}
+		create_vassal = PEU
+		set_global_flag = PEU_independence
+		ai_chance = { factor = 25 }
+	}
+	
+	option = {
+		name = "EVTOPTB251001"
+		any_owned = {
+			limit = {
+				is_core = PEU
+			}
+			secede_province = PEU
+		}
+		PEU = {
+			leadership = 80
+			primary_culture = FROM
+			add_accepted_culture = south_andean
+			years_of_research = 5
+		}
+		war = {
+			target = PEU
+			attacker_goal = {
+				casus_belli = make_puppet
+			}
+			
+			defender_goal = {
+				casus_belli = become_independent
+			}
+		}
+		set_global_flag = PEU_independence
+		ai_chance = { factor = 75 }
+	}
+}
+country_event = {
+	id = 251008
+	title = "EVTNAME251008"
+	desc = "EVTDESC251001"
+	major = yes
+	picture = "Riot"
+	
+	trigger = {
+		is_independant = yes
+		capital_scope = {
+			OR = {
+				continent = europe
+				continent = asia
+			}
+		}
+		NOT = { has_global_flag = ARG_independence }
+		has_global_flag = der_postcolonialism
+		is_possible_vassal = ARG
+		NOT = { exists = ARG }
+	}
+	
+	immediate = { set_global_flag = ARG_independence }
+	
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 0.75
+			year = 1845
+		}
+		modifier = {
+			factor = 0.75
+			year = 1855
+		}
+		modifier = {
+			factor = 0.75
+			year = 1860
+		}
+		modifier = {
+			factor = 0.5
+			year = 1865
+		}
+	}
+
+	option = {
+		name = "EVTOPTA251001"
+		any_owned = {
+			limit = {
+				is_core = ARG
+			}
+			secede_province = ARG
+		}
+		ARG = {
+			leadership = 80
+			primary_culture = FROM
+			add_accepted_culture = platinean
+			years_of_research = 5
+		}
+		create_vassal = ARG
+		set_global_flag = ARG_independence
+		ai_chance = { factor = 25 }
+	}
+	
+	option = {
+		name = "EVTOPTB251001"
+		any_owned = {
+			limit = {
+				is_core = ARG
+			}
+			secede_province = ARG
+		}
+		ARG = {
+			leadership = 80
+			primary_culture = FROM
+			add_accepted_culture = platinean
+			years_of_research = 5
+		}
+		war = {
+			target = ARG
+			attacker_goal = {
+				casus_belli = make_puppet
+			}
+			
+			defender_goal = {
+				casus_belli = become_independent
+			}
+		}
+		set_global_flag = ARG_independence
+		ai_chance = { factor = 75 }
+	}
+}
+country_event = {
+	id = 251009
+	title = "EVTNAME251009"
+	desc = "EVTDESC251001"
+	major = yes
+	picture = "Riot"
+	
+	trigger = {
+		is_independant = yes
+		capital_scope = {
+			OR = {
+				continent = europe
+				continent = asia
+			}
+		}
+		NOT = { has_global_flag = PRG_independence }
+		has_global_flag = der_postcolonialism
+		is_possible_vassal = PRG
+		NOT = { exists = PRG }
+	}
+	
+	immediate = { set_global_flag = PRG_independence }
+	
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 0.75
+			year = 1845
+		}
+		modifier = {
+			factor = 0.75
+			year = 1855
+		}
+		modifier = {
+			factor = 0.75
+			year = 1860
+		}
+		modifier = {
+			factor = 0.5
+			year = 1865
+		}
+	}
+
+	option = {
+		name = "EVTOPTA251001"
+		any_owned = {
+			limit = {
+				is_core = PRG
+			}
+			secede_province = PRG
+		}
+		PRG = {
+			leadership = 80
+			primary_culture = FROM
+			add_accepted_culture = platinean
+			years_of_research = 5
+		}
+		create_vassal = PRG
+		set_global_flag = PRG_independence
+		ai_chance = { factor = 25 }
+	}
+	
+	option = {
+		name = "EVTOPTB251001"
+		any_owned = {
+			limit = {
+				is_core = PRG
+			}
+			secede_province = PRG
+		}
+		PRG = {
+			leadership = 80
+			primary_culture = FROM
+			add_accepted_culture = platinean
+			years_of_research = 5
+		}
+		war = {
+			target = PRG
+			attacker_goal = {
+				casus_belli = make_puppet
+			}
+			
+			defender_goal = {
+				casus_belli = become_independent
+			}
+		}
+		set_global_flag = PRG_independence
+		ai_chance = { factor = 75 }
+	}
+}
+country_event = {
+	id = 251010
+	title = "EVTNAME251010"
+	desc = "EVTDESC251001"
+	major = yes
+	picture = "Riot"
+	
+	trigger = {
+		is_independant = yes
+		capital_scope = {
+			OR = {
+				continent = europe
+				continent = asia
+			}
+		}
+		NOT = { has_global_flag = URU_independence }
+		has_global_flag = der_postcolonialism
+		is_possible_vassal = URU
+		NOT = { exists = URU }
+	}
+	
+	immediate = { set_global_flag = URU_independence }
+	
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 0.75
+			year = 1845
+		}
+		modifier = {
+			factor = 0.75
+			year = 1855
+		}
+		modifier = {
+			factor = 0.75
+			year = 1860
+		}
+		modifier = {
+			factor = 0.5
+			year = 1865
+		}
+	}
+
+	option = {
+		name = "EVTOPTA251001"
+		any_owned = {
+			limit = {
+				is_core = URU
+			}
+			secede_province = URU
+		}
+		URU = {
+			leadership = 80
+			primary_culture = FROM
+			add_accepted_culture = platinean
+			years_of_research = 5
+		}
+		create_vassal = URU
+		set_global_flag = URU_independence
+		ai_chance = { factor = 25 }
+	}
+	
+	option = {
+		name = "EVTOPTB251001"
+		any_owned = {
+			limit = {
+				is_core = URU
+			}
+			secede_province = URU
+		}
+		URU = {
+			leadership = 80
+			primary_culture = FROM
+			add_accepted_culture = platinean
+			years_of_research = 5
+		}
+		war = {
+			target = URU
+			attacker_goal = {
+				casus_belli = make_puppet
+			}
+			
+			defender_goal = {
+				casus_belli = become_independent
+			}
+		}
+		set_global_flag = URU_independence
+		ai_chance = { factor = 75 }
+	}
+}
+country_event = {
+	id = 251011
+	title = "EVTNAME251011"
+	desc = "EVTDESC251001"
+	major = yes
+	picture = "Riot"
+	
+	trigger = {
+		is_independant = yes
+		capital_scope = {
+			OR = {
+				continent = europe
+				continent = asia
+			}
+		}
+		NOT = { has_global_flag = BOL_independence }
+		has_global_flag = der_postcolonialism
+		is_possible_vassal = BOL
+		NOT = { exists = BOL }
+	}
+	
+	immediate = { set_global_flag = BOL_independence }
+	
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 0.75
+			year = 1845
+		}
+		modifier = {
+			factor = 0.75
+			year = 1855
+		}
+		modifier = {
+			factor = 0.75
+			year = 1860
+		}
+		modifier = {
+			factor = 0.5
+			year = 1865
+		}
+	}
+
+	option = {
+		name = "EVTOPTA251001"
+		any_owned = {
+			limit = {
+				is_core = BOL
+			}
+			secede_province = BOL
+		}
+		BOL = {
+			leadership = 80
+			primary_culture = FROM
+			add_accepted_culture = south_andean
+			years_of_research = 5
+		}
+		create_vassal = BOL
+		set_global_flag = BOL_independence
+		ai_chance = { factor = 25 }
+	}
+	
+	option = {
+		name = "EVTOPTB251001"
+		any_owned = {
+			limit = {
+				is_core = BOL
+			}
+			secede_province = BOL
+		}
+		BOL = {
+			leadership = 80
+			primary_culture = FROM
+			add_accepted_culture = south_andean
+			years_of_research = 5
+		}
+		war = {
+			target = BOL
+			attacker_goal = {
+				casus_belli = make_puppet
+			}
+			
+			defender_goal = {
+				casus_belli = become_independent
+			}
+		}
+		set_global_flag = BOL_independence
+		ai_chance = { factor = 75 }
+	}
+}
+country_event = {
+	id = 251012
+	title = "EVTNAME251012"
+	desc = "EVTDESC251001"
+	major = yes
+	picture = "Riot"
+	
+	trigger = {
+		is_independant = yes
+		capital_scope = {
+			OR = {
+				continent = europe
+				continent = asia
+			}
+		}
+		NOT = { has_global_flag = CLM_independence }
+		has_global_flag = der_postcolonialism
+		is_possible_vassal = CLM
+		NOT = { exists = CLM }
+	}
+	
+	immediate = { set_global_flag = CLM_independence }
+	
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 0.75
+			year = 1845
+		}
+		modifier = {
+			factor = 0.75
+			year = 1855
+		}
+		modifier = {
+			factor = 0.75
+			year = 1860
+		}
+		modifier = {
+			factor = 0.5
+			year = 1865
+		}
+	}
+
+	option = {
+		name = "EVTOPTA251001"
+		any_owned = {
+			limit = {
+				is_core = CLM
+			}
+			secede_province = CLM
+		}
+		CLM = {
+			leadership = 80
+			primary_culture = FROM
+			add_accepted_culture = north_andean
+			years_of_research = 5
+		}
+		create_vassal = CLM
+		set_global_flag = CLM_independence
+		ai_chance = { factor = 25 }
+	}
+	
+	option = {
+		name = "EVTOPTB251001"
+		any_owned = {
+			limit = {
+				is_core = CLM
+			}
+			secede_province = CLM
+		}
+		CLM = {
+			leadership = 80
+			primary_culture = FROM
+			add_accepted_culture = north_andean
+			years_of_research = 5
+		}
+		war = {
+			target = CLM
+			attacker_goal = {
+				casus_belli = make_puppet
+			}
+			
+			defender_goal = {
+				casus_belli = become_independent
+			}
+		}
+		set_global_flag = CLM_independence
+		ai_chance = { factor = 75 }
+	}
+}
+country_event = {
+	id = 251013
+	title = "EVTNAME251013"
+	desc = "EVTDESC251001"
+	major = yes
+	picture = "Riot"
+	
+	trigger = {
+		is_independant = yes
+		capital_scope = {
+			OR = {
+				continent = europe
+				continent = asia
+			}
+		}
+		NOT = { has_global_flag = VNZ_independence }
+		has_global_flag = der_postcolonialism
+		is_possible_vassal = VNZ
+		NOT = { exists = VNZ }
+	}
+	
+	immediate = { set_global_flag = VNZ_independence }
+	
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 0.75
+			year = 1845
+		}
+		modifier = {
+			factor = 0.75
+			year = 1855
+		}
+		modifier = {
+			factor = 0.75
+			year = 1860
+		}
+		modifier = {
+			factor = 0.5
+			year = 1865
+		}
+	}
+
+	option = {
+		name = "EVTOPTA251001"
+		any_owned = {
+			limit = {
+				is_core = VNZ
+			}
+			secede_province = VNZ
+		}
+		VNZ = {
+			leadership = 80
+			primary_culture = FROM
+			add_accepted_culture = north_andean
+			years_of_research = 5
+		}
+		create_vassal = VNZ
+		set_global_flag = VNZ_independence
+		ai_chance = { factor = 25 }
+	}
+	
+	option = {
+		name = "EVTOPTB251001"
+		any_owned = {
+			limit = {
+				is_core = VNZ
+			}
+			secede_province = VNZ
+		}
+		VNZ = {
+			leadership = 80
+			primary_culture = FROM
+			add_accepted_culture = north_andean
+			years_of_research = 5
+		}
+		war = {
+			target = VNZ
+			attacker_goal = {
+				casus_belli = make_puppet
+			}
+			
+			defender_goal = {
+				casus_belli = become_independent
+			}
+		}
+		set_global_flag = VNZ_independence
+		ai_chance = { factor = 75 }
+	}
+}
+country_event = {
+	id = 251014
+	title = "EVTNAME251014"
+	desc = "EVTDESC251001"
+	major = yes
+	picture = "Riot"
+	
+	trigger = {
+		is_independant = yes
+		capital_scope = {
+			OR = {
+				continent = europe
+				continent = asia
+			}
+		}
+		NOT = { has_global_flag = MSA_independence }
+		has_global_flag = der_postcolonialism
+		MSA = {
+			all_core = {
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+				}
+			}
+		}
+	}
+	
+	immediate = { set_global_flag = MSA_independence }
+	
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 0.75
+			year = 1870
+		}
+		modifier = {
+			factor = 0.75
+			year = 1880
+		}
+		modifier = {
+			factor = 0.75
+			year = 1890
+		}
+		modifier = {
+			factor = 0.5
+			year = 1900
+		}
+	}
+
+	option = {
+		name = "EVTOPTA251001"
+		any_owned = {
+			limit = {
+				is_core = MSA
+			}
+			secede_province = MSA
+		}
+		MSA = {
+			leadership = 80
+			primary_culture = FROM
+			add_accepted_culture = malay
+			years_of_research = 5
+		}
+		create_vassal = MSA
+		set_global_flag = MSA_independence
+		ai_chance = { factor = 75 }
+	}
+	
+	option = {
+		name = "EVTOPTB251001"
+		any_owned = {
+			limit = {
+				is_core = MSA
+			}
+			secede_province = MSA
+		}
+		MSA = {
+			leadership = 80
+			primary_culture = FROM
+			add_accepted_culture = malay
+			years_of_research = 5
+		}
+		war = {
+			target = MSA
+			attacker_goal = {
+				casus_belli = make_puppet
+			}
+			
+			defender_goal = {
+				casus_belli = become_independent
+			}
+		}
+		set_global_flag = MSA_independence
+		ai_chance = { factor = 25 }
+	}
+}
+country_event = {
+	id = 251016
+	title = "EVTNAME251016"
+	desc = "EVTDESC251001"
+	major = yes
+	picture = "Riot"
+	
+	trigger = {
+		is_independant = yes
+		capital_scope = {
+			OR = {
+				continent = europe
+				continent = asia
+			}
+		}
+		NOT = { has_global_flag = HND_independence }
+		has_global_flag = der_postcolonialism
+		HND = {
+			all_core = {
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+				}
+			}
+		}
+		NOT = { exists = HND }
+	}
+	
+	immediate = { set_global_flag = HND_independence }
+	
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 0.75
+			year = 1870
+		}
+		modifier = {
+			factor = 0.75
+			year = 1880
+		}
+		modifier = {
+			factor = 0.75
+			year = 1890
+		}
+		modifier = {
+			factor = 0.5
+			year = 1900
+		}
+	}
+
+	option = {
+		name = "EVTOPTA251001"
+		any_owned = {
+			limit = {
+				is_core = HND
+			}
+			secede_province = HND
+		}
+		HND = {
+			leadership = 80
+			years_of_research = 5
+		}
+		create_vassal = HND
+		set_global_flag = HND_independence
+		ai_chance = { factor = 75 }
+	}
+	
+	option = {
+		name = "EVTOPTB251001"
+		any_owned = {
+			limit = {
+				is_core = HND
+			}
+			secede_province = HND
+		}
+		HND = {
+			leadership = 80
+			years_of_research = 5
+		}
+		war = {
+			target = HND
+			attacker_goal = {
+				casus_belli = make_puppet
+			}
+			
+			defender_goal = {
+				casus_belli = become_independent
+			}
+		}
+		set_global_flag = HND_independence
+		ai_chance = { factor = 25 }
+	}
+}
+country_event = {
+	id = 251017
+	title = "EVTNAME251017"
+	desc = "EVTDESC251001"
+	major = yes
+	picture = "Riot"
+	
+	trigger = {
+		is_independant = yes
+		capital_scope = {
+			OR = {
+				continent = europe
+				continent = asia
+			}
+		}
+		NOT = { has_global_flag = AST_independence }
+		has_global_flag = der_postcolonialism
+		AST = {
+			all_core = {
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+				}
+			}
+		}
+		NOT = { exists = AST }
+	}
+	
+	immediate = { set_global_flag = AST_independence }
+	
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 0.75
+			year = 1870
+		}
+		modifier = {
+			factor = 0.75
+			year = 1880
+		}
+		modifier = {
+			factor = 0.75
+			year = 1890
+		}
+		modifier = {
+			factor = 0.5
+			year = 1900
+		}
+	}
+
+	option = {
+		name = "EVTOPTA251001"
+		any_owned = {
+			limit = {
+				is_core = AST
+			}
+			secede_province = AST
+		}
+		AST = {
+			leadership = 80
+			primary_culture = FROM
+			add_accepted_culture = australian
+			years_of_research = 5
+		}
+		create_vassal = AST
+		set_global_flag = AST_independence
+		ai_chance = { factor = 75 }
+	}
+	
+	option = {
+		name = "EVTOPTB251001"
+		any_owned = {
+			limit = {
+				is_core = AST
+			}
+			secede_province = AST
+		}
+		AST = {
+			leadership = 80
+			primary_culture = FROM
+			add_accepted_culture = australian
+			years_of_research = 5
+		}
+		war = {
+			target = AST
+			attacker_goal = {
+				casus_belli = make_puppet
+			}
+			
+			defender_goal = {
+				casus_belli = become_independent
+			}
+		}
+		set_global_flag = AST_independence
+		ai_chance = { factor = 25 }
+	}
+}
+
+country_event = {
+	id = 251019
+	title = "EVTNAME251019"
+	desc = "EVTDESC251001"
+	major = yes
+	picture = "Riot"
+	
+	trigger = {
+		is_independant = yes
+		capital_scope = {
+			OR = {
+				continent = europe
+				continent = asia
+			}
+		}
+		NOT = { has_global_flag = NZL_independence }
+		has_global_flag = der_postcolonialism
+		NZL = {
+			all_core = {
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+				}
+			}
+		}
+		NOT = { exists = NZL }
+	}
+	
+	immediate = { set_global_flag = NZL_independence }
+	
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 0.75
+			year = 1870
+		}
+		modifier = {
+			factor = 0.75
+			year = 1880
+		}
+		modifier = {
+			factor = 0.75
+			year = 1890
+		}
+		modifier = {
+			factor = 0.5
+			year = 1900
+		}
+	}
+
+	option = {
+		name = "EVTOPTA251001"
+		any_owned = {
+			limit = {
+				is_core = NZL
+			}
+			secede_province = NZL
+		}
+		NZL = {
+			leadership = 80
+			primary_culture = FROM
+			add_accepted_culture = australian
+			years_of_research = 5
+		}
+		create_vassal = NZL
+		set_global_flag = NZL_independence
+		ai_chance = { factor = 75 }
+	}
+	
+	option = {
+		name = "EVTOPTB251001"
+		any_owned = {
+			limit = {
+				is_core = NZL
+			}
+			secede_province = NZL
+		}
+		NZL = {
+			leadership = 80
+			primary_culture = FROM
+			add_accepted_culture = australian
+			years_of_research = 5
+		}
+		war = {
+			target = NZL
+			attacker_goal = {
+				casus_belli = make_puppet
+			}
+			
+			defender_goal = {
+				casus_belli = become_independent
+			}
+		}
+		set_global_flag = NZL_independence
+		ai_chance = { factor = 25 }
+	}
+}
+country_event = {
+	id = 251020
+	title = "EVTNAME251020"
+	desc = "EVTDESC251001"
+	major = yes
+	picture = "Riot"
+	
+	trigger = {
+		is_independant = yes
+		capital_scope = {
+			OR = {
+				continent = europe
+				continent = asia
+			}
+		}
+		NOT = { has_global_flag = MAD_independence }
+		has_global_flag = der_postcolonialism
+		MAD = {
+			all_core = {
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+				}
+			}
+		}
+		NOT = { exists = MAD }
+	}
+	
+	immediate = { set_global_flag = MAD_independence }
+	
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 0.75
+			year = 1870
+		}
+		modifier = {
+			factor = 0.75
+			year = 1880
+		}
+		modifier = {
+			factor = 0.75
+			year = 1890
+		}
+		modifier = {
+			factor = 0.5
+			year = 1900
+		}
+	}
+
+	option = {
+		name = "EVTOPTA251001"
+		any_owned = {
+			limit = {
+				is_core = MAD
+			}
+			secede_province = MAD
+		}
+		MAD = {
+			leadership = 80
+			years_of_research = 5
+		}
+		create_vassal = MAD
+		set_global_flag = MAD_independence
+		ai_chance = { factor = 75 }
+	}
+	
+	option = {
+		name = "EVTOPTB251001"
+		any_owned = {
+			limit = {
+				is_core = MAD
+			}
+			secede_province = MAD
+		}
+		MAD = {
+			leadership = 80
+			years_of_research = 5
+		}
+		war = {
+			target = MAD
+			attacker_goal = {
+				casus_belli = make_puppet
+			}
+			
+			defender_goal = {
+				casus_belli = become_independent
+			}
+		}
+		set_global_flag = MAD_independence
+		ai_chance = { factor = 25 }
+	}
+}
+country_event = {
+	id = 251021
+	title = "EVTNAME251021"
+	desc = "EVTDESC251001"
+	major = yes
+	picture = "Riot"
+	
+	trigger = {
+		is_independant = yes
+		capital_scope = {
+			OR = {
+				continent = europe
+				continent = asia
+			}
+		}
+		NOT = { has_global_flag = SAF_independence }
+		has_global_flag = der_postcolonialism
+		SAF = {
+			all_core = {
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+				}
+			}
+		}
+		NOT = { exists = SAF }
+	}
+	
+	immediate = { set_global_flag = SAF_independence }
+	
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 0.75
+			year = 1870
+		}
+		modifier = {
+			factor = 0.75
+			year = 1880
+		}
+		modifier = {
+			factor = 0.75
+			year = 1890
+		}
+		modifier = {
+			factor = 0.5
+			year = 1900
+		}
+	}
+
+	option = {
+		name = "EVTOPTA251001"
+		any_owned = {
+			limit = {
+				is_core = SAF
+			}
+			secede_province = SAF
+		}
+		SAF = {
+			leadership = 80
+			years_of_research = 5
+		}
+		create_vassal = SAF
+		set_global_flag = SAF_independence
+		ai_chance = { factor = 75 }
+	}
+	
+	option = {
+		name = "EVTOPTB251001"
+		any_owned = {
+			limit = {
+				is_core = SAF
+			}
+			secede_province = SAF
+		}
+		SAF = {
+			leadership = 80
+			years_of_research = 5
+		}
+		war = {
+			target = SAF
+			attacker_goal = {
+				casus_belli = make_puppet
+			}
+			
+			defender_goal = {
+				casus_belli = become_independent
+			}
+		}
+		set_global_flag = SAF_independence
+		ai_chance = { factor = 25 }
+	}
+}
+country_event = {
+	id = 251022
+	title = "EVTNAME251022"
+	desc = "EVTDESC251001"
+	major = yes
+	picture = "Riot"
+	
+	trigger = {
+		is_independant = yes
+		capital_scope = {
+			OR = {
+				continent = europe
+				continent = asia
+			}
+		}
+		NOT = { has_global_flag = RHO_independence }
+		has_global_flag = der_postcolonialism
+		RHO = {
+			all_core = {
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+				}
+			}
+		}
+		NOT = { exists = RHO }
+	}
+	
+	immediate = { set_global_flag = RHO_independence }
+	
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 0.75
+			year = 1870
+		}
+		modifier = {
+			factor = 0.75
+			year = 1880
+		}
+		modifier = {
+			factor = 0.75
+			year = 1890
+		}
+		modifier = {
+			factor = 0.5
+			year = 1900
+		}
+	}
+
+	option = {
+		name = "EVTOPTA251001"
+		any_owned = {
+			limit = {
+				is_core = RHO
+			}
+			secede_province = RHO
+		}
+		RHO = {
+			leadership = 80
+			years_of_research = 5
+		}
+		create_vassal = RHO
+		set_global_flag = RHO_independence
+		ai_chance = { factor = 75 }
+	}
+	
+	option = {
+		name = "EVTOPTB251001"
+		any_owned = {
+			limit = {
+				is_core = RHO
+			}
+			secede_province = RHO
+		}
+		RHO = {
+			leadership = 80
+			years_of_research = 5
+		}
+		war = {
+			target = RHO
+			attacker_goal = {
+				casus_belli = make_puppet
+			}
+			
+			defender_goal = {
+				casus_belli = become_independent
+			}
+		}
+		set_global_flag = RHO_independence
+		ai_chance = { factor = 25 }
+	}
+}
+country_event = {
+	id = 251023
+	title = "EVTNAME251023"
+	desc = "EVTDESC251001"
+	major = yes
+	picture = "Riot"
+	
+	trigger = {
+		is_independant = yes
+		capital_scope = {
+			OR = {
+				continent = europe
+				continent = asia
+			}
+		}
+		NOT = { has_global_flag = LIB_independence }
+		has_global_flag = der_postcolonialism
+		LIB = {
+			all_core = {
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+				}
+			}
+		}
+		NOT = { exists = LIB }
+	}
+	
+	immediate = { set_global_flag = LIB_independence }
+	
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 0.75
+			year = 1870
+		}
+		modifier = {
+			factor = 0.75
+			year = 1880
+		}
+		modifier = {
+			factor = 0.75
+			year = 1890
+		}
+		modifier = {
+			factor = 0.5
+			year = 1900
+		}
+	}
+
+	option = {
+		name = "EVTOPTA251001"
+		any_owned = {
+			limit = {
+				is_core = LIB
+			}
+			secede_province = LIB
+		}
+		LIB = {
+			leadership = 80
+			years_of_research = 5
+		}
+		create_vassal = LIB
+		set_global_flag = LIB_independence
+		ai_chance = { factor = 75 }
+	}
+	
+	option = {
+		name = "EVTOPTB251001"
+		any_owned = {
+			limit = {
+				is_core = LIB
+			}
+			secede_province = LIB
+		}
+		LIB = {
+			leadership = 80
+			years_of_research = 5
+		}
+		war = {
+			target = LIB
+			attacker_goal = {
+				casus_belli = make_puppet
+			}
+			
+			defender_goal = {
+				casus_belli = become_independent
+			}
+		}
+		set_global_flag = LIB_independence
+		ai_chance = { factor = 25 }
+	}
+}
+country_event = {
+	id = 251024
+	title = "EVTNAME251024"
+	desc = "EVTDESC251001"
+	major = yes
+	picture = "Riot"
+	
+	trigger = {
+		is_independant = yes
+		capital_scope = {
+			OR = {
+				continent = europe
+				continent = asia
+			}
+		}
+		NOT = { has_global_flag = CNG_independence }
+		has_global_flag = der_postcolonialism
+		CNG = {
+			all_core = {
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+				}
+			}
+		}
+		NOT = { exists = CNG }
+	}
+	
+	immediate = { set_global_flag = CNG_independence }
+	
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 0.75
+			year = 1870
+		}
+		modifier = {
+			factor = 0.75
+			year = 1880
+		}
+		modifier = {
+			factor = 0.75
+			year = 1890
+		}
+		modifier = {
+			factor = 0.5
+			year = 1900
+		}
+	}
+
+	option = {
+		name = "EVTOPTA251001"
+		any_owned = {
+			limit = {
+				is_core = CNG
+			}
+			secede_province = CNG
+		}
+		CNG = {
+			leadership = 80
+			years_of_research = 5
+		}
+		create_vassal = CNG
+		set_global_flag = CNG_independence
+		ai_chance = { factor = 75 }
+	}
+	
+	option = {
+		name = "EVTOPTB251001"
+		any_owned = {
+			limit = {
+				is_core = CNG
+			}
+			secede_province = CNG
+		}
+		CNG = {
+			leadership = 80
+			years_of_research = 5
+		}
+		war = {
+			target = CNG
+			attacker_goal = {
+				casus_belli = make_puppet
+			}
+			
+			defender_goal = {
+				casus_belli = become_independent
+			}
+		}
+		set_global_flag = CNG_independence
+		ai_chance = { factor = 25 }
+	}
+}
+
+#country_event = {
+#	id = 251018
+#	title = "EVTNAME251018"
+#	desc = "EVTDESC251001"
+#	major = yes
+#	picture = "Riot"
+#	
+#	trigger = {
+#		is_independant = yes
+#		capital_scope = {
+#			OR = {
+#				continent = europe
+#				continent = asia
+#			}
+#		}
+#		NOT = { has_global_flag = PHI_independence }
+#		has_global_flag = der_postcolonialism
+#		PHI = {
+#			all_core = {
+#				OR = {
+#					owned_by = THIS
+#					owner = { in_sphere = THIS }
+#				}
+#			}
+#		}
+#		NOT = { exists = PHI }
+#	}
+#	
+#	immediate = { set_global_flag = PHI_independence }
+#	
+#	mean_time_to_happen = {
+#		months = 48
+#		modifier = {
+#			factor = 0.75
+#			year = 1870
+#		}
+#		modifier = {
+#			factor = 0.75
+#			year = 1880
+#		}
+#		modifier = {
+#			factor = 0.75
+#			year = 1890
+#		}
+#		modifier = {
+#			factor = 0.5
+#			year = 1900
+#		}
+#	}
+#
+#	option = {
+#		name = "EVTOPTA251001"
+#		any_owned = {
+#			limit = {
+#				is_core = PHI
+#			}
+#			secede_province = PHI
+#		}
+#		PHI = {
+#			leadership = 80
+#			years_of_research = 5
+#		}
+#		create_vassal = PHI
+#		set_global_flag = PHI_independence
+#		ai_chance = { factor = 75 }
+#	}
+#	
+#	option = {
+#		name = "EVTOPTB251001"
+#		any_owned = {
+#			limit = {
+#				is_core = PHI
+#			}
+#			secede_province = PHI
+#		}
+#		PHI = {
+#			leadership = 80
+#			years_of_research = 5
+#		}
+#		war = {
+#			target = PHI
+#			attacker_goal = {
+#				casus_belli = make_puppet
+#			}
+#			
+#			defender_goal = {
+#				casus_belli = become_independent
+#			}
+#		}
+#		set_global_flag = PHI_independence
+#		ai_chance = { factor = 25 }
+#	}
+#}

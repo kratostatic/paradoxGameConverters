@@ -220,3 +220,48 @@ country_event = {
 	}
 }
 
+country_event = { 
+	id = 350003 
+	title = EVTNAME350003
+	desc = EVTDESC350003
+
+	trigger = { 
+		tag = AOT
+		is_year = 1900
+		any_core = { empty = yes }
+	}
+
+	mean_time_to_happen = { months = 1 }
+
+	option = { 
+		name = EVTOPTA350003
+		any_core = {
+			limit = { empty = yes }
+			secede_province = AOT
+			remove_core = NZL
+		}
+    }
+}
+
+country_event = { 
+	id = 350004
+	title = EVTNAME350004
+	desc = EVTDESC350004
+
+	trigger = { 
+		tag = ABO
+		is_year = 1900
+		any_core = { empty = yes }
+	}
+
+	mean_time_to_happen = { months = 1 }
+
+	option = { 
+		name = EVTOPTA350004
+		any_core = {
+			limit = { empty = yes }
+			secede_province = ABO
+			remove_core = AST
+		}
+    }
+}
