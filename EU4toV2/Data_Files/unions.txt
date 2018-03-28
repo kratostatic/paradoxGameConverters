@@ -19,13 +19,17 @@
 # THE SOFTWARE.
 
 unions = {
+#Weird stuff
+#link = { tag = AAA culture = dummy } #Dummy
+#link = { tag = AAA culture = noculture } #Dummy
+
 #Ashkenazi and Sephardi are removed since they can pop up anywhere, but they should lead to ISR
 
 #Germanics
 link = { tag = GER culture = north_german } # North Germany
 link = { tag = GER culture = south_german } #South Germany
 #link = { tag = GER culture = german } #CK2 converted - generic Germany
-link = { tag = FRA culture = frankish } #CK2 converted - Francia=>France?
+link = { tag = FRK culture = frankish } #Frankia
 link = { tag = SUE culture = suebi } #Suebi
 link = { tag = OGO culture = ostrogothic } #Ostrogothia
 
@@ -49,7 +53,7 @@ link = { tag = SCA tag = SMI culture = sami } #Sami
 link = { tag = ENG culture = british } #Great Britain
 link = { tag = ENG tag = ENL culture = english } #England
 link = { tag = ENG tag = IRE culture = irish } #Ireland
-link = { tag = ENG culture = anglo_saxon } #UK for Anglo-Saxons
+link = { tag = AES culture = anglo_saxon } #Anglo-Saxony
 link = { tag = ENG tag = SCO culture = scottish } #Scotland
 link = { tag = ENG tag = SCO tag = HSC culture = pictish } #Pitcland
 link = { tag = ENG tag = WLS culture = welsh } #Wales
@@ -101,7 +105,7 @@ link = { tag = SLV tag = CZH tag = RUT culture = slovak } #and Slovakia and Ruth
 link = { tag = RUS culture = russian } #Russia
 link = { tag = BYE tag = RUS culture = byelorussian } #Russia and Belarus
 link = { tag = RUT tag = UKR culture = ukrainian } #Ruthenia/Ukraine
-#no cultural union for Ugrian
+link = { tag = UGR culture = ugrian } #Yugra
 
 #Baltic => United Baltic
 link = { tag = UBD tag = LAT culture = latvian } #and Latvia
@@ -112,8 +116,8 @@ link = { tag = GRE culture = greek } #Greece
 link = { tag = GEO culture = georgian } #Georgia
 link = { tag = ARM culture = armenian } #Armenia
 link = { tag = ALN culture = alan } #Alania
-link = { tag = BAB culture = syriac } #Assyria?
-#no cultural union for Maghreb_arabic
+link = { tag = ASY culture = syriac } #Assyria
+link = { tag = KRT culture = maghreb_arabic } # Carthage
 
 #Turkic
 link = { tag = TUR culture = turkish } #the Ottomans
@@ -144,9 +148,9 @@ link = { tag = BHT culture = kurdish } #Bohtan/Soran/Kurdistan
 
 #Central Asian
 link = { tag = KHA tag = MGL culture = mongol } #Mongolia
-#link = { tag = SIB culture = siberian } #Sibir
+link = { tag = SBR culture = siberian } #Siberia
 link = { tag = TIB culture = tibetan } #Tibet
-#no cultural union for Yakut
+link = { tag = SKH culture = yakut } #Sakha
 
 #India
 link = { tag = HND culture = assamese }
@@ -170,18 +174,20 @@ link = { tag = HND culture = tamil }
 link = { tag = HND culture = telegu }
 link = { tag = HND culture = asian_minor } #Central Indic core-hole
 
-#Indochina
-#link = { tag = DAI culture = vietnamese } #Dai Nam
-#link = { tag = CAM culture = khmer } #Cambodia
-link = { tag = MSA culture = malay } #(Converted) Malaya
-#link = { tag = BRU culture = bornean } #Brunei
+#Indochina => Indochina
+link = { tag = IDC culture = vietnamese }
+link = { tag = IDC tag = CAM culture = khmer } # and Cambodia
+link = { tag = MSA culture = malay } #Malaya
+link = { tag = MSA culture = bornean } #Malaya
 link = { tag = PHI culture = filipino } #Philippines
 link = { tag = JAV culture = javan } #Java
-#link = { tag = SIA culture = thai } #Siam
-link = { tag = LUA culture = lao } #Luang Phrabang
-link = { tag = SST tag = BUR culture = shan } #(Converted) Shan States
-link = { tag = BUR culture = burmese } #Burma
-#no cultural union for Moluccan, Kachin or Karen
+link = { tag = IDC tag = SIA culture = thai } #and Siam
+link = { tag = IDC tag = LUA culture = lao } #and Luang Phrabang
+link = { tag = IDC tag = SST tag = BUR culture = shan } #and Shan States
+link = { tag = IDC tag = BUR culture = burmese } #and Burma
+link = { tag = IDC culture = kachin }
+link = { tag = IDC culture = karen }
+#no cultural union for Moluccan
 
 #East Asian
 link = { tag = JAP culture = japanese } #Japan

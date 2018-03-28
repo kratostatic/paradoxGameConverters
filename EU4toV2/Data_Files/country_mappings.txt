@@ -1164,6 +1164,7 @@ link = { EU4 = c_makran Vic2 = MAK } #Makran
 link = { EU4 = c_weimar Vic2 = WEI } #Weimar
 link = { EU4 = c_sikkim Vic2 = SIK } #Sikkim
 link = { EU4 = k_alania Vic2 = ALN } #Alania
+link = { EU4 = d_yugra Vic2 = UGR } #Yugra
 
 ##Added for some decisions to have a sense
 link = { EU4 = d_carinthia Vic2 = CAR } #Carinthia
