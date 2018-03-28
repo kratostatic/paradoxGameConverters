@@ -14,6 +14,8 @@ ADA_ADJ;Adal;Adal;Adal;Adal;Adal;Adal;Adal;Adal;Adal;Adal;Adal;Àäàë;Adal;x
 ADA;Adal;Adal;Adal;Adal;Adal;Adal;Adal;Adal;Adal;Adal;Adal;Àäàë;Adal;x
 ADU_ADJ;Andalusian;Andalou;Andalusisch;Andaluzyjski;Andaluz;Andaluso;Andalúz;Andaluskı;Andalúz;Andalusisch;Andaluz;Àíäàëóññêèé;Andalusian;x
 ADU;Andalusia;Andalousie;Andalusien;Andaluzja;Andalucía;Andalusia;Andalúzia;Andalusie;Andalúzia;Andalusië;Andaluzia;Àíäàëóñèÿ;Andalusia;x
+AES;Anglo-Saxony;Anglo-Saxe;Anglo-Sachsen;Anglo-Saksonia;Anglosajona;Anglo-Sassonia;Angol-Szász;Anglosaské;Angol-Szász;Anglo-Saksen;Anglo-saxônia;Àíãëî-Ñàêñîíèÿ;Anglo-Saksi;x
+AES_ADJ;Anglo-Saxon;anglo-saxon;Angelsächsisch;Anglosaski;anglosajón;anglosassone;angolszász;Anglosaskı;angolszász;Angelsaksisch;Anglo-saxão;Àíãëîñàêñîíñêèé;Anglosaksinen;x
 AFA_ADJ;Afar;Afar;Afar;Afar;Afar;Afar;Afar;Afar;Afar;Afar;Afar;Àôàğ;Afar;x
 AFA;Afar;Afar;Afar;Afar;Afar;Afar;Afar;Afar;Afar;Afar;Afar;Àôàğ;Afar;x
 AJU_ADJ;Ajuuraan;Ajuuraan;Ajuuraan;Ajuuraan;Ajuuraan;Ajuuraan;Ajuuraan;Ajuuraan;Ajuuraan;Ajuuraan;Ajúuran;Àäæóğàí;Ajuuraan;x
@@ -91,6 +93,8 @@ ASI_ADJ;Assiniboine;Assiniboine;Assiniboin;Assiniboine;Assiniboine;Assiniboine;A
 ASI;Assiniboine;Assiniboine;Assiniboin;Assiniboine;Assiniboine;Assiniboine;Assiniboine;Assiniboine;Assiniboine;Assiniboine;Assiniboine;Àññèíèáîèíå;Assiniboine;x
 ASS_ADJ;Assamese;Assamais;Assamesisch;Asamski;Assamés;assamese;asszámi;ásámština;asszámi;Assamees;Assamês;Àññàìñêèé;assami;x
 ASS;Assam;Assam;Assam;Assam;Assam;Assam;Assam;Assam;Assam;Assam;Assam;Àññàì;Assam;x
+ASY;Assyria;Assyrie;Assyrien;Asyria;Asiria;Assiria;Asszíria;Asırii;Asszíria;Assyrië;Assíria;Àññèğèÿ;Assyria;x
+ASY_ADJ;Assyrian;assyrien;Assyrer;asyryjski;asirio;assiro;asszír;Asyrskı;asszír;Assyrisch;assírio;àññèğèéñêèé;assyrialainen;x
 ATH_ADJ;Athenian;Athénien;Athener;Ateñski;ateniense;ateniese;athéni;aténská;athéni;Atheens;ateniense;Àôèíñêèé;ateenalainen;x
 ATH;Athens;Athènes;Athen;Ateny;Atenas;Atene;Athén;Athény;Athén;Athene;Atenas;Àôèíû;Ateena;x
 AUG_ADJ;Augsburger;Augsburger;Augsburger;Augsburger;Augsburger;Augsburger;Augsburger;Augsburger;Augsburger;Augsburger;Augsburger;Àóãñáóğãåğ;Augsburger;x
@@ -262,6 +266,8 @@ FOX_ADJ;Fox;Renard;Fuchs;Lis;zorro;Fox;Róka;Liška;Róka;Vos;Raposa;Ëèñà;Kettu;x
 FOX;Fox;Renard;Fuchs;Lis;zorro;Fox;Róka;Liška;Róka;Vos;Raposa;Ëèñà;Kettu;x
 FRI_ADJ;Frisian;frison;Friesisch;fryzyjski;frisio;frisone;fríz;Fríština;fríz;Frisian;Frisian;Ôğèçñêèé;friisi;x
 FRI;Friesland;Frise;Friesland;Fryzja;Frisia;Frisia;Friesland;Friesland;Friesland;Friesland;Frísia;Ôğèñëàíäèÿ;Friesland;x
+FRK;Frankia;Francia;Frankia;Frankia;Frankia;Franchia;Frankia;Frankie;Frankia;Frankia;Frankia;Ôğàíêñèÿ;Frankkia;x
+FRK_ADJ;Frankish;franc;fränkisch;Frankish;Frankish;Franchi;frank;Frankish;frank;Frankische;Francos;Ôğàíêñêîå;frankkien;x
 FUJ_ADJ;Fujiwara;Fujiwara;Fujiwara;Fujiwara;Fujiwara;Fujiwara;Fujiwara;Fujiwara;Fujiwara;Fujiwara;Fujiwara;Ôóéèâàğà;Fujiwara;x
 FUJ;Fujiwara;Fujiwara;Fujiwara;Fujiwara;Fujiwara;Fujiwara;Fujiwara;Fujiwara;Fujiwara;Fujiwara;Fujiwara;Ôóéèâàğà;Fujiwara;x
 GAB_ADJ;Gabonese;Gabonais;Gabunisch;Gabon;Gabonés;Gabonese;gaboni;Gabon;gaboni;Gabonese;Gabonesa;Ãàáîíñêèé;Gabonin;x
@@ -327,6 +333,8 @@ HTK_ADJ;Hatakeyama;Hatakeyama;Hatakeyama;Hatakeyama;Hatakeyama;Hatakeyama;Hatake
 HTK;Hatakeyama;Hatakeyama;Hatakeyama;Hatakeyama;Hatakeyama;Hatakeyama;Hatakeyama;Hatakeyama;Hatakeyama;Hatakeyama;Hatakeyama;Õàòàêåÿìà;Hatakeyama;x
 HUR_ADJ;Huron;Huron;Huron;Huron;Hurón;Huron;Huron;Huron;Huron;Huron;Huron;Õóğîí;Huron;x
 HUR;Huron;Huron;Huron;Huron;Hurón;Huron;Huron;Huron;Huron;Huron;Huron;Õóğîí;Huron;x
+IDC;Indochina;Indochine;Indochina;Indochina;Indochina;Indocina;Indokína;Indoèína;Indokína;Indo-China;Indochina;Èíäîêèòàé;Indokiina;x
+IDC_ADJ;Indochinese;indochinois;Indochinesisch;Indochiñski;Indochino;Indocinese;Indokínai;Indoèínskı;Indokínai;Indochinese;Na Indochina;Èíäîêèòàéñêèé;indokiinalaisissa;x
 IKE_ADJ;Ikeda;Ikeda;Ikeda;Ikeda;Ikeda;Ikeda;Ikeda;Ikeda;Ikeda;Ikeda;Ikeda;Èêåäà;Ikeda;x
 IKE;Ikeda;Ikeda;Ikeda;Ikeda;Ikeda;Ikeda;Ikeda;Ikeda;Ikeda;Ikeda;Ikeda;Èêåäà;Ikeda;x
 ILL_ADJ;Illinewek;Illinewek;Illinewek;Illinewek;Illinewek;Illinewek;Illinewek;Illinewek;Illinewek;Illinewek;Illinewek;Èëëèíåâåê;Illinewek;x
@@ -391,6 +399,8 @@ KON_ADJ;Kongolese;Kongolais;Kongolese;Kongolese;Kongolese;Kongolese;Kongolese;Ko
 KON;Kongo;Kongo;Kongo;Kongo;Kongo;Kongo;Kongo;Kongo;Kongo;Kongo;Kongo;Êîíãî;Kongo;x
 KRK_ADJ;Carnatic;Carnatic;Karnisch;Carnatic;Carnal;Carnatic;Carnatic;Carnatic;Carnatic;Carnatic;Carnal;Öàğíàòèö;Carnatic;x
 KRK;Carnatic;Carnatic;Karnisch;Carnatic;Carnal;Carnatic;Carnatic;Carnatic;Carnatic;Carnatic;Carnal;Öàğíàòèö;Carnatic;x
+KRT;Carthage;Carthage;Karthago;Kartagina;Cartago;Cartagine;Carthage;Kartágo;Carthage;Carthago;Cartago;Êàğôàãåí;Karthago;x
+KRT_ADJ;Carthaginian;carthaginois;karthagisch;kartagiñski;cartaginés;cartaginese;karthágói;Kartáginskı;karthágói;carthaags;cartaginês;êàğôàãåíñêèé;Carthaginian;x
 KRW_ADJ;Karagwean;Karagwean;Karagwean;Karagwean;Karagwean;Karagwean;Karagwean;Karagwean;Karagwean;Karagwean;Karagwean;Êàğàãâåàí;Karagwean;x
 KRW;Karagwe;Karagwe;Karagwe;Karagwe;Karagwe;Karagwe;Karagwe;Karagwe;Karagwe;Karagwe;Karagwe;Êàğàãâå;Karagwe;x
 KSJ_ADJ;Kasanjean;Kasanjean;Kasanjean;Kasanjean;Kasanjean;Kasanjean;Kasanjean;Kasanjean;Kasanjean;Kasanjean;Kasanjean;Êàñàíıàí;Kasanjean;x
@@ -699,6 +709,8 @@ SAV_ADJ;Savoyard;savoyard;Savoyen;Sabaudczyk;saboyano;savoiardo;szavojai;savojsk
 SAV;Savoy;Savoie;Wirsing;Savoy;Saboya;Savoia;Savoy;Savojsko;Savoy;Savoy;Savoy;Ñàâîéñêàÿ Êàïóñòà;savoijinkaali;x
 SBA_ADJ;Shiba;Shiba;Shiba;Shiba;Shiba;Shiba;Shiba;Shiba;Shiba;Shiba;Shiba;Ñèáà;Shiba;x
 SBA;Shiba;Shiba;Shiba;Shiba;Shiba;Shiba;Shiba;Shiba;Shiba;Shiba;Shiba;Ñèáà;Shiba;x
+SBR;Siberia;Sibérie;Sibirien;Syberia;Siberia;Siberia;Szibéria;Sibiø;Szibéria;Siberië;Sibéria;Ñèáèğü;Siperia;x
+SBR_ADJ;Siberian;sibérien;sibirisch;syberyjski;siberiano;siberiano;szibériai;sibiøskı;szibériai;siberisch;Siberiano;ñèáèğñêèé;siperialainen;x
 SGU_ADJ;Segu;Segu;Segu;Segu;Segu;Segu;Segu;Segu;Segu;Segu;Segu;Ñåãó;segu;x
 SGU;Segu;Segu;Segu;Segu;Segu;Segu;Segu;Segu;Segu;Segu;Segu;Ñåãó;segu;x
 SHA_ADJ;Shawnee;Shawnee;Shawnee;Shawnee;Shawnee;Shawnee;Shawnee;Shawnee;Shawnee;Shawnee;Shawnee;Øîíè;Shawnee;x
@@ -715,6 +727,8 @@ SIO_ADJ;Sioux;Sioux;Sioux;Sioux;siux;Sioux;sziú;Sioux;sziú;Sioux;Sioux;Ñèó;Sioux
 SIO;Sioux;Sioux;Sioux;Sioux;siux;Sioux;sziú;Sioux;sziú;Sioux;Sioux;Ñèó;Sioux;x
 SKA_ADJ;Sakalava;Sakalava;Sakalava;Sakalava;Sakalava;Sakalava;Sakalava;Sakalava;Sakalava;Sakalava;Sakalava;Ñàêàëàâà;Sakalava;x
 SKA;Sakalava;Sakalava;Sakalava;Sakalava;Sakalava;Sakalava;Sakalava;Sakalava;Sakalava;Sakalava;Sakalava;Ñàêàëàâà;Sakalava;x
+SKH;Sakha;Sakha;Sakha;Sakha;Sakha;Sakha;Sakha;Sakha;Sakha;Sakha;Sakha;ßêóòñêèé;Sahan;x
+SKH_ADJ;Yakut;yakut;Jakut;Jakut;Yakut;Yakut;jakut;Yakut;jakut;Jakoet;Yakut;ÿêóò;jakuutti;x
 SLE_ADJ;Sierra Leonean;Sierra Leonais;Sierra Leonean;Sierra Leone;Sierra Leona;Sierra Leonese;Sierra Leone;Sierra Leonean;Sierra Leone;Sierra Leonean;Serra Leoa;Ñüåğğà-Ëåîíå;Sierra Leonea;x
 SLE;Sierra Leone;Sierra Leone;Sierra Leone;Sierra Leone;Sierra Leona;Sierra Leone;Sierra Leone;Sierra Leone;Sierra Leone;Sierra Leone;Serra Leoa;Ñüåğğà-Ëåîíå;Sierra Leone;x
 SLN_ADJ;Sligonian;Sligonian;Sligonisch;Sligonian;Sligonian;Sligonian;Sligonian;Sligonian;Sligonian;Sligonian;Sligonian;Ñëèãîíèàí;Sligonian;x
@@ -814,6 +828,8 @@ UBH_ADJ;Buhan;Buhan;Buhan;Buhan;Buhan;Buhan;Buhan;Buhan;Buhan;Buhan;Buhan;Áóõàí;
 UBH;Buha;Buha;Buha;Buha;Buha;Buha;Buha;Buha;Buha;Buha;Buha;Áóõà;Buha;x
 UES_ADJ;Uesugi;Uesugi;Uesugi;Uesugi;Uesugi;Uesugi;Uesugi;Uesugi;Uesugi;Uesugi;Uesugi;Óıñóãè;Uesugi;x
 UES;Uesugi;Uesugi;Uesugi;Uesugi;Uesugi;Uesugi;Uesugi;Uesugi;Uesugi;Uesugi;Uesugi;Óıñóãè;Uesugi;x
+UGR;Yugra;Yugra;Yugra;Yugra;Yugra;Yugra;Yugra;Jugra;Yugra;Yugra;Yugra;Şãğà;Yugra;x
+UGR_ADJ;Ugrian;ugrien;Ugrisch;Ugrian;Ugriano;ugro;ugor;Ugrijskı;ugor;Oegrische;Ugrian;óãîğñêèé;ugrilaisten;x
 ULM_ADJ;Ulmian;Ulmian;Ulmian;Ulmian;Ulmian;Ulmiano;Ulmian;Ulmian;Ulmian;Ulmian;Ulmian;Óëìèàí;Ulmian;x
 ULM;Ulm;Ulm;Ulm;Ulm;Ulm;Ulm;Ulm;Ulm;Ulm;Ulm;Ulm;Óëüì;Ulm;x
 ULS_ADJ;Ulstrian;Ulstrien;Ulstrische;Ulstrian;Ulstrian;Ulstriano;Ulstrian;Ulstrian;Ulstrian;Ulstrian;Ulstrian;Óëñòğèàí;Ulstrian;x
