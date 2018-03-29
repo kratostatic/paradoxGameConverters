@@ -2123,188 +2123,195 @@ political_decisions = {
 			factor = 1
 		}
 	}
-	#form_siberia = {
-	#	potential = {
-	#		primary_culture = siberian
-	#		NOT = {
-	#			exists = SBR
-	#			tag = RUS
-	#		}
-	#	}	
-	#	allow = {
-	#		war = no
-	#		prestige = 5
-	#		SBR = {
-	#			all_core = {
-	#				OR = {
-	#					owned_by = THIS
-	#					owner = {
-	#						in_sphere = THIS
-	#					}
-	#					owner = RUS
-	#				}
-	#			}
-	#		}
-	#	}
-	#	
-	#	effect = {
-	#		prestige = 10
-	#		any_country = {
-	#			limit = {
-	#				in_sphere = THIS
-	#				NOT = {
-	#					tag = THIS
-	#				}
-	#				capital_scope = { continent = asia }
-	#				primary_culture = siberian
-	#			}
-	#			annex_to = THIS
-	#		}
-	#		any_owned = {
-	#			add_core = SBR
-	#			remove_core = RUS
-	#		}			
-	#		
-	#		change_tag = SBR
-	#	}
-	#	ai_will_do = {
-	#		factor = 1
-	#	}
-	#}
-	#form_indochina = {
-	#	potential = {
-	#		capital_scope = { is_core = IDC }
-	#		NOT = { exists = IDC }
-	#	}
-	#	allow = {
-	#		war = no
-	#		prestige = 5
-	#		IDC = {
-	#			all_core = {
-	#				owned_by = THIS
-	#			}
-	#		}
-	#	}
-	#	
-	#	effect = {
-	#		prestige = 10
-	#		any_country = {
-	#			limit = {
-	#				in_sphere = THIS
-	#				NOT = {
-	#					tag = THIS
-	#				}
-	#				capital_scope = { continent = asia }
-	#				capital_scope = { is_core = IDC }
-	#			}
-	#			annex_to = THIS
-	#		}
-	#		any_owned = {
-	#			add_core = IDC
-	#		}			
-	#		
-	#		change_tag = IDC
-	#	}
-	#	ai_will_do = {
-	#		factor = 1
-	#	}
-	#}
-	#form_anglo_saxony = {
-	#	potential = {
-	#		primary_culture = anglo_saxon
-	#		NOT = {
-	#			exists = AES
-	#			tag = ENG
-	#			tag = ENL
-	#		}
-	#	}	
-	#	allow = {
-	#		war = no
-	#		prestige = 5
-	#		AES = {
-	#			all_core = {
-	#				OR = {
-	#					owned_by = THIS
-	#					owner = {
-	#						in_sphere = THIS
-	#					}
-	#					owner = ENG
-	#					owner = ENL
-	#				}
-	#			}
-	#		}
-	#	}
-	#	
-	#	effect = {
-	#		prestige = 10
-	#		any_country = {
-	#			limit = {
-	#				in_sphere = THIS
-	#				NOT = {
-	#					tag = THIS
-	#				}
-	#				capital_scope = { continent = europe }
-	#				primary_culture = anglo_saxon
-	#			}
-	#			annex_to = THIS
-	#		}
-	#		any_owned = {
-	#			add_core = AES
-	#			remove_core = ENG
-	#			remove_core = ENL
-	#		}			
-	#		
-	#		change_tag = AES
-	#	}
-	#	ai_will_do = {
-	#		factor = 1
-	#	}
-	#}
-	#form_frankia = {
-	#	potential = {
-	#		primary_culture = frankish
-	#		NOT = {
-	#			exists = FRK
-	#			tag = FRA
-	#		}
-	#	}	
-	#	allow = {
-	#		war = no
-	#		prestige = 5
-	#		FRK = {
-	#			all_core = {
-	#				OR = {
-	#					owned_by = THIS
-	#					owner = {
-	#						in_sphere = THIS
-	#					}
-	#				}
-	#			}
-	#		}
-	#	}
-	#	
-	#	effect = {
-	#		prestige = 10
-	#		any_country = {
-	#			limit = {
-	#				in_sphere = THIS
-	#				NOT = {
-	#					tag = THIS
-	#				}
-	#				capital_scope = { continent = europe }
-	#				primary_culture = frankish
-	#			}
-	#			annex_to = THIS
-	#		}
-	#		any_owned = {
-	#			add_core = FRK
-	#			remove_core = FRA
-	#		}			
-	#		
-	#		change_tag = FRK
-	#	}
-	#	ai_will_do = {
-	#		factor = 1
-	#	}
-	#}
- }
+	form_siberia = {
+		potential = {
+			primary_culture = siberian
+			NOT = {
+				exists = SBR
+				tag = RUS
+			}
+		}	
+		allow = {
+			war = no
+			prestige = 5
+			SBR = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 10
+			any_country = {
+				limit = {
+					in_sphere = THIS
+					NOT = {
+						tag = THIS
+					}
+					capital_scope = { continent = asia }
+					primary_culture = siberian
+				}
+				annex_to = THIS
+			}
+			any_owned = {
+				add_core = SBR
+				remove_core = RUS
+			}			
+			
+			change_tag = SBR
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	form_indochina = {
+		potential = {
+			capital_scope = { is_core = IDC }
+			NOT = { exists = IDC }
+		}
+		allow = {
+			war = no
+			prestige = 5
+			IDC = {
+				all_core = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+					owner = { capital_scope = { NOT = { is_core = IDC } } }
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 10
+			any_country = {
+				limit = {
+					in_sphere = THIS
+					NOT = {
+						tag = THIS
+					}
+					capital_scope = { continent = asia }
+					capital_scope = { is_core = IDC }
+				}
+				annex_to = THIS
+			}
+			any_owned = {
+				add_core = IDC
+			}			
+			
+			change_tag = IDC
+			add_accepted_culture = thai
+			add_accepted_culture = vietnamese
+			add_accepted_culture = khmer
+			add_accepted_culture = lao
+			add_accepted_culture = shan
+			add_accepted_culture = burmese
+			add_accepted_culture = kachin
+			add_accepted_culture = karen
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	form_anglo_saxony = {
+		potential = {
+			primary_culture = anglo_saxon
+			NOT = {
+				exists = AES
+				tag = ENG
+				tag = ENL
+			}
+		}	
+		allow = {
+			war = no
+			prestige = 5
+			AES = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 10
+			any_country = {
+				limit = {
+					in_sphere = THIS
+					NOT = {
+						tag = THIS
+					}
+					capital_scope = { continent = europe }
+					primary_culture = anglo_saxon
+				}
+				annex_to = THIS
+			}
+			any_owned = {
+				add_core = AES
+				remove_core = ENG
+				remove_core = ENL
+			}			
+			
+			change_tag = AES
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	form_frankia = {
+		potential = {
+			primary_culture = frankish
+			NOT = {
+				exists = FRK
+				tag = FRA
+			}
+		}	
+		allow = {
+			war = no
+			prestige = 5
+			FRK = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 10
+			any_country = {
+				limit = {
+					in_sphere = THIS
+					NOT = {
+						tag = THIS
+					}
+					capital_scope = { continent = europe }
+					primary_culture = frankish
+				}
+				annex_to = THIS
+			}
+			any_owned = {
+				add_core = FRK
+				remove_core = FRA
+			}			
+			
+			change_tag = FRK
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
