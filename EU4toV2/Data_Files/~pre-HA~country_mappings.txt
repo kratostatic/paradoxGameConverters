@@ -1,4 +1,4 @@
-# Copyright (c) 2017 The Paradox Game Converters Project
+# Copyright (c) 2018 The Paradox Game Converters Project
 # 
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -1177,6 +1177,13 @@ link = { eu4 = ZOM v2 = ZOM } #Zombies
 link = { eu4 = MKD v2 = MKD } #Macedonia
 ##Alaska
 link = { eu4 = LSK v2 = LSK } #Alaska
+
+##WTWSMS new titles
+link = { eu4 = k_visigoths v2 = VGO } # Visigoths
+link = { eu4 = k_ostrogoths v2 = OGO } # Ostrogoths
+link = { eu4 = k_angleland v2 = AES } # Anglo-Saxony
+link = { eu4 = k_frankish v2 = FRK } # Frankia
+link = { eu4 = k_suebia v2 = SUE } # Suebi
 
 ##M&T basic mappings (only those whose tags already exist)
 link = { eu4 = AAA v2 = AAA } #Dummy
