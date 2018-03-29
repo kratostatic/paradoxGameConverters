@@ -1178,6 +1178,13 @@ link = { EU4 = MKD Vic2 = MKD } #Macedonia
 ##Alaska
 link = { EU4 = LSK Vic2 = LSK } #Alaska
 
+##WTWSMS new titles
+link = { EU4 = k_visigoths Vic2 = VGO } # Visigoths
+link = { EU4 = k_ostrogoths Vic2 = OGO } # Ostrogoths
+link = { EU4 = k_angleland Vic2 = AES } # Anglo-Saxony
+link = { EU4 = k_frankish Vic2 = FRK } # Frankia
+link = { EU4 = k_suebia Vic2 = SUE } # Suebi
+
 ##M&T basic mappings (only those whose tags already exist)
 link = { EU4 = AAA Vic2 = AAA } #Dummy
 link = { EU4 = JBC Vic2 = AAC } #JulichClevesBerg
