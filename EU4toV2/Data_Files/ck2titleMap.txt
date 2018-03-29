@@ -1,4 +1,4 @@
-# Copyright (c) 2018 The Paradox Game Converters Project
+# Copyright (c) 2017 The Paradox Game Converters Project
 # 
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -17,6 +17,8 @@
 # LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
+
+ck2Titles = {
 
 link = { name = "a' charraig" 	 title = "c_carrick" 	 region = "e_britannia" }
 link = { name = "abbasid" 	 title = "d_abbasid" 	 region = "e_mali" }
@@ -1694,6 +1696,7 @@ link = { name = "kalaberd" 	 title = "c_albania" 	 region = "e_byzantium" }
 link = { name = "kalabrien" 	 title = "d_calabria" 	 region = "e_byzantium" }
 link = { name = "kaladasht" 	 title = "c_albania" 	 region = "e_byzantium" }
 link = { name = "kalanjara" 	 title = "c_kalanjara" 	 region = "e_rajastan" }
+link = { name = "kalava" 	 title = "d_kaleva" 	 region = "e_wendish_empire" }
 link = { name = "kalinga" 	 title = "d_kalinga" 	 region = "e_bengal" }
 link = { name = "kalinganagar" 	 title = "c_kalinganagar" 	 region = "e_bengal" }
 link = { name = "kallipolis" 	 title = "c_kaliopolis" 	 region = "e_byzantium" }
@@ -1949,6 +1952,7 @@ link = { name = "las islas occidentales" 	 title = "d_the_isles" 	 region = "e_m
 link = { name = "las tierras del norte" 	 title = "d_norrland" 	 region = "e_scandinavia" }
 link = { name = "lata" 	 title = "d_lata" 	 region = "e_rajastan" }
 link = { name = "lateinisches kaiserreich" 	 title = "e_latin_empire" 	 region = "e_latin_empire" }
+link = { name = "latgale" 	 title = "d_latgale" 	 region = "e_wendish_empire" }
 link = { name = "latgaliens" 	 title = "d_lettigalians" 	 region = "e_mali" }
 link = { name = "lathaeron" 	 title = "c_caithness" 	 region = "e_britannia" }
 link = { name = "latharan" 	 title = "c_caithness" 	 region = "e_britannia" }
@@ -1989,7 +1993,7 @@ link = { name = "leon" 	 title = "k_leon" 	 region = "e_spain" }
 link = { name = "león" 	 title = "k_leon" 	 region = "e_spain" }
 link = { name = "les fylkirate" 	 title = "d_norse_pagan_reformed" 	 region = "e_mexikha" }
 link = { name = "les seigneurs du ciel" 	 title = "d_sky_lords" 	 region = "e_pirates" }
-link = { name = "lettgallen" 	 title = "c_west_dvina" 	 region = "e_wendish_empire" }
+link = { name = "lettgallen" 	 title = "d_latgale" 	 region = "e_wendish_empire" }
 link = { name = "lettigaller" 	 title = "d_lettigalians" 	 region = "e_mali" }
 link = { name = "lettigallians" 	 title = "d_lettigalians" 	 region = "e_mali" }
 link = { name = "leum" 	 title = "c_faereyar" 	 region = "e_scandinavia" }
@@ -2467,7 +2471,7 @@ link = { name = "Øsel" 	 title = "c_osel" 	 region = "e_wendish_empire" }
 link = { name = "osmanische türken" 	 title = "k_ottoman" 	 region = "e_mali" }
 link = { name = "osraige" 	 title = "c_ossory" 	 region = "e_britannia" }
 link = { name = "Østerås" 	 title = "c_uppland" 	 region = "e_scandinavia" }
-link = { name = "Österbotten" 	 title = "c_osterbotten" 	 region = "e_scandinavia" }
+link = { name = "Österbotten" 	 title = "d_ostrobothnia" 	 region = "e_scandinavia" }
 link = { name = "Østerbotten" 	 title = "c_osterbotten" 	 region = "e_scandinavia" }
 link = { name = "Östergötland" 	 title = "d_ostergotland" 	 region = "e_scandinavia" }
 link = { name = "Østergøtland" 	 title = "c_ostergotland" 	 region = "e_scandinavia" }
@@ -2478,6 +2482,9 @@ link = { name = "Östkarelen" 	 title = "c_karelen" 	 region = "e_scandinavia" }
 link = { name = "Østkarelen" 	 title = "c_karelen" 	 region = "e_scandinavia" }
 link = { name = "ostlandet" 	 title = "d_ostlandet" 	 region = "e_scandinavia" }
 link = { name = "ostrihom" 	 title = "c_esztergom" 	 region = "e_carpathia" }
+link = { name = "ostrobothnia" 	 title = "d_ostrobothnia" 	 region = "e_scandinavia" }
+link = { name = "ostrobotnia" 	 title = "d_ostrobothnia" 	 region = "e_scandinavia" }
+link = { name = "ostrobotnie" 	 title = "d_ostrobothnia" 	 region = "e_scandinavia" }
 link = { name = "ostrogon" 	 title = "c_esztergom" 	 region = "e_carpathia" }
 link = { name = "oströmisches reich" 	 title = "e_byzantium" 	 region = "e_byzantium" }
 link = { name = "ottoman turks" 	 title = "k_ottoman" 	 region = "e_mali" }
@@ -2581,6 +2588,7 @@ link = { name = "pleskau" 	 title = "c_pskov" 	 region = "e_russia" }
 link = { name = "ploermael" 	 title = "c_vannes" 	 region = "e_france" }
 link = { name = "ploni" 	 title = "c_plauen" 	 region = "e_hre" }
 link = { name = "plourivoù" 	 title = "c_french_leon" 	 region = "e_france" }
+link = { name = "pohjanmaa" 	 title = "d_ostrobothnia" 	 region = "e_scandinavia" }
 link = { name = "poitou" 	 title = "d_poitou" 	 region = "e_france" }
 link = { name = "Pokhara" 	 title = "c_pokhara" 	 region = "e_tibet" }
 link = { name = "poland" 	 title = "k_poland" 	 region = "e_wendish_empire" }
@@ -2825,8 +2833,11 @@ link = { name = "satakuntans" 	 title = "d_satakunta" 	 region = "e_mali" }
 link = { name = "satyapura" 	 title = "c_satyapura" 	 region = "e_rajastan" }
 link = { name = "saurashtra" 	 title = "d_saurashtra" 	 region = "e_rajastan" }
 link = { name = "sauvira" 	 title = "d_sauvira" 	 region = "e_rajastan" }
+link = { name = "savo" 	 title = "d_savonia" 	 region = "e_scandinavia" }
 link = { name = "savoie" 	 title = "d_savoie" 	 region = "e_france" }
 link = { name = "savolax" 	 title = "c_savolaks" 	 region = "e_scandinavia" }
+link = { name = "savonia" 	 title = "d_savonia" 	 region = "e_scandinavia" }
+link = { name = "savonie" 	 title = "d_savonia" 	 region = "e_scandinavia" }
 link = { name = "savoy" 	 title = "d_savoie" 	 region = "e_france" }
 link = { name = "savoyen" 	 title = "d_savoie" 	 region = "e_france" }
 link = { name = "saxe" 	 title = "k_saxony" 	 region = "k_saxony" }
@@ -3574,3 +3585,4 @@ link = { name = "macedonia" title = "MKD" region = "e_byzantium" }
 link = { name = "macédoine" title = "MKD" region = "e_byzantium" }
 link = { name = "mazedonien" title = "MKD" region = "e_byzantium" }
 link = { name = "alaska" title = "LSK" region = "e_russia" }
+}
