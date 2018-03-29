@@ -263,6 +263,7 @@ link = { v2 = ifriqi eu4 = nabatean eu4 = palestinian eu4 = maghreb_arabic eu4 =
 link = { v2 = maghrebi eu4 = maghreb_arabic eu4 = moroccan }
 link = { v2 = misri eu4 = al_misr_arabic eu4 = egyptian_arabic }
 link = { v2 = mashriqi eu4 = nabatean eu4 = palestinian eu4 = al_iraqiya_arabic eu4 = al_suryah_arabic eu4 = levantine_arabic }
+link = { v2 = mashriqi eu4 = bedouin_arabic region = mashriq_region }
 link = { v2 = bedouin eu4 = bedouin_arabic eu4 = omani_culture eu4 = yemeni_culture eu4 = yemenite }
 link = { v2 = berber eu4 = berber eu4 = gaetuli eu4 = garamantian eu4 = tunisian eu4 = algerian eu4 = berber eu4 = gaetuli eu4 = garamantian }
 link = { v2 = turkish eu4 = hephthalite eu4 = turkish eu4 = pecheneg }
