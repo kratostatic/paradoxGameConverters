@@ -55,10 +55,15 @@ link = { v2 = flemish eu4 = flemish }
 link = { v2 = vinlander eu4 = swedish eu4 = gotar eu4 = gutnish eu4 = swedish_colonial eu4 = danish eu4 = faroese eu4 = scanian eu4 = jutish eu4 = norwegian eu4 = anglo_norse eu4 = trondersk eu4 = vestlandsk eu4 = norse eu4 = icelandic eu4 = norse_gaelic eu4 = finnish eu4 = karelian eu4 = finnish_colonial eu4 = ugrorussian eu4 = sapmi eu4 = lappish region = south_america_superregion region = north_america_superregion region = central_america_superregion }
 link = { v2 = sydlig eu4 = swedish eu4 = gotar eu4 = gutnish eu4 = swedish_colonial eu4 = danish eu4 = faroese eu4 = scanian eu4 = jutish eu4 = norwegian eu4 = anglo_norse eu4 = trondersk eu4 = vestlandsk eu4 = norse eu4 = icelandic eu4 = norse_gaelic eu4 = finnish eu4 = karelian eu4 = finnish_colonial eu4 = ugrorussian eu4 = sapmi eu4 = lappish region = oceania_superregion }
 link = { v2 = svart eu4 = swedish eu4 = gotar eu4 = gutnish eu4 = swedish_colonial eu4 = danish eu4 = faroese eu4 = scanian eu4 = jutish eu4 = norwegian eu4 = anglo_norse eu4 = trondersk eu4 = vestlandsk eu4 = norse eu4 = icelandic eu4 = norse_gaelic eu4 = finnish eu4 = karelian eu4 = finnish_colonial eu4 = ugrorussian eu4 = sapmi eu4 = lappish region = niger_region region = guinea_region region = central_africa_region region = sahel_region region = horn_of_africa_region region = east_africa_region region = kongo_region region = south_africa_region }
+##Split of Norse and creation of Icelandic
+link = { v2 = icelandic eu4 = swedish eu4 = danish eu4 = faroese eu4 = norwegian region = iceland_area }
+link = { v2 = danish eu4 = norse region = skaneland_area region = jutland_area region = denmark_area }
+link = { v2 = norwegian eu4 = norse region = northern_norway region = eastern_norway region = western_norway }
+link = { v2 = swedish eu4 = norse region = svealand_area region = norrland_area region = gotland_area region = finland_area region = bothnia_area region = laponia_area region = vastra_gotaland_area region = ostra_svealand_area }
+
 link = { v2 = swedish eu4 = swedish }
 link = { v2 = danish eu4 = danish eu4 = faroese } #Faroese - from a mod
 link = { v2 = icelandic eu4 = norse }
-link = { v2 = icelandic eu4 = norwegian region = iceland_area }
 link = { v2 = norwegian eu4 = norwegian }
 link = { v2 = sami eu4 = sapmi eu4 = lappish }
 
