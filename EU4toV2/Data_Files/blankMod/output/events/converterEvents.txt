@@ -267,8 +267,8 @@ country_event = {
 }
 country_event = {
 	id = 350005
-	title = EVTNAME350004
-	desc = EVTDESC350004
+	title = EVTNAME350004B
+	desc = EVTDESC350004B
 	picture = "Riot"
 	
 	trigger = {
@@ -282,7 +282,22 @@ country_event = {
 	}
 
 	option = {
-		name = EVTOPTA350004
+		name = EVTOPTA350004B
+		TUR_855 = { # Cyprus
+			limit = {
+				is_core = GRE
+				NOT = { owned_by = BYZ }
+			}
+			remove_core = GRE
+			add_core = CYP
+		}
+		EGY_843 = { # Crete
+			limit = {
+				is_core = GRE
+				NOT = { owned_by = BYZ }
+			}
+			add_core = CRE
+		}
 		EGY_897 = { # Aleppo
 			limit = {
 				is_core = IRQ
@@ -380,6 +395,20 @@ country_event = {
 			remove_core = TUR
 		}
 		EGY_921 = { # Palestine
+			limit = {
+				owned_by = TUR
+			}
+			secede_province = EGY
+			remove_core = TUR
+		}
+		TUR_855 = { # Cyprus
+			limit = {
+				owned_by = TUR
+			}
+			secede_province = EGY
+			remove_core = TUR
+		}
+		EGY_843 = { # Crete
 			limit = {
 				owned_by = TUR
 			}
