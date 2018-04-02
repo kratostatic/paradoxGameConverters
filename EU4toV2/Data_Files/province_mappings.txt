@@ -1237,12 +1237,12 @@
 	link = { eu4 = 2975 v2 = 577 }	# 0 "Kleves -> Cleves
 	link = { eu4 = 78 v2 = 570 v2 = 2560 v2 = 596 }	# 0 "Mainz -> Mainz, Darmstadt, Aschaffenburg
 	link = { eu4 = 1876 v2 = 564 }	# 0 "Frankfurt -> Frankfurt
-	link = { eu4 = 79 v2 = 597 v2 = 568 }	# 0 "Würzburg -> Würzburg, Fulda
+	link = { eu4 = 79 v2 = 597 }	# 0 "Würzburg -> Würzburg
 	link = { eu4 = 66 v2 = 598 }	# 0 "Bamberg -> Bayreuth
 	link = { eu4 = 63 v2 = 554 v2 = 562 v2 = 561 v2 = 563 }	# 0 "Thüringen -> Erfurt, Gotha, Weimar, Meiningen
 	link = { eu4 = 83 v2 = 579 v2 = 565 }	# 0 "Nassau -> Koblenz, Wiesbaden
 	link = { eu4 = 84 v2 = 578 v2 = 2561 }	# 0 "Berg -> Düsseldorf, Siegburg
-	link = { eu4 = 81 v2 = 567 v2 = 584 }	# 0 "Hessen -> Giessen, Korbach
+	link = { eu4 = 81 v2 = 567 v2 = 584 v2 = 568 }	# 0 "Hessen -> Giessen, Korbach, Fulda
 	link = { eu4 = 82 v2 = 583 }	# 0 "Westfalen -> Siegen
 	link = { eu4 = 1762 v2 = 566 }	# 0 "Kassel -> Kassel
 	link = { eu4 = 86 eu4 = 2973 v2 = 581 v2 = 580 }	# MANY-TO-MANY: 0 "Münster, 0 "Meppen -> Münster, Dortmund
@@ -1368,11 +1368,11 @@
 	link = { eu4 = 2968 v2 = 630 }	# 0 "Budejovice -> Budejovice
 	link = { eu4 = 266 v2 = 625 }	# 0 "Prague -> Prague
 	link = { eu4 = 2970 v2 = 626 }	# 0 "Hradecko -> Hradec Králové
-	link = { eu4 = 265 eu4 = 4237 v2 = 631 v2 = 632 }	# MANY-TO-MANY: 1 "Brno, 0 "Olomouc -> Brno, Olomouc
+	link = { eu4 = 265 eu4 = 4237 v2 = 631 v2 = 632 v2 = 688 v2 = 689 }	# MANY-TO-MANY: 1 "Brno, 0 "Olomouc -> Brno, Olomouc, Troppau, Tesin
 	# Slovakia
 	link = { eu4 = 1772 v2 = 633 }	# 0 "Pozsony -> Bratislava
 	link = { eu4 = 154 eu4 = 4236 v2 = 635 v2 = 634 }	# MANY-TO-MANY: 0 "Hont, 0 "Trencin -> Nitra, Trencín
-	link = { eu4 = 1318 v2 = 638 v2 = 636 }	# 0 "Spiš -> Rožnava, Banská Bystrica
+	link = { eu4 = 1318 v2 = 638 v2 = 636 v2 = 2584 }	# 0 "Spiš -> Rožnava, Banská Bystrica, Bielsko
 	link = { eu4 = 162 v2 = 637 v2 = 950 }	# 0 "Zemplén -> Košice, Uzgorord
 	# Romania
 	link = { eu4 = 1954 v2 = 652 }	# 0 "Torontál -> Temesvar
@@ -1422,15 +1422,15 @@
 	link = { eu4 = 264 eu4 = 4238 v2 = 682 v2 = 683 }	# MANY-TO-MANY: 0 "Breslau, 0 "Liegnitz -> Breslau, Liegnitz
 	link = { eu4 = 254 v2 = 699 }	# 0 "Poznan -> Posen
 	link = { eu4 = 255 v2 = 717 v2 = 701 }	# 0 "Kalisz -> Kalisz, Gniezno
-	link = { eu4 = 263 v2 = 685 v2 = 684 v2 = 688 v2 = 689 v2 = 2584 }	# 0 "Ratibor -> Kattowitz, Oppeln, Troppau, Tesin, Bielsko
+	link = { eu4 = 263 v2 = 685 v2 = 684 }	# 0 "Ratibor -> Kattowitz, Oppeln
 	link = { eu4 = 262 v2 = 703 v2 = 716 }	# 0 "Krakow -> Krakow, Kielce
 	link = { eu4 = 2960 v2 = 704 }	# 0 "Nowy Sacz -> Novy Sacz
 	link = { eu4 = 2959 v2 = 714 v2 = 705 }	# 0 "Tarnow -> Tarnow, Przemysl
 	link = { eu4 = 2424 v2 = 951 }	# 0 "Peremyshl -> Stryi
-	link = { eu4 = 2961 v2 = 702 v2 = 952 }	# 0 "Lwow -> Lvov, Ternopil
+	link = { eu4 = 2961 eu4 = 1940 v2 = 702 v2 = 952 }	# MANY-TO-MANY: 0 "Lwow, 0 "Belz -> Lvov, Ternopil
 	link = { eu4 = 261 v2 = 953 }	# 0 "Halicz -> Stanislavov
 	link = { eu4 = 2962 v2 = 956 }	# 0 "Rowne -> Rovne
-	link = { eu4 = 279 eu4 = 1940 v2 = 957 }	# 0 "Volhynia, 0 "Belz -> Kovel
+	link = { eu4 = 279 v2 = 957 }	# 0 "Volhynia -> Kovel
 	link = { eu4 = 260 v2 = 715 }	# 0 "Lublin -> Lublin
 	link = { eu4 = 259 v2 = 713 }	# 0 "Sandomierz -> Radom
 	link = { eu4 = 258 v2 = 712 }	# 0 "Sieradz -> Lodz
@@ -1700,7 +1700,7 @@
 	link = { eu4 = 1110 v2 = 1694 }	# 0 "Agadir -> Agadir
 	link = { eu4 = 347 v2 = 1695 }	# 0 "Ifni -> Ifni
 	link = { eu4 = 348 eu4 = 2464 eu4 = 2466 v2 = 1699 }	# 0 "Sus, 0 "Ouarzazate, 0 "Draa -> Warzazat
-	link = { eu4 = 346 v2 = 1698 }	# 0 "Tafilalt -> Rashidia
+	link = { eu4 = 346 eu4 = 2460 v2 = 1698 }	# 0 "Tafilalt, 0 "Saoura -> Rashidia
 	link = { eu4 = 344 v2 = 1690 }	# 0 "Marrakech -> Marrakesh
 	link = { eu4 = 2468 v2 = 1692 }	# 0 "Tadla -> Huribka
 	link = { eu4 = 2467 v2 = 1682 v2 = 1680 }	# 0 "Meknes -> Meknes, Fez
@@ -1721,8 +1721,7 @@
 	link = { eu4 = 351 eu4 = 2458 v2 = 1710 }	# 1 "Biskra, 0 "Hodna -> Biskra
 	link = { eu4 = 2459 v2 = 1713 }	# 0 "Titteri -> Laghwat
 	link = { eu4 = 2463 v2 = 1715 }	# 0 "Kasdir -> Naama
-	link = { eu4 = 2460 v2 = 1716 }	# 0 "Saoura -> Tindouf
-	link = { eu4 = 1127 v2 = 1717 }	# 0 "Tuat -> Chenachene
+	link = { eu4 = 1127 v2 = 1717 v2 = 1716 }	# 0 "Tuat -> Chenachene, Tindouf
 	link = { eu4 = 2472 eu4 = 2457 eu4 = 350 v2 = 1711 }	# 0 "Ouargla, 0 "Mzab, 0 "Laghouat -> Ouargla
 	link = { eu4 = 2456 v2 = 1712 }	# 0 "Touggourt -> Tuggurt
 	link = { eu4 = 1794 v2 = 1720 v2 = 1714 v2 = 1718 v2 = 1719 v2 = 1724 v2 = 1721 v2 = 1722 }	# 0 "Central Sahara -> Timimoun, Bechar, In Salah, Ilizi, Tamanrasset, In Guezzam, Tin Zawatene
