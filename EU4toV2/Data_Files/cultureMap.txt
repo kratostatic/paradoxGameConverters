@@ -96,10 +96,18 @@ link = { v2 = welsh eu4 = welsh eu4 = cornish }
 link = { v2 = irish eu4 = irish }
 
 # Latin - maltese, lombard, umbrian, sicilian, ligurian, piedmontese, romagnan, sardinian, tuscan, venetian
-link = { v2 = lombard eu4 =  eu4 = old_lombard }
+#Split of the Roman Empire
+link = { v2 = brithenig eu4 = roman region = british_isles_region }
+link = { v2 = gaul eu4 = roman region = france_region region = low_countries_region }
+link = { v2 = laessin eu4 = roman region = north_german_region region = south_german_region region = baltic_region region = poland_region region = ruthenia_region region = crimea_region region = balkan_region }
+link = { v2 = spanish eu4 = roman region = iberia_region }
+link = { v2 = romanian eu4 = roman region = carpathia_region }
+link = { v2 = maghreb_arabic eu4 = roman region = egypt_region region = maghreb_region }
+link = { v2 = assyrian eu4 = roman region = mashriq_region region = anatolia_region region = persia_region region = caucasia_region region = arabia_region }
 link = { v2 = italoamericano eu4 = old_lombard eu4 = lombard eu4 = umbrian eu4 = piedmontese eu4 = ligurian eu4 = romagnan eu4 = tuscan eu4 = venetian eu4 = italian eu4 = roman eu4 = latin eu4 = etrurian eu4 = dalmatian eu4 = emilian eu4 = friulian eu4 = romagnol eu4 = helvetian eu4 = noric eu4 = neapolitan eu4 = sardinian eu4 = sicilian eu4 = corsican eu4 = c_latin eu4 = napolitan_colonial eu4 = maltese eu4 = africano eu4 = americano eu4 = asiatico eu4 = australiano eu4 = latin_colonial eu4 = romano_gallic eu4 = romano_british region = south_america_superregion region = north_america_superregion region = central_america_superregion }
 link = { v2 = australiano eu4 = old_lombard eu4 = lombard eu4 = umbrian eu4 = piedmontese eu4 = ligurian eu4 = romagnan eu4 = tuscan eu4 = venetian eu4 = italian eu4 = roman eu4 = latin eu4 = etrurian eu4 = dalmatian eu4 = emilian eu4 = friulian eu4 = romagnol eu4 = helvetian eu4 = noric eu4 = neapolitan eu4 = sardinian eu4 = sicilian eu4 = corsican eu4 = c_latin eu4 = napolitan_colonial eu4 = maltese eu4 = africano eu4 = americano eu4 = asiatico eu4 = australiano eu4 = latin_colonial eu4 = romano_gallic eu4 = romano_british region = oceania_superregion }
 link = { v2 = africano eu4 = old_lombard eu4 = lombard eu4 = umbrian eu4 = piedmontese eu4 = ligurian eu4 = romagnan eu4 = tuscan eu4 = venetian eu4 = italian eu4 = roman eu4 = latin eu4 = etrurian eu4 = dalmatian eu4 = emilian eu4 = friulian eu4 = romagnol eu4 = helvetian eu4 = noric eu4 = neapolitan eu4 = sardinian eu4 = sicilian eu4 = corsican eu4 = c_latin eu4 = napolitan_colonial eu4 = maltese eu4 = africano eu4 = americano eu4 = asiatico eu4 = australiano eu4 = latin_colonial eu4 = romano_gallic eu4 = romano_british region = niger_region region = guinea_region region = central_africa_region region = sahel_region region = horn_of_africa_region region = east_africa_region region = kongo_region region = south_africa_region }
+link = { v2 = lombard eu4 =  eu4 = old_lombard }
 link = { v2 = maltese eu4 = maltese }
 #Sidenote: Muslim Southern Italians convert to Maltese (historical Siculo-Arabic)
 link = { v2 = maltese eu4 = sicilian religion = sunni religion = zikri religion = yazidi religion = sunni_heresy religion = shiite religion = hurufi religion = druze religion = shiite_heresy religion = ibadi religion = kharijite }
@@ -1011,16 +1019,17 @@ link = { v2 = german eu4 = berber_germanic }
 link = { v2 = north_german eu4 = feldern } #Felderndeutsch = Germans in Poland
 link = { v2 = ostrogothic eu4 = gepid }
 link = { v2 = north_italian eu4 = helvetian eu4 = noric }
-link = { v2 = all_italian eu4 = romano_gallic eu4 = romano_british }
-link = { v2 = spanish eu4 = hispanic } #Meh...
+link = { v2 = gaul eu4 = romano_gallic eu4 = gaul }
+link = { v2 = brithenig eu4 = romano_british }
+link = { v2 = spanish eu4 = hispanic }
 link = { v2 = romanian eu4 = dacian }
 link = { v2 = maghreb_arabic eu4 = punic eu4 = african_romance }
+link = { v2 = albanian eu4 = illyrian }
 link = { v2 = assyrian eu4 = romano_persian eu4 = aramean }
-link = { v2 = greek eu4 = thracian eu4 = pannonian eu4 = illyrian eu4 = galatian }
+link = { v2 = greek eu4 = thracian eu4 = pannonian eu4 = galatian }
 link = { v2 = north_caucasian eu4 = caucasian_albanian }
-link = { v2 = irish eu4 = gaul } #Kindah
 link = { v2 = welsh eu4 = east_welsh }
-link = { v2 = finnish eu4 = ugrorussian }
+link = { v2 = ugric eu4 = ugrorussian }
 link = { v2 = tatar eu4 = hunnic eu4 = sinoturk }
 link = { v2 = bedouin eu4 = sabaean }
 link = { v2 = russian eu4 = old_slavic } #People will complain a lot...

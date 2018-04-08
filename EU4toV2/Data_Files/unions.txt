@@ -64,9 +64,12 @@ link = { tag = ITA tag = SIC culture = south_italian } #Two Sicilies = South Ita
 link = { tag = MLT culture = maltese } #Malta, not Italy
 #link = { tag = ITA culture = all_italian } #All-Italian is outside Italy...
 link = { tag = LGB culture = lombard } #Longobardia
+link = { tag = ENR culture = brithenig } #Brittania
+link = { tag = FRR culture = gaul } #Gallia
+link = { tag = AUR culture = laessin } #Läßinia
 
 #Iberian => Spain
-link = { tag = SPA tag = NAV culture = basque } #Navarre as Basque
+link = { tag = SPA tag = EUS culture = basque } #and Euskadi
 link = { tag = SPA culture = spanish }
 link = { tag = SPA tag = CAT culture = catalan } #and Catalonia
 link = { tag = SPA tag = GAL culture = galician } #and Galicia

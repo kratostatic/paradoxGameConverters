@@ -233,8 +233,8 @@ link = { eu4 = c_foix v2 = FOI } # Foix
 link = { eu4 = FRA v2 = FRA } # France
 link = { eu4 = k_france v2 = FRA } # France
 link = { eu4 = e_france v2 = FRA } # France
-link = { eu4 = GUY v2 = GUY } # Gascony
-link = { eu4 = d_gascogne v2 = GUY } # Gascony
+link = { eu4 = GUY v2 = GYN } # Gascony
+link = { eu4 = d_gascogne v2 = GYN } # Gascony
 link = { eu4 = NEV v2 = NEV } # Nevers
 link = { eu4 = c_nevers v2 = NEV } # Nevers
 link = { eu4 = NRM v2 = NRM } # Normandy
