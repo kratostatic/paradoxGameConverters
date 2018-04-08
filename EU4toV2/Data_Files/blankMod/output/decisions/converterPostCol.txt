@@ -218,6 +218,8 @@ political_decisions = {
 			EGY_921 = { add_core = ISR } #Israel
 			CHI_1476 = { add_core = TPG } #Taiping Heavenly Kingdom (for event)
 			TUR_806 = { add_core = MKD } #FYR Macedonia (if not working properly)
+			TUR_788 = { add_core = BOS } #Bosnia
+			ENG_1979 = { add_core = GUY } #Guyana
 			
 			set_global_flag = der_postcolonialism
 		}
@@ -1416,6 +1418,41 @@ political_decisions = {
 				add_core = NZL
 			}
 			change_tag = NZL
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	postcol_GUY = {
+		potential = {
+			NOT = {
+				exists = GUY
+				tag = GCO
+				tag = BRZ
+				tag = VNZ
+			}
+			capital_scope = { is_core = GUY }
+		}	
+		allow = {
+			war = no
+			is_independant = yes
+			GUY = {
+				all_core = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 10
+			any_owned = {
+				add_core = GUY
+			}
+			change_tag = GUY
+			capital = 2239
 		}
 		ai_will_do = {
 			factor = 1

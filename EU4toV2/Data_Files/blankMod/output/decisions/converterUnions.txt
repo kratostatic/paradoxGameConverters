@@ -448,6 +448,61 @@ political_decisions = {
 				civilized = yes
 				capital = 425
 			}
+			any_country = { #Britannia
+				limit = {
+					tag = ENR
+					NOT = { exists = ENR }
+				}
+				primary_culture = brithenig
+				religion = catholic
+				government = presidential_dictatorship
+				civilized = yes
+				capital = 300
+			}
+			any_country = { #Gallia
+				limit = {
+					tag = FRR
+					NOT = { exists = FRR }
+				}
+				primary_culture = gaul
+				religion = catholic
+				government = presidential_dictatorship
+				civilized = yes
+				capital = 425
+			}
+			any_country = { #Läßinia
+				limit = {
+					tag = AUR
+					NOT = { exists = AUR }
+				}
+				primary_culture = laessin
+				religion = catholic
+				government = presidential_dictatorship
+				civilized = yes
+				capital = 619
+			}
+			any_country = { #Euskadi
+				limit = {
+					tag = EUS
+					NOT = { exists = EUS }
+				}
+				primary_culture = basque
+				religion = catholic
+				government = democracy
+				civilized = yes
+				capital = 492
+			}
+			any_country = { #Guyana
+				limit = {
+					tag = GUY
+					NOT = { exists = GUY }
+				}
+				primary_culture = falklander
+				religion = protestant
+				government = democracy
+				civilized = yes
+				capital = 2239
+			}
 			set_global_flag = taiping_and_csa
 		}
 		ai_will_do = {
@@ -2309,6 +2364,263 @@ political_decisions = {
 			}			
 			
 			change_tag = FRK
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	form_britannia = {
+		potential = {
+			primary_culture = brithenig
+			NOT = {
+				exists = ENR
+			}
+		}
+		
+		allow = {
+			war = no
+			prestige = 5
+			ENR = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 10
+			any_country = {
+				limit = {
+					in_sphere = THIS
+					NOT = { tag = THIS }
+					primary_culture = brithenig
+				}
+				capital_scope = { continent = europe }
+				annex_to = THIS
+			}
+			any_owned = {
+				add_core = ENR
+			}			
+			
+			change_tag = ENR
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	form_gallia = {
+		potential = {
+			primary_culture = gaul
+			NOT = {
+				exists = FRR
+			}
+		}
+		
+		allow = {
+			war = no
+			prestige = 5
+			FRR = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 10
+			any_country = {
+				limit = {
+					in_sphere = THIS
+					NOT = { tag = THIS }
+					primary_culture = gaul
+				}
+				capital_scope = { continent = europe }
+				annex_to = THIS
+			}
+			any_owned = {
+				add_core = FRR
+			}			
+			
+			change_tag = FRR
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	form_laessinia = {
+		potential = {
+			primary_culture = laessin
+			NOT = {
+				exists = AUR
+			}
+		}
+		
+		allow = {
+			war = no
+			prestige = 5
+			AUR = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 10
+			any_country = {
+				limit = {
+					in_sphere = THIS
+					NOT = { tag = THIS }
+					primary_culture = laessin
+				}
+				capital_scope = { continent = europe }
+				annex_to = THIS
+			}
+			any_owned = {
+				add_core = AUR
+			}			
+			
+			change_tag = AUR
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	form_euskadi = {
+		potential = {
+			OR = {
+				AND = {
+					tag = NAV
+					government = democracy
+				}
+				AND = { #Gascony, if Navarre doesn’t exist
+					tag = GYN
+					NOT = { exists = NAV }
+				}
+			}
+			NOT = {
+				exists = EUS
+			}
+		}
+		
+		allow = {
+			war = no
+			prestige = 5
+			EUS = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+						owned_by = SPA
+						owned_by = FRA
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 10
+			any_country = {
+				limit = {
+					in_sphere = THIS
+					NOT = { tag = THIS }
+					primary_culture = basque
+				}
+				capital_scope = { continent = europe }
+				annex_to = THIS
+			}
+			any_owned = {
+				add_core = EUS
+				remove_core = SPA
+			}			
+			
+			change_tag = EUS
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	provincia_britannia = {
+		potential = {
+			tag = ENR
+			NOT = { has_global_flag = provincia_britannia }
+		}
+		allow = {
+			300 = { #London
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+				}
+			}
+		}
+		effect = {
+			300 = {
+				change_province_name = "Londinium"
+			}
+			set_global_flag = provincia_britannia
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	provincia_gallia = {
+		potential = {
+			tag = FRR
+			NOT = { has_global_flag = provincia_gallia }
+		}
+		allow = {
+			425 = { #Paris
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+				}
+			}
+		}
+		effect = {
+			425 = {
+				change_province_name = "Lutetia"
+			}
+			set_global_flag = provincia_gallia
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	provincia_noricum = {
+		potential = {
+			tag = AUR
+			NOT = { has_global_flag = provincia_noricum }
+		}
+		allow = {
+			619 = { #Vienna
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+				}
+			}
+		}
+		effect = {
+			619 = {
+				change_province_name = "Vindobona"
+			}
+			set_global_flag = provincia_noricum
 		}
 		ai_will_do = {
 			factor = 1
