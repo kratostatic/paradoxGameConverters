@@ -1642,15 +1642,15 @@ turko_semitic = {
 		color = {250 55 55}
 
 		first_names = { 
-			Abdullah Abdulhamid Abdulkerim Abdulrahim Ahmet Akif Ali Arif 
-			Bahaeddin Bekir Cemal Cevad Celaleddin Cevdet Daud Edhem Emin Enver 
-			Fahri Fevzi Ferid Fuat Hafiz Hamza Halil Halim Hasan Hayrullah Husrev
-			Ibrahim Iskender Ismet Izzet Kamil Kazim Kemal Lutfi
-			Mahmut Mehmet Mithat Muhtar Murat Musa Mustafa 
-			Namik Nazim Nurettin Nuri Numan Omar Osman 
-			Pertev Rauf Receb Reshad Refet Rifat Riza 
-			Sabaheddin Said Selim Shevket Shukru Suleyman 
-			Talat Tevfik Vefik Yusuf Yunus Ziya Ziyauddin
+			Abdullah Abdülhamid Abdülkerim Abdulrahim Ahmet Akif Ali Arif  
+			Bahaeddin Bekir Cemal Cevad Celaleddin Cevdet Davud Edhem Emin Enver  
+			Fahri Fevzi Ferid Fuat Hafiz Hamza Halil Halim Hasan Hayrullah Husrev 
+			Ibrahim Iskender Ismet Izzet Kamil Kazïm Kemal Lütfi 
+			Mahmut Mehmet Mithat Muhtar Murat Musa Mustafa  
+			Namïk Nazim Nurettin Nuri Numan Omar Osman  
+			Pertev Rauf Receb Rešad Refet Rïfat Rïza  
+			Sabahaddin Said Selim Ševket Šükrü Süleyman  
+			Talat Tevfik Vefik Yusuf Yunus Ziya Ziyaeddin
 		}
 		
 		last_names = { 
@@ -1698,15 +1698,15 @@ turko_semitic = {
 		color = {179 94 114}
 
 		first_names = { 
-			Abdullah Abdulhamid Abdulkerim Abdulrahim Ahmet Akif Ali Arif 
-			Bahaeddin Bekir Cemal Cevad Celaleddin Cevdet Daud Edhem Emin Enver 
-			Fahri Fevzi Ferid Fuat Hafiz Hamza Halil Halim Hasan Hayrullah Husrev
-			Ibrahim Iskender Ismet Izzet Kamil Kazim Kemal Lutfi
-			Mahmut Mehmet Mithat Muhtar Murat Musa Mustafa 
-			Namik Nazim Nurettin Nuri Numan Omar Osman 
-			Pertev Rauf Receb Reshad Refet Rifat Riza 
-			Sabaheddin Said Selim Shevket Shukru Suleyman 
-			Talat Tevfik Vefik Yusuf Yunus Ziya Ziyauddin
+			Abdullah Abdülhamid Abdülkerim Abdulrahim Ahmet Akif Ali Arif  
+			Bahaeddin Bekir Cemal Cevad Celaleddin Cevdet Davud Edhem Emin Enver  
+			Fahri Fevzi Ferid Fuat Hafiz Hamza Halil Halim Hasan Hayrullah Husrev 
+			Ibrahim Iskender Ismet Izzet Kamil Kazïm Kemal Lütfi 
+			Mahmut Mehmet Mithat Muhtar Murat Musa Mustafa  
+			Namïk Nazim Nurettin Nuri Numan Omar Osman  
+			Pertev Rauf Receb Rešad Refet Rïfat Rïza  
+			Sabahaddin Said Selim Ševket Šükrü Süleyman  
+			Talat Tevfik Vefik Yusuf Yunus Ziya Ziyaeddin
 		}
 		
 		last_names = { 
@@ -1722,15 +1722,15 @@ turko_semitic = {
 		color = {200 44 44}
 
 		first_names = { 
-			Abdullah Abdulhamid Abdulkerim Abdulrahim Ahmet Akif Ali Arif 
-			Bahaeddin Bekir Cemal Cevad Celaleddin Cevdet Daud Edhem Emin Enver 
-			Fahri Fevzi Ferid Fuat Hafiz Hamza Halil Halim Hasan Hayrullah Husrev
-			Ibrahim Iskender Ismet Izzet Kamil Kazim Kemal Lutfi
-			Mahmut Mehmet Mithat Muhtar Murat Musa Mustafa 
-			Namik Nazim Nurettin Nuri Numan Omar Osman 
-			Pertev Rauf Receb Reshad Refet Rifat Riza 
-			Sabaheddin Said Selim Shevket Shukru Suleyman 
-			Talat Tevfik Vefik Yusuf Yunus Ziya Ziyauddin
+			Abdullah Abdülhamid Abdülkerim Abdulrahim Ahmet Akif Ali Arif  
+			Bahaeddin Bekir Cemal Cevad Celaleddin Cevdet Davud Edhem Emin Enver  
+			Fahri Fevzi Ferid Fuat Hafiz Hamza Halil Halim Hasan Hayrullah Husrev 
+			Ibrahim Iskender Ismet Izzet Kamil Kazïm Kemal Lütfi 
+			Mahmut Mehmet Mithat Muhtar Murat Musa Mustafa  
+			Namïk Nazim Nurettin Nuri Numan Omar Osman  
+			Pertev Rauf Receb Rešad Refet Rïfat Rïza  
+			Sabahaddin Said Selim Ševket Šükrü Süleyman  
+			Talat Tevfik Vefik Yusuf Yunus Ziya Ziyaeddin
 		}
 		
 		last_names = { 
@@ -1746,15 +1746,15 @@ turko_semitic = {
 		color = {151 33 33}
 
 		first_names = { 
-			Abdullah Abdulhamid Abdulkerim Abdulrahim Ahmet Akif Ali Arif 
-			Bahaeddin Bekir Cemal Cevad Celaleddin Cevdet Daud Edhem Emin Enver 
-			Fahri Fevzi Ferid Fuat Hafiz Hamza Halil Halim Hasan Hayrullah Husrev
-			Ibrahim Iskender Ismet Izzet Kamil Kazim Kemal Lutfi
-			Mahmut Mehmet Mithat Muhtar Murat Musa Mustafa 
-			Namik Nazim Nurettin Nuri Numan Omar Osman 
-			Pertev Rauf Receb Reshad Refet Rifat Riza 
-			Sabaheddin Said Selim Shevket Shukru Suleyman 
-			Talat Tevfik Vefik Yusuf Yunus Ziya Ziyauddin
+			Abdullah Abdülhamid Abdülkerim Abdulrahim Ahmet Akif Ali Arif  
+			Bahaeddin Bekir Cemal Cevad Celaleddin Cevdet Davud Edhem Emin Enver  
+			Fahri Fevzi Ferid Fuat Hafiz Hamza Halil Halim Hasan Hayrullah Husrev 
+			Ibrahim Iskender Ismet Izzet Kamil Kazïm Kemal Lütfi 
+			Mahmut Mehmet Mithat Muhtar Murat Musa Mustafa  
+			Namïk Nazim Nurettin Nuri Numan Omar Osman  
+			Pertev Rauf Receb Rešad Refet Rïfat Rïza  
+			Sabahaddin Said Selim Ševket Šükrü Süleyman  
+			Talat Tevfik Vefik Yusuf Yunus Ziya Ziyaeddin
 		}
 		
 		last_names = { 
