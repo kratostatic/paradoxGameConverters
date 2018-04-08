@@ -414,6 +414,90 @@ country_event = {
 			secede_province = EGY
 			remove_core = TUR
 		}
+		EGY_1842 = { # Darfur
+			limit = {
+				owned_by = TUR
+			}
+			secede_province = EGY
+			remove_core = TUR
+		}
+		EGY_1834 = { # Dongola
+			limit = {
+				owned_by = TUR
+			}
+			secede_province = EGY
+			remove_core = TUR
+		}
+		EGY_1758 = { # Egyptian Desert
+			limit = {
+				owned_by = TUR
+			}
+			secede_province = EGY
+			remove_core = TUR
+		}
+		ENG_1843 = { # Equatoria
+			limit = {
+				owned_by = TUR
+			}
+			secede_province = EGY
+			remove_core = TUR
+		}
+		ENG_1848 = { # Eritrea
+			limit = {
+				owned_by = TUR
+			}
+			secede_province = EGY
+			remove_core = TUR
+		}
+		EGY_1838 = { # Kordofan
+			limit = {
+				owned_by = TUR
+			}
+			secede_province = EGY
+			remove_core = TUR
+		}
+		EGY_1750 = { # Lower Egypt
+			limit = {
+				owned_by = TUR
+			}
+			secede_province = EGY
+			remove_core = TUR
+		}
+		EGY_1753 = { # Matruh
+			limit = {
+				owned_by = TUR
+			}
+			secede_province = EGY
+			remove_core = TUR
+		}
+		EGY_1762 = { # Middle Egypt
+			limit = {
+				owned_by = TUR
+			}
+			secede_province = EGY
+			remove_core = TUR
+		}
+		EGY_1746 = { # Sinai
+			limit = {
+				owned_by = TUR
+			}
+			secede_province = EGY
+			remove_core = TUR
+		}
+		EGY_1827 = { # Sudan
+			limit = {
+				owned_by = TUR
+			}
+			secede_province = EGY
+			remove_core = TUR
+		}
+		EGY_1771 = { # Upper Egypt
+			limit = {
+				owned_by = TUR
+			}
+			secede_province = EGY
+			remove_core = TUR
+		}
 		create_vassal = EGY
 	}
 }
