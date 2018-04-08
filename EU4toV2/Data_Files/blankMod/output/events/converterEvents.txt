@@ -358,13 +358,6 @@ country_event = {
 
 	option = {
 		name = EVTOPTA350005
-		any_owned = {
-			limit = {
-				continent = africa
-			}
-			secede_province = EGY
-			remove_core = TUR
-		}
 		EGY_897 = { # Aleppo
 			limit = {
 				owned_by = TUR
