@@ -494,3 +494,323 @@ country_event = {
 		create_vassal = EGY
 	}
 }
+
+country_event = {
+	id = 451001
+	title = "EVTNAME451001"
+	desc = "EVTDESC451001"
+	major = yes
+	picture = "Riot"
+	
+	trigger = {
+		NOT = { civilization_progress = 0.5 }
+		civilized = no
+		is_cultural_union = no
+		NOT = { literacy = 0.5 }
+		NOT = { number_of_states = 5 } #Let's avoid big countries getting annexed
+		ai = no
+		has_global_flag = der_postcolonialism
+		OR = {
+			capital_scope = {
+				OR = {
+					continent = africa
+					continent = north_america
+					continent = south_america
+					continent = oceania
+				}
+			}
+			AND = {
+				capital_scope = { continent = asia }
+				capital_scope = { is_core = HND }
+			}
+			AND = {
+				capital_scope = { continent = asia }
+				OR = {
+					capital_scope = { is_core = IDC }
+					capital_scope = { is_core = MSA }
+					capital_scope = { is_core = PHI }
+				}
+				NOT = { tag = IDC }
+				NOT = { tag = MSA }
+				NOT = { tag = PHI }
+			}
+		}
+		sphere_owner = {
+			civilized = yes
+			neighbour = FROM
+			stronger_army_than = FROM
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 0.75
+			year = 1850
+		}
+		modifier = {
+			factor = 0.75
+			year = 1875
+		}
+		modifier = {
+			factor = 0.75
+			year = 1900
+		}
+		modifier = {
+			factor = 0.5
+			year = 1914
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA451001"
+		sphere_owner = { inherit = FROM }
+		sphere_owner = { badboy = 5 }
+	}
+}
+country_event = {
+	id = 451002
+	title = "EVTNAME451002"
+	desc = "EVTDESC451002"
+	picture = "Riot"
+	fire_only_once = yes
+	
+	trigger = {
+		tag = HES
+		HEK = { exists = no }
+		owns = 566
+		owns = 568
+		has_global_flag = der_postcolonialism
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.5
+			year = 1830
+		}
+		modifier = {
+			factor = 0.5
+			year = 1850
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA451002"
+		566 = { add_core = HEK }
+		568 = { add_core = HEK }
+		release = HEK
+		create_vassal = HEK
+	}
+}
+country_event = {
+	id = 451003
+	title = "EVTNAME451003"
+	desc = "EVTDESC451003"
+	picture = "Riot"
+	fire_only_once = yes
+	
+	trigger = {
+		NOT = { tag = GER }
+		NOT = { tag = NGF }
+		NOT = { tag = SGF }
+		NOT = { tag = AUS }
+		NOT = { tag = KUK }
+		NOT = { tag = HLR }
+		LIP = { exists = no }
+		owns = 585
+		has_global_flag = der_postcolonialism
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.5
+			year = 1830
+		}
+		modifier = {
+			factor = 0.5
+			year = 1850
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA451003"
+		585 = { add_core = LIP }
+		release = LIP
+		create_vassal = LIP
+	}
+}
+country_event = {
+	id = 451004
+	title = "EVTNAME451004"
+	desc = "EVTDESC451004"
+	picture = "Riot"
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = SAX
+			tag = THU
+		}
+		COB = { exists = no }
+		MEI = { exists = no }
+		WEI = { exists = no }
+		owns = 562
+		owns = 563
+		owns = 561
+		has_global_flag = der_postcolonialism
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.5
+			year = 1830
+		}
+		modifier = {
+			factor = 0.5
+			year = 1850
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA451004"
+		562 = { add_core = COB }
+		563 = { add_core = MEI }
+		561 = { add_core = WEI }
+		release = COB
+		create_vassal = COB
+		release = MEI
+		create_vassal = MEI
+		release = WEI
+		create_vassal = WEI
+	}
+}
+
+country_event = {
+	id = 451006
+	title = "EVTNAME451006"
+	desc = "EVTDESC451006"
+	picture = "Riot"
+	fire_only_once = yes
+	
+	trigger = {
+		BHO = { exists = no }
+		IND = { exists = no }
+		JAI = { exists = no }
+		SHI = { exists = no }
+		has_global_flag = der_postcolonialism
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.5
+			year = 1830
+		}
+		modifier = {
+			factor = 0.5
+			year = 1850
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA451006"
+		1272 = { add_core = BHO }
+		1271 = { add_core = IND }
+		1268 = { add_core = JAI }
+		1235 = { add_core = SHI }
+		1272 = { any_pop = { militancy = 5 } }
+		1271 = { any_pop = { militancy = 5 } }
+		1268 = { any_pop = { militancy = 5 } }
+		1235 = { any_pop = { militancy = 5 } }
+	}
+}
+country_event = {
+	id = 451005
+	title = "EVTNAME451005"
+	desc = "EVTDESC451005"
+	major = yes
+	picture = "Riot"
+	fire_only_once = yes
+	
+	trigger = {
+		ZUL = { exists = no }
+		owns = 2111
+		owns = 2112
+		owns = 2113
+		has_global_flag = der_postcolonialism
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.5
+			year = 1830
+		}
+		modifier = {
+			factor = 0.5
+			year = 1850
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA451005"
+		2111 = { add_core = ZUL }
+		2112 = { add_core = ZUL }
+		2113 = { add_core = ZUL }
+		any_pop = {
+			limit = { has_pop_culture = zulu }
+			consciousness = 8
+			militancy = 8
+		}
+	}
+}
+country_event = {
+	id = 450007
+	title = EVTNAME450007
+	desc = EVTDESC450007
+	picture = "jews"
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		owns = 706 # Warsaw
+		year = 1887
+		civilized = yes
+		invention = expressionist_literature
+		literacy = 0.30 #Let's hope they know how to write before books
+	}
+	
+	mean_time_to_happen = {
+		months = 7 #26.7.1887, publication of the Unua Libro
+		modifier = {
+			factor = 0.5
+			month = 7
+		}
+	}
+	
+	option = {
+		name = EVTOPTA450007 #Adopt
+		any_pop = {
+			literacy = 0.001
+		}
+		prestige = 5
+	}
+	
+	option = {
+		name = EVTOPTB450007 #Discard
+		any_pop = {
+			limit = {
+				OR = {
+					has_pop_culture = polish
+					has_pop_culture = ashkenazi
+				}
+			}
+			consciousness = 0.5
+		}
+		prestige = 5
+	}
+	
+}
