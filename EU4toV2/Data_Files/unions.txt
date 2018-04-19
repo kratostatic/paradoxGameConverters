@@ -98,7 +98,7 @@ link = { tag = HUN culture = hungarian } #Hungary
 #Polish-Lithuanian => PLC
 link = { tag = POL tag = PLC culture = polish } #and Poland
 link = { tag = LIT tag = PLC culture = lithuanian } #and Lithuania
-link = { tag = PLC culture = western_slavic }
+link = { tag = RUT tag = PLC culture = western_slavic } #and (Red) Ruthenia
 
 #Czechoslovakian => Czechoslovakia
 link = { tag = CZH culture = czech } 
