@@ -225,8 +225,20 @@ EU4Country::EU4Country(Object* obj, EU4Version* version)
 	}
 	leaders.swap(activeLeaders);
 
-	vector<Object*> governmentObj = obj->getValue("government");	// the object holding the government
-	(governmentObj.size() > 0) ? government = governmentObj[0]->getLeaf() : government = "";
+        auto* governmentObj = obj->safeGetObject("government");
+        if (governmentObj)
+        {
+          if (governmentObj->isLeaf())
+          {
+            // Old-style government = "something"
+            government = governmentObj->getLeaf();
+          }
+          else
+          {
+            // New-style government = { government = something }
+            government = governmentObj->safeGetString("government");
+          }
+        }
 	if (government == "daimyo") 
 	{
 		possibleDaimyo = true;

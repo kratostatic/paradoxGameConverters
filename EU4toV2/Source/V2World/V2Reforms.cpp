@@ -221,6 +221,17 @@ void V2Reforms::governmentEffects(const V2Country* dstCountry)
 		trade_unions					+= 0.14;
 		political_parties				+= 1.5;
 	}
+	else if (government == "prussian_constitutionalism")
+	{
+		slavery						+= 0;
+		vote_franchise					 = -1;
+		upper_house_composition		 		 = 0;
+		voting_system					+= 1;
+		public_meetings					+= -2.5;
+		press_rights					+= -16;
+		trade_unions					+= 0;
+		political_parties				+= -4.0;
+	}
 	else 
 	{
 		LOG(LogLevel::Warning) << "Undefined government type '" << government << "' while setting reforms for " << dstCountry->getTag();
