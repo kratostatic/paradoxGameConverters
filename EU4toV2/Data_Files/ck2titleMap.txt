@@ -3221,6 +3221,10 @@ link = { name = "tragyrion" 	 title = "c_split" 	 region = "e_byzantium" }
 link = { name = "transilvania" 	 title = "d_transylvania" 	 region = "e_carpathia" }
 link = { name = "transjordan" 	 title = "d_oultrejourdain" 	 region = "e_arabia" }
 link = { name = "transjordania" 	 title = "d_oultrejourdain" 	 region = "e_arabia" }
+link = { name = "transjurana" 	 title = "d_upper_burgundy" 	 region = "e_france" }
+link = { name = "transjurania" 	 title = "d_upper_burgundy" 	 region = "e_france" }
+link = { name = "transjuranie" 	 title = "d_upper_burgundy" 	 region = "e_france" }
+link = { name = "transjuranien" 	 title = "d_upper_burgundy" 	 region = "e_france" }
 link = { name = "transsylvanien" 	 title = "d_transylvania" 	 region = "e_carpathia" }
 link = { name = "transylvania" 	 title = "d_transylvania" 	 region = "e_carpathia" }
 link = { name = "transylvanie" 	 title = "d_transylvania" 	 region = "e_carpathia" }
