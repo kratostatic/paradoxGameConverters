@@ -152,6 +152,7 @@ link = { name = "alsnø" 	 title = "c_uppland" 	 region = "e_scandinavia" }
 link = { name = "alt clut" 	 title = "c_clydesdale" 	 region = "e_britannia" }
 link = { name = "alta borgoña" 	 title = "d_upper_burgundy" 	 region = "e_france" }
 link = { name = "alta lorena" 	 title = "d_upper_lorraine" 	 region = "e_hre" }
+link = { name = "alta suabia" 	 title = "d_upper_swabia" 	 region = "e_hre" }
 link = { name = "am magh baoghail" 	 title = "c_carrick" 	 region = "e_britannia" }
 link = { name = "amalfi" 	 title = "d_amalfi" 	 region = "e_mali" }
 link = { name = "amaravati" 	 title = "c_amaravati" 	 region = "e_deccan" }
@@ -1244,6 +1245,7 @@ link = { name = "fostreh" 	 title = "c_caithness" 	 region = "e_britannia" }
 link = { name = "fothair tabhaicht" 	 title = "c_gowrie" 	 region = "e_britannia" }
 link = { name = "fotla" 	 title = "c_atholl" 	 region = "e_britannia" }
 link = { name = "france" 	 title = "k_france" 	 region = "e_france" }
+link = { name = "franche-comté" 	 title = "d_franche_comte" 	 region = "e_hre" }
 link = { name = "francia media" 	 title = "k_lotharingia" 	 region = "e_hre" }
 link = { name = "francia occidental" 	 title = "k_france" 	 region = "e_france" }
 link = { name = "francia oriental" 	 title = "k_germany" 	 region = "e_hre" }
@@ -1251,11 +1253,13 @@ link = { name = "francia" 	 title = "k_france" 	 region = "e_france" }
 link = { name = "francie médiane" 	 title = "k_lotharingia" 	 region = "e_hre" }
 link = { name = "francie occidentale" 	 title = "k_france" 	 region = "e_france" }
 link = { name = "francie orientale" 	 title = "k_germany" 	 region = "e_hre" }
+link = { name = "franco condado" 	 title = "d_franche_comte" 	 region = "e_hre" }
 link = { name = "franconia" 	 title = "d_franconia" 	 region = "e_hre" }
 link = { name = "franconie" 	 title = "d_franconia" 	 region = "e_hre" }
 link = { name = "franken" 	 title = "d_franconia" 	 region = "e_hre" }
 link = { name = "Frankish Kingdom" 	 title = "k_frankish" 	 region = "e_roman_empire" }
 link = { name = "frankreich" 	 title = "e_france" 	 region = "e_france" }
+link = { name = "freigrafschaft" 	 title = "d_franche_comte" 	 region = "e_hre" }
 link = { name = "frères vitaliens" 	 title = "d_victual_brothers" 	 region = "e_pirates" }
 link = { name = "fresvik" 	 title = "c_caithness" 	 region = "e_britannia" }
 link = { name = "friesland" 	 title = "k_frisia" 	 region = "e_hre" }
@@ -1464,6 +1468,7 @@ link = { name = "hashshashin" 	 title = "d_hashshashin" 	 region = "e_pirates" }
 link = { name = "hastinapura" 	 title = "c_hastinapura" 	 region = "e_rajastan" }
 link = { name = "hatsina" 	 title = "c_vodi" 	 region = "e_scandinavia" }
 link = { name = "haute-bourgogne" 	 title = "d_upper_burgundy" 	 region = "e_france" }
+link = { name = "haute-souabe" 	 title = "d_upper_swabia" 	 region = "e_hre" }
 link = { name = "hayya" 	 title = "d_hayya" 	 region = "e_abyssinia" }
 link = { name = "hébrides" 	 title = "d_western_isles" 	 region = "e_britannia" }
 link = { name = "hedjaz" 	 title = "d_medina" 	 region = "e_arabia" }
@@ -2430,6 +2435,7 @@ link = { name = "obar neithich" 	 title = "c_gowrie" 	 region = "e_britannia" }
 link = { name = "obar pheallaidh" 	 title = "c_atholl" 	 region = "e_britannia" }
 link = { name = "oberburgund" 	 title = "d_upper_burgundy" 	 region = "e_france" }
 link = { name = "oberlothringen" 	 title = "d_upper_lorraine" 	 region = "e_hre" }
+link = { name = "oberschwaben" 	 title = "d_upper_swabia" 	 region = "e_hre" }
 link = { name = "obodritas" 	 title = "d_obotrites" 	 region = "e_mali" }
 link = { name = "obotrites" 	 title = "d_obotrites" 	 region = "e_mali" }
 link = { name = "obotritia" 	 title = "d_mecklemburg" 	 region = "e_wendish_empire" }
@@ -3316,6 +3322,7 @@ link = { name = "uplandesa" 	 title = "d_uppland" 	 region = "e_scandinavia" }
 link = { name = "uppeln" 	 title = "c_opole" 	 region = "e_wendish_empire" }
 link = { name = "upper burgundy" 	 title = "d_upper_burgundy" 	 region = "e_france" }
 link = { name = "upper lorraine" 	 title = "d_upper_lorraine" 	 region = "e_hre" }
+link = { name = "upper swabia" 	 title = "d_upper_swabia" 	 region = "e_hre" }
 link = { name = "uppland" 	 title = "d_uppland" 	 region = "e_scandinavia" }
 link = { name = "ural" 	 title = "d_ural" 	 region = "e_mali" }
 link = { name = "urcarthen" 	 title = "c_moray" 	 region = "e_britannia" }
