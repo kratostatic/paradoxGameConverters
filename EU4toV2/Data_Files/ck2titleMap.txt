@@ -61,6 +61,10 @@ link = { name = "Åbo" 	 title = "c_finland" 	 region = "e_scandinavia" }
 link = { name = "abodrites" 	 title = "d_obotrites" 	 region = "e_mali" }
 link = { name = "abotriten" 	 title = "d_obotrites" 	 region = "e_mali" }
 link = { name = "abov" 	 title = "c_abauj" 	 region = "e_carpathia" }
+link = { name = "abruzos" 	 title = "d_abruzzo" 	 region = "e_byzantium" }
+link = { name = "abruzzes" 	 title = "d_abruzzo" 	 region = "e_byzantium" }
+link = { name = "abruzzen" 	 title = "d_abruzzo" 	 region = "e_byzantium" }
+link = { name = "abruzzos" 	 title = "d_abruzzo" 	 region = "e_byzantium" }
 link = { name = "abyssinia" 	 title = "k_abyssinia" 	 region = "e_abyssinia" }
 link = { name = "abyssinian band" 	 title = "d_abyssinian_band" 	 region = "d_abyssinian_band" }
 link = { name = "abyssinie" 	 title = "k_abyssinia" 	 region = "e_abyssinia" }
@@ -1264,6 +1268,9 @@ link = { name = "frères vitaliens" 	 title = "d_victual_brothers" 	 region = "e
 link = { name = "fresvik" 	 title = "c_caithness" 	 region = "e_britannia" }
 link = { name = "friesland" 	 title = "k_frisia" 	 region = "e_hre" }
 link = { name = "frisia" 	 title = "k_frisia" 	 region = "e_hre" }
+link = { name = "friaul" 	 title = "d_friuli" 	 region = "e_hre" }
+link = { name = "frioul" 	 title = "d_friuli" 	 region = "e_hre" }
+link = { name = "friuli" 	 title = "d_friuli" 	 region = "e_hre" }
 link = { name = "fünfkirchen" 	 title = "d_pecs" 	 region = "e_carpathia" }
 link = { name = "Fuqi" 	 title = "c_fuqi" 	 region = "e_tibet" }
 link = { name = "gabhrán" 	 title = "c_ossory" 	 region = "e_britannia" }
@@ -3238,9 +3245,13 @@ link = { name = "trébizonde" 	 title = "k_trebizond" 	 region = "e_mali" }
 link = { name = "treffechan" 	 title = "c_lothian" 	 region = "e_britannia" }
 link = { name = "trehechan" 	 title = "c_lothian" 	 region = "e_britannia" }
 link = { name = "tremecén" 	 title = "d_tlemcen" 	 region = "e_arabia" }
+link = { name = "trent" 	 title = "d_trent" 	 region = "e_hre" }
+link = { name = "trente" 	 title = "d_trent" 	 region = "e_hre" }
+link = { name = "trento" 	 title = "d_trent" 	 region = "e_hre" }
 link = { name = "tretrah" 	 title = "c_carrick" 	 region = "e_britannia" }
 link = { name = "tribandapura" 	 title = "c_tribandapura" 	 region = "c_tribandapura" }
 link = { name = "triduana" 	 title = "c_orkney" 	 region = "e_scandinavia" }
+link = { name = "trient" 	 title = "d_trent" 	 region = "e_hre" }
 link = { name = "triest" 	 title = "c_istria" 	 region = "e_hre" }
 link = { name = "trigarta" 	 title = "c_trigarta" 	 region = "e_rajastan" }
 link = { name = "Trigarta" 	 title = "d_trigarta" 	 region = "e_rajastan" }
