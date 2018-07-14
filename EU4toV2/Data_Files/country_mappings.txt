@@ -322,6 +322,7 @@ link = { EU4 = STY Vic2 = STY } # Styria
 link = { EU4 = c_steiermark Vic2 = STY } #Styria
 link = { EU4 = SWI Vic2 = SWI } # Switzerland
 link = { EU4 = d_swiss Vic2 = SWI } # Switzerland
+link = { EU4 = d_upper_swabia Vic2 = SWI } # Upper Swabia => Switzerland
 link = { EU4 = THU Vic2 = THU } # Thuringia
 link = { EU4 = d_thuringia Vic2 = THU } # Thuringia
 link = { EU4 = TIR Vic2 = TIR } # Tirol
@@ -341,6 +342,7 @@ link = { EU4 = MEM Vic2 = MEM } # Memmingen
 link = { EU4 = VER Vic2 = VER } # Verden
 link = { EU4 = NSA Vic2 = NAS } # Nassau
 link = { EU4 = c_nassau Vic2 = NAS } #Nassau
+link = { EU4 = d_franche_comte Vic2 = NAS } #Nassau
 link = { EU4 = RVA Vic2 = RVA } # Ravensburg
 link = { EU4 = DTT Vic2 = DTT } # Dithmarschen
 
