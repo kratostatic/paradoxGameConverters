@@ -334,6 +334,7 @@ link = { eu4 = c_ulm v2 = ULM } # Ulm
 link = { eu4 = WBG v2 = WBG } # Wurzburg
 link = { eu4 = c_wurzburg v2 = WBG } #Wurzburg
 link = { eu4 = WES v2 = WES } # Westfalia
+link = { eu4 = westphalia v2 = WES } # Westfalia (client state)
 link = { eu4 = WUR v2 = WUR } # Wurttemberg
 link = { eu4 = c_wurttemberg v2 = WUR } #Wurttemberg
 link = { eu4 = NUM v2 = NUM } # Nuremberg
@@ -377,6 +378,7 @@ link = { eu4 = GEN v2 = GNA } # Genoa
 link = { eu4 = k_genoa v2 = GNA } # Genoa
 link = { eu4 = ITA v2 = ITA } # Italy
 link = { eu4 = k_italy v2 = ITA } # Italy
+link = { eu4 = italy v2 = ITA } # Italy (client state)
 link = { eu4 = MAN v2 = MTA } # Mantua
 link = { eu4 = c_mantua v2 = MTA } # Mantua
 link = { eu4 = MLO v2 = LOM } # Milan => Lombardy
@@ -1154,6 +1156,7 @@ link = { eu4 = PHI v2 = PHI } #Philippines
 link = { eu4 = NZL v2 = NZL } #New Zealand
 link = { eu4 = YUG v2 = YUG } #Yugoslavia
 link = { eu4 = BYE v2 = BYE } #Belarus
+link = { eu4 = two_sicilies v2 = SIC } #Two Sicilies (client state)
 link = { eu4 = SI2 v2 = SIC } #Two Sicilies
 link = { eu4 = d_azerbaijan v2 = AZB } #Azerbaijan
 link = { eu4 = KUK v2 = KUK } #Austria-Hungary
