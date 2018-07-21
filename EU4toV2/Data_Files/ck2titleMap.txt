@@ -3645,4 +3645,29 @@ link = { name = "macedonia" title = "MKD" region = "e_byzantium" }
 link = { name = "macédoine" title = "MKD" region = "e_byzantium" }
 link = { name = "mazedonien" title = "MKD" region = "e_byzantium" }
 link = { name = "alaska" title = "LSK" region = "e_russia" }
+#EU4 Client tags with specific names
+link = { name = "Republic of Westphalia" title = "westphalia" region = "e_hre" }
+link = { name = "République de Westphalie" title = "westphalia" region = "e_hre" }
+link = { name = "Republik Westfalen" title = "westphalia" region = "e_hre" }
+link = { name = "República de Westfalia" title = "westphalia" region = "e_hre" }
+link = { name = "Kingdom of Westphalia" title = "westphalia" region = "e_hre" }
+link = { name = "Royaume de Westphalie" title = "westphalia" region = "e_hre" }
+link = { name = "Königreich Westfalen" title = "westphalia" region = "e_hre" }
+link = { name = "Reino de Westfalia" title = "westphalia" region = "e_hre" }
+link = { name = "Parthenopean Republic" title = "two_sicilies" region = "e_italy" }
+link = { name = "République parthénopéenne" title = "two_sicilies" region = "e_italy" }
+link = { name = "Republik Neapel" title = "two_sicilies" region = "e_italy" }
+link = { name = "República de Nápoles" title = "two_sicilies" region = "e_italy" }
+link = { name = "Kingdom of Naples" title = "two_sicilies" region = "e_italy" }
+link = { name = "Royaume de Naples" title = "two_sicilies" region = "e_italy" }
+link = { name = "Königreich Neapel" title = "two_sicilies" region = "e_italy" }
+link = { name = "Reino de Nápoles" title = "two_sicilies" region = "e_italy" }
+link = { name = "Republic of Italy" title = "two_sicilies" region = "e_italy" }
+link = { name = "République italienne" title = "two_sicilies" region = "e_italy" }
+link = { name = "Republik Italien" title = "two_sicilies" region = "e_italy" }
+link = { name = "República de Italia" title = "two_sicilies" region = "e_italy" }
+link = { name = "Kingdom of Italy" title = "two_sicilies" region = "e_italy" }
+link = { name = "Royaume d'Italie" title = "two_sicilies" region = "e_italy" }
+link = { name = "Königreich Italien" title = "two_sicilies" region = "e_italy" }
+link = { name = "Reino de Italia" title = "two_sicilies" region = "e_italy" }
 }
