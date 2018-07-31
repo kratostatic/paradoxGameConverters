@@ -2115,3 +2115,93 @@ country_event = {
 #		ai_chance = { factor = 25 }
 #	}
 #}
+country_event = {
+	id = 251025
+	title = "EVTNAME251008"
+	desc = "EVTDESC251001"
+	major = yes
+	picture = "Riot"
+	
+	trigger = {
+		is_independant = yes
+		capital_scope = {
+			OR = {
+				continent = europe
+				continent = asia
+			}
+		}
+		NOT = { has_global_flag = CHL_independence }
+		has_global_flag = der_postcolonialism
+		is_possible_vassal = CHL
+		NOT = { exists = CHL }
+	}
+	
+	immediate = { set_global_flag = CHL_independence }
+	
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 0.75
+			year = 1845
+		}
+		modifier = {
+			factor = 0.75
+			year = 1855
+		}
+		modifier = {
+			factor = 0.75
+			year = 1860
+		}
+		modifier = {
+			factor = 0.5
+			year = 1865
+		}
+	}
+
+	option = {
+		name = "EVTOPTA251001"
+		any_owned = {
+			limit = {
+				is_core = CHL
+			}
+			secede_province = CHL
+		}
+		CHL = {
+			leadership = 80
+			primary_culture = FROM
+			add_accepted_culture = platinean
+			years_of_research = 5
+		}
+		create_vassal = CHL
+		set_global_flag = CHL_independence
+		ai_chance = { factor = 25 }
+	}
+	
+	option = {
+		name = "EVTOPTB251001"
+		any_owned = {
+			limit = {
+				is_core = CHL
+			}
+			secede_province = CHL
+		}
+		CHL = {
+			leadership = 80
+			primary_culture = FROM
+			add_accepted_culture = platinean
+			years_of_research = 5
+		}
+		war = {
+			target = CHL
+			attacker_goal = {
+				casus_belli = make_puppet
+			}
+			
+			defender_goal = {
+				casus_belli = become_independent
+			}
+		}
+		set_global_flag = CHL_independence
+		ai_chance = { factor = 75 }
+	}
+}
