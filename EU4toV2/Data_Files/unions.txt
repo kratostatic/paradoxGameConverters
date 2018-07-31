@@ -22,8 +22,11 @@ unions = {
 #Weird stuff
 #link = { tag = AAA culture = dummy } #Dummy
 #link = { tag = AAA culture = noculture } #Dummy
+#link = { tag = AAA culture = gypsy } #Dummy
 
-#Ashkenazi and Sephardi are removed since they can pop up anywhere, but they should lead to ISR
+#Jews (removed since they can pop up anywhere) => Israel
+#link = { tag = ISR culture = ashkenazi }
+#link = { tag = ISR culture = sephardi }
 
 #Germanics
 link = { tag = GER culture = north_german } # North Germany
@@ -226,7 +229,7 @@ link = { tag = USA culture = yankee } #USA
 link = { tag = USA tag = CSA culture = dixie } #and CSA
 link = { tag = USA tag = TEX culture = texan } #and Texas
 
-#post-colonial cultures - will be redone with post-colonial culture changes.
+#Vanilla post-colonial cultures - discarded by the "Postcolonialism" decision
 #link = { tag = ORA tag = TRN tag = SAF culture = boer } #Orange/Transvaal/South Africa
 #link = { tag = AST culture = australian } #Australia
 #link = { tag = CAN culture = anglo_canadian } #Canada
@@ -238,9 +241,11 @@ link = { tag = USA tag = TEX culture = texan } #and Texas
 #link = { tag = ARG culture = platinean } #Argentina
 #link = { tag = BRZ culture = brazilian } #Brazil
 
-#African cultures (only two allowed here)
+#African (and diaspora) cultures - only these following allowed
 link = { tag = MAD culture = malagasy } #Madagascar
 link = { tag = ZUL culture = zulu } #Zulu
+link = { tag = ETH culture = amhara } #Abyssinia
+link = { tag = SOM culture = somali } #Somalia
 
 #Easter Eggs
 link = { tag = JAN link = polar_bears } #Jan Mayen
