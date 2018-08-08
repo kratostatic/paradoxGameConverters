@@ -173,6 +173,10 @@ political_decisions = {
 				add_core = MAL
 				flashpoint_tension = 10
 			}
+			FRA_1801 = {
+				add_core = MAL
+				flashpoint_tension = 10
+			}
 			FRA_1780 = {
 				add_core = MAL
 				flashpoint_tension = 10
@@ -211,7 +215,7 @@ political_decisions = {
 				add_core = BEN
 				flashpoint_tension = 10
 			}
-			ENG_1818 = {
+			FRA_1808 = {
 				add_core = BEN
 				flashpoint_tension = 10
 			}
@@ -533,6 +537,10 @@ political_decisions = {
 				capital = 1868
 				government = democracy
 			}
+			ENG_1818 = {
+				add_core = EQA
+				flashpoint_tension = 10
+			}
 			FRA_1965 = {
 				add_core = EQA
 				flashpoint_tension = 10
@@ -688,6 +696,39 @@ political_decisions = {
 				religion = catholic
 				capital = 2049
 				government = democracy
+			}
+			#single provinces that are screwing the state system
+			1877 = {
+				add_core = GUI
+				remove_core = MAL
+			}
+			1878 = {
+				add_core = GUI
+				remove_core = MAL
+			}
+			1916 = {
+				add_core = GHN
+				remove_core = BEN
+			}
+			1915 = {
+				add_core = GHN
+				remove_core = BEN
+			}
+			1961 = {
+				add_core = NGR
+				remove_core = CMR
+			}
+			1957 = {
+				add_core = NGR
+				remove_core = CMR
+			}
+			1955 = {
+				add_core = GAB
+				remove_core = CMR
+			}
+			1877 = {
+				add_core = EGY
+				remove_core = SUD
 			}
 			set_global_flag = der_postcolonialism_2
 		}
