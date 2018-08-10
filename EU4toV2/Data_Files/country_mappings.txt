@@ -133,8 +133,8 @@ link = { EU4 = SCO Vic2 = SCO } # Scotland
 link = { EU4 = k_scotland Vic2 = SCO } # Scotland
 link = { EU4 = TYR Vic2 = TYR } # Tyrone
 link = { EU4 = d_tyrone Vic2 = TYR } # Tyrone
-link = { EU4 = WLS Vic2 = WLS } # Wales
-link = { EU4 = k_wales Vic2 = WLS } # Wales
+link = { EU4 = WLS Vic2 = WHA } # Wales
+link = { EU4 = k_wales Vic2 = WHA } # Wales
 link = { EU4 = NOL Vic2 = NOL } # Northumberland
 link = { EU4 = d_northumberland Vic2 = NOL } # Northumberland
 link = { EU4 = GBR Vic2 = ENG } # Great Britain => United Kingdom
@@ -218,14 +218,14 @@ link = { EU4 = AVI Vic2 = AVI } # Avignon
 link = { EU4 = c_venaissin Vic2 = AVI } # Venaissin => Avignon
 link = { EU4 = BOU Vic2 = BOU } # Bourbonnais
 link = { EU4 = d_bourbon Vic2 = BOU } # Bourbon
-link = { EU4 = BRI Vic2 = BRI } # Brittany
-link = { EU4 = k_brittany Vic2 = BRI } # Brittany
+link = { EU4 = BRI Vic2 = BRT } # Brittany
+link = { EU4 = k_brittany Vic2 = BRT } # Brittany
 link = { EU4 = BUR Vic2 = BRG } # Burgundy
 link = { EU4 = k_burgundy Vic2 = BRG } # Burgundy
 link = { EU4 = CHP Vic2 = CHP } # Champagne
 link = { EU4 = d_champagne Vic2 = CHP } # Champagne
-link = { EU4 = COR Vic2 = COR } # Corsica
-link = { EU4 = c_corsica Vic2 = COR } # Corsica
+link = { EU4 = COR Vic2 = CRS } # Corsica
+link = { EU4 = c_corsica Vic2 = CRS } # Corsica
 link = { EU4 = DAU Vic2 = DAU } # Dauphine
 link = { EU4 = d_dauphine Vic2 = DAU } # Dauphine
 link = { EU4 = FOI Vic2 = FOI } # Foix
@@ -314,15 +314,14 @@ link = { EU4 = POM Vic2 = POM } # Pommerania
 link = { EU4 = k_pomerania Vic2 = POM } # Pommerania
 link = { EU4 = SAX Vic2 = SAX } # Saxony
 link = { EU4 = k_saxony Vic2 = SAX } # Saxony
-link = { EU4 = SIL Vic2 = SIL } # Silesia
-link = { EU4 = c_silesia Vic2 = SIL } # Silesia
+link = { EU4 = SIL Vic2 = SLS } # Silesia
+link = { EU4 = c_silesia Vic2 = SLS } # Silesia
 link = { EU4 = SLZ Vic2 = SLZ } # Salzburg
 link = { EU4 = c_salzburg Vic2 = SLZ } # Salzburg
 link = { EU4 = STY Vic2 = STY } # Styria
 link = { EU4 = c_steiermark Vic2 = STY } #Styria
 link = { EU4 = SWI Vic2 = SWI } # Switzerland
 link = { EU4 = d_swiss Vic2 = SWI } # Switzerland
-link = { EU4 = d_upper_swabia Vic2 = SWI } # Upper Swabia => Switzerland
 link = { EU4 = THU Vic2 = THU } # Thuringia
 link = { EU4 = d_thuringia Vic2 = THU } # Thuringia
 link = { EU4 = TIR Vic2 = TIR } # Tirol
@@ -334,7 +333,6 @@ link = { EU4 = c_ulm Vic2 = ULM } # Ulm
 link = { EU4 = WBG Vic2 = WBG } # Wurzburg
 link = { EU4 = c_wurzburg Vic2 = WBG } #Wurzburg
 link = { EU4 = WES Vic2 = WES } # Westfalia
-link = { EU4 = westphalia Vic2 = WES } # Westfalia (client state)
 link = { EU4 = WUR Vic2 = WUR } # Wurttemberg
 link = { EU4 = c_wurttemberg Vic2 = WUR } #Wurttemberg
 link = { EU4 = NUM Vic2 = NUM } # Nuremberg
@@ -343,7 +341,6 @@ link = { EU4 = MEM Vic2 = MEM } # Memmingen
 link = { EU4 = VER Vic2 = VER } # Verden
 link = { EU4 = NSA Vic2 = NAS } # Nassau
 link = { EU4 = c_nassau Vic2 = NAS } #Nassau
-link = { EU4 = d_franche_comte Vic2 = NAS } #Nassau
 link = { EU4 = RVA Vic2 = RVA } # Ravensburg
 link = { EU4 = DTT Vic2 = DTT } # Dithmarschen
 
@@ -362,8 +359,8 @@ link = { EU4 = POR Vic2 = POR } # Portugal
 link = { EU4 = k_portugal Vic2 = POR } # Portugal
 link = { EU4 = SPA Vic2 = SPA } # Spain
 link = { EU4 = e_spain Vic2 = SPA } # Spain
-link = { EU4 = GAL Vic2 = GAL } # Galicia
-link = { EU4 = k_spanish_galicia Vic2 = GAL } # Galicia
+link = { EU4 = GAL Vic2 = GLC } # Galicia
+link = { EU4 = k_spanish_galicia Vic2 = GLC } # Galicia
 #link = { EU4 = LON Vic2 = XXX } # Leon => k_leon
 link = { EU4 = ADU Vic2 = ADU } # Andalusia
 link = { EU4 = k_andalusia Vic2 = ADU } # Andalusia
@@ -378,7 +375,6 @@ link = { EU4 = GEN Vic2 = GNA } # Genoa
 link = { EU4 = k_genoa Vic2 = GNA } # Genoa
 link = { EU4 = ITA Vic2 = ITA } # Italy
 link = { EU4 = k_italy Vic2 = ITA } # Italy
-link = { EU4 = italy Vic2 = ITA } # Italy (client state)
 link = { EU4 = MAN Vic2 = MTA } # Mantua
 link = { EU4 = c_mantua Vic2 = MTA } # Mantua
 link = { EU4 = MLO Vic2 = LOM } # Milan => Lombardy
@@ -397,8 +393,8 @@ link = { EU4 = k_pisa Vic2 = PIS } # Pisa
 link = { EU4 = SAR Vic2 = SRD } # Sardinia
 link = { EU4 = d_sardinia Vic2 = SRD } # Sardinia
 link = { EU4 = k_sardinia Vic2 = SRD } # Sardinia (et Corsica)
-link = { EU4 = SAV Vic2 = SAV } # Savoy
-link = { EU4 = d_savoie Vic2 = SAV } # Savoy
+link = { EU4 = SAV Vic2 = SVY } # Savoy
+link = { EU4 = d_savoie Vic2 = SVY } # Savoy
 link = { EU4 = SIC Vic2 = SII } # Sicily
 link = { EU4 = d_sicily Vic2 = SII } # Sicily
 link = { EU4 = k_trinacria Vic2 = SII } # Sicily
@@ -772,7 +768,7 @@ link = { EU4 = RFR Vic2 = RFR } # Nanbu
 link = { EU4 = ASK Vic2 = ASK } # Ashikaga
 link = { EU4 = KTB Vic2 = KTB } # Kitabatake
 
-link = { EU4 = ANU Vic2 = ANU } # Ainu
+link = { EU4 = ANU Vic2 = AIN } # Ainu
 
 #New Daimyos 1.20
 link = { EU4 = AKM Vic2 = AKM } # Akamatsu
@@ -1045,7 +1041,7 @@ link = { EU4 = CHU Vic2 = CHU } # Chukchi
 link = { EU4 = HOD Vic2 = HOD } # Hodyntsy
 link = { EU4 = CHV Vic2 = CHV } # Chavchuveny
 link = { EU4 = KMC Vic2 = KMC } # Kamchadals
-link = { EU4 = BRT Vic2 = BRT } # Buryats
+link = { EU4 = BRT Vic2 = BYA } # Buryats
 
 #North American Additions
 link = { EU4 = ARP Vic2 = ARP } # Arapaho
@@ -1156,7 +1152,6 @@ link = { EU4 = PHI Vic2 = PHI } #Philippines
 link = { EU4 = NZL Vic2 = NZL } #New Zealand
 link = { EU4 = YUG Vic2 = YUG } #Yugoslavia
 link = { EU4 = BYE Vic2 = BYE } #Belarus
-link = { EU4 = two_sicilies Vic2 = SIC } #Two Sicilies (client state)
 link = { EU4 = SI2 Vic2 = SIC } #Two Sicilies
 link = { EU4 = d_azerbaijan Vic2 = AZB } #Azerbaijan
 link = { EU4 = KUK Vic2 = KUK } #Austria-Hungary
@@ -1179,7 +1174,7 @@ link = { EU4 = e_latin_empire Vic2 = LTN } #Latin Empire
 link = { EU4 = ZOM Vic2 = ZOM } #Zombies
 
 ##Macedonian culture added (just in case)
-link = { EU4 = MKD Vic2 = MKD } #Macedonia
+link = { EU4 = MKD Vic2 = MCD } #Macedonia
 ##Alaska
 link = { EU4 = LSK Vic2 = LSK } #Alaska
 
