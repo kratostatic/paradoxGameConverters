@@ -358,6 +358,13 @@ country_event = {
 
 	option = {
 		name = EVTOPTA350005
+		any_owned = {
+			limit = {
+				continent = africa
+			}
+			secede_province = EGY
+			remove_core = TUR
+		}
 		EGY_897 = { # Aleppo
 			limit = {
 				owned_by = TUR
@@ -616,7 +623,6 @@ country_event = {
 		NOT = { tag = SGF }
 		NOT = { tag = AUS }
 		NOT = { tag = KUK }
-		NOT = { tag = HLR }
 		LIP = { exists = no }
 		owns = 585
 		has_global_flag = der_postcolonialism
@@ -811,6 +817,251 @@ country_event = {
 			consciousness = 0.5
 		}
 		prestige = 5
+	}
+	
+}
+country_event = {
+	id = 450008
+	title = EVTNAME450008
+	desc = EVTDESC450008
+	picture = "Orthodox"
+	
+	trigger = {
+		NOT = { has_country_flag = formed_in_transcaucasia }
+		NOT = { tag = RUS }
+		NOT = { tag = PER }
+		NOT = { tag = TUR }
+		primary_culture = georgian
+		GEO = {
+			all_core = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+					owned_by = RUS
+					owned_by = PER
+					owned_by = TUR
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	immediate = {
+		set_country_flag = formed_in_transcaucasia
+		prestige = 5
+	}
+	option = {
+		name = EVTOPTA450008 #Georgia
+		change_tag = GEO
+		capital = 1090 #Tbilisi
+	}
+	
+}
+country_event = {
+	id = 450009
+	title = EVTNAME450009
+	desc = EVTDESC450009
+	picture = "darwin"
+	
+	trigger = {
+		NOT = { has_country_flag = atheocracy }
+		NOT = { tag = PAP }
+		OR = {
+		religious_policy = pro_atheism
+		religious_policy = secularized
+		}
+		AND = {
+			OR = {
+				tag = KNI
+				tag = TEU
+				tag = LIV
+			}
+			NOT = { government = theocracy }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	immediate = {
+		set_country_flag = atheocracy
+		government = absolute_monarchy
+		election = yes
+	}
+	option = {
+		name = EVTOPTA450009 #Knights to Malta
+		limit = {
+			tag = KNI
+			NOT = { exists = MLT }
+		}
+		change_tag = MLT
+		add_accepted_culture = maltese
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				NOT = { tag = KNI }
+			}
+			modifier = {
+				factor = 0
+				exists = MLT
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB450009 #Teutonic to Prussia
+		limit = {
+			tag = TEU
+			NOT = { exists = PRU }
+		}
+		change_tag = PRU
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				NOT = { tag = TEU }
+			}
+			modifier = {
+				factor = 0
+				exists = PRU
+			}
+		}
+	}
+	option = {
+		name = EVTOPTC450009 #Livonian to Latvia
+		limit = {
+			tag = LIV
+			NOT = { exists = LAT }
+		}
+		change_tag = LAT
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				NOT = { tag = LIV }
+			}
+			modifier = {
+				factor = 0
+				exists = LAT
+			}
+		}
+	}
+	option = {
+		name = EVTOPTD450009 #Fallback
+		limit = {
+			OR = {
+				NOT = {
+					tag = KNI
+					tag = TEU
+					tag = LIV
+				}
+				AND = {
+					tag = KNI
+					exists = MLT
+				}
+				AND = {
+					tag = TEU
+					exists = PRU
+				}
+				AND = {
+					tag = LIV
+					exists = LAT
+				}
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}	
+	
+}
+country_event = {
+	id = 450010
+	title = EVTNAME450008
+	desc = EVTDESC450008
+	picture = "Orthodox"
+	
+	trigger = {
+		NOT = { has_country_flag = formed_in_transcaucasia }
+		NOT = { tag = RUS }
+		NOT = { tag = PER }
+		NOT = { tag = TUR }
+		primary_culture = armenian
+		ARM = {
+			all_core = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+					owned_by = RUS
+					owned_by = PER
+					owned_by = TUR
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	immediate = {
+		set_country_flag = formed_in_transcaucasia
+		prestige = 5
+	}
+	option = {
+		name = EVTOPTB450008 #Armenia
+		change_tag = ARM
+		capital = 1098 #Erivan
+	}
+	
+}
+country_event = {
+	id = 450011
+	title = EVTNAME450008
+	desc = EVTDESC450008
+	picture = "Orthodox"
+	
+	trigger = {
+		NOT = { has_country_flag = formed_in_transcaucasia }
+		NOT = { tag = RUS }
+		NOT = { tag = PER }
+		NOT = { tag = TUR }
+		primary_culture = azerbaijani
+		AZB = {
+			all_core = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+					owned_by = RUS
+					owned_by = PER
+					owned_by = TUR
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	immediate = {
+		set_country_flag = formed_in_transcaucasia
+		prestige = 5
+	}
+	option = {
+		name = EVTOPTC450008 #Azerbaijan
+		change_tag = AZB
+		capital = 1102 #Baku
 	}
 	
 }

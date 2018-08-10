@@ -166,10 +166,6 @@ political_decisions = {
 			PEU_2300 = { add_core = PEU }
 			PEU_2303 = { add_core = PEU }
 			PEU_2289 = { add_core = PEU }
-			PEU_2297 = { add_core = PEU }
-			CHL_2322 = { add_core = CHL } #Chile
-			CHL_2327 = { add_core = CHL }
-			CHL_2332 = { add_core = CHL }
 			ARG_2355 = { add_core = ARG } #Argentina
 			ARG_2357 = { add_core = ARG }
 			ARG_2363 = { add_core = ARG }
@@ -221,7 +217,7 @@ political_decisions = {
 			3246 = { add_core = JAN } #Jan Mayen
 			EGY_921 = { add_core = ISR } #Israel
 			CHI_1476 = { add_core = TPG } #Taiping Heavenly Kingdom (for event)
-			TUR_806 = { add_core = MKD } #FYR Macedonia (if not working properly)
+			TUR_806 = { add_core = MCD } #FYR Macedonia (if not working properly)
 			TUR_788 = { add_core = BOS } #Bosnia
 			ENG_1979 = { add_core = GUY } #Guyana
 			
@@ -1462,5 +1458,113 @@ political_decisions = {
 			factor = 1
 		}
 	}
-
+	the_central_asia = {
+		potential = {
+			NOT = { has_global_flag = the_central_asia }
+			has_global_flag = der_postcolonialism
+			NOT = { exists = TKS }
+			NOT = {
+				primary_culture = kazak
+				primary_culture = uzbek
+				primary_culture = kirgiz
+				primary_culture = tajik
+				primary_culture = turkmen
+			}
+			TKS = { any_core = { owned_by = THIS } }
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+			is_greater_power = yes
+		}
+		effect = {
+			set_global_flag = the_central_asia
+			TKS = {
+				any_core = {
+					remove_core = KZH
+					remove_core = KOK
+					remove_core = KHI
+					remove_core = BUK
+					remove_core = TAJ
+				}
+			}
+			#Kazakhstan
+			RUS_1184 = { add_core = KZH } #Akmolinsk
+			RUS_1185 = { add_core = KZH } #Semireche
+			RUS_1182 = { add_core = KZH } #Uralsk
+			KZH = { primary_culture = kazak civilized = yes capital = 1181 government = presidential_dictatorship }
+			#Turkmenistan
+			RUS_1196 = {
+				add_core = KHI
+				any_pop = {
+					limit = { has_pop_culture = uzbek }
+					move_pop = 1195
+				}
+				any_pop = {
+					limit = { has_pop_culture = tajik }
+					move_pop = 1207
+				}
+				any_pop = {
+					limit = { has_pop_culture = kirgiz }
+					move_pop = 1189
+				}
+			}
+			KHI = { primary_culture = turkmen civilized = yes capital = 1204 government = presidential_dictatorship }
+			#Uzbekistan
+			KHI_1191 = {
+				add_core = BUK
+				any_pop = {
+					limit = { has_pop_culture = turkmen }
+					move_pop = 1204
+				}
+				any_pop = {
+					limit = { has_pop_culture = tajik }
+					move_pop = 1207
+				}
+				any_pop = {
+					limit = { has_pop_culture = kirgiz }
+					move_pop = 1189
+				}
+			}
+			1197 = { remove_core = BUK }
+			1197 = { add_core = KZH }
+			BUK = { primary_culture = uzbek civilized = yes capital = 1195 government = presidential_dictatorship }
+			#Tajikistan
+			BUK_1207 = {
+				add_core = TAJ
+				any_pop = {
+					limit = { has_pop_culture = uzbek }
+					move_pop = 1195
+				}
+				any_pop = {
+					limit = { has_pop_culture = turkmen }
+					move_pop = 1204
+				}
+				any_pop = {
+					limit = { has_pop_culture = kirgiz }
+					move_pop = 1189
+				}
+			}
+			TAJ = { primary_culture = tajik civilized = yes capital = 1207 government = presidential_dictatorship }
+			#Kyrgyzstan
+			KOK_1190 = {
+				add_core = KOK
+				any_pop = {
+					limit = { has_pop_culture = uzbek }
+					move_pop = 1195
+				}
+				any_pop = {
+					limit = { has_pop_culture = tajik }
+					move_pop = 1207
+				}
+				any_pop = {
+					limit = { has_pop_culture = turkmen }
+					move_pop = 1204
+				}
+			}
+			KOK = { primary_culture = kirgiz civilized = yes capital = 1189 government = presidential_dictatorship }
+			1181 = { change_province_name = "Akmolinsk" }
+			1185 = { state_scope = { change_region_name = "Žetysu" } }
+			1207 = { change_province_name = "Dušanbe" }
+		}
+	}
 }

@@ -297,7 +297,7 @@ MAI		="countries/Mainz.txt"##
 MUN		="countries/Munster.txt"##
 PAL		="countries/Palatinate.txt"##
 POM		="countries/Pommerania.txt"##
-SIL		="countries/Silesia.txt"##
+SLS		="countries/Silesia.txt"##
 SLZ		="countries/Salzburg.txt"##
 STY		="countries/Styria.txt"##
 THU		="countries/Thuringia.txt"##
@@ -317,7 +317,7 @@ MTA		="countries/Mantua.txt"##
 NAP		="countries/Naples.txt"##
 PIS		="countries/Pisa.txt"##
 SRD		="countries/Sardinia.txt"##
-SAV		="countries/Savoy.txt"##
+SVY		="countries/Savoy.txt"##
 SII		="countries/Sicily.txt"##
 SNA		="countries/Siena.txt"##
 URB		="countries/Urbino.txt"##
@@ -346,7 +346,7 @@ NOL		="countries/Northumberland.txt"
 SLN		="countries/Sligo.txt"
 TYR		="countries/Tyrone.txt"##
 ULS		="countries/Ulster.txt"
-WLS		="countries/Wales.txt"##
+WHA		="countries/Wales.txt"##
 YOR		="countries/York.txt"##
 
 # Balkans
@@ -357,7 +357,7 @@ KNI		="countries/Knights.txt"##
 MOE		="countries/Morea.txt"##
 NAX		="countries/Naxos.txt"##
 RAG		="countries/Ragusa.txt"##
-MKD		="countries/Macedonia.txt"##
+MCD		="countries/Macedonia.txt"##
 
 # Maghreb
 FEZ		="countries/Fez.txt"##
@@ -433,10 +433,10 @@ AUV		="countries/Auvergne.txt"##
 AVI		="countries/Avignon.txt"##
 BAR		="countries/Bar.txt"##
 BOU		="countries/Bourbonnais.txt"##
-BRI		="countries/Brittany.txt"##
+BRT		="countries/Brittany.txt"##
 BRG		="countries/Burgundy.txt"##
 CHP		="countries/Champagne.txt"##
-COR		="countries/Corsica.txt"##
+CRS		="countries/Corsica.txt"##
 DAU		="countries/Dauphine.txt"##
 FOI		="countries/Foix.txt"##
 GYN		="countries/Guyenne.txt"##
@@ -454,7 +454,7 @@ ARO		="countries/Aragon.txt"##
 CAS		="countries/Castille.txt"##
 GRA		="countries/Granada.txt"##
 NAV		="countries/Navarra.txt"##
-GAL		="countries/Galicia.txt"	##
+GLC		="countries/Galicia.txt"	##
 ADU		="countries/Andalucia.txt"
 
 # The Low Countries
@@ -545,7 +545,7 @@ SUL		="countries/Sulu.txt"
 TOK		="countries/Tonkin.txt"
 WUU		="countries/Wu.txt"
 XIA		="countries/Xia.txt"
-ANU     =   "countries/Ainu.txt"
+AIN     =   "countries/Ainu.txt"
 
 # Americas
 LOU		="countries/Louisiana.txt"##
@@ -582,6 +582,7 @@ JAL		="countries/Jalayirid.txt"
 QAR		="countries/QaraKoyunlu.txt"
 TIM		="countries/Timurid.txt"
 KZH		="countries/Kazakh.txt"
+TAJ		="countries/Tajikistan.txt"
 BHT		="countries/Kurdistan.txt"
 ALN     =   "countries/Alania.txt"
 DKU     =   "countries/Don-Kuban Union.txt"
@@ -609,7 +610,7 @@ FRK     =   "countries/Frankia.txt"
 ENR		=	"countries/Britannia.txt"
 FRR		=	"countries/Gallia.txt"
 AUR		=	"countries/Laessinia.txt"
-EUS		=	"countries/Euskadi.txt"
+BSQ		=	"countries/Euskadi.txt"
 GUY		=	"countries/Guyana.txt"
 
 

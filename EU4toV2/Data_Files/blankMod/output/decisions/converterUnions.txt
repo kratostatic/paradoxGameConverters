@@ -170,8 +170,8 @@ political_decisions = {
 			}
 			any_country = { #Macedonia
 				limit = {
-					tag = MKD
-					NOT = { exists = MKD }
+					tag = MCD
+					NOT = { exists = MCD }
 				}
 				primary_culture = macedonian
 				religion = orthodox
@@ -483,8 +483,8 @@ political_decisions = {
 			}
 			any_country = { #Euskadi
 				limit = {
-					tag = EUS
-					NOT = { exists = EUS }
+					tag = BSQ
+					NOT = { exists = BSQ }
 				}
 				primary_culture = basque
 				religion = catholic
@@ -502,6 +502,17 @@ political_decisions = {
 				government = democracy
 				civilized = yes
 				capital = 2239
+			}
+			any_country = { #Tajikistan
+				limit = {
+					tag = TAJ
+					NOT = { exists = TAJ }
+				}
+				primary_culture = tajik
+				religion = shia
+				government = democracy
+				civilized = yes
+				capital = 1207
 			}
 			set_global_flag = taiping_and_csa
 		}
@@ -1909,7 +1920,7 @@ political_decisions = {
 				exists = GRE
 				tag = TUR
 				tag = ITA
-				tag = MKD
+				tag = MCD
 			}
 		}	
 		allow = {
@@ -1923,7 +1934,7 @@ political_decisions = {
 							in_sphere = THIS
 						}
 						owned_by = TUR
-						owned_by = MKD
+						owned_by = MCD
 					}
 				}
 			}
@@ -2083,7 +2094,7 @@ political_decisions = {
 			primary_culture = suebi
 			NOT = {
 				exists = SUE
-				tag = GAL
+				tag = GLC
 				tag = POR
 				tag = SPA
 			}
@@ -2120,7 +2131,7 @@ political_decisions = {
 				add_core = SUE
 				remove_core = SPA
 				remove_core = POR
-				remove_core = GAL
+				remove_core = GLC
 			}			
 			
 			change_tag = SUE
@@ -2621,6 +2632,290 @@ political_decisions = {
 				change_province_name = "Vindobona"
 			}
 			set_global_flag = provincia_noricum
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	form_yemen = {
+		potential = {
+			is_greater_power = no
+			primary_culture = bedouin
+			capital_scope = {
+				state_id = 1173 #Yemen
+			}
+			NOT = {
+				exists = YEM
+				tag = ARA
+			}
+		}	
+		allow = {
+			war = no
+			prestige = 3
+			YEM_1173 = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+			}
+		}
+		
+		effect = {
+			prestige = 5
+			any_country = {
+				limit = {
+					in_sphere = THIS
+					NOT = {
+						tag = THIS
+					}
+					capital_scope = { state_id = 1173 }
+					primary_culture = bedouin
+				}
+				annex_to = THIS
+			}
+			any_owned = {
+				add_core = YEM
+			}		
+			
+			change_tag = YEM
+			capital = 1412 #Aden
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	form_nepal = {
+		potential = {
+			is_greater_power = no
+			primary_culture = nepali
+			OR = { 
+				capital_scope = { province_id = 1326 }
+				capital_scope = { province_id = 1327 }
+			}
+			NOT = { exists = NEP }
+		}	
+		allow = {
+			war = no
+			prestige = 1
+			1326 = { owned_by = THIS }
+			1327 = { owned_by = THIS }
+		}
+		
+		effect = {
+			prestige = 2
+			any_owned = {
+				add_core = NEP
+			}		
+			change_tag = NEP
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	form_persia = {
+		potential = {
+			OR = {
+				primary_culture = persian
+				primary_culture = tajik
+				primary_culture = gypsy
+				primary_culture = kurdish
+			}
+			NOT = {
+				exists = PER
+				tag = ARA
+				tag = MUG
+				tag = TIM
+			}
+		}	
+		allow = {
+			war = no
+			prestige = 5
+			PER = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 10
+			any_country = {
+				limit = {
+					in_sphere = THIS
+					NOT = {
+						tag = THIS
+					}
+					OR = {
+						primary_culture = persian
+						primary_culture = tajik
+						primary_culture = gypsy
+					}
+				}
+				annex_to = THIS
+			}
+			any_owned = {
+				add_core = PER
+			}			
+			
+			change_tag = PER
+			add_accepted_culture = tajik
+			add_accepted_culture = persian
+			capital = 1121 #Tehran
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	form_kurdistan = {
+		potential = {
+			primary_culture = kurdish
+			NOT = {
+				exists = BHT
+				tag = PER
+				tag = ARA
+				tag = TUR
+				tag = IRQ
+				tag = SYR
+			}
+		}	
+		allow = {
+			war = no
+			prestige = 5
+			BHT = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 10
+			any_country = {
+				limit = {
+					in_sphere = THIS
+					NOT = {
+						tag = THIS
+					}
+					primary_culture = kurdish
+				}
+				annex_to = THIS
+			}
+			any_owned = {
+				add_core = BHT
+			}			
+			
+			change_tag = BHT
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	form_burma = {
+		potential = {
+			OR = {
+				primary_culture = burmese
+				primary_culture = shan
+				primary_culture = kachin
+				primary_culture = karen
+			}
+			NOT = {
+				exists = BUR
+				tag = SST
+			}
+		}	
+		allow = {
+			war = no
+			prestige = 5
+			BUR = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+						owner = SST
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 10
+			any_country = {
+				limit = {
+					in_sphere = THIS
+					NOT = {
+						tag = THIS
+					}
+					primary_culture = burmese
+				}
+				annex_to = THIS
+			}
+			add_accepted_culture = burmese
+			any_owned = {
+				add_core = BUR
+			}			
+			
+			change_tag = BUR
+			capital = 1334 #Ava/Rangoon
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	form_shan = {
+		potential = {
+			primary_culture = shan
+			NOT = {
+				tag = BUR
+				exists = SST
+			}
+		}	
+		allow = {
+			war = no
+			prestige = 5
+			SST = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+						owner = BUR
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 10
+			any_country = {
+				limit = {
+					in_sphere = THIS
+					NOT = {
+						tag = THIS
+					}
+					primary_culture = shan
+				}
+				annex_to = THIS
+			}
+			any_owned = {
+				add_core = SST
+			}			
+			
+			change_tag = SST
 		}
 		ai_will_do = {
 			factor = 1
