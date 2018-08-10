@@ -2526,20 +2526,17 @@ political_decisions = {
 				}
 			}
 			NOT = {
-				exists = EUS
+				exists = BSQ
 			}
 		}
-		
 		allow = {
 			war = no
 			prestige = 5
-			EUS = {
+			BSQ = {
 				all_core = {
 					OR = {
-						owned_by = THIS
-						owner = {
-							in_sphere = THIS
-						}
+						owned_by = GYN
+						owned_by = NAV
 						owned_by = SPA
 						owned_by = FRA
 					}
@@ -2549,22 +2546,13 @@ political_decisions = {
 		
 		effect = {
 			prestige = 10
-			any_country = {
-				limit = {
-					in_sphere = THIS
-					NOT = { tag = THIS }
-					primary_culture = basque
-				}
-				capital_scope = { continent = europe }
-				annex_to = THIS
-			}
 			any_owned = {
-				add_core = EUS
+				add_core = BSQ
 				remove_core = SPA
-			}			
-			
-			change_tag = EUS
+			}
+			change_tag = BSQ
 		}
+		
 		ai_will_do = {
 			factor = 1
 		}
@@ -2629,11 +2617,14 @@ political_decisions = {
 		
 		effect = {
 			prestige = 10
+			change_tag = PER
+			capital = 1121 #Tehran
 			any_country = {
 				limit = {
-					in_sphere = THIS
+					in_sphere = PER
 					NOT = {
-						tag = THIS
+						tag = PER
+						tag = TAJ #Tajikistan would be nonsense
 					}
 					OR = {
 						primary_culture = persian
@@ -2641,16 +2632,9 @@ political_decisions = {
 						primary_culture = gypsy
 					}
 				}
-				annex_to = THIS
+				annex_to = PER
 			}
-			any_owned = {
-				add_core = PER
-			}			
-			
-			change_tag = PER
-			add_accepted_culture = tajik
-			add_accepted_culture = persian
-			capital = 1121 #Tehran
+			any_owned = { add_core = PER }
 		}
 		ai_will_do = {
 			factor = 1
@@ -2705,106 +2689,6 @@ political_decisions = {
 			factor = 1
 		}
 	}
-	form_burma = {
-		potential = {
-			OR = {
-				primary_culture = burmese
-				primary_culture = shan
-				primary_culture = kachin
-				primary_culture = karen
-			}
-			NOT = {
-				exists = BUR
-				tag = SST
-			}
-		}	
-		allow = {
-			war = no
-			prestige = 5
-			BUR = {
-				all_core = {
-					OR = {
-						owned_by = THIS
-						owner = {
-							in_sphere = THIS
-						}
-						owner = SST
-					}
-				}
-			}
-		}
-		
-		effect = {
-			prestige = 10
-			any_country = {
-				limit = {
-					in_sphere = THIS
-					NOT = {
-						tag = THIS
-					}
-					primary_culture = burmese
-				}
-				annex_to = THIS
-			}
-			add_accepted_culture = burmese
-			any_owned = {
-				add_core = BUR
-			}			
-			
-			change_tag = BUR
-			capital = 1334 #Ava/Rangoon
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	form_shan = {
-		potential = {
-			primary_culture = shan
-			NOT = {
-				tag = BUR
-				exists = SST
-			}
-		}	
-		allow = {
-			war = no
-			prestige = 5
-			SST = {
-				all_core = {
-					OR = {
-						owned_by = THIS
-						owner = {
-							in_sphere = THIS
-						}
-						owner = BUR
-					}
-				}
-			}
-		}
-		
-		effect = {
-			prestige = 10
-			any_country = {
-				limit = {
-					in_sphere = THIS
-					NOT = {
-						tag = THIS
-					}
-					primary_culture = shan
-				}
-				annex_to = THIS
-			}
-			any_owned = {
-				add_core = SST
-			}			
-			
-			change_tag = SST
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
 	provincia_britannia = {
 		potential = {
 			tag = ENR
@@ -2897,6 +2781,98 @@ political_decisions = {
 			any_owned = { add_core = YEM }
 			change_tag = YEM
 			capital = 1412 #Aden
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Kept last intentionally
+	form_burma = {
+		potential = {
+			OR = {
+				primary_culture = burmese
+				primary_culture = shan
+				primary_culture = kachin
+				primary_culture = karen
+			}
+			NOT = {
+				exists = BUR
+				tag = SST
+			}
+		}	
+		allow = {
+			war = no
+			prestige = 5
+			BUR = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+						owner = SST
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 10
+			#any_country = {
+			#	limit = {
+			#		in_sphere = THIS
+			#		NOT = { tag = THIS }
+			#		primary_culture = burmese
+			#	}
+			#	annex_to = THIS
+			#}
+			any_owned = {
+				add_core = BUR
+			}			
+			
+			change_tag = BUR
+			BUR = { add_accepted_culture = burmese }
+		}
+	}
+	form_shan = {
+		potential = {
+			primary_culture = shan
+			NOT = {
+				tag = BUR
+				exists = SST
+			}
+		}	
+		allow = {
+			war = no
+			prestige = 5
+			SST = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = { in_sphere = THIS }
+						owner = BUR
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 10
+			any_country = {
+				limit = {
+					in_sphere = THIS
+					NOT = {
+						tag = THIS
+					}
+					primary_culture = shan
+				}
+				annex_to = THIS
+			}
+			any_owned = {
+				add_core = SST
+			}			
+			
+			change_tag = SST
 		}
 		ai_will_do = {
 			factor = 1
