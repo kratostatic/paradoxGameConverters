@@ -59,7 +59,7 @@ link = { tag = ENG tag = IRE culture = irish } #Ireland
 link = { tag = AES culture = anglo_saxon } #Anglo-Saxony
 link = { tag = ENG tag = SCO culture = scottish } #Scotland
 link = { tag = ENG tag = SCO tag = HSC culture = pictish } #Pitcland
-link = { tag = ENG tag = WLS culture = welsh } #Wales
+link = { tag = ENG tag = WHA culture = welsh } #Wales
 
 #Italian => Italy
 link = { tag = ITA culture = north_italian }
@@ -72,10 +72,10 @@ link = { tag = FRR culture = gaul } #Gallia
 link = { tag = AUR culture = laessin } #Läßinia
 
 #Iberian => Spain
-link = { tag = SPA tag = EUS culture = basque } #and Euskadi
+link = { tag = SPA tag = BSQ culture = basque } #and Euskadi
 link = { tag = SPA culture = spanish }
 link = { tag = SPA tag = CAT culture = catalan } #and Catalonia
-link = { tag = SPA tag = GAL culture = galician } #and Galicia
+link = { tag = SPA tag = GLC culture = galician } #and Galicia
 link = { tag = POR culture = portuguese } #Portugal (don't add Spain, be realistic)
 link = { tag = VGO culture = visigothic } #Visigothia
 
@@ -83,12 +83,12 @@ link = { tag = VGO culture = visigothic } #Visigothia
 link = { tag = FRA culture = french }
 link = { tag = FRA culture = picard }
 link = { tag = FRA tag = OCC culture = occitan } #and Occitania
-link = { tag = FRA tag = BRI culture = breton } #and Brittany
+link = { tag = FRA tag = BRT culture = breton } #and Brittany
 
 #South Slavic => Yugoslavia (and own nationstates)
 link = { tag = YUG tag = CRO culture = croat }
 link = { tag = YUG tag = SER culture = serb }
-link = { tag = YUG tag = MKD culture = macedonian }
+link = { tag = YUG tag = MCD culture = macedonian }
 link = { tag = BUL culture = bulgarian }
 link = { tag = ALB culture = albanian }
 link = { tag = YUG tag = SLO culture = slovene }
@@ -197,7 +197,7 @@ link = { tag = IDC culture = karen }
 
 #East Asian
 link = { tag = JAP culture = japanese } #Japan
-link = { tag = ANU culture = ainu } #Ainu
+link = { tag = AIN culture = ainu } #Ainu
 link = { tag = CHI tag = MCK culture = manchu } #China and Manchuria
 link = { tag = CHI culture = nanfaren } #From here below, China
 link = { tag = CHI culture = beifaren }
