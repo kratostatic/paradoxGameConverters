@@ -48,6 +48,7 @@ country_event = {
 				is_core = CAN
 			}
 			secede_province = CAN
+			remove_core = THIS
 		}
 		CAN = {
 			leadership = 80
@@ -68,6 +69,7 @@ country_event = {
 				is_core = CAN
 			}
 			secede_province = CAN
+			remove_core = THIS
 		}
 		CAN = {
 			leadership = 80
@@ -140,6 +142,7 @@ country_event = {
 				is_core = LSK
 			}
 			secede_province = LSK
+			remove_core = THIS
 		}
 		LSK = {
 			leadership = 80
@@ -159,6 +162,7 @@ country_event = {
 				is_core = LSK
 			}
 			secede_province = LSK
+			remove_core = THIS
 		}
 		LSK = {
 			leadership = 80
@@ -230,6 +234,7 @@ country_event = {
 				is_core = USA
 			}
 			secede_province = USA
+			remove_core = THIS
 		}
 		USA = {
 			leadership = 80
@@ -250,6 +255,7 @@ country_event = {
 				is_core = USA
 			}
 			secede_province = USA
+			remove_core = THIS
 		}
 		USA = {
 			leadership = 80
@@ -322,6 +328,7 @@ country_event = {
 				is_core = UCA
 			}
 			secede_province = UCA
+			remove_core = THIS
 		}
 		UCA = {
 			leadership = 80
@@ -341,6 +348,7 @@ country_event = {
 				is_core = UCA
 			}
 			secede_province = UCA
+			remove_core = THIS
 		}
 		UCA = {
 			leadership = 80
@@ -412,6 +420,7 @@ country_event = {
 				is_core = MEX
 			}
 			secede_province = MEX
+			remove_core = THIS
 		}
 		MEX = {
 			leadership = 80
@@ -431,6 +440,7 @@ country_event = {
 				is_core = MEX
 			}
 			secede_province = MEX
+			remove_core = THIS
 		}
 		MEX = {
 			leadership = 80
@@ -502,6 +512,7 @@ country_event = {
 				is_core = BRZ
 			}
 			secede_province = BRZ
+			remove_core = THIS
 		}
 		BRZ = {
 			leadership = 80
@@ -521,6 +532,7 @@ country_event = {
 				is_core = BRZ
 			}
 			secede_province = BRZ
+			remove_core = THIS
 		}
 		BRZ = {
 			leadership = 80
@@ -592,6 +604,7 @@ country_event = {
 				is_core = PEU
 			}
 			secede_province = PEU
+			remove_core = THIS
 		}
 		PEU = {
 			leadership = 80
@@ -611,6 +624,7 @@ country_event = {
 				is_core = PEU
 			}
 			secede_province = PEU
+			remove_core = THIS
 		}
 		PEU = {
 			leadership = 80
@@ -682,6 +696,7 @@ country_event = {
 				is_core = ARG
 			}
 			secede_province = ARG
+			remove_core = THIS
 		}
 		ARG = {
 			leadership = 80
@@ -701,6 +716,7 @@ country_event = {
 				is_core = ARG
 			}
 			secede_province = ARG
+			remove_core = THIS
 		}
 		ARG = {
 			leadership = 80
@@ -772,6 +788,7 @@ country_event = {
 				is_core = PRG
 			}
 			secede_province = PRG
+			remove_core = THIS
 		}
 		PRG = {
 			leadership = 80
@@ -791,6 +808,7 @@ country_event = {
 				is_core = PRG
 			}
 			secede_province = PRG
+			remove_core = THIS
 		}
 		PRG = {
 			leadership = 80
@@ -862,6 +880,7 @@ country_event = {
 				is_core = URU
 			}
 			secede_province = URU
+			remove_core = THIS
 		}
 		URU = {
 			leadership = 80
@@ -881,6 +900,7 @@ country_event = {
 				is_core = URU
 			}
 			secede_province = URU
+			remove_core = THIS
 		}
 		URU = {
 			leadership = 80
@@ -952,6 +972,7 @@ country_event = {
 				is_core = BOL
 			}
 			secede_province = BOL
+			remove_core = THIS
 		}
 		BOL = {
 			leadership = 80
@@ -971,6 +992,7 @@ country_event = {
 				is_core = BOL
 			}
 			secede_province = BOL
+			remove_core = THIS
 		}
 		BOL = {
 			leadership = 80
@@ -1042,6 +1064,7 @@ country_event = {
 				is_core = CLM
 			}
 			secede_province = CLM
+			remove_core = THIS
 		}
 		CLM = {
 			leadership = 80
@@ -1061,6 +1084,7 @@ country_event = {
 				is_core = CLM
 			}
 			secede_province = CLM
+			remove_core = THIS
 		}
 		CLM = {
 			leadership = 80
@@ -1132,6 +1156,7 @@ country_event = {
 				is_core = VNZ
 			}
 			secede_province = VNZ
+			remove_core = THIS
 		}
 		VNZ = {
 			leadership = 80
@@ -1151,6 +1176,7 @@ country_event = {
 				is_core = VNZ
 			}
 			secede_province = VNZ
+			remove_core = THIS
 		}
 		VNZ = {
 			leadership = 80
@@ -1228,6 +1254,7 @@ country_event = {
 				is_core = MSA
 			}
 			secede_province = MSA
+			remove_core = THIS
 		}
 		MSA = {
 			leadership = 80
@@ -1247,6 +1274,7 @@ country_event = {
 				is_core = MSA
 			}
 			secede_province = MSA
+			remove_core = THIS
 		}
 		MSA = {
 			leadership = 80
@@ -1325,6 +1353,7 @@ country_event = {
 				is_core = HND
 			}
 			secede_province = HND
+			remove_core = THIS
 		}
 		HND = {
 			leadership = 80
@@ -1342,6 +1371,7 @@ country_event = {
 				is_core = HND
 			}
 			secede_province = HND
+			remove_core = THIS
 		}
 		HND = {
 			leadership = 80
@@ -1418,6 +1448,7 @@ country_event = {
 				is_core = AST
 			}
 			secede_province = AST
+			remove_core = THIS
 		}
 		AST = {
 			leadership = 80
@@ -1437,6 +1468,7 @@ country_event = {
 				is_core = AST
 			}
 			secede_province = AST
+			remove_core = THIS
 		}
 		AST = {
 			leadership = 80
@@ -1516,6 +1548,7 @@ country_event = {
 				is_core = NZL
 			}
 			secede_province = NZL
+			remove_core = THIS
 		}
 		NZL = {
 			leadership = 80
@@ -1535,6 +1568,7 @@ country_event = {
 				is_core = NZL
 			}
 			secede_province = NZL
+			remove_core = THIS
 		}
 		NZL = {
 			leadership = 80
@@ -1613,6 +1647,7 @@ country_event = {
 				is_core = MAD
 			}
 			secede_province = MAD
+			remove_core = THIS
 		}
 		MAD = {
 			leadership = 80
@@ -1630,6 +1665,7 @@ country_event = {
 				is_core = MAD
 			}
 			secede_province = MAD
+			remove_core = THIS
 		}
 		MAD = {
 			leadership = 80
@@ -1706,6 +1742,7 @@ country_event = {
 				is_core = SAF
 			}
 			secede_province = SAF
+			remove_core = THIS
 		}
 		SAF = {
 			leadership = 80
@@ -1723,6 +1760,7 @@ country_event = {
 				is_core = SAF
 			}
 			secede_province = SAF
+			remove_core = THIS
 		}
 		SAF = {
 			leadership = 80
@@ -1799,6 +1837,7 @@ country_event = {
 				is_core = RHO
 			}
 			secede_province = RHO
+			remove_core = THIS
 		}
 		RHO = {
 			leadership = 80
@@ -1816,6 +1855,7 @@ country_event = {
 				is_core = RHO
 			}
 			secede_province = RHO
+			remove_core = THIS
 		}
 		RHO = {
 			leadership = 80
@@ -1892,6 +1932,7 @@ country_event = {
 				is_core = LIB
 			}
 			secede_province = LIB
+			remove_core = THIS
 		}
 		LIB = {
 			leadership = 80
@@ -1909,6 +1950,7 @@ country_event = {
 				is_core = LIB
 			}
 			secede_province = LIB
+			remove_core = THIS
 		}
 		LIB = {
 			leadership = 80
@@ -1985,6 +2027,7 @@ country_event = {
 				is_core = CNG
 			}
 			secede_province = CNG
+			remove_core = THIS
 		}
 		CNG = {
 			leadership = 80
@@ -2002,6 +2045,7 @@ country_event = {
 				is_core = CNG
 			}
 			secede_province = CNG
+			remove_core = THIS
 		}
 		CNG = {
 			leadership = 80
@@ -2079,6 +2123,7 @@ country_event = {
 #				is_core = PHI
 #			}
 #			secede_province = PHI
+			remove_core = THIS
 #		}
 #		PHI = {
 #			leadership = 80
@@ -2096,6 +2141,7 @@ country_event = {
 #				is_core = PHI
 #			}
 #			secede_province = PHI
+			remove_core = THIS
 #		}
 #		PHI = {
 #			leadership = 80
@@ -2115,6 +2161,54 @@ country_event = {
 #		ai_chance = { factor = 25 }
 #	}
 #}
+country_event = {
+	id = 450007
+	title = EVTNAME450007
+	desc = EVTDESC450007
+	picture = "jews"
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		owns = 706 # Warsaw
+		year = 1887
+		civilized = yes
+		invention = expressionist_literature
+		literacy = 30 #Let's hope they know how to write before books
+	}
+	
+	mean_time_to_happen = {
+		months = 7 #26.7.1887, publication of the Unua Libro
+		modifier = {
+			factor = 0.5
+			month = 7
+		}
+	}
+	
+	option = {
+		name = EVTOPTA450007 #Adopt
+		any_pop = {
+			literacy = 0.01
+		}
+		prestige = 5
+	}
+	
+	option = {
+		name = EVTOPTB450007 #Discard
+		any_pop = {
+			limit = {
+				OR = {
+					has_pop_culture = polish
+					has_pop_culture = ashkenazi
+				}
+			}
+			consciousness = 0.5
+		}
+		prestige = 5
+	}
+	
+}
+
 country_event = {
 	id = 251025
 	title = "EVTNAME251008"
@@ -2165,6 +2259,7 @@ country_event = {
 				is_core = CHL
 			}
 			secede_province = CHL
+			remove_core = THIS
 		}
 		CHL = {
 			leadership = 80
@@ -2184,6 +2279,7 @@ country_event = {
 				is_core = CHL
 			}
 			secede_province = CHL
+			remove_core = THIS
 		}
 		CHL = {
 			leadership = 80
