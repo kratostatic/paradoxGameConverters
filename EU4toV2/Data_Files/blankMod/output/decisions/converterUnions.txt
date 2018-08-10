@@ -2309,6 +2309,7 @@ political_decisions = {
 		}
 		
 		effect = {
+			civilized = no
 			prestige = 10
 			any_country = {
 				limit = {
@@ -2519,7 +2520,7 @@ political_decisions = {
 					tag = NAV
 					government = democracy
 				}
-				AND = { #Gascony, if Navarre doesnâ€™t exist
+				AND = { #Gascony, if Navarre doesn't exist
 					tag = GYN
 					NOT = { exists = NAV }
 				}
@@ -2568,49 +2569,13 @@ political_decisions = {
 			factor = 1
 		}
 	}
-	form_yemen = {
-		potential = {
-			is_greater_power = no
-			primary_culture = bedouin
-			capital_scope = {
-				state_id = 1173 #Yemen
-			}
-			NOT = {
-				exists = YEM
-				tag = ARA
-			}
-		}	
-		allow = {
-			war = no
-			prestige = 3
-			YEM_1173 = {
-					OR = {
-						owned_by = THIS
-						owner = {
-							in_sphere = THIS
-						}
-					}
-			}
-		}
-		
-		effect = {
-			prestige = 5
-			YEM_1173 = { change_controller = THIS }
-			any_owned = { add_core = YEM }
-			change_tag = YEM
-			capital = 1412 #Aden
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
 	form_nepal = {
 		potential = {
 			is_greater_power = no
 			primary_culture = nepali
 			OR = { 
-				capital_scope = { province_id = 1326 }
-				capital_scope = { province_id = 1327 }
+				capital = 1326
+				capital = 1327
 			}
 			NOT = { exists = NEP }
 		}	
@@ -2904,6 +2869,34 @@ political_decisions = {
 				change_province_name = "Vindobona"
 			}
 			set_global_flag = provincia_noricum
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	form_yemen = {
+		potential = {
+			is_greater_power = no
+			primary_culture = bedouin
+			capital_scope = {
+				state_id = 1173 #Yemen
+			}
+			NOT = {
+				exists = YEM
+				tag = ARA
+			}
+		}	
+		allow = {
+			war = no
+			prestige = 3
+			YEM_1173 = { owned_by = THIS }
+		}
+		
+		effect = {
+			prestige = 5
+			any_owned = { add_core = YEM }
+			change_tag = YEM
+			capital = 1412 #Aden
 		}
 		ai_will_do = {
 			factor = 1
