@@ -470,7 +470,7 @@ political_decisions = {
 				civilized = yes
 				capital = 425
 			}
-			any_country = { #Läßinia
+			any_country = { #LÃ¤ÃŸinia
 				limit = {
 					tag = AUR
 					NOT = { exists = AUR }
@@ -2519,7 +2519,7 @@ political_decisions = {
 					tag = NAV
 					government = democracy
 				}
-				AND = { #Gascony, if Navarre doesn’t exist
+				AND = { #Gascony, if Navarre doesnâ€™t exist
 					tag = GYN
 					NOT = { exists = NAV }
 				}
@@ -2568,75 +2568,6 @@ political_decisions = {
 			factor = 1
 		}
 	}
-	provincia_britannia = {
-		potential = {
-			tag = ENR
-			NOT = { has_global_flag = provincia_britannia }
-		}
-		allow = {
-			300 = { #London
-				OR = {
-					owned_by = THIS
-					owner = { in_sphere = THIS }
-				}
-			}
-		}
-		effect = {
-			300 = {
-				change_province_name = "Londinium"
-			}
-			set_global_flag = provincia_britannia
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	provincia_gallia = {
-		potential = {
-			tag = FRR
-			NOT = { has_global_flag = provincia_gallia }
-		}
-		allow = {
-			425 = { #Paris
-				OR = {
-					owned_by = THIS
-					owner = { in_sphere = THIS }
-				}
-			}
-		}
-		effect = {
-			425 = {
-				change_province_name = "Lutetia"
-			}
-			set_global_flag = provincia_gallia
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	provincia_noricum = {
-		potential = {
-			tag = AUR
-			NOT = { has_global_flag = provincia_noricum }
-		}
-		allow = {
-			619 = { #Vienna
-				OR = {
-					owned_by = THIS
-					owner = { in_sphere = THIS }
-				}
-			}
-		}
-		effect = {
-			619 = {
-				change_province_name = "Vindobona"
-			}
-			set_global_flag = provincia_noricum
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
 	form_yemen = {
 		potential = {
 			is_greater_power = no
@@ -2664,21 +2595,8 @@ political_decisions = {
 		
 		effect = {
 			prestige = 5
-			any_country = {
-				limit = {
-					in_sphere = THIS
-					NOT = {
-						tag = THIS
-					}
-					capital_scope = { state_id = 1173 }
-					primary_culture = bedouin
-				}
-				annex_to = THIS
-			}
-			any_owned = {
-				add_core = YEM
-			}		
-			
+			YEM_1173 = { change_controller = THIS }
+			any_owned = { add_core = YEM }
 			change_tag = YEM
 			capital = 1412 #Aden
 		}
@@ -2916,6 +2834,76 @@ political_decisions = {
 			}			
 			
 			change_tag = SST
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	provincia_britannia = {
+		potential = {
+			tag = ENR
+			NOT = { has_global_flag = provincia_britannia }
+		}
+		allow = {
+			300 = { #London
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+				}
+			}
+		}
+		effect = {
+			300 = {
+				change_province_name = "Londinium"
+			}
+			set_global_flag = provincia_britannia
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	provincia_gallia = {
+		potential = {
+			tag = FRR
+			NOT = { has_global_flag = provincia_gallia }
+		}
+		allow = {
+			425 = { #Paris
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+				}
+			}
+		}
+		effect = {
+			425 = {
+				change_province_name = "Lutetia"
+			}
+			set_global_flag = provincia_gallia
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	provincia_noricum = {
+		potential = {
+			tag = AUR
+			NOT = { has_global_flag = provincia_noricum }
+		}
+		allow = {
+			619 = { #Vienna
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+				}
+			}
+		}
+		effect = {
+			619 = {
+				change_province_name = "Vindobona"
+			}
+			set_global_flag = provincia_noricum
 		}
 		ai_will_do = {
 			factor = 1
