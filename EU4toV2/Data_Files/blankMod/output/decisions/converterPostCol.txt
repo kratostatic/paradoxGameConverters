@@ -166,6 +166,10 @@ political_decisions = {
 			PEU_2300 = { add_core = PEU }
 			PEU_2303 = { add_core = PEU }
 			PEU_2289 = { add_core = PEU }
+			PEU_2297 = { add_core = PEU }
+			CHL_2322 = { add_core = CHL } #Chile
+			CHL_2327 = { add_core = CHL }
+			CHL_2332 = { add_core = CHL }
 			ARG_2355 = { add_core = ARG } #Argentina
 			ARG_2357 = { add_core = ARG }
 			ARG_2363 = { add_core = ARG }
@@ -217,7 +221,7 @@ political_decisions = {
 			3246 = { add_core = JAN } #Jan Mayen
 			EGY_921 = { add_core = ISR } #Israel
 			CHI_1476 = { add_core = TPG } #Taiping Heavenly Kingdom (for event)
-			TUR_806 = { add_core = MCD } #FYR Macedonia (if not working properly)
+			TUR_806 = { add_core = MKD } #FYR Macedonia (if not working properly)
 			TUR_788 = { add_core = BOS } #Bosnia
 			ENG_1979 = { add_core = GUY } #Guyana
 			
