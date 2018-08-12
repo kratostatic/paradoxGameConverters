@@ -27,5 +27,5 @@ minority = { culture = sephardic religion = jewish }
 minority = { religion = jewish }
 
 minority = { culture = gypsy religion = orthodox }
-
+minority = { culture = gypsy }
 }
