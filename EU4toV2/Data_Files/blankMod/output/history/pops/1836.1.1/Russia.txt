@@ -724,6 +724,11 @@
 }
 #Azov (172000/43000 POPS)
 1047 = {
+	farmers = {
+		culture = gypsy
+		religion = orthodox
+		size = 1035
+	}
 	aristocrats = {
 		culture = ukrainian
 		religion = orthodox
@@ -5861,6 +5866,12 @@
 		religion = animist
 		size = 700
 	}
+	
+	farmers = {
+		culture = gypsy
+		religion = orthodox
+		size = 300
+	}
 
 	bureaucrats = {
 		culture = siberian
@@ -5904,6 +5915,12 @@
 		culture = siberian
 		religion = animist
 		size = 100
+	}
+	
+	farmers = {
+		culture = gypsy
+		religion = orthodox
+		size = 200
 	}
 
 	aristocrats = {
@@ -8076,6 +8093,12 @@
 		religion = animist
 		size = 75
 	}
+	
+	farmers = {
+		culture = gypsy
+		religion = orthodox
+		size = 100
+	}
 
 	officers = {
 		culture = siberian
@@ -8249,6 +8272,12 @@
 		culture = yakut
 		religion = animist
 		size = 675
+	}
+	
+	farmers = {
+		culture = gypsy
+		religion = orthodox
+		size = 150
 	}
 
 	bureaucrats = {
