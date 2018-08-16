@@ -2,7 +2,7 @@ color = { 128  170  63 }
 graphical_culture = MiddleEasternGC
 party = {
 	name = "ARM_conservative"
-	start_date = 1826.1.1
+	start_date = 1820.1.1
 	end_date = 1935.1.1
 
 	ideology = conservative
@@ -114,7 +114,7 @@ party = {
 
 party = {
 	name = "ARM_anarcho_liberal"
-	start_date = 1830.1.1
+	start_date = 1820.1.1
 	end_date = 2000.1.1
 
 	ideology = anarcho_liberal
