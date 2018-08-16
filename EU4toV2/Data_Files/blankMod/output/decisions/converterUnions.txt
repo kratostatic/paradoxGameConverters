@@ -393,8 +393,8 @@ political_decisions = {
 			}
 			any_country = { #Sakha
 				limit = {
-					tag = SKH
-					NOT = { exists = SKH }
+					tag = YAK
+					NOT = { exists = YAK }
 				}
 				primary_culture = yakut
 				religion = orthodox
@@ -403,8 +403,8 @@ political_decisions = {
 			}
 			any_country = { #Siberia
 				limit = {
-					tag = SBR
-					NOT = { exists = SBR }
+					tag = SIB
+					NOT = { exists = SIB }
 				}
 				primary_culture = siberian
 				religion = orthodox
@@ -470,7 +470,7 @@ political_decisions = {
 				civilized = yes
 				capital = 425
 			}
-			any_country = { #LÃ¤ÃŸinia
+			any_country = { #Läßinia
 				limit = {
 					tag = AUR
 					NOT = { exists = AUR }
@@ -514,6 +514,245 @@ political_decisions = {
 				civilized = yes
 				capital = 1207
 			}
+			any_country = { #Altai
+				limit = {
+					tag = ALT
+					NOT = { exists = ALT }
+				}
+				primary_culture = tatar
+				religion = sunni
+				civilized = yes
+				capital = 1068
+			}
+			any_country = { #Banat
+				limit = {
+					tag = BAN
+					NOT = { exists = BAN }
+				}
+				primary_culture = south_german
+				religion = catholic
+				civilized = yes
+				capital = 652
+			}
+			any_country = { #Bukovina
+				limit = {
+					tag = BKV
+					NOT = { exists = BKV }
+				}
+				primary_culture = romanian
+				religion = orthodox
+				civilized = yes
+				capital = 662
+			}
+			any_country = { #Carlist Spain
+				limit = {
+					tag = SPC
+					NOT = { exists = SPC }
+				}
+				primary_culture = spanish
+				religion = catholic
+				civilized = yes
+				capital = 487
+			}
+			any_country = { #Congress Poland
+				limit = {
+					tag = CPL
+					NOT = { exists = CPL }
+				}
+				primary_culture = polish
+				religion = catholic
+				civilized = yes
+				capital = 706
+			}
+			any_country = { #Cossackia
+				limit = {
+					tag = DON
+					NOT = { exists = DON }
+				}
+				primary_culture = ukrainian
+				religion = orthodox
+				civilized = yes
+				capital = 1047
+			}
+			any_country = { #Dalmatia
+				limit = {
+					tag = DLM
+					NOT = { exists = DLM }
+				}
+				primary_culture = croat
+				religion = catholic
+				civilized = yes
+				capital = 781
+			}
+			any_country = { #Danubian Federation
+				limit = {
+					tag = DNB
+					NOT = { exists = DNB }
+				}
+				primary_culture = south_german
+				religion = catholic
+				civilized = yes
+				capital = 619
+			}
+			any_country = { #Galicia-Lodomeria
+				limit = {
+					tag = GLM
+					NOT = { exists = GLM }
+				}
+				primary_culture = polish
+				religion = catholic
+				civilized = yes
+				capital = 702
+			}
+			any_country = { #Iberia
+				limit = {
+					tag = IBR
+					NOT = { exists = IBR }
+				}
+				primary_culture = spanish
+				religion = catholic
+				civilized = yes
+				capital = 487
+			}
+			any_country = { #Kalmykia
+				limit = {
+					tag = KMK
+					NOT = { exists = KMK }
+				}
+				primary_culture = mongol
+				religion = gelugpa
+				civilized = yes
+				capital = 1041
+			}
+			any_country = { #Kamchatka
+				limit = {
+					tag = KAM
+					NOT = { exists = KAM }
+				}
+				primary_culture = siberian
+				religion = animist
+				civilized = yes
+				capital = 1074
+			}
+			any_country = { #Karelia
+				limit = {
+					tag = KRL
+					NOT = { exists = KRL }
+				}
+				primary_culture = ugrian
+				religion = protestant
+				civilized = yes
+				capital = 995
+			}
+			any_country = { #Pomerelia
+				limit = {
+					tag = PML
+					NOT = { exists = PML }
+				}
+				primary_culture = polish
+				religion = catholic
+				civilized = yes
+				capital = 694
+			}
+			any_country = { #Poznan
+				limit = {
+					tag = PZN
+					NOT = { exists = PZN }
+				}
+				primary_culture = polish
+				religion = catholic
+				civilized = yes
+				capital = 699
+			}
+			any_country = { #Rhineland
+				limit = {
+					tag = RHI
+					NOT = { exists = RHI }
+				}
+				primary_culture = north_german
+				religion = catholic
+				civilized = yes
+				capital = 576
+			}
+			any_country = { #Romagna
+				limit = {
+					tag = RMG
+					NOT = { exists = RMG }
+				}
+				primary_culture = north_italian
+				religion = catholic
+				civilized = yes
+				capital = 741
+			}
+			any_country = { #Schleswig-Holstein
+				limit = {
+					tag = SWH
+					NOT = { exists = SWH }
+				}
+				primary_culture = north_german
+				religion = protestant
+				civilized = yes
+				capital = 369
+			}
+			any_country = { #Tannu Tuva
+				limit = {
+					tag = TNT
+					NOT = { exists = TNT }
+				}
+				primary_culture = tatar
+				religion = gelugpa
+				civilized = yes
+				capital = 1469
+			}
+			any_country = { #Tatarstan
+				limit = {
+					tag = TAR
+					NOT = { exists = TAR }
+				}
+				primary_culture = tatar
+				religion = sunni
+				civilized = yes
+				capital = 1030
+			}
+			any_country = { #Ural Republic
+				limit = {
+					tag = URA
+					NOT = { exists = URA }
+				}
+				primary_culture = ugrian
+				religion = orthodox
+				civilized = yes
+				capital = 1058
+			}
+			#Cores for regional countries
+			TUR_806 = { add_core = MCD } #FYR Macedonia
+			TUR_788 = { add_core = BOS } #Bosnia
+			1068 = { add_core = ALT } #Altai Republic
+			652 = { add_core = BAN } #Banat
+			653 = { add_core = BAN } #Banat
+			792 = { add_core = BAN } #Banat
+			662 = { add_core = BKV } #Bukovina
+			AUS_780 = { add_core = DLM } #Dalmatia
+			AUS_662 = { add_core = GLM } #Galicia-Lodomeria
+			AUS_702 = { add_core = GLM } #Galicia-Lodomeria
+			1041 = { add_core = KMK } #Kalmykia
+			RUS_1074 = { add_core = KAM } #Kamchatka
+			RUS_339 = { add_core = KRL } #Karelia
+			694 = { add_core = PML } #Pomerelia
+			693 = { add_core = PML }
+			691 = { add_core = PML }
+			690 = { add_core = PML }
+			PRU_701 = { add_core = PZN } #Poznan
+			PRU_572 = { add_core = RHI } #Rhineland
+			PRU_575 = { add_core = RHI }
+			PAP_741 = { add_core = RMG } #Romagna
+			1469 = { add_core = TNT } #Tannu Tuva
+			1030 = { add_core = TAR } #Tatarstan
+			1059 = { add_core = URA } #Ural Republic
+			1058 = { add_core = URA }
+			2685 = { add_core = URA }
+			2684 = { add_core = URA }
+			2614 = { add_core = URA }
 			set_global_flag = taiping_and_csa
 		}
 		ai_will_do = {
@@ -1974,7 +2213,7 @@ political_decisions = {
 			}
 			NOT = {
 				exists = TKS
-				tag = KZH
+				tag = KAZ
 				tag = XIN
 				tag = PER
 				tag = RUS
@@ -1992,7 +2231,7 @@ political_decisions = {
 						owner = {
 							in_sphere = THIS
 						}
-						owned_by = KZH
+						owned_by = KAZ
 						owned_by = XIN
 						owned_by = PER
 						owned_by = RUS
@@ -2193,14 +2432,14 @@ political_decisions = {
 		potential = {
 			primary_culture = siberian
 			NOT = {
-				exists = SBR
+				exists = SIB
 				tag = RUS
 			}
 		}	
 		allow = {
 			war = no
 			prestige = 5
-			SBR = {
+			SIB = {
 				all_core = {
 					OR = {
 						owned_by = THIS
@@ -2226,11 +2465,11 @@ political_decisions = {
 				annex_to = THIS
 			}
 			any_owned = {
-				add_core = SBR
+				add_core = SIB
 				remove_core = RUS
 			}			
 			
-			change_tag = SBR
+			change_tag = SIB
 		}
 		ai_will_do = {
 			factor = 1
