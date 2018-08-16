@@ -234,6 +234,7 @@ PNM		="countries/Panama.txt"
 QUE		="countries/Quebec.txt"
 TEX		="countries/Texas.txt"
 UCA		="countries/United States of Central America.txt"
+TRS		="countries/Tarasco.txt"
 
 # South America
 ARG		="countries/Argentina.txt"
@@ -408,7 +409,7 @@ SKA 		="countries/Sakalava.txt"
 SYO 		="countries/Soyo.txt"
 TBK 		="countries/Tumbuka.txt"
 UBH 		="countries/Buha.txt"
-YAK 		="countries/Yaka.txt"
+YKA 		="countries/Yaka.txt"
 ANG     =   "countries/Angola.txt"
 CMR     =   "countries/Cameroon.txt"
 EQA     =   "countries/Equatorial Africa.txt"
@@ -500,7 +501,7 @@ HND 		="countries/India.txt"
 AKH		="countries/Astrakhan.txt"##
 GOL		="countries/Golden Horde.txt"##
 GRH		="countries/Great Horde.txt"##
-KAZ		="countries/Kazan.txt"##
+KZN		="countries/Kazan.txt"##
 MOS		="countries/Muscowy.txt"##
 NOV		="countries/Novgorod.txt"##
 PSK		="countries/Pskov.txt"
@@ -510,7 +511,7 @@ TVE		="countries/Tver.txt"##
 YAR		="countries/Yaroslavl.txt"##
 ZAZ		="countries/Zaporozhie.txt"##
 NOG		="countries/Nogai.txt"##
-SIB		="countries/Sibir.txt"##
+SIH		="countries/Sibir.txt"##
 SMO		="countries/Smolensk.txt"##
 PLT		="countries/Polotsk.txt"##
 MUR		="countries/Murom.txt"##
@@ -520,7 +521,7 @@ OKA		="countries/Odoyev.txt"
 # East Asia
 ANN		="countries/Annam.txt"
 ARK		="countries/Arakan.txt"
-BAN		="countries/Banten.txt"
+BNT		="countries/Banten.txt"
 CHA		="countries/Champa.txt"
 CHG		="countries/ChagataiKhanate.txt"
 CHK		="countries/Champassak.txt"
@@ -581,7 +582,7 @@ KHO		="countries/Khorasan.txt"
 JAL		="countries/Jalayirid.txt"
 QAR		="countries/QaraKoyunlu.txt"
 TIM		="countries/Timurid.txt"
-KZH		="countries/Kazakh.txt"
+KAZ		="countries/Kazakh.txt"
 TAJ		="countries/Tajikistan.txt"
 BHT		="countries/Kurdistan.txt"
 ALN     =   "countries/Alania.txt"
@@ -602,8 +603,8 @@ VGO     =   "countries/Visigothia.txt"
 UGR     =   "countries/Yugra.txt"
 ASY     =   "countries/Assyria.txt"
 KRT     =   "countries/Carthage.txt"
-SKH     =   "countries/Sakha.txt"
-SBR     =   "countries/Siberia.txt"
+YAK     =   "countries/Sakha.txt"
+SIB     =   "countries/Siberia.txt"
 IDC     =   "countries/Indochina.txt"
 AES     =   "countries/Anglo-Saxony.txt"
 FRK     =   "countries/Frankia.txt"
@@ -613,6 +614,33 @@ AUR		=	"countries/Laessinia.txt"
 BSQ		=	"countries/Euskadi.txt"
 GUY		=	"countries/Guyana.txt"
 
+##HPM integrations
+#Europe
+BAN		= "countries/Banat.txt"
+BKV		= "countries/Bukovina.txt"
+DLM		= "countries/Dalmatia.txt"
+GLM		= "countries/Galicia-Lodomeria.txt"
+IBR		= "countries/Iberia.txt"
+RMG		= "countries/Romagna.txt"
+SPC		= "countries/Carlist Spain.txt"
+SWH		= "countries/Schleswig-Holstein.txt"
+
+#Germany
+DNB		= "countries/Danubian Federation.txt"
+RHI		= "countries/Rhineland.txt"
+PML		= "countries/Pomerelia.txt"
+PZN		= "countries/Poznan.txt"
+
+#Russia
+ALT		= "countries/Altai Republic.txt"
+CPL		= "countries/Congress Poland.txt"
+DON		= "countries/Cossackia.txt"
+KAM 	= "countries/Kamchatka.txt"
+KMK		= "countries/Kalmykia.txt"
+KRL		= "countries/Karelia.txt"
+TAR 	= "countries/Tatarstan.txt"
+TNT		= "countries/Tannu Tuva.txt"
+URA 	= "countries/Ural Republic.txt"
 
 ##HoD Dominions
 dynamic_tags  = yes # any tags after this is considered dynamic dominions
