@@ -140,7 +140,7 @@ link = { tag = ADU culture = andalucian } #Andalucia (converted)
 
 #Persian
 link = { tag = PER culture = persian } #Persia
-link = { tag = KZH culture = kazak } #(Converted) Kazakh
+link = { tag = KAZ culture = kazak } #(Converted) Kazakh
 link = { tag = TKS culture = uzbek } #Turkestan
 link = { tag = TKS culture = kirgiz } #Turkestan
 link = { tag = TKS culture = tajik } #Turkestan
@@ -154,9 +154,9 @@ link = { tag = BHT culture = kurdish } #Bohtan/Soran/Kurdistan
 
 #Central Asian
 link = { tag = KHA tag = MGL culture = mongol } #Mongolia
-link = { tag = SBR culture = siberian } #Siberia
+link = { tag = SIB culture = siberian } #Siberia
 link = { tag = TIB culture = tibetan } #Tibet
-link = { tag = SKH culture = yakut } #Sakha
+link = { tag = YAK culture = yakut } #Sakha
 
 #India
 link = { tag = HND culture = assamese }

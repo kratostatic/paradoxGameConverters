@@ -604,7 +604,7 @@ link = { eu4 = e_persia v2 = PER } # Persia
 link = { eu4 = QAR v2 = QAR } # Qara Koyunlu
 link = { eu4 = TIM v2 = TIM } # Timurid
 link = { eu4 = e_timurids v2 = TIM } # Timurid
-link = { eu4 = TRS v2 = TRS } # Transoxiana
+link = { eu4 = TRS v2 = TRX } # Transoxiana
 #link = { eu4 = KRY v2 = XXX } # Gilan => d_gilan
 link = { eu4 = CIR v2 = CIR } # Circassia
 link = { eu4 = GAZ v2 = GAZ } # Gazikumukh
@@ -735,7 +735,7 @@ link = { eu4 = ARK v2 = ARK } # Arakan
 link = { eu4 = ATJ v2 = ATJ } # Atjeh
 link = { eu4 = AYU v2 = SIA } # Ayutthaya => Siam
 link = { eu4 = BLI v2 = BAL } # Bali
-link = { eu4 = BAN v2 = BAN } # Banten
+link = { eu4 = BAN v2 = BNT } # Banten
 link = { eu4 = BEI v2 = BRU } # Brunei
 link = { eu4 = CHA v2 = CHA } # Champa
 link = { eu4 = CHG v2 = CHG } # Chagatai Khanate
@@ -836,8 +836,8 @@ link = { eu4 = SYG v2 = SYG } # Sarig Yogir
 link = { eu4 = UTS v2 = UTS } # Utsang
 link = { eu4 = d_lhasa v2 = UTS } #Utsang
 link = { eu4 = k_yarlung v2 = UTS } #Utsang
-link = { eu4 = KAM v2 = KAM } # Mdokhams
-link = { eu4 = d_kham v2 = KAM } # Mdokhams
+link = { eu4 = KAM v2 = MDO } # Mdokhams
+link = { eu4 = d_kham v2 = MDO } # Mdokhams
 link = { eu4 = GUG v2 = GUG } # Guge
 link = { eu4 = k_guge v2 = GUG } # Guge
 
@@ -1054,7 +1054,7 @@ link = { eu4 = KIC v2 = KIC } # Kiche
 link = { eu4 = KIO v2 = KIO } # Kiowa
 link = { eu4 = MIX v2 = MIX } # Mixtec
 link = { eu4 = SAL v2 = SAL } # Salish
-link = { eu4 = TAR v2 = TAR } # Tarascan
+link = { eu4 = TAR v2 = TRS } # Tarascan
 link = { eu4 = TLA v2 = TLA } # Tlapanec
 link = { eu4 = TLX v2 = TLX } # Tlaxcala
 link = { eu4 = TOT v2 = TOT } # Totonac
@@ -1077,7 +1077,7 @@ link = { eu4 = LFA v2 = LFA } # Lanfang
 link = { eu4 = LNO v2 = LNO } # Lanao
 link = { eu4 = LUW v2 = LUW } # Luwu
 link = { eu4 = MGD v2 = MGD } # Maguindanao
-link = { eu4 = TER v2 = TNT } # Ternate
+link = { eu4 = TER v2 = TRN } # Ternate
 link = { eu4 = TID v2 = TID } # Tidore
 link = { eu4 = MAS v2 = MAS } # Madya-as
 link = { eu4 = PGS v2 = PGS } # Pangasinan
