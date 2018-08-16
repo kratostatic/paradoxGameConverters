@@ -3,7 +3,7 @@ graphical_culture = FrenchGC
 
 party = {
 	name = "FRA_reactionary"
-	start_date = 1830.1.1
+	start_date = 1820.1.1
 	end_date = 1883.1.1
 
 	ideology = reactionary
@@ -17,7 +17,7 @@ party = {
 
 party = {
 	name = "FRA_liberal"
-	start_date = 1830.1.1
+	start_date = 1820.1.1
 	end_date = 1870.1.1
 
 	ideology = liberal
@@ -73,7 +73,7 @@ party = {
 
 party = {
 	name = "FRA_conservative_2"
-	start_date = 1830.1.1
+	start_date = 1820.1.1
 	end_date = 1870.1.1
 
 	ideology = conservative
@@ -129,7 +129,7 @@ party = {
 
 party = {
 	name = "FRA_anarcho_liberal"
-	start_date = 1830.1.1
+	start_date = 1820.1.1
 	end_date = 2000.1.1
 
 	ideology = anarcho_liberal
