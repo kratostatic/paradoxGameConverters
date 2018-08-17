@@ -3882,7 +3882,72 @@ african_diaspora_cultures = {
 		Madiou Péralte Pierrot Planchet Price Price-Mars Riché Rigaud Rivière-Hérard Roumain
 		Roy Saget Salnave Salomon Sam Simon Soulouque Théodore Vincent Zamor }
 	}
+	afro_norse = { 
+		color = { 39 9 74 }
 
+		first_names = { Agnar Ásgeir Björn Eidur Einar Emil Geir Gudmund Gunnar Hannes
+		Hermann Jón Kristján Magnús Ólafur Pétur Sigurdur Stefán Sveinn Tryggvi }
+		
+		last_names = { Arnórssohn Ásgeirssohn Benediktssohn Bjarnasen Björnssohn Eggers Eldjárn Hafstein Hansen
+		Hermannssohn Johánessohn Jónssohn Magnússohn Stefánssohn Steinthossohn Thórdarson Thórhallson Thorlákssohn Thurs }
+	}
+	afro_carpathian = {
+		color = { 89 127 59 }
+
+		first_names = { Alajos Albert Álmos Anasztáz András Arisztid Aurél Béla Benedek Béni
+		Bertalan Dániel Dávid Edvárd Éliás Erno Ferencz Gábor Gábriel Gáspár
+		György Gyula Ignác Imre István Izidor János József "József Manes" Kálmán
+		Károly Katalin Kelemen Krisztian Lajos László Manó Mihály Mór Myklós
+		Ödön Ottó Péter Rafael Sándor Simon Tivadar Vilmos Virág Zsigmond }
+
+		last_names = { Andrássy Apponyi Aulich Bacher Baross Batthyány Beöthy Bothmer Damjanich Dessewffy
+		Egressy "Erényi Ullmann" Farkas "Frakasházi Fischer" Goldziher Gungl Hauszmann Heller Horthy Izsó
+		Joseffy Katona Kaufman Kéler Kiss Knezich Kogutowicz Lahner Lázár Leiningen-Westerburg
+		Lichtenstein Liszt Mikszáth Molnár Nagy-Sándor Österreicher Ottinger Perczel Poeltenberg Reményi
+		Rohr Schweidel Széchenyi Szemere Szlávic Tersztyansky Török Varga Vécsey "von Benedek" }
+	}
+	afro_italian = {
+		color = { 19 74 44 }
+
+		first_names = { Alessandro Armando Augusto Carlo Cesare Corrado Domenico Enrico Fabio Fabrizio
+		Ferdinando Francesco Gaetano Giacomo Giovanni Giulio Giuseppe Guglielmo Leopoldo Lorenzo
+		Ludovico Marcantonio Marino Mario Matteo Nicola Orazio Sigismondo Tommasso Vincenzo }
+		
+		last_names = { Anfora Barberini-Colonna Bonaccorsi Caraga Cattaneo Chigi Clary Colonna "de Liguori" "de Riseis"
+		"della Rovere" "di Borbone" Diaz Ferrari Filangieri Gironda Gravina Grifeo Lanza Lombardo
+		Lunardi Molinelli Orsini Ottaviani Pironti Scammacca Torlonia Turrisi Vernazza Zunica }
+	}
+	afro_greek = {
+		color = { 99 24 49 }
+
+		first_names = { Adamantios Aléxandros Anastásios Andréas Antónios Aristídis Athanásios Avgóstinos Venizélos Charálampos
+		Charílaos Dimítrios Diomídis Elefthérios Emmanouíl Epameínontas Evripídis Gennaíos Geórgios Ilías
+		Ionnis Kítsos Konstantínos Kyriákos Kyriakoúlis Leonídas Makários Márkos Míchael Militiadis
+		Nikólaos Odysséas Óthon Panagiótis Pavlos Pétros Sofoklís Sotíris Spyridíon Spýros
+		Stáïkos Stéfanos Stylianós Themistoklís Theódoros Tharývoulos Tzannís Vásos Víktor Zinóvios
+		}
+
+		last_names = { Charalámpis Christákis-Zográfos Daglis Dousmanis Foúmis Gonatás Chatzianéstis Kallérgis Kanáris Katsimiros
+		Kolokotrónis Kondýlis Kountouriótis Kriezís Makriiánnis Mános Mavrokordátos Mavrovouniótis Metaxás Moúskos
+		Níder Othonaíos Paláskas Pan'galos Papadiamantópoulos Papadópoulos Papágos Papoúlas Parakevópoulos Plapoútas
+		Plastíras Sapountzákis Saráfis Smolénskis Sofoúlis Soútsos Spyromílios Staïkópoulos Stanotas "tis Elládas"
+		Trikoúpis Tsakalótos Tsolákoglou Typáldos-Alfonsátos Tzavélas Vássos Venizélos Voúlgaris Zaïmis Zymvrakákis
+		}
+	}
+	afro_slavic = {
+		color = { 64 99 69 }
+
+		first_names = { Aleksandr Aleksey Andrey Anton Boris Dmitriy Fedor Gennadiy
+		Giorgiy Grigoriy Igor' Ivan Kiril Konstantin Lavr Leonid Lev Maksim
+		Mikhail Nikita Nikolay Oleg Pavel Potr Rotan Semon Sergey
+		Valeriy Vasiliy Viktor Vladimir Vladislav Yegor Yevgeniy Yuriy }
+
+		last_names = { Aleksseyev Antonov Azarov Badanov Brusilov Budonnyy Chibisov Denikin
+		Dragomirov Frolov Golivin Grishin Gurko Ivanov Konev Konstantinov Kornilov
+		Kolchak Kuropatkin Lazarev Makarov Men'shikov Nakhimov Nebogatov
+		Nikolayevich Ostrovskiy Pavlov Putyatin Romanov Rozhestvenskiy Skobelev
+		Shuvalov Surkov Tukhachevskiy Yegorov Yudenich Vorontsov Voroshilov Zavoyko }
+    }
 	
 }
 
