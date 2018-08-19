@@ -724,6 +724,329 @@ political_decisions = {
 				civilized = yes
 				capital = 1058
 			}
+			any_country = { #Chiapas
+				limit = {
+					tag = CHP
+					NOT = { exists = CHP }
+				}
+				primary_culture = mexican
+				religion = catholic
+				government = democracy
+				civilized = yes
+				capital = 2181
+			}
+
+			any_country = { #Equador Confederation
+				limit = {
+					tag = CEQ
+					NOT = { exists = CEQ }
+				}
+				primary_culture = brazilian
+				religion = catholic
+				government = democracy
+				civilized = yes
+				capital = 2432
+			}
+
+			any_country = { #Entre Rios
+				limit = {
+					tag = ENT
+					NOT = { exists = ENT }
+				}
+				primary_culture = platinean
+				religion = catholic
+				government = democracy
+				civilized = yes
+				capital = 2356
+			}
+
+			any_country = { #Los Altos
+				limit = {
+					tag = LOS
+					NOT = { exists = LOS }
+				}
+				primary_culture = central_american
+				religion = catholic
+				government = democracy
+				civilized = yes
+				capital = 2187
+			}
+
+			any_country = { #La Plata
+				limit = {
+					tag = LPL
+					NOT = { exists = LPL }
+				}
+				primary_culture = platinean
+				religion = catholic
+				government = democracy
+				civilized = yes
+				capital = 2348
+			}
+
+			any_country = { #Oaxaca
+				limit = {
+					tag = OAX
+					NOT = { exists = OAX }
+				}
+				primary_culture = zapotec
+				religion = catholic
+				government = democracy
+				civilized = yes
+				capital = 2177
+			}
+
+			any_country = { #Peru-Bolivia Confederation
+				limit = {
+					tag = PBC
+					NOT = { exists = PBC }
+				}
+				primary_culture = south_andean
+				religion = catholic
+				government = democracy
+				civilized = yes
+				capital = 2310
+			}
+
+			any_country = { #Patagonia
+				limit = {
+					tag = PTG
+					NOT = { exists = PTG }
+				}
+				primary_culture = patagonian
+				religion = animist
+				government = democracy
+				civilized = yes
+				capital = 2329
+			}
+
+			any_country = { #Rio Grande
+				limit = {
+					tag = RGR
+					NOT = { exists = RGR }
+				}
+				primary_culture = mexican
+				religion = catholic
+				government = democracy
+				civilized = yes
+				capital = 138
+			}
+
+			any_country = { #Rio Grande do Sul
+				limit = {
+					tag = RGS
+					NOT = { exists = RGS }
+				}
+				primary_culture = brazilian
+				religion = catholic
+				government = democracy
+				civilized = yes
+				capital = 2463
+			}
+
+			any_country = { #Sonora
+				limit = {
+					tag = SON
+					NOT = { exists = SON }
+				}
+				primary_culture = mexican
+				religion = catholic
+				government = democracy
+				civilized = yes
+				capital = 2137
+			}
+
+			any_country = { #South Peru
+				limit = {
+					tag = SPU
+					NOT = { exists = SPU }
+				}
+				primary_culture = south_andean
+				religion = catholic
+				government = democracy
+				civilized = yes
+				capital = 2304
+			}
+
+			any_country = { #Yucatan
+				limit = {
+					tag = YUC
+					NOT = { exists = YUC }
+				}
+				primary_culture = mayan
+				religion = catholic
+				government = democracy
+				civilized = yes
+				capital = 2183
+			}
+
+			any_country = { #Belize
+				limit = {
+					tag = BLZ
+					NOT = { exists = BLZ }
+				}
+				primary_culture = texan
+				religion = protestant
+				government = democracy
+				civilized = yes
+				capital = 2190
+			}
+
+			any_country = { #Dakota
+				limit = {
+					tag = DAK
+					NOT = { exists = DAK }
+				}
+				primary_culture = yankee
+				religion = protestant
+				government = democracy
+				civilized = yes
+				capital = 119
+			}
+
+			any_country = { #Free States of America
+				limit = {
+					tag = FSA
+					NOT = { exists = FSA }
+				}
+				primary_culture = yankee
+				religion = protestant
+				government = democracy
+				civilized = yes
+				capital = 223
+			}
+
+			any_country = { #Greenland
+				limit = {
+					tag = GRN
+					NOT = { exists = GRN }
+				}
+				primary_culture = inuit
+				religion = protestant
+				government = democracy
+				civilized = yes
+				capital = 251
+			}
+
+			any_country = { #Jamaica
+				limit = {
+					tag = JAM
+					NOT = { exists = JAM }
+				}
+				primary_culture = afro_caribbean
+				religion = protestant
+				government = democracy
+				civilized = yes
+				capital = 2217
+			}
+
+			any_country = { #Maritime Union
+				limit = {
+					tag = MRU
+					NOT = { exists = MRU }
+				}
+				primary_culture = anglo_canadian
+				religion = protestant
+				government = democracy
+				civilized = yes
+				capital = 71
+			}
+
+			any_country = { #Puerto Rico
+				limit = {
+					tag = PRI
+					NOT = { exists = PRI }
+				}
+				primary_culture = caribeno
+				religion = catholic
+				government = democracy
+				civilized = yes
+				capital = 2222
+			}
+
+			any_country = { #Rupert's Land
+				limit = {
+					tag = RPL
+					NOT = { exists = RPL }
+				}
+				primary_culture = anglo_canadian
+				religion = protestant
+				government = democracy
+				civilized = yes
+				capital = 36
+			}
+
+			any_country = { #Trinidad
+				limit = {
+					tag = TTB
+					NOT = { exists = TTB }
+				}
+				primary_culture = afro_caribbean
+				religion = protestant
+				government = democracy
+				civilized = yes
+				capital = 2237
+			}
+
+			any_country = { #Illinois
+				limit = {
+					tag = UIL
+					NOT = { exists = UIL }
+				}
+				primary_culture = yankee
+				religion = protestant
+				government = democracy
+				civilized = yes
+				capital = 167
+			}
+
+			any_country = { #Nebraska
+				limit = {
+					tag = UNB
+					NOT = { exists = UNB }
+				}
+				primary_culture = yankee
+				religion = protestant
+				government = democracy
+				civilized = yes
+				capital = 123
+			}
+
+			any_country = { #New Mexico
+				limit = {
+					tag = UNM
+					NOT = { exists = UNM }
+				}
+				primary_culture = yankee
+				religion = protestant
+				government = democracy
+				civilized = yes
+				capital = 100
+			}
+
+			any_country = { #New York
+				limit = {
+					tag = UNY
+					NOT = { exists = UNY }
+				}
+				primary_culture = yankee
+				religion = protestant
+				government = democracy
+				civilized = yes
+				capital = 232
+			}
+
+			any_country = { #Oregon
+				limit = {
+					tag = UOR
+					NOT = { exists = UOR }
+				}
+				primary_culture = yankee
+				religion = protestant
+				government = democracy
+				civilized = yes
+				capital = 81
+			}
 			#Cores for regional countries
 			TUR_806 = { add_core = MCD } #FYR Macedonia
 			TUR_788 = { add_core = BOS } #Bosnia

@@ -98,6 +98,8 @@ political_decisions = {
 			USA_196 = { add_core = CSA }
 			USA_194 = { add_core = CSA }
 			USA_200 = { add_core = CSA }
+			MEX_94 = { add_core = DES } #Deseret
+			MEX_100 = { add_core = DES }
 			MEX_85 = { add_core = CAL } #California
 			SPA_2209 = { add_core = CUB } #Cuba
 			HAI_2213 = { #Haiti
@@ -124,9 +126,10 @@ political_decisions = {
 			}
 			UCA_2191 = { #Honduras & El Salvador
 				add_core = HON
-				add_core = ELS
 				add_core = UCA
 			}
+			2191 = { add_core = ELS remove_core = HON }
+			2192 = { add_core = ELS remove_core = HON }
 			CLM_1723 = { #Panama
 				add_core = PNM
 				add_core = UCA
@@ -221,7 +224,52 @@ political_decisions = {
 			3246 = { add_core = JAN } #Jan Mayen
 			EGY_921 = { add_core = ISR } #Israel
 			ENG_1979 = { add_core = GUY } #Guyana
-			
+			#From NNM
+			2181 = { add_core = CHP } #Chiapas
+			2182 = { add_core = CHP }
+			BRZ_2428 = { add_core = CEQ } #Equador Confederation
+			ARG_2357 = { add_core = ENT } #Entre Rios
+			2187 = { add_core = LOS } #Los Altos
+			2182 = { add_core = LOS }
+			2177 = { add_core = OAX } #Oaxaca
+			2178 = { add_core = OAX }
+			138 = { add_core = RGR } #Rio Grande
+			2146 = { add_core = RGR }
+			2147 = { add_core = RGR }
+			2148 = { add_core = RGR }
+			2149 = { add_core = RGR }
+			2150 = { add_core = RGR }
+			2151 = { add_core = RGR }
+			2152 = { add_core = RGR }
+			BRZ_2467 = { add_core = RGS } #Rio Grande do Sul
+			102 = { add_core = SON } #Sonora
+			2137 = { add_core = SON }
+			2138 = { add_core = SON }
+			2139 = { add_core = SON }
+			2140 = { add_core = SON }
+			2141 = { add_core = SON }
+			2179 = { add_core = TRS } #Tarasco
+			2180 = { add_core = TRS }
+			2171 = { add_core = TRS }
+			2170 = { add_core = TRS }
+			2183 = { add_core = YUC } #Yucatan
+			2184 = { add_core = YUC }
+			2185 = { add_core = YUC }
+			2190 = { add_core = BLZ remove_core = GUA remove_core = UCA } #Belize
+			USA_118 = { add_core = DAK } #Dakota
+			USA_121 = { add_core = DAK }
+			2636 = { add_core = GRN } #Greenland
+			2591 = { add_core = GRN }
+			2632 = { add_core = GRN }
+			251 = { add_core = GRN }
+			2217 = { add_core = JAM } #Jamaica
+			2222 = { add_core = PRI } #Puerto Rico
+			2237 = { add_core = TTB } #Trinidad and Tobago
+			2238 = { add_core = TTB }
+			USA_168 = { add_core = UIL } #Illinois
+			USA_124 = { add_core = UNB } #Nebraska
+			MEX_103 = { add_core = UNM } #New Mexico
+			USA_81 = { add_core = UOR } #Oregon
 			set_global_flag = der_postcolonialism
 		}
 		

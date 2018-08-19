@@ -222,8 +222,8 @@ link = { eu4 = BRI v2 = BRT } # Brittany
 link = { eu4 = k_brittany v2 = BRT } # Brittany
 link = { eu4 = BUR v2 = BRG } # Burgundy
 link = { eu4 = k_burgundy v2 = BRG } # Burgundy
-link = { eu4 = CHP v2 = CHP } # Champagne
-link = { eu4 = d_champagne v2 = CHP } # Champagne
+link = { eu4 = CHP v2 = CPG } # Champagne
+link = { eu4 = d_champagne v2 = CPG } # Champagne
 link = { eu4 = COR v2 = CRS } # Corsica
 link = { eu4 = c_corsica v2 = CRS } # Corsica
 link = { eu4 = DAU v2 = DAU } # Dauphine
@@ -650,8 +650,8 @@ link = { eu4 = e_mali v2 = MAL } # Mali
 link = { eu4 = NUB v2 = NUB } # Funj
 link = { eu4 = d_nubia v2 = NUB } # Nubia => Funj
 link = { eu4 = k_nubia v2 = NUB } # Nubia => Funj
-link = { eu4 = SON v2 = SON } # Songhai
-link = { eu4 = d_songhay v2 = SON } # Songhai
+link = { eu4 = SON v2 = SNG } # Songhai
+link = { eu4 = d_songhay v2 = SNG } # Songhai
 link = { eu4 = ZAN v2 = SWA } # Swahili
 link = { eu4 = ZIM v2 = ZIM } # Mutapa
 link = { eu4 = ADA v2 = ADA } # Adal
@@ -1094,7 +1094,7 @@ link = { eu4 = MCA v2 = MCA } # Muisca
 link = { eu4 = QTO v2 = QTO } # Quito
 link = { eu4 = CJA v2 = CJA } # Cajamarca
 link = { eu4 = HJA v2 = HJA } # Huyla
-link = { eu4 = PTG v2 = PTG } # Potiguara
+link = { eu4 = PTG v2 = PTW } # Potiguara
 link = { eu4 = TPQ v2 = TPQ } # Tupiniquim
 link = { eu4 = TPA v2 = TPA } # Tupinamba
 link = { eu4 = TUA v2 = TUA } # Tapuia
