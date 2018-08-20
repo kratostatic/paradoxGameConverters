@@ -23,6 +23,7 @@ political_decisions = {
 					OR = {
 						tag = NEJ
 						tag = HDJ
+						tag = HAL
 					}
 					HDJ_1151 = { #Hedjaz
 						OR = {

@@ -495,7 +495,7 @@ link = { eu4 = e_arabs v2 = ARA } # Arabia
 link = { eu4 = k_arabia v2 = ARA } # Arabia
 link = { eu4 = e_arabia v2 = ARA } # Arabia
 link = { eu4 = ARD v2 = ARD } # Ardalan
-link = { eu4 = BHT v2 = BHT } # Bohtan/Soran => Kurdistan
+link = { eu4 = BHT v2 = KDS } # Bohtan/Soran => Kurdistan
 link = { eu4 = DAW v2 = DAW } # Dawasir
 link = { eu4 = ERE v2 = ERE } # Eretna
 link = { eu4 = k_eretnid v2 = ERE } # Eretna
@@ -505,8 +505,8 @@ link = { eu4 = k_germiyan v2 = GRM } # Germiyan
 link = { eu4 = HDR v2 = HDR } # Hadramawt
 link = { eu4 = d_hadramut v2 = HDR } # Hadramawt
 link = { eu4 = HED v2 = HDJ } # Hedjaz
-link = { eu4 = LEB v2 = LEB } # Lebanon
-link = { eu4 = d_tripoli v2 = LEB } # Tripoli of Lebanon => Lebanon
+link = { eu4 = LEB v2 = LBN } # Lebanon
+link = { eu4 = d_tripoli v2 = LBN } # Tripoli of Lebanon => Lebanon
 link = { eu4 = MAK v2 = MKA } # Makuria
 link = { eu4 = c_makuria v2 = MKA } # Makuria
 #link = { eu4 = MDA v2 = XXX } # Medina => d_medina
@@ -518,7 +518,7 @@ link = { eu4 = NJR v2 = NJR } # Najran
 link = { eu4 = c_najran v2 = NJR } # Najran
 link = { eu4 = OMA v2 = OMA } # Oman
 link = { eu4 = RAS v2 = RAS } # Rassids
-link = { eu4 = SHM v2 = SHM } # Shammar
+link = { eu4 = SHM v2 = HAL } # Shammar
 link = { eu4 = d_oman v2 = OMA } # Oman
 link = { eu4 = SHR v2 = ABU } # Sharjah => Abu Dhabi
 link = { eu4 = c_dhu_zabi v2 = ABU } # Dhu Zhabi => Abu Dhabi
@@ -583,8 +583,8 @@ link = { eu4 = FZA v2 = FZA } # Fezzan
 link = { eu4 = MZB v2 = MZB } # Mzab
 
 #Central Asia
-link = { eu4 = KZH v2 = KZH } # Kazakh
-link = { eu4 = k_kazakh v2 = KZH } # Kazakh
+link = { eu4 = KZH v2 = KAZ } # Kazakh
+link = { eu4 = k_kazakh v2 = KAZ } # Kazakh
 link = { eu4 = KHI v2 = KHI } # Khiva
 link = { eu4 = k_khiva v2 = KHI } # Khiva
 link = { eu4 = SHY v2 = SHY } # Uzbek

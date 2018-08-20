@@ -495,7 +495,7 @@ link = { EU4 = e_arabs Vic2 = ARA } # Arabia
 link = { EU4 = k_arabia Vic2 = ARA } # Arabia
 link = { EU4 = e_arabia Vic2 = ARA } # Arabia
 link = { EU4 = ARD Vic2 = ARD } # Ardalan
-link = { EU4 = BHT Vic2 = BHT } # Bohtan/Soran => Kurdistan
+link = { EU4 = BHT Vic2 = KDS } # Bohtan/Soran => Kurdistan
 link = { EU4 = DAW Vic2 = DAW } # Dawasir
 link = { EU4 = ERE Vic2 = ERE } # Eretna
 link = { EU4 = k_eretnid Vic2 = ERE } # Eretna
@@ -505,8 +505,8 @@ link = { EU4 = k_germiyan Vic2 = GRM } # Germiyan
 link = { EU4 = HDR Vic2 = HDR } # Hadramawt
 link = { EU4 = d_hadramut Vic2 = HDR } # Hadramawt
 link = { EU4 = HED Vic2 = HDJ } # Hedjaz
-link = { EU4 = LEB Vic2 = LEB } # Lebanon
-link = { EU4 = d_tripoli Vic2 = LEB } # Tripoli of Lebanon => Lebanon
+link = { EU4 = LEB Vic2 = LBN } # Lebanon
+link = { EU4 = d_tripoli Vic2 = LBN } # Tripoli of Lebanon => Lebanon
 link = { EU4 = MAK Vic2 = MKA } # Makuria
 link = { EU4 = c_makuria Vic2 = MKA } # Makuria
 #link = { EU4 = MDA Vic2 = XXX } # Medina => d_medina
@@ -518,7 +518,7 @@ link = { EU4 = NJR Vic2 = NJR } # Najran
 link = { EU4 = c_najran Vic2 = NJR } # Najran
 link = { EU4 = OMA Vic2 = OMA } # Oman
 link = { EU4 = RAS Vic2 = RAS } # Rassids
-link = { EU4 = SHM Vic2 = SHM } # Shammar
+link = { EU4 = SHM Vic2 = HAL } # Shammar
 link = { EU4 = d_oman Vic2 = OMA } # Oman
 link = { EU4 = SHR Vic2 = ABU } # Sharjah => Abu Dhabi
 link = { EU4 = c_dhu_zabi Vic2 = ABU } # Dhu Zhabi => Abu Dhabi

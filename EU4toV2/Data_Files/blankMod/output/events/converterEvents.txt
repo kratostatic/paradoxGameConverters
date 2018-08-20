@@ -320,24 +320,24 @@ country_event = {
 				NOT = { owned_by = IRQ }
 			}
 			remove_core = IRQ
-			add_core = SYR
 		}
+		EGY_910 = { add_core = JOR }
 		EGY_915 = { # Lebanon
 			limit = {
 				is_core = IRQ
 				NOT = { owned_by = IRQ }
 			}
 			remove_core = IRQ
-			add_core = SYR
 		}
+		EGY_915 = { add_core = LBN }
 		EGY_921 = { # Palestine
 			limit = {
 				is_core = IRQ
 				NOT = { owned_by = IRQ }
 			}
 			remove_core = IRQ
-			add_core = SYR
 		}
+		EGY_921 = { add_core = PLS }
 	}
 }
 country_event = {
