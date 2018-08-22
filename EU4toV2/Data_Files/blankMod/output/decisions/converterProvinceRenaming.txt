@@ -26,7 +26,7 @@ political_decisions = {
 		}
 		effect = {
 			830 = {
-				change_province_name = "Alexandropolis"
+				change_province_name = "Alexandroupolis"
 			}
 			set_global_flag = 830_be_greek
 		}
@@ -52,7 +52,7 @@ political_decisions = {
 		}
 		effect = {
 			830 = {
-				change_province_name = "Dedeagatch"
+				change_province_name = "Dedeag’aç"
 			}
 			clr_global_flag = 830_be_greek
 		}
@@ -85,6 +85,8 @@ political_decisions = {
 			}
 		}
 		effect = {
+			clr_global_flag = thrace_be_slav
+			clr_global_flag = thrace_be_teuton
 			858 = {
 				change_province_name = "Saranta Ekklisies"
 			}
@@ -100,13 +102,21 @@ political_decisions = {
 			factor = 1
 		}
 	}
-	turk_thrace = {
+	slav_thrace = {
 		potential = {
 			OR = {
-				is_culture_group = turko_semitic
-				is_culture_group = arab
+				is_culture_group = east_slavic
+				is_culture_group = south_slavic
+				is_culture_group = czecho_slovak_culture_group
+				is_culture_group = polish_culture_group
 			}
-			has_global_flag = thrace_be_greek
+			NOT = { has_global_flag = thrace_be_slav }
+			TUR_1860 = { #Thrace
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+				}
+			}
 		}
 		allow = {
 			TUR_1860 = { #Thrace
@@ -118,7 +128,81 @@ political_decisions = {
 		}
 		effect = {
 			858 = {
-				change_province_name = "Kirklareli"
+				change_province_name = "Lozengrad"
+			}
+			860 = {
+				change_province_name = "Czargrad"
+			}
+			set_global_flag = thrace_be_slav
+			clr_global_flag = thrace_be_greek
+			clr_global_flag = thrace_be_teuton
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	teuton_thrace = {
+		potential = {
+			OR = {
+				culture = greek
+				is_culture_group = italian
+				tag = RME
+				tag = BYZ
+			}
+			NOT = { has_global_flag = thrace_be_teuton }
+			TUR_1860 = { #Thrace
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+				}
+			}
+		}
+		allow = {
+			TUR_1860 = { #Thrace
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+				}
+			}
+		}
+		effect = {
+			clr_global_flag = thrace_be_slav
+			clr_global_flag = thrace_be_greek
+			858 = {
+				change_province_name = "Vierzig Kirchen"
+			}
+			860 = {
+				change_province_name = "Mikligarðr"
+			}
+			set_global_flag = thrace_be_greek
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	turk_thrace = {
+		potential = {
+			OR = {
+				is_culture_group = turko_semitic
+				is_culture_group = arab
+			}
+			OR = {
+				has_global_flag = thrace_be_greek
+				has_global_flag = thrace_be_slav
+				has_global_flag = thrace_be_teuton
+			}
+		}
+		allow = {
+			TUR_1860 = { #Thrace
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+				}
+			}
+		}
+		effect = {
+			858 = {
+				change_province_name = "Kïrklareli"
 			}
 			860 = {
 				change_province_name = "Istanbul"
@@ -126,6 +210,8 @@ political_decisions = {
 			861 = {
 				change_province_name = "Üsküdar"
 			}
+			clr_global_flag = thrace_be_greek
+			clr_global_flag = thrace_be_slav
 			clr_global_flag = thrace_be_greek
 		}
 		ai_will_do = {
@@ -198,7 +284,7 @@ political_decisions = {
 			862 = {
 				change_province_name = "Izmit"
 				state_scope = {
-					change_region_name = "Hudavendigar"
+					change_region_name = "Hüdavendigâr"
 				}
 			}
 			866 = {
@@ -208,7 +294,7 @@ political_decisions = {
 				change_province_name = "Kütahya"
 			}
 			868 = {
-				change_province_name = "Eskishehir"
+				change_province_name = "Eskišehir"
 			}
 			clr_global_flag = hudav_be_greek
 		}
@@ -276,7 +362,7 @@ political_decisions = {
 			865 = {
 				change_province_name = "Çanakkale"
 				state_scope = {
-					change_region_name = "Aydin"
+					change_region_name = "Aydïn"
 				}
 			}
 			869 = {
