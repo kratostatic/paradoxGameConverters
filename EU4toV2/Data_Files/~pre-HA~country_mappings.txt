@@ -863,8 +863,8 @@ link = { eu4 = HUA v2 = HUA } # Huai
 link = { eu4 = CGS v2 = CGS } # Changsheng
 
 #India
-link = { eu4 = BAL v2 = BCS } # Baluchistan
-link = { eu4 = k_baluchistan v2 = BCS } # Baluchistan
+link = { eu4 = BAL v2 = BLC } # Baluchistan
+link = { eu4 = k_baluchistan v2 = BLC } # Baluchistan
 link = { eu4 = BNG v2 = BNG } # Bengal
 link = { eu4 = k_bengal v2 = BNG } # Bengal
 link = { eu4 = e_bengal v2 = BNG } # Bengal
@@ -875,12 +875,12 @@ link = { eu4 = k_delhi v2 = DLH } # Delhi
 link = { eu4 = GOC v2 = GOC } # Golconda
 link = { eu4 = DEC v2 = DEC } # Deccan
 link = { eu4 = e_deccan v2 = DEC } # Deccan
-link = { eu4 = MAR v2 = MAR } # Marathas
+link = { eu4 = MAR v2 = MRT } # Marathas
 link = { eu4 = MUG v2 = MUG } # Mughal(istan)
 link = { eu4 = MYS v2 = MYS } # Mysore
 link = { eu4 = VIJ v2 = VIJ } # Vijaynagara
 link = { eu4 = AHM v2 = AMD } # Ahmadnagar
-link = { eu4 = ASS v2 = ASS } # Assam
+link = { eu4 = ASS v2 = ASM } # Assam
 link = { eu4 = GUJ v2 = GUJ } # Gujarat
 link = { eu4 = k_gujarat v2 = GUJ } # Gujarat
 link = { eu4 = JNP v2 = JNP } # Jaunpur
@@ -904,8 +904,8 @@ link = { eu4 = k_sindh v2 = SIN } # Sind
 link = { eu4 = BRR v2 = BRR } # Berar
 link = { eu4 = JAN v2 = BIK } # Jangladesh => Bikaner
 link = { eu4 = d_jangladesh v2 = BIK } #Jangladesh => Bikaner
-link = { eu4 = KRK v2 = KRK } # Carnatic => Karnataka
-link = { eu4 = k_karnata v2 = KRK } # Karnata(ka)
+link = { eu4 = KRK v2 = KRN } # Carnatic => Karnataka
+link = { eu4 = k_karnata v2 = KRN } # Karnata(ka)
 link = { eu4 = GDW v2 = GDW } # Gondwana
 link = { eu4 = k_gondwana v2 = GDW } # Gondwana
 link = { eu4 = GRJ v2 = GRJ } # Garjat
@@ -927,7 +927,7 @@ link = { eu4 = BST v2 = BAS } # Bastar
 link = { eu4 = BHU v2 = BHU } # Bhutan
 link = { eu4 = d_bhutan v2 = BHU } # Bhutan
 link = { eu4 = BND v2 = BUN } # Bundelkhand
-link = { eu4 = CEY v2 = KTH } # Ceylon
+link = { eu4 = CEY v2 = SRI } # Ceylon
 link = { eu4 = JSL v2 = JAS } # Jaisalmer
 link = { eu4 = KAC v2 = KAC } # Kachar
 link = { eu4 = KMT v2 = KMT } # Koch
@@ -972,7 +972,7 @@ link = { eu4 = c_nizhny_novgorod v2 = NZH } # Nizhny Novgorod
 link = { eu4 = KOJ v2 = KOJ } # Jerusalem
 link = { eu4 = k_jerusalem v2 = KOJ } # Jerusalem
 link = { eu4 = MSA v2 = MSA } # Malaya
-link = { eu4 = HIN v2 = HND } # Hindustan => India
+link = { eu4 = HIN v2 = HDU } # Hindustan
 
 link = { eu4 = ABE v2 = ABE } # Abenaki
 link = { eu4 = APA v2 = APA } # Apache
@@ -986,7 +986,7 @@ link = { eu4 = COM v2 = COM } # Comanche
 link = { eu4 = FOX v2 = FOX } # Fox
 link = { eu4 = ILL v2 = ILL } # Illinewek
 link = { eu4 = LEN v2 = LEN } # Lenape
-link = { eu4 = MAH v2 = MAH } # Mahican
+link = { eu4 = MAH v2 = MHC } # Mahican
 link = { eu4 = MIK v2 = MIK } # Mikmaq
 link = { eu4 = MMI v2 = MMI } # Miami
 link = { eu4 = NAH v2 = NAH } # Navajo

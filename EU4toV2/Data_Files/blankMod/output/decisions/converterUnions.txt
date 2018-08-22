@@ -1207,6 +1207,46 @@ political_decisions = {
 				civilized = yes
 				capital = 1195
 			}
+			any_country = { #Bihar
+				limit = {
+					tag = BIH
+					NOT = { exists = BIH }
+				}
+				primary_culture = bihari
+				religion = hindu
+				civilized = yes
+				capital = 1247
+			}
+			any_country = { #Dravidistan
+				limit = {
+					tag = DRA
+					NOT = { exists = DRA }
+				}
+				primary_culture = tamil
+				religion = hindu
+				civilized = yes
+				capital = 1304
+			}
+			any_country = { #Hindustan/Pakistan
+				limit = {
+					tag = HDU
+					NOT = { exists = HDU }
+				}
+				primary_culture = avadhi
+				religion = sunni
+				civilized = yes
+				capital = 1240
+			}
+			any_country = { #Maharashtra
+				limit = {
+					tag = MAH
+					NOT = { exists = MAH }
+				}
+				primary_culture = marathi
+				religion = hindu
+				civilized = yes
+				capital = 1299
+			}
 			#Cores for regional countries
 			TUR_806 = { add_core = MCD } #FYR Macedonia
 			TUR_788 = { add_core = BOS } #Bosnia

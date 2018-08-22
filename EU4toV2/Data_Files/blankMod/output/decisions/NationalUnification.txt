@@ -1209,6 +1209,7 @@ unite_moldavia_wallachia = {
 			add_accepted_culture = serb
 			add_accepted_culture = bosniak
 			add_accepted_culture = croat
+			add_accepted_culture = macedonian
 			change_tag = YUG
 			any_country = {
 				limit = {

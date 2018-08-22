@@ -475,9 +475,9 @@ GOT		="countries/Gotland.txt"
 
 # India
 BER		="countries/Beroda.txt"
-ASS 		="countries/Assam.txt"
+ASM 		="countries/Assam.txt"
 BAH		="countries/Deccan.txt"
-BCS		="countries/Baluchistan.txt"
+BLC		="countries/Baluchistan.txt"
 AMD 		="countries/Ahmadnagar.txt"
 BNG 		="countries/Bengal.txt"
 BRR 		="countries/Berar.txt"
@@ -487,9 +487,9 @@ GAK		="countries/Gakwar.txt"
 GOC 		="countries/Golcanda.txt"
 GDW 		="countries/Gondwana.txt"
 GUJ 		="countries/Gujarat.txt"
-KRK 		="countries/Carnatic.txt"
+KRN 		="countries/Carnatic.txt"
 KHD 		="countries/Khandesh.txt"
-KTH 		="countries/Ceylon.txt"
+SRI 		="countries/Ceylon.txt"
 MRI 		="countries/Madurai.txt"
 MAR 		="countries/Maharasthra.txt"
 MLB 		="countries/Manipur.txt"
@@ -499,6 +499,7 @@ NIZ		="countries/DevaBengal.txt"
 RAJ 		="countries/Rajputna.txt"
 VIJ 		="countries/Vijaynagara.txt"
 HND 		="countries/India.txt"
+MRT			="countries/Marathas.txt"
 
 #Russia
 AKH		="countries/Astrakhan.txt"##
@@ -694,6 +695,12 @@ TCA		= "countries/Transcaucasia.txt"
 TKM		= "countries/Turkmenistan.txt"
 UYG		= "countries/Uyghurstan.txt"
 UZB		= "countries/Uzbekistan.txt"
+
+#India
+BIH		= "countries/Bihar.txt"
+DRA		= "countries/Dravidistan.txt"
+HDU		= "countries/Hindustan.txt"
+MAH		= "countries/Maharashtra.txt"
 
 ##HoD Dominions
 dynamic_tags  = yes # any tags after this is considered dynamic dominions
