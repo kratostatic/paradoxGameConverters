@@ -1,7 +1,7 @@
 political_decisions = {
 	african_post_colonialism = {
 		potential = {
-			#year = 1880
+			year = 1890
 			NOT = {
 				has_global_flag = der_postcolonialism_2
 			}
