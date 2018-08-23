@@ -1,7 +1,7 @@
 political_decisions = {
 	african_post_colonialism = {
 		potential = {
-			year = 1880
+			#year = 1880
 			NOT = {
 				has_global_flag = der_postcolonialism_2
 			}
@@ -49,6 +49,9 @@ political_decisions = {
 				flashpoint_tension = 10
 			}
 			2136 = { remove_core = WSH }
+			1694 = { remove_core = WSH }
+			1695 = { remove_core = WSH }
+			1696 = { remove_core = WSH }
 			MOR_1683 = {
 				add_core = MOR
 				flashpoint_tension = 10
@@ -761,9 +764,11 @@ political_decisions = {
 			1875 = { add_core = DJI remove_core = ERI } #Djibouti
 			2123 = { add_core = KOM remove_core = MAD } #Comoros
 			2124 = { add_core = KOM remove_core = MAD }
-			2125 = { add_core = MAU } #Mauritius
-			2126 = { add_core = MAU }
-			2127 = { add_core = SEY } #Seychelles
+			2125 = { add_core = MAU remove_core = MAD } #Mauritius
+			2126 = { add_core = MAU remove_core = MAD }
+			2127 = { add_core = SEY remove_core = MAD } #Seychelles
+			2066 = { add_core = MLW remove_core = ZAM } #Malawi
+			2067 = { add_core = MLW remove_core = MOZ }
 			set_global_flag = der_postcolonialism_2
 		}
 	}
