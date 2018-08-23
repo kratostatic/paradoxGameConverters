@@ -266,6 +266,7 @@ political_decisions = {
 			2218 = { add_core = JAM }
 			2222 = { add_core = PRI } #Puerto Rico
 			2223 = { add_core = PRI }
+			2226 = { add_core = PRI }
 			2237 = { add_core = TTB } #Trinidad and Tobago
 			2238 = { add_core = TTB }
 			USA_168 = { add_core = UIL } #Illinois
@@ -273,19 +274,21 @@ political_decisions = {
 			MEX_103 = { add_core = UNM } #New Mexico
 			USA_81 = { add_core = UOR } #Oregon
 			#Further Caribbean islands:
-			#Bahamas - 2219, 2220
-			#Anguilla - 2236
-			#Antigua and Barbuda - 2224
-			#Saint Kitts - 2227
-			#Montserrat - 2225
-			#Guadeloupe - 2230
-			#Dominica - 2232
-			#Martinique - 2228
-			#Saint Lucia - 2231
-			#Saint Vincent - 2409
-			#Barbados - 2229
-			#Grenada - 2233
-			#CuraÃ§ao - 2234, 2235
+			2219 = { add_core = BHM } #Bahamas
+			2220 = { add_core = BHM }
+			2236 = { add_core = AGU } #Anguilla
+			2224 = { add_core = ATB } #Antigua and Barbuda
+			2227 = { add_core = SKN } #Saint Kitts and Nevis
+			2225 = { add_core = MNR } #Montserrat
+			2230 = { add_core = GDL } #Guadeloupe
+			2232 = { add_core = DMN } #Dominica
+			2228 = { add_core = MTQ } #Martinique
+			2231 = { add_core = STL } #Saint Lucia
+			2229 = { add_core = BBD } #Barbados
+			2233 = { add_core = GRD } #Grenada
+			2234 = { add_core = CUR } #Curaçao
+			2235 = { add_core = CUR }
+			2409 = { add_core = STV } #Saint Vincent and the Grenadines
 			set_global_flag = der_postcolonialism
 		}
 		
@@ -1628,8 +1631,217 @@ political_decisions = {
 			}
 			KOK = { primary_culture = kirgiz civilized = yes capital = 1189 government = presidential_dictatorship }
 			1181 = { change_province_name = "Akmolinsk" }
-			1185 = { state_scope = { change_region_name = "ÂŽetysu" } }
-			1207 = { change_province_name = "DuÂšanbe" }
+			1185 = { state_scope = { change_region_name = "Žetysu" } }
+			1207 = { change_province_name = "Dušanbe" }
+		}
+	}
+	postcol_CRB = {
+		potential = {
+			NOT = {
+				exists = KRB
+				tag = CUB
+				tag = HAI
+				tag = DOM
+			}
+			OR = {
+				capital = 2236
+				capital = 2224
+				capital = 2229
+				capital = 2219
+				capital = 2220
+				capital = 2234
+				capital = 2235
+				capital = 2232
+				capital = 2230
+				capital = 2233
+				capital = 2225
+				capital = 2228
+				capital = 2227
+				capital = 2231
+				capital = 2409
+				capital = 2217
+				capital = 2218
+				capital = 2222
+				capital = 2223
+				capital = 2237
+				capital = 2238
+				capital = 2226
+			}
+		}	
+		allow = {
+			war = no
+			is_independant = yes
+			2236 = { owned_by = THIS }
+			2224 = { owned_by = THIS }
+			2229 = { owned_by = THIS }
+			2219 = { owned_by = THIS }
+			2220 = { owned_by = THIS }
+			2232 = { owned_by = THIS }
+			2230 = { owned_by = THIS }
+			2233 = { owned_by = THIS }
+			2225 = { owned_by = THIS }
+			2228 = { owned_by = THIS }
+			2227 = { owned_by = THIS }
+			2231 = { owned_by = THIS }
+			2409 = { owned_by = THIS }
+			2217 = { owned_by = THIS }
+			2218 = { owned_by = THIS }
+			2222 = { owned_by = THIS }
+			2223 = { owned_by = THIS }
+			2237 = { owned_by = THIS }
+			2238 = { owned_by = THIS }
+			2226 = { owned_by = THIS }
+		}
+		
+		effect = {
+			prestige = 10
+			2236 = { add_core = KRB }
+			2224 = { add_core = KRB }
+			2229 = { add_core = KRB }
+			2219 = { add_core = KRB }
+			2220 = { add_core = KRB }
+			2234 = { add_core = KRB }
+			2235 = { add_core = KRB }
+			2232 = { add_core = KRB }
+			2230 = { add_core = KRB }
+			2233 = { add_core = KRB }
+			2225 = { add_core = KRB }
+			2226 = { add_core = KRB }
+			2228 = { add_core = KRB }
+			2227 = { add_core = KRB }
+			2231 = { add_core = KRB }
+			2409 = { add_core = KRB }
+			2217 = { add_core = KRB }
+			2218 = { add_core = KRB }
+			2222 = { add_core = KRB }
+			2223 = { add_core = KRB }
+			2237 = { add_core = KRB }
+			2238 = { add_core = KRB }
+			change_tag = KRB
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	vassal_CRB = {
+		potential = {
+			NOT = {
+				exists = KRB
+				tag = CUB
+				tag = HAI
+				tag = DOM
+			}
+			NOT = {
+				capital = 2236
+				capital = 2224
+				capital = 2229
+				capital = 2219
+				capital = 2220
+				capital = 2234
+				capital = 2235
+				capital = 2232
+				capital = 2230
+				capital = 2233
+				capital = 2225
+				capital = 2228
+				capital = 2227
+				capital = 2231
+				capital = 2409
+				capital = 2217
+				capital = 2218
+				capital = 2222
+				capital = 2223
+				capital = 2237
+				capital = 2238
+				capital = 2226
+			}
+			OR = {
+				2236 = { OR = { owned_by = THIS owner = { in_sphere = THIS } } }
+				2224 = { OR = { owned_by = THIS owner = { in_sphere = THIS } } }
+				2229 = { OR = { owned_by = THIS owner = { in_sphere = THIS } } }
+				2219 = { OR = { owned_by = THIS owner = { in_sphere = THIS } } }
+				2220 = { OR = { owned_by = THIS owner = { in_sphere = THIS } } }
+				2232 = { OR = { owned_by = THIS owner = { in_sphere = THIS } } }
+				2230 = { OR = { owned_by = THIS owner = { in_sphere = THIS } } }
+				2233 = { OR = { owned_by = THIS owner = { in_sphere = THIS } } }
+				2234 = { OR = { owned_by = THIS owner = { in_sphere = THIS } } }
+				2235 = { OR = { owned_by = THIS owner = { in_sphere = THIS } } }
+				2225 = { OR = { owned_by = THIS owner = { in_sphere = THIS } } }
+				2226 = { OR = { owned_by = THIS owner = { in_sphere = THIS } } }
+				2228 = { OR = { owned_by = THIS owner = { in_sphere = THIS } } }
+				2227 = { OR = { owned_by = THIS owner = { in_sphere = THIS } } }
+				2231 = { OR = { owned_by = THIS owner = { in_sphere = THIS } } }
+				2409 = { OR = { owned_by = THIS owner = { in_sphere = THIS } } }
+				2217 = { OR = { owned_by = THIS owner = { in_sphere = THIS } } }
+				2218 = { OR = { owned_by = THIS owner = { in_sphere = THIS } } }
+				2222 = { OR = { owned_by = THIS owner = { in_sphere = THIS } } }
+				2223 = { OR = { owned_by = THIS owner = { in_sphere = THIS } } }
+				2237 = { OR = { owned_by = THIS owner = { in_sphere = THIS } } }
+				2238 = { OR = { owned_by = THIS owner = { in_sphere = THIS } } }
+			}
+		}	
+		allow = {
+			war = no
+			is_independant = yes
+			2236 = { OR = { owned_by = THIS owner = { in_sphere = THIS } } }
+			2224 = { OR = { owned_by = THIS owner = { in_sphere = THIS } } }
+			2229 = { OR = { owned_by = THIS owner = { in_sphere = THIS } } }
+			2219 = { OR = { owned_by = THIS owner = { in_sphere = THIS } } }
+			2220 = { OR = { owned_by = THIS owner = { in_sphere = THIS } } }
+			2232 = { OR = { owned_by = THIS owner = { in_sphere = THIS } } }
+			2230 = { OR = { owned_by = THIS owner = { in_sphere = THIS } } }
+			2233 = { OR = { owned_by = THIS owner = { in_sphere = THIS } } }
+			2225 = { OR = { owned_by = THIS owner = { in_sphere = THIS } } }
+			2226 = { OR = { owned_by = THIS owner = { in_sphere = THIS } } }
+			2228 = { OR = { owned_by = THIS owner = { in_sphere = THIS } } }
+			2227 = { OR = { owned_by = THIS owner = { in_sphere = THIS } } }
+			2231 = { OR = { owned_by = THIS owner = { in_sphere = THIS } } }
+			2409 = { OR = { owned_by = THIS owner = { in_sphere = THIS } } }
+			2217 = { OR = { owned_by = THIS owner = { in_sphere = THIS } } }
+			2218 = { OR = { owned_by = THIS owner = { in_sphere = THIS } } }
+			2222 = { OR = { owned_by = THIS owner = { in_sphere = THIS } } }
+			2223 = { OR = { owned_by = THIS owner = { in_sphere = THIS } } }
+			2237 = { OR = { owned_by = THIS owner = { in_sphere = THIS } } }
+			2238 = { OR = { owned_by = THIS owner = { in_sphere = THIS } } }
+		}
+		
+		effect = {
+			prestige = 10
+			2236 = { add_core = KRB secede_province = KRB }
+			2224 = { add_core = KRB secede_province = KRB }
+			2229 = { add_core = KRB secede_province = KRB }
+			2219 = { add_core = KRB secede_province = KRB }
+			2220 = { add_core = KRB secede_province = KRB }
+			2234 = { add_core = KRB }
+			2235 = { add_core = KRB }
+			any_owned_province = {
+			limit = { province_id = 2234 }
+			secede_province = KRB
+			}
+			any_owned_province = {
+			limit = { province_id = 2235 }
+			secede_province = KRB
+			}
+			2232 = { add_core = KRB secede_province = KRB }
+			2230 = { add_core = KRB secede_province = KRB }
+			2233 = { add_core = KRB secede_province = KRB }
+			2225 = { add_core = KRB secede_province = KRB }
+			2226 = { add_core = KRB secede_province = KRB }
+			2228 = { add_core = KRB secede_province = KRB }
+			2227 = { add_core = KRB secede_province = KRB }
+			2231 = { add_core = KRB secede_province = KRB }
+			2409 = { add_core = KRB secede_province = KRB }
+			2217 = { add_core = KRB secede_province = KRB }
+			2218 = { add_core = KRB secede_province = KRB }
+			2222 = { add_core = KRB secede_province = KRB }
+			2223 = { add_core = KRB secede_province = KRB }
+			2237 = { add_core = KRB secede_province = KRB }
+			2238 = { add_core = KRB secede_province = KRB }
+			create_vassal = KRB
+			KRB = { set_country_flag = buro_independence }
+		}
+		ai_will_do = {
+			factor = 1
 		}
 	}
 }

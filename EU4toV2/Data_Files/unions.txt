@@ -183,8 +183,8 @@ link = { tag = HND culture = asian_minor } #Central Indic core-hole
 #Indochina => Indochina
 link = { tag = IDC culture = vietnamese }
 link = { tag = IDC tag = CAM culture = khmer } # and Cambodia
-link = { tag = MSA culture = malay } #Malaya
-link = { tag = MSA culture = bornean } #Malaya
+link = { tag = MLY culture = malay } #Malaya
+link = { tag = MLY culture = bornean } #Malaya
 link = { tag = PHI culture = filipino } #Philippines
 link = { tag = JAV culture = javan } #Java
 link = { tag = IDC tag = SIA culture = thai } #and Siam

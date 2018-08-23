@@ -1753,6 +1753,146 @@ political_decisions = {
 				capital = 2127
 			}
 
+			any_country = { #Anguilla
+				limit = {
+					tag = AGU
+					NOT = { exists = AGU }
+				}
+				set_country_flag = buro_independence
+				government = democracy
+				civilized = yes
+				capital = 2236
+			}
+			any_country = { #Antigua and Barbuda
+				limit = {
+					tag = ATB
+					NOT = { exists = ATB }
+				}
+				set_country_flag = buro_independence
+				government = democracy
+				civilized = yes
+				capital = 2224
+			}
+			any_country = { #Barbados
+				limit = {
+					tag = BBD
+					NOT = { exists = BBD }
+				}
+				set_country_flag = buro_independence
+				government = democracy
+				civilized = yes
+				capital = 2229
+			}
+			any_country = { #Bahamas
+				limit = {
+					tag = BHM
+					NOT = { exists = BHM }
+				}
+				set_country_flag = buro_independence
+				government = democracy
+				civilized = yes
+				capital = 2219
+			}
+			any_country = { #Curaçao
+				limit = {
+					tag = CUR
+					NOT = { exists = CUR }
+				}
+				set_country_flag = buro_independence
+				government = democracy
+				civilized = yes
+				capital = 2234
+			}
+			any_country = { #Dominica
+				limit = {
+					tag = DMN
+					NOT = { exists = DMN }
+				}
+				set_country_flag = buro_independence
+				government = democracy
+				civilized = yes
+				capital = 2232
+			}
+			any_country = { #Guadeloupe
+				limit = {
+					tag = GDL
+					NOT = { exists = GDL }
+				}
+				set_country_flag = buro_independence
+				government = democracy
+				civilized = yes
+				capital = 2230
+			}
+			any_country = { #Grenada
+				limit = {
+					tag = GRD
+					NOT = { exists = GRD }
+				}
+				set_country_flag = buro_independence
+				government = democracy
+				civilized = yes
+				capital = 2233
+			}
+			any_country = { #Montserrat
+				limit = {
+					tag = MNR
+					NOT = { exists = MNR }
+				}
+				set_country_flag = buro_independence
+				government = democracy
+				civilized = yes
+				capital = 2225
+			}
+			any_country = { #Martinique
+				limit = {
+					tag = MTQ
+					NOT = { exists = MTQ }
+				}
+				set_country_flag = buro_independence
+				government = democracy
+				civilized = yes
+				capital = 2228
+			}
+			any_country = { #Saint Kitts and Nevis
+				limit = {
+					tag = SKN
+					NOT = { exists = SKN }
+				}
+				set_country_flag = buro_independence
+				government = democracy
+				civilized = yes
+				capital = 2227
+			}
+			any_country = { #Saint Lucia
+				limit = {
+					tag = STL
+					NOT = { exists = STL }
+				}
+				set_country_flag = buro_independence
+				government = democracy
+				civilized = yes
+				capital = 2231
+			}
+			any_country = { #Saint Vincent and the Grenadines
+				limit = {
+					tag = STV
+					NOT = { exists = STV }
+				}
+				set_country_flag = buro_independence
+				government = democracy
+				civilized = yes
+				capital = 2409
+			}
+			any_country = { #Caribbean
+				limit = {
+					tag = KRB
+					NOT = { exists = KRB }
+				}
+				set_country_flag = buro_independence
+				government = democracy
+				civilized = yes
+				capital = 2237
+			}
 			#Cores for regional countries
 			TUR_806 = { add_core = MCD } #FYR Macedonia
 			TUR_788 = { add_core = BOS } #Bosnia

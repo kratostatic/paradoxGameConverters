@@ -628,6 +628,22 @@ AUR		=	"countries/Laessinia.txt"
 BSQ		=	"countries/Euskadi.txt"
 GUY		=	"countries/Guyana.txt"
 
+# Caribbeans
+AGU		= "countries/Anguilla.txt"
+ATB		= "countries/Antigua and Barbuda.txt"
+BBD		= "countries/Barbados.txt"
+BHM		= "countries/Bahamas.txt"
+CUR		= "countries/Curacao.txt"
+DMN		= "countries/Dominica.txt"
+GDL		= "countries/Guadeloupe.txt"
+GRD		= "countries/Grenada.txt"
+MNR		= "countries/Montserrat.txt"
+MTQ		= "countries/Martinique.txt"
+SKN		= "countries/St Kitts.txt"
+STL		= "countries/St Lucia.txt"
+STV		= "countries/St Vincent.txt"
+KRB		= "countries/Caribbean.txt"
+
 ##NNM integrations
 #Europe
 BAN		= "countries/Banat.txt"
