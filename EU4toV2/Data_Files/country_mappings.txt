@@ -245,8 +245,8 @@ link = { EU4 = PIC Vic2 = PIC } # Picardy
 link = { EU4 = PRO Vic2 = PRO } # Provence
 link = { EU4 = d_provence Vic2 = PRO } # Provence
 link = { EU4 = SPI Vic2 = SAR } # Sardinia-Piedmont
-link = { EU4 = TOU Vic2 = TOU } # Toulouse
-link = { EU4 = d_toulouse Vic2 = TOU } # Toulouse
+link = { EU4 = TOU Vic2 = TUL } # Toulouse
+link = { EU4 = d_toulouse Vic2 = TUL } # Toulouse
 link = { EU4 = BER Vic2 = BRY } # Berry
 link = { EU4 = d_berry Vic2 = BRY } # Berry
 
@@ -265,8 +265,8 @@ link = { EU4 = d_bavaria Vic2 = BAV } # Bavaria
 link = { EU4 = k_bavaria Vic2 = BAV } # Bavaria
 link = { EU4 = BOH Vic2 = BOH } # Bohemia
 link = { EU4 = k_bohemia Vic2 = BOH } # Bohemia
-link = { EU4 = BRA Vic2 = BRD } # Brandenburg
-link = { EU4 = d_brandenburg Vic2 = BRD } # Brandenburg
+link = { EU4 = BRA Vic2 = BRN } # Brandenburg
+link = { EU4 = d_brandenburg Vic2 = BRN } # Brandenburg
 link = { EU4 = BRE Vic2 = BRE } # Bremen
 link = { EU4 = c_bremen Vic2 = BRE } # Bremen
 link = { EU4 = BRU Vic2 = BRA } # Brunswick => Braunschweig
@@ -345,8 +345,8 @@ link = { EU4 = RVA Vic2 = RVA } # Ravensburg
 link = { EU4 = DTT Vic2 = DTT } # Dithmarschen
 
 #Spain
-link = { EU4 = ARA Vic2 = ARO } # Aragon
-link = { EU4 = k_aragon Vic2 = ARO } # Aragon
+link = { EU4 = ARA Vic2 = ARN } # Aragon
+link = { EU4 = k_aragon Vic2 = ARN } # Aragon
 link = { EU4 = CAS Vic2 = CAS } # Castille
 link = { EU4 = k_castile Vic2 = CAS } # Castille
 link = { EU4 = CAT Vic2 = CAT } # Catalonia
@@ -423,8 +423,8 @@ link = { EU4 = FLA Vic2 = FLA } # Flanders
 link = { EU4 = d_flanders Vic2 = FLA } # Flanders
 link = { EU4 = FRI Vic2 = FRI } # Friesland
 link = { EU4 = k_frisia Vic2 = FRI } # Frisia
-link = { EU4 = GEL Vic2 = GEL } # Gelre
-link = { EU4 = d_gelre Vic2 = GEL } # Gelre
+link = { EU4 = GEL Vic2 = GLR } # Gelre
+link = { EU4 = d_gelre Vic2 = GLR } # Gelre
 link = { EU4 = HAI Vic2 = HAT } # Hainaut
 link = { EU4 = c_hainaut Vic2 = HAT } # Hainaut
 link = { EU4 = HOL Vic2 = HLL } # Holland
@@ -445,9 +445,9 @@ link = { EU4 = k_taurica Vic2 = CRI } # Taurica => Crimea
 link = { EU4 = GEO Vic2 = GEO } # Georgia
 link = { EU4 = k_georgia Vic2 = GEO } # Georgia
 link = { EU4 = d_georgia Vic2 = GEO } # Georgia
-link = { EU4 = KAZ Vic2 = KZN } # Kazan
-link = { EU4 = MOS Vic2 = MOS } # Muscowy
-link = { EU4 = c_moskva Vic2 = MOS } # Muscowy
+link = { EU4 = KAZ Vic2 = KAZ } # Kazan
+link = { EU4 = MOS Vic2 = MUS } # Muscowy
+link = { EU4 = c_moskva Vic2 = MUS } # Muscowy
 link = { EU4 = NOV Vic2 = NOV } # Novgorod
 link = { EU4 = d_novgorod Vic2 = NOV } # Novgorod
 link = { EU4 = PSK Vic2 = PSK } # Pskov
@@ -466,15 +466,15 @@ link = { EU4 = YAR Vic2 = YAR } # Yaroslavl
 link = { EU4 = d_yaroslavl Vic2 = YAR } # Yaroslavl
 link = { EU4 = ZAZ Vic2 = ZAZ } # Zaporozhie
 link = { EU4 = NOG Vic2 = NOG } # Nogai
-link = { EU4 = SIB Vic2 = SIH } # Sibir
-link = { EU4 = d_sibir Vic2 = SIH } # Sibir
+link = { EU4 = SIB Vic2 = SIB } # Sibir
+link = { EU4 = d_sibir Vic2 = SIB } # Sibir
 link = { EU4 = PLT Vic2 = PLT } # Polotsk
 link = { EU4 = d_polotsk Vic2 = PLT } # Polotsk
 link = { EU4 = PRM Vic2 = PRM } # Perm
 link = { EU4 = k_perm Vic2 = PRM } # Perm
 link = { EU4 = FEO Vic2 = FEO } # Theodoro
-link = { EU4 = BSH Vic2 = BSH } # Bashkiria
-link = { EU4 = c_bashkirs Vic2 = BSH } # Bashkiria
+link = { EU4 = BSH Vic2 = BSK } # Bashkiria
+link = { EU4 = c_bashkirs Vic2 = BSK } # Bashkiria
 #link = { EU4 = BLO Vic2 = XXX } #Beloozero => d_beloozero
 #link = { EU4 = RSO Vic2 = XXX } #Rostov => d_rostov
 
@@ -607,7 +607,7 @@ link = { EU4 = e_timurids Vic2 = TIM } # Timurid
 link = { EU4 = TRS Vic2 = TRX } # Transoxiana
 #link = { EU4 = KRY Vic2 = XXX } # Gilan => d_gilan
 link = { EU4 = CIR Vic2 = CIR } # Circassia
-link = { EU4 = GAZ Vic2 = GAZ } # Gazikumukh
+link = { EU4 = GAZ Vic2 = GZK } # Gazikumukh
 link = { EU4 = IME Vic2 = IME } # Imereti
 link = { EU4 = c_imeretia Vic2 = IME } # Imereti
 link = { EU4 = TAB Vic2 = TAB } # Tabarestan
@@ -644,14 +644,14 @@ link = { EU4 = BEN Vic2 = BEN } # Benin
 link = { EU4 = ETH Vic2 = ETH } # Ethiopia
 link = { EU4 = k_abyssinia Vic2 = ETH } # Abyssinia => Ethiopia
 link = { EU4 = KON Vic2 = KON } # Kongo
-link = { EU4 = MAL Vic2 = MAL } # Mali
-link = { EU4 = k_mali Vic2 = MAL } # Mali
-link = { EU4 = e_mali Vic2 = MAL } # Mali
+link = { EU4 = MAL Vic2 = MLI } # Mali
+link = { EU4 = k_mali Vic2 = MLI } # Mali
+link = { EU4 = e_mali Vic2 = MLI } # Mali
 link = { EU4 = NUB Vic2 = NUB } # Funj
 link = { EU4 = d_nubia Vic2 = NUB } # Nubia => Funj
 link = { EU4 = k_nubia Vic2 = NUB } # Nubia => Funj
-link = { EU4 = SON Vic2 = SNG } # Songhai
-link = { EU4 = d_songhay Vic2 = SNG } # Songhai
+link = { EU4 = SON Vic2 = SGH } # Songhai
+link = { EU4 = d_songhay Vic2 = SGH } # Songhai
 link = { EU4 = ZAN Vic2 = SWA } # Swahili
 link = { EU4 = ZIM Vic2 = ZIM } # Mutapa
 link = { EU4 = ADA Vic2 = ADA } # Adal
@@ -661,10 +661,10 @@ link = { EU4 = LOA Vic2 = LOA } # Loango
 link = { EU4 = OYO Vic2 = OYO } # Oyo
 link = { EU4 = SOF Vic2 = SGU } # Segu
 link = { EU4 = SOK Vic2 = SOK } # Sokoto
-link = { EU4 = JOL Vic2 = JOL } # Jolof
+link = { EU4 = JOL Vic2 = WOL } # Jolof
 link = { EU4 = SFA Vic2 = SOF } # Sofala
 link = { EU4 = MBA Vic2 = MBA } # Mombasa
-link = { EU4 = MLI Vic2 = MLI } # Malindi
+link = { EU4 = MLI Vic2 = ML1 } # Malindi
 link = { EU4 = AJU Vic2 = AJU } # Ajuuraan
 link = { EU4 = MDI Vic2 = MDI } # Mogadishu
 link = { EU4 = ENA Vic2 = ENA } # Ennarea
@@ -676,12 +676,12 @@ link = { EU4 = d_afar Vic2 = AFA } # Afar
 link = { EU4 = ALO Vic2 = ALO } # Alodia
 link = { EU4 = d_alodia Vic2 = ALO } # Alodia
 link = { EU4 = DAR Vic2 = DAR } # Darfur
-link = { EU4 = GLE Vic2 = GLE } # Geledi
+link = { EU4 = GLE Vic2 = GEL } # Geledi
 link = { EU4 = HAR Vic2 = HAR } # Harar
 link = { EU4 = HOB Vic2 = HOB } # Hobyo
 link = { EU4 = KAF Vic2 = KAF } # Kaffa
 link = { EU4 = MED Vic2 = MED } # Medri Bahri
-link = { EU4 = MJE Vic2 = MJE } # Majeerteen
+link = { EU4 = MJE Vic2 = MAJ } # Majeerteen
 link = { EU4 = MRE Vic2 = MRE } # Marehan
 link = { EU4 = PTE Vic2 = PTE } # Pate
 link = { EU4 = WAR Vic2 = WAR } # Warsangali
@@ -704,11 +704,11 @@ link = { EU4 = LND Vic2 = LND } # Lunda
 link = { EU4 = CKW Vic2 = CKW } # Chokwe
 link = { EU4 = KIK Vic2 = KIK } # Kikondja
 link = { EU4 = KZB Vic2 = KZB } # Kazembe
-link = { EU4 = YAK Vic2 = YKA } # Yaka
+link = { EU4 = YAK Vic2 = YAK } # Yaka
 link = { EU4 = KLD Vic2 = KLD } # Kalundwe
 link = { EU4 = KUB Vic2 = KUB } # Kuba
 link = { EU4 = RWA Vic2 = RWA } # Rwanda
-link = { EU4 = BUU Vic2 = BUU } # Burundi
+link = { EU4 = BUU Vic2 = BRD } # Burundi
 link = { EU4 = BUG Vic2 = BUG } # Buganda
 link = { EU4 = NKO Vic2 = NKO } # Nkore
 link = { EU4 = KRW Vic2 = KRW } # Karagwe
@@ -716,7 +716,7 @@ link = { EU4 = BNY Vic2 = BNY } # Bunyoro
 link = { EU4 = BSG Vic2 = BSG } # Basoga
 link = { EU4 = UBH Vic2 = UBH } # Buha
 
-link = { EU4 = MRA Vic2 = MRA } # Maravi
+link = { EU4 = MRA Vic2 = MLW } # Maravi
 link = { EU4 = LDU Vic2 = LDU } # Lundu
 link = { EU4 = TBK Vic2 = TBK } # Tumbuka
 link = { EU4 = MKU Vic2 = MKU } # Makua
@@ -792,7 +792,7 @@ link = { EU4 = KOR Vic2 = KOR } # Korea
 link = { EU4 = LNA Vic2 = LNA } # Lan Na
 link = { EU4 = LUA Vic2 = LUA } # Luang Prabang
 link = { EU4 = LXA Vic2 = LXA } # Lan Xang
-link = { EU4 = MAJ Vic2 = MAJ } # Majapahit
+link = { EU4 = MAJ Vic2 = MJP } # Majapahit
 link = { EU4 = MCH Vic2 = MCK } # Manchu => Manchukuo
 link = { EU4 = MKS Vic2 = MKS } # Makassar
 link = { EU4 = MLC Vic2 = MLC } # Malacca
@@ -886,8 +886,8 @@ link = { EU4 = k_gujarat Vic2 = GUJ } # Gujarat
 link = { EU4 = JNP Vic2 = JNP } # Jaunpur
 link = { EU4 = c_jaunpur Vic2 = JNP } # Jaunpur
 link = { EU4 = MAD Vic2 = MDR } # Madurai
-link = { EU4 = MLW Vic2 = MLW } # Malwa
-link = { EU4 = k_malwa Vic2 = MLW } # Malwa
+link = { EU4 = MLW Vic2 = MAW } # Malwa
+link = { EU4 = k_malwa Vic2 = MAW } # Malwa
 link = { EU4 = MAW Vic2 = JOD } # Marwar => Jodhpur
 link = { EU4 = MER Vic2 = MEW } # Mewar
 link = { EU4 = MUL Vic2 = MUL } # Multan
@@ -946,7 +946,7 @@ link = { EU4 = JFN Vic2 = JFN } # Jaffna
 link = { EU4 = PTA Vic2 = PTA } # Patiala
 link = { EU4 = GHR Vic2 = GHR } # Garhwal
 link = { EU4 = c_garhwal Vic2 = GHR } # Garhwal
-link = { EU4 = CHD Vic2 = CHD } # Chanda
+link = { EU4 = CHD Vic2 = CDR } # Chanda
 link = { EU4 = NGP Vic2 = NGP } # Jharkhand
 link = { EU4 = JAJ Vic2 = JAJ } # Habsan
 link = { EU4 = TRT Vic2 = TRT } # Tirhut
@@ -958,8 +958,8 @@ link = { EU4 = BHA Vic2 = HND } # Bharat => India
 link = { EU4 = e_india Vic2 = HND } # India
 link = { EU4 = YOR Vic2 = AND } # Andhra
 link = { EU4 = k_andhra Vic2 = AND } #Andhra
-link = { EU4 = DGL Vic2 = DGL } # Maldives
-link = { EU4 = c_maldives Vic2 = DGL } # Maldives
+link = { EU4 = DGL Vic2 = MLD } # Maldives
+link = { EU4 = c_maldives Vic2 = MLD } # Maldives
 
 link = { EU4 = BAR Vic2 = BAR } # Bar
 link = { EU4 = HSA Vic2 = LUB } # Lubeck
@@ -971,7 +971,7 @@ link = { EU4 = NZH Vic2 = NZH } # Nizhny Novgorod
 link = { EU4 = c_nizhny_novgorod Vic2 = NZH } # Nizhny Novgorod
 link = { EU4 = KOJ Vic2 = KOJ } # Jerusalem
 link = { EU4 = k_jerusalem Vic2 = KOJ } # Jerusalem
-link = { EU4 = MSA Vic2 = MSA } # Malaya
+link = { EU4 = MSA Vic2 = MLY } # Malaya
 link = { EU4 = HIN Vic2 = HDU } # Hindustan
 
 link = { EU4 = ABE Vic2 = ABE } # Abenaki
@@ -999,7 +999,7 @@ link = { EU4 = PIM Vic2 = PIM } # Pima
 link = { EU4 = POT Vic2 = POT } # Potawatomi
 link = { EU4 = POW Vic2 = POW } # Powhatan
 link = { EU4 = PUE Vic2 = PUE } # Pueblo
-link = { EU4 = SHO Vic2 = SHO } # Shoshone
+link = { EU4 = SHO Vic2 = SHS } # Shoshone
 link = { EU4 = SIO Vic2 = SIO } # Sioux
 link = { EU4 = SUS Vic2 = SUS } # Susquehannock
 link = { EU4 = WCR Vic2 = WCR } # Cree
@@ -1013,10 +1013,10 @@ link = { EU4 = FUL Vic2 = FUL } # Fulo
 link = { EU4 = JNN Vic2 = JNN } # Jenne
 link = { EU4 = c_djenne Vic2 = JNN } # Jenne
 link = { EU4 = KAN Vic2 = KAN } # Kano
-link = { EU4 = KBU Vic2 = KBU } # Kaabu
+link = { EU4 = KBU Vic2 = GBU } # Kaabu
 link = { EU4 = KNG Vic2 = KNG } # Kong
 link = { EU4 = KTS Vic2 = KTS } # Katsina
-link = { EU4 = MSI Vic2 = MSI } # Mossi
+link = { EU4 = MSI Vic2 = MOS } # Mossi
 link = { EU4 = NUP Vic2 = NUP } # Nupe
 link = { EU4 = TMB Vic2 = TMB } # Timbuktu
 link = { EU4 = d_timbuktu Vic2 = TMB } # Timbuktu
@@ -1079,7 +1079,7 @@ link = { EU4 = LUW Vic2 = LUW } # Luwu
 link = { EU4 = MGD Vic2 = MGD } # Maguindanao
 link = { EU4 = TER Vic2 = TRN } # Ternate
 link = { EU4 = TID Vic2 = TID } # Tidore
-link = { EU4 = MAS Vic2 = MAS } # Madya-as
+link = { EU4 = MAS Vic2 = MDS } # Madya-as
 link = { EU4 = PGS Vic2 = PGS } # Pangasinan
 link = { EU4 = TDO Vic2 = TDO } # Tondo
 link = { EU4 = MNA Vic2 = MNA } # Maynila
@@ -1102,7 +1102,7 @@ link = { EU4 = GUA Vic2 = GRI } # Guarani
 link = { EU4 = CUA Vic2 = CUA } # Charrua
 link = { EU4 = WKA Vic2 = WKA } # Wanka
 link = { EU4 = CYA Vic2 = CYA } # Chachapoya
-link = { EU4 = CLA Vic2 = CLA } # Colla
+link = { EU4 = CLA Vic2 = COY } # Colla
 link = { EU4 = CRA Vic2 = CRA } # Charca
 link = { EU4 = PCJ Vic2 = PCJ } # Pacajes
 link = { EU4 = ARW Vic2 = ARW } # Arawak
@@ -1128,18 +1128,18 @@ link = { EU4 = TRL Vic2 = TRL } # Trapalanda
 link = { EU4 = SDM Vic2 = SDM } #Secret Denmark
 
 # Third Odyssey
-link = { EU4 = AEG V2 = AEG } #Aegean
-link = { EU4 = CTM V2 = CTM } #Creta Minoris
-link = { EU4 = ELY V2 = ELY } #Elysian Empire
-link = { EU4 = HBN V2 = HBN } #Hybernica
-link = { EU4 = NHS V2 = NHS } #Elysia
+link = { EU4 = AEG Vic2 = AEG } #Aegean
+link = { EU4 = CTM Vic2 = CTM } #Creta Minoris
+link = { EU4 = ELY Vic2 = ELY } #Elysian Empire
+link = { EU4 = HBN Vic2 = HBN } #Hybernica
+link = { EU4 = NHS Vic2 = NHS } #Elysia
 
 # Extended Vanilla
-link = { EU4 = ANV V2 = ANV } #Angevin Empire
-link = { EU4 = CRL V2 = CRL } #Carniola
-link = { EU4 = ILY V2 = ILY } #Illyria
-link = { EU4 = MGU V2 = MGU } #Maghreb
-link = { EU4 = NSE V2 = NSE } #North Sea Empire
+link = { EU4 = ANV Vic2 = ANV } #Angevin Empire
+link = { EU4 = CRL Vic2 = CRL } #Carniola
+link = { EU4 = ILY Vic2 = ILY } #Illyria
+link = { EU4 = MGU Vic2 = MGU } #Maghreb
+link = { EU4 = NSE Vic2 = NSE } #North Sea Empire
 
 ##VICTORIA2 MAIN NEW COUNTRIES (added mostly through mods)
 link = { EU4 = TEX Vic2 = TEX } #Texas
@@ -1167,7 +1167,7 @@ link = { EU4 = k_alania Vic2 = ALN } #Alania
 link = { EU4 = d_yugra Vic2 = UGR } #Yugra
 
 ##Added for some decisions to have a sense
-link = { EU4 = d_carinthia Vic2 = CAR } #Carinthia
+link = { EU4 = d_carinthia Vic2 = CRT } #Carinthia
 link = { EU4 = e_latin_empire Vic2 = LTN } #Latin Empire
 
 ##Just a joke mod
@@ -1291,7 +1291,7 @@ link = { EU4 = RAV Vic2 = RVA } #Ravensberg
 link = { EU4 = BUT Vic2 = RZW } #Butua
 link = { EU4 = KAL Vic2 = SCA } #KalmarDenmark
 link = { EU4 = NSE Vic2 = SCA } #NorthSeaEmpire
-link = { EU4 = SEG Vic2 = SGU } #Segu
+link = { EU4 = SEG Vic2 = SEG } #Segu
 link = { EU4 = SMM Vic2 = SHM } #Shammar
 link = { EU4 = SIA Vic2 = SIA } #Siam
 link = { EU4 = SKK Vic2 = SIK } #Sikkim

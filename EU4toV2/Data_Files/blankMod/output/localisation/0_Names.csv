@@ -18,6 +18,8 @@ AES;Anglo-Saxony;Anglo-Saxe;Anglo-Sachsen;Anglo-Saksonia;Anglosajona;Anglo-Sasso
 AES_ADJ;Anglo-Saxon;anglo-saxon;Angelsächsisch;Anglosaski;anglosajón;anglosassone;angolszász;Anglosaskı;angolszász;Angelsaksisch;Anglo-saxão;Àíãëîñàêñîíñêèé;Anglosaksinen;x
 AFA_ADJ;Afar;Afar;Afar;Afar;Afar;Afar;Afar;Afar;Afar;Afar;Afar;Àôàğ;Afar;x
 AFA;Afar;Afar;Afar;Afar;Afar;Afar;Afar;Afar;Afar;Afar;Afar;Àôàğ;Afar;x
+AGC;Angoche;Angoche;Angoche;Angoche;Angoche;Angoche;Angoche;Angoše;Angoche;Angoche;Angoche;Àíãî÷å;Angoche;x
+AGC_ADJ;Angochean;Angochean;Angochäer;Angochean;Angoqueño;Angochean;Angochean;Angoèan;Angochean;Angochean;Angocheano;Àíãî÷ñêèé;Angochean;x
 AIN_ADJ;Ainu;Ainu;Ainu;Ainu;Ainu;Ainu;ainu;Ainu;ainu;ainu;Ainu;Àéíû;Ainu;x
 AIN;Ainu;Ainu;Ainu;Ainu;Ainu;Ainu;ainu;Ainu;ainu;ainu;Ainu;Àéíû;Ainu;x
 AJU_ADJ;Ajuuraan;Ajuuraan;Ajuuraan;Ajuuraan;Ajuuraan;Ajuuraan;Ajuuraan;Ajuuraan;Ajuuraan;Ajuuraan;Ajúuran;Àäæóğàí;Ajuuraan;x
@@ -81,8 +83,10 @@ ARD_ADJ;Ardalani;Ardalani;Ardalani;Ardalani;Ardalani;Ardalano;Ardalani;Ardalani;
 ARD;Ardalan;Ardalan;Ardalan;Ardalan;Ardalan;Ardalan;Ardalan;Ardalan;Ardalan;Ardalan;Ardalan;Àğäàëàí;Ardalan;x
 ARK_ADJ;Arakan;Arakan;Arakan;Arakan;Arakan;Arakan;Arakan;Arakan;Arakan;Arakan;Arakan;Àğàêàí;Arakan;x
 ARK;Arakan;Arakan;Arakan;Arakan;Arakan;Arakan;Arakan;Arakan;Arakan;Arakan;Arakan;Àğàêàí;Arakan;x
-ARO_ADJ;Aragonian;Aragonais;Aragonisch;Aragoñskie;Aragonés;aragonese;Aragóniaiak;Aragonian;Aragóniaiak;Aragonian;Aragonês;Àğàãîíà;Aragonian;x
-ARO;Aragon;Aragon;Aragon;Aragon;Aragón;Aragona;Aragon;Aragon;Aragon;Aragon;Aragão;Àğàãîí;Aragon;x
+ARN_ADJ;Aragonian;Aragonais;Aragonisch;Aragoñskie;Aragonés;aragonese;Aragóniaiak;Aragonian;Aragóniaiak;Aragonian;Aragonês;Àğàãîíà;Aragonian;x
+ARN;Aragon;Aragon;Aragon;Aragon;Aragón;Aragona;Aragon;Aragon;Aragon;Aragon;Aragão;Àğàãîí;Aragon;x
+ARO;Aro;Aro;Aro;Aro;Aro;Aro;Aro;Aro;Aro;Aro;Aro;Àğî;Aro;x
+ARO_ADJ;Aro;Aro;Aro;Aro;Aro;Aro;Aro;Aro;Aro;Aro;Aro;Àğîñêèé;Aro;x
 ARP_ADJ;Arapaho;Arapaho;Arapaho;Arapaho;Arapaho;Arapaho;arapaho;Arapaho;arapaho;Arapaho;Arapaho;Àğàïàõî;Arapaho;x
 ARP;Arapaho;Arapaho;Arapaho;Arapaho;Arapaho;Arapaho;arapaho;Arapaho;arapaho;Arapaho;Arapaho;Àğàïàõî;Arapaho;x
 ARU;the Arab Union;l'Union Arabe;die Arabische Union;Unia Arabska;la Unión Árabe;l'Unione araba;az Arab Unió;Arabskou Unii;az Arab Unió;de Arabische Unie;a União Árabe;Àğàáñêèé Ñîşç;arabivaltio;x
@@ -112,6 +116,8 @@ AVA_ADJ;Ava;Ava;Ava;Ava;Ava;Ava;Ava;Ava;Ava;Ava;Ava;Àâà;ava;x
 AVA;Ava;Ava;Ava;Ava;Ava;Ava;Ava;Ava;Ava;Ava;Ava;Àâà;ava;x
 AVI_ADJ;Avignonese;Avignonese;Avignonese;Awinionese;Avignonese;avignonese;Avignonese;Avignonese;Avignonese;Avignonese;Avignonese;Àâèãíîíåñå;Avignonese;x
 AVI;Avignon;Avignon;Avignon;Awinion;Aviñón;Avignone;Avignon;Avignon;Avignon;Avignon;Avignon;Àâèíüîí;Avignon;x
+AWS;Awsa;Awsa;Awsa;Awsa;Awsa;Awsa;Awsa;Awsa;Awsa;Awsa;Awsa;Àóñà;Awsa;x
+AWS_ADJ;Awsa;Awsa;Awsa;Awsa;Awsa;Awsa;Awsa;Awsa;Awsa;Awsa;Awsa;Àóñàñêèé;Awsa;x
 AYD_ADJ;Aydinid;Aydinid;Aydinid;Aydinid;Aydinid;Aydinid;Aydinid;Aydinid;Aydinid;Aydinid;Aydinid;Àûäèíèä;Aydinid;x
 AYD;Aydin;Aydin;Aydin;Aydin;Aydin;Aydin;Aydin;Aydin;Aydin;Aydin;Aydin;Àéäûí;Aydin;x
 AYR_ADJ;Air;Air;Luft;Powietrze;Aire;Aria;Levego;Vzduch;Levego;Lucht;Ar;Âîçäóõ;ilma;x
@@ -158,6 +164,8 @@ BLM_ADJ;Blambagani;Blambagani;Blambagani;Blambagani;Blambagani;Blambagani;Blamba
 BLM;Blambagan;Blambagan;Blambagan;Blambagan;Blambagan;Blambagan;Blambagan;Blambagan;Blambagan;Blambagan;Blambagan;Áëàìáàãàí;Blambagan;x
 BLZ;Belize;Belize;Belize;Belize;Belice;Belize;Belize;Belize;Belize;Belize;Belize;Áåëèç;Belize;x
 BLZ_ADJ;Belizean;Bélizien;Belizisch;Belizean;Beliceño;Belize;Belizean;Belizean;Belizean;Belizean;Belize;Áåëèçà;Belizean;x
+BMK;Bamako;Bamako;Bamako;Bamako;Bamako;Bamako;Bamako;Bamako;Bamako;Bamako;Bamako;Áàìàêî;Bamako;x
+BMK_ADJ;Bamako;Bamako;Bamako;Bamako;Bamako;Bamako;Bamako;Bamako;Bamako;Bamako;Bamako;Áàìàêñêàÿ;Bamako;x
 BNG_ADJ;Bengalese;Bengale;Bengalisch;Bengalese;Bengalesa;bengalese;Bengalese;Bengalese;Bengalese;Bengalese;Bengalesa;Áåíãàëüñêèé;Bengalese;x
 BNG;Bengal;Bengale;Bengalen;bengalski;Bengala;Bengala;Bengália;Bengálsko;Bengália;Bengalen;Bengala;Áåíãàëèÿ;Bengali;x
 BNT_ADJ;Banten;Banten;Banten;Banten;Banten;Banten;Banten;Banten;Banten;Banten;Banten;Áàíòåí;Banten;x
@@ -168,10 +176,12 @@ BOU_ADJ;Bourbonnais;Bourbonnais;Bourbonnais;Burbonia;Bourbonnais;Borbonese;Bourb
 BOU;Bourbonnais;Bourbonnais;Bourbonnais;Burbonia;Bourbonnais;Borbonese;Bourbonnais;Bourbonnais;Bourbonnais;Bourbonnais;Bourbonnais;Áîóğáîííàèñ;Bourbonnais;x
 BRB_ADJ;Brabantian;Brabantien;Brabantian;Brabantian;Brabante;Brabantian;Brabantian;Brabantian;Brabantian;Brabantse;Brabante;Áğàáàíòèàí;Brabantian;x
 BRB;Brabant;Brabant;Brabant;Brabant;Brabant;Brabante;Brabant;Brabant;Brabant;Brabant;Brabante;Áğàáàíò;brabant;x
-BRD_ADJ;Brandenburger;Brandenburger;Brandenburger;Brandenburger;Brandenburger;Brandenburghese;Brandenburger;Brandenburger;Brandenburger;Brandenburger;Brandenburger;Áğàíäåíáóğãñêèå;Brandenburger;x
-BRD;Brandenburg;Brandebourg;Brandenburg;Brandenburgia;Brandenburgo;Brandenburgo;Brandenburg;Brandenburg;Brandenburg;Brandenburg;Brandemburgo;Áğàíäåíáóğã;Brandenburg;x
+BRD_ADJ;Burundi;Burundi;Burundi;Burundi;Burundi;Burundi;Burundi;Burundi;Burundi;Boeroendi;Burundi;Áóğóíäè;Burundi;x
+BRD;Burundi;Burundi;Burundi;Burundi;Burundi;Burundi;Burundi;Burundi;Burundi;Boeroendi;Burundi;Áóğóíäè;Burundi;x
 BRG_ADJ;Burgundian;Bourguignon;Burgundisch;burgundzkich;Borgoñón;borgognone;burgundi;Burgundskı;burgundi;Bourgondisch;Burgundiano;Áóğãóíäñêèé;Burgundin;x
 BRG;Burgundy;Bourgogne;Burgund;Burgundia;borgoña;Borgogna;Burgundia;burgundské;Burgundia;Bourgogne;Borgonha;Áóğãóíäèÿ;Bourgogne;x
+BRN_ADJ;Brandenburger;Brandenburger;Brandenburger;Brandenburger;Brandenburger;Brandenburghese;Brandenburger;Brandenburger;Brandenburger;Brandenburger;Brandenburger;Áğàíäåíáóğãñêèå;Brandenburger;x
+BRN;Brandenburg;Brandebourg;Brandenburg;Brandenburgia;Brandenburgo;Brandenburgo;Brandenburg;Brandenburg;Brandenburg;Brandenburg;Brandemburgo;Áğàíäåíáóğã;Brandenburg;x
 BRR_ADJ;Berar;Berar;Berar;Berar;Berar;Berar;Berar;Berar;Berar;Berar;Berar;Áåğàğ;Berar;x
 BRR;Berar;Berar;Berar;Berar;Berar;Berar;Berar;Berar;Berar;Berar;Berar;Áåğàğ;Berar;x
 BRT_ADJ;Breton;Breton;Bretonisch;Breton;Breton;bretone;breton;Breton;breton;Breton;Bretão;Áğåòîíñêèé;Breton;x
@@ -180,6 +190,8 @@ BRY_ADJ;Berrian;Berrian;Berrian;Berrian;Berrian;Berrian;Berrian;Berrian;Berrian;
 BRY;Berry;Baie;Beere;Jagoda;Baya;Berry;Bogyó;Bobule;Bogyó;Berry;baga;ÿãîäà;Marja;x
 BSG_ADJ;Basoga;Basoga;Basoga;Basoga;Basoga;Basoga;Basoga;Basoga;Basoga;Basoga;Basoga;Áàñîãà;Basoga;x
 BSG;Basoga;Basoga;Basoga;Basoga;Basoga;Basoga;Basoga;Basoga;Basoga;Basoga;Basoga;Áàñîãà;Basoga;x
+BSH;Lesotho;Lesotho;Lesotho;Lesotho;Lesoto;Lesoto;Lesotho;Lesotho;Lesotho;Lesotho;Lesoto;Ëåñîòî;lesotho;x
+BSH_ADJ;Lesothoan;Lesothoan;Lesothoan;Lesothoan;Lesothoan;Lesothoan;Lesothoan;Lesothoan;Lesothoan;Lesothoan;Lesoto;Ëåñîòñêèé;Lesothoan;x
 BSQ;Euskadi;Euskadi;Euskadi;Euskadi;Euskadi;Euskadi;Euskadi;Euskadi;Euskadi;Euskadi;Euskadi;Åâñêàäè;Euskadi;x
 BSQ_ADJ;Basque;basque;baskisch;baskijski;vasco;basco;baszk;Baskiètina;baszk;baskisch;Basco;áàñêñêèé;baski;x
 BTS_ADJ;Betsimisaraka;Betsimisaraka;Betsimisaraka;Betsimisaraka;Betsimisaraka;Betsimisaraka;Betsimisaraka;Betsimisaraka;Betsimisaraka;Betsimisaraka;Betsimisaraka;Áåòñèìèñàğàêà;Betsimisaraka;x
@@ -190,18 +202,25 @@ BUK_proletarian_dictatorship;SSR Uzbekistan;RSS Ouzbékistan;SSR Usbekistan;SSR U
 BUK_proletarian_dictatorship_ADJ;Uzbek;Ouzbek;Usbekisch;uzbecki;Uzbekistán;uzbeko;üzbég;Uzbekistán;üzbég;Oezbeeks;Uzbeque;óçáåê;uzbekki;x
 BUG_ADJ;Bugandan;Bugandan;Bugandan;Bugandan;Bugandán;Bugandan;Bugandan;Bugandan;Bugandan;Buganda;Bugandã;Áóãàíäàí;Bugandan;x
 BUG;Buganda;Buganda;Buganda;Buganda;Buganda;Buganda;Buganda;Buganda;Buganda;Buganda;Buganda;Áóãàíäà;Buganda;x
-BUU_ADJ;Burundi;Burundi;Burundi;Burundi;Burundi;Burundi;Burundi;Burundi;Burundi;Boeroendi;Burundi;Áóğóíäè;Burundi;x
-BUU;Burundi;Burundi;Burundi;Burundi;Burundi;Burundi;Burundi;Burundi;Burundi;Boeroendi;Burundi;Áóğóíäè;Burundi;x
 CAD_ADJ;Caddo;Caddo;Caddo;Caddo;Caddo;Caddo;caddo;Caddo;caddo;Caddo;Caddo;Êàääî;caddo;x
 CAD;Caddo;Caddo;Caddo;Caddo;Caddo;Caddo;caddo;Caddo;caddo;Caddo;Caddo;Êàääî;caddo;x
-CAR_ADJ;Carinthian;Carinthie;Kärntner;Karyntian;Carintio;Carinto;Karintiai;Korutan;Karintiai;Karinthische;Carintio;Êàğèíòèè;Kärntenin;x
-CAR;Carinthia;Carinthie;Kärnten;Karyntia;Carintia;Carinzia;Karintia;Korutany;Karintia;Karinthië;Caríntia;Êàğèíòèè;Kärnten;x
+CAR_ADJ;Equatorial;Équatorial;Äquatorial;Równikowy;Ecuatorial;Equatoriale;Egyenlítoi;Rovníkovı;Egyenlítoi;Equatoriaal;Equatorial;İêâàòîğèàëüíûé;Päiväntasaajan;x
+CAR;Equatorial Africa;Afrique Équatoriale;Äquatoriales Afrika;Afryka Równikowa;África Ecuatorial;Africa Equatoriale;Egyenlítoi Afrika;Rovníková Afrika;Egyenlítoi Afrika;Equatoriaal Afrika;África equatorial;İêâàòîğèàëüíàÿ Àôğèêà;Päiväntasaajan Afrikka;x
 CAS_ADJ;Castilian;Castillan;Kastilischen;Kastylijskim;Castellano;castigliano;kasztíliai;Castilian;kasztíliai;Castiliaans;Castelhano;Êàñòèëüñêèé;kastilialainen;x
 CAS;Castille;Castille;Kastilien;Castilla;Castilla;Castiglia;Castilla;Castille;Castilla;Castille;Castille;Êàñòèëëü;Castille;x
 CEQ;Equador Confederation;Équateur Confédération;Equador-Konföderation;Konfederacja Equador;Confederación Equador;Confederazione dell'Equatore;Ecuador Konföderáció;Konfederace Ekvádoru;Ecuador Konföderáció;Equador Confederation;Confederação do Equador;Êîíôåäåğàöèÿ İêâàäîğà;Euradionin konfederaatio;x
 CEQ_ADJ;Equadorian;Équatorien;Equadorisch;Equadorian;Ecuatoriano;Equatoriano;Equadorian;Ekvádorskı;Equadorian;Equadorian;Equatoriano;İêâàäîğÿíñêèé;Equadorian;x
+CGO;Congo-Brazzaville;Congo-Brazzaville;Kongo-Brazzaville;Kongo-Brazzaville;Congo-Brazzaville;Congo-Brazzaville;Kongói Brazzaville;Kongo-Brazzaville;Kongói Brazzaville;Congo-Brazzaville;Congo-Brazzaville;Êîíãî-Áğàççàâèëü;Kongon;x
+CGO_ADJ;Congolese;Congolais;Kongolesen;Kongijczycy;Congoleño;congolese;kongói;Konští;kongói;Congolees;Congoleses;êîíãîëåçñêèé;Kongon;x
+CGO_democracy;the Republic of Congo;la République du Congo;die Republik Kongo;Republika Konga;la República del Congo;la Repubblica del Congo;a Kongói Köztársaság;Konskou republikou;a Kongói Köztársaság;de Republiek Congo;a República do Congo;Ğåñïóáëèêà Êîíãî;Kongon tasavalta;x
+CGO_proletarian_dictatorship;the Republic of Congo;la République du Congo;die Republik Kongo;Republika Konga;la República del Congo;la Repubblica del Congo;a Kongói Köztársaság;Konskou republikou;a Kongói Köztársaság;de Republiek Congo;a República do Congo;Ğåñïóáëèêà Êîíãî;Kongon tasavalta;x
+CGO_bourgeois_dictatorship;the Republic of Congo;la République du Congo;die Republik Kongo;Republika Konga;la República del Congo;la Repubblica del Congo;a Kongói Köztársaság;Konskou republikou;a Kongói Köztársaság;de Republiek Congo;a República do Congo;Ğåñïóáëèêà Êîíãî;Kongon tasavalta;x
+CGO_fascist_dictatorship;the Republic of Congo;la République du Congo;die Republik Kongo;Republika Konga;la República del Congo;la Repubblica del Congo;a Kongói Köztársaság;Konskou republikou;a Kongói Köztársaság;de Republiek Congo;a República do Congo;Ğåñïóáëèêà Êîíãî;Kongon tasavalta;x
+CGO_presidential_dictatorship;the Republic of Congo;la République du Congo;die Republik Kongo;Republika Konga;la República del Congo;la Repubblica del Congo;a Kongói Köztársaság;Konskou republikou;a Kongói Köztársaság;de Republiek Congo;a República do Congo;Ğåñïóáëèêà Êîíãî;Kongon tasavalta;x
 CHA_ADJ;Champan;Champan;Champan;Champan;Champan;champan;Champan;Champan;Champan;Champan;Champan;×àìïàí;Champan;x
 CHA;Champa;Champa;Champa;Champa;Champa;Champa;Champa;Champa;Champa;Champa;Champa;×àìïà;Champa;x
+CHD;Chad;Tchad;Tschad;Chad;Chad;Ciad;Csád;Chad;Csád;Tsjaad;Chade;×àä;Chad;x
+CHD_ADJ;Chadian;Tchadien;Tschadian;Czadu;Chadiano;Ciadiano;csádi;Chadian;csádi;Tsjadische;Chadiano;×àäñêèé;Tšadin;x
 CHG_ADJ;Chagatai;Chagatai;Chagatai;Chagatai;Chagatai;Chagatai;csagatáj;Chagatai;csagatáj;Chagatai;Chagatai;×àãàòàéñêàÿ;Chagatai;x
 CHG_democracy;The Chagatai Republic;La République Chagatai;Der Chagataischen Republik;Republika Chagatai;La República Chagatai;La Repubblica Chagatai;A csagatáj Köztársaság;Chagatai republika;A csagatáj Köztársaság;de Chagatai Republiek;A República Chagatai;Ğåñïóáëèêà ×àãàòàé;Chagatai tasavalta;x
 CHG_proletarian_dictatorship;The Chagatai Proletariate;Le Protallaire de Chagatai;Das Chagatai Proletariat;Chagatai Proletariate;El Proletariado de Chagatai;il proletariato Chagatai;A csagatáj proletariátus;Chagatai Proletariate;A csagatáj proletariátus;de Chagatai proletariaat;O Proletariado de Chagatai;Ïğîëåòàğèàò ×àãàòàé;Chagatai Proletariate;x
@@ -222,6 +241,8 @@ CKW_ADJ;Chokwe;Chokwe;Chokwe;Chokwe;Chokwe;Chokwe;csokve;Chokwe;csokve;Chokwe;Ch
 CKW;Chokwe;Chokwe;Chokwe;Chokwe;Chokwe;Chokwe;csokve;Chokwe;csokve;Chokwe;Chokwe;×îêâå;Chokwe;x
 CIR;Circassia;Circassia;Tscherkessien;Czerkiesja;Circasia;Circassia;Circassia;Circassia;Circassia;Circassia;Circassia;×åğêåñèş;Circassia;x
 CIR_ADJ;Circassian;Circassien;Tscherkessen;Czerkies;circasiano;circassa;cserkesz;Cirkassian;cserkesz;Circassian;Circassiano;÷åğêåññêèé;circassian;x
+CLA;Calabar;Calabar;Calabar;Calabar;Calabar;Calabar;Calabar;Calabar;Calabar;Calabar;Calabar;Êàëàáàğ;Calabar;x
+CLA_ADJ;Calabari;Calabari;Calabari;Calabari;Calabari;Calabari;Calabari;Calabari;Calabari;Calabari;Calabari;Êàëàáàğñêèé;Calabari;x
 CLC;Cilicia;Cilicie;Kilikien;Cylicja;Cilicia;Cilicia;Ciliciából;Cilicia;Ciliciából;Cilicia;Cilícia;Êèëèêèÿ;Cilicia;x
 CLC_ADJ;Cilician;Cilicien;Kilikisch;Cilician;Cilician;cilicia;ciliciai;Cilician;ciliciai;Cilician;Cilício;Êèëèêèéñêîå;Cilician;x
 CMR_ADJ;Cameroonian;Camerounais;Kameruner;Kamerunczyk;Camerunés;Camerunese;kameruni;Kamerunu;kameruni;Kameroense;Camaronês;Êàìåğóíåö;Kamerunin;x
@@ -236,12 +257,16 @@ CPG_ADJ;Champagnan;Champagnan;Champagnan;Szampagnan;Champagnan;Champagnan;Champa
 CPG;Champagne;Champagne;Champagner;Szampan;champán;Champagne;Pezsgo;Šampanské;Pezsgo;Champagne;Champanhe;Øàìïàíñêîå;Samppanja;x
 CPL;Congress Poland;Pologne du Congrès;Kongress Polen;Kongres Polska;Polonia del Congreso;Polonia del Congresso;Kongresszus Lengyelország;Kongres Polsko;Kongresszus Lengyelország;Congres Polen;Congresso da Polônia;Êîíãğåññ Ïîëüøà;Kongressi Puola;x
 CPL_ADJ;Polish;polonais;Polieren;Polskie;polaco;polacco;lengyel;polština;lengyel;Pools;polonês;ïîëèğîâàòü;Kiillottaa;x
+CPV;Cape Verde;Cap-Vert;Kap Verde;Wyspy Zielonego Przyl¹dka;Cabo Verde;Capo Verde;Zöld-Fok;Kapverdy;Zöld-Fok;Kaapverdië;Cabo Verde;Êàáî-Âåğäå;Kap Verde;x
+CPV_ADJ;Cape Verdean;Cap-verdien;Kapverdisch;Republika Zielonego Przyl¹dka;Cabo Verde;Capo Verde;Zöld-foki-szigetek;Cape Verdean;Zöld-foki-szigetek;Kaapverdisch;Cabo verdiana;Êàáî-Âåğäå;Kap Verdean;x
 CRK_ADJ;Creek;Ruisseau;Bach;Zatoczka;Creek;Creek;Patak;zátoka;Patak;Kreek;Angra;Ğó÷åé;Puro;x
 CRK;Creek;Ruisseau;Bach;Zatoczka;Creek;Creek;Patak;zátoka;Patak;Kreek;Angra;Ğó÷åé;Puro;x
 CRN_ADJ;Cornish;Cornouaillais;kornisch;Kornwalijski;de Cornualles;Cornico;cornwalli;cornwallskı;cornwalli;Cornish;Cornish;Êîğíóîëëñêèé;Cornish;x
 CRN;Cornwall;Cornouailles;Cornwall;Cornwall;Cornualles;Cornovaglia;Cornwall;Cornwall;Cornwall;Cornwall;Cornualha;Êîğíóîëë;Cornwall;x
 CRS_ADJ;Corsican;Corse;Korsisch;korsykañski;corso;Corsica;korzikai;Korsican;korzikai;Corsicaans;Córsico;Êîğñèêàíåö;korsikalainen;x
 CRS;Corsica;Corse;Korsika;Korsyka;Córcega;Corsica;Korzika;Korsika;Korzika;Corsica;Córsega;Êîğñèêà;Korsika;x
+CRT_ADJ;Carinthian;Carinthie;Kärntner;Karyntian;Carintio;Carinto;Karintiai;Korutan;Karintiai;Karinthische;Carintio;Êàğèíòèè;Kärntenin;x
+CRT;Carinthia;Carinthie;Kärnten;Karyntia;Carintia;Carinzia;Karintia;Korutany;Karintia;Karinthië;Caríntia;Êàğèíòèè;Kärnten;x
 CSH_ADJ;Shun;Shun;Meiden;Unikac;Shun;Shun;Kitér;vyhıbat se;Kitér;Vlieden;Fugir;Ãíóøàòüñÿ;Karttaa;x
 CSH_democracy;The Republic of Shun;La République de Shun;Der Republik Shun;Republika Shun;La República de Shun;la Repubblica di Shun;Köztársaság Shun;Republiky Shun;Köztársaság Shun;de Republiek Shun;A República de Shun;Ğåñïóáëèêà Øóíü;tasavallan Shun;x
 CSH_proletarian_dictatorship;The People's Republic of Shun;La République Populaire de Shun;Der Volksrepublik Shun;Chiñska Republika Ludowa Shun;La República Popular de Shun;La Repubblica popolare di Shun;A Népköztársaság Shun;z Shun lidové republiky;A Népköztársaság Shun;de Volksrepubliek Shun;A República Popular de Shun;Íàğîäíàÿ Ğåñïóáëèêà Øóíü;kansantasavallan Shun;x
@@ -256,14 +281,24 @@ CXI_ADJ;Xi;Xi;Xi;Xi;Xi;Xi;Xi;xi;Xi;Xi;XI;Õè;Xi;x
 CXI_democracy;The Republic of Xi;La République de Xi;Der Republik Xi;Republika Xi;La República de Xi;la Repubblica di Xi;Köztársaság Xi;Republiky Xi;Köztársaság Xi;de Republiek Xi;A República de Xi;Ğåñïóáëèêà Õè;tasavallan Xi;x
 CXI_proletarian_dictatorship;The People's Republic of Xi;La République populaire de Xi;Der Volksrepublik Xi;Republiki Ludowej Xi;La República Popular de Xi;La Repubblica popolare di Xi;A Népköztársaság Xi;Xi lidové republiky;A Népköztársaság Xi;de People's Republic of Xi;República Popular da Xi;Íàğîäíàÿ Ğåñïóáëèêà Õè;kansantasavallan Xi;x
 CXI;The Xi Dynasty;La dynastie Xi;Die Xi-Dynastie;Xi Dynasty;La Dinastía Xi;Dinastia Xi;Az Xi-dinasztia;Xi Dynasty;Az Xi-dinasztia;de Xi-dynastie;A Dinastia Xi;Äèíàñòèÿ Ñè;Xi Dynasty;x
+CYR;Cyrenaica;Cyrénaïque;Cyrenaika;Cyrenaica;Cirenaica;Cirenaica;Cyrenaica;Cyrenaica;Cyrenaica;Cyrenaica;Cirenaica;Êèğåíàèêè;Kyrenaika;x
+CYR_ADJ;Cyrenaican;Cyrénaïque;Cyrenaican;Cyrenejczyk;Cyrenaican;cirenaica;Cyrenaican;Cyrenaican;Cyrenaican;Cirenaica;Cirenaican;Êèğåíàèêñêèé;Cyrenaican;x
 DAG;Dagestan;Daghestan;Dagestan;Dagestan;Daguestán;Daghestan;Dagesztán;Dagestan;Dagesztán;Dagestan;Daguestão;Äàãåñòàí;Dagestanin;x
 DAG_ADJ;Dagestani;Daghestan;Dagestani;Dagestani;Dagestani;Daghestan;Dagestani;Dagestani;Dagestani;Dagestaanse;Daguestão;äàãåñòàíåö;Dagestani;x
+DAH;Dahomey;Dahomey;Dahomey;Dahomey;Dahomey;Dahomey;Dahomey;Dahomey;Dahomey;Dahomey;Daomé;Äàãîìåÿ;Dahomey;x
+DAH_ADJ;Dahomey;Dahomey;Dahomey;Dahomey;Dahomey;Dahomey;Dahomey;Dahomey;Dahomey;Dahomey;Daomé;Äàãîìåÿ;Dahomey;x
 DAK;Dakota;Dakota;Dakota;Dakota;Dakota;Dakota;Dakota;Dakota;Dakota;Dakota;Dakota;Äàêîòà;Dakota;x
 DAK_ADJ;Dakotan;Dakotan;Dakotan;Dakotan;Dakotan;Dakotano;Dakotan;Dakotan;Dakotan;Dakotan;Dakotan;Äàêîòñêèé;Dakotan;x
+DAM;Damangaram;Damangaram;Damangaram;Damangaram;Damangaram;Damangaram;Damangaram;Damangaram;Damangaram;Damangaram;Damangaram;Äàìàíãàğàì;Damangaram;x
+DAM_ADJ;Damangaram;Damangaram;Damangaram;Damangaram;Damangaram;Damangaram;Damangaram;Damangaram;Damangaram;Damangaram;Damangaram;Äàìàíãàğàìñêèé;Damangaram;x
+DAR;Darfur;Darfour;Darfur;Darfur;Darfur;Darfur;Darfur;Dárfúru;Darfur;Darfur;Darfur;Äàğôóğ;Darfur;x
+DAR_ADJ;Darfuri;Darfuri;Darfuri;Darfuri;Darfuri;Darfur;Darfuri;Darfuri;Darfuri;Darfuri;Darfuri;Äàğôóğà;Darfuri;x
 DAU_ADJ;Dauphiné;Dauphiné;Dauphiné;Dauphiné;Dauphiné;Delfinese;Dauphiné;Dauphiné;Dauphiné;Dauphiné;Dauphiné;Äîôèíå;Dauphiné;x
 DAU;Dauphiné;Dauphiné;Dauphiné;Dauphiné;Dauphiné;Delfinato;Dauphiné;Dauphiné;Dauphiné;Dauphiné;Dauphiné;Äîôèíå;Dauphiné;x
 DEC_ADJ;Deccan;Deccan;Deccan;Deccan;Deccan;Deccan;Dekkán;Deccan;Dekkán;Deccan;Deccan;Äåêàí;Deccan;x
 DEC;Deccan;Deccan;Deccan;Deccan;Deccan;Deccan;Dekkán;Deccan;Dekkán;Deccan;Deccan;Äåêàí;Deccan;x
+DJI;Djibouti;Djibouti;Dschibuti;D¿ibuti;Djibouti;Gibuti;Dzsibuti;Dibuti;Dzsibuti;Djibouti;Djibouti;Äæèáóòè;Djibouti;x
+DJI_ADJ;Djibouti;Djibouti;Dschibuti;D¿ibuti;Djibouti;Gibuti;Dzsibuti;Dibuti;Dzsibuti;Djibouti;Djibouti;Äæèáóòè;Djibouti;x
 DKU_ADJ;Don-Kuban;Don-Kuban;Don-Kuban;Don-Kuban;Don-Kuban;Don-Kuban;Don-Kuban;Don-Kuban;Don-Kuban;Don-Kuban;Don-Kuban;Äîí-Êóáàíü;Don-Kuban;x
 DKU;The Don-Kuban Union;L'Union du Don-Kuban;Die Don-Kuban-Union;Unia Don-Kuban;La Unión Don-Kuban;L'unione Don-Kuban;A Don-Kuban Unió;Don-Kubanská unie;A Don-Kuban Unió;De Don-Kuban Unie;União Don-Kuban;Äîí-Êóáàíñêèé ñîşç;Don-Kuban-unioni;x
 DLH_ADJ;Delhian;Delhian;Delhian;Delhian;Delhian;Delhiano;Delhian;Delhian;Delhian;Delhian;Delhian;Äåëõèàí;Delhian;x
@@ -274,6 +309,8 @@ DMS_ADJ;Desmondian;Desmondian;Desmondian;Desmondian;Desmondian;Desmondiano;Desmo
 DMS;Desmond;Desmond;Desmond;Desmond;Desmond;Desmond;Desmond;Desmond;Desmond;Desmond;Desmond;Äåñìîíä;Desmond;x
 DNB;Danubian Federation;Fédération Danubienne;Danubische Föderation;Federacja Naddunajska;Federación del Danubio;Federazione Danubiana;Duna Szövetség;Podunajská federace;Duna Szövetség;Donau Federatie;Federação Danubiana;Äóíàéñêàÿ ôåäåğàöèÿ;Tonavan liitto;x
 DNB_ADJ;Danubian;danubien;Danubisch;dunajski;Danubio;danubiano;dunai;Danubian;dunai;Danubian;Danubiano;Äóíàéñêàÿ;Tonavan;x
+DND;Dendi;Dendi;Dendi;Dendi;Dendi;Dendi;Dendi;Dendi;Dendi;Dendi;Dendi;Äåíäè;Dendi;x
+DND_ADJ;Dendi;Dendi;Dendi;Dendi;Dendi;Dendi;Dendi;Dendi;Dendi;Dendi;Dendi;Äåíäè;Dendi;x
 DON;Cossackia;Cosaquie;Kosaken;Kozaków;Cossackia;Cosacchia;Cossackia;Cossackie;Cossackia;Cossackia;Cossaco;Êàçàêèÿ;Cossackia;x
 DON_ADJ;Cossack;cosaque;Kosak;Kozak;cosaco;cosacco;kozák;kozák;kozák;Kozak;Cossaco;êàçàê;kasakka;x
 DRA;Dravidistan;Dravidistan;Dravidistan;Dravidistan;Dravidistan;Dravidistan;Dravidistan;Dravidistán;Dravidistan;Dravidistan;Dravidistan;Äğàâèñèòàí;Dravidistan;x
@@ -296,8 +333,10 @@ ENR;Britannia;Britannia;Britannia;Britannia;Britania;Britannia;Britannia;Britann
 ENR_ADJ;Britannian;Britannian;Britannier;Britannian;Britanno;Britanno;Britannian;Britannian;Britannian;Britannian;Britannian;Áğèòàíèñêèé;Britannian;x
 EPI_ADJ;Epirote;Epirote;Epirote;Epirote;Epirote;Epirota;Epirote;Epirote;Epirote;Epirote;Epirote;Åïèğîòå;Epirote;x
 EPI;Epirus;Épire;Epirus;Epir;Epiro;Epiro;Epirusz;Epirus;Epirusz;Epirus;Epiro;İïèğ;Epirus;x
-EQA_ADJ;Equatorial;Équatorial;Äquatorial;Równikowy;Ecuatorial;Equatoriale;Egyenlítoi;Rovníkovı;Egyenlítoi;Equatoriaal;Equatorial;İêâàòîğèàëüíûé;Päiväntasaajan;x
-EQA;Equatorial Africa;Afrique Équatoriale;Äquatoriales Afrika;Afryka Równikowa;África Ecuatorial;Africa Equatoriale;Egyenlítoi Afrika;Rovníková Afrika;Egyenlítoi Afrika;Equatoriaal Afrika;África equatorial;İêâàòîğèàëüíàÿ Àôğèêà;Päiväntasaajan Afrikka;x
+EQG;Equatorial Guinea;Guinée Équatoriale;Äquatorialguinea;Gwinea Równikowa;Guinea Ecuatorial;Guinea Equatoriale;Egyenlítõi-Guinea;Rovníková Guinea;Egyenlítõi-Guinea;Equatoriaal-Guinea;Guiné Equatorial;İêâàòîğèàëüíàÿ Ãâèíåÿ;Päiväntasaajan Guinea;x
+EQG_ADJ;Guinean;Guinéen;Guineanisch;Gwinean;Guineano;Guinea;guineai;Guinean;guineai;Guinese;Guineense;Ãâèíåéñêèé;guinealainen;x
+ERI;Eritrea;Erythrée;Eritrea;Erytrea;Eritrea;Eritrea;Eritrea;Eritrea;Eritrea;Eritrea;Eritréia;İğèòğåÿ;Eritrea;x
+ERI_ADJ;Eritrean;Érythréen;Eritreischer;Erytrejski;Eritrea;eritreo;eritreai;Eritrean;eritreai;Eritrese;Eritreia;İğèòğåéñêèé;Eritrean;x
 ETR_ADJ;Etrurian;Étrurien;Etrurisch;Etruski;Etruria;Etrusco;etruszk;mystyckıch etruskıch;etruszk;Etrurisch;Etrusco;İòğóññêàÿ;Etrurian;x
 ETR;Etruria;Étrurie;Etrurien;Etruria;Etruria;Etruria;Etruria;Etruria;Etruria;Etrurië;Etruria;İòğóğèÿ;Etruria;x
 FER_ADJ;Ferraran;Ferraran;Ferraran;Ferraran;Ferraran;ferrarese;Ferraran;Ferraran;Ferraran;Ferraran;Ferraran;Ôåğğàğàí;Ferraran;x
@@ -324,24 +363,38 @@ GAB_ADJ;Gabonese;Gabonais;Gabunisch;Gabon;Gabonés;Gabonese;gaboni;Gabon;gaboni;G
 GAB;Gabon;Gabon;Gabun;Gabon;Gabón;Gabon;Gabon;Gabon;Gabon;Gabon;Gabão;Ãàáîí;Gabon;x
 GAK_ADJ;Gakwar;Gakwar;Gakwar;Gakwar;Gakwar;Gakwar;Gakwar;Gakwar;Gakwar;Gakwar;Gakwar;Ãàêâàğ;Gakwar;x
 GAK;Gakwar;Gakwar;Gakwar;Gakwar;Gakwar;Gakwar;Gakwar;Gakwar;Gakwar;Gakwar;Gakwar;Ãàêâàğ;Gakwar;x
+GAZ;Gaza;Gaza;Gaza;Gaza;Gaza;Gaza;Gáza;Gaza;Gáza;Gaza;Gaza;Ãàçà;gaza;x
+GAZ_ADJ;Gazan;Gazan;Gaza;Gazan;Gazan;Gaza;Gazan;Gazan;Gazan;Gazan;Gazan;Ãàçñêèé;Gazan;x
+GBI;Guinea-Bissau;Guinée-Bissau;Guinea-Bissau;Gwinea Bissau;Guinea-Bissau;Guinea-Bissau;Bissau-Guinea;Guinea-Bissau;Bissau-Guinea;Guinee-Bissau;Guiné-Bissau;Ãâèíåÿ-Áèñàó;Guinea-Bissau;x
+GBI_ADJ;Guinean;Guinéen;Guineanisch;Gwinean;Guineano;guineano;guineai;Guinean;guineai;Guinese;Guineense;Ãâèíåéñêèé;guinealainen;x
+GBU;Kaabu;Kaabu;Kaabu;Kaabu;Gabú;Kaabu;Kaabu;Kaabu;Kaabu;Kaabu;Gabu;Êààáó;Kaabu;x
+GBU_ADJ;Kaabu;Kaabu;Kaabu;Kaabu;Kaabu;Kaabu;Kaabu;Kaabu;Kaabu;Kaabu;Kaabu;Êààáó;Kaabu;x
 GDW_ADJ;Gondwanan;Gondwanan;Gondwanisch;Gondwany;Gondwanan;Gondwana;Gondwanan;Gondwanan;Gondwanan;Gondwanan;Gondwanan;Ãîíäâàíû;Gondwanan;x
 GDW;Gondwana;Gondwana;Gondwana;Gondwana;Gondwana;Gondwana;Gondwana;Gondwana;Gondwana;Gondwana;Gondwana;Ãîíäâàíà;Gondwana;x
-GEL_ADJ;Gelrian;Gelrian;Gelrian;Gelrian;Gelrian;Gheldriano;Gelrian;Gelrian;Gelrian;Gelrian;Gelrian;Ãåëğèàí;Gelrian;x
-GEL;Gelre;Gelre;Gelre;Gelre;Gelre;Gheldria;Gelre;Gelre;Gelre;Gelre;Gelre;Ãåëğå;Gelre;x
+GEL;Geledi;Geledi;Gelédi;Geledi;Geledi;Geledi;Geledi;Geledi;Geledi;Geledi;Geledi;Ãåëåäè;Geledi;x
+GEL_ADJ;Geledi;Geledi;Gelédi;Geledi;Geledi;Geledi;Geledi;Geledi;Geledi;Geledi;Geledi;Ãåëåäè;Geledi;x
 GHN_ADJ;Ghanan;Ghanien;Ghanan;Ghanan;Ghanan;Ghanese;Ghanan;Ghanan;Ghanan;Ghanan;Ghanan;Ãõàíàí;Ghanan;x
 GHN;Ghana;Ghana;Ghana;Ghana;Ghana;Ghana;Ghána;Ghana;Ghána;Ghana;Gana;Ãàíà;Ghana;x
 GLC_ADJ;Galician;Galicien;Galizisch;Galicyjski;gallego;galiziano;galíciai;galicijskı;galíciai;Galicisch;Galego;Ãàëèöêàÿ;galician;x
 GLC;Galicia;Galice;Galicien;Galicja;Galicia;Galizia;Galicia;Galicia;Galicia;Galicia;Galiza;Ãàëèñèÿ;Galicia;x
 GLM;Galicia-Lodomeria;Galicie-Lodomirie;Galizien-Lodomerien;Galicja-Lodomeria;Galicia-Lodomeria;Galizia-Lodomeria;Galicia-Lodomeria;Galicia-Lodomeria;Galicia-Lodomeria;Galicia-Lodomeria;Galiza-Lodomeria;Ãàëèöêî-Ëîäîìåğèÿ;Galician Lodomeria;x
 GLM_ADJ;Galician;galicien;galizisch;Galicyjski;gallego;galiziano;galíciai;Galicijština;galíciai;Galicisch;Galego;Ãàëèöêàÿ;galician;x
+GLR_ADJ;Gelrian;Gelrian;Gelrian;Gelrian;Gelrian;Gheldriano;Gelrian;Gelrian;Gelrian;Gelrian;Gelrian;Ãåëğèàí;Gelrian;x
+GLR;Gelre;Gelre;Gelre;Gelre;Gelre;Gheldria;Gelre;Gelre;Gelre;Gelre;Gelre;Ãåëğå;Gelre;x
+GMB;Gambia;Gambie;Gambia;Gambia;Gambia;Gambia;Gambia;Gambie;Gambia;Gambia;Gâmbia;Ãàìáèÿ;Gambia;x
+GMB_ADJ;Gambian;gambien;Gambian;Gambian;Gambiano;Gambia;Gambian;gambijskı;Gambian;Gambiaanse;Gambiano;Ãàìáèéñêàÿ;Gambian;x
 GNA_ADJ;Genoese;Génois;Genuesisch;Genueñczyk;Genovés;genovese;genovai;janovské;genovai;Genuees;Genovês;Ãåíóıçñêèé;Genoese;x
 GNA;Genoa;Gênes;Genua;Genua;Génova;Genova;Genova;Janov;Genova;Genua;Génova;Ãåíóÿ;Genova;x
+GNE_ADJ;Guinean;Guinéen;Guineanisch;Gwinean;Guineano;Guineano;guineai;Guinean;guineai;Guinese;Guineense;Ãâèíåéñêèé;guinealainen;x
+GNE;Guinea;Guinée;Guinea;Gwinea;Guinea;Guinea;Guinea;Guinea;Guinea;Guinea;Guiné;Ãâèíåÿ;Guinea;x
 GOC_ADJ;Golcandan;Golcandan;Golcandan;Golcandan;Golcán;Golcandan;Golcandan;Golcandan;Golcandan;Golcandan;Golcandan;Ãîëöàíäàí;Golcandan;x
 GOC;Golcanda;Golcanda;Golcanda;Golcanda;Golcanda;Golcanda;Golcanda;Golcanda;Golcanda;Golcanda;Golcanda;Ãîëöàíäà;Golcanda;x
 GOL_ADJ;Golden Horde;Horde d'Or;Goldene Horde;Z³ota Orda;Horda de oro;Orda d'oro;arany Horda;Golden Horde;arany Horda;gouden Horde;Horde dourada;Çîëîòàÿ Îğäà;Golden Horde;x
 GOL_democracy_ADJ;Golden Republic;Golden Republic;Goldene Republik;Zloty Republika;República Dorada;Repubblica d'oro;arany Köztársaság;Golden Republic;arany Köztársaság;Golden Republic;Golden Republic;Çîëîòàÿ Ğåñïóáëèêà;Golden tasavalta;x
 GOL_democracy;The Golden Republic;La République d'Or;Die Goldene Republik;Republika Zloty;La república Dorada;la Repubblica d'Oro;Arany Köztársaság;Zlatı republika;Arany Köztársaság;de Gouden Republiek;A república dourada;Çîëîòàÿ Ğåñïóáëèêà;Golden tasavalta;x
 GOL;The Golden Horde;La Horde d'Or;Die Goldene Horde;Golden Horde;La Horda de Oro;l'Orda d'Oro;Az Arany Horda;Golden Horde;Az Arany Horda;de Gouden Horde;A Horda de Ouro;Çîëîòàÿ Îğäà;Golden Horde;x
+GON;Gonder;Gonder;Gonder;Gonder;Gonder;Gonder;Gonder;Gonder;Gonder;Gonder;Gênero;Ãîíäåğ;Gonder;x
+GON_ADJ;Gonder;Gonder;Gonder;Gonder;Gonder;Gonder;Gonder;Gonder;Gonder;Gonder;Gênero;Ãîíäåğ;Gonder;x
 GOT_ADJ;Gutnish;Gutnish;Gut gemacht;Gotlandzki;Gutnish;gutnico;Gutnish;Gutnish;Gutnish;Gutnish;Gutnish;Ãóòíèéñêîå Íàğå÷èå;Gutniska;x
 GOT;Gotland;Gotland;Gotland;Gotlandia;Gotland;Gotland;Gotland;Gotland;Gotland;Gotland;Gotland;Ãîòëàíä;Gotland;x
 GRA_ADJ;Granadan;Granadan;Granadan;Granadan;Granadino;granadino;Granadan;granadského;Granadan;voor Granada;Granadan;Ãğàíàäàí;Granadan;x
@@ -354,8 +407,6 @@ GRJ_ADJ;Garjat;Garjat;Garjat;Garjat;Garjat;Garjat;Garjat;Garjat;Garjat;Garjat;Ga
 GRJ;Garjat;Garjat;Garjat;Garjat;Garjat;Garjat;Garjat;Garjat;Garjat;Garjat;Garjat;Ãàğÿò;Garjat;x
 GRN;Greenland;Groenland;Grönland;Grenlandia;Groenlandia;Groenlandia;Grönland;Grónsko;Grönland;Groenland;Gronelândia;Ãğåíëàíäèÿ;Grönlanti;x
 GRN_ADJ;Greenlander;Groenlandais;Grönländer;Grenlandczyk;Groenlandés;groenlandese;Greenlander;Greenlander;Greenlander;Groenlander;Gronelandês;ãğåíëàíäåö;Greenlander;x
-GUI_ADJ;Guinean;Guinéen;Guineanisch;Gwinean;Guineano;Guineano;guineai;Guinean;guineai;Guinese;Guineense;Ãâèíåéñêèé;guinealainen;x
-GUI;Guinea;Guinée;Guinea;Gwinea;Guinea;Guinea;Guinea;Guinea;Guinea;Guinea;Guiné;Ãâèíåÿ;Guinea;x
 GUJ_ADJ;Gujarati;Gujarati;Gujarati;gujarati;Gujarati;Gujarati;gudzsaráti;gujarati;gudzsaráti;Gujarati;Gujarati;Ãóäæàğàòè;gujarati;x
 GUJ;Gujarat;Gujarat;Gujarat;Gujarat;Gujarat;Gujarat;Gujarat;Gujarat;Gujarat;Gujarat;Gujarat;Ãóäæàğàò;Gujaratin;x
 GUY;Guyana;Guyane;Guyana;Gujana;Guayana;Guiana;Guyana;Guyana;Guyana;Guyana;Guiana;Ãàéàíà;Guyana;x
@@ -365,6 +416,8 @@ GYN_ADJ;Gascon;Gascon;Gascon;Gaskon;Gascón;Guascone;gascon;Gascon;gascon;Gasconj
 HAL;Ha’il;Ha’il;Ha’il;Ha’il;Ha’il;Ha’il;Ha’il;Ha’il;Ha’il;Ha’il;Ha’il;Õàèëü;Ha’il;x
 HAL_ADJ;Shammar;Shammar;Shammar;Szammar;Shammar;Shammar;Shammar;Shammar;Shammar;Shammar;Shammar;øàììàğ;Shammar;x
 HAT_ADJ;Hainautian;Hainaut;Hainautian;Hainautian;Hainautian;Hainautian;Hainautian;Hainautian;Hainautian;Hainautian;Hainaut;Õàèíàóòèàí;Hainautian;x
+HAR;Harar;Harar;Harar;Harar;Harar;Harar;Harar;Harar;Harar;Harar;Harar;Õàğàğ;Harar;x
+HAR_ADJ;Harari;Harari;Harari;Harari;Harari;Harari;Harari;Harari;Harari;Harari;Harari;Õàğàğè;Harari;x
 HAT;Hainaut;Hainaut;Hainaut;Hainaut;Hainaut;Hainaut;Hainaut;Hainaut;Hainaut;Hainaut;Hainaut;İíî;Hainaut;x
 HAU_ADJ;Hausan;Hausan;Hausan;Hausan;Hausan;Hausan;Hausan;Hausan;Hausan;Hausan;Hausan;Õàóñàí;Hausan;x
 HAU;Hausa;Hausa;Hausa;hausa;Hausa;Hausa;Hausa;Hausa;Hausa;Hausa;Hausa;Õàóñà;hausa;x
@@ -411,16 +464,14 @@ IRO_ADJ;Iroquois;Iroquois;Irokesen;Iroquois;Iroquois;Iroquois;irokéz;Iroquois;ir
 IRO;Iroquois;Iroquois;Irokesen;Iroquois;Iroquois;Iroquois;irokéz;Iroquois;irokéz;Iroquois;Iroquois;Èğîêåç;Iroquois;x
 IVC_ADJ;Ivoirian;Ivoirien;Ivoirian;Ivoirian;Costa de Marfil;Ivoiriano;elefántcsontparti;Ivoirian;elefántcsontparti;Ivoriaanse;Ivoirian;Êîò-Äüèâóàğ;Norsunluurannikon;x
 IVC;Ivory Coast;Côte d'Ivoire;Elfenbeinküste;Wybrze¿e Koœci S³oniowej;Costa de Marfil;Costa d'Avorio;Elefántcsontpart;Pobreí slonoviny;Elefántcsontpart;Ivoorkust;Costa do Marfim;Êîò-Äüèâóàğ;Norsunluurannikko;x
-JAL_ADJ;Jalayirid;Jalayirid;Jalayirid;Jalayirid;Jalayirid;Jalayirid;Jalayirid;Jalayirid;Jalayirid;Jalayirid;Jalayirid;ÿëàûèğèä;Jalayirid;x
-JAL;Jalayirid;Jalayirid;Jalayirid;Jalayirid;Jalayirid;Jalayirid;Jalayirid;Jalayirid;Jalayirid;Jalayirid;Jalayirid;ÿëàûèğèä;Jalayirid;x
+JAL;Futa Jallon;Futa Jallon;Futa Jallon;Futa Jallon;Futa Jallon;Futa Jallon;Futa Jallon;Futa Jallonová;Futa Jallon;Futa Jallon;Futa Jallon;Ôóòà Æàëëîí;Futa Jallon;x
+JAL_ADJ;Jallon;Jallon;Jallon;Jallon;Jallon;Jallon;Jallon;Jallon;Jallon;Jallon;Jallon;Æàëëîí;Jallon;x
 JAM;Jamaica;Jamaïque;Jamaika;Jamajka;Jamaica;Giamaica;Jamaica;Jamaica;Jamaica;Jamaica;Jamaica;ßìàéêà;Jamaika;x
 JAM_ADJ;Jamaican;jamaïquain;jamaikanisch;Jamajski;jamaicano;giamaicano;jamaicai;jamajskı;jamaicai;Jamaican;jamaicano;ÿìàéñêèé;Jamaikan;x
 JJI_ADJ;Janjiroan;Janjiroan;Janjiroan;Janjiroan;Janjiroan;Janjiroan;Janjiroan;Janjiroan;Janjiroan;Janjiroan;Janjiroan;ÿíéèğîàí;Janjiroan;x
 JJI;Janjiro;Janjiro;Janjiro;Janjiro;Janjiro;Janjiro;Janjiro;Janjiro;Janjiro;Janjiro;Janjiro;ÿíéèğî;Janjiro;x
 JNP_ADJ;Jaunpur;Jaunpur;Jaunpur;Jaunpur;Jaunpur;Jaunpur;Jaunpur;Jaunpur;Jaunpur;Jaunpur;Jaunpur;ÿóíïóğ;Jaunpur;x
 JNP;Jaunpur;Jaunpur;Jaunpur;Jaunpur;Jaunpur;Jaunpur;Jaunpur;Jaunpur;Jaunpur;Jaunpur;Jaunpur;ÿóíïóğ;Jaunpur;x
-JOL_ADJ;Jolof;Jolof;Jolof;Jolof;Jolof;Jolof;Jolof;Jolof;Jolof;Jolof;Jolof;Åëîô;Jolof;x
-JOL;Jolof;Jolof;Jolof;Jolof;Jolof;Jolof;Jolof;Jolof;Jolof;Jolof;Jolof;Åëîô;Jolof;x
 JOR;Jordan;Jordan;Jordanien;Jordania;Jordán;Giordania;Jordánia;Jordán;Jordánia;Jordanië;Jordânia;Èîğäàíèÿ;Jordania;x
 JOR_ADJ;Jordanian;jordanien;Jordanier;Jordañczyk;Jordano;giordano;Jordanian;jordánskı;Jordanian;Jordaanse;Jordaniano;Èîğäàíñêàÿ;jordanialainen;x
 KAC_ADJ;Kachar;Kachar;Kachar;Kachar;Kachar;Kachar;Kachar;Kachar;Kachar;Kachar;Kachar;Êà÷àğ;Kachar;x
@@ -464,12 +515,16 @@ KMK;Kalmykia;Kalmoukie;Kalmückien;Ka³mucja;Kalmykia;Calmucchia;Kalmykia;Kalmykia
 KMK_ADJ;Kalmyk;kalmouk;Kalmück;Kalmyk;Kalmyk;calmucco;Kalmyk;Kalmyk;Kalmyk;Kalmyk;Kalmyk;êàëìûöêèé;kalmukki;x
 KMT_ADJ;Koch;Koch;Koch;Koch;Koch;Koch;Koch;Koch;Koch;Koch;Koch;Êî÷;Koch;x
 KMT;Koch;Koch;Koch;Koch;Koch;Koch;Koch;Koch;Koch;Koch;Koch;Êî÷;Koch;x
+KNG;Kong;Kong;Kong;Kong;Kong;Kong;Kong;Kong;Kong;Kong;Congue;Êîíã;kong;x
+KNG_ADJ;Kong;Kong;Kong;Kong;Kong;Kong;Kong;Kong;Kong;Kong;Congue;Êîíãñêèé;kong;x
 KNI_ADJ;Knights_;Chevaliers;Ritter-;Rycerze;Caballeros;Cavaliere;Knights_;Knights_;Knights_;Knights_;Cavaleiros;Êíèãõòñ_;Knights_;x
 KNI_democracy_ADJ;Saint John's;Saint John's;St. Johannes-;Œwiêtego Jana;Sanjuanés;San Giovanni;Szent János;Saint John je;Szent János;Saint John's;São João;Ñâÿòîé Èîàíí;Saint Johnin;x
 KNI_democracy;Saint John;Saint Jean;St. Johannes;Œwiêty Jan;San Juan;San Giovanni;Saint John;Saint John;Saint John;Saint John;São João;Ñâÿòîé Èîàíí;Saint John;x
 KNI_proletarian_dictatorship_ADJ;Hospitaller;Hôpital;Hospitaliter;Szpitalny;Hospitalario;Ospitaliero;Máltai lelkész;Hospitaller;Máltai lelkész;hospitaler;Hospitalar;Ãîñïèòàëüåğ;Hospitaller;x
 KNI_proletarian_dictatorship;The Hospitaller Proletariate;Le proletariaire hospitalier;Dem Hospitaliter Proletariat;Szpitalny Proletariat;El Proletariado Hospitalario;il Proletariato Ospitaliero;A Kórházi proletariátus;Hospitaller Proletariate;A Kórházi proletariátus;de Hospitaal proletariaat;O Proletariado Hospitalar;Ïğîëåòàğèàò Ãîñïèòàëüåğà;Hospitaller Proletariate;x
-KNI;The Knights;les Chevaliers;die Ritter;Rycerze;los Caballeros;Cavalieri;lovagok;rytíri;lovagok;de Ridders;os cavaleiros;Ğûöàğè;ritarit;x
+KNI;The Knights;les Chevaliers;die Ritter;Rycerze;los Caballeros;i Cavalieri;lovagok;rytíri;lovagok;de Ridders;os cavaleiros;Ğûöàğè;ritarit;x
+KNY;Kenya;Kenya;Kenia;Kenia;Kenia;Kenia;Kenya;Keòa;Kenya;Kenia;Quênia;Êåíèÿ;Kenia;x
+KNY_ADJ;Kenyan;Kenyan;Kenianer;Kenijski;Keniata;keniano;kenyai;keòskı;kenyai;Keniaan;Queniano;êåíèéñêèé;kenialainen;x
 KOJ_ADJ;Jerusalemite;Jérusalemite;Jerusalemiten;Jeruzalemite;Jerusalemite;Gerosolimitano;jeruzsálemi;jeruzalémské;jeruzsálemi;Jeruzalemiet;Jerusalemite;Èåğóñàëèìåö;Jerusalemite;x
 KOJ;Jerusalem;Jérusalem;Jerusalem;Jerozolima;Jerusalén;Gerusalemme;Jeruzsálem;Jeruzalém;Jeruzsálem;Jeruzalem;Jerusalém;Èåğóñàëèì;Jerusalem;x
 KOK_presidential_dictatorship;Kyrgyzstan;Kirghizistan;Kirgisistan;Kirgistan;Kirguistán;Kyrgyzstan;Kirgizisztán;Kyrgyzstán;Kirgizisztán;Kirgizië;Quirguistão;Êèğãèçèÿ;Kirgisia;x
@@ -477,7 +532,9 @@ KOK_presidential_dictatorship_ADJ;Kyrgyz;Kirghize;Kirgisisch;Kirgizja;Kirguiso;K
 KOK_proletarian_dictatorship;SSR Kyrgyzstan;RSS Kirghizistan;SSR Kirgisistan;SSR Kirgistan;SSR Kirguistán;SSR Kirghizistan;SSR Kirgizisztán;SSR Kyrgyzstán;SSR Kirgizisztán;SSR Kirgizië;SSR Quirguizistão;ÑÑĞ Êûğãûçñòàí;SSR Kirgisia;x
 KOK_proletarian_dictatorship_ADJ;Kyrgyz;Kirghize;Kirgisisch;Kirgizja;Kirguiso;Kirghizistan;kirgiz;Kyrgyzské;kirgiz;Kirgizische;Quirguiz;êèğãèçñêèé;Kirgisian;x
 KOL_ADJ;Colognian;Colognien;Kölnisch;Colognian;Colognian;Colono;Colognian;Colognian;Colognian;kölsch;Colognian;Öîëîãíèàí;Colognian;x
-KOL;Cologne;Eau de Cologne;Köln;Kolonia;Colonia;Colonia;kölni;kolínská;kölni;Keulen;Colônia;Îäåêîëîí;Köln;x
+KOL;Cologne;Cologne;Köln;Kolonia;Colonia;Colonia;kölni;kolínská;kölni;Keulen;Colônia;Îäåêîëîí;Köln;x
+KOM;Comoros;Comores;Komoren;Komory;Comoras;Comore;Comore-szigetek;Komory;Comore-szigetek;Comoren;Comores;Êîìîğñêèå;Komorit;x
+KOM_ADJ;Comoran;Comoran;Komoran;Komoran;Comoran;Comoran;Comoran;Comoran;Comoran;Comoren;Comoran;Êîìîñêèé;Komorien;x
 KON_ADJ;Kongolese;Kongolais;Kongolese;Kongolese;Kongolese;Kongolese;Kongolese;Kongolese;Kongolese;Kongolese;Congolês;Êîíãîëåñå;Kongolese;x
 KON;Kongo;Kongo;Kongo;Kongo;Kongo;Kongo;Kongo;Kongo;Kongo;Kongo;Kongo;Êîíãî;Kongo;x
 KRL;Karelia;Carélie;Karelien;Karelia;Karelia;Carelia;Karélia;Karelia;Karélia;Karelia;Carélia;Êàğåëèÿ;Karjala;x
@@ -510,6 +567,8 @@ LBN;Lebanon;Liban;Libanon;Liban;Líbano;Libano;Libanon;Libanon;Libanon;Libanon;Lí
 LBN_ADJ;Lebanese;libanais;libanesisch;libañski;libanés;libanese;libanoni;libanonskı;libanoni;Libanees;libanês;ëèâàíñêèé;libanonilainen;x
 LBX_ADJ;Luban;Luban;Luban;Lubañ;Luban;Luban;Luban;Luban;Luban;Luban;Luban;Ëşáàíü;Luban;x
 LBX;Luba;Luba;Luba;Luba;Luba;Luba;Luba;Luba;Luba;Luba;Luba;Ëóáà;Luba;x
+LBY;Libya;Libye;Libyen;Libia;Libia;Libia;Líbia;Libye;Líbia;Libië;Líbia;Ëèâèÿ;Libya;x
+LBY_ADJ;Libyan;libyen;Libyer;Libijczyk;libio;libico;líbiai;Libyjskı;líbiai;Libisch;líbio;ëèâèéñêèé;libyalainen;x
 LDU_ADJ;Lunduan;Lunduan;Lunduan;Lunduan;Lunduan;Lunduan;Lunduan;Lunduan;Lunduan;Lunduan;Lunduan;Ëóíäóàí;Lunduan;x
 LDU;Lundu;Lundu;Lundu;Lundu;Lundu;Lundu;Lundu;Lundu;Lundu;lundu;Lundu;Ëóíäó;Lundu;x
 LEI_ADJ;Leinster;Leinster;Leinster;Leinster;Leinster;Leinster;Leinster;Leinster;Leinster;Leinster;Leinster;Ëåéíñòåğ;Leinster;x
@@ -565,12 +624,18 @@ MAH;Maharashtra;Maharashtra;Maharashtra;Maharashtra;Maharashtra;Maharashtra;Maha
 MAH_ADJ;Maharashtran;Maharashtran;Maharashtran;Maharashtran;Maharashtran;Maharashtran;Maharashtran;Maháráštran;Maharashtran;Maharashtran;Maharashtran;ìàõàğàøòğàíñêèé;Maharashtran;x
 MAI_ADJ;Mainzian;Mainzian;Mainz;Mainzian;Mainzian;Magonzano;Mainzian;Mainzian;Mainzian;Mainzian;Mainzian;Ìàèíçèàí;Mainzian;x
 MAI;Mainz;Mayence;Mainz;Moguncja;Maguncia;Magonza;Mainz;Mainz;Mainz;Mainz;Mainz;Ìàèíç;Mainz;x
-MAJ_ADJ;Majapahiti;Majapahiti;Majapahiti;Majapahiti;Majapahiti;Majapahiti;Majapahiti;Majapahiti;Majapahiti;Majapahiti;Majapahiti;Ìàÿïàõèòè;Majapahiti;x
-MAJ;Majapahit;Majapahit;Majapahit;Majapahit;Majapahit;Majapahit;Majapahit;Majapahit;Majapahit;Majapahit;Majapahit;Ìàÿïàõèò;Majapahit;x
-MAL_ADJ;Malian;Malien;Malisch;Mali;Mali;Mali;mali;Malian;mali;Malinees;Maliano;Ìàëèàí;Malin;x
-MAL;Mali;Mali;Mali;Mali;Mali;Mali;Mali;Mali;Mali;Mali;Mali;Ìàëè;Mali;x
+MAJ;Majeerteen;Majeerteen;Majeerteen;Majeerteen;Majeerteen;Migiurtina;Majeerteen;Majeerteen;Majeerteen;Majeerteen;Majeerteen;Ìàæåğòåí;majeerteenien;x
+MAJ_ADJ;Majeerteen;Majeerteen;Majeerteen;Majeerteen;Majeerteen;Migiurtino;Majeerteen;Majeerteen;Majeerteen;Majeerteen;Majeerteen;Ìàæåğòåí;majeerteenien;x
 MAR_ADJ;Maharashtran;Maharashtran;Maharashtran;Maharashtran;Maharashtran;Maharashtran;Maharashtran;Maharashtran;Maharashtran;Maharashtran;Maharashtran;Ìàõàğàøòğàí;Maharashtran;x
 MAR;Maharashtra;Maharashtra;Maharashtra;Maharasztra;Maharashtra;Maharashtra;Maharashtra;Maharashtra;Maharashtra;Maharashtra;Maharashtra;Ìàõàğàøòğà;Maharashtra;x
+MAS;Massina;Massina;Massina;Massina;Massina;Massina;Massina;Massina;Massina;Massina;Massina;Ìàçèíà;Massina;x
+MAS_ADJ;Massinan;Massinan;Massinan;Massinan;Massinan;Massinan;Massinan;Massinan;Massinan;Massinan;Massinan;Ìàçèíñêèé;Massinan;x
+MAT;Matabele;Matabele;Matabele;Matabele;Matabele;Matabele;matebele;Matabele;matebele;Matabele;Matabele;Ìàòàáåëå;Matabele;x
+MAT_ADJ;Matabele;Matabele;Matabele;Matabele;Matabele;Matabele;matebele;Matabele;matebele;Matabele;Matabele;Ìàòàáåëå;Matabele;x
+MAU;Mauritius;Maurice;Mauritius;Mauritius;Mauricio;Mauritius;Mauritius;Mauricius;Mauritius;Mauritius;Maurício;Ìàâğèêèé;Mauritius;x
+MAU_ADJ;Mauritian;Mauricien;Mauritius;Mauritian;mauriciano;mauriziano;mauritiusi;Mauritian;mauritiusi;Mauritiaanse;Maurício;ìàâğèòàíñêèé;mauritiuslainen;x
+MAW_ADJ;Malwan;Malouan;Malwan;Malwan;Malwan;Malwan;Malwan;Malwan;Malwan;Malwan;Malwan;Ìàëâàí;Malwan;x
+MAW;Malwa;Malwa;Malwa;Malwa;Malwa;Malwa;Malwa;Malwa;Malwa;Malwa;Malwa;Ìàëüâà;Malwa;x
 MAY_ADJ;Maya;Maya;Maya;Maya;maya;maya;Maya;Maya;Maya;Maya;Maya;Ìàéÿ;maya;x
 MAY;The Maya;Les mayas;Die Maya;Majowie;Los mayas;i Maya;a Maya;Maya;a Maya;de Maya's;Os maias;Ìàéÿ;Maya;x
 MAZ_ADJ;Mazovian;Mazovien;Masowisch;Mazowieckie;Mazoviano;Mazovian;Mazovian;mazovskıch;Mazovian;Mazovian;Mazoviano;Ìàçîâåöêèé;Mazovian;x
@@ -593,6 +658,8 @@ MFY_ADJ;Mahafaly;Mahafaly;Mahafaly;Mahafaly;Mahafaly;Mahafaly;Mahafaly;Mahafaly;
 MFY;Mahafaly;Mahafaly;Mahafaly;Mahafaly;Mahafaly;Mahafaly;Mahafaly;Mahafaly;Mahafaly;Mahafaly;Mahafaly;Ìàõàôàëû;Mahafaly;x
 MHC_ADJ;Mahican;Mahican;Mahican;mohikanie;Mahican;mahican;Mahican;Mahican;Mahican;Mahican;Mahican;Ìàõèêàíû;mahicanit;x
 MHC;Mahican;Mahican;Mahican;mohikanie;Mahican;mahican;Mahican;Mahican;Mahican;Mahican;Mahican;Ìàõèêàíû;mahicanit;xMIA_ADJ;Khawitmau;Khawitmau;Khawitmau;Khawitmau;Khawitmau;Khawitmau;Khawitmau;Khawitmau;Khawitmau;Khawitmau;Khawitmau;Êõàâèòìàó;Khawitmau;x
+MGH;Maghreb;le Maghreb;Maghreb;Maghreb;Magreb;Maghreb;Maghreb;Maghreb;Maghreb;Maghreb;Magrebe;Ìàãğèá;Maghreb;x
+MGH_ADJ;Maghrebi;Maghrébi;Maghrebi;Maghrebi;Maghrebi;maghrebina;maghrebi;Maghrebi;maghrebi;Maghrebi;Magrebino;Ìàãğèáà;Maghrebi;x
 MIA_anarcho_liberal;Garfield Faction;Faction de Garfield;Garfields Fraktion;Frakcja Garfielda;Facción de Garfield;La fazione di Garfield;Garfield frakciója;Garfieldova frakce;Garfield frakciója;Garfield's Faction;Facção de Garfield;Ôğàêöèÿ Ãàğôèëäà;Garfieldin fraktio;x
 MIA_communist;Hound Faction;Faction du Chien;Fraktion des Hundes;Frakcja psa;Facción del perro;Fazione del cane;A kutya frakciója;Frakce psa;A kutya frakciója;Faction of the Dog;Faction of the Dog;Ñîáà÷üÿ Ôğàêöèÿ;Koiran fraktio;x
 MIA_conservative;Tom Faction;Faction de Thomas;Fraktion von Thomas;Frakcja Thomasa;Facción de Thomas;Fazione di Thomas;Thomas frakciója;Fráze Thomase;Thomas frakciója;Faction van Thomas;Faction of Thomas;Òîì Ôğàêöèÿ;Thomasin fraktio;x
@@ -605,22 +672,28 @@ MIK_ADJ;Mikmaq;Mikmaq;Mikmaq;Mikmaq;Mikmaq;Mikmaq;Mikmaq;Mikmaq;Mikmaq;mikmaq;Mi
 MIK;Mikmaq;Mikmaq;Mikmaq;Mikmaq;Mikmaq;Mikmaq;Mikmaq;Mikmaq;Mikmaq;mikmaq;Mikmaq;Ìèêìàê;Mikmaq;x
 MIR_ADJ;Imerina;Imerina;Imerina;Imerina;Imerina;Imerina;Imerina;Imerina;Imerina;Imerina;Imerina;Èìåğèíà;Imerina;x
 MIR;Merina;Merina;Merina;Merina;Merina;Merina;Merina;Merina;Merina;Merina;Merina;Ìåğèíà;Merina;x
+MJP_ADJ;Majapahiti;Majapahiti;Majapahiti;Majapahiti;Majapahiti;Majapahiti;Majapahiti;Majapahiti;Majapahiti;Majapahiti;Majapahiti;Ìàÿïàõèòè;Majapahiti;x
+MJP;Majapahit;Majapahit;Majapahit;Majapahit;Majapahit;Majapahit;Majapahit;Majapahit;Majapahit;Majapahit;Majapahit;Ìàÿïàõèò;Majapahit;x
 MKS_ADJ;Makassari;Makassari;Makassari;Makassari;Makassari;Makassari;Makassari;Makassari;Makassari;Makassari;Makassari;Ìàêàññàğè;Makassari;x
 MKS;Makassar;Makassar;Makassar;Makassar;Makassar;Makassar;Makassar;Makassar;Makassar;Makassar;Makassar;Ìàêàññàğ;Makassar;x
 MKU_ADJ;Makuan;Makuan;Makuan;Makuan;Makuan;Makuan;Makuan;Makuan;Makuan;Makuan;Makuan;Ìàêóàí;Makuan;x
 MKU;Makua;Makua;Makua;Makua;Makua;Makua;Makua;Makua;Makua;Makua;Makua;Ìàêóà;Makua;x
+ML1_ADJ;Malindi;Malindi;Malindi;Malindi;Malindi;Malindi;Malindi;Malindi;Malindi;Malindi;Malindi;Ìàëèíäè;Malindi;x
+ML1;Malindi;Malindi;Malindi;Malindi;Malindi;Malindi;Malindi;Malindi;Malindi;Malindi;Malindi;Ìàëèíäè;Malindi;x
 MLB_ADJ;Manipuri;Manipuri;Manipuri;Manipuri;Manipuri;Manipuri;Manipuri;Manipuri;Manipuri;Manipuri;Manipuri;Ìàíèïóğè;Manipuri;x
 MLB;Manipur;Manipur;Manipur;Manipur;Manipur;Manipur;Manipur;Manipur;Manipur;Manipur;Manipur;Ìàíèïóğ;Manipur;x
 MLC_ADJ;Malaccan;Malaccan;Malaccan;Malaccan;Malacano;Malaccan;Malaccan;Malaccan;Malaccan;Malakka;Malaccan;Ìàëàêêñêèé;Malaccan;x
 MLC;Malacca;Malacca;Malacca;Malakka;Malaca;Malacca;Malacca;Malacca;Malacca;Malakka;Malaca;Ìàëàêêà;Malacca;x
 MLD_ADJ;Maldivian;Maldivien;Maledivisch;Malediwach;Maldivo;Maldive;maldív;maledivské;maldív;Maldivische;Maldivo;Ìàëüäèâñêèé;Malediivien;x
 MLD;Maldives;Maldives;Malediven;Malediwy;Maldivas;Maldive;Maldív-szigetek;Maledivy;Maldív-szigetek;Maldiven;Maldivas;Ìàëüäèâû;Malediivit;x
-MLI_ADJ;Malindi;Malindi;Malindi;Malindi;Malindi;Malindi;Malindi;Malindi;Malindi;Malindi;Malindi;Ìàëèíäè;Malindi;x
-MLI;Malindi;Malindi;Malindi;Malindi;Malindi;Malindi;Malindi;Malindi;Malindi;Malindi;Malindi;Ìàëèíäè;Malindi;x
+MLI_ADJ;Malian;Malien;Malisch;Mali;Mali;Mali;mali;Malian;mali;Malinees;Maliano;Ìàëèàí;Malin;x
+MLI;Mali;Mali;Mali;Mali;Mali;Mali;Mali;Mali;Mali;Mali;Mali;Ìàëè;Mali;x
 MLT_ADJ;Maltese;Maltais;Maltesisch;Maltañski;Maltés;Maltese;Máltai;Maltština;Máltai;Maltees;Maltês;Ìàëüòèéñêèé;Maltalainen;x
 MLT;Malta;Malte;Malta;Malta;Malta;Malta;Málta;Malta;Málta;Malta;Malta;Ìàëüòà;Malta;x
-MLW_ADJ;Malwan;Malouan;Malwan;Malwan;Malwan;Malwan;Malwan;Malwan;Malwan;Malwan;Malwan;Ìàëâàí;Malwan;x
-MLW;Malwa;Malwa;Malwa;Malwa;Malwa;Malwa;Malwa;Malwa;Malwa;Malwa;Malwa;Ìàëüâà;Malwa;x
+MLW_ADJ;Maravi;Maravi;Maravi;Maravi;Maravi;Maravi;Maravi;Maravi;Maravi;Maravi;Maravi;Ìàğàâè;Maravi;x
+MLW;Maravi;Maravi;Maravi;Maravi;Maravi;Maravi;Maravi;Maravi;Maravi;Maravi;Maravi;Ìàğàâè;Maravi;x
+MLY_ADJ;Malayan;Malais;Malaiisch;malajski;malayo;malese;Malayan;malajskı;Malayan;Malayan;Malaio;Ìàëàéñêèé;malaijilainen;x
+MLY;Malaya;Malaisie;Malaya;Malaya;Malaya;Malaya;Malájföld;Malajsko;Malájföld;Malaya;Malásia;Ìàëàéÿ;Malaya;x
 MMI_ADJ;Miami;Miami;Miami;Miami;Miami;Miami;Miami;Miami;Miami;Miami;Miami;Ìàÿìè;Miami;x
 MMI;Miami;Miami;Miami;Miami;Miami;Miami;Miami;Miami;Miami;Miami;Miami;Ìàÿìè;Miami;x
 MNG_ADJ;Ming;Ming;Ming;Ming;Ming;Ming;Ming;ming;Ming;Ming;Ming;Ìèíã;Ming;x
@@ -635,18 +708,16 @@ MNS_ADJ;Munster;Munster;Munster;Munster;Munster;Munster;Munster;Munster;Munster;
 MNS;Munster;Munster;Munster;Munster;Munster;Munster;Munster;Munster;Munster;Munster;Munster;Ìóíñòåğ;Munster;x
 MOE_ADJ;Morean;Morean;Morean;Morean;Morean;Moreano;Morean;Morean;Morean;Morean;Morean;Ìîğåàí;Morean;x
 MOE;Morea;Morea;Morea;Morea;Morea;Morea;Morea;Morea;Morea;Morea;Morea;Áîëåå;Morea;x
-MOS_ADJ;Moscovian;Moscovien;Moskauer;Moscovian;Moscoviano;Moscoviano;Moscovian;Moscovian;Moscovian;Moskouse;Moscoviano;Ìîñêîâñêèé;Moscovian;x
-MOS;Muscowy;Muscowy;Muscowy;Muscowy;Muscowy;Moscovia;Muscowy;Muscowy;Muscowy;Muscowy;Musculoso;Ìóñöîâû;Muscowy;x
+MOS;Upper Volta;Haute-Volta;Obervolta;Górna Wolta;Alto Volta;Alto Volta;Felsõ Volta;Horní Volta;Felsõ Volta;Upper Volta;Volta superior;Âåğõíÿÿ Âîëüòà;Upper Volta;x
+MOS_absolute_monarchy;Mossi Kingdom;Royaume Mossi;Mossi Königreich;Królestwo Mossi;Reino de Mossi;Regno Mossi;Mossi Királyság;Mossi království;Mossi Királyság;Mossi Kingdom;Mossi Kingdom;Ìîññè Êîğîëåâñòâî;Mossi Kingdom;x
+MOS_absolute_monarchy_ADJ;Mossi;Mossi;Mossi;Mossi;Mossi;Mossi;Mossi;Mossi;Mossi;Mossi;Mossi;Ìîññè;Mossi;x
+MOS_ADJ;Burkinabé;Burkinabé;Burkinabé;Burkinabé;Burkinabé;burkinabé;Burkinabé;Burkinabé;Burkinabé;Burkinabé;Burquinabé;Áóğêèíàáå;Burkinabé;x
 MOZ_ADJ;Mozambican;Mozambicain;Mosambik;Mozambik;mozambiqueño;Mozambichese;mozambiki;Mozambik;mozambiki;Mozambikaanse;Moçambicano;Ìîçàìáèêñêèé;Mosambikin;x
 MOZ;Mozambique;Mozambique;Mosambik;Mozambik;Mozambique;Mozambico;Mozambik;Mozambik;Mozambik;Mozambique;Moçambique;Ìîçàìáèê;Mosambik;x
-MRA_ADJ;Maravi;Maravi;Maravi;Maravi;Maravi;Maravi;Maravi;Maravi;Maravi;Maravi;Maravi;Ìàğàâè;Maravi;x
-MRA;Maravi;Maravi;Maravi;Maravi;Maravi;Maravi;Maravi;Maravi;Maravi;Maravi;Maravi;Ìàğàâè;Maravi;x
 MRI_ADJ;Madurai;Madurai;Madurai;Madurai;Madurai;Madurai;Madurai;Madurai;Madurai;Madurai;Madurai;Ìàäóğàÿ;Madurai;x
 MRI;Madurai;Madurai;Madurai;Madurai;Madurai;Madurai;Madurai;Madurai;Madurai;Madurai;Madurai;Ìàäóğàÿ;Madurai;x
 MRU;the Maritime Union;l'Union Maritime;die Maritime Union;Unia Morska;La Unión Marítima;l'Unione Marittima;A Tengerészeti Unió;Námoøní unie;A Tengerészeti Unió;De maritieme unie;A união marítima;Ìîğñêîé Ñîşç;Meriliitto;x
 MRU_ADJ;Maritime;Maritime;Maritime;Morski;Marítimo;Marittimo;Tengeri;Námoøní;Tengeri;maritiem;Marítimo;ìîğñêîé;meri-;x
-MSA_ADJ;Malayan;Malais;Malaiisch;malajski;malayo;malese;Malayan;malajskı;Malayan;Malayan;Malaio;Ìàëàéñêèé;malaijilainen;x
-MSA;Malaya;Malaisie;Malaya;Malaya;Malaya;Malaya;Malájföld;Malajsko;Malájföld;Malaya;Malásia;Ìàëàéÿ;Malaya;x
 MTA_ADJ;Mantuan;Mantoue;Mantuan;Mantuan;Mantuan;Mantovano;mantovai;Mantuan;mantovai;Mantuan;Mantuan;Ìàíòóàí;Mantuan;x
 MTA;Mantua;Mantoue;Mantua;Mantua;Mantua;Mantova;Mantova;Mantova;Mantova;Mantua;Mantua;Ìàòàğà;Mantovan;x
 MTR_ADJ;Mataram;Mataram;Mataram;Mataram;Mataram;Mataram;Mataram;Mataram;Mataram;Mataram;Mataram;Ìàòàğàì;Mataram;x
@@ -657,12 +728,12 @@ MUN_ADJ;Munster;Munster;Munster;Munster;Munster;Munster;Munster;Munster;Munster;
 MUN;Münster;Münster;Münster;Münster;Münster;Münster;Münster;Münster;Münster;Münster;Münster;Ìşíñòåğ;Münster;x
 MUR_ADJ;Muromian;Muromian;Muromian;Muromian;Muromian;Muromian;Muromian;Muromian;Muromian;Muromian;Muromian;Ìóğîìèàí;Muromian;x
 MUR;Murom;Murom;Murom;Murom;Murom;Murom;Murom;Murom;Murom;Murom;Murom;Ìóğîì;Murom;x
+MUS_ADJ;Moscovian;Moscovien;Moskauer;Moscovian;Moscoviano;Moscoviano;Moscovian;Moscovian;Moscovian;Moskouse;Moscoviano;Ìîñêîâñêèé;Moscovian;x
+MUS;Muscowy;Muscowy;Muscowy;Muscowy;Muscowy;Moscovia;Muscowy;Muscowy;Muscowy;Muscowy;Musculoso;Ìóñöîâû;Muscowy;x
 MWT_ADJ;Mewat;Mewat;Mewat;Mewat;Mewat;Mewat;Mewat;Mewat;Mewat;Mewat;Mewat;Ìåâàò;Mewat;x
 MWT;Mewat;Mewat;Mewat;Mewat;Mewat;Mewat;Mewat;Mewat;Mewat;Mewat;Mewat;Ìåâàò;Mewat;x
 NAH_ADJ;Navajo;Navajo;Navajo;Navajo;Navajo;Navajo;Navajo;Navajo;Navajo;Navajo;Navajo;Íàâàõî;Navajo;x
 NAH;Navajo;Navajo;Navajo;Navajo;Navajo;Navajo;Navajo;Navajo;Navajo;Navajo;Navajo;Íàâàõî;Navajo;x
-NAM_ADJ;Namibian;Namibien;Namibier;Namibijski;namibio;Namib;Namíbiai;Namibie;Namíbiai;Namibisch;Namíbia;Íàìèáèåö;Namibian;x
-NAM;Namibia;Namibie;Namibia;Namibia;Namibia;Namibia;Namíbia;Namibie;Namíbia;Namibië;Namíbia;Íàìèáèÿ;namibia;x
 NAP_ADJ;Neapolitan;Napolitain;Neapolitanisch;neapolitañski;napolitano;napoletano;nápolyi;neapolská;nápolyi;Napolitaans;napolitano;Íåàïîëèòàíñêèé;napolilainen;x
 NAP;Naples;Naples;Neapel;Neapol;Nápoles;Napoli;Nápoly;Neapol;Nápoly;Napels;Nápoles;Íåàïîëü;Napoli;x
 NAV_ADJ;Navarrese;Navarrais;Navarrese;Nawarry;navarro;Navarrese;navarraiak;Navarrese;navarraiak;Navarrese;Navarro;Íàâàğğñêèé;Navarrese;x
@@ -673,6 +744,8 @@ NEV_ADJ;Nivernais;Nivernais;Nivernais;Nivernais;Nivernais;Nivernese;Nivernais;Ni
 NEV;Nevers;Nevers;Nevers;Nevers;Nevers;Nevers;Nevers;Nevers;Nevers;Nevers;Nunca;Íåâåğ;Nevers;x
 NGR_ADJ;Nigerian;Nigérian;Nigerianisch;Nigeryjczyk;nigeriano;Nigeriano;nigériai;Nigerijskı;nigériai;Nigeriaanse;nigeriano;Íèãåğèéñêèé;Nigerian;x
 NGR;Nigeria;Nigeria;Nigeria;Nigeria;Nigeria;Nigeria;Nigéria;Nigérie;Nigéria;Nigeria;Nigéria;Íèãåğèÿ;Nigeria;x
+NIG;Niger;Niger;Niger;Niger;Níger;Niger;Niger;Niger;Niger;Niger;Níger;Íèãåğ;Niger;x
+NIG_ADJ;Nigerien;Nigérien;Nigerien;Nigerien;Nigerien;Nigerien;Nigerien;Nigerien;Nigerien;Nigerese;Nigeriano;Íèãåğà;Nigerien;x
 NIZ_ADJ;Deva Bengali;Deva Bengali;Deva Bengali;Deva bengalski;Deva Bengali;Deva Bengalese;Deva bengáli;Deva bengálská;Deva bengáli;Deva Bengali;Deva Bengali;Äåâà Áåíãàëè;Deva Bengali;x
 NIZ;Deva Bengal;Deva Bengal;Deva Bengal;Deva Bengal;Deva Bengal;Deva Bengala;Deva bengáli;Deva Bengal;Deva bengáli;Deva Bengal;Deva Bengal;Äåâà-Áåíãàë;Deva Bengal;x
 NKO_ADJ;Nkore;Nkore;Nkore;Nkore;Nkore;Nkore;Nkore;Nkore;Nkore;Nkore;Nkore;Íêîğå;Nkore;x
@@ -683,6 +756,8 @@ NOL_ADJ;Northumbrian;Northumbrian;Northumbrian;Northumbrian;Northumbrian;Nortumb
 NOL;Northumberland;Northumberland;Northumberland;Northumberland;Northumberland;Nortumbria;Northumberland;Northumberland;Northumberland;Northumberland;Northumberland;Íîğòóìáåğëåíä;Northumberland;x
 NOV_ADJ;Novgorodian;Novgorodian;Novgorodian;Novgorodian;Novgorodian;Novgorodiano;novgorodi;Novgorodskımi;novgorodi;Novgorodian;Novgorodian;Íîâãîğîäñêîå;Novgorodin;x
 NOV;Novgorod;Novgorod;Nowgorod;Nowogród;Novgorod;Novgorod;Novgorod;Novgorod;Novgorod;Novgorod;Novgorod;Íîâãîğîä;Novgorod;x
+NMB_ADJ;Namibian;Namibien;Namibier;Namibijski;namibio;Namib;Namíbiai;Namibie;Namíbiai;Namibisch;Namíbia;Íàìèáèåö;Namibian;x
+NMB;Namibia;Namibie;Namibia;Namibia;Namibia;Namibia;Namíbia;Namibie;Namíbia;Namibië;Namíbia;Íàìèáèÿ;namibia;x
 NRM_ADJ;Norman;normand;normannisch;Norman;normando;normanno;normann;Norman;normann;Normandisch;normando;Íîğìàí;Norman;x
 NRM;Normandy;la Normandie;Normandie;Normandia;Normandía;Normandia;Normandia;Normandy;Normandia;Normandië;Normandia;Íîğìàíäèÿ;Normandia;x
 NUB_ADJ;Funj;Funj;Funj;Funj;Funj;Fung;Funj;Funj;Funj;Funj;Funj;Ôóíé;Funj;x
@@ -829,14 +904,24 @@ RYU_fascist;Three Mountains Party;Fête des Trois Montagnes;Drei Berge Partei;Trz
 RYU;Ryukyu;Ryukyu;Ryukyu;Riukiu;Ryukyu;Ryukyu;Ryukyu;Rjúkjú;Ryukyu;Ryukyu;Ryukyu;Ğşêş;Ryukyu;x
 RZW_ADJ;Butuan;Butuan;Butuan;Butuan;Butuan;Butuan;Butuan;Butuan;Butuan;Butuan;Butuan;Áóòóàí;Butuan;x
 RZW;Butua;Butua;Butua;Butua;Butua;Butua;Butua;Butua;Butua;Butua;Butua;Áóòóà;Butua;x
+SAO;São Tomé and Príncipe;São Tomé et Príncipe;São Tomé und Príncipe;Wyspy Œwiêtego Tomasza i Ksi¹¿êca;Santo Tomé y Príncipe;São Tomé e Principe;Sao Tomé és Príncipe;Svatı Tomáš a Princùv ostrov;Sao Tomé és Príncipe;São Tomé en Principe;São Tomé e Príncipe;Ñàí-Òîìå è Ïğèíñèïè;Sao Tome ja Principe;x
+SAO_ADJ;São Toméan;São Toméan;São Toméan;Œwiêtego Tomasza;Santo Tomé;São Tomé;Sao Toméan;Svatı Tomáš;Sao Toméan;São Toméan;São Tomé;Ñàí-Òîìåàí;São Toméan;x
 SBA_ADJ;Shiba;Shiba;Shiba;Shiba;Shiba;Shiba;Shiba;Shiba;Shiba;Shiba;Shiba;Ñèáà;Shiba;x
 SBA;Shiba;Shiba;Shiba;Shiba;Shiba;Shiba;Shiba;Shiba;Shiba;Shiba;Shiba;Ñèáà;Shiba;x
-SGU_ADJ;Segu;Segu;Segu;Segu;Segu;Segu;Segu;Segu;Segu;Segu;Segu;Ñåãó;segu;x
-SGU;Segu;Segu;Segu;Segu;Segu;Segu;Segu;Segu;Segu;Segu;Segu;Ñåãó;segu;x
+SEG_ADJ;Segu;Segu;Segu;Segu;Segu;Segu;Segu;Segu;Segu;Segu;Segu;Ñåãó;segu;x
+SEG;Segu;Segu;Segu;Segu;Segu;Segu;Segu;Segu;Segu;Segu;Segu;Ñåãó;segu;x
+SEY;Seychelles;les Seychelles;Seychellen;Seszele;Seychelles;Seychelles;Seychelles;Seychely;Seychelles;Seychellen;Seychelles;Ñåéøåëüñêèå;Seychellit;x
+SEY_ADJ;Seychellois;Seychellois;Seychellois;Seszellois;Seychelles;Seychelles;Seychellois;Seychellois;Seychellois;Seychellen;Seichelense;Ñåéøåëüñêèé;Seychellien;x
+SGH_ADJ;Songhai;Songhai;Songhai;Songhai;Songhai;Songhai;szongai;Songhai;szongai;Songhai;Songhai;Ñîíãõàè;Songhai;x
+SGH;Songhai;Songhai;Songhai;Songhai;Songhai;Songhai;szongai;Songhai;szongai;Songhai;Songhai;Ñîíãõàè;Songhai;x
 SHA_ADJ;Shawnee;Shawnee;Shawnee;Shawnee;Shawnee;Shawnee;Shawnee;Shawnee;Shawnee;Shawnee;Shawnee;Øîíè;Shawnee;x
 SHA;Shawnee;Shawnee;Shawnee;Shawnee;Shawnee;Shawnee;Shawnee;Shawnee;Shawnee;Shawnee;Shawnee;Øîíè;Shawnee;x
-SHO_ADJ;Shoshone;Shoshone;Shoshone;Shoshone;Shoshone;Shoshone;Shoshone;Shoshone;Shoshone;Shoshone;Shoshone;Øîøîíå;Shoshone;x
-SHO;Shoshone;Shoshone;Shoshone;Shoshone;Shoshone;Shoshone;Shoshone;Shoshone;Shoshone;Shoshone;Shoshone;Øîøîíå;Shoshone;x
+SHO;Shona;Shona;Shona;Shona;Shona;Shona;Shona;Shona;Shona;Shona;Shona;Øîíà;Shona;x
+SHO_ADJ;Shonan;Shonan;Shonan;Shonan;Shonan;Shonan;Shonan;Shonan;Shonan;Shonan;Shonan;Øîíàí;Shonan;x
+SHS_ADJ;Shoshone;Shoshone;Shoshone;Shoshone;Shoshone;Shoshone;Shoshone;Shoshone;Shoshone;Shoshone;Shoshone;Øîøîíå;Shoshone;x
+SHS;Shoshone;Shoshone;Shoshone;Shoshone;Shoshone;Shoshone;Shoshone;Shoshone;Shoshone;Shoshone;Shoshone;Øîøîíå;Shoshone;x
+SHW;Shewa;Shewa;Shewa;Shewa;Shewa;Shewa;Shewa;Shewa;Shewa;Shewa;Shewa;Øåâà;Shewa;x
+SHW_ADJ;Shewa;Shewa;Shewa;Shewa;Shewa;Shewa;Shewa;Shewa;Shewa;Shewa;Shewa;Øåâñêèé;Shewa;x
 SIB;Siberia;Sibérie;Sibirien;Syberia;Siberia;Siberia;Szibéria;Sibiø;Szibéria;Siberië;Sibéria;Ñèáèğü;Siperia;x
 SIB_ADJ;Siberian;sibérien;sibirisch;syberyjski;siberiano;siberiano;szibériai;sibiøskı;szibériai;siberisch;Siberiano;ñèáèğñêèé;siperialainen;x
 SIH_ADJ;Sibirian;Sibérien;Sibirian;Sibirian;Sibirán;Sibirian;Sibirian;Sibirskı;Sibirian;Sibirian;Sibirian;Ñèáèğñêèå;Sibirian;x
@@ -863,8 +948,8 @@ SMZ_ADJ;Shimazu;Shimazu;Shimazu;Shimazu;Shimazu;Shimazu;Shimazu;Šimazu;Shimazu;S
 SMZ;Shimazu;Shimazu;Shimazu;Shimazu;Shimazu;Shimazu;Shimazu;Šimazu;Shimazu;Shimazu;Shimazu;Ñèìàäçó;Shimazu;x
 SNA_ADJ;Sienese;Siennois;Sienese;Sienie;Sienese;senese;sienai;Sienese;sienai;Siena;Sienese;Ñèåíåñå;Sienese;x
 SNA;Siena;Sienne;Siena;Siena;Siena;Siena;Siena;Siena;Siena;Siena;Siena;Ñèåíà;Siena;x
-SNG_ADJ;Songhai;Songhai;Songhai;Songhai;Songhai;Songhai;szongai;Songhai;szongai;Songhai;Songhai;Ñîíãõàè;Songhai;x
-SNG;Songhai;Songhai;Songhai;Songhai;Songhai;Songhai;szongai;Songhai;szongai;Songhai;Songhai;Ñîíãõàè;Songhai;x
+SNG;Senegal;Sénégal;Senegal;Senegal;Senegal;Senegal;Szenegál;Senegal;Szenegál;Senegal;Senegal;Ñåíåãàë;Senegal;x
+SNG_ADJ;Senegalese;Sénégalais;senegalesisch;Senegalu;Senegalés;senegalese;szenegáli;Senegalskı;szenegáli;Senegalees;Senegalês;ñåíåãàëüñêèé;Senegalin;x
 SOF_ADJ;Sofalan;Sofalan;Sofalan;Sofalan;Sofalan;Sofalano;Sofalan;Sofalan;Sofalan;Sofalan;Sofalan;Ñîôàëàí;Sofalan;x
 SOF;Sofala;Sofala;Sofala;Sofala;Sofala;Sofala;Sofala;Sofala;Sofala;Sofala;Sofala;Ñîôàëà;Sofala;x
 SOM_ADJ;Somalian;Somalien;Somalisch;Somalian;somalí;Somalo;szomáliai;Somálskı;szomáliai;Somalisch;Somaliano;Ñîìàëèéñêèé;Somalian;x
@@ -882,8 +967,12 @@ SRI;Ceylon;Ceylon;Ceylon;Cejlon;Ceilán;Ceylon;Ceylon;Cejlon;Ceylon;Ceylon;Ceilão
 SRU;Saruhan;Saruhan;Saruhan;Saruhan;Saruhan;Saruhan;Saruhan;Saruhan;Saruhan;Saruhan;Saruhan;Ñàğóõàí;Saruhan;x
 SST_ADJ;Shan;Shan;Shan;Shan;Shan;Shan;Shan;Shan;Shan;Shan;Shan;Øàí;Shan;x
 SST;The Shan States;Les états Shan;Die Shan-Staaten;Shan Zjednoczone;Los estados Shan;Shan;A Shan Államokban;Šanská státy;A Shan Államokban;de Shan staten;Os estados Shan;Ñòğàíû Øàíÿ;Shan valtiot;x
+SSU;South Sudan;Soudan du sud;Südsudan;Po³udniowy Sudan;Sudán del Sur;Sudan del Sud;Dél Szudán;jiní Súdán;Dél Szudán;Zuid Soedan;Sudão do Sul;Şæíûé Ñóäàí;Eteläsudan;x
+SSU_ADJ;South Sudanese;Soudan du Sud;Südsudanese;Sudañczycy Po³udniowi;Sudán del sur;Sudanese meridionale;Dél-Szudán;Jiní Súdánština;Dél-Szudán;Zuid-Soedanees;Sudanês do sul;Şæíûé Ñóäàí;Etelä-Sudanissa;x
 STY_ADJ;Styrian;Styrie;Steirisch;Styrii;Estonio;Stiria;stájer;Štırská;stájer;Styrian;Estíria;Øòèğèè;Styrian;x
 STY;Styria;Styrie;Steiermark;Styria;Estiria;Stiria;Stájerország;Štırsko;Stájerország;Stiermarken;Estíria;Øòèğèÿ;Steiermark;x
+SUA;Swaziland;Swaziland;Swasiland;Suazi;Swazilandia;Swaziland;Szváziföld;Svazijsko;Szváziföld;Swaziland;Suazilândia;Ñâàçèëåíä;Swazimaa;x
+SUA_ADJ;Swazi;Swazi;Swazi;Swazi;Swazi;Swazi;szvázik;Swazi;szvázik;Swazi;Suazi;ñâàçè;Swazimaan;x
 SUD_ADJ;Sudanese;Soudanais;Sudanesen;Sudañczycy;sudanés;Sudanese;szudáni;súdánskı;szudáni;Soedanees;sudanês;Ñóäàíñêèé;Sudanin;x
 SUD;Sudan;Soudan;Sudan;Sudan;Sudán;Sudan;Szudán;Súdánu;Szudán;Soedan;Sudão;Ñóäàí;Sudan;x
 SUE_ADJ;Suebi;Suève;Sueben;Suebi;Suebi;Suebi;szvébek;Suebi;szvébek;Suebi;Suebi;Ñâåâèé;Sveba;x
@@ -933,6 +1022,8 @@ TEU_proletarian_dictatorship;The Teutonic Proletariate;Le prolétariat teutonique
 TEU;The Teutonic Order;L'Ordre Teutonique;Dem Deutschen Orden;Krzy¿acy;La Orden Teutónica;l'Ordine Teutonico;A Német Lovagrend;germánská objednávka;A Német Lovagrend;de Duitse Orde;A Ordem Teutônica;Òåâòîíñêèé Îğäåí;Saksalaisen ritarikunnan;x
 THU_ADJ;Thuringian;Thuringe;Thüringer;Turyñski;Turingia;Turingio;Türingiai;Durynskı;Türingiai;Thüringer;Turíngia;Òşğèíãèè;Thüringenin;x
 THU;Thuringia;Thuringe;Thüringen;Turyngia;Turingia;Turingia;Türingia;Durynsko;Türingia;Thüringen;Turíngia;Òşğèíãèÿ;Thüringen;x
+TIG;Tigray;Tigré;Tigray;Tigray;Tigray;Tigray;Tigray;Tigray;Tigray;Tigray;Tigray;Òèãğå;Tigray;x
+TIG_ADJ;Tigray;Tigré;Tigray;Tigray;Tigray;Tigray;Tigray;Tigray;Tigray;Tigray;Tigray;Òèãğå;Tigray;x
 TIM_ADJ;Timurid;Timurid;Timurid;Timurid;Timurid;Timuride;Timurid;Timurid;Timurid;Timurid;Timurid;Òèìóğèäîâ;Timurid;x
 TIM;Timurid;Timurid;Timurid;Timurid;Timurid;Timuridi;Timurid;Timurid;Timurid;Timurid;Timurid;Òèìóğèäîâ;Timurid;x
 TIR_ADJ;Tyrolean;Tyrolien;Tiroler;tyrolska;Tirolesa;tirolese;tiroli;tyrolské;tiroli;Tiroler;Tirolesa;Òèğîëüñêèé;Tirolin;x
@@ -949,10 +1040,12 @@ TNT;Tannu Tuva;Tannu Tuva;Tannu Tuwa;Tannu Tuva;Tannu Tuva;Tannu Tuva;Tannu Tuva
 TNT_ADJ;Tuvan;tuvan;Tuwan;Tuvan;Tuvan;tuvano;Tuvan;Tuvan;Tuvan;Tuvan;Tuvano;òóâèíñêèé;Tuvan;x
 TNZ_ADJ;Tanzanian;Tanzanien;Tansanier;Tanzanian;Tanzano;Tanzano;tanzániai;Tanzanskı;tanzániai;Tanzaniaans;Tanzanian;Òàíçàíèéñêèé;tansanialainen;x
 TNZ;Tanganyika;Tanganyika;Tanganjika;Tanganyika;Tanganyika;Tanganica;Tanganyika;Tanganyika;Tanganyika;Tanganyika;Tanganyika;Òàíãàíüèêà;Tanganjika;x
+TOG;Togo;Togo;Togo;Togo;Togo;Togo;Togo;Togo;Togo;Togo;Togo;Òîãî;Togo;x
+TOG_ADJ;Togo;Togolès;Togo;Togo;Togolés;Togo;togói;Togolese;togói;Togolese;Togolês;Òîãñêèé;Togon;x
 TOK_ADJ;Tonkin;Tonkin;Tonkin;Tonkin;Tonkin;Tonchinese;Tonkin;Tonkin;Tonkin;Tonkin;Tonkin;Êğåïêèé Áàìáóê;Tonkin;x
 TOK;Tonkin;Tonkin;Tonkin;Tonkin;Tonkin;Tonchino;Tonkin;Tonkin;Tonkin;Tonkin;Tonkin;Êğåïêèé Áàìáóê;Tonkin;x
-TOU_ADJ;Toulousian;Toulousien;Toulousian;Toulousian;Toulousian;Tolosiano;Toulousian;Toulousian;Toulousian;Toulousian;Toulousian;Òîóëîóñèàí;Toulousian;x
-TOU;Toulouse;Toulouse;Toulouse;Tuluza;Toulouse;Tolosa;Toulouse;Toulouse;Toulouse;Toulouse;Toulouse;Òîóëîóñå;Toulouse;x
+TOO;Futa Toro;Futa Toro;Futa Toro;Futa Toro;Futa Toro;Futa Toro;Futa Toro;Futa Toro;Futa Toro;Futa Toro;Futa Toro;Ôóòà Òîğî;Futa Toro;x
+TOO_ADJ;Tooro;Tooro;Tooro;Tooro;Tooro;Tooro;Tooro;Tooro;Tooro;Tooro;Tooro;Òîîğî;Tooro;x
 TRL_ADJ;Trapalandian;Trapalandien;Trapalandian;Trapalandian;Trapalandian;Trapalandiano;Trapalandian;Trapalandian;Trapalandian;Trapalandian;Trapalandian;Òğàïàëàíäèàí;Trapalandian;x
 TRL_communist;Equus Party;Parti d'Equus;Equus Partei;Equus Party;Partido equus;Partito dell’Equus;Equus fél;Equus Party;Equus fél;Equus Party;Partido Equus;Åêâóóñ Ïàğòû;Equus Party;x
 TRL_fascist;Gliterhoof's Army;L'armée de Gliterhoof;Glenterhoofs Armee;Armia Gliterhoof za;Ejército de Gliterhoof;Esercito di Gliterhoof;Gliterhoof hadsereg;Gliterhoof armáda;Gliterhoof hadsereg;Gliterhoof's Army;Exército de Gliterhoof;Àğìèÿ Ãëèöåğîôà;Gliterhoof armeija;x
@@ -962,10 +1055,16 @@ TRN_ADJ;Ternate;Ternate;Ternate;Ternate;Ternate;Ternate;Ternate;Ternate;Ternate;
 TRN;Ternate;Ternate;Ternate;Ternate;Ternate;Ternate;Ternate;Ternate;Ternate;Ternate;Ternate;Òåğíàòå;Ternate;x
 TRS;Tarasco;Tarasco;Tarasco;Tarasco;Tarasco;Tarasco;Tarasco;Tarasco;Tarasco;Tarasco;Tarasco;Òàğàñêî;Tarasco;x
 TRS_ADJ;Tarascan;tarascan;Tarascan;Tarascan;Tarasco;Tarasca;Tarascan;Tarascan;Tarascan;Taraskische;Tarasco;òàğàñêîâ;Tarascan;x
+TRZ;Mauritania;Mauritanie;Mauretanien;Mauretania;Mauritania;Mauritania;Mauritánia;Mauritánie;Mauritánia;Mauritanië;Mauritânia;Ìàâğèòàíèÿ;Mauritania;x
+TRZ_ADJ;Mauritanian;Mauritanien;Mauretanier;Mauretañski;mauritano;Mauritania;mauritániai;Mauritánie;mauritániai;Mauritaanse;Mauritano;ìàâğèòàíåö;Mauritanian;x
+TRZ_absolute_monarchy;Trarza;Trarza;Trarza;Trarza;Trarza;Trarza;Trarza;Trarza;Trarza;Trarza;Trarza;Òğàğçà;Trarza;x
+TRZ_absolute_monarchy_ADJ;Trarzan;Trarzan;Trarzan;Trarzan;Trarzan;Trarzan;Trarzan;Trarzan;Trarzan;Trarzan;Trarzan;Òğàğçñêèé;Trarzan;x
 TSW_ADJ;Batswana;Batswana;Batswana;Batswana;Batswana;Batswana;Batswana;Batswana;Batswana;Batswana;Batswana;Áàòñâàíà;Batswana;x
 TSW;Botswana;Botswana;Botswana;Botswana;Botswana;Botswana;Botswana;Botswana;Botswana;Botswana;Botswana;Áîòñâàíà;Botswana;x
 TTB;Trinidad;Trinidad;Trinidad;Trinidad;Trinidad;Trinidad;Trinidad;Trinidad;Trinidad;Trinidad;Trinidad;Òğèíèäàä;Trinidad;x
 TTB_ADJ;Trinidadian;Trinidadien;Trinidadisch;Trynidadyjski;Trinitario;Trinidad;trinidadi;Trinidadskı;trinidadi;Trinidad;Trinitário;òğèíèäàäñêèé;Trinidadian;x
+TUL_ADJ;Toulousian;Toulousien;Toulousian;Toulousian;Toulousian;Tolosiano;Toulousian;Toulousian;Toulousian;Toulousian;Toulousian;Òîóëîóñèàí;Toulousian;x
+TUL;Toulouse;Toulouse;Toulouse;Tuluza;Toulouse;Tolosa;Toulouse;Toulouse;Toulouse;Toulouse;Toulouse;Òîóëîóñå;Toulouse;x
 TVE_ADJ;Tverian;Tverian;Tverian;Tverian;Tverian;Tveriano;Tverian;Tverian;Tverian;Tverian;Tverian;Òâåğèàí;Tverian;x
 TVE;Tver;Tver;Tver;Twer;Tver;Tver;Tver;Tver;Tver;Tver;Tver;Òâåğü;Tver;x
 TYR_ADJ;Tyrone;Tyrone;Tyrone;Tyrone;Tyrone;Tyrone;Tyrone;Tyrone;Tyrone;Tyrone;Tyrone;Òàéğîí;Tyrone;x
@@ -1031,6 +1130,12 @@ WHA_ADJ;Welsh;gallois;Walisisch;walijski;galés;gallese;walesi;velština;walesi;We
 WHA;Wales;Pays de Galles;Wales;Walia;Gales;Galles;Wales;Wales;Wales;Wales;País de Gales;Óıëüñ;Wales;x
 WLY_ADJ;Welaytan;Welaytan;Welaytan;Welaytan;Welaytan;Welaytan;Welaytan;Welaytan;Welaytan;Welaytan;Welaytan;Âåëàûòàí;Welaytan;x
 WLY;Welayta;Welayta;Welayta;Welayta;Welayta;Welayta;Welayta;Welayta;Welayta;Welayta;Welayta;Âåëàûòà;Welayta;x
+WOL;Jolof;Djolof;Jolof;Jolof;Jólof;Jolof;Jolof;Jolof;Jolof;Jolof;Uolofe;Äæîëîô;Jolof;x
+WOL_ADJ;Jolof;Djolof;Jolof;Jolof;Jólof;Jolof;Jolof;Jolof;Jolof;Jolof;Uolofe;Äæîëîô;Jolof;x
+WRI;Warri;Warri;Warri;Warri;Warri;Warri;Warri;Warri;Warri;Warri;Warri;Âàğğè;Warri;x
+WRI_ADJ;Warri;Warri;Warri;Warri;Warri;Warri;Warri;Warri;Warri;Warri;Warri;Âàğñêèé;Warri;x
+WSH;Western Sahara;Sahara occidental;Westsahara;Sahara Zachodnia;Sahara Occidental;Sahara Occidentale;nyugat-Szahara;západní Sahara;nyugat-Szahara;Westelijke Sahara;Saara Ocidental;Çàïàäíàÿ Ñàõàğà;Länsi-Sahara;x
+WSH_ADJ;Western Saharan;Sahara occidental;Westsahara;Sahara Zachodnia;Sahara Occidental;Sahariano Occidentale;Nyugat-szaharai;Západní saharskı;Nyugat-szaharai;Westelijke Sahara;Saara Ocidental;Çàïàäíàÿ Ñàõàğà;Länsi-Saharan;x
 WUU_ADJ;Wu;Wu;Wu;Wu;Wu;Wu;Wu;Wu;Wu;Wu;Wu;Âó;Wu;x
 WUU_democracy;The Republic of Wu;La République de Wu;Der Republik Wu;Republika Wu;La república de Wu;la Repubblica di Wu;Köztársaság Wu;Republiky Wu;Köztársaság Wu;de Republiek Wu;A república de Wu;Ğåñïóáëèêà Âó;tasavallan Wu;x
 WUU_fascist_dictatorship;The Wu Republic;La République de Wu;Die Wu Republik;Republika Wu;La república de Wu;Repubblica Wu;A Wu Köztársaság;Wu republika;A Wu Köztársaság;de Wu Republiek;A república de Wu;Ğåñïóáëèêà Âó;Wu tasavalta;x
@@ -1041,6 +1146,8 @@ XIA_democracy;The Republic of Xia;La République de Xia;Die Republik von Xia;Repu
 XIA_fascist_dictatorship;The Xia Republic;La République Xia;Die Xia Republik;Republika Xia;La república de xia;Repubblica Xia;Xia Köztársaság;Xia republika;Xia Köztársaság;de Xia Republiek;A república de Xia;Ğåñïóáëèêà Ñÿ;Xia tasavalta;x
 XIA_proletarian_dictatorship;The People's Republic of Xia;La République populaire de Xia;Der Volksrepublik Xia;Republika Ludowo-Xia;La República Popular de Xia;La Repubblica popolare di Xia;A Népköztársaság Xia;Xia lidové republiky;A Népköztársaság Xia;de People's Republic of Xia;República Popular da Xia;Íàğîäíàÿ Ğåñïóáëèêà Ñÿ;kansantasavallan Xia;x
 XIA;The Xia Dynasty;La dynastie Xia;Die Xia-Dynastie;Dynastia Xia;La dinastía Xia;la dinastia Xia;Xia-dinasztia;Xia dynastie;Xia-dinasztia;de Xia-dynastie;A Dinastia Xia;Äèíàñòèÿ Ñÿ;Xia-dynastian;x
+XHO;Xhosa;Xhosa;Xhosa;Xhosa;Xhosa;Xhosa;xhosa;Xhosa;xhosa;Xhosa;Xhosa;Êîñ;Xhosa;x
+XHO_ADJ;Xhosa;Xhosa;Xhosa;Xhosa;Xhosa;Xhosa;xhosa;Xhosa;xhosa;Xhosa;Xhosa;Êîñ;xhosa;x
 YAK;Sakha;Sakha;Sakha;Sakha;Sakha;Sakha;Sakha;Sakha;Sakha;Sakha;Sakha;ßêóòñêèé;Sahan;x
 YAK_ADJ;Yakut;yakut;Jakut;Jakut;Yakut;Yakut;jakut;Yakut;jakut;Jakoet;Yakut;ÿêóò;jakuutti;x
 YAR_ADJ;Yaroslavlian;Yaroslavlian;Jaroslawlischen;Yaroslavlian;Yaroslavlian;Yaroslavliano;Yaroslavlian;Yaroslavlian;Yaroslavlian;Yaroslavlian;Yaroslavlian;ßğîñëàâëèàí;Yaroslavlian;x
@@ -1065,6 +1172,8 @@ YUA_proletarian_dictatorship;The People's Republic of Sino-Mongolia;La Républiqu
 YUA;The Yuan Empire;L'Empire Yuan;Das Yuan-Imperium;Imperium Yuan;El Imperio Yuan;l'impero Yuan;A Yuan birodalom;Yuan Ríše;A Yuan birodalom;de Yuan-Rijk;O Império Yuan;Èìïåğèÿ Şàíü;Yuan Empire;x
 YUC;Yucatán;Yucatán;Yucatan;Jukatan;Yucatán;Yucatán;Yucatán;Yucatán;Yucatán;Yucatán;Yucatán;Şêàòàí;Yucatán;x
 YUC_ADJ;Yucateco;Yucateco;Yucateco;Yucateco;Yucateco;yucateco;yucateco;Yucateco;yucateco;yucateco;Yucateco;Şêàòàíñêèé;Yucateco;x
+ZAM;Zambia;Zambie;Sambia;Zambia;Zambia;Zambia;Zambia;Zambie;Zambia;Zambia;Zâmbia;Çàìáèÿ;Sambia;x
+ZAM_ADJ;Zambian;zambien;Sambia;Zambijski;Zambiano;zambiano;zambiai;Zambijskı;zambiai;Zambiaanse;Zambiano;çàìáèéñêèé;Sambian;x
 ZAP_ADJ;Zapotec;Zapotec;Zapotec;Zapotekowie;Zapoteco;Zapoteco;Zapotec;Zapotec;Zapotec;Zapotec;Zapoteco;Çàïîòåö;sapoteekki;x
 ZAP;Zapotec;Zapotec;Zapotec;Zapotekowie;Zapoteco;Zapotechi;Zapotec;Zapotec;Zapotec;Zapotec;Zapoteco;Çàïîòåö;sapoteekki;x
 ZAZ_ADJ;Zaporozhian;Zaporojie;Zaporozhian;Zaporoskiej;Zaporozhian;Zaporozhiano;Zaporozhian;Zaporozhian;Zaporozhian;Zaporozhian;Zaporozhian;Çàïîğîæñêèå;Zaporozhian;x

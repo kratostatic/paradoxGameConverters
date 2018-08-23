@@ -534,11 +534,11 @@ country_event = {
 				capital_scope = { continent = asia }
 				OR = {
 					capital_scope = { is_core = IDC }
-					capital_scope = { is_core = MSA }
+					capital_scope = { is_core = MLY }
 					capital_scope = { is_core = PHI }
 				}
 				NOT = { tag = IDC }
-				NOT = { tag = MSA }
+				NOT = { tag = MLY }
 				NOT = { tag = PHI }
 			}
 		}
@@ -1097,11 +1097,11 @@ country_event = {
 				capital_scope = { continent = asia }
 				OR = {
 					capital_scope = { is_core = IDC }
-					capital_scope = { is_core = MSA }
+					capital_scope = { is_core = MLY }
 					capital_scope = { is_core = PHI }
 				}
 				NOT = { tag = IDC }
-				NOT = { tag = MSA }
+				NOT = { tag = MLY }
 				NOT = { tag = PHI }
 			}
 		}

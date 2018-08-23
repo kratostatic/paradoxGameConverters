@@ -846,6 +846,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = post_colonial_country
 				exists = HND
+				tag = HDU
 			}
 		}
 		
@@ -854,9 +855,22 @@ political_decisions = {
 			prestige = 45
 			nationalism_n_imperialism = 1
 			war = no
+			NOT = {
+				pop_majority_religion = sunni
+				pop_majority_religion = zikri
+				pop_majority_religion = yazidi
+				pop_majority_religion = sunni_heresy
+				pop_majority_religion = shiite
+				pop_majority_religion = hurufi
+				pop_majority_religion = druze
+				pop_majority_religion = shiite_heresy
+				pop_majority_religion = ibadi
+				pop_majority_religion = kharijite
+			}
 			HND = {
 				all_core = {
 					OR = {
+						owned_by = HDU
 						owned_by = THIS
 						province_id = 1303
 						province_id = 1312
@@ -910,6 +924,89 @@ political_decisions = {
 		}
 	}
 
+	
+	form_pakistan = {
+		potential = {
+			is_culture_group = south_asian
+			NOT = {
+				has_country_flag = post_colonial_country
+				exists = HDU
+				tag = HND
+			}
+		}
+		
+		allow = {
+			has_global_flag = indian_call_to_union
+			prestige = 45
+			nationalism_n_imperialism = 1
+			war = no
+			OR = {
+				pop_majority_religion = sunni
+				pop_majority_religion = zikri
+				pop_majority_religion = yazidi
+				pop_majority_religion = sunni_heresy
+				pop_majority_religion = shiite
+				pop_majority_religion = hurufi
+				pop_majority_religion = druze
+				pop_majority_religion = shiite_heresy
+				pop_majority_religion = ibadi
+				pop_majority_religion = kharijite
+			}
+			HND = {
+				all_core = {
+					OR = {
+						owned_by = HND
+						owned_by = THIS
+						province_id = 1303
+						province_id = 1312
+						province_id = 1320
+						is_core = KAL
+						is_core = MAK
+						is_core = AFG
+						is_core = KAS
+						owner = {
+							in_sphere = THIS
+							OR = {
+								is_vassal = no
+								vassal_of = THIS
+							}
+							war = no
+							is_greater_power = no
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			prestige = 20
+			all_core = { remove_core = THIS remove_core = HND add_core = HDU }
+			change_tag = HDU
+			any_country = {
+				limit = {
+					NOT = { is_greater_power = yes }
+					is_culture_group = south_asian
+					in_sphere = THIS
+					NOT = { has_country_flag = post_colonial_country }
+					OR = {
+						is_vassal = no
+						vassal_of = THIS
+					}
+				}
+				country_event = 11101
+			}
+			add_accepted_culture = avadhi
+			add_accepted_culture = marathi
+			add_accepted_culture = rajput
+			add_accepted_culture = bihari
+			add_accepted_culture = bengali
+			add_accepted_culture = kanauji
+			add_accepted_culture = panjabi		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	concede_finland = {
 		potential = {
 			tag = SWE
