@@ -263,13 +263,29 @@ political_decisions = {
 			2632 = { add_core = GRN }
 			251 = { add_core = GRN }
 			2217 = { add_core = JAM } #Jamaica
+			2218 = { add_core = JAM }
 			2222 = { add_core = PRI } #Puerto Rico
+			2223 = { add_core = PRI }
 			2237 = { add_core = TTB } #Trinidad and Tobago
 			2238 = { add_core = TTB }
 			USA_168 = { add_core = UIL } #Illinois
 			USA_124 = { add_core = UNB } #Nebraska
 			MEX_103 = { add_core = UNM } #New Mexico
 			USA_81 = { add_core = UOR } #Oregon
+			#Further Caribbean islands:
+			#Bahamas - 2219, 2220
+			#Anguilla - 2236
+			#Antigua and Barbuda - 2224
+			#Saint Kitts - 2227
+			#Montserrat - 2225
+			#Guadeloupe - 2230
+			#Dominica - 2232
+			#Martinique - 2228
+			#Saint Lucia - 2231
+			#Saint Vincent - 2409
+			#Barbados - 2229
+			#Grenada - 2233
+			#CuraÃ§ao - 2234, 2235
 			set_global_flag = der_postcolonialism
 		}
 		
@@ -1612,8 +1628,8 @@ political_decisions = {
 			}
 			KOK = { primary_culture = kirgiz civilized = yes capital = 1189 government = presidential_dictatorship }
 			1181 = { change_province_name = "Akmolinsk" }
-			1185 = { state_scope = { change_region_name = "Žetysu" } }
-			1207 = { change_province_name = "Dušanbe" }
+			1185 = { state_scope = { change_region_name = "ÂŽetysu" } }
+			1207 = { change_province_name = "DuÂšanbe" }
 		}
 	}
 }
