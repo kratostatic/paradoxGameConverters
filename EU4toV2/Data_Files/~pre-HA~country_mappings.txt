@@ -635,7 +635,7 @@ link = { eu4 = HUR v2 = HUR } # Huron
 link = { eu4 = INC v2 = INC } # Inca
 link = { eu4 = IRO v2 = IRO } # Iroquois
 link = { eu4 = MAY v2 = MAY } # Maya
-link = { eu4 = SHA v2 = SHA } # Shawnee
+link = { eu4 = SHA v2 = SHX } # Shawnee
 link = { eu4 = ZAP v2 = ZAP } # Zapotec
 
 #Africa
@@ -804,7 +804,7 @@ link = { eu4 = PEG v2 = PEG } # Pegu
 link = { eu4 = QNG v2 = CHI } # Qing => China
 link = { eu4 = e_china_west_governor v2 = SXI } # Western Protectorate => Shanxi Clique
 link = { eu4 = RYU v2 = RYU } # Ryukyu
-link = { eu4 = SST v2 = SST } # Shan
+link = { eu4 = SST v2 = SHA } # Shan
 link = { eu4 = SUK v2 = SUK } # Sukhothai
 link = { eu4 = SUL v2 = SUL } # Sulu
 link = { eu4 = TAU v2 = BUR } # Taungu => Burma
@@ -930,7 +930,7 @@ link = { eu4 = BND v2 = BUN } # Bundelkhand
 link = { eu4 = CEY v2 = SRI } # Ceylon
 link = { eu4 = JSL v2 = JAS } # Jaisalmer
 link = { eu4 = KAC v2 = KAC } # Kachar
-link = { eu4 = KMT v2 = KMT } # Koch
+link = { eu4 = KMT v2 = KCX } # Koch
 link = { eu4 = KGR v2 = KGR } # Kangra
 link = { eu4 = c_kangra v2 = KGR } # Kangra
 link = { eu4 = KAT v2 = KAT } # Kathiawar
@@ -980,7 +980,7 @@ link = { eu4 = ASI v2 = ASI } # Assiniboine
 link = { eu4 = BLA v2 = BLA } # Blackfoot
 link = { eu4 = CAD v2 = CAD } # Caddo
 link = { eu4 = CHI v2 = CHN } # Chickasaw
-link = { eu4 = CHO v2 = CHO } # Choctaw
+link = { eu4 = CHO v2 = CCW } # Choctaw
 link = { eu4 = CHY v2 = CHY } # Cheyenne
 link = { eu4 = COM v2 = COM } # Comanche
 link = { eu4 = FOX v2 = FOX } # Fox
@@ -1073,7 +1073,7 @@ link = { eu4 = SAK v2 = SAK } # Siak
 link = { eu4 = SUN v2 = SUN } # Sunda
 link = { eu4 = KUT v2 = KTI } # Kutai
 link = { eu4 = BNJ v2 = BNJ } # Banjar
-link = { eu4 = LFA v2 = LFA } # Lanfang
+link = { eu4 = LFA v2 = LAN } # Lanfang
 link = { eu4 = LNO v2 = LNO } # Lanao
 link = { eu4 = LUW v2 = LUW } # Luwu
 link = { eu4 = MGD v2 = MGD } # Maguindanao
