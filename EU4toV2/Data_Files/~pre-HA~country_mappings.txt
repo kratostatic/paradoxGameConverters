@@ -347,8 +347,8 @@ link = { eu4 = DTT v2 = DTT } # Dithmarschen
 #Spain
 link = { eu4 = ARA v2 = ARN } # Aragon
 link = { eu4 = k_aragon v2 = ARN } # Aragon
-link = { eu4 = CAS v2 = CAS } # Castille
-link = { eu4 = k_castile v2 = CAS } # Castille
+link = { eu4 = CAS v2 = CST } # Castille
+link = { eu4 = k_castile v2 = CST } # Castille
 link = { eu4 = CAT v2 = CAT } # Catalonia
 link = { eu4 = d_catalonia v2 = CAT } # Catalonia
 link = { eu4 = GRA v2 = GRA } # Granada
@@ -371,8 +371,8 @@ link = { eu4 = c_aquileia v2 = AQU } # Aquileia
 link = { eu4 = ETR v2 = ETR } # Etruria
 link = { eu4 = FER v2 = FER } # Ferrara
 link = { eu4 = d_ferrara v2 = FER } # Ferrara
-link = { eu4 = GEN v2 = GNA } # Genoa
-link = { eu4 = k_genoa v2 = GNA } # Genoa
+link = { eu4 = GEN v2 = GEN } # Genoa
+link = { eu4 = k_genoa v2 = GEN } # Genoa
 link = { eu4 = ITA v2 = ITA } # Italy
 link = { eu4 = k_italy v2 = ITA } # Italy
 link = { eu4 = MAN v2 = MTA } # Mantua
@@ -395,10 +395,10 @@ link = { eu4 = d_sardinia v2 = SRD } # Sardinia
 link = { eu4 = k_sardinia v2 = SRD } # Sardinia (et Corsica)
 link = { eu4 = SAV v2 = SVY } # Savoy
 link = { eu4 = d_savoie v2 = SVY } # Savoy
-link = { eu4 = SIC v2 = SII } # Sicily
-link = { eu4 = d_sicily v2 = SII } # Sicily
-link = { eu4 = k_trinacria v2 = SII } # Sicily
-link = { eu4 = k_sicily v2 = SII } # Sicily
+link = { eu4 = SIC v2 = SCY } # Sicily
+link = { eu4 = d_sicily v2 = SCY } # Sicily
+link = { eu4 = k_trinacria v2 = SCY } # Sicily
+link = { eu4 = k_sicily v2 = SCY } # Sicily
 link = { eu4 = SIE v2 = SNA } # Siena
 link = { eu4 = c_siena v2 = SNA } # Siena
 link = { eu4 = TUS v2 = TUS } # Tuscany
@@ -526,7 +526,7 @@ link = { eu4 = SRV v2 = SRV } # Shirvanshah
 link = { eu4 = YAS v2 = YAS } # Yas (Dubai)
 link = { eu4 = YEM v2 = YEM } # Yemen
 link = { eu4 = k_yemen v2 = YEM } # Yemen
-link = { eu4 = HSN v2 = HNS } # Hisn Khayfa/Ayyubids
+link = { eu4 = HSN v2 = AYU } # Hisn Khayfa/Ayyubids
 link = { eu4 = BTL v2 = BTL } # Bitlis
 
 #Asia Minor  
@@ -538,8 +538,8 @@ link = { eu4 = k_candar v2 = CND } # Candar
 link = { eu4 = DUL v2 = DUL } # Dulkadir
 link = { eu4 = IRQ v2 = IRQ } # Iraq
 link = { eu4 = k_iraq v2 = IRQ } # Iraq
-link = { eu4 = KAR v2 = KAR } # Karaman
-link = { eu4 = k_karaman v2 = KAR } # Karaman
+link = { eu4 = KAR v2 = KRM } # Karaman
+link = { eu4 = k_karaman v2 = KRM } # Karaman
 link = { eu4 = SYR v2 = SYR } # Syria
 link = { eu4 = k_syria v2 = SYR } # Syria
 link = { eu4 = TRE v2 = TBZ } # Trebizond
@@ -684,7 +684,7 @@ link = { eu4 = MED v2 = MED } # Medri Bahri
 link = { eu4 = MJE v2 = MAJ } # Majeerteen
 link = { eu4 = MRE v2 = MRE } # Marehan
 link = { eu4 = PTE v2 = PTE } # Pate
-link = { eu4 = WAR v2 = WAR } # Warsangali
+link = { eu4 = WAR v2 = WRS } # Warsangali
 #link = { eu4 = BTI v2 = XXX } # Semien => d_semien
 #link = { eu4 = BEJ v2 = XXX } # Beja => d_beja
 link = { eu4 = JIM v2 = JIM } # Jima
@@ -969,8 +969,8 @@ link = { eu4 = SMO v2 = SMO } # Smolensk
 link = { eu4 = d_smolensk v2 = SMO } # Smolensk
 link = { eu4 = NZH v2 = NZH } # Nizhny Novgorod
 link = { eu4 = c_nizhny_novgorod v2 = NZH } # Nizhny Novgorod
-link = { eu4 = KOJ v2 = KOJ } # Jerusalem
-link = { eu4 = k_jerusalem v2 = KOJ } # Jerusalem
+link = { eu4 = KOJ v2 = JER } # Jerusalem
+link = { eu4 = k_jerusalem v2 = JER } # Jerusalem
 link = { eu4 = MSA v2 = MLY } # Malaya
 link = { eu4 = HIN v2 = HDU } # Hindustan
 
@@ -1064,7 +1064,7 @@ link = { eu4 = XIU v2 = XIU } # Xiu
 #Indonesia Additions
 link = { eu4 = BLM v2 = BLM } # Blambangan
 link = { eu4 = BTN v2 = BTN } # Buton
-link = { eu4 = CRB v2 = CRB } # Cirebon
+link = { eu4 = CRB v2 = CBO } # Cirebon
 link = { eu4 = DMK v2 = DMK } # Demak
 link = { eu4 = PGR v2 = PGR } # Pagarruyung
 link = { eu4 = PLB v2 = PLB } # Palembang
@@ -1111,8 +1111,8 @@ link = { eu4 = ICM v2 = ICM } # Ichma
 
 #???
 link = { eu4 = JMN v2 = JAN } # Jan Mayen
-link = { eu4 = ROM v2 = RME } # Roman Empire
-link = { eu4 = e_roman_empire v2 = RME } # Roman Empire
+link = { eu4 = ROM v2 = SPQ } # Roman Empire
+link = { eu4 = e_roman_empire v2 = SPQ } # Roman Empire
 
 #Converter tags:
 link = { eu4 = JOM v2 = JOM } # Jomsvikings

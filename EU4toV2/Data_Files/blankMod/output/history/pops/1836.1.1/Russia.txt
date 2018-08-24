@@ -6872,6 +6872,12 @@
 		religion = animist
 		size = 450
 	}
+
+	farmers = {
+		culture = aromanian
+		religion = orthodox
+		size = 775.0
+	}
 }
 #Chokurdakh (1000/250 POPS)
 2665 = {

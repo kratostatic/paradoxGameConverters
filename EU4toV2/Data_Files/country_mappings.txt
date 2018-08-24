@@ -347,8 +347,8 @@ link = { EU4 = DTT Vic2 = DTT } # Dithmarschen
 #Spain
 link = { EU4 = ARA Vic2 = ARN } # Aragon
 link = { EU4 = k_aragon Vic2 = ARN } # Aragon
-link = { EU4 = CAS Vic2 = CAS } # Castille
-link = { EU4 = k_castile Vic2 = CAS } # Castille
+link = { EU4 = CAS Vic2 = CST } # Castille
+link = { EU4 = k_castile Vic2 = CST } # Castille
 link = { EU4 = CAT Vic2 = CAT } # Catalonia
 link = { EU4 = d_catalonia Vic2 = CAT } # Catalonia
 link = { EU4 = GRA Vic2 = GRA } # Granada
@@ -371,8 +371,8 @@ link = { EU4 = c_aquileia Vic2 = AQU } # Aquileia
 link = { EU4 = ETR Vic2 = ETR } # Etruria
 link = { EU4 = FER Vic2 = FER } # Ferrara
 link = { EU4 = d_ferrara Vic2 = FER } # Ferrara
-link = { EU4 = GEN Vic2 = GNA } # Genoa
-link = { EU4 = k_genoa Vic2 = GNA } # Genoa
+link = { EU4 = GEN Vic2 = GEN } # Genoa
+link = { EU4 = k_genoa Vic2 = GEN } # Genoa
 link = { EU4 = ITA Vic2 = ITA } # Italy
 link = { EU4 = k_italy Vic2 = ITA } # Italy
 link = { EU4 = MAN Vic2 = MTA } # Mantua
@@ -395,10 +395,10 @@ link = { EU4 = d_sardinia Vic2 = SRD } # Sardinia
 link = { EU4 = k_sardinia Vic2 = SRD } # Sardinia (et Corsica)
 link = { EU4 = SAV Vic2 = SVY } # Savoy
 link = { EU4 = d_savoie Vic2 = SVY } # Savoy
-link = { EU4 = SIC Vic2 = SII } # Sicily
-link = { EU4 = d_sicily Vic2 = SII } # Sicily
-link = { EU4 = k_trinacria Vic2 = SII } # Sicily
-link = { EU4 = k_sicily Vic2 = SII } # Sicily
+link = { EU4 = SIC Vic2 = SCY } # Sicily
+link = { EU4 = d_sicily Vic2 = SCY } # Sicily
+link = { EU4 = k_trinacria Vic2 = SCY } # Sicily
+link = { EU4 = k_sicily Vic2 = SCY } # Sicily
 link = { EU4 = SIE Vic2 = SNA } # Siena
 link = { EU4 = c_siena Vic2 = SNA } # Siena
 link = { EU4 = TUS Vic2 = TUS } # Tuscany
@@ -526,7 +526,7 @@ link = { EU4 = SRV Vic2 = SRV } # Shirvanshah
 link = { EU4 = YAS Vic2 = YAS } # Yas (Dubai)
 link = { EU4 = YEM Vic2 = YEM } # Yemen
 link = { EU4 = k_yemen Vic2 = YEM } # Yemen
-link = { EU4 = HSN Vic2 = HNS } # Hisn Khayfa/Ayyubids
+link = { EU4 = HSN Vic2 = AYU } # Hisn Khayfa/Ayyubids
 link = { EU4 = BTL Vic2 = BTL } # Bitlis
 
 #Asia Minor  
@@ -538,8 +538,8 @@ link = { EU4 = k_candar Vic2 = CND } # Candar
 link = { EU4 = DUL Vic2 = DUL } # Dulkadir
 link = { EU4 = IRQ Vic2 = IRQ } # Iraq
 link = { EU4 = k_iraq Vic2 = IRQ } # Iraq
-link = { EU4 = KAR Vic2 = KAR } # Karaman
-link = { EU4 = k_karaman Vic2 = KAR } # Karaman
+link = { EU4 = KAR Vic2 = KRM } # Karaman
+link = { EU4 = k_karaman Vic2 = KRM } # Karaman
 link = { EU4 = SYR Vic2 = SYR } # Syria
 link = { EU4 = k_syria Vic2 = SYR } # Syria
 link = { EU4 = TRE Vic2 = TBZ } # Trebizond
@@ -684,7 +684,7 @@ link = { EU4 = MED Vic2 = MED } # Medri Bahri
 link = { EU4 = MJE Vic2 = MAJ } # Majeerteen
 link = { EU4 = MRE Vic2 = MRE } # Marehan
 link = { EU4 = PTE Vic2 = PTE } # Pate
-link = { EU4 = WAR Vic2 = WAR } # Warsangali
+link = { EU4 = WAR Vic2 = WRS } # Warsangali
 #link = { EU4 = BTI Vic2 = XXX } # Semien => d_semien
 #link = { EU4 = BEJ Vic2 = XXX } # Beja => d_beja
 link = { EU4 = JIM Vic2 = JIM } # Jima
@@ -969,8 +969,8 @@ link = { EU4 = SMO Vic2 = SMO } # Smolensk
 link = { EU4 = d_smolensk Vic2 = SMO } # Smolensk
 link = { EU4 = NZH Vic2 = NZH } # Nizhny Novgorod
 link = { EU4 = c_nizhny_novgorod Vic2 = NZH } # Nizhny Novgorod
-link = { EU4 = KOJ Vic2 = KOJ } # Jerusalem
-link = { EU4 = k_jerusalem Vic2 = KOJ } # Jerusalem
+link = { EU4 = KOJ Vic2 = JER } # Jerusalem
+link = { EU4 = k_jerusalem Vic2 = JER } # Jerusalem
 link = { EU4 = MSA Vic2 = MLY } # Malaya
 link = { EU4 = HIN Vic2 = HDU } # Hindustan
 
@@ -1064,7 +1064,7 @@ link = { EU4 = XIU Vic2 = XIU } # Xiu
 #Indonesia Additions
 link = { EU4 = BLM Vic2 = BLM } # Blambangan
 link = { EU4 = BTN Vic2 = BTN } # Buton
-link = { EU4 = CRB Vic2 = CRB } # Cirebon
+link = { EU4 = CRB Vic2 = CBO } # Cirebon
 link = { EU4 = DMK Vic2 = DMK } # Demak
 link = { EU4 = PGR Vic2 = PGR } # Pagarruyung
 link = { EU4 = PLB Vic2 = PLB } # Palembang
@@ -1111,8 +1111,8 @@ link = { EU4 = ICM Vic2 = ICM } # Ichma
 
 #???
 link = { EU4 = JMN Vic2 = JAN } # Jan Mayen
-link = { EU4 = ROM Vic2 = RME } # Roman Empire
-link = { EU4 = e_roman_empire Vic2 = RME } # Roman Empire
+link = { EU4 = ROM Vic2 = SPQ } # Roman Empire
+link = { EU4 = e_roman_empire Vic2 = SPQ } # Roman Empire
 
 #Converter tags:
 link = { EU4 = JOM Vic2 = JOM } # Jomsvikings

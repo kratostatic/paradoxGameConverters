@@ -35,7 +35,7 @@ POR		= "countries/Portugal.txt"
 SCO		= "countries/Scotland.txt"
 SPA		= "countries/Spain.txt"
 WLL		= "countries/Wallonia.txt"
-RME		= "countries/RomanEmpire.txt"
+SPQ		= "countries/RomanEmpire.txt"
 
 # Germany
 ANH		= "countries/Anhalt.txt"
@@ -319,13 +319,13 @@ CRT		="countries/Carinthia.txt"
 AQU		="countries/Aquileia.txt"##
 ETR		="countries/Etruria.txt"##
 FER		="countries/Ferrara.txt"##
-GNA		="countries/Genoa.txt"##
+GEN		="countries/Genoa.txt"##
 MTA		="countries/Mantua.txt"##
 NAP		="countries/Naples.txt"##
 PIS		="countries/Pisa.txt"##
 SRD		="countries/Sardinia.txt"##
 SVY		="countries/Savoy.txt"##
-SII		="countries/Sicily.txt"##
+SCY		="countries/Sicily.txt"##
 SNA		="countries/Siena.txt"##
 URB		="countries/Urbino.txt"##
 MFA 	="countries/Montferrat.txt"
@@ -368,7 +368,7 @@ MCD		="countries/Macedonia.txt"##
 
 # Maghreb
 FEZ		="countries/Fez.txt"##
-KOJ 		="countries/Jerusalem.txt"##
+JER 		="countries/Jerusalem.txt"##
 ASH 		="countries/Ashanti.txt"
 BEN 		="countries/Benin.txt"
 
@@ -441,6 +441,7 @@ DAH		= "countries/Dahomey.txt"
 DAR		= "countries/Darfur.txt"
 HAR		= "countries/Harar.txt"
 KNG		= "countries/Kong.txt"
+WRS		= "countries/Warsangali.txt"
 
 # France
 ALE		="countries/Alencon.txt"##
@@ -468,7 +469,7 @@ OCC     =   "countries/Occitania.txt"
 
 # Iberian Peninsula
 ARN		="countries/Aragon.txt"##
-CAS		="countries/Castille.txt"##
+CST		="countries/Castille.txt"##
 GRA		="countries/Granada.txt"##
 NAV		="countries/Navarra.txt"##
 GLC		="countries/Galicia.txt"	##
@@ -587,7 +588,7 @@ AKK		="countries/AkKoyunlu.txt"
 AYD		="countries/Aydin.txt"
 CND		="countries/Candar.txt"
 DUL		="countries/Dulkadir.txt"
-KAR		="countries/Karaman.txt"
+KRM		="countries/Karaman.txt"
 SYR		="countries/Syria.txt"
 TBZ		="countries/Trebizond.txt"
 SRU		="countries/Saruhan.txt"
@@ -623,7 +624,7 @@ ASY     =   "countries/Assyria.txt"
 KRT     =   "countries/Carthage.txt"
 YAK     =   "countries/Sakha.txt"
 SIB     =   "countries/Siberia.txt"
-IDC     =   "countries/Indochina.txt"
+IDO     =   "countries/Indochina.txt"
 AES     =   "countries/Anglo-Saxony.txt"
 FRK     =   "countries/Frankia.txt"
 ENR		=	"countries/Britannia.txt"
@@ -646,7 +647,7 @@ MTQ		= "countries/Martinique.txt"
 SKN		= "countries/St Kitts.txt"
 STL		= "countries/St Lucia.txt"
 STV		= "countries/St Vincent.txt"
-KRB		= "countries/Caribbean.txt"
+CRB		= "countries/Caribbean.txt"
 
 ##NNM integrations
 #Europe
@@ -811,6 +812,28 @@ YZW		= "countries/Yonezawa.txt"
 FIJ		= "countries/Fiji.txt"
 SNZ     = "countries/South Island.txt"
 TGA		= "countries/Tonga.txt"
+
+#MiniMod
+HNS		= "countries/Hansa.txt"
+HOH 		= "countries/Hohenzollern.txt"
+FIU		= "countries/Fiume.txt"
+LVN		= "countries/Lombardy-Venice.txt"
+BIA		= "countries/Biafra.txt"
+ITP 		= "countries/Papal Italy.txt"
+TAH 		= "countries/Tahiti.txt"
+PIN		= "countries/Pindus.txt"
+KAR		= "countries/Karen.txt"
+BUE		= "countries/Buenos Aires.txt"
+ALW		= "countries/Alawite.txt"
+CEG		= "countries/Coptic Egypt.txt"
+SYC		= "countries/Syriac.txt"
+QAT		= "countries/Qatar.txt"
+LIM		= "countries/Limburg.txt"
+CAS		= "countries/Cascadia.txt"
+DRU		= "countries/Druze.txt"
+
+#temporary tag for the purpose of transferring colonies - vestigial
+UCV 		= "countries/Uncivilized nation.txt"
 
 ##HoD Dominions
 dynamic_tags  = yes # any tags after this is considered dynamic dominions

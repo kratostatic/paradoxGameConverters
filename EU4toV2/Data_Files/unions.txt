@@ -96,6 +96,7 @@ link = { tag = YUG tag = BOS culture = bosniak }
 
 #Romanian and Hungarian
 link = { tag = ROM culture = romanian } #Romania
+link = { tag = PIN culture = aromanian } #Pindus
 link = { tag = HUN culture = hungarian } #Hungary
 
 #Polish-Lithuanian => PLC
@@ -181,18 +182,18 @@ link = { tag = HND culture = telegu }
 link = { tag = HND culture = asian_minor } #Central Indic core-hole
 
 #Indochina => Indochina
-link = { tag = IDC culture = vietnamese }
-link = { tag = IDC tag = CAM culture = khmer } # and Cambodia
+link = { tag = IDO culture = vietnamese }
+link = { tag = IDO tag = CAM culture = khmer } # and Cambodia
 link = { tag = MLY culture = malay } #Malaya
 link = { tag = MLY culture = bornean } #Malaya
 link = { tag = PHI culture = filipino } #Philippines
 link = { tag = JAV culture = javan } #Java
-link = { tag = IDC tag = SIA culture = thai } #and Siam
-link = { tag = IDC tag = LUA culture = lao } #and Luang Phrabang
-link = { tag = IDC tag = SHA tag = BUR culture = shan } #and Shan States
-link = { tag = IDC tag = BUR culture = burmese } #and Burma
-link = { tag = IDC tag = KCH culture = kachin } #Kachin
-link = { tag = IDC culture = karen }
+link = { tag = IDO tag = SIA culture = thai } #and Siam
+link = { tag = IDO tag = LUA culture = lao } #and Luang Phrabang
+link = { tag = IDO tag = SHA tag = BUR culture = shan } #and Shan States
+link = { tag = IDO tag = BUR culture = burmese } #and Burma
+link = { tag = IDO tag = KCH culture = kachin } #and Kachin
+link = { tag = IDO tag = KAR culture = karen } #and Karen
 link = { tag = MAL culture = moluccan } #Maluku
 
 #East Asian

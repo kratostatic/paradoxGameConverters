@@ -5,7 +5,7 @@ political_decisions = {
 			OR = {
 				culture = greek
 				is_culture_group = italian
-				tag = RME
+				tag = SPQ
 				tag = BYZ
 			}
 			NOT = { has_global_flag = 830_be_greek }
@@ -65,7 +65,7 @@ political_decisions = {
 			OR = {
 				culture = greek
 				is_culture_group = italian
-				tag = RME
+				tag = SPQ
 				tag = BYZ
 			}
 			NOT = { has_global_flag = thrace_be_greek }
@@ -146,7 +146,7 @@ political_decisions = {
 			OR = {
 				culture = greek
 				is_culture_group = italian
-				tag = RME
+				tag = SPQ
 				tag = BYZ
 			}
 			NOT = { has_global_flag = thrace_be_teuton }
@@ -223,7 +223,7 @@ political_decisions = {
 			OR = {
 				culture = greek
 				is_culture_group = italian
-				tag = RME
+				tag = SPQ
 				tag = BYZ
 			}
 			NOT = { has_global_flag = hudav_be_greek }
@@ -307,7 +307,7 @@ political_decisions = {
 			OR = {
 				culture = greek
 				is_culture_group = italian
-				tag = RME
+				tag = SPQ
 				tag = BYZ
 			}
 			NOT = { has_global_flag = aydin_be_greek }
@@ -379,7 +379,7 @@ political_decisions = {
 			OR = {
 				culture = greek
 				is_culture_group = italian
-				tag = RME
+				tag = SPQ
 				tag = BYZ
 			}
 			NOT = { has_global_flag = konya_be_greek }
@@ -457,7 +457,7 @@ political_decisions = {
 			OR = {
 				culture = greek
 				is_culture_group = italian
-				tag = RME
+				tag = SPQ
 				tag = BYZ
 			}
 			NOT = { has_global_flag = ankara_be_greek }
@@ -538,7 +538,7 @@ political_decisions = {
 			OR = {
 				culture = greek
 				is_culture_group = italian
-				tag = RME
+				tag = SPQ
 				tag = BYZ
 			}
 			NOT = { has_global_flag = trabzon_be_greek }

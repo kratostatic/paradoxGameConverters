@@ -102,6 +102,7 @@ link = { v2 = gaul eu4 = roman region = france_region region = low_countries_reg
 link = { v2 = laessin eu4 = roman region = north_german_region region = south_german_region region = baltic_region region = poland_region region = ruthenia_region region = crimea_region region = balkan_region }
 link = { v2 = spanish eu4 = roman region = iberia_region }
 link = { v2 = romanian eu4 = roman region = carpathia_region }
+link = { v2 = aromanian eu4 = roman region = balkan_region }
 link = { v2 = maghreb_arabic eu4 = roman region = egypt_region region = maghreb_region }
 link = { v2 = assyrian eu4 = roman region = mashriq_region region = anatolia_region region = persia_region region = caucasia_region region = arabia_region }
 link = { v2 = italoamericano eu4 = old_lombard eu4 = lombard eu4 = umbrian eu4 = piedmontese eu4 = ligurian eu4 = romagnan eu4 = tuscan eu4 = venetian eu4 = italian eu4 = roman eu4 = latin eu4 = etrurian eu4 = dalmatian eu4 = emilian eu4 = friulian eu4 = romagnol eu4 = helvetian eu4 = noric eu4 = neapolitan eu4 = sardinian eu4 = sicilian eu4 = corsican eu4 = c_latin eu4 = napolitan_colonial eu4 = maltese eu4 = africano eu4 = americano eu4 = asiatico eu4 = australiano eu4 = latin_colonial eu4 = romano_gallic eu4 = romano_british region = south_america_superregion region = north_america_superregion region = central_america_superregion }
@@ -247,6 +248,7 @@ link = { v2 = hungarian eu4 = hungarian }
 link = { v2 = lumenoua eu4 = romanian eu4 = transylvanian eu4 = moldovian eu4 = romanian_colonial eu4 = vlach eu4 = dacian region = south_america_superregion region = north_america_superregion region = central_america_superregion }
 link = { v2 = sudic eu4 = romanian eu4 = transylvanian eu4 = moldovian eu4 = romanian_colonial eu4 = vlach eu4 = dacian region = oceania_superregion }
 link = { v2 = negru eu4 = romanian eu4 = transylvanian eu4 = moldovian eu4 = romanian_colonial eu4 = vlach eu4 = dacian region = niger_region region = guinea_region region = central_africa_region region = sahel_region region = horn_of_africa_region region = east_africa_region region = kongo_region region = south_africa_region }
+link = { v2 = aromanian eu4 = romanian eu4 = transylvania region = balkan_region }
 link = { v2 = romanian eu4 = romanian eu4 = transylvanian }
 
 # Baltic - lithuanian, old_prussian, latvian

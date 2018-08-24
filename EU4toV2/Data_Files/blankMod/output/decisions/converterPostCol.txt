@@ -296,6 +296,8 @@ political_decisions = {
 			2234 = { add_core = CUR } #Curaçao
 			2235 = { add_core = CUR }
 			2409 = { add_core = STV } #Saint Vincent and the Grenadines
+			#Further addictions
+			ARG_2355 = { add_core = BUE } #Buenos Aires
 			set_global_flag = der_postcolonialism
 		}
 		
@@ -1645,7 +1647,7 @@ political_decisions = {
 	postcol_CRB = {
 		potential = {
 			NOT = {
-				exists = KRB
+				exists = CRB
 				tag = CUB
 				tag = HAI
 				tag = DOM
@@ -1702,29 +1704,29 @@ political_decisions = {
 		
 		effect = {
 			prestige = 10
-			2236 = { add_core = KRB }
-			2224 = { add_core = KRB }
-			2229 = { add_core = KRB }
-			2219 = { add_core = KRB }
-			2220 = { add_core = KRB }
-			2234 = { add_core = KRB }
-			2235 = { add_core = KRB }
-			2232 = { add_core = KRB }
-			2230 = { add_core = KRB }
-			2233 = { add_core = KRB }
-			2225 = { add_core = KRB }
-			2226 = { add_core = KRB }
-			2228 = { add_core = KRB }
-			2227 = { add_core = KRB }
-			2231 = { add_core = KRB }
-			2409 = { add_core = KRB }
-			2217 = { add_core = KRB }
-			2218 = { add_core = KRB }
-			2222 = { add_core = KRB }
-			2223 = { add_core = KRB }
-			2237 = { add_core = KRB }
-			2238 = { add_core = KRB }
-			change_tag = KRB
+			2236 = { add_core = CRB }
+			2224 = { add_core = CRB }
+			2229 = { add_core = CRB }
+			2219 = { add_core = CRB }
+			2220 = { add_core = CRB }
+			2234 = { add_core = CRB }
+			2235 = { add_core = CRB }
+			2232 = { add_core = CRB }
+			2230 = { add_core = CRB }
+			2233 = { add_core = CRB }
+			2225 = { add_core = CRB }
+			2226 = { add_core = CRB }
+			2228 = { add_core = CRB }
+			2227 = { add_core = CRB }
+			2231 = { add_core = CRB }
+			2409 = { add_core = CRB }
+			2217 = { add_core = CRB }
+			2218 = { add_core = CRB }
+			2222 = { add_core = CRB }
+			2223 = { add_core = CRB }
+			2237 = { add_core = CRB }
+			2238 = { add_core = CRB }
+			change_tag = CRB
 		}
 		ai_will_do = {
 			factor = 1
@@ -1733,7 +1735,7 @@ political_decisions = {
 	vassal_CRB = {
 		potential = {
 			NOT = {
-				exists = KRB
+				exists = CRB
 				tag = CUB
 				tag = HAI
 				tag = DOM
@@ -1814,38 +1816,38 @@ political_decisions = {
 		
 		effect = {
 			prestige = 10
-			2236 = { add_core = KRB secede_province = KRB }
-			2224 = { add_core = KRB secede_province = KRB }
-			2229 = { add_core = KRB secede_province = KRB }
-			2219 = { add_core = KRB secede_province = KRB }
-			2220 = { add_core = KRB secede_province = KRB }
-			2234 = { add_core = KRB }
-			2235 = { add_core = KRB }
+			2236 = { add_core = CRB secede_province = CRB }
+			2224 = { add_core = CRB secede_province = CRB }
+			2229 = { add_core = CRB secede_province = CRB }
+			2219 = { add_core = CRB secede_province = CRB }
+			2220 = { add_core = CRB secede_province = CRB }
+			2234 = { add_core = CRB }
+			2235 = { add_core = CRB }
 			any_owned_province = {
 			limit = { province_id = 2234 }
-			secede_province = KRB
+			secede_province = CRB
 			}
 			any_owned_province = {
 			limit = { province_id = 2235 }
-			secede_province = KRB
+			secede_province = CRB
 			}
-			2232 = { add_core = KRB secede_province = KRB }
-			2230 = { add_core = KRB secede_province = KRB }
-			2233 = { add_core = KRB secede_province = KRB }
-			2225 = { add_core = KRB secede_province = KRB }
-			2226 = { add_core = KRB secede_province = KRB }
-			2228 = { add_core = KRB secede_province = KRB }
-			2227 = { add_core = KRB secede_province = KRB }
-			2231 = { add_core = KRB secede_province = KRB }
-			2409 = { add_core = KRB secede_province = KRB }
-			2217 = { add_core = KRB secede_province = KRB }
-			2218 = { add_core = KRB secede_province = KRB }
-			2222 = { add_core = KRB secede_province = KRB }
-			2223 = { add_core = KRB secede_province = KRB }
-			2237 = { add_core = KRB secede_province = KRB }
-			2238 = { add_core = KRB secede_province = KRB }
-			create_vassal = KRB
-			KRB = { set_country_flag = buro_independence }
+			2232 = { add_core = CRB secede_province = CRB }
+			2230 = { add_core = CRB secede_province = CRB }
+			2233 = { add_core = CRB secede_province = CRB }
+			2225 = { add_core = CRB secede_province = CRB }
+			2226 = { add_core = CRB secede_province = CRB }
+			2228 = { add_core = CRB secede_province = CRB }
+			2227 = { add_core = CRB secede_province = CRB }
+			2231 = { add_core = CRB secede_province = CRB }
+			2409 = { add_core = CRB secede_province = CRB }
+			2217 = { add_core = CRB secede_province = CRB }
+			2218 = { add_core = CRB secede_province = CRB }
+			2222 = { add_core = CRB secede_province = CRB }
+			2223 = { add_core = CRB secede_province = CRB }
+			2237 = { add_core = CRB secede_province = CRB }
+			2238 = { add_core = CRB secede_province = CRB }
+			create_vassal = CRB
+			CRB = { set_country_flag = buro_independence }
 		}
 		ai_will_do = {
 			factor = 1

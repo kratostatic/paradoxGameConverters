@@ -2,6 +2,7 @@
 # -avoid the Roman Empire forming Italy		
 # -let SGF and Germany form even if Austria owns cores, or form by Austria (but not Austria-Hungary)
 # -avoid cultural unions halted by new colonial cultures
+# -Pontifical Italy edits
 
 political_decisions = {
 	
@@ -765,7 +766,9 @@ political_decisions = {
 				has_country_flag = post_colonial_country
 				exists = ITA
 			}
-			NOT = { tag = RME }
+			NOT = { tag = SPQ }
+			NOT = { tag = PAP }
+			NOT = { tag = ITP }
 		}
 		
 		allow = {
@@ -777,6 +780,7 @@ political_decisions = {
 				all_core = {
 					OR = {
 						owned_by = THIS
+						province_id = 473 #Corsica
 						AND = {
 							is_core = VEN
 							owner = {

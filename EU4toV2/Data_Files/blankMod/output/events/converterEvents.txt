@@ -533,11 +533,11 @@ country_event = {
 			AND = {
 				capital_scope = { continent = asia }
 				OR = {
-					capital_scope = { is_core = IDC }
+					capital_scope = { is_core = IDO }
 					capital_scope = { is_core = MLY }
 					capital_scope = { is_core = PHI }
 				}
-				NOT = { tag = IDC }
+				NOT = { tag = IDO }
 				NOT = { tag = MLY }
 				NOT = { tag = PHI }
 			}
@@ -1096,11 +1096,11 @@ country_event = {
 			AND = {
 				capital_scope = { continent = asia }
 				OR = {
-					capital_scope = { is_core = IDC }
+					capital_scope = { is_core = IDO }
 					capital_scope = { is_core = MLY }
 					capital_scope = { is_core = PHI }
 				}
-				NOT = { tag = IDC }
+				NOT = { tag = IDO }
 				NOT = { tag = MLY }
 				NOT = { tag = PHI }
 			}
@@ -1450,5 +1450,115 @@ province_event = {
 				limit = { is_core = INO }
 			}
 		}
+	}
+}
+country_event = { 
+	id = 550000
+	title = EVTNAMEBYZ
+	desc = EVTDESCBYZ
+
+	trigger = { 
+		tag = BYZ
+		number_of_states = 3
+		NOT = { has_global_flag = greek_BYZ }
+	}
+
+	mean_time_to_happen = { months = 1 }
+
+	option = { 
+		name = EVTOPTABYZ
+		set_global_flag = greek_BYZ
+		GRE = {
+			all_core = {
+				add_core = BYZ
+			}
+		}
+		GRE = {
+			all_core = {
+				remove_core = GRE
+			}
+		}
+		GRE = {
+			any_owned = {
+				limit = { is_primary_culture = yes } #workaround to get Greek provinces
+				add_core = GRE
+			}
+		}
+	}
+}
+country_event = { 
+	id = 550001
+	title = EVTNAMEGRE
+	desc = EVTDESCGRE
+
+	trigger = { 
+		NOT = { exists = BYZ }
+		ai = no #So the player will cry at 1453
+		has_global_flag = greek_BYZ
+	}
+
+	mean_time_to_happen = { months = 1 }
+
+	option = { 
+		name = EVTOPTAGRE
+		clr_global_flag = greek_BYZ
+		BYZ = {
+			all_core = {
+				limit = { is_primary_culture = yes } #workaround to get Greek provinces
+				add_core = GRE
+			}
+		}
+		BYZ = {
+			all_core = { remove_core = BYZ }
+		}
+	}
+}
+country_event = { 
+	id = 550002
+	title = EVTNAMEITP
+	desc = EVTDESCITP
+
+	trigger = { 
+		tag = ITA
+		government = theocracy
+		NOT = { has_country_flag = ITA_to_ITP }
+	}
+
+	mean_time_to_happen = { months = 1 }
+
+	option = { 
+		name = EVTOPTAITP
+		set_country_flag = ITA_to_ITP
+		clr_country_flag = ITP_to_ITA
+		all_core = {
+			add_core = ITP
+			remove_core = ITA
+		}
+		change_tag = ITP
+	}
+}
+
+country_event = { 
+	id = 550003
+	title = EVTNAMEITA
+	desc = EVTDESCITA
+
+	trigger = { 
+		tag = ITP
+		NOT = { government = theocracy }
+		NOT = { has_country_flag = ITP_to_ITA }
+	}
+
+	mean_time_to_happen = { months = 1 }
+
+	option = { 
+		name = EVTOPTAITP
+		set_country_flag = ITP_to_ITA
+		clr_country_flag = ITA_to_ITP
+		all_core = {
+			add_core = ITA
+			remove_core = ITP
+		}
+		change_tag = ITA
 	}
 }
