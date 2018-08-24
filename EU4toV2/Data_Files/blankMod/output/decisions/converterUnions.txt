@@ -1893,6 +1893,274 @@ political_decisions = {
 				civilized = yes
 				capital = 2237
 			}
+			any_country = { #Bima
+				limit = {
+					tag = BIM
+					NOT = { exists = BIM }
+				}
+				capital = 1440
+				primary_culture = moluccan
+				religion = sunni
+			}
+
+			any_country = { #Jambi
+				limit = {
+					tag = DJA
+					NOT = { exists = DJA }
+				}
+				capital = 1398
+				primary_culture = malay
+				religion = sunni
+			}
+
+			any_country = { #Fujian
+				limit = {
+					tag = FJN
+					NOT = { exists = FJN }
+				}
+				capital = 1482
+				primary_culture = min
+				religion = mahayana
+			}
+
+			any_country = { #Guominjun
+				limit = {
+					tag = GMJ
+					NOT = { exists = GMJ }
+				}
+				capital = 1559
+				primary_culture = beifaren
+				religion = protestant
+			}
+
+			any_country = { #Guangdong
+				limit = {
+					tag = GNG
+					NOT = { exists = GNG }
+				}
+				capital = 1493
+				primary_culture = yue
+				religion = mahayana
+			}
+
+			any_country = { #Hunan
+				limit = {
+					tag = HNN
+					NOT = { exists = HNN }
+				}
+				capital = 1524
+				primary_culture = nanfaren
+				religion = mahayana
+			}
+
+			any_country = { #Anhui
+				limit = {
+					tag = HUI
+					NOT = { exists = HUI }
+				}
+				capital = 1474
+				primary_culture = beifaren
+				religion = mahayana
+			}
+
+			any_country = { #Indonesia
+				limit = {
+					tag = INO
+					NOT = { exists = INO }
+				}
+				capital = 1413
+				primary_culture = javan
+				government = democracy
+				civilized = yes
+				religion = sunni
+			}
+
+			any_country = { #Kachin
+				limit = {
+					tag = KCH
+					NOT = { exists = KCH }
+				}
+				capital = 1314
+				primary_culture = kachin
+				religion = animist
+			}
+
+			any_country = { #Kalimantan
+				limit = {
+					tag = KLM
+					NOT = { exists = KLM }
+				}
+				capital = 1423
+				primary_culture = malay
+				religion = sunni
+			}
+
+			any_country = { #Nationalist China
+				limit = {
+					tag = KMT
+					NOT = { exists = KMT }
+				}
+				capital = 2221
+				primary_culture = nanfaren
+				government = presidential_dictatorship
+				religion = mahayana
+			}
+
+			any_country = { #Maluku
+				limit = {
+					tag = MAL
+					NOT = { exists = MAL }
+				}
+				capital = 1449
+				primary_culture = moluccan
+				religion = sunni
+			}
+
+			any_country = { #Sulawesi
+				limit = {
+					tag = SLW
+					NOT = { exists = SLW }
+				}
+				capital = 1430
+				primary_culture = moluccan
+				religion = sunni
+			}
+
+			any_country = { #Sarawak
+				limit = {
+					tag = SWK
+					NOT = { exists = SWK }
+				}
+				capital = 1394
+				primary_culture = malay
+				civilized = yes
+				religion = sunni
+			}
+
+			any_country = { #Sichuan
+				limit = {
+					tag = SZC
+					NOT = { exists = SZC }
+				}
+				capital = 1578
+				primary_culture = nanfaren
+				religion = mahayana
+			}
+
+			any_country = { #Taiwan
+				limit = {
+					tag = TAI
+					NOT = { exists = TAI }
+				}
+				capital = 1485
+				primary_culture = nanfaren
+				civilized = yes
+				religion = mahayana
+			}
+
+			any_country = { #Choshu
+				limit = {
+					tag = CHO
+					NOT = { exists = CHO }
+				}
+				capital = 1640
+				primary_culture = japanese
+				religion = shinto
+			}
+
+			any_country = { #Ezo
+				limit = {
+					tag = EZO
+					NOT = { exists = EZO }
+				}
+				capital = 1642
+				primary_culture = japanese
+				government = presidential_dictatorship
+				religion = shinto
+			}
+
+			any_country = { #Kaga
+				limit = {
+					tag = KAG
+					NOT = { exists = KAG }
+				}
+				capital = 1646
+				primary_culture = japanese
+				religion = shinto
+			}
+
+			any_country = { #Satsuma
+				limit = {
+					tag = SAT
+					NOT = { exists = SAT }
+				}
+				capital = 1662
+				primary_culture = japanese
+				religion = shinto
+			}
+
+			any_country = { #Sendai
+				limit = {
+					tag = SEN
+					NOT = { exists = SEN }
+				}
+				capital = 1668
+				primary_culture = japanese
+				religion = shinto
+			}
+
+			any_country = { #Tosa
+				limit = {
+					tag = TOS
+					NOT = { exists = TOS }
+				}
+				capital = 1665
+				primary_culture = japanese
+				religion = shinto
+			}
+
+			any_country = { #Yonezawa
+				limit = {
+					tag = YZW
+					NOT = { exists = YZW }
+				}
+				capital = 1673
+				primary_culture = japanese
+				religion = shinto
+			}
+
+			any_country = { #Fiji
+				limit = {
+					tag = FIJ
+					NOT = { exists = FIJ }
+				}
+				capital = 2454
+				primary_culture = melanesian
+				religion = protestant
+			}
+
+			any_country = { #South Island
+				limit = {
+					tag = SNZ
+					NOT = { exists = SNZ }
+				}
+				capital = 2513
+				set_country_flag = buro_independence
+				government = democracy
+				civilized = yes
+				religion = protestant
+			}
+
+			any_country = { #Tonga
+				limit = {
+					tag = TGA
+					NOT = { exists = TGA }
+				}
+				capital = 2540
+				primary_culture = polynesian
+				religion = protestant
+			}
+
 			#Cores for regional countries
 			TUR_806 = { add_core = MCD } #FYR Macedonia
 			TUR_788 = { add_core = BOS } #Bosnia
@@ -1966,7 +2234,62 @@ political_decisions = {
 			2065 = { add_core = SHO }
 			2053 = { add_core = SHO }
 			2056 = { add_core = SHO }
-
+			#Bima
+			1439 = { add_core = BIM }
+			1440 = { add_core = BIM }
+			1441 = { add_core = BIM }
+			1443 = { add_core = BIM }
+			1444 = { add_core = BIM }
+			1445 = { add_core = BIM }
+			1446 = { add_core = BIM }
+			#Fiji
+			2454 = { add_core = FIJ secede_province = FIJ change_controller = FIJ }
+			2520 = { add_core = FIJ secede_province = FIJ change_controller = FIJ }
+			#Jambi
+			1398 = { add_core = DJA }
+			1399 = { add_core = DJA }
+			1400 = { add_core = DJA }
+			1403 = { add_core = DJA }
+			1404 = { add_core = DJA }
+			1410 = { add_core = DJA }
+			#Kalimantan
+			1423 = { add_core = KLM }
+			1424 = { add_core = KLM }
+			1426 = { add_core = KLM }
+			1427 = { add_core = KLM }
+			#Maluku
+			1447 = { add_core = MAL }
+			1448 = { add_core = MAL }
+			1449 = { add_core = MAL }
+			1450 = { add_core = MAL }
+			1451 = { add_core = MAL }
+			#Taiwan
+			1485 = { add_core = TAI }
+			2562 = { add_core = TAI }
+			#Tonga
+			2540 = { add_core = TGA secede_province = TGA change_controller = TGA }
+			#Hawaii
+			658 = { secede_province = HAW change_controller = HAW }
+			CHI_1487 = { add_core = FJN } #Fujian
+			CHI_1499 = { add_core = GNG } #Guangdong
+			CHI_1529 = { add_core = HNN } #Hunan
+			CHI_1472 = { add_core = HUI } #Anhui
+			CHI_1473 = { add_core = HUI }
+			1430 = { add_core = SLW } #Sulawesi
+			1431 = { add_core = SLW }
+			1432 = { add_core = SLW }
+			1433 = { add_core = SLW }
+			1434 = { add_core = SLW }
+			1435 = { add_core = SLW }
+			1436 = { add_core = SLW }
+			1437 = { add_core = SLW }
+			1394 = { add_core = SWK } #Sarawak
+			1395 = { add_core = SWK }
+			CHI_1578 = { add_core = SZC } #Sichuan
+			CHI_1579 = { add_core = SZC }
+			JAP_1088 = { add_core = EZO } #Ezo Republic
+			ENG_2513 = { add_core = SNZ } #South Island
+			
 			set_global_flag = taiping_and_csa
 		}
 		ai_will_do = {
@@ -4250,7 +4573,7 @@ political_decisions = {
 			}
 			NOT = {
 				exists = BUR
-				tag = SST
+				tag = SHA
 			}
 		}	
 		allow = {
@@ -4263,7 +4586,7 @@ political_decisions = {
 						owner = {
 							in_sphere = THIS
 						}
-						owner = SST
+						owner = SHA
 					}
 				}
 			}
@@ -4292,13 +4615,13 @@ political_decisions = {
 			primary_culture = shan
 			NOT = {
 				tag = BUR
-				exists = SST
+				exists = SHA
 			}
 		}	
 		allow = {
 			war = no
 			prestige = 5
-			SST = {
+			SHA = {
 				all_core = {
 					OR = {
 						owned_by = THIS
@@ -4322,16 +4645,16 @@ political_decisions = {
 				annex_to = THIS
 			}
 			any_owned = {
-				add_core = SST
+				add_core = SHA
 			}			
 			
-			change_tag = SST
+			change_tag = SHA
 		}
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
+
 	form_libya = {
 		potential = {
 			OR = {

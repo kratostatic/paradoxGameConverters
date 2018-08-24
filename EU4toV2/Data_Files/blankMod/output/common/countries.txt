@@ -211,6 +211,9 @@ YNN		="countries/Yunnan.txt"
 XBI		="countries/Xibei San Ma.txt"
 XIN		="countries/Xinjiang.txt"
 YUA		="countries/Yuan.txt"
+KTI		= "countries/Kutai.txt"
+LAN		= "countries/Lanfang.txt"
+SAK		= "countries/Siak.txt"
 
 # North America
 CAL		="countries/Californian Republic.txt"
@@ -554,13 +557,14 @@ PAT		="countries/Pattani.txt"
 PEG		="countries/Pegu.txt"
 QIN		="countries/Qing.txt"
 RYU		="countries/Ryukyu.txt"
-SST		="countries/Shan.txt"
+SHA		="countries/Shan.txt"
 SUK		="countries/Sukhothai.txt"
 SUL		="countries/Sulu.txt"
 TOK		="countries/Tonkin.txt"
 WUU		="countries/Wu.txt"
 XIA		="countries/Xia.txt"
 AIN     =   "countries/Ainu.txt"
+TKG		=	"countries/Tokugawa.txt"
 
 # Americas
 LOU		="countries/Louisiana.txt"##
@@ -571,7 +575,7 @@ HUR		="countries/Huron.txt"##
 INC		="countries/Inca.txt"##
 IRO		="countries/Iroquois.txt"##
 MAY		="countries/Maya.txt"##
-SHA		="countries/Shawnee.txt"##
+SHX		="countries/Shawnee.txt"##
 ZAP		="countries/Zapotec.txt"##
 LSK		= "countries/Alaska.txt"##
 
@@ -775,6 +779,38 @@ SSU		= "countries/South Sudan.txt"
 KOM		= "countries/Comoros.txt"
 MAU		= "countries/Mauritius.txt"
 SEY		= "countries/Seychelles.txt"
+
+#East Asia
+BIM		= "countries/Bima.txt"
+DJA		= "countries/Jambi.txt"
+FJN		= "countries/Fujian.txt"
+GMJ		= "countries/Guominjun.txt"
+GNG		= "countries/Guangdong.txt"
+HNN		= "countries/Hunan.txt"
+HUI		= "countries/Anhui.txt"
+INO		= "countries/Indonesia.txt"
+KCH		= "countries/Kachin.txt"
+KLM		= "countries/Kalimantan.txt"
+KMT		= "countries/Nationalist China.txt"
+MAL		= "countries/Maluku.txt"
+SLW		= "countries/Sulawesi.txt"
+SWK		= "countries/Sarawak.txt"
+SZC		= "countries/Sichuan.txt"
+TAI		= "countries/Taiwan.txt"
+
+# Japan
+CHO		= "countries/Choshu.txt"
+EZO		= "countries/Ezo.txt"
+KAG		= "countries/Kaga.txt"
+SAT		= "countries/Satsuma.txt"
+SEN		= "countries/Sendai.txt"
+TOS		= "countries/Tosa.txt"
+YZW		= "countries/Yonezawa.txt"
+
+# Australasia & the Pacific
+FIJ		= "countries/Fiji.txt"
+SNZ     = "countries/South Island.txt"
+TGA		= "countries/Tonga.txt"
 
 ##HoD Dominions
 dynamic_tags  = yes # any tags after this is considered dynamic dominions

@@ -189,11 +189,11 @@ link = { tag = PHI culture = filipino } #Philippines
 link = { tag = JAV culture = javan } #Java
 link = { tag = IDC tag = SIA culture = thai } #and Siam
 link = { tag = IDC tag = LUA culture = lao } #and Luang Phrabang
-link = { tag = IDC tag = SST tag = BUR culture = shan } #and Shan States
+link = { tag = IDC tag = SHA tag = BUR culture = shan } #and Shan States
 link = { tag = IDC tag = BUR culture = burmese } #and Burma
-link = { tag = IDC culture = kachin }
+link = { tag = IDC tag = KCH culture = kachin } #Kachin
 link = { tag = IDC culture = karen }
-#no cultural union for Moluccan
+link = { tag = MAL culture = moluccan } #Maluku
 
 #East Asian
 link = { tag = JAP culture = japanese } #Japan
