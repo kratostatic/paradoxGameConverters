@@ -840,6 +840,7 @@ link = { eu4 = KAM v2 = MDO } # Mdokhams
 link = { eu4 = d_kham v2 = MDO } # Mdokhams
 link = { eu4 = GUG v2 = GUG } # Guge
 link = { eu4 = k_guge v2 = GUG } # Guge
+link = { eu4 = PHA v2 = PHA } # Phagmodrupa
 
 #Non-Han China proper tags
 link = { eu4 = CDL v2 = CDL } # Dali
@@ -903,15 +904,14 @@ link = { eu4 = SND v2 = SIN } # Sind
 link = { eu4 = k_sindh v2 = SIN } # Sind
 link = { eu4 = BRR v2 = BRR } # Berar
 link = { eu4 = JAN v2 = BIK } # Jangladesh => Bikaner
-link = { eu4 = d_jangladesh v2 = BIK } #Jangladesh => Bikaner
+link = { eu4 = d_jangladesh v2 = BIK } # Jangladesh => Bikaner
 link = { eu4 = KRK v2 = KRN } # Carnatic => Karnataka
 link = { eu4 = k_karnata v2 = KRN } # Karnata(ka)
 link = { eu4 = GDW v2 = GDW } # Gondwana
 link = { eu4 = k_gondwana v2 = GDW } # Gondwana
 link = { eu4 = GRJ v2 = GRJ } # Garjat
 link = { eu4 = GWA v2 = GWA } # Gwalior
-link = { eu4 = DHU v2 = RAJ } # Dhundhar => Rajputana
-link = { eu4 = k_rajputana v2 = RAJ } # Rajputana
+link = { eu4 = DHU v2 = RJP } # Dhundhar
 link = { eu4 = KSH v2 = KAS } # Kashmir
 link = { eu4 = k_kashmir v2 = KAS } # Kashmir
 link = { eu4 = d_kashmir v2 = KAS } # Kashmir
@@ -960,6 +960,53 @@ link = { eu4 = YOR v2 = AND } # Andhra
 link = { eu4 = k_andhra v2 = AND } #Andhra
 link = { eu4 = DGL v2 = MLD } # Maldives
 link = { eu4 = c_maldives v2 = MLD } # Maldives
+
+link = { eu4 = MBL v2 = MBL } # Bishnupur
+link = { eu4 = SKK v2 = SIK } # Sikkim
+link = { eu4 = c_sikkim v2 = SIK } # Sikkim
+link = { eu4 = IDR v2 = IDR } # Idar
+link = { eu4 = JLV v2 = JLV } # Jhalavad
+link = { eu4 = PTL v2 = PTL } # Palitana
+link = { eu4 = NVR v2 = NVR } # Navanagar
+link = { eu4 = RJK v2 = RJK } # Rajkot
+link = { eu4 = JGD v2 = JGD } # Junagarh
+link = { eu4 = PRB v2 = PRB } # Porbandar
+link = { eu4 = PAN v2 = PNN } # Panna
+link = { eu4 = KLP v2 = KLP } # Kalpi
+link = { eu4 = c_kalpi v2 = KLP } # Kalpi
+link = { eu4 = SBP v2 = SBP } # Sambalpur
+link = { eu4 = c_sambalpur v2 = SBP } # Sambalpur
+link = { eu4 = PTT v2 = PTT } # Patna
+link = { eu4 = RTT v2 = RTT } # Ratanpur
+link = { eu4 = d_ratanpur v2 = RTT } # Ratanpur
+link = { eu4 = KLH v2 = KLH } # Kalahandi
+link = { eu4 = KJH v2 = KJH } # Keonhjar
+link = { eu4 = SRG v2 = SRG } # Surguja
+link = { eu4 = KND v2 = SRI } # Kandy => Ceylon
+link = { eu4 = KND v2 = KTH } # Kandy
+link = { eu4 = TLG v2 = TLG } # Telingana
+link = { eu4 = k_telingana v2 = TLG } # Telingana
+link = { eu4 = KLT v2 = KLT } # Kolathunad
+link = { eu4 = DNG v2 = DNG } # Dang
+link = { eu4 = DTI v2 = DTI } # Doti
+link = { eu4 = c_doti v2 = DTI } # Doti
+link = { eu4 = GRK v2 = GRK } # Gorkha
+link = { eu4 = d_gorkha v2 = GRK } # Gorkha
+link = { eu4 = JML v2 = JML } # Jumla
+link = { eu4 = c_jumla v2 = JML } # Jumla
+link = { eu4 = LWA v2 = LWA } # Limbuwan
+link = { eu4 = c_limbuwan v2 = LWA } # Limbuwan
+link = { eu4 = MKP v2 = MKP } # Makwanpur
+link = { eu4 = SRM v2 = SRM } # Sirmur
+link = { eu4 = KTU v2 = KTU } # Kathmandu
+link = { eu4 = d_kathmandu v2 = KTU } # Kathmandu
+link = { eu4 = c_kathmandu v2 = KTU } # Kathmandu
+link = { eu4 = KMN v2 = KMN } # Kumaon
+link = { eu4 = GNG v2 = GEE } # Gingee
+link = { eu4 = TNJ v2 = TNJ } # Tanjore
+link = { eu4 = SRH v2 = SRH } # Sirhind
+link = { eu4 = RJP v2 = RAJ } # Rajputana
+link = { eu4 = k_rajputana v2 = RAJ } # Rajputana
 
 link = { eu4 = BAR v2 = BAR } # Bar
 link = { eu4 = HSA v2 = LUB } # Lubeck
@@ -1035,6 +1082,15 @@ link = { eu4 = LIG v2 = LIG } # Ligor
 link = { eu4 = MPH v2 = MPH } # Muan Phuang
 link = { eu4 = MYA v2 = MYA } # Mong Yang
 link = { eu4 = PRK v2 = PRK } # Perak
+
+# Burma Additions
+link = { eu4 = MMA v2 = MMA } # Mong Mao
+link = { eu4 = MKA v2 = KWN } # Mong Kawng
+link = { eu4 = MPA v2 = MPA } # Mong Pai
+link = { eu4 = MNI v2 = MNI } # Mong Nai
+link = { eu4 = KAL v2 = KAX } # Kale
+link = { eu4 = HSI v2 = HSI } # Hsipaw
+link = { eu4 = BPR v2 = BPR } # Prome
 
 #Siberian Tribes
 link = { eu4 = CHU v2 = CHU } # Chukchi
@@ -1162,7 +1218,6 @@ link = { eu4 = c_kalat v2 = KAL } #Kalat
 link = { eu4 = c_kutch v2 = KUT } #Kutch
 link = { eu4 = c_makran v2 = MAK } #Makran
 link = { eu4 = c_weimar v2 = WEI } #Weimar
-link = { eu4 = c_sikkim v2 = SIK } #Sikkim
 link = { eu4 = k_alania v2 = ALN } #Alania
 link = { eu4 = d_yugra v2 = UGR } #Yugra
 
@@ -1263,7 +1318,6 @@ link = { eu4 = DJO v2 = JOL } #Djolof
 link = { eu4 = LEO v2 = k_leon } #Leon
 link = { eu4 = FRK v2 = KOL } #Koln
 link = { eu4 = GGR v2 = KOR } #Goguryeo
-link = { eu4 = KTH v2 = KTH } #Ceylon
 link = { eu4 = LVO v2 = LIV } #LivonianOrder
 link = { eu4 = FRL v2 = LUB } #Lubeck
 link = { eu4 = CIZ v2 = MAY } #Chitzen_Itza
@@ -1294,7 +1348,6 @@ link = { eu4 = NSE v2 = SCA } #NorthSeaEmpire
 link = { eu4 = SEG v2 = SEG } #Segu
 link = { eu4 = SMM v2 = SHM } #Shammar
 link = { eu4 = SIA v2 = SIA } #Siam
-link = { eu4 = SKK v2 = SIK } #Sikkim
 link = { eu4 = RSP v2 = SPA } #RevolutionarySpain
 link = { eu4 = SRN v2 = SRU } #Saruhan
 link = { eu4 = SHI v2 = SRV } #Shirvanshah

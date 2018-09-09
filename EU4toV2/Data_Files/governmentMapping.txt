@@ -1,4 +1,4 @@
-# Copyright (c) 2018 The Paradox Game Converters Project
+# Copyright (c) 2017 The Paradox Game Converters Project
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -18,6 +18,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
+# Legacy file, used for pre-Dharma (pre-1.26) conversions
 
 # Monarchies - despotic_monarchy, feudal_monarchy, administrative_monarchy, absolute_monarchy, constitutional_monarchy, enlightened_despotism, revolutionary_empire, ottoman_government
 # Republics - merchant_republic, oligarchic_republic, noble_republic, administrative_republic, republican_dictatorship, constitutional_republic, bureaucratic_despotism, revolutionary_republic, imperial_city
