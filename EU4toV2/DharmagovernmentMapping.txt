@@ -1,0 +1,225 @@
+# Copyright (c) 2018 The Paradox Game Converters Project
+# 
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+# 
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
+# 
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+# THE SOFTWARE.
+
+#After Dharma (since 1.26) EU4 government conversion mechanics
+#Until integrated, I owe you syntax explanation:
+#Each reform gives a +1 probability of a certain government being chosen
+#e.g.: feudalism_reform=absolute_monarchy means that countries with feudalism_reform
+#will have a +1 chance of getting absolute_monarchy in Vic2
+#They are all grouped here by the government groups given by EU4
+#Upon counting how many points a country's government has, the one with most points
+#will become the government.
+
+monarchy = {
+	#Monarchies:
+	#Absolute Monarchy, HM's Government, Prussian Constitutionalism
+
+	#Feudalism vs Autocracy
+	feudalism_reform = absolute_monarchy
+	autocracy_reform = prussian_constitutionalism
+	plutocratic_reform = hms_government
+	indian_sultanate_reform = absolute_monarchy
+	nayankara_reform = hms_government
+	misl_confederacy_reform = absolute_monarchy
+	rajput_kingdom = absolute_monarchy
+	##Specific:
+	grand_duchy_reform = absolute_monarchy
+	daimyo = absolute_monarchy
+	indep_daimyo = absolute_monarchy
+	elective_monarchy = presidential_dictatorship
+	iqta = absolute_monarchy
+	ottoman_government = absolute_monarchy
+	prussian_monarchy = prussian_constitutionalism
+	principality = absolute_monarchy
+	tsardom = absolute_monarchy
+	mamluk_government = absolute_monarchy
+	feudal_theocracy = theocracy
+	celestial_empire = absolute_monarchy
+	shogunate = absolute_monarchy
+	english_monarchy = hms_government
+	mandala_reform = absolute_monarchy
+	revolutionary_empire_reform = absolute_monarchy
+	
+	#Hereditary vs Nobility
+	enforce_privileges_reform = absolute_monarchy
+	quash_noble_power_reform = absolute_monarchy
+	enforce_privileges_reform = hms_government
+	bengali_reform = absolute_monarchy
+	sufi_syncretism_reform = absolute_monarchy
+	poligar_reform = absolute_monarchy
+	khalsa_reform = absolute_monarchy
+	deccani_society_reform = absolute_monarchy
+	mughal_government = absolute_monarchy
+	
+	#Bureaucracy
+	centralize_reform = absolute_monarchy
+	decentralize_reform = hms_government
+	sidhi_recruitment = absolute_monarchy
+	mansabdari_reform = absolute_monarchy
+	
+	#Growth in Administration
+	clergy_in_administration = hms_government
+	of_noble_bearing_reform = prussian_constitutionalism
+	meritocratic_focus_reform = hms_government
+	dakhni_culture_reform = absolute_monarchy
+	zabt_reform = absolute_monarchy
+	
+	#Deliberative Assembly
+	parliamentary_reform = hms_government
+	royal_decree_reform = prussian_constitutionalism
+	aristocratic_court_reform = absolute_monarchy
+	general_estates_reform = prussian_constitutionalism
+	states_general_reform = hms_government
+	
+	#Absolute Rule vs Constitutional
+	letat_cest_moi_reform = absolute_monarchy
+	regional_representation_reform = hms_government
+	
+	#Separation of Power
+	political_absolutism_reform = absolute_monarchy
+	legislative_houses_reform = hms_government
+	become_a_republic_reform = presidential_dictatorship
+	install_theocratic_government_reform = theocracy
+}
+
+republic = {
+	#Republics:
+	#Democracy, Presidential Dictatorship, Proletarian Dictatorship (Dithmarschen)
+	
+	#Oligarchy Merchant Class
+	oligarchic_republic = presidential_dictatorship
+	merchants_reform = democracy
+	noble_elite_reform = presidential_dictatorship
+	free_city = democracy
+	trading_city = democracy
+	ambrosian_republic = presidential_dictatorship
+	veche_republic = presidential_dictatorship
+	american_republic = democracy
+	federal_republic = democracy
+	colonial_government = presidential_dictatorship
+	dutch_republic = democracy
+	peasants_republic = proletarian_dictatorship
+	revolutionary_republic_reform = democracy
+	presidential_despot_reform = presidential_dictatorship
+	cossacks_reform = presidential_dictatorship
+	
+	#Republican Virtues
+	republican_authoritarianism_reform = presidential_dictatorship
+	nepotism_reform = presidential_dictatorship
+	republicanism_reform = democracy
+	
+	#Frequent Elections vs Consolidation
+	frequent_elections_reform = democracy
+	consolidation_of_power_reform = presidential_dictatorship
+	
+	#Federalism vs etc.
+	provincial_governments_reform = democracy
+	administrative_divisions_reform = democracy
+	union_of_states_reform = presidential_dictatorship
+	
+	#Parliamentary vs Presidential
+	parliamentary_reform = democracy
+	presidential_reform = presidential_dictatorship
+	
+	#Consolidation of Power
+	broaden_executive_powers_reform = presidential_dictatorship
+	devolution_of_powers_reform = democracy
+	
+	#Guiding Principle of Administration
+	political_principle_reform = presidential_dictatorship
+	moral_principle_reform = democracy
+	
+	#Electorate
+	landholders_reform = presidential_dictatorship
+	citizenry_reform = democracy
+	
+	#Office Selection
+	sortition_reform = presidential_dictatorship
+	universal_suffrage_reform = democracy
+	
+	#Question of Dictatorship
+	seize_executive_power_reform = presidential_dictatorship
+	proclaim_divine_guidance_reform = theocracy
+	strengthen_executive_powers_reform = presidential_dictatorship
+	reinforce_republican_values_reform = democracy
+}
+
+tribal = {
+	#Tribal: mixed, mostly Absolute Monarchy
+
+	#Tribal Administration
+	steppe_horde = absolute_monarchy
+	tribal_federation = absolute_monarchy
+	tribal_despotism = hms_government
+	tribal_kingdom = absolute_monarchy
+	siberian_tribe = absolute_monarchy
+	gond_kingdom = absolute_monarchy
+	
+	#Tribal Cultural Values
+	martial_society_reform = absolute_monarchy
+	civil_society_reform = absolute_monarchy
+	
+	#Tribal Religion
+	religious_societies_reform = absolute_monarchy
+	lip_service_reform = absolute_monarchy
+	
+	#Tribal Modernization
+	centralize_tribal_power_reform = absolute_monarchy
+	retain_tribal_hierarchy_reform = hms_government
+	
+	#Tribal Reformation
+	tribe_becomes_monarchy_reform = absolute_monarchy
+	tribe_becomes_republic_reform = hms_government
+	tribe_becomes_theocracy_reform = theocracy
+	tribe_becomes_horde_reform = absolute_monarchy
+}
+
+native = {
+	#No reforms known. It should lead to absolute_monarchy.
+}
+
+theocracy = {
+	#Theocracy
+	
+	#Theocratic Leadership
+	leading_clergy_reform = theocracy
+	monastic_order_reform = prussian_constitutionalism
+	papacy_reform = theocracy
+	
+	#Internal vs External Mission
+	internal_mission_reform = theocracy
+	external_mission_reform = theocracy
+	
+	#Divine Cause
+	safeguard_holy_sites_reform = theocracy
+	combat_heresy_reform = theocracy
+	expel_heathens_reform = theocracy
+	
+	#Clergy in Administration
+	subservient_administrators_reform = theocracy
+	religious_administrators_reform = theocracy
+	
+	#Secularization
+	maintain_religious_head_reform = theocracy
+	hereditary_religious_leadership_reform = theocracy
+	crown_leader_reform = theocracy
+	proclaim_republic_reform = presidential_dictatorship
+	battle_pope_reform = theocracy
+}
