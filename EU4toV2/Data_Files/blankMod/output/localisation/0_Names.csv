@@ -104,7 +104,8 @@ ASH;Ashanti;Ashanti;Ashanti;Ashanti;Ashanti;Ashanti;Ashanti;Ashanti;Ashanti;Asha
 ASI_ADJ;Assiniboine;Assiniboine;Assiniboin;Assiniboine;Assiniboine;Assiniboine;Assiniboine;Assiniboine;Assiniboine;Assiniboine;Assiniboine;Àññèíèáîèíå;Assiniboine;x
 ASI;Assiniboine;Assiniboine;Assiniboin;Assiniboine;Assiniboine;Assiniboine;Assiniboine;Assiniboine;Assiniboine;Assiniboine;Assiniboine;Àññèíèáîèíå;Assiniboine;x
 ASM_ADJ;Assamese;Assamais;Assamesisch;Asamski;Assamés;assamese;asszámi;ásámština;asszámi;Assamees;Assamês;Àññàìñêèé;assami;x
-ASM;Assam;Assam;Assam;Assam;Assam;Assam;Assam;Assam;Assam;Assam;Assam;Àññàì;Assam;xASR;Asir;Asir;Asir;Asir;Asir;Asir;Asir;Asir;Asir;Asir;Asir;Àñèğ;Asir;x
+ASM;Assam;Assam;Assam;Assam;Assam;Assam;Assam;Assam;Assam;Assam;Assam;Àññàì;Assam;x
+ASR;Asir;Asir;Asir;Asir;Asir;Asir;Asir;Asir;Asir;Asir;Asir;Àñèğ;Asir;x
 ASR_ADJ;Idrisid;Idrisid;Idrisid;Idrisid;Idrisid;idriside;Idrisid;Idrisid;Idrisid;Idrisid;Idrisid;Èäğèñèäñêèé;Idrisid;x
 ASY;Assyria;Assyrie;Assyrien;Asyria;Asiria;Assiria;Asszíria;Asırii;Asszíria;Assyrië;Assíria;Àññèğèÿ;Assyria;x
 ASY_ADJ;Assyrian;assyrien;Assyrer;asyryjski;asirio;assiro;asszír;Asyrskı;asszír;Assyrisch;assírio;àññèğèéñêèé;assyrialainen;x
@@ -164,7 +165,8 @@ BIH_ADJ;Bihari;Bihari;Bihari;Bihari;Bihari;Bihari;Bihari;Bihari;Bihari;Bihari;Bi
 BIM;Bima;Bima;Bima;Bima;Bima;Bima;Bima;Bima;Bima;Bima;Bima;Áèìà;Bima;x
 BIM_ADJ;Biman;Biman;Biman;Biman;Biman;Biman;Biman;Biman;Biman;Biman;Biman;Áèìñêèé;Biman;x
 BLC_ADJ;Baluchi;Baluchi;Baluchi;Baluchi;Baluchi;Baluchi;Baluchi;balúcština;Baluchi;Baluchi;Baluchi;Áåëóäæåé;belutši;x
-BLC;Baluchistan;Baloutchistan;Baluchistan;Beludzystan;Baluchistán;Baluchistan;Beludzsisztán;Baluchistan;Beludzsisztán;Baluchistan;Baluchistão;Áåëóäæèñòàí;Baluchistan;xBHR;Bahrain;Bahreïn;Bahrain;Bahrajn;Bahrein;Bahrein;Bahrein;Bahrajnu;Bahrein;Bahrein;Bahrain;Áàõğåéí;Bahrain;x
+BLC;Baluchistan;Baloutchistan;Baluchistan;Beludzystan;Baluchistán;Baluchistan;Beludzsisztán;Baluchistan;Beludzsisztán;Baluchistan;Baluchistão;Áåëóäæèñòàí;Baluchistan;x
+BHR;Bahrain;Bahreïn;Bahrain;Bahrajn;Bahrein;Bahrein;Bahrein;Bahrajnu;Bahrein;Bahrein;Bahrain;Áàõğåéí;Bahrain;x
 BHR_ADJ;Bahraini;Bahreïn;Bahraini;Bahrajn;Bahrein;bahreinese;bahreini;Bahrajnu;bahreini;Bahreinse;Bahrein;Áàõğåéíñêèé;Bahrainin;x
 BIA;Biafra;Biafra;Biafra;Biafra;Biafra;Biafra;Biafra;Biafra;Biafra;Biafra;Biafra;Áèàôğà;Biafra;x
 BIA_ADJ;Biafran;Biafran;Biafran;Biafran;Biafran;Biafra;Biafran;Biafran;Biafran;Biafra;Biafrense;Áèàôğû;Biafran;x
