@@ -3841,8 +3841,17 @@ political_decisions = {
 		allow = {
 			war = no
 			prestige = 5
+			263 = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
 			IRE = {
 				all_core = {
+					NOT = { province_id = 263 }
 					OR = {
 						owned_by = THIS
 						owner = {
@@ -3894,8 +3903,17 @@ political_decisions = {
 		allow = {
 			war = no
 			prestige = 5
+			834 = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
 			GRE = {
 				all_core = {
+					NOT = { province_id = 834 }
 					OR = {
 						owned_by = THIS
 						owner = {
@@ -4015,8 +4033,17 @@ political_decisions = {
 		allow = {
 			war = no
 			prestige = 5
+			455 = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
 			OCC = {
 				all_core = {
+					NOT = { province_id = 455 }
 					OR = {
 						owned_by = THIS
 						owner = {
@@ -4500,8 +4527,17 @@ political_decisions = {
 		allow = {
 			war = no
 			prestige = 5
+			492 = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
 			BSQ = {
 				all_core = {
+					NOT = { province_id = 492 }
 					OR = {
 						owned_by = GYN
 						owned_by = NAV
