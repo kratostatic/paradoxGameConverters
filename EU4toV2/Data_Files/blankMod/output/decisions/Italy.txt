@@ -6,10 +6,17 @@ political_decisions = {
 				AND = { 
 					tag = ITA
 					NOT = { exists = SAR }
+					NOT = { exists = SVY }
 				}
 				AND = { 
 					tag = SAR
 					NOT = { exists = ITA }
+					NOT = { exists = SVY }
+				}
+				AND = {
+					tag = SVY
+					NOT = { exists = ITA }
+					NOT = { exists = SAR }
 				}
 			}
 			NOT = {
@@ -73,7 +80,13 @@ political_decisions = {
 	
 	award_order_of_st_francis = {
 		potential = {
-			tag = SIC
+			OR = {
+				tag = SIC
+				AND = {
+					tag = NAP
+					NOT = { exists = SIC }
+				}
+			}
 			government = absolute_monarchy
 			NOT = {
 				has_country_flag = order_awarded
@@ -93,7 +106,7 @@ political_decisions = {
 	
 	statuto_albertino = {
 		potential = {
-			tag = SAR
+			OR = { tag = SAR AND = { tag = SVY NOT = { exists = SAR } } }
 			government = absolute_monarchy
 			NOT = {
 				has_country_flag = get_your_statuto_albertino_here
@@ -117,6 +130,7 @@ political_decisions = {
 			OR = {
 				tag = ITA
 				tag = PAP
+				tag = ITP
 			}
 			OR = {
 				government = absolute_monarchy
