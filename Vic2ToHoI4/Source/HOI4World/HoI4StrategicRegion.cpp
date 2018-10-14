@@ -30,28 +30,37 @@ using namespace std;
 
 
 
-HoI4StrategicRegion::HoI4StrategicRegion(string _filename)
+HoI4StrategicRegion::HoI4StrategicRegion(const string& _filename):
+	filename(_filename),
+	ID(0),
+	oldProvinces(),
+	newProvinces(),
+	weatherObj()
 {
-	filename = _filename;
-
-	Object* fileObj				= parser_UTF8::doParseFile(Configuration::getHoI4Path() + "/map/strategicregions/" + filename);
-	vector<Object*> regionObjs	= fileObj->getValue("strategic_region");
-
-	vector<Object*> IDObjs = regionObjs[0]->getValue("id");
-	ID = stoi(IDObjs[0]->getLeaf());
-
-	vector<Object*>	provincesObjs		= regionObjs[0]->getValue("provinces");
-	vector<string>		provinceStrings	= provincesObjs[0]->getTokens();
-	for (auto provinceString: provinceStrings)
+	auto fileObj = parser_UTF8::doParseFile(Configuration::getHoI4Path() + "/map/strategicregions/" + filename);
+	if (fileObj)
 	{
-		oldProvinces.push_back(stoi(provinceString));
-	}
+		auto regionObj = fileObj->safeGetObject("strategic_region");
+		if (regionObj != nullptr)
+		{
+			ID = regionObj->safeGetInt("id", ID);
 
-	weatherObj = regionObjs[0]->getValue("weather")[0];
+			for (auto provinceString: regionObj->safeGetTokens("provinces"))
+			{
+				oldProvinces.push_back(stoi(provinceString));
+			}
+
+			weatherObj = regionObj->safeGetObject("weather");
+		}
+	}
+	else
+	{
+		LOG(LogLevel::Error) << "Could not parse " << Configuration::getHoI4Path() << "/map/strategicregions/" << filename;
+	}
 }
 
 
-void HoI4StrategicRegion::output(string path)
+void HoI4StrategicRegion::output(const string& path) const
 {
 	ofstream out(path + filename);
 	if (!out.is_open())

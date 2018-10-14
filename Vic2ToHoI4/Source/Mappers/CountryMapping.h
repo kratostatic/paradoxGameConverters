@@ -28,31 +28,34 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.*/
 
 #include "Object.h"
 #include <map>
+#include <optional>
 #include <string>
-#include <boost/bimap.hpp>
 using namespace std;
 
 
 
 class Object;
-class V2World;
+namespace Vic2
+{
+class World;
+}
 
 
 
 class CountryMapper
 {
 	public:
-		static void createMappings(const V2World* srcWorld)
+		static void createMappings(const Vic2::World* srcWorld)
 		{
 			getInstance()->CreateMappings(srcWorld);
 		}
 
-		static const string getHoI4Tag(const string& V2Tag)
+		static optional<string> getHoI4Tag(const string& V2Tag)
 		{
 			return getInstance()->GetHoI4Tag(V2Tag);
 		}
 
-		static const string getVic2Tag(const string& HoI4Tag)
+		static optional<string> getVic2Tag(const string& HoI4Tag)
 		{
 			return getInstance()->GetVic2Tag(HoI4Tag);
 		}
@@ -61,7 +64,7 @@ class CountryMapper
 		static CountryMapper* instance;
 		static CountryMapper* getInstance()
 		{
-			if (instance == NULL)
+			if (instance == nullptr)
 			{
 				instance = new CountryMapper();
 			}
@@ -70,24 +73,28 @@ class CountryMapper
 		}
 		CountryMapper();
 
-		void readRules();
-		vector<Object*> getRules();
-		void importRule(Object* rule);
+		CountryMapper(const CountryMapper&) = delete;
+		CountryMapper& operator=(const CountryMapper&) = delete;
 
-		void CreateMappings(const V2World* srcWorld);
+		void readRules();
+		vector<shared_ptr<Object>> getRules() const;
+		void importRule(shared_ptr<Object> rule);
+
+		void CreateMappings(const Vic2::World* srcWorld);
 		void resetMappingData();
 		void makeOneMapping(const string& Vic2Tag);
 		bool mapToFirstUnusedVic2Tag(const vector<string>& possibleVic2Tags, const string& EU4Tag);
 		string generateNewHoI4Tag(const string& Vic2Tag);
 		void mapToNewTag(const string& Vic2Tag, const string& HoI4Tag);
-		void LogMapping(const string& sourceTag, const string& targetTag, const string& reason);
-		bool tagIsAlreadyAssigned(const string& HoI4Tag);
+		void LogMapping(const string& sourceTag, const string& targetTag, const string& reason) const;
+		bool tagIsAlreadyAssigned(const string& HoI4Tag) const;
 
-		const string GetHoI4Tag(const string& V2Tag) const;
-		const string GetVic2Tag(const string& HoI4Tag) const;
+		optional<string> GetHoI4Tag(const string& V2Tag) const;
+		optional<string> GetVic2Tag(const string& HoI4Tag) const;
 
 		map<string, vector<string>> Vic2TagToHoI4TagsRules;
-		boost::bimap<string, string> V2TagToHoI4TagMap;
+		map<string, string> V2TagToHoI4TagMap;
+		map<string, string> HoI4TagToV2TagMap;
 
 		char generatedHoI4TagPrefix;
 		int generatedHoI4TagSuffix;

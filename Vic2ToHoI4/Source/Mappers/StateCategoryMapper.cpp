@@ -1,4 +1,4 @@
-/*Copyright (c) 2016 The Paradox Game Converters Project
+/*Copyright (c) 2017 The Paradox Game Converters Project
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
@@ -33,13 +33,14 @@ using namespace std;
 stateCategoryMapper* stateCategoryMapper::instance;
 
 
-stateCategoryMapper::stateCategoryMapper()
+stateCategoryMapper::stateCategoryMapper():
+	stateCategories()
 {
 	readCategoriesFromDirectory(Configuration::getHoI4Path() + "/common/state_category");
 }
 
 
-void stateCategoryMapper::readCategoriesFromDirectory(string directory)
+void stateCategoryMapper::readCategoriesFromDirectory(const string& directory)
 {
 	set<string> categoryFiles;
 	Utils::GetAllFilesInFolder(directory, categoryFiles);
@@ -50,17 +51,24 @@ void stateCategoryMapper::readCategoriesFromDirectory(string directory)
 }
 
 
-void stateCategoryMapper::readCategoriesFromFile(string file)
+void stateCategoryMapper::readCategoriesFromFile(const string& file)
 {
-	Object* parsedFile = parser_UTF8::doParseFile(file);
-	vector<Object*> StateCategoryObjs = parsedFile->getLeaves();
-	vector<Object*> categoryObjs = StateCategoryObjs[0]->getLeaves();
-
-	for (auto categoryObj: categoryObjs)
+	shared_ptr<Object> parsedFile = parser_UTF8::doParseFile(file);
+	if (parsedFile)
 	{
-		string category = categoryObj->getKey();
-		string slotsString = categoryObj->getLeaf("local_building_slots");
-		int slots = stoi(slotsString);
-		stateCategories.insert(make_pair(slots, category));
+		vector<shared_ptr<Object>> StateCategoryObjs = parsedFile->getLeaves();
+		vector<shared_ptr<Object>> categoryObjs = StateCategoryObjs[0]->getLeaves();
+
+		for (auto categoryObj: categoryObjs)
+		{
+			string category = categoryObj->getKey();
+			int slots = categoryObj->safeGetInt("local_building_slots");
+			stateCategories.insert(make_pair(slots, category));
+		}
+	}
+	else
+	{
+		LOG(LogLevel::Error) << "Could not parse " << file;
+		exit(-1);
 	}
 }

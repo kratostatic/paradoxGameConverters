@@ -26,29 +26,34 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.*/
 
 
 
-#include <vector>
-#include <string>
 #include <map>
+#include <optional>
 #include <set>
+#include <string>
+#include <vector>
 using namespace std;
 
 
-
-class V2Province;
-class Vic2State;
+namespace Vic2
+{
+class Province;
+class State;
+}
 
 
 
 class HoI4State
 {
 	public:
-		HoI4State(const Vic2State* sourceState, int _ID, string _ownerTag);
+		HoI4State(const Vic2::State* sourceState, int _ID, const string& _ownerTag);
 
-		void output(string filename);
+		void output(const string& filename) const;
 
 		void addProvince(int province) { provinces.insert(province); }
 		void setAsCapitalState() { capitalState = true; civFactories++; }
-		void addResource(string resource, double amount)	{ resources[resource] += amount; }
+		void makeImpassable() { impassable = true; }
+		void markHadImpassablePart() { hadImpassablePart = true; }
+		void addResource(const string& resource, double amount)	{ resources[resource] += amount; }
 		void addAirBase(int newAirBase) { airbaseLevel += newAirBase; if (airbaseLevel > 10) airbaseLevel = 10; }
 		void addVictoryPointValue(int additionalValue) { victoryPointValue += additionalValue; }
 		void setVPLocation(int province) { victoryPointPosition = province; }
@@ -57,7 +62,7 @@ class HoI4State
 		void addNavalBase(int level, int location);
 		void addCores(const vector<string>& newCores);
 
-		const Vic2State* getSourceState() const { return sourceState; }
+		const Vic2::State* getSourceState() const { return sourceState; }
 		set<int>	getProvinces() const { return provinces; }
 		string getOwner() const { return ownerTag; }
 		set<string> getCores() const { return cores; }
@@ -68,8 +73,10 @@ class HoI4State
 		int getInfrastructure() const { return infrastructure; }
 		int getManpower() const { return manpower; }
 		int getVPLocation() const { return victoryPointPosition; }
+		set<int> getDebugVPs() const { return debugVictoryPoints; }
+		set<int> getSecondaryDebugVPs() const { return secondaryDebugVictoryPoints; }
 
-		int getMainNavalLocation() const;
+		optional<int> getMainNavalLocation() const;
 
 		void tryToCreateVP();
 		void addManpower();
@@ -77,6 +84,9 @@ class HoI4State
 		void convertIndustry(double workerFactoryRatio);
 
 	private:
+		HoI4State(const HoI4State&) = delete;
+		HoI4State& operator=(const HoI4State&) = delete;
+
 		int determineFactoryNumbers(double workerFactoryRatio);
 		int constrainFactoryNumbers(double rawFactories);
 		void determineCategory(int factories);
@@ -84,20 +94,23 @@ class HoI4State
 		void setIndustry(int factories);
 		bool amICoastal();
 
-		int determineNavalBaseLevel(const V2Province* sourceProvince);
-		int determineNavalBaseLocation(const V2Province* sourceProvince);
+		int determineNavalBaseLevel(const Vic2::Province* sourceProvince);
+		optional<int> determineNavalBaseLocation(const Vic2::Province* sourceProvince);
 
 		bool assignVPFromVic2Province(int Vic2ProvinceNumber);
 		void assignVP(int location);
 		bool isProvinceInState(int provinceNum);
+		void addDebugVPs();
 
-		const Vic2State* sourceState;
+		const Vic2::State* sourceState;
 
 		int ID;
 		set<int> provinces;
 		string ownerTag;
 		set<string> cores;
 		bool capitalState;
+		bool impassable;
+		bool hadImpassablePart;
 
 		int manpower;
 
@@ -115,6 +128,8 @@ class HoI4State
 
 		int victoryPointPosition;
 		int victoryPointValue;
+		set<int> debugVictoryPoints;
+		set<int> secondaryDebugVictoryPoints;
 };
 
 

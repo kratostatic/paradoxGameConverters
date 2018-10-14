@@ -1,4 +1,4 @@
-/*Copyright (c) 2016 The Paradox Game Converters Project
+/*Copyright (c) 2017 The Paradox Game Converters Project
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
@@ -24,43 +24,70 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.*/
 #ifndef COLOR_H_
 #define COLOR_H_
 
+
+
 #include <array>
 #include <iostream>
+#include <memory>
+
+
 
 class Object;
 
-// An RGB color triplet.
-class Color
+
+namespace ConverterColor
 {
-public:
-	// Default initializes the color values to 0.
-	Color();
-	// Initializes the color with a given RGB color triplet.
-	Color(int r, int g, int b);
-	// Initializes the color from an object node whose leaf value is
-	// an RGB color triplet (separated only by whitespace).
-	Color(Object* colorObject);
+	struct red
+	{
+		red() { Red = 0; }
+		red(int r): Red(r) {}
+		int Red;
+	};
+	struct green
+	{
+		green() { Green = 0; }
+		green(int g): Green(g) {}
+		int Green;
+	};
+	struct blue
+	{
+		blue() { Blue = 0; }
+		blue(int b): Blue(b) {}
+		int Blue;
+	};
 
-	// Randomly adjust the RGB values up or down (within the range 0-255)
-	// with a normal distribution of the given standard deviation.
-	void RandomlyFlunctuate(int stdDev);
+	class Color
+	{
+		public:
+			Color();
+			explicit Color(red r, green g, blue b);
+			explicit Color(std::shared_ptr<Object> colorObject);
+			Color(const Color&) = default;
+			Color& operator=(const Color&) = default;
 
-	// Writes the RGB triplet to the stream as "R G B".
-	friend std::ostream& operator<<(std::ostream&, const Color&);
+			// Randomly adjust the RGB values up or down (within the range 0-255)
+			// with a normal distribution of the given standard deviation.
+			void RandomlyFlunctuate(int stdDev);
 
-	// Passes back the RGB color triplet as individual components.
-	void GetRGB(int& r, int& g, int& b) const;
+			friend std::ostream& operator<<(std::ostream&, const Color&);
 
-	bool operator == (const Color& right) const;
-	bool operator != (const Color& right) const;
-	bool operator < (const Color& right) const;
+			void GetRGB(red& r, green& g, blue& b) const;
 
-	// Returns true if the color has been initialized with an RGB triplet.
-	operator bool() const;
+			bool operator == (const Color& right) const;
+			bool operator != (const Color& right) const;
+			bool operator < (const Color& right) const;
 
-private:
-	bool initialized;			// whether or not this instance has been initialized (true) or is a default (false)
-	std::array<int, 3> c;	// the color values
-};
+			// Returns true if the color has been initialized with an RGB triplet.
+			operator bool() const;
+
+		private:
+			bool initialized;
+			std::array<int, 3> c;
+	};
+
+	std::ostream& operator<<(std::ostream& out, const Color& color);
+}
+
+
 
 #endif // COLOR_H_

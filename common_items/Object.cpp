@@ -1,4 +1,4 @@
-/*Copyright (c) 2017 The Paradox Game Converters Project
+/*Copyright (c) 2018 The Paradox Game Converters Project
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
@@ -56,85 +56,70 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.*/
 
 
 
-Object::Object(string k) :
-objects(),
-strVal(),
-leaf(false),
-isObjList(false)
+
+Object::~Object()
 {
-	key = k;
 }
 
 
-Object::~Object() {
-	for (objiter i = objects.begin(); i != objects.end(); ++i)
-	{
-		delete (*i);
-	}
-	if (br == this)
-	{
-		br = 0;
-	}
-}
-
-
-Object::Object(Object* other) :
-objects(),
-strVal(other->strVal),
-leaf(other->leaf),
-isObjList(other->isObjList)
+Object::Object(std::shared_ptr<Object> other):
+	key(other->key),
+	strVal(other->strVal),
+	objects(),
+	leaf(other->leaf),
+	isObjList(other->isObjList),
+	tokens()
 {
-	key = other->key;
-	for (vector<Object*>::iterator i = other->objects.begin(); i != other->objects.end(); ++i)
+	for (auto i: other->objects)
 	{
-		objects.push_back(new Object(*i));
+		objects.push_back(i);
 	}
 }
 
 
-void Object::setValue(string val)
+void Object::setValue(const std::string& val)
 {
 	strVal = val;
 	leaf = true;
 }
 
 
-void Object::setValue(Object* val)
+void Object::setValue(std::shared_ptr<Object> val)
 {
 	objects.push_back(val);
 	leaf = false;
 }
 
 
-void Object::unsetValue(string val)
+void Object::unsetValue(const std::string& val)
 {
-	for (unsigned int i = 0; i < objects.size(); ++i)
+	for (auto i: objects)
 	{
-		if (objects[i]->getKey() != val)
+		if (i->getKey() != val)
 		{
 			continue;
 		}
-		objects[i] = objects.back();
+		i = objects.back();
 		objects.pop_back();
 	}
 }
 
 
-void Object::setLeaf(string key, string val)
+void Object::setLeaf(std::string key, std::string val)
 {
-	Object* leaf = new Object(key);	// an object to hold the leaf
+	std::shared_ptr<Object> leaf = std::make_shared<Object>(key);
 	leaf->setValue(val);
 	setValue(leaf);
 }
 
 
-void Object::setValue(vector<Object*> val)
+void Object::setValue(const std::vector<std::shared_ptr<Object>>& val)
 {
 	objects = val;
 }
 
 
-void Object::addToList(string val)
+void Object::addToList(std::string val)
 {
 	isObjList = true;
 	if (strVal.size() > 0)
@@ -151,10 +136,10 @@ void Object::addToList(string val)
 }
 
 
-void Object::addToList(vector<string>::iterator begin, vector<string>::iterator end)
+void Object::addToList(std::vector<std::string>::iterator begin, std::vector<std::string>::iterator end)
 {
 	isObjList = true;
-	for (vector<string>::iterator itr = begin; itr != end; ++itr)
+	for (auto itr = begin; itr != end; ++itr)
 	{
 		if (strVal.size() > 0)
 		{
@@ -171,34 +156,35 @@ void Object::addToList(vector<string>::iterator begin, vector<string>::iterator 
 }
 
 
-vector<Object*> Object::getValue(string key) const
+std::vector<std::shared_ptr<Object>> Object::getValue(const std::string& key) const
 {
-	vector<Object*> ret;	// the objects to return
-	for (vector<Object*>::const_iterator i = objects.begin(); i != objects.end(); ++i)
+	std::vector<std::shared_ptr<Object>> ret;
+
+	for (auto i: objects)
 	{
-		if ((*i)->getKey() != key)
+		if (i->getKey() != key)
 		{
 			continue;
 		}
-		ret.push_back(*i);
+		ret.push_back(i);
 	}
 	return ret;
 }
 
 
-string Object::getToken(const int index)
+std::optional<std::string> Object::getToken(const int index)
 {
 	if (!isObjList)
 	{
-		return "";
+		return {};
 	}
-	if (index >= (int)tokens.size())
+	if (index >= static_cast<int>(tokens.size()))
 	{
-		return "";
+		return {};
 	}
 	if (index < 0)
 	{
-		return "";
+		return {};
 	}
 	return tokens[index];
 }
@@ -214,12 +200,12 @@ int Object::numTokens()
 }
 
 
-vector<string> Object::getKeys()
+std::vector<std::string> Object::getKeys()
 {
-	vector<string> ret;	// the keys to return
-	for (vector<Object*>::iterator i = objects.begin(); i != objects.end(); ++i)
+	std::vector<std::string> ret;	// the keys to return
+	for (auto i: objects)
 	{
-		string curr = (*i)->getKey();	// the current key
+		std::string curr = i->getKey();	// the current key
 		if (find(ret.begin(), ret.end(), curr) != ret.end())
 		{
 			continue;
@@ -230,19 +216,19 @@ vector<string> Object::getKeys()
 }
 
 
-string Object::getLeaf(string leaf) const
+std::optional<std::string> Object::getLeaf(const std::string& leaf) const
 {
-	vector<Object*> leaves = getValue(leaf); // the objects to return
+	std::vector<std::shared_ptr<Object>> leaves = getValue(leaf); // the objects to return
 	if (0 == leaves.size())
 	{
-		LOG(LogLevel::Error) << "Error: Cannot find leaf " << leaf << " in object\n" << *this;
-		assert(leaves.size());
+		LOG(LogLevel::Warning) << "Error: Cannot find leaf " << leaf << " in object\n" << *this;
+		return {};
 	}
 	return leaves[0]->getLeaf();
 }
 
 
-ostream& operator<< (ostream& os, const Object& obj)
+std::ostream& operator<< (std::ostream& os, const Object& obj)
 {
 	static int indent = 0; // the level of indentation to output to
 	for (int i = 0; i < indent; i++)
@@ -250,18 +236,18 @@ ostream& operator<< (ostream& os, const Object& obj)
 		os << "\t";
 	}
 	if (obj.leaf) {
-		os << obj.key << "=" << obj.strVal << "\n";
+		os << obj.key << " = \"" << obj.strVal << "\"\n";
 		return os;
 	}
 	if (obj.isObjList)
 	{
-		os << obj.key << "={" << obj.strVal << " }\n";
+		os << obj.key << " = { " << obj.strVal << " }\n";
 		return os;
 	}
 
-	if ((&obj != parser_UTF8::getTopLevel()) && (&obj != parser_8859_15::getTopLevel()))
+	if (obj.getKey() != "topLevel")
 	{
-		os << obj.key << "=\n";
+		os << obj.key << " =\n";
 		for (int i = 0; i < indent; i++)
 		{
 			os << "\t";
@@ -273,7 +259,7 @@ ostream& operator<< (ostream& os, const Object& obj)
 	{
 		os << *i;
 	}
-	if ((&obj != parser_UTF8::getTopLevel()) && (&obj != parser_8859_15::getTopLevel()))
+	if (obj.getKey() != "topLevel")
 	{
 		indent--;
 		for (int i = 0; i < indent; i++)
@@ -290,16 +276,16 @@ void Object::keyCount()
 {
 	if (leaf)
 	{
-		cout << key << " : 1\n";
+		std::cout << key << " : 1\n";
 		return;
 	}
 
-	map<string, int> refCount;	// the count of the references
+	std::map<std::string, int> refCount;	// the count of the references
 	keyCount(refCount);
-	vector<pair<string, int> > sortedCount; // an organized container for the counts
-	for (auto i = refCount.begin(); i != refCount.end(); ++i)
+	std::vector<std::pair<std::string, int> > sortedCount; // an organized container for the counts
+	for (auto i: refCount)
 	{
-		pair<string, int> curr((*i).first, (*i).second);
+		std::pair<std::string, int> curr(i.first, i.second);
 		if (2 > curr.second)
 		{
 			continue;
@@ -310,7 +296,7 @@ void Object::keyCount()
 			continue;
 		}
 
-		for (vector<pair<string, int> >::iterator j = sortedCount.begin(); j != sortedCount.end(); ++j)
+		for (auto j = sortedCount.begin(); j != sortedCount.end(); ++j)
 		{
 			if (curr.second < (*j).second)
 			{
@@ -321,39 +307,39 @@ void Object::keyCount()
 		}
 	}
 
-	for (vector<pair<string, int> >::iterator j = sortedCount.begin(); j != sortedCount.end(); ++j)
+	for (auto j: sortedCount)
 	{
-		cout << (*j).first << " : " << (*j).second << "\n";
+		std::cout << j.first << " : " << j.second << "\n";
 	}
 }
 
 
-void Object::keyCount(map<string, int>& counter)
+void Object::keyCount(std::map<std::string, int>& counter)
 {
-	for (vector<Object*>::iterator i = objects.begin(); i != objects.end(); ++i)
+	for (auto i: objects)
 	{
-		counter[(*i)->key]++;
-		if ((*i)->leaf)
+		counter[i->key]++;
+		if (i->leaf)
 		{
 			continue;
 		}
-		(*i)->keyCount(counter);
+		i->keyCount(counter);
 	}
 }
 
 
 void Object::printTopLevel()
 {
-	for (vector<Object*>::iterator i = objects.begin(); i != objects.end(); ++i)
+	for (auto i: objects)
 	{
-		cout << (*i)->key << endl;
+		std::cout << i->key << std::endl;
 	}
 }
 
 
-void Object::removeObject(Object* target)
+void Object::removeObject(std::shared_ptr<Object> target)
 {
-	vector<Object*>::iterator pos = find(objects.begin(), objects.end(), target);	// the position of the object to be removed
+	std::vector<std::shared_ptr<Object>>::iterator pos = find(objects.begin(), objects.end(), target);	// the position of the object to be removed
 	if (pos == objects.end())
 	{
 		return;
@@ -362,17 +348,17 @@ void Object::removeObject(Object* target)
 }
 
 
-void Object::addObject(Object* target)
+void Object::addObject(std::shared_ptr<Object> target)
 {
 	objects.push_back(target);
 }
 
 
-void Object::addObjectAfter(Object* target, string key)
+void Object::addObjectAfter(std::shared_ptr<Object> target, const std::string& key)
 {
-	vector<Object*>::iterator i;
+	std::vector<std::shared_ptr<Object>>::iterator i;
 
-	for (i = objects.begin(); i != objects.end(); ++i)
+	for (auto i = objects.begin(); i != objects.end(); ++i)
 	{
 		if ((*i)->getKey() == key)
 		{
@@ -389,54 +375,56 @@ void Object::addObjectAfter(Object* target, string key)
 
 
 
-Object* br = 0;	// the branch being set
-void setVal(string name, const string val, Object* branch)
+std::shared_ptr<Object> br;	// the branch being set
+void setVal(std::string name, const std::string& val, std::shared_ptr<Object> branch)
 {
 	if ((branch) && (br != branch))
 	{
 		br = branch;
 	}
-	Object* b = new Object(name);	// the new object to add to the branch
+	std::shared_ptr<Object> b = std::make_shared<Object>(name);
 	b->setValue(val);
 	br->setValue(b);
 }
 
 
-void setInt(string name, const int val, Object* branch)
+void setInt(std::string name, const int val, std::shared_ptr<Object> branch)
 {
 	if ((branch) && (br != branch))
 	{
 		br = branch;
 	}
-	static char strbuffer[1000];	// the text to add to the branch
-	sprintf_s(strbuffer, 1000, "%i", val);
-	Object* b = new Object(name);	// the new object to add to the branch
-	b->setValue(strbuffer);
+
+	std::string str = std::to_string(val);
+	std::shared_ptr<Object> b = std::make_shared<Object>(name);
+	b->setValue(str);
 	br->setValue(b);
 }
 
 
-void setFlt(string name, const double val, Object* branch)
+void setFlt(std::string name, const double val, std::shared_ptr<Object> branch)
 {
 	if ((branch) && (br != branch))
 	{
 		br = branch;
 	}
-	static char strbuffer[1000];	// the text to add to the branch
-	sprintf_s(strbuffer, 1000, "%.3f", val);
-	Object* b = new Object(name);	// the new object to add to the branch
-	b->setValue(strbuffer);
+
+	std::string str = std::to_string(val);
+	std::shared_ptr<Object> b = std::make_shared<Object>(name);
+	b->setValue(str);
 	br->setValue(b);
 }
 
-double Object::safeGetFloat(string k, const double def)
+
+double Object::safeGetFloat(const std::string& k, const double def)
 {
 	objvec vec = getValue(k);	// the objects with the keys to be returned
 	if (0 == vec.size()) return def;
 	return stof(vec[0]->getLeaf());
 }
 
-string Object::safeGetString(string k, string def)
+
+std::string Object::safeGetString(const std::string& k, std::string def)
 {
 	objvec vec = getValue(k);	// the objects with the strings to be returned
 	if (0 == vec.size())
@@ -446,7 +434,8 @@ string Object::safeGetString(string k, string def)
 	return vec[0]->getLeaf();
 }
 
-int Object::safeGetInt(string k, const int def)
+
+int Object::safeGetInt(const std::string& k, const int def)
 {
 	objvec vec = getValue(k);	// the objects with the ints to be returned
 	if (0 == vec.size())
@@ -456,7 +445,8 @@ int Object::safeGetInt(string k, const int def)
 	return stoi(vec[0]->getLeaf());
 }
 
-Object* Object::safeGetObject(string k, Object* def)
+
+std::shared_ptr<Object> Object::safeGetObject(const std::string& k, std::shared_ptr<Object> def)
 {
 	objvec vec = getValue(k);	// the objects with the objects to be returned 
 	if (0 == vec.size())
@@ -467,10 +457,25 @@ Object* Object::safeGetObject(string k, Object* def)
 }
 
 
-string Object::toString() const
+std::vector<std::string> Object::safeGetTokens(const std::string& k)
 {
-	ostringstream blah;	// the output string
-	blah << *(this);
-	return blah.str();
+	auto obj = safeGetObject(k);
+	if (obj)
+	{
+		return obj->getTokens();
+	}
+	else
+	{
+		std::vector<std::string> noTokens;
+		return noTokens;
+	}
+}
+
+
+std::string Object::toString() const
+{
+	std::ostringstream outputStringStream;
+	outputStringStream << *(this);
+	return outputStringStream.str();
 }
 

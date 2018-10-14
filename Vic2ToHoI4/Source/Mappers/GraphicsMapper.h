@@ -27,6 +27,8 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.*/
 
 
 #include <map>
+#include <memory>
+#include <optional>
 #include <random>
 #include <string>
 #include <vector>
@@ -43,24 +45,38 @@ typedef struct
 	map<string, vector<string>> element;
 } cultureGroupToPortraitsMap;
 
+
 typedef struct 
 {
 	map<string, cultureGroupToPortraitsMap> element;
 } ideologyToPortraitsMap;
 
 
+typedef map<string, string> cultureGroupToGraphicalCultureMap;
+
+
 
 class graphicsMapper
 {
 	public:
-		static string getLeaderPortrait(string cultureGroup, string ideology)
+		static string getLeaderPortrait(const string& cultureGroup, const string& ideology)
 		{
 			return getInstance()->GetLeaderPortrait(cultureGroup, ideology);
 		}
 
-		static string getIdeologyMinisterPortrait(string cultureGroup, string ideology)
+		static string getIdeologyMinisterPortrait(const string& cultureGroup, const string& ideology)
 		{
 			return getInstance()->GetIdeologyMinisterPortrait(cultureGroup, ideology);
+		}
+
+		static optional<string> getGraphicalCulture(const string& cultureGroup)
+		{
+			return getInstance()->GetGraphicalCulture(cultureGroup);
+		}
+
+		static optional<string> get2dGraphicalCulture(const string& cultureGroup)
+		{
+			return getInstance()->Get2dGraphicalCulture(cultureGroup);
 		}
 
 	private:
@@ -74,16 +90,23 @@ class graphicsMapper
 			return instance;
 		}
 		graphicsMapper();
-		void loadLeaderPortraitMappings(const string& cultureGroup, Object* portraitMappings);
-		void loadIdeologyMinisterPortraitMappings(const string& cultureGroup, Object* portraitMappings);
+		void loadLeaderPortraitMappings(const string& cultureGroup, shared_ptr<Object> portraitMappings);
+		void loadIdeologyMinisterPortraitMappings(const string& cultureGroup, shared_ptr<Object> portraitMappings);
 
-		string GetLeaderPortrait(string cultureGroup, string ideology);
-		vector<string> GetLeaderPortraits(string cultureGroup, string ideology);
-		string GetIdeologyMinisterPortrait(string cultureGroup, string ideology);
-		vector<string> GetIdeologyMinisterPortraits(string cultureGroup, string ideology);
+		graphicsMapper(const graphicsMapper&) = delete;
+		graphicsMapper& operator=(const graphicsMapper&) = delete;
+
+		string GetLeaderPortrait(const string& cultureGroup, const string& ideology);
+		optional<vector<string>> GetLeaderPortraits(const string& cultureGroup, const string& ideology) const;
+		string GetIdeologyMinisterPortrait(const string& cultureGroup, const string& ideology);
+		optional<vector<string>> GetIdeologyMinisterPortraits(const string& cultureGroup, const string& ideology) const;
+		optional<string> GetGraphicalCulture(const string& cultureGroup) const;
+		optional<string> Get2dGraphicalCulture(const string& cultureGroup) const;
 
 		ideologyToPortraitsMap leaderPortraitMappings;
 		ideologyToPortraitsMap ideologyMinisterMappings;
+		cultureGroupToGraphicalCultureMap graphicalCultureMap;
+		cultureGroupToGraphicalCultureMap graphicalCulture2dMap;
 
 		std::mt19937 rng;
 };

@@ -1,4 +1,4 @@
-/*Copyright (c) 2014 The Paradox Game Converters Project
+/*Copyright (c) 2018 The Paradox Game Converters Project
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
@@ -30,14 +30,14 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.*/
 
 
 const std::array<std::string, V2Localisation::numLanguages> V2Localisation::languages = 
-	{ "english", "french", "german", "polish", "spanish", "italian", "hungarian", "czech" };
+	{ "english", "french", "german", "polish", "spanish", "italian", "swedish", "czech", "hungarian", "dutch", "portugese", "russian", "finnish" };
 
 void V2Localisation::SetTag(const std::string& newTag)
 {
 	tag = newTag;
 }
 
-void V2Localisation::ReadFromCountry(const EU4Country& source)
+void V2Localisation::ReadFromCountry(const EU4::Country& source)
 {
 	for (size_t i = 0; i < numLanguages; ++i)
 	{
@@ -141,8 +141,8 @@ std::string V2Localisation::GetLocalAdjective()
 
 std::string V2Localisation::StripAccents(const std::string& text)
 {
-	std::string accents = "àáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ";
-	std::string without = "aaaaaaaceeeeiiiidnooooo ouuuuy y";
+	std::string accents = "Ã Ã¡Ã¢Ã£Ã¤Ã¥Ã¦Ã§Ã¨Ã©ÃªÃ«Ã¬Ã­Ã®Ã¯Ã°Ã±Ã²Ã³Ã´ÃµÃ¶Ã·Ã¸Ã¹ÃºÃ»Ã¼Ã½Ã¾Ã¿Ã€ÃÃ‚ÃƒÃ„Ã…Ã†Ã‡ÃˆÃ‰ÃŠÃ‹ÃŒÃÃŽÃÃÃ‘Ã’Ã“Ã”Ã•Ã–Ã—Ã˜Ã™ÃšÃ›ÃœÃÃž";
+	std::string without = "aaaaaaaceeeeiiiidnooooooouuuuytyAAAAAAACEEEEIIIIDNOOOOOOOUUUUYT";
 	std::string out(text);
 
 	for (unsigned int i = 0; i < accents.size(); i++)

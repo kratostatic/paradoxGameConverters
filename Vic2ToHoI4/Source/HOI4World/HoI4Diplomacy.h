@@ -1,4 +1,4 @@
-/*Copyright (c) 2017 The Paradox Game Converters Project
+/*Copyright (c) 2018 The Paradox Game Converters Project
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
@@ -38,14 +38,16 @@ class HoI4Agreement;
 class HoI4Diplomacy
 {
 	public:
-		HoI4Diplomacy() { agreements.clear(); };
+		HoI4Diplomacy(): agreements() {}
 		void output() const;
 
 		void addAgreement(const HoI4Agreement* agr);
-		const vector<const HoI4Agreement*>& getAgreements() const { return agreements; };
+		const std::vector<const HoI4Agreement*>& getAgreements() const { return agreements; };
 
 	private:
-		vector<const HoI4Agreement*> agreements;
+		HoI4Diplomacy(const HoI4Diplomacy&) = delete;
+
+		std::vector<const HoI4Agreement*> agreements;
 };
 
 

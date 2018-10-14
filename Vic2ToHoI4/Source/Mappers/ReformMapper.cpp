@@ -1,4 +1,4 @@
-/*Copyright (c) 2017 The Paradox Game Converters Project
+/*Copyright (c) 2018 The Paradox Game Converters Project
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
@@ -22,9 +22,9 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.*/
 
 
 #include "ReformMapper.h"
-#include <math.h>
 #include <float.h>
-#include "../V2World/V2Country.h"
+#include <math.h>
+#include "../V2World/Country.h"
 #include "../Configuration.h"
 #include "Log.h"
 #include "Object.h"
@@ -38,19 +38,21 @@ reformMapper* reformMapper::instance = nullptr;
 
 
 
-reformMapper::reformMapper()
+reformMapper::reformMapper():
+	reformTypes(),
+	politicalReformScores(),
+	socialReformScores(),
+	totalPoliticalReforms(0),
+	totalSocialReforms(0),
+	reformsInitialized(false)
 {
-	reformsInitialized		= false;
-	totalPoliticalReforms	= 0;
-	totalSocialReforms		= 0;
-
 	LOG(LogLevel::Info) << "Parsing governments reforms";
 	for (auto itr : Configuration::getVic2Mods())
 	{
 		if (Utils::DoesFileExist(Configuration::getV2Path() + "/mod/" + itr + "/common/issues.txt"))
 		{
 			auto obj = parser_8859_15::doParseFile((Configuration::getV2Path() + "/mod/" + itr + "/common/issues.txt"));
-			if (obj != nullptr)
+			if (obj)
 			{
 				initReforms(obj);
 				break;
@@ -59,29 +61,34 @@ reformMapper::reformMapper()
 	}
 	if (!reformsInitialized)
 	{
-		auto obj = parser_8859_15::doParseFile((Configuration::getV2Path() + "/common/issues.txt"));
-		if (obj != nullptr)
+		auto obj = parser_8859_15::doParseFile(Configuration::getV2Path() + "/common/issues.txt");
+		if (obj)
 		{
 			initReforms(obj);
+		}
+		else
+		{
+			LOG(LogLevel::Error) << "Could not parse " << Configuration::getV2Path() << "/common/issues.txt";
+			exit(-1);
 		}
 	}
 }
 
 
-void reformMapper::initReforms(Object* obj)
+void reformMapper::initReforms(shared_ptr<Object> obj)
 {
-	vector<Object*> topObjects = obj->getLeaves();
+	vector<shared_ptr<Object>> topObjects = obj->getLeaves();
 	for (auto topObject : topObjects)
 	{
 		if (topObject->getKey() == "political_reforms")
 		{
-			vector<Object*> reformObjs = topObject->getLeaves();
+			vector<shared_ptr<Object>> reformObjs = topObject->getLeaves();
 			for (auto reformObj : reformObjs)
 			{
 				reformTypes.insert(make_pair(reformObj->getKey(), ""));
 
 				int reformLevelNum = 0;
-				vector<Object*> reformLevelObjs = reformObj->getLeaves();
+				vector<shared_ptr<Object>> reformLevelObjs = reformObj->getLeaves();
 				for (auto reformLevel : reformLevelObjs)
 				{
 					if ((reformLevel->getKey() == "next_step_only") || (reformLevel->getKey() == "administrative"))
@@ -99,13 +106,13 @@ void reformMapper::initReforms(Object* obj)
 
 		if (topObject->getKey() == "social_reforms")
 		{
-			vector<Object*> reformObjs = topObject->getLeaves();
+			vector<shared_ptr<Object>> reformObjs = topObject->getLeaves();
 			for (auto reformObj : reformObjs)
 			{
 				reformTypes.insert(make_pair(reformObj->getKey(), ""));
 
 				int reformLevelNum = 0;
-				vector<Object*> reformLevelObjs = reformObj->getLeaves();
+				vector<shared_ptr<Object>> reformLevelObjs = reformObj->getLeaves();
 				for (auto reformLevel : reformLevelObjs)
 				{
 					if ((reformLevel->getKey() == "next_step_only") || (reformLevel->getKey() == "administrative"))

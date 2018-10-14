@@ -1,4 +1,4 @@
-/*Copyright (c) 2016 The Paradox Game Converters Project
+/*Copyright (c) 2018 The Paradox Game Converters Project
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
@@ -24,45 +24,72 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.*/
 #ifndef HOI4_FOCUS_TREE
 #define HOI4_FOCUS_TREE
 
-
-
+#include "HoI4World.h"
+#include "Events.h"
+#include "newParser.h"
+#include <memory>
+#include <set>
 #include <string>
 #include <vector>
-using namespace std;
 
 
 
 class HoI4Country;
 class HoI4Focus;
+namespace HoI4
+{
+	class Events;
+}
 
 
 
-class HoI4FocusTree
+class HoI4FocusTree: commonItems::parser
 {
 	public:
-		HoI4FocusTree();
-		HoI4FocusTree(const HoI4Country* country);
+		HoI4FocusTree() = default;
+		explicit HoI4FocusTree(const HoI4Country& country);
 
-		HoI4FocusTree* makeCustomizedCopy(const HoI4Country* country) const;
+		shared_ptr<HoI4FocusTree> makeCustomizedCopy(const HoI4Country& country) const;
+		void setNextFreeColumn(int newFreeColumn) { nextFreeColumn = newFreeColumn; }
 
-		void addGenericFocusTree();
-		void addDemocracyNationalFocuses(HoI4Country* Home, vector<HoI4Country*> CountriesToContain, int XStart);
-		void addAbsolutistEmpireNationalFocuses(HoI4Country* country, const vector<HoI4Country*>& targetColonies, const vector<HoI4Country*>& annexationTargets);
+		void addGenericFocusTree(const std::set<std::string>& majorIdeologies);
 
-		void output();
+		void addDemocracyNationalFocuses(std::shared_ptr<HoI4Country> Home, std::vector<std::shared_ptr<HoI4Country>>& CountriesToContain);
+		void addAbsolutistEmpireNationalFocuses(std::shared_ptr<HoI4Country> country, const std::vector<std::shared_ptr<HoI4Country>>& targetColonies, const std::vector<std::shared_ptr<HoI4Country>>& annexationTargets);
+		void addCommunistCoupBranch(std::shared_ptr<HoI4Country> Home, const std::vector<std::shared_ptr<HoI4Country>>& coupTargets, const std::set<std::string>& majorIdeologies);
+		void addCommunistWarBranch(std::shared_ptr<HoI4Country> Home, const std::vector<std::shared_ptr<HoI4Country>>& warTargets, HoI4::Events* events);
+		void addFascistAnnexationBranch(std::shared_ptr<HoI4Country> Home, const std::vector<std::shared_ptr<HoI4Country>>& annexationTargets, HoI4::Events* events);
+		void addFascistSudetenBranch(std::shared_ptr<HoI4Country> Home, const std::vector<std::shared_ptr<HoI4Country>>& sudetenTargets, const std::vector<std::vector<int>>& demandedStates, const HoI4World* world);
+		void addGPWarBranch(std::shared_ptr<HoI4Country> Home, const std::vector<std::shared_ptr<HoI4Country>>& newAllies, const std::vector<std::shared_ptr<HoI4Country>>& GCTargets, const std::string& ideology, HoI4::Events* events);
+		void removeFocus(const std::string& id);
 
-		void addFocus(HoI4Focus* newFocus) { focuses.push_back(newFocus); }
+		void output(const std::string& filename) const;
+
+		void addFocus(std::shared_ptr<HoI4Focus> newFocus) { focuses.push_back(newFocus); }
 
 	private:
-		void addVersion1_0GenericFocusTree();
-		void addVersion1_3GenericFocusTree();
+		HoI4FocusTree(const HoI4FocusTree&) = delete;
+		HoI4FocusTree& operator=(const HoI4FocusTree&) = delete;
 
-		string srcCountryTag;
-		string dstCountryTag;
-		vector<HoI4Focus*> focuses;
+		void confirmLoadedFocuses();
+
+		int calculateNumCollectovistIdeologies(const std::set<std::string>& majorIdeologies);
+		void determineMutualExclusions(const std::set<std::string>& majorIdeologies);
+		void addFascistGenericFocuses(int relativePosition, const std::set<std::string>& majorIdeologies);
+		void addCommunistGenericFocuses(int relativePosition);
+		void addAbsolutistGenericFocuses(int relativePosition);
+		void addRadicalGenericFocuses(int relativePosition);
+
+		std::string srcCountryTag = "";
+		std::string dstCountryTag = "";
+		std::vector<std::shared_ptr<HoI4Focus>> focuses;
+		int nextFreeColumn = 0;
+
+		std::string fascistMutualExlusions = "";
+		std::string communistMutualExclusions = "";
+		std::string absolutistMutualExlusions = "";
+		std::string radicalMutualExclusions = "";
 };
-
-
 
 
 

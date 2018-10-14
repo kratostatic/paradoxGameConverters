@@ -1,4 +1,4 @@
-/*Copyright (c) 2016 The Paradox Game Converters Project
+/*Copyright (c) 2018 The Paradox Game Converters Project
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
@@ -48,68 +48,78 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.*/
 #define OBJECT_H
 
 
-#include <map> 
+#include <map>
+#include <memory>
+#include <optional>
 #include <vector>
 #include <string> 
-using namespace std;
 
 
-class Object {
-  friend ostream& operator<< (ostream& o, const Object& i);
 
-public:
-  Object (string k);
-  ~Object (); 
-  Object (Object* other);
+class Object
+{
+	  friend std::ostream& operator<< (std::ostream& o, const Object& i);
 
-  void setValue (Object* val);
-  void setValue (string val);
-  void setValue (vector<Object*> val);
-  string getKey () {return key;} 
-  vector<string> getKeys (); 
-  vector<Object*> getValue (string key) const;
-  string getLeaf () const {return strVal;}
-  string getLeaf (string leaf) const;
-  vector<Object*> getLeaves () {return objects;}
-  void removeObject (Object* target); 
-  void addObject (Object* target); 
-  void addObjectAfter(Object* target, string key);
-  void setLeaf (string k, string value); 
-  void unsetValue (string val);
-  void keyCount ();
-  void keyCount (map<string, int>& counter);
-  void setObjList (const bool l = true) {isObjList = l;}
-  string getToken (int index); 
-  vector<string> getTokens() { return tokens; }
-  int numTokens (); 
-  void addToList (string val); 
-  void addToList (vector<string>::iterator begin, vector<string>::iterator end);
-  void printTopLevel ();
-  inline bool isLeaf () {return leaf;}
-  double safeGetFloat (string k, double def = 0);
-  string safeGetString (string k, string def = ""); 
-  int safeGetInt (string k, int def = 0);
-  Object* safeGetObject (string k, Object* def = 0);
-  string toString () const; 
+	public:
+	  explicit Object(const std::string& k): key(k), strVal(), objects(), leaf(false), isObjList(false), tokens() {};
+	  ~Object(); 
+	  explicit Object(std::shared_ptr<Object> other);
+
+	  std::string getKey() const { return key; }
+	  std::string getLeaf() const { return strVal; }
+	  std::vector<std::shared_ptr<Object>> getLeaves() { return objects; }
+	  std::vector<std::string> getTokens() { return tokens; }
+	  inline bool isLeaf() { return leaf; }
+
+	  void setObjList(const bool l = true) { isObjList = l; }
+
+	  std::optional<std::string> getLeaf(const std::string& leaf) const;
+	  std::vector<std::string> getKeys();
+	  std::vector<std::shared_ptr<Object>> getValue(const std::string& key) const;
+	  std::optional<std::string> getToken(int index);
+	  int numTokens();
+	  double safeGetFloat(const std::string& k, double def = 0.0);
+	  std::string safeGetString(const std::string& k, std::string def = "");
+	  int safeGetInt(const std::string& k, int def = 0);
+	  std::shared_ptr<Object> safeGetObject(const std::string& k, std::shared_ptr<Object> def = {});
+	  std::vector<std::string> safeGetTokens(const std::string& k);
+	  std::string toString() const;
+
+	  void setValue(std::shared_ptr<Object> val);
+	  void setValue(const std::string& val);
+	  void setValue(const std::vector<std::shared_ptr<Object>>& val);
+	  void removeObject(std::shared_ptr<Object> target); 
+	  void addObject(std::shared_ptr<Object> target); 
+	  void addObjectAfter(std::shared_ptr<Object> target, const std::string& key);
+	  void setLeaf(std::string k, std::string value); 
+	  void unsetValue(const std::string& val);
+	  void keyCount();
+	  void keyCount(std::map<std::string, int>& counter);
+	  void addToList(std::string val); 
+	  void addToList(std::vector<std::string>::iterator begin, std::vector<std::string>::iterator end);
+	  void printTopLevel();
   
-private:
-  string key;						// the higher level or LHS key for this object
-  string strVal;					// the textual value for this object
-  vector<Object*> objects;		// any sub-objects
-  bool leaf;						// whether or not this is a leaf object
-  bool isObjList;					// whether or not this is an object list object
-  vector<string> tokens;		// The tokens if this is a list object 
+	private:
+		std::string key;						// the higher level or LHS key for this object
+		std::string strVal;					// the textual value for this object
+		std::vector<std::shared_ptr<Object>> objects;		// any sub-objects
+		bool leaf;						// whether or not this is a leaf object
+		bool isObjList;					// whether or not this is an object list object
+		std::vector<std::string> tokens;		// The tokens if this is a list object 
 };
 
-extern ostream& operator<< (ostream& os, const Object& i);
-extern Object* br; 
-extern void setVal (string name, string val, Object* branch = 0);
-extern void setInt (string name, int val, Object* branch = 0);
-extern void setFlt (string name, double val, Object* branch = 0);
-typedef vector<Object*>::iterator objiter;
-typedef vector<Object*> objvec; 
-typedef map<string, Object*> stobmap;
-typedef map<string, string> ststmap;
-typedef map<Object*, Object*> obobmap;
+
+extern std::ostream& operator<< (std::ostream& os, const Object& i);
+extern std::shared_ptr<Object> br; 
+extern void setVal (std::string name, const std::string& val, std::shared_ptr<Object> branch = {});
+extern void setInt (std::string name, int val, std::shared_ptr<Object> branch = {});
+extern void setFlt (std::string name, double val, std::shared_ptr<Object> branch = {});
+typedef std::vector<std::shared_ptr<Object>>::iterator objiter;
+typedef std::vector<std::shared_ptr<Object>> objvec; 
+typedef std::map<std::string, std::shared_ptr<Object>> stobmap;
+typedef std::map<std::string, std::string> ststmap;
+typedef std::map<std::shared_ptr<Object>, std::shared_ptr<Object>> obobmap;
+
+
 
 #endif	// OBJECT_H

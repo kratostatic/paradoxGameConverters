@@ -1,4 +1,4 @@
-/*Copyright (c) 2016 The Paradox Game Converters Project
+/*Copyright (c) 2018 The Paradox Game Converters Project
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
@@ -26,38 +26,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.*/
 
 
 
-HOI4Version::HOI4Version()
-{
-	first		= 0;
-	second	= 0;
-	third		= 0;
-}
-
-
-HOI4Version::HOI4Version(Object* obj)
-{
-	vector<Object*> numberObj;
-	numberObj = obj->getValue("first");
-	if (numberObj.size() > 0)
-	{
-		first = stoi(numberObj[0]->getLeaf());
-	}
-
-	numberObj = obj->getValue("second");
-	if (numberObj.size() > 0)
-	{
-		second = stoi(numberObj[0]->getLeaf());
-	}
-
-	numberObj = obj->getValue("third");
-	if (numberObj.size() > 0)
-	{
-		third = stoi(numberObj[0]->getLeaf());
-	}
-}
-
-
-HOI4Version::HOI4Version(string version)
+HoI4::Version::Version(std::string version)
 {
 	int dot = version.find_first_of('.');
 	first = stoi(version.substr(0, dot));
@@ -72,7 +41,7 @@ HOI4Version::HOI4Version(string version)
 }
 
 
-bool HOI4Version::operator >= (HOI4Version& rhs) const
+bool HoI4::Version::operator >= (const HoI4::Version& rhs) const
 {
 	if (first > rhs.first)
 	{
@@ -97,7 +66,7 @@ bool HOI4Version::operator >= (HOI4Version& rhs) const
 }
 
 
-ostream& operator << (ostream& out, HOI4Version& version)
+std::ostream& HoI4::operator << (std::ostream& out, const HoI4::Version& version)
 {
 	out << version.first << '.' << version.second << '.' << version.third;
 

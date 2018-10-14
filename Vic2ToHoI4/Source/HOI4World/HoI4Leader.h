@@ -1,4 +1,4 @@
-/*Copyright (c) 2016 The Paradox Game Converters Project
+/*Copyright (c) 2017 The Paradox Game Converters Project
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
@@ -29,20 +29,23 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.*/
 #include <string>
 #include <vector>
 #include "../Mappers/Mapper.h"
-#include "../V2World/V2Leader.h"
+#include "../V2World/Leader.h"
 using namespace std;
 
 
 class HoI4Leader
 {
 	public:
-		HoI4Leader(vector<string>& firstNames, vector<string>& lastNames, string _country, string _type, leaderTraitsMap& _traitsMap, vector<string>& portraits);
-		HoI4Leader(V2Leader* srcLeader, string _country, personalityMap& landPersonalityMap, personalityMap& seaPersonalityMap, backgroundMap& landBackgroundMap, backgroundMap& seaBackgroundMap, vector<string>& portraits);
+		HoI4Leader(vector<string>& firstNames, vector<string>& lastNames, const string& _country, const string& _type, leaderTraitsMap& _traitsMap, vector<string>& portraits);
+		HoI4Leader(Vic2::Leader* srcLeader, const string& _country, personalityMap& landPersonalityMap, personalityMap& seaPersonalityMap, backgroundMap& landBackgroundMap, backgroundMap& seaBackgroundMap, vector<string>& portraits);
 		void output(FILE* output);
 
 		string getType()	const { return type; }
 
 	private:
+		HoI4Leader(const HoI4Leader&) = delete;
+		HoI4Leader& operator=(const HoI4Leader&) = delete;
+
 		unsigned int		ID;
 		string				name;
 		string				country;

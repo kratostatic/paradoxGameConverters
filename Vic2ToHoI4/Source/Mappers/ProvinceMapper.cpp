@@ -1,4 +1,4 @@
-/*Copyright (c) 2017 The Paradox Game Converters Project
+/*Copyright (c) 2018 The Paradox Game Converters Project
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
@@ -35,37 +35,41 @@ provinceMapper* provinceMapper::instance = NULL;
 
 
 
-provinceMapper::provinceMapper()
+provinceMapper::provinceMapper():
+	HoI4ToVic2ProvinceMap(),
+	Vic2ToHoI4ProvinceMap()
 {
 	LOG(LogLevel::Info) << "Parsing province mappings";
-	Object* parsedMappingsFile = parser_8859_15::doParseFile("province_mappings.txt");
-	if (parsedMappingsFile == NULL)
+	auto parsedMappingsFile = parser_8859_15::doParseFile("province_mappings.txt");
+	if (parsedMappingsFile)
+	{
+		initProvinceMap(parsedMappingsFile);
+	}
+	else
 	{
 		LOG(LogLevel::Error) << "Could not parse file province_mappings.txt";
 		exit(-1);
 	}
-
-	initProvinceMap(parsedMappingsFile);
 }
 
 
 
-void provinceMapper::initProvinceMap(Object* parsedMappingsFile)
+void provinceMapper::initProvinceMap(shared_ptr<Object> parsedMappingsFile)
 {
-	vector<Object*> versions = parsedMappingsFile->getLeaves();
+	vector<shared_ptr<Object>> versions = parsedMappingsFile->getLeaves();
 	if (versions.size() < 1)
 	{
 		LOG(LogLevel::Error) << "No province mapping definitions loaded";
 		exit(-1);
 	}
 
-	vector<Object*> mappings = getCorrectMappingVersion(versions);
+	vector<shared_ptr<Object>> mappings = getCorrectMappingVersion(versions);
 	processMappings(mappings);
 	checkAllHoI4ProvinesMapped();
 }
 
 
-void provinceMapper::processMappings(const vector<Object*>& mappings)
+void provinceMapper::processMappings(const vector<shared_ptr<Object>>& mappings)
 {
 	for (auto mapping: mappings)
 	{
@@ -127,7 +131,7 @@ void provinceMapper::insertIntoVic2ToHoI4ProvinceMap(const vector<int>& Vic2Nums
 }
 
 
-void provinceMapper::checkAllHoI4ProvinesMapped()
+void provinceMapper::checkAllHoI4ProvinesMapped() const
 {
 	ifstream definitions(Configuration::getHoI4Path() + "/map/definition.csv");
 	if (!definitions.is_open())
@@ -138,20 +142,20 @@ void provinceMapper::checkAllHoI4ProvinesMapped()
 
 	while (true)
 	{
-		int provNum = getNextProvinceNumFromFile(definitions);
-		if (provNum == -1)
+		auto provNum = getNextProvinceNumFromFile(definitions);
+		if (!provNum)
 		{
 			break;
 		}
 
-		verifyProvinceIsMapped(provNum);
+		verifyProvinceIsMapped(*provNum);
 	}
 
 	definitions.close();
 }
 
 
-int provinceMapper::getNextProvinceNumFromFile(ifstream& definitions)
+optional<int> provinceMapper::getNextProvinceNumFromFile(ifstream& definitions) const
 {
 	string line;
 	getline(definitions, line);
@@ -162,12 +166,12 @@ int provinceMapper::getNextProvinceNumFromFile(ifstream& definitions)
 	}
 	else
 	{
-		return -1;
+		return {};
 	}
 }
 
 
-void provinceMapper::verifyProvinceIsMapped(int provNum)
+void provinceMapper::verifyProvinceIsMapped(int provNum) const
 {
 	if (provNum != 0)
 	{
@@ -180,11 +184,11 @@ void provinceMapper::verifyProvinceIsMapped(int provNum)
 }
 
 
-vector<Object*> provinceMapper::getCorrectMappingVersion(const vector<Object*>& versions)
+vector<shared_ptr<Object>> provinceMapper::getCorrectMappingVersion(const vector<shared_ptr<Object>>& versions)
 {
 	for (auto version: versions)
 	{
-		HOI4Version currentVersion(version->getKey());
+		HoI4::Version currentVersion(version->getKey());
 		if (Configuration::getHOI4Version() >= currentVersion)
 		{
 			LOG(LogLevel::Debug) << "Using version " << version->getKey() << " mappings";
@@ -194,20 +198,4 @@ vector<Object*> provinceMapper::getCorrectMappingVersion(const vector<Object*>& 
 
 	LOG(LogLevel::Debug) << "Using version " << versions[versions.size() - 1]->getKey() << " mappings";
 	return versions[versions.size() - 1]->getLeaves();
-}
-
-
-vector<int> provinceMapper::getHoI4ProvinceNums(const int v2ProvinceNum)
-{
-	static const vector<int> empty_vec;	// an empty vector in case there are no equivalent V2 province numbers
-
-	auto itr = Vic2ToHoI4ProvinceMap.find(v2ProvinceNum);
-	if (itr == Vic2ToHoI4ProvinceMap.end())
-	{
-		return empty_vec;
-	}
-	else
-	{
-		return itr->second;
-	}
 }

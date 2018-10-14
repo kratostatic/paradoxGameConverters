@@ -4,13 +4,17 @@ ReleaseIntermediate/
 Release-Linux/
 Debug/
 DebugIntermediate/
+Analysis
+AnalysisIntermediate
 testResults
 *testResults*
 V2ToHoI3.zip
+changelog.txt
 *.opensdf
 *.opendb
 *.sdf
 *.VC.db
+*.cppcheck
 /EU4toV2/.vs/EU4ToV2/v14/.suo
 /Vic2ToHoI4/.vs/Supercharger/Vic2ToHoI4/codemap.dat
 /Vic2ToHoI4/.vs/Supercharger/Vic2ToHoI4/global_history.dat

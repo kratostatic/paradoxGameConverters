@@ -1,4 +1,4 @@
-/*Copyright (c) 2017 The Paradox Game Converters Project
+/*Copyright (c) 2018 The Paradox Game Converters Project
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
@@ -26,17 +26,23 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.*/
 
 
 
-#include "../Color.h"
+#include "Color.h"
 #include "Date.h"
 #include "../EU4World/EU4Army.h"
 #include "V2Localisation.h"
 #include "V2TechSchools.h"
-#include <vector>
+#include <memory>
 #include <set>
+#include <vector>
 using namespace std;
 
-class EU4World;
-class EU4Country;
+
+
+namespace EU4
+{
+	class Country;
+	class world;
+}
 class V2World;
 class V2State;
 class V2Province;
@@ -62,14 +68,16 @@ class V2Country
 		void								outputToCommonCountriesFile(FILE*) const;
 		void								outputLocalisation(FILE*) const;
 		void								outputOOB() const;
-		void								initFromEU4Country(EU4Country* _srcCountry, const vector<V2TechSchool>& techSchools, const map<int, int>& leaderMap);
+		void initFromEU4Country(std::shared_ptr<EU4::Country> _srcCountry, const vector<V2TechSchool>& techSchools, const map<int, int>& leaderMap);
 		void								initFromHistory();
 		void								addProvince(V2Province* _province);
 		void								addState(V2State* newState);
 		void								convertArmies(const map<int,int>& leaderIDMap, double cost_per_regiment[num_reg_categories], map<int, V2Province*> allProvinces, vector<int> port_whitelist);
 		bool								addFactory(V2Factory* factory);
 		void								addRailroadtoCapitalState();
-		void								convertUncivReforms(int techGroupAlgorithm, double topTech);
+		void								convertUncivReforms(int techGroupAlgorithm, double topTech, int topInstitutions);
+		void								oldCivConversionMethod();
+		void								newCivConversionMethod(double topTech, int topInstitutions);
 		void								convertLandlessReforms(V2Country* capOwner);
 		void								setupPops(double popWeightRatio, int popConversionAlgorithm);
 		void								setArmyTech(double normalizedScore);
@@ -99,7 +107,7 @@ class V2Country
 		bool								isCivilized() const { return civilized; }
 		string							getPrimaryCulture() const { return primaryCulture; }
 		set<string>						getAcceptedCultures() const { return acceptedCultures; }
-		EU4Country*						getSourceCountry() const { return srcCountry; }
+		std::shared_ptr<EU4::Country> getSourceCountry() const { return srcCountry; }
 		double							getReactionary() const { return upperHouseReactionary; }
 		double							getConservative() const { return upperHouseConservative; }
 		double							getLiberal() const { return upperHouseLiberal; }
@@ -116,7 +124,7 @@ class V2Country
 		string							getReligion() const { return religion; }
 
 	private:
-		Object* parseCountryFile(const string& filename);
+		shared_ptr<Object> parseCountryFile(const string& filename);
 
 		void			outputTech(FILE*) const ;
 		void			outputElection(FILE*) const;
@@ -128,7 +136,7 @@ class V2Country
 		string		getRegimentName(RegimentCategory rc);
 
 		const V2World* theWorld;
-		EU4Country* srcCountry;
+		std::shared_ptr<EU4::Country> srcCountry;
 		string							filename;
 		bool								newCountry;			// true if this country is being added by the converter, i.e. doesn't already exist in Vic2
 		bool								dynamicCountry;	// true if this country is a Vic2 dynamic country
@@ -178,7 +186,7 @@ class V2Country
 		vector<V2Leader*>				leaders;
 		double							literacy;
 		V2Localisation					localisation;
-		Color								color;
+		commonItems::Color			color;
 		int								unitNameCount[num_reg_categories];
 		int								numFactories;
 		vector<string>					decisions;

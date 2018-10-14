@@ -1,4 +1,4 @@
-/*Copyright(c) 2014 The Paradox Game Converters Project
+/*Copyright(c) 2018 The Paradox Game Converters Project
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files(the "Software"), to deal
@@ -19,22 +19,32 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE. */
 
 
+
 #ifndef EU4PROVINCE_H_
 #define EU4PROVINCE_H_
+
 
 
 #include "Date.h"
 #include <string>
 #include <vector>
 #include <map>
+#include <memory>
 using namespace std;
 
+
+
 class Object;
-class EU4Country;
+
+namespace EU4
+{
+	class Country;
+}
 
 
 
-struct EU4PopRatio {
+struct EU4PopRatio
+{
 	string culture;			// the culture
 	string religion;			// the religion
 	double upperPopRatio;	// the percent of the total upper-class population this represents
@@ -43,9 +53,10 @@ struct EU4PopRatio {
 };
 
 
-class EU4Province {
+class EU4Province
+{
 	public:
-		EU4Province(Object* obj);
+		EU4Province(shared_ptr<Object> obj);
 
 		void						addCore(string tag);
 		void						removeCore(string tag);
@@ -54,21 +65,21 @@ class EU4Province {
 		bool						wasColonised() const;
 		bool						wasInfidelConquest() const;
 		bool						hasBuilding(string building) const;
-		vector<EU4Country*>	getCores(const map<string, EU4Country*>& countries) const;
+		std::vector<std::shared_ptr<EU4::Country>>	getCores(const std::map<std::string, std::shared_ptr<EU4::Country>>& countries) const;
 		date						getLastPossessedDate(string tag) const;
 		double getCulturePercent(string culture);
 
 		int						getNum()					const { return num; }
 		double					getBaseTax()			const { return baseTax; }
 		string					getOwnerString()		const { return ownerString; }
-		EU4Country*				getOwner()				const { return owner; }
+		std::shared_ptr<EU4::Country> getOwner() const { return owner; }
 		bool						getInHRE()				const { return inHRE; }
 		bool						isColony()				const { return colony; }
 		vector<EU4PopRatio>	getPopRatios()			const { return popRatios; }
 		double					getTotalWeight()		const { return totalWeight; }
 		int						getNumDestV2Provs()	const { return numV2Provs; }
 
-		void						setOwner(EU4Country* newOwner)		{ owner = newOwner; }
+		void						setOwner(std::shared_ptr<EU4::Country> newOwner) { owner = newOwner; }
 		void						setNumDestV2Provs(int _numV2Provs)	{ numV2Provs = _numV2Provs; }
 		string					getProvName() const { return provName; }
 
@@ -84,7 +95,7 @@ class EU4Province {
 		string					getTradeGoods() const { return tradeGoods; }
 
 	private:
-		void	checkBuilding(const Object* provinceObj, string building);
+		void	checkBuilding(const shared_ptr<Object> provinceObj, string building);
 		void	buildPopRatios();
 		void	decayPopRatios(date oldDate, date newDate, EU4PopRatio& currentPop);
 
@@ -99,7 +110,7 @@ class EU4Province {
 		double								totalWeight;
 		string								ownerString;			// a string with the owner's tag
 		string								provName;
-		EU4Country*							owner;					// the owner
+		std::shared_ptr<EU4::Country> owner;
 		vector<string>						cores;					// strings of the tags of all cores
 		bool									inHRE;					// whether or not this province is in the HRE
 		bool									colony;					// whether or not this is a colony
@@ -124,6 +135,7 @@ class EU4Province {
 		std::vector<double>				provProductionVec;
 
 };
+
 
 
 #endif // EU4PROVINCE_H_

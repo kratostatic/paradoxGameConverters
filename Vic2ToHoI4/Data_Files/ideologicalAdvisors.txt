@@ -1,0 +1,122 @@
+radical = {
+	allowed = {
+		
+		NOT = {
+			has_available_idea_with_traits = { idea = radical_minister limit = 1 }
+		}
+	}
+
+	picture = generic_goods_red_bonus
+
+	traits = { radical_minister }
+
+	do_effect = {
+		NOT = {
+			has_government = radical
+		}
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+neutrality = {
+	allowed = {
+		
+		NOT = {
+			has_available_idea_with_traits = { idea = neutrality_minister limit = 1 }
+		}
+	}
+
+	picture = neutral_foreign_policy
+
+	traits = { neutrality_minister }
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+absolutist = {
+	allowed = {
+		
+		NOT = {
+			has_available_idea_with_traits = { idea = absolutist_minister limit = 1 }
+		}
+	}
+
+	traits = { absolutist_minister }
+
+	picture = triumphant_will
+
+	do_effect = {
+		NOT = {
+			has_government = absolutist
+		}
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+communism = {
+	allowed = {
+		NOT = {
+			has_available_idea_with_traits = { idea = communism_minister limit = 1 }
+		}
+	}
+
+	traits = { communism_minister }
+
+	do_effect = {
+		NOT = {
+			has_government = communism
+		}
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+democratic = {
+	allowed = {
+		NOT = {
+			has_available_idea_with_traits = { idea = democratic_minister limit = 1 }
+		}
+	}
+
+	traits = { democratic_minister }
+
+	do_effect = {
+		NOT = {
+			has_government = democratic
+		}
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+fascism = {
+	allowed = {
+		NOT = {
+			has_available_idea_with_traits = { idea = fascism_minister limit = 1 }
+		}
+	}
+
+	traits = { fascism_minister }
+
+	do_effect = {
+		NOT = {
+			has_government = fascism
+		}
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}

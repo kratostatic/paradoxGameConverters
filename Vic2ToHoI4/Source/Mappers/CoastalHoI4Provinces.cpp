@@ -33,7 +33,8 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.*/
 coastalHoI4ProvincesMapper* coastalHoI4ProvincesMapper::instance = nullptr;
 
 
-coastalHoI4ProvincesMapper::coastalHoI4ProvincesMapper()
+coastalHoI4ProvincesMapper::coastalHoI4ProvincesMapper():
+	coastalProvinces()
 {
 	map<int, province> provinces = getProvinces();
 
@@ -50,15 +51,24 @@ coastalHoI4ProvincesMapper::coastalHoI4ProvincesMapper()
 			auto adjProvince = provinces.find(adjProvinceNum);
 			if ((adjProvince != provinces.end()) && (adjProvince->second.type == "ocean"))
 			{
-				coastalProvinces.insert(make_pair(province.first, adjProvince->first));
-				break;
+				auto coastalProvince = coastalProvinces.find(province.first);
+				if (coastalProvince == coastalProvinces.end())
+				{
+					vector<int> seaProvince;
+					seaProvince.push_back(adjProvinceNum);
+					coastalProvinces.insert(make_pair(province.first, seaProvince));
+				}
+				else
+				{
+					coastalProvince->second.push_back(adjProvinceNum);
+				}
 			}
 		}
 	}
 }
 
 
-map<int, province> coastalHoI4ProvincesMapper::getProvinces()
+map<int, province> coastalHoI4ProvincesMapper::getProvinces() const
 {
 	ifstream provinceDefinitions(Configuration::getHoI4Path() + "/map/definition.csv");
 	if (!provinceDefinitions.is_open())
@@ -115,7 +125,7 @@ map<int, province> coastalHoI4ProvincesMapper::getProvinces()
 }
 
 
-bool coastalHoI4ProvincesMapper::IsProvinceCoastal(int provinceNum)
+bool coastalHoI4ProvincesMapper::IsProvinceCoastal(int provinceNum) const
 {
 	auto province = coastalProvinces.find(provinceNum);
 	return (province != coastalProvinces.end());

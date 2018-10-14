@@ -27,6 +27,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.*/
 
 #include "../Mappers/ProvinceMapper.h"
 #include <map>
+#include <optional>
 #include <set>
 #include <string>
 #include <vector>
@@ -35,17 +36,20 @@ using namespace std;
 
 
 class HoI4State;
-class V2Country;
 class V2Province;
-class Vic2State;
-class V2World;
+namespace Vic2
+{
+class Country;
+class State;
+class World;
+}
 
 
 
 class HoI4States
 {
 	public:
-		HoI4States(const V2World* _sourceWorld);
+		explicit HoI4States(const Vic2::World* _sourceWorld);
 
 		const map<int, HoI4State*>& getStates() const { return states; }
 		const map<int, int>& getProvinceToStateIDMap() const { return provinceToStateIDMap; }
@@ -53,28 +57,33 @@ class HoI4States
 		void output() const;
 
 	private:
+		HoI4States(const HoI4States&) = delete;
+		HoI4States& operator=(const HoI4States&) = delete;
+
 		void determineOwnersAndCores();
-		vector<int> retrieveSourceProvinceNums(int provNum) const;
-		map<const V2Country*, pair<int, int>> determinePotentialOwners(const vector<int>& sourceProvinceNums) const;
-		const V2Country* selectProvinceOwner(const map<const V2Country*, pair<int, int>>& potentialOwners) const;
-		vector<string> determineCores(const vector<int>& sourceProvinces, const V2Country* oldOwner) const;
+		optional<vector<int>> retrieveSourceProvinceNums(int provNum) const;
+		map<const Vic2::Country*, pair<int, int>> determinePotentialOwners(const vector<int>& sourceProvinceNums) const;
+		const Vic2::Country* selectProvinceOwner(const map<const Vic2::Country*, pair<int, int>>& potentialOwners) const;
+		vector<string> determineCores(const vector<int>& sourceProvinces, const Vic2::Country* oldOwner) const;
 
 		void createStates();
-		bool createMatchingHoI4State(const Vic2State* vic2State, int stateID, const string& stateOwner);
-		void addProvincesAndCoresToNewState(HoI4State* newState);
+		void createMatchingHoI4State(const Vic2::State* vic2State, const string& stateOwner);
+		unordered_set<int> getProvincesInState(const Vic2::State* vic2State, const string& owner);
+		void addProvincesAndCoresToNewState(HoI4State* newState, unordered_set<int> provinces);
 		bool isProvinceValid(int provNum) const;
-		bool isProvinceOwnedByCountry(int provNum, string stateOwner) const;
+		bool isProvinceOwnedByCountry(int provNum, const string& stateOwner) const;
 		bool isProvinceNotAlreadyAssigned(int provNum) const;
 		unsigned int getTotalManpower() const;
 
 
-		const V2World* sourceWorld;
+		const Vic2::World* sourceWorld;
 		map<int, string> ownersMap;
 		map<int, vector<string>> coresMap;
 		set<int> assignedProvinces;
 
 		map<int, HoI4State*> states;
 		map<int, int> provinceToStateIDMap;
+		int nextStateID;
 };
 
 

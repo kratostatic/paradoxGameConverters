@@ -29,59 +29,21 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.*/
 #include "Object.h"
 #include "GovernmentMapper.h"
 #include <map>
-#include <vector>
-#include <unordered_set>
+#include <memory>
 #include <set>
+#include <unordered_set>
+#include <vector>
+using namespace std;
+
+
+
 class V2World;
 class HoI4World;
 
 
 
-typedef struct {
-	int type;			// the type of adjacency 0 = normal, 1 = ford, 2 = river crossing
-	int to;				// the province this one is adjacent to (expect one pointing back to this province)
-	int via;				// the straight (if any) this crosses
-	int unknown1;		// still unknown
-	int unknown2;		// still unknown
-} adjacency;			// an entry in the adjacencies.bin format
-typedef vector< vector<adjacency> > HoI4AdjacencyMapping;
-HoI4AdjacencyMapping initHoI4AdjacencyMap();
-
-
 typedef map<int, string> continentMapping;	// <province, continent>
-void initContinentMap(Object* obj, continentMapping& continentMap);
-
-
-void removeOlderLandlessNations(V2World&, int excess);
-void removeLandlessNations(V2World&);
-
-void mergeNations(HoI4World&, Object* mergeObj);
-void removeDeadLandlessNations(HoI4World&);
-void removeOlderLandlessNations(HoI4World&, int excess);
-void removeLandlessNations(HoI4World&);
-
-// Union Mappings
-typedef vector< pair<string, string> > unionMapping;	// <cultures, tag>
-unionMapping initUnionMap(Object* obj);
-
-
-// Cultural Union Nation mappings
-typedef map< string, vector<string> > unionCulturesMap; // <culture group, cultures>
-void initUnionCultures(Object* obj, unionCulturesMap& unionCultures);
-
-// Culture Mappings
-typedef map<string, string> cultureMapping; // <srcCulture, dstCulture>
-cultureMapping initCultureMap();
-
-// idea effects
-void initIdeaEffects(Object* obj, map<string, int>& armyInvIdeas, map<string, int>& commerceInvIdeas, map<string, int>& cultureInvIdeas, map<string, int>& industryInvIdeas, map<string, int>& navyInvIdeas, map<string, double>& UHLiberalIdeas, map<string, double>& UHReactionaryIdeas, vector< pair<string, int> >& literacyIdeas, map<string, int>& orderIdeas, map<string, int>& libertyIdeas, map<string, int>& equalityIdeas);
-
-
-// government jobs
-typedef pair<string, vector<string>> governmentJob; // <job name, possible traits>
-typedef map<string, vector<string>> governmentJobsMap;
-void initGovernmentJobTypes(governmentJobsMap& governmentJobs);
-
+void initContinentMap(shared_ptr<Object> obj, continentMapping& continentMap);
 
 // leaderTraits
 typedef map<string, vector<string>> leaderTraitsMap; // <leader type, possible traits>
@@ -90,11 +52,6 @@ typedef map<string, vector<string>> personalityMap;	// <V2 personality, possible
 void initLeaderPersonalityMap(personalityMap& landPersonalityMap, personalityMap& seaPersonalityMap);
 typedef map<string, vector<string>> backgroundMap;		// <V2 background, possible HoI4 traits>
 void initLeaderBackgroundMap(backgroundMap& landBackgroundMap, backgroundMap& seaBackgroundMap);
-
-
-// portraits
-typedef map<string, vector<string>> portraitMapping; // <graphical culture, valid portraits>
-void initPortraitMapping(portraitMapping& portraitMap);
 
 
 

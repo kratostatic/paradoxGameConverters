@@ -1,4 +1,4 @@
-/*Copyright (c) 2017 The Paradox Game Converters Project
+/*Copyright (c) 2018 The Paradox Game Converters Project
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
@@ -35,7 +35,10 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.*/
 #include "../EU4World/EU4Army.h"
 #include "../EU4World/EU4Province.h"
 #include <list>
+#include <memory>
 #include <set>
+
+
 
 class V2Country;
 class V2Army;
@@ -46,7 +49,7 @@ class V2LeaderTraits;
 class V2World
 {
 	public:
-		V2World(const EU4World& sourceWorld);
+		V2World(const EU4::world& sourceWorld);
 		V2Province* getProvince(int provNum) const;
 		V2Country* getCountry(string tag) const;
 
@@ -58,44 +61,44 @@ class V2World
 
 		void importDefaultPops();
 		void importPopsFromFile(const string& filename);
-		void importPopsFromProvince(Object* provinceObj);
+		void importPopsFromProvince(shared_ptr<Object> provinceObj);
 
 		void logPopsByCountry() const;
 		void logPopsFromFile(string filename, map<string, map<string, long int>>& popsByCountry) const;
-		void logPopsInProvince(Object* provinceObj, map<string, map<string, long int>>& popsByCountry) const;
+		void logPopsInProvince(shared_ptr<Object> provinceObj, map<string, map<string, long int>>& popsByCountry) const;
 		map<string, map<string, long int>>::iterator getCountryForPopLogging(string country, map<string, map<string, long int>>& popsByCountry) const;
-		void logPop(Object* pop, map<string, map<string, long int>>::iterator countryPopItr) const;
+		void logPop(shared_ptr<Object> pop, map<string, map<string, long int>>::iterator countryPopItr) const;
 		void outputLog(const map<string, map<string, long int>>& popsByCountry) const;
 
 		void findCoastalProvinces();
-		void determineIfProvinceIsCoastal(Object* provinceObj);
+		void determineIfProvinceIsCoastal(shared_ptr<Object> provinceObj);
 
 		void importPotentialCountries();
 		void importPotentialCountry(const string& line, bool dynamicCountry);
 
 		void importTechSchools();
 
-		void convertCountries(const EU4World& sourceWorld);
-		void initializeCountries(const EU4World& sourceWorld);
-		V2Country* createOrLocateCountry(const string& V2Tag, const EU4Country* sourceCountry);
+		void convertCountries(const EU4::world& sourceWorld);
+		void initializeCountries(const EU4::world& sourceWorld);
+		V2Country* createOrLocateCountry(const string& V2Tag, const shared_ptr<EU4::Country> sourceCountry);
 		void convertNationalValues();
 		void convertPrestige();
 		void addAllPotentialCountries();
 		void checkForCivilizedNations();
 		void editDefines(int numCivilisedNations);
 
-		void convertProvinces(const EU4World& sourceWorld);
-		vector<V2Demographic> determineDemographics(vector<EU4PopRatio>& popRatios, EU4Province* eProv, V2Province* vProv, EU4Country* oldOwner, int destNum, double provPopRatio);
+		void convertProvinces(const EU4::world& sourceWorld);
+		vector<V2Demographic> determineDemographics(vector<EU4PopRatio>& popRatios, EU4Province* eProv, V2Province* vProv, shared_ptr<EU4::Country> oldOwner, int destNum, double provPopRatio);
 
-		void convertDiplomacy(const EU4World& sourceWorld);
+		void convertDiplomacy(const EU4::world& sourceWorld);
 		void setupColonies();
 		void setupStates();
-		void convertUncivReforms(const EU4World& sourceWorld);
-		void convertTechs(const EU4World& sourceWorld);
-		void allocateFactories(const EU4World& sourceWorld);
-		void setupPops(const EU4World& sourceWorld);
+		void convertUncivReforms(const EU4::world& sourceWorld);
+		void convertTechs(const EU4::world& sourceWorld);
+		void allocateFactories(const EU4::world& sourceWorld);
+		void setupPops(const EU4::world& sourceWorld);
 		void addUnions();
-		void convertArmies(const EU4World& sourceWorld);
+		void convertArmies(const EU4::world& sourceWorld);
 
 		void output() const;
 		void createModFile() const;

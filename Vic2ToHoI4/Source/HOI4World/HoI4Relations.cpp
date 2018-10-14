@@ -1,4 +1,4 @@
-/*Copyright (c) 2016 The Paradox Game Converters Project
+/*Copyright (c) 2018 The Paradox Game Converters Project
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
@@ -22,32 +22,31 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.*/
 
 
 #include "HoI4Relations.h"
-#include "../V2World/V2Relations.h"
+#include "../V2World/Relations.h"
 
 
 
-HoI4Relations::HoI4Relations(string newTag)
+HoI4Relations::HoI4Relations(const std::string& newTag):
+	tag(newTag),
+	value(0),
+	militaryAccess(false),
+	lastSendDiplomat(date()),
+	lastWar(date()),
+	truceUntil(date()),
+	guarantee(false),
+	sphereLeader(false)
 {
-	tag					= newTag;
-	value					= 0;
-	militaryAccess		= false;
-	lastSendDiplomat	= date();
-	lastWar				= date();
-	truceUntil = date();
-	guarantee = false;
-	sphereLeader = false;
 }
 
 
-HoI4Relations::HoI4Relations(string newTag, V2Relations* oldRelations)
-{
-	tag					= newTag;
-	value					= oldRelations->getRelations();
-	militaryAccess		= oldRelations->hasMilitaryAccess();
-	lastSendDiplomat	= oldRelations->getDiplomatLastSent();
-	lastWar				= oldRelations->getLastWar();
-	truceUntil			= oldRelations->getTruceUntil();
-	guarantee			= (oldRelations->getLevel() >= 4);
-	sphereLeader		= (oldRelations->getLevel() >= 5);
-}
+HoI4Relations::HoI4Relations(const std::string& newTag, const Vic2::Relations* oldRelations):
+	tag(newTag),
+	value(oldRelations->getRelations()),
+	militaryAccess(oldRelations->hasMilitaryAccess()),
+	lastSendDiplomat(oldRelations->getDiplomatLastSent()),
+	lastWar(oldRelations->getLastWar()),
+	truceUntil(oldRelations->getTruceUntil()),
+	guarantee(oldRelations->getLevel() >= 4),
+	sphereLeader(oldRelations->getLevel() >= 5)
+{}
 

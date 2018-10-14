@@ -33,31 +33,44 @@ using namespace std;
 
 
 
-HoI4Province::HoI4Province(string Owner, int State)
+HoI4Province::HoI4Province(const std::string& Owner, int State):
+	filenames(),
+	coastal(false),
+	num(0),
+	name(""),
+	owner(Owner),
+	cores(),
+	is_land(false),
+	points(0),
+	metal(0.0),
+	energy(0.0),
+	oil(0.0),
+	rare_materials(0.0),
+	manpower(0.0),
+	leadership(0.0),
+	rawIndustry(0.0),
+	state(State),
+	naval_base(0),
+	air_base(0),
+	industry(0),
+	infrastructure(0)
 {
 	//filenames.insert(/*make_pair(_filename, _filename)*/);
-	coastal				= false;
-	num					= 0;
-	name					= "";
-	owner					= Owner;
-	state = State;
-	
-	cores.clear();
 
 	/*int slash		= _filename.find_last_of("\\");
 	int numDigits	= _filename.find_first_of("-") - slash - 2;
 	string temp		= _filename.substr(slash + 1, numDigits);
 	num				= stoi(temp);*/
 
-	Object* obj;
+	shared_ptr<Object> obj;
 	//obj = parser_UTF8::doParseFile((string("./blankMod/output/history/provinces") + _filename));
-	/*if (obj == NULL)
+	/*if (obj == nullptr)
 	{
 		LOG(LogLevel::Error) << "Could not parse ./blankMod/output/history/provinces" << _filename;
 		exit(-1);
 	}*/
 
-	vector<Object*> leaves = obj->getLeaves();
+	vector<shared_ptr<Object>> leaves = obj->getLeaves();
 	for (auto itr: leaves)
 	{
 		if (itr->getKey() == "owner")
@@ -106,9 +119,9 @@ void HoI4Province::output() const
 	for (auto filename: filenames)
 	{
 		FILE* output;
-		if (fopen_s(&output, ("Output/" + Configuration::getOutputName() + "/history/provinces/" + filename.first).c_str(), "w") != 0)
+		if (fopen_s(&output, ("output/" + Configuration::getOutputName() + "/history/provinces/" + filename.first).c_str(), "w") != 0)
 		{
-			LOG(LogLevel::Error) << "Could not create province history file Output/" << Configuration::getOutputName() << "/history/provinces/" << filename.first << " - " << Utils::GetLastErrorString();
+			LOG(LogLevel::Error) << "Could not create province history file output/" << Configuration::getOutputName() << "/history/provinces/" << filename.first << " - " << Utils::GetLastErrorString();
 			exit(-1);
 		}
 		if (owner != "")
@@ -169,12 +182,12 @@ void HoI4Province::output() const
 }
 
 
-void HoI4Province::convertFromOldProvince(const V2Province* oldProvince)
+void HoI4Province::convertFromOldProvince(const Vic2::Province* oldProvince)
 {
 }
 
 
-void HoI4Province::addCore(string newCore)
+void HoI4Province::addCore(const string& newCore)
 {
 	// only add if unique
 	if ( find(cores.begin(), cores.end(), newCore) == cores.end() )
@@ -184,35 +197,12 @@ void HoI4Province::addCore(string newCore)
 }
 
 
-void HoI4Province::addFilename(string _filename)
+void HoI4Province::addFilename(const string& _filename)
 {
 	// only add if unique
 	if (filenames.find(_filename) == filenames.end())
 	{
 		filenames.insert(make_pair(_filename, _filename));
-	}
-}
-
-
-static string CardinalToOrdinal(int cardinal)
-{
-	int hundredRem = cardinal % 100;
-	int tenRem = cardinal % 10;
-	if (hundredRem - tenRem == 10)
-	{
-		return "th";
-	}
-
-	switch (tenRem)
-	{
-	case 1:
-		return "st";
-	case 2:
-		return "nd";
-	case 3:
-		return "rd";
-	default:
-		return "th";
 	}
 }
 

@@ -1,4 +1,4 @@
-/*Copyright (c) 2016 The Paradox Game Converters Project
+/*Copyright (c) 2018 The Paradox Game Converters Project
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
@@ -47,23 +47,26 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.*/
 #include <boost/spirit/include/qi.hpp>
 #include "Log.h"
 #include "OSCompatibilityLayer.h"
-
 using namespace boost::spirit;
+
+
 
 namespace parser_8859_15
 {
-	static void setLHS(wstring key);
+	void clearStack();
+
+	static void setLHS(std::wstring key);
 	static void pushObj();
-	static void setRHSleaf(wstring val);
+	static void setRHSleaf(std::wstring val);
 	static void setRHSobject();
 	static void setRHSobjlist();
-	static void setRHStaglist(vector<wstring> val);
+	static void setRHStaglist(std::vector<std::wstring> val);
 	static void setEpsilon();
 	static void setAssign();
 
-	static Object*		topLevel = nullptr;  // a top level object
-	vector<Object*>	stack;						// a stack of objects
-	vector<Object*>	objstack;					// a stack of objects
+	static std::shared_ptr<Object> topLevel;  // a top level object
+	std::vector<std::shared_ptr<Object>>	stack;						// a stack of objects
+	std::vector<std::shared_ptr<Object>>	objstack;					// a stack of objects
 	bool					epsilon = false;		// if we've tried an episilon for an assign
 	bool					inObjList = false;		// if we're inside an object list
 
@@ -82,15 +85,13 @@ namespace parser_8859_15
 	template <typename Iterator>
 	struct Parser : public qi::grammar<Iterator, SkipComment<Iterator> >
 	{
-		static Object* topLevel;
-
 		// leaf: either left or right side of assignment.  unquoted keyword.
 		// example: leaf
-		qi::rule<Iterator, wstring(), SkipComment<Iterator> >	leaf;
+		qi::rule<Iterator, std::wstring(), SkipComment<Iterator> >	leaf;
 
 		// taglist: a grouping of anonymous (rhs) leaves or strings
 		// examples: { TAG TAG TAG } or { "string" "string" TAG }
-		qi::rule<Iterator, vector<wstring>(), SkipComment<Iterator> >	taglist;
+		qi::rule<Iterator, std::vector<std::wstring>(), SkipComment<Iterator> >	taglist;
 
 		// assign: assignment
 		// examples: lhs = rhs or lhs = { lhs = rhs }
@@ -106,11 +107,11 @@ namespace parser_8859_15
 
 		// str: a quoted literal string.  may include extended and/or reserved characters.
 		// example: "I am a string."
-		qi::rule<Iterator, wstring()>	str;
+		qi::rule<Iterator, std::wstring()>	str;
 
 		// tolleaf: a tolerant leaf.  may include extended and other unreserved characters.  rhs only.
 		// example: leaves with accents (names, for instance).
-		qi::rule<Iterator, wstring(), SkipComment<Iterator> >	tolleaf;
+		qi::rule<Iterator, std::wstring(), SkipComment<Iterator> >	tolleaf;
 
 		// braces: a stray set of empty rhs braces (without an lhs)
 		// EU3 seems to do this for certain decision mods.
@@ -173,25 +174,21 @@ namespace parser_8859_15
 		}
 	};
 
-	Object* getTopLevel()
-	{
-		return topLevel;
-	}
 
 	void initParser()
 	{
-		topLevel = new Object("topLevel");
+		topLevel = std::make_shared<Object>("topLevel");
 		epsilon = false;
 	}
 
-	wstring bufferOneObject(ifstream& read)
+	std::wstring bufferOneObject(std::istream& read)
 	{
 		int openBraces = 0;				// the number of braces deep we are
-		wstring currObject;				// the current object being built
-		bool topLevel = true;			// whether or not we're at the top level
+		std::wstring currObject;				// the current object being built
+		bool isTopLevel = true;			// whether or not we're at the top level
 		while (read.good())
 		{
-			string buffer;
+			std::string buffer;
 			getline(read, buffer);
 			if (buffer.empty())
 			{
@@ -201,7 +198,7 @@ namespace parser_8859_15
 			{
 				buffer.pop_back();
 			}
-			wstring wide_buffer = Utils::convert8859_15ToUTF16(buffer);
+			std::wstring wide_buffer = Utils::convert8859_15ToUTF16(buffer);
 
 			if (wide_buffer == L"CK2txt")
 			{
@@ -246,7 +243,7 @@ namespace parser_8859_15
 
 			if (openBraces > 0)
 			{
-				topLevel = false;
+				isTopLevel = false;
 				continue;
 			}
 
@@ -263,7 +260,7 @@ namespace parser_8859_15
 			// Not a problem for non-top-level objects since these will have
 			// nonzero openBraces anyway.
 			// But don't continue if the object was all on one line.
-			if (topLevel && !opened)
+			if (isTopLevel && !opened)
 			{
 				continue;
 			}
@@ -273,7 +270,7 @@ namespace parser_8859_15
 		return currObject;
 	}
 
-	bool readFile(ifstream& read)
+	bool readStream(std::istream& read)
 	{
 		clearStack();
 		read.unsetf(std::ios::skipws);
@@ -296,13 +293,13 @@ namespace parser_8859_15
 		return qi::phrase_parse(begin, end, p, s);
 		*/
 
-		const static Parser<wstring::iterator> p;
-		const static SkipComment<wstring::iterator> s;
+		const static Parser<std::wstring::iterator> p;
+		const static SkipComment<std::wstring::iterator> s;
 
 		/* buffer and parse one object at a time */
 		while (read.good())
 		{
-			wstring currObject = bufferOneObject(read);	// the object under consideration
+			std::wstring currObject = bufferOneObject(read);	// the object under consideration
 			if (!qi::phrase_parse(currObject.begin(), currObject.end(), p, s))
 			{
 				clearStack();
@@ -328,11 +325,11 @@ namespace parser_8859_15
 		stack.clear();
 	}
 
-	void setLHS(wstring key)
+	void setLHS(std::wstring key)
 	{
 		//LOG(LogLevel::Debug) << "Setting LHS : " << key;
 
-		Object* p = new Object(Utils::convertUTF16ToUTF8(key));
+		std::shared_ptr<Object> p = std::make_shared<Object>(Utils::convertUTF16ToUTF8(key));
 		if (0 == stack.size())
 		{
 			topLevel->setValue(p);
@@ -345,50 +342,50 @@ namespace parser_8859_15
 	{
 		inObjList = true;
 		//LOG(LogLevel::Debug) << "Pushing objlist";
-		string key("objlist");			// the key of the object list
-		Object* p = new Object(key);	// the object to hold the object list
+		std::string key("objlist");			// the key of the object list
+		std::shared_ptr<Object> p = std::make_shared<Object>(key);	// the object to hold the object list
 		p->setObjList();
 		objstack.push_back(p);
 	}
 
-	void setRHSleaf(wstring val)
+	void setRHSleaf(std::wstring val)
 	{
 		//LOG(LogLevel::Debug) << "Setting RHSleaf : " << val;
-		Object* l = stack.back();	// the leaf object
+		std::shared_ptr<Object> l = stack.back();	// the leaf object
 		stack.pop_back();
 		l->setValue(Utils::convertUTF16ToUTF8(val));
 		if ((!inObjList) && (0 < stack.size()))
 		{
-			Object* p = stack.back();	// the object holding the leaf
+			std::shared_ptr<Object> p = stack.back();	// the object holding the leaf
 			p->setValue(l);
 		}
 		else if ((inObjList) && (0 < objstack.size()))
 		{
-			Object* p = objstack.back();	// the object holding the leaf
+			std::shared_ptr<Object> p = objstack.back();	// the object holding the leaf
 			p->setValue(l);
 		}
 	}
 
-	void setRHStaglist(vector<wstring> vals)
+	void setRHStaglist(std::vector<std::wstring> vals)
 	{
 		//LOG(LogLevel::Debug) << "Setting RHStaglist";
-		vector<string> utf8Vals;
+		std::vector<std::string> utf8Vals;
 		for (auto val : vals)
 		{
 			utf8Vals.push_back(Utils::convertUTF16ToUTF8(val));
 		}
 
-		Object* l = stack.back();	// the object holding the list
+		std::shared_ptr<Object> l = stack.back();	// the object holding the list
 		stack.pop_back();
 		l->addToList(utf8Vals.begin(), utf8Vals.end());
 		if ((!inObjList) && (0 < stack.size()))
 		{
-			Object* p = stack.back();	// the object holding the leaf
+			std::shared_ptr<Object> p = stack.back();	// the object holding the leaf
 			p->setValue(l);
 		}
 		else if ((inObjList) && (0 < objstack.size()))
 		{
-			Object* p = objstack.back();	// the object holding the leaf
+			std::shared_ptr<Object> p = objstack.back();	// the object holding the leaf
 			p->setValue(l);
 		}
 	}
@@ -397,16 +394,16 @@ namespace parser_8859_15
 	{
 		//LOG(LogLevel::Debug) << "Setting RHSobject";
 		// No value is set, a bunch of leaves have been defined.
-		Object* l = stack.back();
+		std::shared_ptr<Object> l = stack.back();
 		stack.pop_back();
 		if ((!inObjList) && (0 < stack.size()))
 		{
-			Object* p = stack.back();	// the object holding the leaf
+			std::shared_ptr<Object> p = stack.back();	// the object holding the leaf
 			p->setValue(l);
 		}
 		else if ((inObjList) && (0 < objstack.size()))
 		{
-			Object* p = objstack.back();	// the object holding the leaf
+			std::shared_ptr<Object> p = objstack.back();	// the object holding the leaf
 			p->setValue(l);
 		}
 	}
@@ -415,13 +412,13 @@ namespace parser_8859_15
 	{
 		inObjList = false;
 		//LOG(LogLevel::Debug) << "Setting RHSobjlist";
-		Object* l = stack.back();	// the object
+		std::shared_ptr<Object> l = stack.back();	// the object
 		l->setValue(objstack);
 		objstack.clear();
 		stack.pop_back();
 		if (0 < stack.size())
 		{
-			Object* p = stack.back(); // the other object
+			std::shared_ptr<Object> p = stack.back(); // the other object
 			p->setValue(l);
 		}
 	}
@@ -437,13 +434,13 @@ namespace parser_8859_15
 		//LOG(LogLevel::Debug) << "In assign";
 		if (epsilon)
 		{
-			Object* e = new Object("epsilon");
+			std::shared_ptr<Object> e = std::make_shared<Object>("epsilon");
 			stack.push_back(e);
 		}
 		epsilon = false;
 	}
 
-	Object* doParseFile(string filename)
+	std::shared_ptr<Object> doParseStream(std::istream& theStream)
 	{
 		/* - when using parser debugging, also ensure that the parser object is non-static!
 		debugme = false;
@@ -452,16 +449,25 @@ namespace parser_8859_15
 		*/
 
 		initParser();
-		Object* obj = getTopLevel();	// the top level object
-		ifstream read(filename);
+		readStream(theStream);
+
+		return topLevel;
+	}
+
+
+	std::shared_ptr<Object> doParseFile(const std::string& filename)
+	{
+		std::ifstream read(filename);
 		if (!read.is_open())
 		{
-			return nullptr;
+			return {};
 		}
-		readFile(read);
+
+		auto temp = doParseStream(read);
+
 		read.close();
 		read.clear();
 
-		return obj;
+		return temp;
 	}
 } // namespace parser_8859_15

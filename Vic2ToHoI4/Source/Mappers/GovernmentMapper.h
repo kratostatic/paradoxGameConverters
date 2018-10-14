@@ -26,6 +26,8 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.*/
 
 
 
+#include "../HOI4World/HOI4Ideology.h"
+#include <memory>
 #include <set>
 #include <string>
 #include <vector>
@@ -34,7 +36,10 @@ using namespace std;
 
 
 class Object;
-class V2Country;
+namespace Vic2
+{
+class Country;
+}
 
 
 
@@ -59,19 +64,29 @@ typedef struct partyMapping
 class governmentMapper
 {
 	public:
-		static string getIdeologyForCountry(const V2Country* country, const string& Vic2RulingIdeology)
+		static string getIdeologyForCountry(const Vic2::Country* country, const string& Vic2RulingIdeology)
 		{
 			return getInstance()->GetIdeologyForCountry(country, Vic2RulingIdeology);
 		}
 
-		static string getLeaderIdeologyForCountry(const V2Country* country, const string& Vic2RulingIdeology)
+		static string getLeaderIdeologyForCountry(const Vic2::Country* country, const string& Vic2RulingIdeology)
 		{
 			return getInstance()->GetLeaderIdeologyForCountry(country, Vic2RulingIdeology);
 		}
 
-		static string getSupportedIdeology(const string& rulingIdeology, const string& Vic2Ideology)
+		static string getExistingIdeologyForCountry(const Vic2::Country* country, const string& Vic2RulingIdeology, const set<string>& majorIdeologies, const map<string, HoI4Ideology*>& ideologies)
 		{
-			return getInstance()->GetSupportedIdeology(rulingIdeology, Vic2Ideology);
+			return getInstance()->GetExistingIdeologyForCountry(country, Vic2RulingIdeology, majorIdeologies, ideologies);
+		}
+
+		static string getExistingLeaderIdeologyForCountry(const Vic2::Country* country, const string& Vic2RulingIdeology, const set<string>& majorIdeologies, const map<string, HoI4Ideology*>& ideologies)
+		{
+			return getInstance()->GetExistingLeaderIdeologyForCountry(country, Vic2RulingIdeology, majorIdeologies, ideologies);
+		}
+
+		static string getSupportedIdeology(const string& rulingIdeology, const string& Vic2Ideology, const set<string>& majorIdeologies)
+		{
+			return getInstance()->GetSupportedIdeology(rulingIdeology, Vic2Ideology, majorIdeologies);
 		}
 
 		static vector<governmentMapping> getGovernmentMappings()
@@ -90,14 +105,20 @@ class governmentMapper
 			return instance;
 		}
 		governmentMapper();
-		void importGovernmentMappings(Object* obj);
-		void importPartyMappings(Object* obj);
+		void importGovernmentMappings(shared_ptr<Object> obj);
+		void importPartyMappings(shared_ptr<Object> obj);
 
-		string GetIdeologyForCountry(const V2Country* country, const string& Vic2RulingIdeology);
-		string GetLeaderIdeologyForCountry(const V2Country* country, const string& Vic2RulingIdeology);
-		string GetSupportedIdeology(const string& rulingIdeology, const string& Vic2Ideology);
-		bool governmentMatches(const governmentMapping& mapping, const string& government);
-		bool rulingIdeologyMatches(const governmentMapping& mapping, const string& rulingIdeology);
+		governmentMapper(const governmentMapper&) = delete;
+		governmentMapper& operator=(const governmentMapper&) = delete;
+
+		string GetIdeologyForCountry(const Vic2::Country* country, const string& Vic2RulingIdeology) const;
+		string GetLeaderIdeologyForCountry(const Vic2::Country* country, const string& Vic2RulingIdeology) const;
+		string GetExistingIdeologyForCountry(const Vic2::Country* country, const string& Vic2RulingIdeology, const set<string>& majorIdeologies, const map<string, HoI4Ideology*>& ideologies) const;
+		string GetExistingLeaderIdeologyForCountry(const Vic2::Country* country, const string& Vic2RulingIdeology, const set<string>& majorIdeologies, const map<string, HoI4Ideology*>& ideologies) const;
+		string GetSupportedIdeology(const string& rulingIdeology, const string& Vic2Ideology, const set<string>& majorIdeologies) const;
+		bool governmentMatches(const governmentMapping& mapping, const string& government) const;
+		bool rulingIdeologyMatches(const governmentMapping& mapping, const string& rulingIdeology) const;
+		bool ideologyIsValid(const governmentMapping& mapping, const set<string>& majorIdeologies, const map<string, HoI4Ideology*>& ideologies) const;
 
 		vector<governmentMapping> governmentMap;
 		vector<partyMapping> partyMap;

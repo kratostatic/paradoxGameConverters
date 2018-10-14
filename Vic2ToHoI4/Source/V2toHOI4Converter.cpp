@@ -1,4 +1,4 @@
-/*Copyright (c) 2017 The Paradox Game Converters Project
+/*Copyright (c) 2018 The Paradox Game Converters Project
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
@@ -21,13 +21,14 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.*/
 
 
 
+#include <algorithm>
 #include <fstream>
 #include <stdexcept>
 #include "Configuration.h"
 #include "Flags.h"
 #include "Log.h"
 #include "HOI4World/HoI4World.h"
-#include "V2World/V2World.h"
+#include "V2World/World.h"
 #include "OSCompatibilityLayer.h"
 
 
@@ -37,7 +38,7 @@ int main(const int argc, const char* argv[])
 {
 	try
 	{
-		LOG(LogLevel::Info) << "Converter version 0.2A";
+		LOG(LogLevel::Info) << "Converter version 0.2G";
 		LOG(LogLevel::Info) << "Built on " << __DATE__ << " at " << __TIME__;
 		LOG(LogLevel::Info) << "Current directory is " << Utils::getCurrentDirectory();
 
@@ -69,7 +70,7 @@ int main(const int argc, const char* argv[])
 
 void checkMods();
 void getOutputName(const string& V2SaveFileName);
-void output(HoI4World& destWorld);
+void output(const HoI4World& destWorld);
 void ConvertV2ToHoI4(const string& V2SaveFileName)
 {
 	Configuration::getInstance();
@@ -77,7 +78,7 @@ void ConvertV2ToHoI4(const string& V2SaveFileName)
 	checkMods();
 	getOutputName(V2SaveFileName);
 
-	V2World sourceWorld(V2SaveFileName);
+	Vic2::World sourceWorld(V2SaveFileName);
 	HoI4World destWorld(&sourceWorld);
 
 	output(destWorld);
@@ -118,24 +119,17 @@ void checkMods()
 
 void getOutputName(const string& V2SaveFileName)
 {
-	const int slash = V2SaveFileName.find_last_of("\\");
+	int slash = V2SaveFileName.find_last_of("\\");
+	if (slash == string::npos)
+	{
+		slash = V2SaveFileName.find_last_of("/");
+	}
 	string outputName = V2SaveFileName.substr(slash + 1, V2SaveFileName.length());
 	const int length = outputName.find_first_of(".");
 	outputName = outputName.substr(0, length);
 
-	int dash = outputName.find_first_of('-');
-	while (dash != string::npos)
-	{
-		outputName.replace(dash, 1, "_");
-		dash = outputName.find_first_of('-');
-	}
-
-	int space = outputName.find_first_of(' ');
-	while (space != string::npos)
-	{
-		outputName.replace(space, 1, "_");
-		space = outputName.find_first_of(' ');
-	}
+	std::replace(outputName.begin(), outputName.end(), '-', '_');
+	std::replace(outputName.begin(), outputName.end(), ' ', '_');
 
 	Configuration::setOutputName(outputName);
 	LOG(LogLevel::Info) << "Using output name " << outputName;
@@ -153,7 +147,7 @@ void getOutputName(const string& V2SaveFileName)
 
 void createModFile();
 void renameOutputFolder();
-void output(HoI4World& destWorld)
+void output(const HoI4World& destWorld)
 {
 	createModFile();
 	renameOutputFolder();
@@ -170,15 +164,15 @@ void createModFile()
 		exit(-1);
 	}
 
-	ofstream modFile("Output/" + Configuration::getOutputName() + ".mod");
+	ofstream modFile("output/" + Configuration::getOutputName() + ".mod");
 	if (!modFile.is_open())
 	{
 		LOG(LogLevel::Error) << "Could not create .mod file";
 		exit(-1);
 	}
 
-	HOI4Version versionThatWantsBOM("1.3.3");
-	HOI4Version thisVersion = Configuration::getHOI4Version();
+	HoI4::Version versionThatWantsBOM("1.3.3");
+	HoI4::Version thisVersion = Configuration::getHOI4Version();
 	if (thisVersion >= versionThatWantsBOM)
 	{
 		modFile << "\xEF\xBB\xBF";    // add the BOM to make HoI4 happy
@@ -186,6 +180,7 @@ void createModFile()
 	modFile << "name = \"Converted - " << Configuration::getOutputName() << "\"\n";
 	modFile << "path = \"mod/" << Configuration::getOutputName() << "/\"\n";
 	modFile << "user_dir = \"" << Configuration::getOutputName() << "_user_dir\"\n";
+	modFile << "replace_path=\"common/ideologies\"\n";
 	modFile << "replace_path=\"history/countries\"\n";
 	modFile << "replace_path=\"history/states\"\n";
 	modFile << "supported_version=\"" << thisVersion << "\"";

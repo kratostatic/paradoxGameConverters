@@ -33,7 +33,18 @@ namesMapper* namesMapper::instance = nullptr;
 
 
 
-namesMapper::namesMapper()
+namesMapper::namesMapper():
+	maleNamesMap(),
+	femaleNamesMap(),
+	surnamesMap(),
+	callsignsMap(),
+	carCompanyNames(),
+	weaponCompanyNames(),
+	aircraftCompanyNames(),
+	navalCompanyNames(),
+	industryCompanyNames(),
+	electronicCompanyNames(),
+	rng()
 {
 	LOG(LogLevel::Info) << "Parsing names";
 
@@ -45,172 +56,297 @@ namesMapper::namesMapper()
 
 	processVic2CulturesFile((Configuration::getV2Path() + "/common/cultures.txt"));
 
-	processFemaleNamesFile();
-	processCallsignsFile();
+	processNamesFile();
+	if (Configuration::getDebug())
+	{
+		checkForNames();
+	}
 }
 
 
-void namesMapper::processVic2CulturesFile(string filename)
+void namesMapper::processVic2CulturesFile(const string& filename)
 {
-	Object* obj = parser_8859_15::doParseFile(filename);
-	if (obj == nullptr)
+	auto obj = parser_8859_15::doParseFile(filename);
+	if (obj)
+	{
+		vector<shared_ptr<Object>> groupsObj = obj->getLeaves();
+		for (auto groupsItr: groupsObj)
+		{
+			vector<shared_ptr<Object>> culturesObj = groupsItr->getLeaves();
+			for (auto culturesItr: culturesObj)
+			{
+				string key = culturesItr->getKey();
+				if ((key == "union") || (key == "leader") || (key == "unit") || (key == "is_overseas"))
+				{
+					continue;
+				}
+
+				auto firstNamesObj = culturesItr->safeGetObject("first_names");
+				auto lastNamesObj = culturesItr->safeGetObject("last_names");
+				if ((firstNamesObj != nullptr) && (lastNamesObj != nullptr))
+				{
+					maleNamesMap.insert(make_pair(key, firstNamesObj->getTokens()));
+					surnamesMap.insert(make_pair(key, lastNamesObj->getTokens()));
+				}
+				else
+				{
+					LOG(LogLevel::Error) << "No names for " << key;
+				}
+			}
+		}
+	}
+	else
 	{
 		return;
 	}
+}
 
-	vector<Object*> groupsObj = obj->getLeaves();
-	for (auto groupsItr: groupsObj)
+
+void namesMapper::processNamesFile()
+{
+	auto obj = parser_UTF8::doParseFile("names.txt");
+	if (obj)
 	{
-		vector<Object*> culturesObj = groupsItr->getLeaves();
-		for (auto culturesItr: culturesObj)
+		for (auto cultureObj: obj->getLeaves())
 		{
-			string key = culturesItr->getKey();
-			if ((key == "union") || (key == "leader") || (key == "unit") || (key == "is_overseas"))
-			{
-				continue;
-			}
+			string culture = cultureObj->getKey();
 
-			vector<Object*> firstNamesObj = culturesItr->getValue("first_names");
-			vector<Object*> lastNamesObj = culturesItr->getValue("last_names");
-			if ((firstNamesObj.size() > 0) && (lastNamesObj.size() > 0))
-			{
-				maleNamesMap.insert(make_pair(key, firstNamesObj[0]->getTokens()));
-				surnamesMap.insert(make_pair(key, lastNamesObj[0]->getTokens()));
-			}
-			else
-			{
-				LOG(LogLevel::Error) << "No names for " << key;
-			}	
+			femaleNamesMap.insert(make_pair(culture, cultureObj->safeGetTokens("female_names")));
+			callsignsMap.insert(make_pair(culture, cultureObj->safeGetTokens("callsigns")));
+			carCompanyNames.insert(make_pair(culture, cultureObj->safeGetTokens("car_companies")));
+			weaponCompanyNames.insert(make_pair(culture, cultureObj->safeGetTokens("weapon_companies")));
+			aircraftCompanyNames.insert(make_pair(culture, cultureObj->safeGetTokens("aircraft_companies")));
+			navalCompanyNames.insert(make_pair(culture, cultureObj->safeGetTokens("naval_companies")));
+			industryCompanyNames.insert(make_pair(culture, cultureObj->safeGetTokens("industry_companies")));
+			electronicCompanyNames.insert(make_pair(culture, cultureObj->safeGetTokens("electronic_companies")));
+		}
+	}
+	else
+	{
+		LOG(LogLevel::Error) << "Could not parse names.txt";
+		exit(-1);
+	}
+}
+
+
+void namesMapper::checkForNames()
+{
+	for (auto maleNamesMapping: maleNamesMap)
+	{
+		auto culture = maleNamesMapping.first;
+
+		if (femaleNamesMap.find(culture) == femaleNamesMap.end())
+		{
+			LOG(LogLevel::Warning) << "No female names for " << culture;
+		}
+		if (callsignsMap.find(culture) == callsignsMap.end())
+		{
+			LOG(LogLevel::Warning) << "No callsigns for " << culture;
+		}
+		if (carCompanyNames.find(culture) == carCompanyNames.end())
+		{
+			LOG(LogLevel::Warning) << "No car companies for " << culture;
+		}
+		if (weaponCompanyNames.find(culture) == weaponCompanyNames.end())
+		{
+			LOG(LogLevel::Warning) << "No weapon companies for " << culture;
+		}
+		if (aircraftCompanyNames.find(culture) == aircraftCompanyNames.end())
+		{
+			LOG(LogLevel::Warning) << "No aircraft companies for " << culture;
+		}
+		if (navalCompanyNames.find(culture) == navalCompanyNames.end())
+		{
+			LOG(LogLevel::Warning) << "No naval companies for " << culture;
+		}
+		if (industryCompanyNames.find(culture) == industryCompanyNames.end())
+		{
+			LOG(LogLevel::Warning) << "No industry companies for " << culture;
+		}
+		if (electronicCompanyNames.find(culture) == electronicCompanyNames.end())
+		{
+			LOG(LogLevel::Warning) << "No electronic companies for " << culture;
 		}
 	}
 }
 
 
-void namesMapper::processFemaleNamesFile()
+optional<vector<string>> namesMapper::GetMaleNames(const string& culture) const
 {
-	Object* obj = parser_UTF8::doParseFile("femaleNames.txt");
-	for (auto cultureObj: obj->getLeaves())
-	{
-		string culture = cultureObj->getKey();
-		femaleNamesMap.insert(make_pair(culture, cultureObj->getLeaves()[0]->getTokens()));
-	}
-}
-
-
-void namesMapper::processCallsignsFile()
-{
-	Object* obj = parser_UTF8::doParseFile("callsigns.txt");
-	for (auto cultureObj: obj->getLeaves())
-	{
-		string culture = cultureObj->getKey();
-		callsignsMap.insert(make_pair(culture, cultureObj->getLeaves()[0]->getTokens()));
-	}
-}
-
-
-vector<string> namesMapper::GetMaleNames(string culture) const
-{
-	vector<string> maleNames;
-
 	auto namesItr = maleNamesMap.find(culture);
 	if (namesItr != maleNamesMap.end())
 	{
-		maleNames = namesItr->second;
+		return namesItr->second;
 	}
 	else
 	{
-		maleNames.push_back("null");
+		return {};
 	}
-
-	return maleNames;
 }
 
 
-vector<string> namesMapper::GetFemaleNames(string culture) const
+optional<vector<string>> namesMapper::GetFemaleNames(const string& culture) const
 {
-	vector<string> femaleNames;
-
 	auto namesItr = femaleNamesMap.find(culture);
 	if (namesItr != femaleNamesMap.end())
 	{
-		femaleNames = namesItr->second;
+		return namesItr->second;
 	}
 	else
 	{
-		femaleNames.push_back("null");
+		return {};
 	}
-
-	return femaleNames;
 }
 
 
-vector<string> namesMapper::GetSurnames(string culture) const
+optional<vector<string>> namesMapper::GetSurnames(const string& culture) const
 {
-	vector<string> surnames;
-
 	auto namesItr = surnamesMap.find(culture);
 	if (namesItr != surnamesMap.end())
 	{
-		surnames = namesItr->second;
+		return namesItr->second;
 	}
 	else
 	{
-		surnames.push_back("null");
+		return {};
 	}
-
-	return surnames;
 }
 
 
-vector<string> namesMapper::GetCallsigns(string culture) const
+optional<vector<string>> namesMapper::GetCallsigns(const string& culture) const
 {
-	vector<string> callsigns;
-
 	auto namesItr = callsignsMap.find(culture);
 	if (namesItr != callsignsMap.end())
 	{
-		callsigns = namesItr->second;
+		return namesItr->second;
 	}
 	else
 	{
-		callsigns.push_back("null");
+		return {};
+	}
+}
+
+
+optional<string> namesMapper::GetMaleName(const string& culture)
+{
+	auto firstNames = GetMaleNames(culture);
+	if (firstNames)
+	{
+		std::uniform_int_distribution<int> firstNameGen(0, firstNames->size() - 1);
+		return (*firstNames)[firstNameGen(rng)];
+	}
+	else
+	{
+		LOG(LogLevel::Warning) << "No male name could be found for " << culture;
+		return {};
+	}
+}
+
+
+optional<string> namesMapper::GetFemaleName(const string& culture)
+{
+	auto firstNames = GetFemaleNames(culture);
+	if (firstNames)
+	{
+		std::uniform_int_distribution<int> firstNameGen(0, firstNames->size() - 1);
+		return (*firstNames)[firstNameGen(rng)];
+	}
+	else
+	{
+		LOG(LogLevel::Warning) << "No female name could be found for " << culture;
+		return {};
+	}
+}
+
+
+optional<string> namesMapper::GetSurname(const string& culture)
+{
+	auto surnames = GetSurnames(culture);
+	if (surnames)
+	{
+		std::uniform_int_distribution<int> surnameGen(0, surnames->size() - 1);
+		return (*surnames)[surnameGen(rng)];
+	}
+	else
+	{
+		LOG(LogLevel::Warning) << "No surname name could be found for " << culture;
+		return {};
+	}
+}
+
+
+optional<string> namesMapper::GetCallsign(const string& culture)
+{
+	auto callsigns = GetCallsigns(culture);
+	if (callsigns)
+	{
+		std::uniform_int_distribution<int> surnameGen(0, callsigns->size() - 1);
+		return (*callsigns)[surnameGen(rng)];
+	}
+	else
+	{
+		LOG(LogLevel::Warning) << "No callsign could be found for " << culture;
+		return {};
+	}
+}
+
+
+optional<string> namesMapper::GetCarCompanyName(const string& culture)
+{
+	return getCompanyName(carCompanyNames, culture);
+}
+
+
+optional<string> namesMapper::GetWeaponCompanyName(const string& culture)
+{
+	return getCompanyName(weaponCompanyNames, culture);
+}
+
+
+optional<string> namesMapper::GetAircraftCompanyName(const string& culture)
+{
+	return getCompanyName(aircraftCompanyNames,culture);
+}
+
+
+optional<string> namesMapper::GetNavalCompanyName(const string& culture)
+{
+	return getCompanyName(navalCompanyNames, culture);
+}
+
+
+optional<string> namesMapper::GetIndustryCompanyName(const string& culture)
+{
+	return getCompanyName(industryCompanyNames, culture);
+}
+
+
+optional<string> namesMapper::GetElectronicCompanyName(const string& culture)
+{
+	return getCompanyName(electronicCompanyNames, culture);
+}
+
+
+optional<string> namesMapper::getCompanyName(map<string, vector<string>>& companyNames, const string& culture)
+{
+	auto namesItr = companyNames.find(culture);
+	if (namesItr != companyNames.end())
+	{
+		vector<string> companies = namesItr->second;
+		if (companies.size() > 0)
+		{
+			std::uniform_int_distribution<int> surnameGen(0, companies.size() - 1);
+			auto company = companies[surnameGen(rng)];
+			for (vector<string>::iterator itr = companyNames[culture].begin(); itr != companyNames[culture].end(); ++itr)
+			{
+				if (*itr == company)
+				{
+					companyNames[culture].erase(itr);
+					return company;
+				}
+			}
+		}
 	}
 
-	return callsigns;
-}
-
-
-string namesMapper::GetMaleName(string culture)
-{
-	vector<string> firstNames = GetMaleNames(culture);
-
-	std::uniform_int_distribution<int> firstNameGen(0, firstNames.size() - 1);
-	return firstNames[firstNameGen(rng)];
-}
-
-
-string namesMapper::GetFemaleName(string culture)
-{
-	vector<string> firstNames = GetFemaleNames(culture);
-
-	std::uniform_int_distribution<int> firstNameGen(0, firstNames.size() - 1);
-	return firstNames[firstNameGen(rng)];
-}
-
-
-string namesMapper::GetSurname(string culture)
-{
-	vector<string> surnames = GetSurnames(culture);
-
-	std::uniform_int_distribution<int> surnameGen(0, surnames.size() - 1);
-	return surnames[surnameGen(rng)];
-}
-
-
-string namesMapper::GetCallsign(string culture)
-{
-	vector<string> callsigns = GetCallsigns(culture);
-
-	std::uniform_int_distribution<int> surnameGen(0, callsigns.size() - 1);
-	return callsigns[surnameGen(rng)];
+	return {};
 }
